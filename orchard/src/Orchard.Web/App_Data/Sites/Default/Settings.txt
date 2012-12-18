@@ -1,0 +1,12 @@
+Name: Default
+DataProvider: SqlServer
+DataConnectionString: Data Source=.;Initial Catalog=ricealumni;Persist Security Info=True;User ID=ricealumni;Password=R1ceAlumn1
+DataPrefix: orchard
+RequestUrlHost: null
+RequestUrlPrefix: null
+State: Running
+EncryptionAlgorithm: AES
+EncryptionKey: 36E190C2A01F3975FE37050E0D357D40DCD293FB651B09980E90742191E30B09
+HashAlgorithm: HMACSHA256
+HashKey: 1C9905A5E3E75E38FE55ADE966081E83B82370D271BB555234AEFCF8BFEBD0BCD26C2FF406F3B9D17D7095C5A26838C428B585BC435AA253139CAD2BE1087BAD
+Themes: 
