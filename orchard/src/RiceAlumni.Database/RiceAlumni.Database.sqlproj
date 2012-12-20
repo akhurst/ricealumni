@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>RiceAlumni.Database</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{1d8db1d3-d659-4dbf-b68c-a8c144b69d49}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql100DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>RiceAlumni.Database</RootNamespace>
+    <AssemblyName>RiceAlumni.Database</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <Containment>None</Containment>
+    <IsNestedTriggersOn>True</IsNestedTriggersOn>
+    <IsTransformNoiseWordsOn>False</IsTransformNoiseWordsOn>
+    <TwoDigitYearCutoff>2049</TwoDigitYearCutoff>
+    <NonTransactedFileStreamAccess>OFF</NonTransactedFileStreamAccess>
+    <TargetRecoveryTimePeriod>0</TargetRecoveryTimePeriod>
+    <TargetRecoveryTimeUnit>SECONDS</TargetRecoveryTimeUnit>
+    <IsChangeTrackingOn>False</IsChangeTrackingOn>
+    <IsChangeTrackingAutoCleanupOn>True</IsChangeTrackingAutoCleanupOn>
+    <ChangeTrackingRetentionPeriod>2</ChangeTrackingRetentionPeriod>
+    <ChangeTrackingRetentionUnit>Days</ChangeTrackingRetentionUnit>
+    <IsEncryptionOn>False</IsEncryptionOn>
+    <IsBrokerPriorityHonored>False</IsBrokerPriorityHonored>
+    <Trustworthy>False</Trustworthy>
+    <AutoUpdateStatisticsAsynchronously>False</AutoUpdateStatisticsAsynchronously>
+    <PageVerify>CHECKSUM</PageVerify>
+    <ServiceBrokerOption>DisableBroker</ServiceBrokerOption>
+    <DateCorrelationOptimizationOn>False</DateCorrelationOptimizationOn>
+    <Parameterization>SIMPLE</Parameterization>
+    <AllowSnapshotIsolation>False</AllowSnapshotIsolation>
+    <ReadCommittedSnapshot>False</ReadCommittedSnapshot>
+    <VardecimalStorageFormatOn>True</VardecimalStorageFormatOn>
+    <SupplementalLoggingOn>False</SupplementalLoggingOn>
+    <CompatibilityMode>110</CompatibilityMode>
+    <AnsiNullDefault>False</AnsiNullDefault>
+    <AnsiNulls>False</AnsiNulls>
+    <AnsiPadding>False</AnsiPadding>
+    <AnsiWarnings>False</AnsiWarnings>
+    <ArithAbort>False</ArithAbort>
+    <ConcatNullYieldsNull>False</ConcatNullYieldsNull>
+    <QuotedIdentifier>False</QuotedIdentifier>
+    <NumericRoundAbort>False</NumericRoundAbort>
+    <RecursiveTriggersEnabled>False</RecursiveTriggersEnabled>
+    <DatabaseChaining>False</DatabaseChaining>
+    <DatabaseState>ONLINE</DatabaseState>
+    <CloseCursorOnCommitEnabled>False</CloseCursorOnCommitEnabled>
+    <DefaultCursor>GLOBAL</DefaultCursor>
+    <AutoClose>False</AutoClose>
+    <AutoCreateStatistics>True</AutoCreateStatistics>
+    <AutoShrink>False</AutoShrink>
+    <AutoUpdateStatistics>True</AutoUpdateStatistics>
+    <TornPageDetection>False</TornPageDetection>
+    <DatabaseAccess>MULTI_USER</DatabaseAccess>
+    <Recovery>FULL</Recovery>
+    <EnableFullTextSearch>True</EnableFullTextSearch>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <CreateProjectFromDatabaseCompleted>True</CreateProjectFromDatabaseCompleted>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- VS10 without SP1 will not have VisualStudioVersion set, so do that here -->
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="Security\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\orchard_Orchard_Projections_IntegerFieldIndexRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Projections_DoubleFieldIndexRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Projections_DecimalFieldIndexRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Projections_FieldIndexPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Projections_QueryPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Projections_FilterGroupRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Projections_FilterRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Projections_SortCriterionRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Framework_DataMigrationRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Projections_LayoutRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Settings_ContentFieldDefinitionRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Projections_PropertyRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Settings_ContentPartDefinitionRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Projections_ProjectionPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Settings_ContentPartFieldDefinitionRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Projections_MemberBindingRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Settings_ContentTypeDefinitionRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Projections_NavigationQueryPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Settings_ContentTypePartDefinitionRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Tags_TagsPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Settings_ShellDescriptorRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Tags_TagRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Settings_ShellFeatureRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Tags_ContentTagRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Settings_ShellFeatureStateRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Warmup_WarmupSettingsPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Settings_ShellParameterRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Settings_ShellStateRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Settings_SiteSettingsPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Settings_SiteSettings2PartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Framework_ContentItemRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Framework_ContentItemVersionRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Framework_ContentTypeRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Framework_CultureRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Common_BodyPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Common_CommonPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Common_CommonPartVersionRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Common_IdentityPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Containers_ContainerPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Containers_ContainerWidgetPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Containers_CustomPropertiesPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Containers_ContainablePartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Title_TitlePartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Navigation_MenuItemPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Navigation_MenuPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Navigation_MenuWidgetPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Navigation_AdminMenuPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Navigation_ContentMenuItemPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Scheduling_ScheduledTaskRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Themes_ThemeSiteSettingsPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Users_UserPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Users_RegistrationSettingsPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Roles_PermissionRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Roles_RoleRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Roles_RolesPermissionsRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Roles_UserRolesPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Packaging_PackagingSource.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Alias_AliasRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Alias_ActionRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Autoroute_AutoroutePartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Widgets_LayerPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Widgets_WidgetPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Blogs_BlogPartArchiveRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Blogs_BlogPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Blogs_RecentBlogPostsPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Blogs_BlogArchivesPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Comments_CommentPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Comments_CommentSettingsPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Comments_CommentsPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Media_MediaSettingsPartRecord.sql" />
+    <Build Include="dbo\Tables\orchard_Orchard_Projections_StringFieldIndexRecord.sql" />
+    <Build Include="Security\ricealumni.sql" />
+    <Build Include="Security\ricealumni_1.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RiceAlumni.Database.publish.xml" />
+  </ItemGroup>
+</Project>
