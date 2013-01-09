@@ -1,0 +1,11 @@
+﻿@model RiceAlumni.StaffDirectory.Models.StaffProfilePart
+
+<fieldset>
+	<legend>@T("Details")</legend>
+    @Html.LabelFor(m=>m.Title)
+    @Html.TextBoxFor(m=>m.Title)
+    @Html.LabelFor(m=>m.Phone)
+    @Html.TextBoxFor(m=>m.Phone)
+    @Html.LabelFor(m=>m.Email)
+    @Html.TextBoxFor(m=>m.Email)
+</fieldset>

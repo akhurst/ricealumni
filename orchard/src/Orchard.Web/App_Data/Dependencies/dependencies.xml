@@ -540,9 +540,52 @@
     <References />
   </Dependency>
   <Dependency>
+    <ModuleName>RiceAlumni.Core</ModuleName>
+    <VirtualPath>~/Modules/RiceAlumni.Core/bin/RiceAlumni.Core.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
+    <ModuleName>RiceAlumni.StaffDirectory</ModuleName>
+    <VirtualPath>~/Modules/RiceAlumni.StaffDirectory/bin/RiceAlumni.StaffDirectory.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References>
+      <Reference>
+        <Name>Orchard.Alias</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Alias/bin/Orchard.Alias.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Orchard.Autoroute</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Autoroute/bin/Orchard.Autoroute.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Orchard.Forms</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Forms/bin/Orchard.Forms.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Orchard.Projections</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Projections/bin/Orchard.Projections.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Orchard.Roles</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Roles/bin/Orchard.Roles.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Orchard.Tokens</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Tokens/bin/Orchard.Tokens.dll</VirtualPath>
+      </Reference>
+    </References>
+  </Dependency>
+  <Dependency>
     <ModuleName>RiceAlumni.Theme</ModuleName>
-    <VirtualPath>~/Themes/RiceAlumni.Theme/RiceAlumni.Theme.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Themes/RiceAlumni.Theme/bin/RiceAlumni.Theme.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <References />
   </Dependency>
   <Dependency>

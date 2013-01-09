@@ -1,0 +1,12 @@
+﻿Name: Core Functionality
+AntiForgery: enabled
+Author: Improving Enterprises
+Website: http://alumni.rice.edu
+Version: 1.0
+OrchardVersion: 1.0
+Description: A foundational module used by all Rice modules
+Dependencies: Common, Orchard.Autoroute, Orchard.Roles, Orchard.Projections, UrlAlternates, Shapes, Feeds, Navigation, Orchard.Widgets, Orchard.jQuery, Orchard.Migrations, Orchard.MultiTenancy, TinyMce, Orchard.Widgets.ControlWrapper, Orchard.Widgets.PageLayerHinting, Contents.ControlWrapper
+Category: Rice University
+Features:
+    RiceAlumni.Core:
+        Description: Description for feature RiceAlumni.Core.
