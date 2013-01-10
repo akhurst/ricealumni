@@ -74,6 +74,7 @@ namespace RiceAlumni.StaffDirectory
 				.WithPart("ImageField")
 				.WithPart("MenuPart")
 				.WithPart("AdminMenuPart")
+				.WithPart("ContainablePart")
 				.WithPart("AutoroutePart", cfg => cfg
 						.WithSetting("AutorouteSettings.AllowCustomPattern", "false")
 						.WithSetting("AutorouteSettings.AutomaticAdjustmentOnEdit", "false")

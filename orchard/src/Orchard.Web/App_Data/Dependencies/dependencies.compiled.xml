@@ -292,13 +292,13 @@
     <ExtensionId>RiceAlumni.StaffDirectory</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/RiceAlumni.StaffDirectory/bin/RiceAlumni.StaffDirectory.dll</VirtualPath>
-    <Hash>118b408ab4bf8ab</Hash>
+    <Hash>118b4b4f12bd9d6</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>RiceAlumni.Theme</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Themes/RiceAlumni.Theme/bin/RiceAlumni.Theme.dll</VirtualPath>
-    <Hash>49030cf272a57f23</Hash>
+    <Hash>49030db4724e8d8b</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>SysCache</ExtensionId>

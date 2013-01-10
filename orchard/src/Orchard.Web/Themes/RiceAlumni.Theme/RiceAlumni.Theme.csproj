@@ -92,9 +92,6 @@
     <Folder Include="Zones\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\List-ProjectionPage-TestProjection.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -114,6 +111,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Pager.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Content-url-staff-directory.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\List-ProjectionPage-url-staff-directory.cshtml">
+      <SubType>Code</SubType>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

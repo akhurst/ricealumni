@@ -1,0 +1,93 @@
+
+<style type="text/css">
+ .staff-directory-group { }
+
+ .staff-directory-profile { }
+ .staff-directory-featured-group {
+
+ }
+
+ .staff-directory-featured-profile {
+
+ }
+</style>
+@using System.Linq;
+@using System.Collections.Generic;
+
+@functions {
+	private void AddProfileToGroupList(dynamic newProfile, List<dynamic> staffGroupProfiles)
+	{
+		var index = 0;
+		foreach (var existingProfile in staffGroupProfiles)
+		{
+			if (existingProfile.ContentItem.ContainablePart.Weight > newProfile.ContentItem.ContainablePart.Weight)
+			{
+				index++;
+			}
+			else if (existingProfile.ContentItem.ContainablePart.Weight == newProfile.ContentItem.ContainablePart.Weight)
+			{
+				if (newProfile.ContentItem.TitlePart.Title < existingProfile.ContentItem.TitlePart.Title)
+				{
+					break;
+				}
+				else
+				{
+					index++;
+				}
+			}
+			else // must be lesser weight, insert before this one
+			{
+				break;
+			}
+		}
+
+		if (index >= staffGroupProfiles.Count)
+		{
+			staffGroupProfiles.Add(newProfile);
+		}
+		else
+		{
+			staffGroupProfiles.Insert(index, newProfile);
+		}
+	}
+
+}
+@{
+    var groupsByWeight = new SortedDictionary<int,List<dynamic>>();
+  
+}
+@foreach(var profileContentItem in Model.Items)
+{
+	int staffGroupWeight = profileContentItem.ContentItem.StaffProfilePart.StaffGroupWeight;
+	List<dynamic> staffGroupProfiles;
+	if (!groupsByWeight.ContainsKey(staffGroupWeight))
+	{
+		staffGroupProfiles = new List<dynamic>();
+		groupsByWeight.Add(staffGroupWeight, staffGroupProfiles);
+	}
+	else
+	{
+		staffGroupProfiles = groupsByWeight[staffGroupWeight];
+	}
+
+	AddProfileToGroupList(profileContentItem, staffGroupProfiles);
+}
+
+@{
+	var groupIndex = 0;
+}
+@foreach(var group in groupsByWeight.Reverse())
+{
+	var profileIndex = 0;
+	<div class="staff-directory-group @(groupIndex == 0 ? " staff-directory-featured-group" : "")">
+		<div>@group.Value[0].ContentItem.StaffProfilePart.StaffGroupName</div>
+		@foreach (var profile in group.Value)
+		{
+			<div class="staff-directory-profile@(profileIndex == 0 ? " staff-directory-featured-profile" : "")">
+				@Display(profile)
+			</div>
+			profileIndex++;
+		}
+	</div>
+	groupIndex++;
+}
