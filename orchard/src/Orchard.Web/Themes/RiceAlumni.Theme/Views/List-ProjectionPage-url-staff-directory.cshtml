@@ -1,14 +1,22 @@
 
 <style type="text/css">
- .staff-directory-group { }
+ .staff-directory-group {
+	 clear: both;
+ }
 
- .staff-directory-profile { }
+ .staff-directory-profile {
+	 clear: both;
+ }
  .staff-directory-featured-group {
 
  }
 
  .staff-directory-featured-profile {
 
+ }
+
+ .staff-directory-featured-group .staff-directory-group-name {
+	 display: none;
  }
 </style>
 @using System.Linq;
@@ -80,7 +88,7 @@
 {
 	var profileIndex = 0;
 	<div class="staff-directory-group @(groupIndex == 0 ? " staff-directory-featured-group" : "")">
-		<div>@group.Value[0].ContentItem.StaffProfilePart.StaffGroupName</div>
+		<div class="staff-directory-group-name">@group.Value[0].ContentItem.StaffProfilePart.StaffGroupName</div>
 		@foreach (var profile in group.Value)
 		{
 			<div class="staff-directory-profile@(profileIndex == 0 ? " staff-directory-featured-profile" : "")">

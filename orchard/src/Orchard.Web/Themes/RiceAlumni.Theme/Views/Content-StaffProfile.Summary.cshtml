@@ -19,8 +19,11 @@
        }
 	</div>
 	<div class="staff-profile-summary-text-container">
-		<div class="staff-profile-summary-title">
+		<div class="staff-profile-summary-name">
 			@Model.ContentItem.TitlePart.Title
+		</div>
+		<div class="staff-profile-summary-title">
+			@Model.ContentItem.StaffProfilePart.Title
 		</div>
 		<div class="staff-profile-summary-body">
 			@Html.Raw(Model.ContentItem.BodyPart.Text)

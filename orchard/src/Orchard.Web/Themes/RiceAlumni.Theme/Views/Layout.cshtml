@@ -1,4 +1,5 @@
-﻿@functions {
+﻿@using Orchard.UI.Resources
+@functions {
     // To support the layout classifaction below. Implementing as a razor function because we can, could otherwise be a Func<string[], string, string> in the code block following.
     string CalcuClassify(string[] zoneNames, string classNamePrefix) {
         var zoneCounter = 0;
@@ -11,11 +12,26 @@
     ***************************************************************/
     
     SetMeta("X-UA-Compatible", "IE=edge,chrome=1");
+    SetMeta("viewport", "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no");
+    SetMeta("width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no","yes");
     Style.Include("http://fonts.googleapis.com/css?family=Lobster&subset=latin");
     Style.Include("site.css");
+	Style.Include("normalize.min.css");
+	Style.Include("main.css");
+	Style.Include("superslides.css");
+	Style.Include("flexslider.css");
+  Style.Include("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic");
+  Script.Include("modernizr-2.6.2-respond-1.1.0.min.js").AtHead();
+	Script.Include("jquery.easing.1.3.js").AtFoot();
+	Script.Include("jquery.animate-enhanced.min.js").AtFoot();
+	Script.Include("jquery.superslides.js").AtFoot();
+	Script.Include("jquery.flexslider-min.js").AtFoot();
+	Script.Include("hammer.js").AtFoot();
+	Script.Include("jquery.specialevent.hammer.js").AtFoot();
+	Script.Include("main.js").AtFoot();
 
-    /* Some useful shortcuts or settings
-    ***************************************************************/
+  /* Some useful shortcuts or settings
+  ***************************************************************/
 
     Func<dynamic, dynamic> Zone = x => Display(x); // Zone as an alias for Display to help make it obvious when we're displaying zones
 
@@ -53,6 +69,39 @@
     Model.Id = "layout-wrapper";
     var tag = Tag(Model, "div"); // using Tag so the layout div gets the classes, id and other attributes added to the Model
 }
+
+
+
+
+
+
+<style>
+	*{font-family: 'Lato', sans-serif;}
+
+	h1{font-weight: 300;}
+
+	.image-wrap {
+		-webkit-border-radius: 50em;
+		-moz-border-radius: 50em;
+		border-radius: 50em;
+		display: block;
+		width: 150px;
+		height: 150px;
+		float: left;
+		padding: 0px;
+		margin: 18px;    
+	}
+	.slides-container .columnRight{width: 600px !important}
+</style>
+
+
+
+
+
+
+
+
+
 @tag.StartElement
 @if (Model.Header != null) {
 <header id="layout-header" class="group">
