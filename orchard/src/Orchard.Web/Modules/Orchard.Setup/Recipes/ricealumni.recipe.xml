@@ -35,6 +35,7 @@
 		layer create TheHomepage /LayerRule:"url '~/'" /Description:"The widgets in this layer are displayed on the home page"
 		site setting set baseurl
 		menu create /MenuName:"Main Menu"
+		page create /Slug:"home" /Title:"Unconventionally Wise" /Path:"home" /Homepage:true /Publish:true /UseWelcomeText:true /MenuText:"Home" /MenuName:"Main Menu"
 		widget create MenuWidget /Title:"Main Menu" /RenderTitle:false /Zone:"Navigation" /Position:"1" /Layer:"Default" /Identity:"MenuWidget1" /MenuName:"Main Menu"
 		theme activate "Association of Rice Alumni"
 	</Command>

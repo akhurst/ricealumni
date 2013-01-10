@@ -94,7 +94,9 @@ namespace RiceAlumni.StaffDirectory
 			projection.As<TitlePart>().Record.Title = "Staff Directory";
 			projection.As<MenuPart>().Record.MenuText = "Staff Directory";
 			projection.As<MenuPart>().Record.MenuPosition = "1";
-			projection.As<MenuPart>().Record.MenuId = _menuService.GetMenu("Main Menu").Id;
+			var mainMenu = _menuService.GetMenu("Main Menu");
+			if(mainMenu != null)
+				projection.As<MenuPart>().Record.MenuId = _menuService.GetMenu("Main Menu").Id;
 			projection.As<AutoroutePart>().Record.DisplayAlias = "staff-directory";
 			projection.As<CommonPart>().Record.OwnerId = _membershipService.GetUser("admin").Id;
 
