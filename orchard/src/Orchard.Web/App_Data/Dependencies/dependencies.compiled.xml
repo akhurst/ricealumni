@@ -298,7 +298,7 @@
     <ExtensionId>RiceAlumni.Theme</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Themes/RiceAlumni.Theme/bin/RiceAlumni.Theme.dll</VirtualPath>
-    <Hash>49030db4724e8d8b</Hash>
+    <Hash>49030e86b4966848</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>SysCache</ExtensionId>
