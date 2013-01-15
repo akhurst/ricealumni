@@ -2,4 +2,7 @@
 <Placement>
 	<Place Parts_StaffProfile_Edit="Content:10"/>
 	<Place Parts_StaffProfile="Content:5"/>
+	<Match DisplayType="SummaryAdmin">
+		<Place Parts_StaffProfile="-"/>
+	</Match>
 </Placement>

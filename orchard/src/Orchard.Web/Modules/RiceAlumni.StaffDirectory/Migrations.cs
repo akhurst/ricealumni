@@ -70,7 +70,7 @@ namespace RiceAlumni.StaffDirectory
 				.WithPart("StaffProfilePart")
 				.WithPart("CommonPart")
 				.WithPart("TitlePart")
-				.WithPart("BodyPart")
+				.WithPart("BodyPart", partBuilder => partBuilder.WithSetting("BodyTypePartSettings.Flavor", "text"))
 				.WithPart("ImageField")
 				.WithPart("MenuPart")
 				.WithPart("AdminMenuPart")

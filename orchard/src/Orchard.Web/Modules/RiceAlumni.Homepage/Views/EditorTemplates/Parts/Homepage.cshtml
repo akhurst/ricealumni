@@ -1,0 +1,9 @@
+﻿@model RiceAlumni.Homepage.Models.HomepagePart
+
+<fieldset>
+	<legend>@T("Details")</legend>
+    @Html.LabelFor(m=>m.LinkText)
+    @Html.TextBoxFor(m=>m.LinkText)
+    @Html.LabelFor(m=>m.LinkTarget)
+    @Html.TextBoxFor(m=>m.LinkTarget)
+</fieldset>

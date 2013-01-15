@@ -202,7 +202,7 @@
     <ExtensionId>Orchard.Recipes</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/Orchard.Recipes/bin/Orchard.Recipes.dll</VirtualPath>
-    <Hash>24fe3065117ee6a6</Hash>
+    <Hash>24fe3208334f4e7e</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>Orchard.Roles</ExtensionId>
@@ -238,7 +238,7 @@
     <ExtensionId>Orchard.Setup</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/Orchard.Setup/bin/Orchard.Setup.dll</VirtualPath>
-    <Hash>6e4c3da4c6a04111</Hash>
+    <Hash>6e4c40eb09b9b1f7</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>Orchard.Tags</ExtensionId>
@@ -286,19 +286,25 @@
     <ExtensionId>RiceAlumni.Core</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/RiceAlumni.Core/bin/RiceAlumni.Core.dll</VirtualPath>
-    <Hash>48ffbd01bed45bd0</Hash>
+    <Hash>48ffbe946a5a64aa</Hash>
+  </Dependency>
+  <Dependency>
+    <ExtensionId>RiceAlumni.Homepage</ExtensionId>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/RiceAlumni.Homepage/bin/RiceAlumni.Homepage.dll</VirtualPath>
+    <Hash>250d747249dbd1dc</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>RiceAlumni.StaffDirectory</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/RiceAlumni.StaffDirectory/bin/RiceAlumni.StaffDirectory.dll</VirtualPath>
-    <Hash>118b4b4f12bd9d6</Hash>
+    <Hash>118b7db0dc1b53d</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>RiceAlumni.Theme</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Themes/RiceAlumni.Theme/bin/RiceAlumni.Theme.dll</VirtualPath>
-    <Hash>49030e86b4966848</Hash>
+    <Hash>490310f101f7e653</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>SysCache</ExtensionId>

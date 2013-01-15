@@ -9,7 +9,7 @@
     <Version>1.0</Version>
   </Recipe>
 
-  <Feature enable="Orchard.jQuery,Orchard.Alias,Orchard.Autoroute,RiceAlumni.Core,RiceAlumni.StaffDirectory" />
+  <Feature enable="Orchard.jQuery,Orchard.Alias,Orchard.Autoroute,RiceAlumni.Core,RiceAlumni.StaffDirectory,RiceAlumni.Homepage" />
   
   <Metadata>
     <Types>
@@ -33,10 +33,21 @@
 		layer create Anonymous /LayerRule:"not authenticated" /Description:"The widgets in this layer are displayed when the user is anonymous"
 		layer create Disabled /LayerRule:"false" /Description:"The widgets in this layer are never displayed"
 		layer create TheHomepage /LayerRule:"url '~/'" /Description:"The widgets in this layer are displayed on the home page"
+		layer create NotHomepage /LayerRule:"not url '~/'" /Description:"The widgets in this layer are displayed on every page except the home page"
 		site setting set baseurl
 		menu create /MenuName:"Main Menu"
+		menu create /MenuName:"Home Menu"
+		menuitem create /MenuPosition:"1" /MenuText:"Alumni Resources" /Url:"~/#" /MenuName:"Home Menu"
+		menuitem create /MenuPosition:"2" /MenuText:"Office of Alumni Affairs" /Url:"http://alumni.rice.edu/home.html" /MenuName:"Home Menu"
+		menu create /MenuName:"Footer Menu"
+		menuitem create /MenuPosition:"1" /MenuText:"Alumni Resources" /Url:"http://alumni.rice.edu/home.html" /MenuName:"Footer Menu"
+		menuitem create /MenuPosition:"2" /MenuText:"Facebook" /Url:"https://www.facebook.com/ricealumni" /MenuName:"Footer Menu"
+		menuitem create /MenuPosition:"3" /MenuText:"Twitter" /Url:"https://twitter.com/ricealumni" /MenuName:"Footer Menu"
+		menuitem create /MenuPosition:"4" /MenuText:"Contact" /Url:"http://alumni.rice.edu/contact.html" /MenuName:"Footer Menu"
 		page create /Slug:"home" /Title:"Unconventionally Wise" /Path:"home" /Homepage:true /Publish:true /UseWelcomeText:true /MenuText:"Home" /MenuName:"Main Menu"
-		widget create MenuWidget /Title:"Main Menu" /RenderTitle:false /Zone:"Navigation" /Position:"1" /Layer:"Default" /Identity:"MenuWidget1" /MenuName:"Main Menu"
+		widget create MenuWidget /Title:"Main Menu" /RenderTitle:false /Zone:"Navigation" /Position:"1" /Layer:"NotHomepage" /Identity:"MenuWidget1" /MenuName:"Main Menu"
+		widget create MenuWidget /Title:"Home Menu" /RenderTitle:false /Zone:"Navigation" /Position:"2" /Layer:"TheHomepage" /Identity:"MenuWidget3" /MenuName:"Home Menu"
+		widget create MenuWidget /Title:"Footer Menu" /RenderTitle:false /Zone:"FooterRight" /Position:"1" /Layer:"Default" /Identity:"MenuWidget2" /MenuName:"Footer Menu"
 		theme activate "Association of Rice Alumni"
 	</Command>
 </Orchard>

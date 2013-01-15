@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Placement>
+	<Place Parts_Homepage_Edit="Content:2"/>
+	<Place Parts_Homepage="Content:2"/>
+	<Match DisplayType="SummaryAdmin">
+		<Place Parts_Homepage="-"/>
+	</Match>
+</Placement>
