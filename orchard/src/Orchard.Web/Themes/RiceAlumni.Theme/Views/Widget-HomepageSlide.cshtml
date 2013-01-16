@@ -1,1 +1,12 @@
-﻿@Model.ContentItem.WidgetPart.Title
+﻿<!-- START SLIDE -->
+<li>
+	<img  src="@Url.Content(Model.ContentItem.HomepagePrimaryImage.Image.FileName)" alt="@Model.ContentItem.HomepagePrimaryImage.Image.AlternateText" />
+	<div class="container" style="width:100%">
+		<div class="columnRight">
+			<h1>@Model.ContentItem.WidgetPart.Title</h1>
+			<p>@Model.ContentItem.BodyPart.Text</p>
+			<a class="btn" href="@Model.ContentItem.HomepagePart.LinkTarget">@Model.ContentItem.HomepagePart.LinkText &#8594;</a>
+		</div>
+	</div>
+		  	  
+</li>

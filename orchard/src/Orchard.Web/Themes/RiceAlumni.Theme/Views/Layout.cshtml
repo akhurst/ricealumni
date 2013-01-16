@@ -15,7 +15,7 @@
     SetMeta("viewport", "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no");
     SetMeta("width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no","yes");
     Style.Include("http://fonts.googleapis.com/css?family=Lobster&subset=latin");
-    Style.Include("site.css");
+   // Style.Include("site.css");
 	Style.Include("normalize.min.css");
 	Style.Include("main.css");
 	Style.Include("superslides.css");
@@ -125,96 +125,43 @@
 
 
         
+		@if(Model.Slides!=null)
+		{
+			<!-- START MAIN SLIDE CONTAINER -->
+			<div id="slides">
 		
-		 <!-- START MAIN SLIDE CONTAINER -->
-		<div id="slides">
-		
-		<div class="header-container">
-		    <header class="wrapper clearfix">
+				<div class="header-container">
+					<header class="wrapper clearfix">
 		        
 		       
-		        <a href="http://alumni.rice.edu/home.html" class="logo">Rice</a>
+						<a href="http://alumni.rice.edu/home.html" class="logo">Rice</a>
 		        
-		        <nav>
-		        	<a class="toggleMenu" href="#"></a>
-		            <ul class="nav" id="nav">
-		                <li class="feat"><a  href="#">Alumni Resources</a></li>
-		                <!--<li><a href="about.html">About the ARA</a></li>-->
-		                <li class="last"><a href="http://alumni.rice.edu/home.html">Office of Alumni Affairs</a></li>
-		            </ul>
-		        </nav>
-		    </header>
-		</div>
+						<nav>
+							<a class="toggleMenu" href="#"></a>
+							<ul class="nav" id="nav">
+								<li class="feat"><a  href="#">Alumni Resources</a></li>
+								<!--<li><a href="about.html">About the ARA</a></li>-->
+								<li class="last"><a href="http://alumni.rice.edu/home.html">Office of Alumni Affairs</a></li>
+							</ul>
+						</nav>
+					</header>
+				</div>
 		
-		 <!-- START SLIDES -->
-		  <ul class="slides-container">
-		  	
-		  	<!-- START SLIDE -->
-		  	<li>
-		  	  <img  src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Content/Images/1.jpg"))" alt="Events Calendar ">
-               <div class="container" style="width:100%">
-                <div class="columnRight">
-                 <h1>Events Calendar </h1>
-                 <p>The Association of Rice Alumni sponsors events throughout the year: on campus, in major cities throughout the United States, and beyond.</p>
-                 <a class="btn" href="http://alumni.cgi.rice.edu/events/calendar.php">Find Upcoming Events &#8594;</a>
-                 </div>
-              </div>
-		  	  
-		  	</li>
+				<!-- START SLIDES -->
+				<ul class="slides-container">
 		  	
 		  	
-		    <!-- START SLIDE -->
-		    <li>
-		      <img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Content/Images/2.jpg"))" alt="Alumni Groups">
-		      <div class="container" style="width:100%">
-		      	<div class="columnRight">
-		         <h1>Alumni Groups</h1>
-		         <p>So you want to get together with fellow alumni and friends? A number of groups provide opportunities for members of the Rice community to unite around common interests.</p>
-		         <a class="btn" href="http://alumni.rice.edu/alumni_groups.html">Search our Groups &#8594;</a>
-		         </div>
-		      </div>
-		    </li>
-
-
-		     <!-- START SLIDE -->
-		    <li>
-		      <img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Content/Images/3.jpg"))" alt="Rice Young Alumni">
-              <div class="container" style="width:100%">
-                <div class="columnRight">
-                 <h1>Rice Young Alumni</h1>
-                 <p>As a Rice Young Alum, countless resources are made available to you on campus, in the Rice Community and around the globe.</p>
-                 <a class="btn" href="http://alumni.rice.edu/youngalum_stds.html">Access Resources and Programs &#8594;</a>
-                 </div>
-              </div>
-		     
-		    </li>
-
-
-
-		     <!-- START SLIDE -->
-		    <li>
-		      <img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Content/Images/4.jpg"))" alt="Career Connection">
-
-              <div class="container" style="width:100%">
-                <div class="columnRight">
-                 <h1>Career Connection</h1>
-                 <p>A searchable database of alumni who have agreed to make themselves available to Rice students and to fellow alums for information about their job field.</p>
-                 <a class="btn" href="http://alumni.rice.edu/career_connection.html">See Networking Opportunities &#8594;</a>
-                 </div>
-              </div>
-		      
-		    </li>
-		    
+					@Zone(Model.Slides)
 		  
-		  </ul>
+				</ul>
 		  
 		  
-		  <nav class="slides-navigation">
-		    <a href="#" class="next"></a>
-		    <a href="#" class="prev"></a>
-		  </nav>
-		</div>
-		
+				<nav class="slides-navigation">
+					<a href="#" class="next"></a>
+					<a href="#" class="prev"></a>
+				</nav>
+			</div>
+		}
 		
 		
 		

@@ -608,7 +608,18 @@
     <ModuleName>RiceAlumni.Theme</ModuleName>
     <VirtualPath>~/Themes/RiceAlumni.Theme/bin/RiceAlumni.Theme.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
-    <References />
+    <References>
+      <Reference>
+        <Name>CsQuery</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Themes/RiceAlumni.Theme/bin/CsQuery.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>HtmlAgilityPack</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Themes/RiceAlumni.Theme/bin/HtmlAgilityPack.dll</VirtualPath>
+      </Reference>
+    </References>
   </Dependency>
   <Dependency>
     <ModuleName>SafeMode</ModuleName>
