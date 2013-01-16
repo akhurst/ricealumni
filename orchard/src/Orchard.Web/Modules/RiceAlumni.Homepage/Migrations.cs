@@ -42,8 +42,8 @@ namespace RiceAlumni.Homepage
 			ContentDefinitionManager.AlterPartDefinition("HomepagePrimaryImage", part => part
 				.WithField("Image", field => field
 					.OfType("ImageField")
-					.WithSetting("ImageFieldSettings.Width", "691")
-					.WithSetting("ImageFieldSettings.Height", "95")
+					.WithSetting("ImageFieldSettings.Width", "1980")
+					.WithSetting("ImageFieldSettings.Height", "650")
 					.WithSetting("ImageFieldSettings.ResizeAction", "Validate")
 				)
 			);
