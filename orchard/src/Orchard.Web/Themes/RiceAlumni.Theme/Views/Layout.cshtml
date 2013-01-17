@@ -24,40 +24,14 @@
     Style.Include("http://fonts.googleapis.com/css?family=Lato:300,400,700");
     Script.Require("jQuery");
 
-    Script.Include("jquery.easing.1.3.js").AtFoot();
-    Script.Include("jquery.animate-enhanced.min.js").AtFoot();
-    Script.Include("jquery.superslides.js").AtFoot();
-    Script.Include("jquery.flexslider-min.js").AtFoot();
-    Script.Include("hammer.js").AtFoot();
-    Script.Include("jquery.specialevent.hammer.js").AtFoot();
-    Script.Include("main.js").AtFoot();
-
     /* Some useful shortcuts or settings
     ***************************************************************/
 
     Func<dynamic, dynamic> Zone = x => Display(x); // Zone as an alias for Display to help make it obvious when we're displaying zones
 
-    /* Layout classification based on filled zones
-    ***************************************************************/
-
-    //Add classes to the wrapper div to toggle aside widget zones on and off
-    var asideClass = CalcuClassify(new[] { "AsideFirst", "AsideSecond" }, "aside-"); // for aside-1, aside-2 or aside-12 if any of the aside zones are filled
-    if (HasText(asideClass))
-    {
-        Model.Classes.Add(asideClass);
-    }
-
-    //Add classes to the wrapper div to toggle tripel widget zones on and off
-    var tripelClass = CalcuClassify(new[] { "TripelFirst", "TripelSecond", "TripelThird" }, "tripel-"); // for tripel-1, triple-2, etc. if any of the tripel zones are filled
-    if (HasText(tripelClass))
-    {
-        Model.Classes.Add(tripelClass);
-    }
-
     /* Inserting some ad hoc shapes
     ***************************************************************/
 
-    WorkContext.Layout.Header.Add(New.Branding(), "5"); // Site name and link to the home page
     WorkContext.Layout.Footer.Add(New.BadgeOfHonor(), "5"); // Powered by Orchard
     WorkContext.Layout.Footer.Add(New.User(), "10"); // Login and dashboard links
 
@@ -134,148 +108,62 @@
 </div>
 <!-- // #section-topbar -->
 
-
-
-<div id="section-sliditnow" style="position: relative">
-	@if(Model.Slides!=null)
+	@if (Model.Slides != null)
 	{
-		<!-- Slideshow 1 -->
-		<div class="rslides" id="slider4">
-			@Zone(Model.Slides)
+		<div id="section-sliditnow" style="position: relative">
+			<!-- Slideshow 1 -->
+			<div class="rslides" id="slider4">
+				@Zone(Model.Slides)
 
+			</div>
 		</div>
 	}
-</div>
 
+@{
+	<div id="section-anotherabout">
+		<div class="container">
+			<div class="sixteen columns headitadvert">
 
+				<ul id="slider1">
+					<li>
+						<img src="#" height="90" width="728" style="margin: 0 auto;" /></li>
+				</ul>
 
+			</div>
+			<!-- // .sixteen -->
 
+			<div class="clear"></div>
 
+			<div class="sixteen columns">
+				<h1 class="titleofsec">Alumni Resources</h1>
+			</div>
+			<div id="homepage-link-container">
 
+            @Zone(Model.Links)
 
 
+                </div>
 
 
 
 
 
 
-<div id="section-anotherabout">
-    <div class="container">
-        <div class="sixteen columns headitadvert">
+			<div class="clear"></div>
 
-            <ul id="slider1">
-                <li>
-                    <img src="#" height="90" width="728" style="margin: 0 auto;" /></li>
-            </ul>
 
-        </div>
-        <!-- // .sixteen -->
 
-        <div class="clear"></div>
 
 
-        <div class="sixteen columns">
-            <h1 class="titleofsec">Alumni Resources</h1>
-        </div>
 
 
 
-        <div class="five columns ">
-            <h2><a href="http://alumni.cgi.rice.edu/events/calendar.php">Events Calendar</a></h2>
-            <img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Content/Images/link_event.jpg"))" class="linkimg"/>
-            <p>The Association of Rice Alumni sponsors events throughout the year: on campus, in major cities throughout the United States, and beyond. </p>
-            <a href="http://alumni.cgi.rice.edu/events/calendar.php" class="exitlink">Find Upcoming Events &#8594;</a>
-            <div class="clear"></div>
-        </div>
-        <!-- // .eight -->
-
-        <div class="five columns">
-        </div>
-        <!-- // .eight -->
-
-
-
-        <div class="five columns">
-            <h2><a href="http://alumni.rice.edu/alumni_groups.html">Alumni Groups</a></h2>
-            <img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Content/Images/link_groups.jpg"))" class="linkimg"/>
-            <p>So you want to get together with fellow alumni and friends? A number of groups provide opportunities for members of the Rice community to unite around common interests.</p>
-            <a href="http://alumni.rice.edu/alumni_groups.html" class="exitlink">Search our Groups &#8594;</a>
-        </div>
-        <!-- // .eight -->
-
-
-
-
-        <div class="five columns">
-            <h2><a href="http://alumni.rice.edu/youngalum_stds.html">Rice Young Alumni</a></h2>
-            <img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Content/Images/link_young.jpg"))" class="linkimg"/>
-            <p>As a Rice Young Alum, countless resources are made available to you on campus, in the Rice Community and around the globe.</p>
-            <a href="http://alumni.rice.edu/youngalum_stds.html" class="exitlink">Access Resources and Programs &#8594;</a>
-        </div>
-        <!-- // .eight -->
-
-
-        <div class="clear"></div>
-
-
-        <div class="five columns">
-
-            <h2><a href="http://alumni.rice.edu/career_connection.html">Career Connection</a></h2>
-            <img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Content/Images/link_career.jpg"))" class="linkimg"/>
-            <p>A searchable database of alumni who have agreed to make themselves available to Rice students and to fellow alums for information about their job field. </p>
-            <a href="http://alumni.rice.edu/career_connection.html" class="exitlink">See Networking Opportunities &#8594;</a>
-
-
-        </div>
-        <!-- // .eight -->
-
-
-
-
-        <div class="five columns">
-            <h2><a href="http://alumni.rice.edu/learning_trav.html">Learning & Travel</a></h2>
-            <img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Content/Images/link_learn.jpg"))" class="linkimg"/>
-            <p>The mission of the Association of Rice Alumni includes a commitment to lifelong learning.</p>
-            <a href="http://alumni.rice.edu/learning_trav.html" class="exitlink">View Services and Programs &#8594;</a>
-        </div>
-        <!-- // .eight -->
-
-
-
-
-        <div class="five columns">
-
-            <h2><a href="http://giving.rice.edu/">Give to Rice</a></h2>
-            <img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Content/Images/link_give.jpg"))" class="linkimg"/>
-            <p>Join us as we continue our journey toward a second century of original thought and tangible contributions to the world.</p>
-            <a href="http://giving.rice.edu/" class="exitlink">Make a Gift Now &#8594;</a>
-
-        </div>
-        <!-- // .eight -->
-
-
-
-
-
-
-
-
-        <div class="clear"></div>
-
-
-
-
-
-
-
-
-        <div class="clear"></div>
-    </div>
-    <!-- // .container -->
-</div>
-<!-- // #section-invite -->
-
+			<div class="clear"></div>
+		</div>
+		<!-- // .container -->
+	</div>
+	<!-- // #section-invite -->
+}
 
 
 <div id="section-about">
@@ -444,18 +332,25 @@
 
 
 
-
 <div id="section-footer">
-    <div class="container">
-        <div class="eight columns">
-            <p id="copytext">Copyright &copy; <a href="http://alumni.rice.edu/" title="">Rice University Alumni</a> @DateTime.Today.Year</p>
-        </div>
-        <!-- // .eight -->
+	<div class="container">
+		<div class="eight columns">
+			@if (Model.Footer != null)
+   {
+				@Zone(Model.Footer)
+   }
+		</div>
+		<!-- // .eight -->
+		@if (Model.FooterRight != null)
+  {
+			<div class="eight columns">
+				@Zone(Model.FooterRight)
+			</div>
+  }
 
 
-
-        <div class="clear"></div>
-    </div>
+		<div class="clear"></div>
+	</div>
     <!-- // .container -->
 </div>
 <!-- // #section-footer -->

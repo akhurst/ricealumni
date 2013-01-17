@@ -40,8 +40,6 @@ namespace RiceAlumni.StaffDirectory
 				);
 
 			ContentDefinitionManager.AlterTypeDefinition("StaffGroup", builder => builder
-				.Creatable()
-				.WithPart("StaffGroupPart")
 				//.WithPart("CommonPart", partBuilder => partBuilder.WithSetting("OwnerEditorSettings.ShowOwnerEditor", "false"))
 				.WithPart("CommonPart")
 				.WithPart("TitlePart")

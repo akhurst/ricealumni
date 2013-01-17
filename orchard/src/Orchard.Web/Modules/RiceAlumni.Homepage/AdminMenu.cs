@@ -27,13 +27,13 @@ namespace RiceAlumni.Homepage
 				item.Action("List", "Admin", new { area = "Contents", id = "HomepageSlide" }));
 
 			menu.Add(T("New Slide"), "1.2", item =>
-				item.Action("Create", "Admin", new { area = "Contents", id = "HomepageSlide" }));
+				item.Url("~/Admin/Widgets/AddWidget?layerId=9&widgetType=HomepageSlide&zone=Slides"));
 
 			menu.Add(T("Links"), "1.3", item =>
 				item.Action("List", "Admin", new { area = "Contents", id = "HomepageLink" }));
 
 			menu.Add(T("New Link"), "1.4", item =>
-			item.Action("Create", "Admin", new { area = "Contents", id = "HomepageLink" }));
+			item.Url("~/Admin/Widgets/AddWidget?layerId=9&widgetType=HomepageLink&zone=Links"));
 		}
 	}
 }

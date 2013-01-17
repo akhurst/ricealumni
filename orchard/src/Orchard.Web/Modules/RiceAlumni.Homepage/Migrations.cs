@@ -29,7 +29,6 @@ namespace RiceAlumni.Homepage
 
 			ContentDefinitionManager.AlterTypeDefinition("HomepageLink", builder => builder
 				.Draftable()
-				.Creatable()
 				.WithPart("WidgetPart")
 				.WithPart("CommonPart")
 				.WithPart("BodyPart", partBuilder => partBuilder.WithSetting("BodyTypePartSettings.Flavor", "text"))
@@ -50,7 +49,6 @@ namespace RiceAlumni.Homepage
 
 			ContentDefinitionManager.AlterTypeDefinition("HomepageSlide", builder => builder
 				.Draftable()
-				.Creatable()
 				.WithPart("WidgetPart")
 				.WithPart("CommonPart")
 				.WithPart("BodyPart", partBuilder => partBuilder.WithSetting("BodyTypePartSettings.Flavor", "text"))
