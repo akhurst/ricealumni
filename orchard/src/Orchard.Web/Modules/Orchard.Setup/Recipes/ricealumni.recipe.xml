@@ -51,3 +51,4 @@
 		theme activate "Association of Rice Alumni"
 	</Command>
 </Orchard>
+<!--enable these in core    , Orchard.Widgets.ControlWrapper, Contents.ControlWrapper-->

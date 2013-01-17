@@ -26,11 +26,11 @@ namespace RiceAlumni.StaffDirectory
 			menu.Add(T("Staff Profiles"), "1.1", item =>
 				item.Action("List", "Admin", new { area = "Contents", id = "StaffProfile" }));
 
-			menu.Add(T("New Staff Profile"), "1.2", item =>
-				item.Action("Create", "Admin", new { area = "Contents", id = "StaffProfile" }));
-
-			menu.Add(T("Staff Groups"), "1.3", item =>
+			menu.Add(T("Staff Groups"), "1.2", item =>
 				item.Action("List", "Admin", new { area = "Contents", id = "StaffGroup" }));
+
+			menu.Add(T("New Staff Profile"), "1.3", item =>
+			item.Action("Create", "Admin", new { area = "Contents", id = "StaffProfile" }));
 		}
 	}
 }
