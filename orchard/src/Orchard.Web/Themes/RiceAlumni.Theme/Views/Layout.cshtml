@@ -23,6 +23,16 @@
     Style.Include("responsive_custom.css");
     Style.Include("http://fonts.googleapis.com/css?family=Lato:300,400,700");
     Script.Require("jQuery");
+	Script.Include("selectnav.min.js").AtFoot();
+	Script.Include("bootstrap-scrollspy.js").AtFoot();
+	Script.Include("tabcontent.js").AtFoot();
+	Script.Include("twitter-feed.js").AtFoot();
+	Script.Include("rotate.js").AtFoot();
+	Script.Include("facebook_wall.plugin.js").AtFoot();
+	Script.Include("script.js").AtFoot();
+	Script.Include("masonry.js").AtFoot();
+	Script.Include("responsiveslides.js").AtFoot();
+	Script.Include("http://api.twitter.com/1/statuses/user_timeline.json?screen_name=ricealumni&include_rts=true&count=4&callback=twitterCallback2").AtFoot();
 
     /* Some useful shortcuts or settings
     ***************************************************************/
@@ -109,17 +119,22 @@
 <!-- // #section-topbar -->
 
 	@if (Model.Slides != null)
-	{
-		<div id="section-sliditnow" style="position: relative">
-			<!-- Slideshow 1 -->
-			<div class="rslides" id="slider4">
+ {
+				
+                
+                
+              
+
+                
+                
+                
+                
+
 				@Zone(Model.Slides)
 
-			</div>
-		</div>
-	}
+ }
 
-@{
+@if(Model.Links!=null){
 	<div id="section-anotherabout">
 		<div class="container">
 			<div class="sixteen columns headitadvert">
@@ -165,145 +180,10 @@
 	<!-- // #section-invite -->
 }
 
-
-<div id="section-about">
-    <div class="container">
-
-        <div class="seven columns">
-            <h2>Follow us on facebook</h2>
-            <br />
-
-
-
-            <p>Experience Rice University for an Unforgettable Weekend</p>
-
-
-
-            <div class="fb-like" data-href="http://alumni.rice.edu/alumnicollege/" data-send="true" data-layout="button_count" data-width="300" data-show-faces="false" data-action="recommend"></div>
-
-
-        </div>
-        <!-- // .eight -->
-
-        <div class="eight offset-by-one columns">
-            <div class="item">
-
-
-
-                <ul id="medrec">
-                    <li>
-                        <img src="#" height="250" width="300" style="margin: 0 auto;" /></li>
-                </ul>
-
-
-            </div>
-            <!-- // .item -->
-        </div>
-        <!-- // .eight -->
-
-
-
-
-
-
-        <div class="clear"></div>
-
-
-
-
-    </div>
-    <!-- // .container -->
-</div>
-<!-- // #section-about -->
-
-<div id="wrapper">
-
-
-    <div class="container spwall">
-
-        <div class="sixteen columns">
-            <h1 class="titleofsec">From the blog...</h1>
-            <div class="clear"></div>
-        </div>
-
-        <div class="clear"></div>
-
-        <ul id="facebook_wall" class="facebook_wall standard"></ul>
-
-        <div class="clear"></div>
-    </div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div id="section-sponsors">
-    <div class="container">
-
-        <div class="sixteen columns headitadvert">
-
-
-            <ul id="sliderbottom">
-                <li>
-                    <img src="#" height="90" width="728" style="margin: 0 auto;" /></li>
-            </ul>
-
-        </div>
-        <!-- // .sixteen -->
-
-        <div class="clear"></div>
-
-
-        <div class="sixteen columns centered">
-
-            <img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Content/Images/twitter-bird-hover.png"))" />
-            <div class="clear"></div>
-
-            <a href="https://twitter.com/share" class="twitter-share-button" data-via="ricealumni" data-related="ricealumni">Tweet</a>
-            <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
-            <div class="clear"></div>
-
-
-
-
-            <div class="twitter-feed">
-                <ul id="twitter_update_list" class="rotate"></ul>
-
-
-
-            </div>
-            <div style="height: 50px"></div>
-        </div>
-
-
-
-
-
-
-
-
-
-        <div class="clear"></div>
-    </div>
-    <!-- // .container -->
-</div>
-<!-- // #section-sponsors -->
-
-
-
-
+@if(Model.Social!=null)
+{
+	@Zone(Model.Social)
+}
 
 <div id="section-invite">
     <div class="container">
@@ -358,22 +238,8 @@
 
 
 
-@*	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>*@
+@*<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>*@
 
-<script src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Scripts/selectnav.min.js"))"></script>
-<script src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Scripts/bootstrap-scrollspy.js"))"></script>
-<script src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Scripts/jquery.custom.js"))"></script>
-
-<script src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Scripts/tabcontent.js"))" type="text/javascript"></script>
-
-<script src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Scripts/twitter-feed.js"))"></script>
-<script src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Scripts/rotate.js"))"></script>
-
-<script src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Scripts/facebook_wall.plugin.js"))"></script>
-<script src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Scripts/script.js"))"></script>
-<script src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Scripts/masonry.js"))"></script>
-
-<script src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Scripts/responsiveslides.js"))"></script>
 
 
 
@@ -478,7 +344,6 @@
 </script>
 
 
-<script src="http://api.twitter.com/1/statuses/user_timeline.json?screen_name=ricealumni&include_rts=true&count=4&callback=twitterCallback2" type="text/javascript"></script>
 
 <script>
     /*$(".viewhots").click(function() {

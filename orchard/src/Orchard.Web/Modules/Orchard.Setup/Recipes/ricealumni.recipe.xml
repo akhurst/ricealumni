@@ -48,6 +48,7 @@
 		widget create MenuWidget /Title:"Main Menu" /RenderTitle:false /Zone:"Navigation" /Position:"1" /Layer:"NotHomepage" /Identity:"MenuWidget1" /MenuName:"Main Menu"
 		widget create MenuWidget /Title:"Home Menu" /RenderTitle:false /Zone:"Navigation" /Position:"2" /Layer:"TheHomepage" /Identity:"MenuWidget3" /MenuName:"Home Menu"
 		widget create MenuWidget /Title:"Footer Menu" /RenderTitle:false /Zone:"FooterRight" /Position:"1" /Layer:"Default" /Identity:"MenuWidget2" /MenuName:"Footer Menu"
+		widget create HtmlWidget /Title:"Social Block" /RenderTitle:false /Zone:"Social" /Position:"1" /Layer:"TheHomepage" /Identity:"SocialBlock"
 		theme activate "Association of Rice Alumni"
 	</Command>
 </Orchard>

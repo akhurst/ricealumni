@@ -208,9 +208,6 @@
     <Folder Include="Zones\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Layout-old.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\BadgeOfHonor.cshtml">
       <SubType>
       </SubType>
@@ -253,6 +250,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Widget-HomepageLink.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Zone-Slides.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
