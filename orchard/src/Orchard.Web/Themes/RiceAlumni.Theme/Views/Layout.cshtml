@@ -26,13 +26,11 @@
 	Script.Include("selectnav.min.js").AtFoot();
 	Script.Include("bootstrap-scrollspy.js").AtFoot();
 	Script.Include("tabcontent.js").AtFoot();
-	Script.Include("twitter-feed.js").AtFoot();
 	Script.Include("rotate.js").AtFoot();
-	Script.Include("facebook_wall.plugin.js").AtFoot();
 	Script.Include("script.js").AtFoot();
 	Script.Include("masonry.js").AtFoot();
 	Script.Include("responsiveslides.js").AtFoot();
-	Script.Include("http://api.twitter.com/1/statuses/user_timeline.json?screen_name=ricealumni&include_rts=true&count=4&callback=twitterCallback2").AtFoot();
+	Script.Include("homepage.js").AtFoot();
 
     /* Some useful shortcuts or settings
     ***************************************************************/
@@ -90,20 +88,13 @@
     <div id="topbar-inner">
         <div class="container">
             <div class="sixteen columns">
-                <div class="dropdown">
-                    <img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Content/Images/rice_alumni_logo.png"))" class="headlogo"/>
-
-                    <ul id="nav" class="nav">
-
-                        <li class="menu-item"><a href="#section-event">Home</a></li>
-                        <li class="menu-item"><a href="#section-anotherabout">About</a></li>
-                        <li class="menu-item"><a href="#section-programs">Schedule</a></li>
-                        <li class="menu-item"><a href="#section-fees">Price</a></li>
-                        <li class="menu-item"><a href="#section-speakers">Classes</a></li>
-                        <li class="menu-item"><a href="#section-map">Lodging</a></li>
-                    </ul>
-                    <!-- // uL#nav -->
-                </div>
+				<div class="dropdown">
+					<img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Content/Images/rice_alumni_logo.png"))" class="headlogo"/>
+					@if(Model.Navigation!=null)
+					{
+						@Zone(Model.Navigation)
+					}
+				</div>
                 <!-- // .dropdown -->
 
                 <div class="clear"></div>
@@ -237,127 +228,6 @@
 
 
 
-
-@*<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>*@
-
-
-
-
-<script>
-    // You can also use "$(window).load(function() {"
-    $(function () {
-
-
-
-        $("#slider4").responsiveSlides({
-            auto: false,
-            pager: false,
-            nav: true,
-            speed: 500,
-            namespace: "callbacks",
-            before: function () {
-                $('.events').append("<li>before event fired.</li>");
-            },
-            after: function () {
-                $('.events').append("<li>after event fired.</li>");
-            }
-        });
-
-
-        $("#slider1").responsiveSlides({
-            maxwidth: 728,
-            speed: 800
-        });
-
-
-
-
-        $("#sliderbottom").responsiveSlides({
-            maxwidth: 728,
-            speed: 800
-        });
-
-        $("#medrec").responsiveSlides({
-            maxwidth: 300,
-            speed: 800
-        });
-
-
-
-        /*
-   
-   
-        // Slideshow 1
-         $("#slider1").responsiveSlides({
-           //maxwidth: 800,
-           speed: 800
-         });
-   
-         // Slideshow 2
-         $("#slider2").responsiveSlides({
-           auto: false,
-           pager: true,
-           speed: 300,
-           maxwidth: 540
-         });
-   
-         // Slideshow 3
-         $("#slider3").responsiveSlides({
-           manualControls: '#slider3-pager',
-           maxwidth: 540
-         });
-   
-         // Slideshow 4
-         $("#slider4").responsiveSlides({
-           auto: false,
-           pager: false,
-           nav: true,
-           speed: 500,
-           namespace: "callbacks",
-           before: function () {
-             $('.events').append("<li>before event fired.</li>");
-           },
-           after: function () {
-             $('.events').append("<li>after event fired.</li>");
-           }
-         });
-   
-   */
-
-    });
-</script>
-
-<script>
-
-
-
-    $(window).load(function () {
-        $('#facebook_wall').masonry({ itemSelector: '.post' });
-
-
-    });
-
-
-
-
-
-</script>
-
-
-
-<script>
-    /*$(".viewhots").click(function() {
-  		$(".mapoverlayit").fadeOut(300, function() { $(this).remove(); });
-});
-
-*/
-
-    $(document).ready(function () {
-        //$("select.selectnav option").val($("#select.selectnav option:first").val());
-    });
-
-
-</script>
 
 
 

@@ -164,7 +164,8 @@
     <Content Include="Content\Images\vcolvin.jpg" />
     <Content Include="Scripts\bootstrap-scrollspy.js" />
     <Content Include="Scripts\facebook_wall.plugin.js" />
-    <Content Include="Scripts\jquery.custom.js" />
+    <Content Include="Scripts\homepage-social.js" />
+    <Content Include="Scripts\homepage.js" />
     <Content Include="Scripts\masonry.js" />
     <Content Include="Scripts\responsiveslides.js" />
     <Content Include="Scripts\rotate.js" />
@@ -214,15 +215,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Pager.Last.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Pager.First.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Pager.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Content-url-staff-directory.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -253,6 +245,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Zone-Slides.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Widget-Social.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MenuItemLink-main-menu.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

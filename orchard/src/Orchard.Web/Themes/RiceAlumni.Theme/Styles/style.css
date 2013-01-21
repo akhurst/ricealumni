@@ -97,36 +97,36 @@ img { max-width: 100%; }
 
 
 	
-	#section-topbar ul#nav {
+	#section-topbar ul.menu-main-menu {
 		display: block;
 		float: right;
 		position: relative;
 		margin: 0;
 	}
 
-	#section-topbar ul#nav > li {
+	#section-topbar ul.menu-main-menu > li {
 		display: block;
 		float: left;
 	}
 
 
-	#section-topbar ul#nav a {
+	#section-topbar ul.menu-main-menu a {
 	  display: block;
 	  padding: 10px 20px 15px 20px;
 	  font: normal 12px/18px 'Lato', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	  text-decoration: none;
 	}
 
-		#section-topbar ul#nav a {
+		#section-topbar ul.menu-main-menu a {
 			border-top: 3px solid #005184;
 		}
 
-		#section-topbar ul#nav a:hover {
+		#section-topbar ul.menu-main-menu a:hover {
 		  border-top: 3px solid #eee;
 		  text-decoration: none;
 		}
 
-		#section-topbar ul#nav .active a {
+		#section-topbar ul.menu-main-menu .active a {
 			border-top: 3px solid #2E76FF;
 		}
 

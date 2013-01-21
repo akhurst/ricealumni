@@ -45,18 +45,18 @@
         }
 
         /* Style the menu in case user doesn't have javascript */
-        #section-topbar ul#nav {
+        #section-topbar ul.menu-main-menu {
             float: right;
             position: relative;
             margin-top: 5px;
         }
 
-        #section-topbar ul#nav > li {
+        #section-topbar ul.menu-main-menu > li {
             display: block;
             float: left;
         }
 
-        #section-topbar ul#nav a {
+        #section-topbar ul.menu-main-menu a {
           display: block;
           padding: 10px 20px 15px 20px;
           font: normal 11px/18px 'Lato', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -65,18 +65,18 @@
           border-top: 3px solid #000;
         }
 
-            #section-topbar ul#nav a:hover {
+            #section-topbar ul.menu-main-menu a:hover {
               border-top: 3px solid #fff;
               text-decoration: none;
             }
 
-            #section-topbar ul#nav .active a {
+            #section-topbar ul.menu-main-menu .active a {
                 border-top: 3px solid #fff;
             }
 
 
         /* Hide the regular menu and display a select box (javascript in js/jquery.custom.js) */
-        .js #nav { display: none!important; }
+        .js .menu-main-menu { display: none!important; }
         .js .selectnav { display: block; }
 
 

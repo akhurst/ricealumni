@@ -1,4 +1,11 @@
-﻿<div id="section-about">
+﻿@{
+	Script.Include("homepage-social.js").AtFoot();
+	Script.Include("twitter-feed.js").AtFoot();
+	Script.Include("facebook_wall.plugin.js").AtFoot();
+	Script.Include("http://api.twitter.com/1/statuses/user_timeline.json?screen_name=ricealumni&include_rts=true&count=4&callback=twitterCallback2").AtFoot();
+}
+
+<div id="section-about">
     <div class="container">
 
         <div class="seven columns">
