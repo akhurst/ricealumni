@@ -1,0 +1,804 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "images/btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "images/btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=350,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (srch.alum.checked == true){
+	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (srch.rice.checked == true){
+	srch.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  srch.submit();
+
+}
+
+function checkKey(evt){
+
+	srch.search.value=srch.q.value;
+	if (evt.keyCode == 13 && srch.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+</script>
+<script language="JavaScript1.2">
+<!--
+
+var head="display:''"
+function doit(header){
+var head=header.style
+if (head.display=="none")
+head.display=""
+else
+head.display="none"
+}
+//-->
+</script>
+<SCRIPT language=javascript src="popunder.js"></SCRIPT>
+<STYLE type=text/css>
+TD {FONT: 10pt arial}
+</STYLE>
+</head>
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top">
+          <td width="221" rowspan="2"><a href="index.html"><img src="images/logo.gif" width="221" height="94" alt="Association of Rice Alumni" border="0"></a><br>
+            <table width="191" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="http://alumni.cgi.rice.edu/events/calendar.php">EVENTS CALENDAR</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="alumni_groups.html">ALUMNI GROUPS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="youngalum_stds.html">YOUNG ALUMNI /STUDENTS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="career_connection.html">CAREER CONNECTION</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="volunteer.html">VOLUNTEER</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="learning_trav.html">LEARNING &amp; TRAVEL</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="honors_awards.html">HONORS &amp; AWARDS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="new_at_rice.html">WHAT'S NEW @ RICE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="about_alumassoc.html">ABOUT THE ARA</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="faq_file.html">FAQ 
+                        FILE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="http://giving.rice.edu" target="_blank">GIVE TO RICE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+          <td align="right"><img src="images/clear.gif" width="100" height="20"><br>
+            <img src="images/subpic_about.jpg" width="526" height="56" ="Photo Of Rice Campus"> 
+          </td>
+        </tr>
+        <tr valign="top">
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td colspan="4">&nbsp;</td>
+              </tr>
+              <tr valign="top">
+                <td width="414"><p><img src="images/sub_title_status.gif" width="410" height="17" alt="About Alumni Association"></p>
+                  <table class="mainTable" border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tr valign="top"> 
+                      <td class="mainSmall"> <strong>March 17, 2011<br>
+                        Notice to alumni using Road Runner email addresses<br>
+                        <br>
+                      </strong>If you are an alum who uses a Road Runner 
+                          email address as the destination address for your alumni 
+                          forwarding account (username@alumni.rice.edu), please note that 
+                          Road Runner is currently  blocking emails sent through 
+                          the forwarding accounts  from Rice and other forwarding providers (i.e., they 
+                          are marking them as SPAM).<br>
+                          <br>
+We are working with Road Runner to resolve the issue, but 
+                          unfortunately they continue to  block emails 
+                          from the Rice forwarding domain. Until the situation is resolved, we encourage users, when possible, 
+                          to use a different destination address for their email forwarding 
+                          account and for their primary address to receive information 
+                          from Rice. Alumni can update their information by logging 
+                          in to the <a href="http://online.alumni.rice.edu">online 
+                          alumni directory</a>. 
+                        
+                        <br>
+                        <br>
+                        Update: We have been advised that Rice mail is no longer being blocked. Road Runner limits the amount of mail that can go through the queue, so the backlog can't all be released immediately. They expect significant progress in clearing the backlog over the course of the evening of 3/17.</p>
+                          
+                        <hr>
+                        <p><strong>October 19, 2009<br>
+                          Fraudulent email warning</strong><br>
+                          <br>
+                          Please be aware that <strong>fraudulent</strong> messages 
+                          continue to be sent to Rice faculty, staff, students, 
+                          and some alumni email accounts that claim to be from 
+                          Rice IT or Rice Webmail Support. They ask you to click 
+                          on a link to patch some issue with your computer or 
+                          email account. <span class="mainSmallred"><strong>These 
+                          are phishing messages and may contain viruses. They 
+                          should be deleted upon receipt. Do not reply to the 
+                          message. </strong></span> The senders are in no way 
+                          affiliated with Rice or the ARA. <br>
+                          <br>
+                          Samples of such an email sent to alumni may contain 
+                          the subject line &quot;Read Carefully - Important User 
+                          Notification,&quot; Verify Your E-Mail Account,&quot; 
+                          &quot;Email Upgrade,&quot; &quot;Confirm Your E-Mail 
+                          Address,&quot; or &quot;Information from Rice support 
+                          group&quot; and purport to be from email addresses like 
+                          &quot;admin@alumni.rice.edu,&quot; &quot;helpdesk@rice.edu,&quot; 
+                          or &quot;support@rice.edu.&quot; Please note that the 
+                          details of the emails vary, but generally contain something 
+                          like this: </p>
+                        <blockquote> 
+                          <table border="0" bgcolor="#ECECEC" cellspacing="5">
+                            <tr> 
+                              <td class="mainSmall"><p>Attention!<br>
+                                  <br>
+                                  On October 22, 2009 server upgrade will take 
+                                  place. Due to this the system may be offline 
+                                  for approximately half an hour.<br>
+                                  The changes will concern security, reliability 
+                                  and performance of mail service and the system 
+                                  as a whole. <br>
+                                  For compatibility of your browsers and mail 
+                                  clients with upgraded server software you should 
+                                  run SSl certificates update procedure.<br>
+                                  This procedure is quite simple. All you have 
+                                  to do is just to click the link provided, to 
+                                  save the patch file and then to run it from 
+                                  your computer location. That's all.<br>
+                                  <br>
+                                  [link here]<br>
+                                  <br>
+                                  Thank you in advance for your attention to this 
+                                  matter and sorry for possible inconveniences.<br>
+                                  <br>
+                                  System Administrator</p>
+                                <p>&nbsp; </p>                              </td>
+                            </tr>
+                          </table>
+                        </blockquote>
+                        <p>The senders often harvest user addresses from websites 
+                          and infected computers and also randomly guess addresses 
+                          based on common names and words.<br>
+                          <br>
+                          If you are ever uncertain of the authenticity of a message 
+                          from the alumni office, please call us at 713-348-4057 
+                          or contact us <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('2O9VPONywGJiHYr8KJVcQz')">by 
+                          email</a>. Please note that email addresses for Rice 
+                          alumni volunteers listed on the alumni website are shielded 
+                          from spambots through a special system we use.</p>
+                        <hr>
+                        <p><strong>April 22, 2009<br>
+                          Fraudulent email warning</strong><br>
+                          <br>
+                          Please be aware that <strong>fraudulent</strong> messages 
+                          are being sent to Rice faculty, staff, students, and 
+                          some alumni email accounts that claim to be from Rice 
+                          IT or Rice Webmail Support. They ask you reply with 
+                          your password or follow a link to verify your account 
+                          and threaten the deletion of the user's account. <span class="mainSmallred"><strong>These 
+                          are phishing messages and may contain viruses. They 
+                          should be deleted upon receipt. Do not reply to the 
+                          message. </strong></span> The senders are in no way 
+                          affiliated with Rice or the ARA. <br>
+                          <br>
+                          Samples of such an email sent to alumni may contain 
+                          the subject line &quot;Verify Your E-Mail Account,&quot; 
+                          &quot;Email Upgrade,&quot; &quot;Confirm Your E-Mail 
+                          Address,&quot; or &quot;Information from Rice support 
+                          group&quot; and purport to be from email addresses like 
+                          &quot;helpdesk@rice.edu&quot; or &quot;support@rice.edu.&quot; 
+                          Please note that the details of the emails vary, but 
+                          generally contain something like this: </p>
+                        <blockquote> 
+                          <table border="0" bgcolor="#ECECEC" cellspacing="5">
+                            <tr> 
+                              <td class="mainSmall"><p>This message is from the 
+                                  University Alumni Association HelpDesk to all 
+                                  <br>
+                                  Email Account owners. We are currently updating 
+                                  our Email Database, so <br>
+                                  as to create more space for Alumnis. To prevent 
+                                  your Account from been <br>
+                                  deleted you will have to update it below so 
+                                  that we will know that it's <br>
+                                  presently used.</p>
+                                <p>Email Address: ...............<br>
+                                  EMAIL Password: ...............<br>
+                                  Date of Birth: ................</p>
+                                <p>Warning!!! Account owner that refuses to update 
+                                  his or her Account <br>
+                                  within Seven (7) days of receiving this warning 
+                                  may not be added to our <br>
+                                  University Alumni Association Database.</p>
+                                <p>THANKS,</p>
+                                <p>UNIVERSITY ALUMNI ASSOCIATION.<br>
+                                  Reply to: support2008@mail2webmaster.com</p>
+                                <p>CONFIDENTIALITY: This e-mail (including any 
+                                  attachments) may contain<br>
+                                  confidential, proprietary and privileged information, 
+                                  and unauthorized<br>
+                                  disclosure or use is prohibited. If you received 
+                                  this e-mail in error,<br>
+                                  please notify the sender and delete this e-mail 
+                                  from your system.<br>
+                                </p></td>
+                            </tr>
+                          </table>
+                          <br>
+                          <table border="0" bgcolor="#ECECEC" cellspacing="5">
+                            <tr> 
+                              <td class="mainSmall"><p>Dear rice.edu User,</p>
+                                <p>We would like to inform you that we are currently 
+                                  carrying out scheduled maintenance and upgrade 
+                                  of our rice.edu webmail service and as a result 
+                                  of this; our rice.edu client has been changed 
+                                  and your original password will reset. We are 
+                                  sorry for any inconvenience caused.</p>
+                                <p>To maintain your rice.edu account, you must 
+                                  reply to this email immediately and enter your 
+                                  current password here (******) Failure to do 
+                                  this within 48 hours will immediately render 
+                                  your rice.edu account deactivated from our database.</p>
+                                <p>Thank you for using the rice.edu account!</p>
+                                <p>&quot;RICE.EDU ACCOUNT SUPPORT TEAM&quot;.<br>
+                                  &copy;RICE.EDU ACCOUNT ACCOUNT ABN 31 088 377 
+                                  860 All Rights Reserved.<br>
+                                  E-Mail Account Maintenance<br>
+                                </p>                              </td>
+                            </tr>
+                          </table>
+                        </blockquote>
+                        <p>The senders often harvest user addresses from websites 
+                          and infected computers and also randomly guess addresses 
+                          based on common names and words.<br>
+                          <br>
+                          If you are ever uncertain of the authenticity of a message 
+                          from the alumni office, please call us at 713-348-4057 
+                          or contact us <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('2O9VPONywGJiHYr8KJVcQz')">by 
+                          email</a>. Please note that email addresses for Rice 
+                          alumni volunteers listed on the alumni website are shielded 
+                          from spambots through a special system we use.</p>
+                        <hr>
+                        <p><strong>March 26, 2009</strong><br>
+                          <br>
+                          The Association of Rice Alumni has begun updating online 
+                          services such as the Online Alumni Directory, Events 
+                          Registration, Rice Career Network, etc. Users may experience 
+                          periodic issues while accessing these services. If you 
+                          encounter persistent problems after March 30, please 
+                          contact us <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('2O9VPONywGJiHYr8KJVcQz')">by 
+                          email</a>. Thank you for your patience as we work to 
+                          improve our online services for alumni!</p>
+                        <hr>
+                        <p><strong>November 6, 2008<br>
+                          Notice to alumni using AT&amp;T/SBCGlobal email addresses</strong><br>
+                          <br>
+                          If you are an alum who uses an AT&amp;T or SBCGlobal 
+                          email address as the forwarding address for your alumni 
+                          forwarding account (username@alumni.rice.edu), or if 
+                          you use an AT&amp;T or SBC Global address as your primary 
+                          email address in the alumni directory, please note that 
+                          AT&amp;T is frequently blocking emails sent through 
+                          the forwarding account and from Rice users (i.e., they 
+                          are marking them as SPAM).<br>
+                          <br>
+                          We are working with AT&amp;T to resolve the issue, but 
+                          unfortunately they continue to periodically block emails 
+                          from Rice addresses. We encourage users, when possible, 
+                          to use a different email address for their email forwarding 
+                          account and for their primary address to receive information 
+                          from Rice. Alumni can update their information by logging 
+                          in to the <a href="http://online.alumni.rice.edu">online 
+                          alumni directory</a>.</p>
+                        <hr>
+                        <p><em>Updated and revised October 21, 2008:<br>
+                          </em><strong>August 6, 2008<br>
+                          Fraudulent email warning</strong><br>
+                          <br>
+                          Please be aware that <strong>fraudulent</strong> messages 
+                          are being sent to Rice faculty, staff, students, and 
+                          some alumni email accounts that claim to be from Rice 
+                          IT or Rice Webmail Support. They ask you reply with 
+                          your password or follow a link to verify your account 
+                          and threaten the deletion of the user's account. <span class="mainSmallred"><strong>These 
+                          are phishing messages and may contain viruses. They 
+                          should be deleted upon receipt. Do not reply to the 
+                          message. </strong></span> The senders are in no way 
+                          affiliated with Rice or the ARA. <br>
+                          <br>
+                          Samples of such an email may contain the subject line 
+                          &quot;Verify Your E-Mail Account,&quot; &quot;Email 
+                          Upgrade,&quot; &quot;Confirm Your E-Mail Address,&quot; 
+                          or &quot;Information from Rice support group&quot; and 
+                          purport to be from email addresses like &quot;helpdesk@rice.edu&quot; 
+                          or &quot;support@rice.edu.&quot; Please note that the 
+                          details of the emails vary, but generally contain something 
+                          like this: </p>
+                        <blockquote> 
+                          <table border="0" bgcolor="#ECECEC" cellspacing="5">
+                            <tr> 
+                              <td class="mainSmall"><p>Dear rice.edu Subscriber,<br>
+                                  <br>
+                                  We would like to inform you that we are currently 
+                                  carrying out scheduled maintenance and upgrade 
+                                  of our webmail service and as a result our email 
+                                  client has been changed and your orignal password 
+                                  will be reset. We are sorry for any inconvenience 
+                                  caused.<br>
+                                  <br>
+                                  To complete your rice.edu email account, you 
+                                  must reply to this email immediately and enter 
+                                  your password here (*********)<br>
+                                  <br>
+                                  *******************************<br>
+                                  CONFIRM YOUR EMAIL IDENTITY BELOW<br>
+                                  E-mail Username : ......... .....<br>
+                                  E-mail Password : ...............<br>
+                                  Date of Birth : ................<br>
+                                  Country or Territory : .........<br>
+                                  *******************************<br>
+                                  <br>
+                                  Failure to do this will immediately render your 
+                                  email address deactivated from our database.<br>
+                                  You can also confirm your email address by logging 
+                                  into your rice.edu account at https://webmail.mail.rice.edu/imp/login.php/<br>
+                                  <br>
+                                  Thank you for using rice.edu webmail!<br>
+                                  Computing and Telecommunication Services Team 
+                                  &copy;2008</p>                              </td>
+                            </tr>
+                          </table>
+                        </blockquote>
+                        <blockquote> 
+                          <table border="0" bgcolor="#ECECEC" cellspacing="5">
+                            <tr> 
+                              <td class="mainSmall"><p>Dear Rice Users.<br>
+                                  <br>
+                                  The reason for this message is because of the 
+                                  Email Scams &amp; Phishing going on the rice 
+                                  Network. We have decided to contact all our 
+                                  students and staffs to provide their password 
+                                  so that we can confirm the active users and 
+                                  to de-activate the inactive user. We regret 
+                                  the inconveniences this might have cost you.<br>
+                                  <br>
+                                  Please provide us with the below details.<br>
+                                  <br>
+                                  Username:<br>
+                                  Password:<br>
+                                  <br>
+                                  With the above details we can verify active 
+                                  https://webmail.mail.rice.edu/imp/login.php?<br>
+                                  <br>
+                                  Information Technology 6100 Main, Houston, Texas 
+                                  77005-1827 Mailing Address: P.O. Box 1892, Houston, 
+                                  Texas 77251-1892</p>
+                                <p>&copy;2008 Rice University Rice Home University 
+                                  Calendar Rice A-Z Maps-Directions Feedback<br>
+                                </p></td>
+                            </tr>
+                          </table>
+                        </blockquote>
+                        <p>The senders often harvest user addresses from websites 
+                          and infected computers and also randomly guess addresses 
+                          based on common names and words.<br>
+                          <br>
+                          If you are ever uncertain of the authenticity of a message 
+                          from the alumni office, please call us at 713-348-4057 
+                          or contact us <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('2O9VPONywGJiHYr8KJVcQz')">by 
+                          email</a>. Please note that email addresses for Rice 
+                          alumni volunteers listed on the alumni website are shielded 
+                          from spambots through a special system we use.</p>
+                        <hr>
+                        <p><strong>June 17, 2008<br>
+                          Notice to alumni using AT&amp;T/SBCGlobal email addresses</strong><br>
+                          <br>
+                          If you are an alum who uses an AT&amp;T or SBCGlobal 
+                          email address as the forwarding address for your alumni 
+                          forwarding account (username@alumni.rice.edu), or if 
+                          you use an AT&amp;T or SBC Global address as your primary 
+                          email address in the alumni directory, please note that 
+                          AT&amp;T is frequently blocking emails sent through 
+                          the forwarding account and from Rice users (i.e., they 
+                          are marking them as SPAM).<br>
+                          <br>
+                          We are working with AT&amp;T to resolve the issue, but 
+                          unfortunately they continue to periodically block emails 
+                          from Rice addresses. We encourage users, when possible, 
+                          to use a different email address for their email forwarding 
+                          account and for their primary address to receive information 
+                          from Rice. Alumni can update their information by logging 
+                          in to the <a href="http://online.alumni.rice.edu">online 
+                          alumni directory</a>.</p>
+					  <!--<hr>
+                        <strong><br>
+                        March 1, 2008<br>
+                        Fradulent email warning</strong><br> <br>
+                        Please be aware that <strong>fradulent</strong> messages 
+                        are being sent to Rice faculty, staff, students, and some 
+                        alumni email accounts that claim to be from Rice IT or 
+                        Rice Webmail Support. They ask you reply with your password 
+                        or follow a link to verify your account and threaten the 
+                        deletion of the user's account. <span class="mainSmallred"><strong>These 
+                        are phishing messages and may contain viruses. They should 
+                        be deleted upon receipt. Do not reply to the message. 
+                        </strong></span> The senders are in no way affiliated 
+                        with Rice or the ARA. <br> <br>
+                        Samples of such an email may contain the subject line 
+                        &quot;Verify Your E-Mail Account&quot; or &quot;Confirm 
+                        Your E-Mail Address&quot; and purport to be from email 
+                        addresses like &quot;helpdesk@rice.edu&quot; or &quot;support@rice.edu.&quot; 
+                        Please note that the details of the emails vary, but generally 
+                        contain something like this:
+<blockquote>
+                          <table border="0" bgcolor="#ECECEC" cellspacing="5">
+                            <tr>
+                              <td class="mainSmall"><p>Dear Rice Webmail User, 
+                                  <BR>
+                                  <BR>
+                                  To complete your Account Verification process, 
+                                  you are to reply to this message and enter your 
+                                  password in the space provided (*******), you 
+                                  are required to do this before the next 48hrs 
+                                  of receipt of thise-mail, or your Webmail Account 
+                                  will be de-activiated and erased from our data 
+                                  base. Your account can also be verified at:</p>
+                                <p>http://webmail.mail.rice.edu<BR>
+                                  <BR>
+                                  Thank you for using Rice Webmail Service<br>
+                                  <br>
+                                  RICE INTERNET</p>
+                                </td>
+                            </tr>
+                          </table>
+                        </blockquote>
+                        <p>The senders often harvest user addresses from websites 
+                          and infected computers and also randomly guess addresses 
+                          based on common names and words.<br>
+                          <br>
+                          If you are ever uncertain of the authenticity of a message 
+                          from the alumni office, please call us at 713-348-4057 
+                          or contact us <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('2O9VPONywGJiHYr8KJVcQz')">by 
+                          email</a>. </p>-->
+					  <hr>
+                        <p><strong>December 9, 2005<br>
+                          Fraudulent email warning</strong><br>
+                          <br>
+                          Please be aware that <strong>fraudulent</strong> messages 
+                          are being sent to Rice alumni that claim to be from 
+                          the alumni office. They threaten the deletion of the 
+                          user's account, and ask that the user open an attachment. 
+                          <span class="mainSmallred"><strong>These messages contain 
+                          viruses and should be deleted upon receipt.</strong></span> 
+                          The senders are in no way affiliated with Rice or the 
+                          ARA. <br>
+                          <br>
+                          One sample of such an email contains the subject line 
+                          &quot;Warning Message: Your services near to be closed&quot; 
+                          and purports to be from &quot;administrator@alumni.rice.edu.&quot; 
+                        <blockquote><table border="0" bgcolor="#ECECEC" cellspacing="5"><tr><td class="mainSmall"><STRONG>Dear Alumni Member, </STRONG><BR> 
+<BR>Your e-mail account was used to send a huge amount of unsolicited spam messages during the recent week. If you could please take 5-10 minutes out of your online experience and confirm the attached document so you will not run into any future problems with the online service.<BR> 
+<BR>If you choose to ignore our request, you leave us no choice but to cancel your membership.<BR> 
+<BR>Virtually yours,
+<BR>The Alumni Support Team <BR> 
+<BR>
+<BR>
++++ Attachment: No Virus found 
+<BR>+++ Alumni Antivirus - www.alumni.rice.edu 
+</td></tr></table></blockquote>					  
+					    <p>The senders often harvest user addresses from websites 
+                          and infected computers and also randomly guess addresses 
+                          based on common names and words.</p>
+					  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+
+					    <p><strong>December 2, 2005<br>
+					    Alumni email forwarding down for Comcast subscribers</strong><br>
+					    <br>
+					    We have had reports that Comcast subscribers are not receiving email sent to their Rice alumni forwarding accounts (@alumni.rice.edu). We are investigating the cause of this stoppage, and are working with Comcast to resolve the issue as soon as possible.<br>
+					    <br>
+					    In the meantime, we suggest that you have your email forwarded to a secondary account, such as Hotmail or Gmail. You can change your forwarding address <a href="https://online.alumni.rice.edu/online/emailforwarding/eforwarding.asp">online</a>. If you encounter any problems logging in or changing your address, or if you have questions about the outage, please contact us <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('2O9VPONywGJiHYr8KJVcQz')">by email</a>.<br>
+					    <br>
+					    If you know of messages you did not receive, we recommend that you ask the sender to resend directly to your Comcast address. We do not know at this time if the blocked messages will be delivered upon resolution of the issue.<br>
+					    <br>
+					    <em><strong>Update (12/9/05)</strong></em> &mdash; The issue was briefly resolved December 6, at which time all previously backlogged mail was successfully delivered. However, the problem returned on December 8 and technicians are again in contact with Comcast. All additionally delayed mail should be delivered upon the final resolution of the problem.</p>
+					    <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+					    <p><strong>July 8, 2005<br>
+					    </strong><strong>Virus attack targets alumni email accounts<br>
+			              <br>
+					    </strong>A few alumni have notified the alumni office that messages containing a computer virus were recently sent to their alumni forwarding accounts. The messages claim to be from the alumni office, but the addresses and links are faked. The senders are in no way affiliated with Rice or the ARA.<br>
+			              <br>
+			            We believe the attack to be from a variant of the <a href="http://us.mcafee.com/virusInfo/default.asp?id=description&virus_k=132158">W32/Mytob.gen@MM</a> virus. The virus harvests addresses from infected computers and also randomly guesses addresses based on common names. The messages  ask recipients to &quot;confirm&quot; sensitive identity and password information for security reasons.<br>
+			            <br>
+		              If you should receive a suspicious email message, do not open any attachments or follow any links. Contact the <a href="#"onClick="SecWin=window.open('contact.html','SecWin','width=260,height=450,toolbar=no,status=yes,resizable=no,scrollbars=yes,location=no,directories=no,menubar=no');return false;">alumni office</a> directly, and we will be happy to verify the authenticity of any information request.</p>				      </td>
+                    </tr>
+                </table></td>
+                <td width="1" background="images/dots_bg.gif"><img src="images/clear.gif" width="1" height="50"></td>
+                <td width="10"><img src="images/clear.gif" width="10" height="50"></td>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><form id="srch" method=GET action="" onSubmit="doSearch();">
+                          <input type="hidden" value="web" name="tab">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td colspan="4"><input type=text name=q size=15 maxlength=255 value="" onChange="srch.search.value=this.value;" class="formSmall">
+                                <span id="spn" style="background-image: URL(images/btn_go_new.gif);width:19;height:14" onClick="doSearch()" />
+                                <input type="hidden" name="hidden_site" value="alumni.rice.edu">
+                                <input type="hidden" name="search" value="">
+                                </span></td>
+                            </tr>
+                            <tr>
+                              <td width="10"><input id="alum" type="radio" name="sitesearch" value="alumni.rice.edu" checked>
+                              </td>
+                              <td width="85"><font class="mainSmalldark">Search this site</font></td>
+                            </tr>
+                            <tr>
+                              <td width="10" align="right"><input id="rice" type="radio" name="sitesearch" value="www.rice.edu">
+                              </td>
+                              <td width="85"><font class="mainSmalldark">Search rice.edu</font></td>
+                            </tr>
+                          </table>
+                        </form></td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/clear.gif" width="115" height="20" alt="spacer"></td>
+                    </tr>                    <tr> 
+                      <td><a href="https://online.alumni.rice.edu/asp/Welcome.asp"><img src="images/title_onlinesvcs.gif" width="115" height="9" alt="Online Services" border="0"></a></td>
+                    </tr>
+                    <tr> 
+                      <td> 
+                        <table width="100%" border="0" cellspacing="3" cellpadding="0">
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/events/calendar.php" title="Events calendar and online registration">Find Events/RSVP</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/detailsearch.asp" title="Search the directory of Rice alumni">Alumni Directory</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/profile.asp" title="Update your directory information">Update Address</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Online/emailforwarding/eforwarding.asp" title="Manage or create an alumni.rice.edu account">Email Forwarding</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Career/default.asp" title="Connect with alums in your career field">Career Network</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+						  <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/bizfinder/" title="Find or promote alumni-owned businesses">Business Finder</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+<tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/remotelibrary.asp?type=8" title="Get your latest news into the Owlmanac" target="_blank">Online Classnotes</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/library.asp" title="Access research tools and periodicals">Digital Library</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+
+                        </table>
+</td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/clear.gif" width="115" height="14" alt="spacer"></td>
+                    </tr>
+                  </table>
+                  <!-- <a href="http://giving.rice.edu" target="_blank"><img src="images/rice_nextcent.gif" width="83" height="40" border="0" alt="Rice: The Next Century Campaign" hspace="3"></a><br> -->
+                  <a href="http://www.rice.edu" target="_blank"><img src="images/rice_home.gif" width="75" height="40" border="0" alt="Rice: Home" vspace="10" hspace="3"></a>
+                  <p></p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp; </p></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td><img src="images/clear.gif" width="100" height="5" alt="spacer"></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="15">
+        <tr>
+          <td width="57%"><font class="mainSmall"><a href="#"onClick="SecWin=window.open('contact.html','SecWin','width=260,height=450,toolbar=no,status=yes,resizable=no,scrollbars=yes,location=no,directories=no,menubar=no');return false;">Contact the Office of Alumni Affairs</a> | <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('dFuDc6BYQoX5nNNobzmYL4')">Send a Comment</a> | <a href="index.html">Home</a></font></td>
+          <td width="43%" align="right"><font class="mainSmall"> 
+            <script language="JavaScript">
+<!--
+today = new Date()
+cy = today.getFullYear()
+{
+}
+//-->
+</script>
+            Copyright &copy; 
+            <script language="JavaScript">
+<!--
+document.write(cy)
+{
+}
+//-->
+</script>
+            Rice University</font></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>

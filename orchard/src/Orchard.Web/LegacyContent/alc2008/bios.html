@@ -1,0 +1,484 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="../styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "http://alumni.rice.edu/images/btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "http://alumni.rice.edu/images/btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=350,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (srch.alum.checked == true){
+	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (srch.rice.checked == true){
+	srch.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  srch.submit();
+
+}
+
+function checkKey(evt){
+
+	srch.search.value=srch.q.value;
+	if (evt.keyCode == 13 && srch.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+</script>
+</head>
+
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top"> 
+          <td width="221" rowspan="3"> <a href="../index.html"><img src="../images/logo.gif" width="221" height="94" alt="Rice Alumni: Established 1919" border="0"></a><br>
+            <table width="191" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="http://alumni.cgi.rice.edu/events/calendar.php">EVENTS 
+                        CALENDAR</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="../alumni_groups.html">ALUMNI 
+                        GROUPS</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="../youngalum_stds.html">YOUNG 
+                        ALUMNI /STUDENTS</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="../career_connection.html">CAREER 
+                        CONNECTION</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_over_nav.gif" align="center" valign="middle"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="navOver">VOLUNTEER</font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top">&nbsp;</td>
+                <td width="172" align="center" valign="middle"> 
+                  <table width="90%" border="0" cellspacing="3" cellpadding="0">
+                    <tr> 
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="../alumni_groups.html#specialinterest">Alumni 
+                              Special Interest Groups</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="../vol_athsports.html">Athletics 
+                              &amp; Sports</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="../vol_philanthropy.html">Philanthropy</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="../vol_araboard.html">ARA 
+                              Board &amp; Committees</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="../vol_businterests.html">Business 
+                              Interests</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="../vol_scienceeng.html">Science 
+                              &amp; Engineering</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="../vol_artshum.html">Arts 
+                              &amp; Humanities</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="../vol_homecoming.html">Homecoming 
+                              &amp; Reunion</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="../vol_suppstud.html">Supporting 
+                              Students</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="../vol_othinterests.html">Other 
+                              Interests</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="../vol_noliveinhst.html">What 
+                              if I don't live in Houston?</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="../learning_trav.html">LEARNING 
+                        &amp; TRAVEL</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="../honors_awards.html">HONORS 
+                        &amp; AWARDS</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="../new_at_rice.html">WHAT'S 
+                        NEW @ RICE</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="../about_alumassoc.html">ABOUT 
+                        THE ARA</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="../faq_file.html">FAQ 
+                        FILE</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="http://giving.rice.edu" target="_blank">GIVE 
+                        TO RICE</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td align="right"><img src="../images/clear.gif" width="100" height="20"><br>
+            <img src="../images/xcat/alc2008_emailfooter.jpg" width="610" height="56" ="Rice Leading Locally and Globally">          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td colspan="4">&nbsp;</td>
+              </tr>
+              <tr valign="top"> 
+                <td width="414"> 
+                  <table width="112%" border="0" cellpadding="0" cellspacing="0" class="mainTable">
+                    <tr valign="top"> 
+                      <td height="113" class="mainSmall"> 
+					    <p><a href="index.html"><img src="alc2008.jpg" alt="The Conference for Rice Alumni Leaders | Rice University | April 25-26, 2008" border="0"></a><br>
+					    </p>
+					    <table width="500" border="0">
+                          <tr>
+                            <td width="134" class="mainSmall">:: <a href="agenda.html"><strong>Conference Agenda</strong></a></td>
+                            <td width="89" class="mainSmall"><strong>:: Panelist Bios</strong></td>
+                            <td width="156" class="mainSmall">:: <a href="information.html"><strong>Additional Information</strong></a></td>
+                          <td width="103" class="mainSmall">:: <strong><a href="https://online.alumni.rice.edu/EventsNew/EventView.asp?ID=740">Registration</a></strong>                          
+                          </tr>
+                      </table></td>
+                    </tr>
+                  </table>                </td>
+                <td width="1" background="../images/dots_bg.gif"><img src="../images/clear.gif" width="1" height="50"></td>
+                
+                
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td valign="top">&nbsp;</td>
+                <td class="mainSmall" valign="top">
+                           <p><img src="../images/gray2_bg.gif" width="100%" height="1"></p>
+				  <p class="mainSubtitle"><strong>Alumni Panelist and Moderator Biographies</strong></p>
+                  <p> <em>Please bookmark this page; additional information will be added as it becomes available. </em><strong><br>
+                    <br>
+                    Teveia Rose Barnes '75</strong> graduated from Rice with a BA in Economics, Political Science, and German Studies.  She currently sits as the president and executive director of Lawyers for One America, a coalition of state and civil rights and diversity organizations, individual law firms, law schools and legal organizations.  She is a partner with Foley & Lardner LLP in San Francisco.
+
+                    <br>
+                    <br>
+                    <strong>Russ Capper</strong> is  co-host of &quot;The  BusinessMakers Radio Show,&quot; a weekly show focusing on entrepreneurship. He has worked extensively with the <a href="http://alliance.rice.edu/" target="_blank">Rice Alliance for Technology and Entrepreneurship</a>  and covered most of the Alliance's events over the past several years. His background is in founding and running technology enabled service   companies&mdash;most recently eRealty.com, which Capper founded in 1998.  Prudential Real Estate acquired eRealty in 2004, and Capper is   currently president of Prudential Real Estate Services Company.<br>
+<br>
+<strong>Rachelle Smith Doody '78. '92</strong> is the Effie Marie Cain Chair in Alzheimer’s Disease Research and Director of Alzheimer’s Disease Research at the Alzheimer’s Disease and Memory Disorder Center at Baylor College of Medicine.  Her position allows her to work on all facets of Alheimer’s: examining the genetics and biomarkers of the disease, diagnosing and treating patients, and advising government and other policymakers.   
+
+<br>
+<br>
+<strong>David M. Eagleman '93</strong> is a neuroscientist at Baylor College of Medicine and the founder and director   of BCM&rsquo;s Initiative on Neuroscience and Law.&nbsp; He is the author of four upcoming   neuroscience books, as well as a work of fiction that was recently purchased by   Pantheon Books. His scientific discoveries have been featured on the Discovery   Channel, History Channel, BBC, PBS and ABC. <br>
+<br>
+                    <strong>Susanne Morris Glasscock '62</strong> - Since her 
+                    graduation in 1962, Susie Glasscock has been continually involved 
+                    as an alumna, giving generously of her time and resources 
+                    to many different areas of the university. She and her husband, 
+                    Melbern Glasscock ’61, are longtime supporters of the School 
+                    of Continuing Studies. Through their generous contributions 
+                    to the school, they have become a motivating force in the 
+                    growth of a program that benefits Rice and the city of Houston. 
+                    <br>
+<br>
+<strong>George Y. Gonzalez '90</strong> is a partner with Bracewell &amp; Giuliani, where he counsels U.S. and Latin American businesses in general corporate law, with an   emphasis on mergers and acquisitions, joint ventures, corporate control matters,   securities, privately held companies, and international legal issues. He is also chairman of the Houston Hispanic Chamber of Commerce, leading the organization's efforts to promote Hispanic business growth and helping companies to take advantage of that growth.<br>
+<br>
+<strong>Maryana Iskander '97 </strong>is executive vice president of the Planned Parenthood Federation of America, the nation’s largest provider of and advocate for reproductive healthcare services.  She joined Planned Parenthood after two years as advisor to Rice president David W. Leebron.  In 1996 she was named a Harry S. Truman Scholar and a Rhodes Scholar, and in 2002 was awarded the Paul & Daisy Soros Fellowship for New Americans, given to the thirty most outstanding naturalized citizens in the United States. 
+
+<br>
+<br>
+<strong>Alexander “Andy” Karsner '89</strong> was in 2006  unanimously confirmed by the Senate as America’s ninth Assistant Secretary for Energy Efficiency and Renewable Energy (EERE).  In this position he manages the Department of Energy’s $1.47 billion applied science, research, development, and deployment portfolio, which promotes marketplace integration of renewable and environmentally sound energy technologies.  He also bears primary responsibility for education, conservation, regulation, and efficient use of the nation’s energy resources.
+
+<br>
+<br>
+<strong>Stephen Klineberg </strong>joined the Rice University Sociology Department in 1972.  In  1982, he and his students initiated the annual Houston Area Survey, which tracks   changes in the demographic patterns, life experiences, attitudes, and beliefs of area residents.  The recipient of nine major teaching awards and of the 1994/1995 Student Association Mentor Recognition Award, Klineberg is a faculty associate and divisional advisor at Lovett College, where he twice served as Interim Master.
+<br>
+<br>
+<strong>Harriet Calvin Latimer '56</strong> has been professionally raising funds for Houston area non-profit organizations for more than 28 years.  In 1975 she establisher Harriet Latimer and Associates, where she and her staff have have planned and led successful fund drives for more than 45 non-profit organizations.  Her company has helped raise funds to construct the John P. McGovern Library in the Texas Medical Center, the St. Francis Episcopal School, the Awty International School, and the Stella Link Redevelopment Association project,  to name but a few endeavors.  
+
+<br>
+<br><strong>Caroline Levander ’86, ’93, ’97</strong> received her BA, MA and PhD from Rice University—all in English—and is Professor of English and director of the Humanities Research Center at Rice. She is co-founder of the Americas Colloquium at Rice University and also founded the Rice Americas Archive.  Her research considers the dual questions of American literature's political impact and American political culture's literary effects and explores the combined cultural impact of political, social and literary discourses on historically disenfranchised groups including women, children and minorities.
+<br>
+<br>
+<strong>Eugene H. Levy</strong> became the Howard R. Hughes Provost and Professor of Physics and Astronomy for Rice University in July, 2000.  His research is focused in the areas of theoretical cosmic physics and aims at elucidating mechanisms and processes that underlie physical phenomena in planetary and astrophysical systems.  Currently, Professor  Levy is a member of the Board of Directors for the National Space Biomedical  Research Institute (NSBRI) (2004- ) and he is Chair and member of the Board of  Trustees for the Associated Universities, Inc. (AUI) 
+(2001- ).<br>
+<br>
+<strong>Leslie Southwick '72</strong> was confirmed to the U.S. Court of Appeals for the Fifth Circuit in October  2007.  The Fifth Circuit hears appeals from the federal district courts of Louisiana, Mississippi, and Texas.  He previously served as a member of the Mississippi Court of Appeals from the court’s creation in 1995 through December of 2006.  Judge Southwick is currently a visiting professor at the Mississippi College School of Law, where he has been an adjunct professor since 1998.
+
+ <br>
+ <br>
+ <strong>Charles Szalkowski ’70, ’71</strong> is a partner in the corporate department of Baker Botts, where he helps lead the technology and emerging growth companies practice.  For more than 30 years he has represented public and venture-backed companies,  investment bankers for, and  investors in those companies.  He counsels private equity funds, hedge funds, and institutional investors, including large insurance companies, universities, and other endowments.  Szalkowski graduated from Rice with degrees in economics and accounting; he is president of the Association of Rice Alumni. 
+ <br>
+ <br>
+ <strong>Jimmy Treybig '83</strong> is the principal founder of Tandem Computers, a pioneering Silicon Valley manufacturer of fault tolerant computer systems where he served as CEO from 1974 until January 1996.  At the time of his departure Tandem was a $2.3 billion company employing thousands of people worldwide.  In 2002 Mr. Treybig joined New Enterprise Associates as a venture partner and is based out of Austin, Texas.
+
+ <br>
+ <br>
+ <strong>Robert B. Tudor III '82</strong> - 
+ Bobby Tudor
+is chairman and CEO of Tudor, Pickering, Holt & Co., LLC.  Tudor was previously a partner with Goldman Sachs & Co. prior to founding Tudor Capital.  During his nearly 20-year career with Goldman Sachs, Tudor worked in the New York, London and Houston offices in varying capacities including head of  southwest regional operations and head of the European industrial and natural resources group.  Tudor holds a BA in English and Legal Studies from Rice and a JD from Tulane Law School.
+
+<br>
+<br>
+<strong>James S. Turley '77</strong> is chairman and CEO of Ernst & Young, leading more than 100,000 people in 140 countries in one of the largest professional services organizations in the world.  He began his career in the Houston office and has held a series of leadership positions over the last 28 years.   He is currently based in New York and London and serves as senior advisory partner for many of Ernst & Young’s largest global clients.
+
+<br>
+<br>
+<strong>Troy Williams '94</strong> is the founder of Questia Media, Inc., the first online library, which provides continual access to the world’s largest online collection of books and journal articles in the humanities and social sciences, plus magazine and newspaper articles.  He served as president and CEO of Questia until stepping down in August of 2007, when he left to start PeoplePad, Inc. an early-stage internet company based in Austin, Texas.  Wiliams received his BA in History from Rice in 1995 and completed his JD at Harvard University in 1998.
+                  <br>
+              <br>
+                    <br>
+                  <p><img src="../images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p class="formSmall">&nbsp;</p>                </td>
+              </tr>
+            </table>
+          <p>&nbsp;</p></td>
+        </tr>
+</table>
+    </td>
+  </tr>
+  <tr> 
+    <td><img src="../images/clear.gif" width="100" height="5" alt="spacer"></td>
+  </tr>
+  <tr> 
+    <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="15">
+        <tr>
+          <td width="57%"><font class="mainSmall"><a href="#"onClick="SecWin=window.open('../contact.html','SecWin','width=260,height=450,toolbar=no,status=yes,resizable=no,scrollbars=yes,location=no,directories=no,menubar=no');return false;">Contact 
+             the Office of Alumni Affairs</a> | <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('dFuDc6BYQoX5nNNobzmYL4')">Send a Comment</a> | <a href="../index.html">Home</a></font></td>
+          <td width="43%" align="right"><font class="mainSmall"><a href="http://www.rice.edu/about/cr-notice.html" target="_blank"><script language="JavaScript">
+<!--
+today = new Date()
+cy = today.getFullYear()
+{
+}
+//-->
+</script>
+Copyright &copy;<script language="JavaScript">
+<!--
+document.write(cy)
+{
+}
+//-->
+</script> Rice University</a></font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>

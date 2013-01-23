@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "images/btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "images/btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=350,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (srch.alum.checked == true){
+	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (srch.rice.checked == true){
+	srch.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  srch.submit();
+
+}
+
+function checkKey(evt){
+
+	srch.search.value=srch.q.value;
+	if (evt.keyCode == 13 && srch.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+</script>
+
+</head>
+
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr valign="top"> 
+    <td rowspan="2"> <a href="index.html"><img src="images/logo.gif" width="221" height="94" alt="Rice Alumni: Established 1919" border="0"></a><br>
+      <table width="240" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+          <td valign="middle"> <p><font class="mainSmall"><b>Stay in touch electronically 
+              with @Rice</b><br>
+              @Rice is a monthly newsletter about campus prepared by Rice University's 
+              Division of Public Affairs, Office of Media Relations and Information.<br>
+              <br>
+              Alumni and parents of current Rice students automatically receive 
+              @Rice if they have provided their email to Rice and if they have 
+              not unsubscribed from receiving email communication from the university. 
+              Alumni can update their email and contact information through the 
+              <a href="http://online.alumni.rice.edu" target="_blank">online alumni 
+              directory</a>.</font></p>
+            <p><font class="mainSmall">To SUBSCRIBE or UNSUBSCRIBE, send an email 
+              to <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('Cv02Uk4c8jMl9bgGaKPr78')">the administrator</a>. 
+              In the body of the email, type your request (subscribe or unsubscribe), 
+              your first name, middle initial, last name and class year.</font></p>
+            <p>&nbsp;</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr valign="top"> </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>

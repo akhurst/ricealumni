@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="../../styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "../btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "../btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=350,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (srch.alum.checked == true){
+	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (srch.rice.checked == true){
+	srch.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  srch.submit();
+
+}
+
+function checkKey(evt){
+
+	srch.search.value=srch.q.value;
+	if (evt.keyCode == 13 && srch.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+</script>
+<script language="JavaScript1.2">
+<!--
+
+var head="display:''"
+function doit(header){
+var head=header.style
+if (head.display=="none")
+head.display=""
+else
+head.display="none"
+}
+//-->
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style>
+</head>
+
+<body>
+<table width="95%"  border="0" cellspacing="0" cellpadding="10">
+  <tr>
+    <td width="330" valign="top"><img src="05_pic03.jpg" width="330" height="441" border="0"></td>
+    <td valign="top" class="mainSmall"><p><b>Honorable Mention</b><br>
+        <i>Flamenco Passion</i>, Susan Myrick (Rice Parent '93)</p>
+    <p>  &Uacute;beda, Spain<br>
+      The Muslim Influence in Spanish Culture<br>
+      2002 </p>
+    It is night in &Uacute;beda, and we attend a performance for our group in the cool basement of a former Roman tax granary and museum. The dancers wear fringed scarves and long, flared dresses. They have pulled their dark hair tight from their faces, into buns at the napes of their necks and adorned them with flowers. Their postures- arms high and backs arched- suggest restrained passion. Without a strict choreography, the dancers are free to improvise according to their emotions. I don&rsquo;t know which catches my ear more, the expression of feeling through movement, or the mesmerizing stomping of their feet. I want dark hair, a long dress, a fringed shawl, and a pair of shoes like theirs- strapped high heels that can pound the floor. I can hardly sit still in my chair.</td>
+  </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>

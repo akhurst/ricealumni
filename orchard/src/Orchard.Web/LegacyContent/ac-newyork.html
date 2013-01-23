@@ -1,0 +1,631 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "images/btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "images/btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=530,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (srch.alum.checked == true){
+	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (srch.rice.checked == true){
+	srch.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  srch.submit();
+
+}
+
+function checkKey(evt){
+
+	srch.search.value=srch.q.value;
+	if (evt.keyCode == 13 && srch.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+</script>
+<script language="JavaScript1.2">
+<!--
+
+var head="display:''"
+function doit(header){
+var head=header.style
+if (head.display=="none")
+head.display=""
+else
+head.display="none"
+}
+//-->
+</script>
+</head>
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top">
+          <td width="221" rowspan="2"><a href="index.html"><img src="images/logo_learntrav.gif" width="221" height="94" alt="Rice Alumni: Established 1919" border="0"></a><br>
+            <table width="191" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="http://alumni.cgi.rice.edu/events/calendar.php">EVENTS CALENDAR</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="alumni_groups.html">ALUMNI GROUPS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="youngalum_stds.html">YOUNG ALUMNI /STUDENTS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="career_connection.html">CAREER CONNECTION</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="volunteer.html">VOLUNTEER</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_over_nav.gif" align="center" valign="middle"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="navOver"><a href="learning_trav.html">LEARNING &amp; TRAVEL</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top">&nbsp;</td>
+                <td width="172" align="center" valign="middle"><table width="90%" border="0" cellspacing="3" cellpadding="0">
+                    <tr>
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="alumcoll.html">Alumni College</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="http://online.alumni.rice.edu/directory/library.asp">Rice Alumni Digital Library </a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="travel.html">Travel/Study Program</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="learning_scholar.html">Scholarships</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="honors_awards.html">HONORS &amp; AWARDS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="new_at_rice.html">WHAT'S NEW @ RICE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="about_alumassoc.html">ABOUT THE ARA</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="faq_file.html">FAQ FILE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="http://giving.rice.edu" target="_blank">GIVE TO RICE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+          <td align="right"><img src="images/clear.gif" width="100" height="20"><br>
+            <img src="images/subpic_acnewyork.jpg" width="526" height="56" ="Owl and art"> </td>
+        </tr>
+        <tr valign="top">
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td colspan="4">&nbsp;</td>
+              </tr>
+              <tr valign="top">
+                <td width="414"><p><img src="images/sub_title_learntrav.gif" width="411" height="17" alt="About Alumni Association"></p>
+                  <table class="mainTable" border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tr valign="top">
+                      <td class="mainSmall"><p><span class="main"><b>Alumni College New York </b></span><font class="mainSubtitle"><b><br>
+                          </b>May 19, 2007</font></p>
+                        <p><strong>Dear Alumni and Friends,<br>
+                          <br>
+                          </strong> As a member of the Rice Alumni New York volunteer leadership, I have the privilege of inviting you to join us for Alumni College New York, a daylong celebration of learning at its best. For those who may not be familiar with the Alumni College held annually on the Rice campus, our local event will provide an opportunity to attend classes and engage in discussion with academic experts and fellow alumni. Only a few select cities are able to host their own alumni college "on the road," and we are fortunate that New York is among them.<br>
+                          <br>
+                          This year's event, held at the Sheraton New York Hotel and Towers in midtown, includes three lectures covering a wide-range of current topics: international politics, global warming, and health in the media. For our fourth session, we'll visit the Museum of Modern Art to enjoy guided tours from their expert lecturers. Attendees receive a continental breakfast, refreshments between sessions, and a casual lunch at the Sheraton. Saturday evening, share your thoughts and experiences with others at a private cocktail reception at chef Bobby Flay's renowned restaurant, Bar Americain. We'll also provide information on local activities if you wish to continue discussion over dinner or enjoy a night on the town in Manhattan.<br>
+                          <br>
+                          On behalf of the Association of Rice Alumni and our local leadership committee, I invite you to join us for this educational and enlightening day of fun in New York!<br>
+                          <br>
+                          Janice Doty '60 <br>
+                          <em>Chair, Alumni College New York </em></p>
+                        <p class="mainSubtitle"><strong>Registration</strong></p>
+                        <p><strong class="mainSmallred">Online registration has closed, but you may still sign up by calling Lauren Linn in the Rice alumni office at 713-348-6093.</strong><br>
+                          <br>
+                        <a href="PDFs/2007_acny-brochure.pdf"><strong>Download the Alumni College New York brochure</strong></a> as a PDF file (241kB)</p>
+                        <p>&nbsp; </p></td>
+                    </tr>
+                  </table></td>
+                <td width="1" background="images/dots_bg.gif"><img src="images/clear.gif" width="1" height="50"></td>
+                <td width="10"><img src="images/clear.gif" width="10" height="50"></td>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><form id="srch" method=GET action="" onSubmit="doSearch();">
+                          <input type="hidden" value="web" name="tab">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td colspan="4"><input type=text name=q size=15 maxlength=255 value="" onChange="srch.search.value=this.value;" class="formSmall">
+                                <span id="spn" style="background-image: url(images/btn_go_new.gif);width:19;height:14" onClick="doSearch()" />
+                                <input type="hidden" name="hidden_site" value="alumni.rice.edu">
+                                <input type="hidden" name="search" value="">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="10"><input id="alum" type="radio" name="sitesearch" value="alumni.rice.edu" checked>
+                              </td>
+                              <td width="85"><font class="mainSmalldark">Search this site</font></td>
+                            </tr>
+                            <tr>
+                              <td width="10" align="right"><input id="rice" type="radio" name="sitesearch" value="www.rice.edu">
+                              </td>
+                              <td width="85"><font class="mainSmalldark">Search rice.edu</font></td>
+                            </tr>
+                          </table>
+                        </form></td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/clear.gif" width="115" height="20" alt="spacer"></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://online.alumni.rice.edu/asp/Welcome.asp"><img src="images/title_onlinesvcs.gif" width="115" height="9" alt="Online Services" border="0"></a></td>
+                    </tr>
+                    <tr>
+                      <td><table width="100%" border="0" cellspacing="3" cellpadding="0">
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/events/calendar.php">Find Events/RSVP</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/detailsearch.asp">Alumni Directory</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/profile.asp">Update Address</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Online/emailforwarding/eforwarding.asp">Email Forwarding</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Career/default.asp">Career Network</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/bizfinder/">Business Finder</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="http://alumni.rice.edu/submit_note.html">Submit Classnote</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/library.asp">Digital Library</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/clear.gif" width="115" height="14" alt="spacer"></td>
+                    </tr>
+                  </table>
+                  <!-- <a href="http://giving.rice.edu" target="_blank"><img src="images/rice_nextcent.gif" width="83" height="40" border="0" alt="Rice: The Next Century Campaign" hspace="3"></a><br> -->
+                  <a href="http://www.rice.edu" target="_blank"><img src="images/rice_home.gif" width="75" height="40" border="0" alt="Rice: Home" vspace="10" hspace="3"></a> <br>
+                  <img src="images/clear.gif" width="115" height="3" alt="spacer">
+                  <p></p></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="mainCell" valign="top"><img src="images/clear.gif" width="20" height="20"></td>
+                <td width="100%" class="mainSubtitle"><p>
+                    <LINK href="faq_css.css" type=text/css rel=stylesheet>
+                    <SCRIPT language=JavaScript src="faq_navFunctions.js"></SCRIPT>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                    <TBODY>
+                      <TR>
+                        <TD><!-- STARTstoll -->
+                          <DIV class=faqQuestion id=fcrHead></DIV>
+                          <DIV class=faqQuestion id=fcrQstoll>
+                            <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                              <tr>
+                                <td><p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                                  <p class="mainSubtitle"><strong>Tentative Schedule</strong><br>
+&nbsp;</p></td>
+                              </tr>
+                              <tr>
+                                <td class="mainsmall"><p><font class="mainSubtitle">Saturday, May 19, 2007<br>
+                                    Sheraton New York Hotel and Towers, 7th Avenue at 53rd Street </font></p>
+                                  <p><b>9:00 a.m. &mdash; Registration and continental breakfast </b></p>
+                                  <p><strong>9:30 a.m. &mdash; Session I</strong></p></td>
+                              </tr>
+                              <TBODY>
+                                <TR>
+                                  <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrAstoll');">Nation Building and Iraq</a>, Richard J. Stoll</TD>
+                                </TR>
+                              </TBODY>
+                            </TABLE>
+                          </DIV>
+                          <DIV class=faqAnswer id=fcrAstoll>
+                                  <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                    <TBODY>
+                                      <TR>
+                                        <TD vAlign="top"><img src="images/clear.gif" height="13" width="12" border="0"></TD>
+                                        <TD class="mainSmall" width="100%"><p>For many Americans, our experience in Iraq is 
+										relatively unique. But that is not true. While the scale of the tasks in Iraq may be 
+										unique, the US has undertaken what we now call "nation building" more times 
+										than people realize. This lecture will discuss some of the history of nation building 
+										by the United States. It will also cover what has been associated with cases of successful 
+										nation building. Finally, the situation in Iraq will be viewed in light of these earlier 
+										experiences.<br>
+										<br>
+										<strong> Richard J. Stoll</strong> grew up in Providence, Rhode Island, received his 
+										undergraduate degree from the University of Rochester and his doctorate from the 
+										University of Michigan. He came to Rice in 1979 and is now a professor of political 
+										science. His research interests are in the study of international conflict and American 
+										national security policy. He has used computer simulation techniques and statistical 
+										analysis to study topics such as arms competitions, comparative foreign policy, and 
+										political realism. Stoll recently participated in a 10-university effort funded by the 
+										National Science Foundation to collect data on militarized interstate disputes and is 
+										engaged in an effort to create events data from online news sources and to predict the 
+										outbreak of serious international conflict. He has published six books and a number of 
+										articles and book chapters. During his time at Rice, he has won ten teaching awards. 
+										In 1989 Jones College honored him as a longtime faculty associate by naming their TV 
+										room "Stoll's." He has also been a member of the Jones Beer Bike pit 
+										crew since 1988.<br>&nbsp;</p>
+                                        </TD>
+                                      </TR>
+                                    </TBODY>
+                                  </TABLE>
+                                </DIV>
+                                <!-- END --></td>
+                      </tr>
+                      <tr>
+                        <td class="mainsmall"><p>&nbsp;<br>
+                            <strong>10:45 a.m. &mdash; Break with refreshments </strong></p>
+                          <p><b>11:00 a.m. &mdash; Session II</b></p></td>
+                      </tr>
+                      <tr>
+                        <td><!-- STARTostherr -->
+                          <DIV class=faqQuestion id=fcrHead></DIV>
+                          <DIV class=faqQuestion id=fcrQostherr>
+                            <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                              <TBODY>
+                                <TR>
+                                  <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrAostherr');">Picturing a Cure: Visual Media in the Pursuit of World Health</a>, Kirsten Ostherr</TD>
+                                </TR>
+                              </TBODY>
+                            </TABLE>
+                          </DIV>
+                          <DIV class=faqAnswer id=fcrAostherr>
+                            <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                              <TBODY>
+                                <TR>
+                                  <TD vAlign="top"><img src="images/clear.gif" height="13" width="12" border="0"></TD>
+                                  <TD class="mainSmall" width="100%"><p>This presentation will provide an overview of the 
+								  different use of film as an educational tool in public health campaigns in the United States 
+								  and abroad, throughout the twentieth century. Focusing on film clips that address the 
+								  transnational spread of infectious diseases, Professor Ostherr will concentrate on the 
+								  problem of capturing and representing the moment of contagion. The primary challenge of 
+								  these films lies in the need to simultaneously explain the vast scale of global disease 
+								  migrations and the microscopic scale of bacteria, parasites, and viruses. Addressing 
+								  these two competing demands has produced some surprising and unintended results.<br>
+								  <br>
+								  <strong> Kirsten Ostherr</strong> is the author of <em>Cinematic Prophylaxis: 
+								  Globalization and Contagion in the Discourse of World Health.</em> She has published 
+								  articles on documentary, science fiction, and independent art films. Professor Ostherr 
+								  is currently working on two projects: an article that examines the critique of violence 
+								  in the mass media in conjunction with the aesthetics of military visual culture, and a 
+								  new book that uses public health films to theorize the ethics of sponsorship (corporate, 
+								  governmental, NGO, etc.) in the context of global health research. She teaches courses 
+								  on U.S. and world cinema, medicine and media, globalization, race and sexuality, and 
+								  cultural studies. Professor Ostherr recently was invited to present at the United 
+								  Nations in Geneva on global health and the media.<br>&nbsp;</p></TD>
+                                </TR>
+                              </TBODY>
+                            </TABLE>
+                          </DIV>
+                          <!-- END -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="mainsmall"><p>&nbsp;<br>
+                            <strong>12:15 p.m. &mdash; Lunch </strong></p>
+                          <p><b>1:45 p.m. &mdash; Session III</b></p></td>
+                      </tr>
+                      <tr>
+                        <td><!-- STARTsass -->
+                          <DIV class=faqQuestion id=fcrHead></DIV>
+                          <DIV class=faqQuestion id=fcrQsass>
+                            <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                              <TBODY>
+                                <TR>
+                                  <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrAsass');">The Challenge of Climate Change: Past, Present and Future</a>, Ron Sass<br>
+                                  </TD>
+                                </TR>
+                              </TBODY>
+                            </TABLE>
+                          </DIV>
+                          <DIV class=faqAnswer id=fcrAsass>
+                                  <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                    <TBODY>
+                                      <TR>
+                                        <TD vAlign="top"><img src="images/clear.gif" height="13" width="12" border="0"></TD>
+                                        <TD class="mainSmall" width="100%"><p>When temperatures rise, is it one hot summer, 
+										or an indication of global warming? Scientists use a four-part method to assess 
+										global climate change. They detect the change, attribute it to a natural or man-made 
+										factor, predict the extent of the trend, and finally respond to mitigate the effect. 
+										This class will show how scientific uncertainty and skepticism increases as we progress 
+										through the assessment of a global climate trend.<br>
+										<br>
+										<strong>Ronald L. Sass</strong> is the co-director of the Center for Education 
+										at Rice and is the Harry C. and Olga K. Wiess Professor of Natural Science. A member 
+										of the Rice faculty since 1958 and past chair of the ecology and evolutionary biology 
+										department, Sass received his PhD in physical chemistry from the University of Southern 
+										California in 1957 and his BA from Augustana College in Rock Island, Illinois, in 1954. 
+										As a Guggenheim Fellow, he was a member of the Department of Theoretical Chemistry at 
+										Cambridge University. He served as a National Research Council Senior Fellow with NASA 
+										at the Langley Research Center in Virginia in 1988. He was also a member of the ABLE-2A 
+										Global Tropospheric Experiment Research Team in Alaska. As a teacher, Sass has been a 
+										four-time recipient of the Brown Teaching Award and was named Minnie Stevens Piper 
+										Professor in 1999. He also received the Salgo-Noren Distinguished Professor Award. 
+										The Association of Rice Alumni awarded him the university's Meritorious Service 
+										Award in 2001, and the university's highest honor, the Gold Medal, in 2006.<br>&nbsp;</p>
+                                        </TD>
+                                      </TR>
+                                    </TBODY>
+                                  </TABLE>
+                                </DIV>
+                                <!-- END -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="mainsmall"><p>&nbsp;<br>
+                            <strong>3:00 p.m. &mdash; Break with refreshments</strong></p>
+                          <p><strong>3:15 p.m. &mdash; Walk to Museum of Modern Art </strong></p>
+                          <p><b>3:30 p.m. &mdash; Session IV</b></p></td>
+                      </tr>
+                      <tr>
+                        <td><!-- STARTmoma -->
+                          <DIV class=faqQuestion id=fcrHead></DIV>
+                          <DIV class=faqQuestion id=fcrQmoma>
+                            <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                              <TBODY>
+                                <TR>
+                                  <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrAmoma');">Guided tours at the MoMA</a> featuring highlights of the permanent collection<br>
+                                  </TD>
+                                </TR>
+                              </TBODY>
+                            </TABLE>
+                          </DIV>
+                          <DIV class=faqAnswer id=fcrAmoma>
+                                  <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                    <TBODY>
+                                      <TR>
+                                        <TD vAlign="top"><img src="images/clear.gif" height="13" width="12" border="0"></TD>
+                                        <TD class="mainSmall" width="100%"><p>The <a href="http://moma.org/" target="_blank">Museum of Modern Art</a> in Manhattan was 
+										founded in 1929 as an educational institution and has become one of the preeminent 
+										modern arts museums in the world.  MoMA completed extensive renovations in 2005, 
+										nearly doubling the museum’s exhibition space and executing a dramatic architectural 
+										expansion.  Alumni College New York participants will experience highlights of the 
+										museum’s permanent collections on small group tours led by MoMA’s in-house expert 
+										lecturers.  You’ll also have the opportunity to explore the museum on your own both 
+										before and after the tour.<br>
+										&nbsp;</p>
+                                        </TD>
+                                      </TR>
+                                    </TBODY>
+                                  </TABLE>
+                                </DIV>
+                                <!-- END -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="mainsmall"><p>&nbsp;<br>
+                            <b>5:30 p.m. &mdash; Cocktails and hors d'oeuvres reception at Chef Bobby Flay's <a href="http://www.baramericain.com/about.html" target="_blank">Bar Americain</a></b></p>
+                          <p><b>6:30 p.m. &mdash; Reception ends; participants are encouraged to join fellow alumni for dinner on their own </b></p></td>
+                      </tr>
+                      <tr>
+                        <td class="mainSmall"><p>&nbsp;<br>
+                            <img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                          <p class="mainSubtitle"><strong>Scholarships </strong>
+                          <p> The Leo S. Shamblin Scholarship Fund offers support to select Alumni College participants with a strong record of volunteer service to Rice or in their local community. Recipients must intend to participate in all of Alumni College New York; young alumni and out-of-town participants are especially encouraged to apply. To apply for scholarship funds, please send a letter to the director of alumni affairs explaining why the funds would assist you in attending Alumni College New York and how you satisfy the criteria regarding volunteer service. <strong>The deadline for application is May 2.</strong> Letters should be addressed to Mark Davis, Office of Alumni Affairs, Rice University &mdash; MS 520, PO Box 1892, Houston, TX 77251-1892.
+                          <p class="mainSubtitle"><strong>Hotel Accommodations</strong>
+                          <p>Below is a list of recommended nearby hotels, provided for your convenience. Participants may explore their options through online travel services, a local travel agent, or their favorite hotel chain.
+                          <p><a href="http://www.starwoodhotels.com/sheraton/property/overview/index.html?propertyID=421" target="_blank">Sheraton New York Hotel and Towers</a><br>
+                            811 7th Avenue (near 52nd)<br>
+                            212-581-1000</p>
+                          <p><a href="http://www.starwoodhotels.com/whotels/property/overview/index.html?propertyID=1234" target="_blank">W New York &mdash; Times Square</a><br>
+                            1567 Broadway (at 47th)<br>
+                            212-930-7400</p>
+                          <p><a href="http://www.themusehotel.com" target="_blank">The Muse &mdash; A Kimpton Hotel</a><br>
+                            130 W 46th St (near 6th)<br>
+                            877-692-6873</p>
+                          <p><a href="http://www.radisson.com/newyorkny_lexington" target="_blank">Radisson Lexington Hotel</a><br>
+                            511 Lexington Avenue (at 48th)<br>
+                            212-755-4400</p></td>
+                      </tr>
+                    </TBODY>
+                  </table></TD>
+              </TR>
+            </TABLE>
+  </td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<tr>
+  <td><img src="images/clear.gif" width="100" height="5" alt="spacer"></td>
+</tr>
+<tr>
+  <td><table width="100%" border="0" cellspacing="0" cellpadding="15">
+      <tr>
+        <td width="57%"><font class="mainSmall"><a href="#"onClick="SecWin=window.open('contact.html','SecWin','width=260,height=450,toolbar=no,status=yes,resizable=no,scrollbars=yes,location=no,directories=no,menubar=no');return false;">Contact the Office of Alumni Affairs</a> | <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('dFuDc6BYQoX5nNNobzmYL4')">Send a Comment</a> | <a href="index.html">Home</a></font></td>
+        <td width="43%" align="right"><font class="mainSmall"><a href="http://www.rice.edu/about/cr-notice.html" target="_blank">
+          <script language="JavaScript">
+<!--
+today = new Date()
+cy = today.getFullYear()
+{
+}
+//-->
+</script>
+          Copyright &copy;
+          <script language="JavaScript">
+<!--
+document.write(cy)
+{
+}
+//-->
+</script>
+          Rice University</a></font></td>
+      </tr>
+    </table></td>
+</tr>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>

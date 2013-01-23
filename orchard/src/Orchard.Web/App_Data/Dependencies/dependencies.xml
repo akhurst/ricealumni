@@ -546,6 +546,12 @@
     <References />
   </Dependency>
   <Dependency>
+    <ModuleName>RiceAlumni.Events</ModuleName>
+    <VirtualPath>~/Modules/RiceAlumni.Events/bin/RiceAlumni.Events.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
     <ModuleName>RiceAlumni.Homepage</ModuleName>
     <VirtualPath>~/Modules/RiceAlumni.Homepage/bin/RiceAlumni.Homepage.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>

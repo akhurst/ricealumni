@@ -1,0 +1,646 @@
+<html>
+<head>
+<title>Rice University || Rice Engineering Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="../styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "../images/btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "../images/btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=350,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (srch.alum.checked == true){
+	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (srch.rice.checked == true){
+	srch.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  srch.submit();
+
+}
+
+function checkKey(evt){
+
+	srch.search.value=srch.q.value;
+	if (evt.keyCode == 13 && srch.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top">
+          <td width="221" rowspan="2"><a href="../index.html"><img src="../images/logo.gif" width="221" height="94" alt="Association of Rice Alumni" border="0"></a><br>
+            <table width="191" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="http://alumni.cgi.rice.edu/events/calendar.php">EVENTS 
+                        CALENDAR</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_over_nav.gif" align="center" valign="middle"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="navOver"><a href="../alumni_groups.html">ALUMNI 
+                        GROUPS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top">&nbsp;</td>
+                <td width="172" align="center" valign="middle"><table width="90%" border="0" cellspacing="3" cellpadding="0">
+                    <tr>
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="../alumni_groups.html#specialinterest">Special 
+                              Interest Groups</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="../regional_groups.html">Regional 
+                              Groups</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="../alumni_groups.html#schoolbased">School-Based 
+                              Groups</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="../grad_deg_alumni.html">Graduate-Degree 
+                              Alumni</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="../alumni_groups.html#friends">Friends 
+                              Groups</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../youngalum_stds.html">YOUNG 
+                        ALUMNI /STUDENTS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../career_connection.html">CAREER 
+                        CONNECTION</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../volunteer.html">VOLUNTEER</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../learning_trav.html">LEARNING 
+                        &amp; TRAVEL</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../honors_awards.html">HONORS 
+                        &amp; AWARDS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../new_at_rice.html">WHAT'S 
+                        NEW @ RICE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../about_alumassoc.html">ABOUT 
+                        THE ARA</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../faq_file.html">FAQ 
+                        FILE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="http://giving.rice.edu" target="_blank">GIVE 
+                        TO RICE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+          <td align="right"><img src="../images/clear.gif" width="100" height="20"><br>
+            <img src="../images/sub_rea.jpg" width="526" height="56" ="Group of young women sitting and talking"></td>
+        </tr>
+        <tr valign="top">
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td colspan="4">&nbsp;</td>
+              </tr>
+              <tr valign="top">
+                <td width="414"><p><img src="../images/sub_title_rea.png" width="410" height="30" alt="Rice Engineering Alumni"></p>
+                  <table border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tr valign="top">
+                      <td class="mainSmall"><p class="mainSubtitle"><strong>REA Events </strong></p>
+                        <p class="mainSubtitle"><strong>Fall 2012</strong></p>
+                        <ul>
+                          <li><strong>Fri Oct 12: Alumni Honors Presentation </strong><br>
+                            Friday, October 12<br>
+                            4:00 pm<br>
+                            McMurtry Auditorium, Duncan Hall<br>
+                            <br>
+                            Honoring:<br>
+                            N. Wayne Hale Jr., ME &rsquo;76:  Outstanding Engineering Alumnus<br>
+                            Troy Thacker, ChE &rsquo;95:  Outstanding Young Engineering Alumnus <br>
+                            J. Bartlett &ldquo;Bart&rdquo; Sinclair, EE &rsquo;73, MEE &rsquo;74, PhD &rsquo;78:  Distinguished Service Medal</li>
+                        </ul>
+                        <blockquote>
+                          <p>Followed by<br>
+                            <strong>Engineering Centennial Reception</strong><br>
+                            4:30 to 6:30 pm<br>
+                            Duncan Hall<br>
+                            <a href="https://engrice.wufoo.com/forms/rice-engineering-centennial-reception/">Register here</a></p>
+                        </blockquote>
+                        <ul>
+                          <li><strong> Sat Oct 27: Football Tailgate Party*</strong><br>
+                            10:00 AM (kickoff at 12:00 noon)<br>
+                            Rice Stadium<br>
+                            REA invites engineering alumni, faculty, staff, family and friends to cheer on the Rice Owls as they take on conference rival Southern Miss.  The pregame tailgate begins 2 hours prior to kickoff. Be sure to wear your Rice gear!<br>
+                            <a href="https://online.alumni.rice.edu/default.aspx?Page=EVNTEventDetail&EventID=1578">Register here</a><br>
+                            <br>
+                          </li>
+                          <li><strong>Tue Dec 4: Fall Social and New Faculty Address*</strong><br>
+                            6:30 pm<br>
+                            Saint Arnold Brewing Company<br>
+                            2000 Lyons Avenue<br>
+                            Houston, TX 77020</li>
+                        </ul>
+                        <blockquote>
+                          <p>Outstanding New Faculty Speaker<br>
+                            <a href="http://chbe.rice.edu/Content.aspx?id=57">Rafael Verduzco </a><br>
+                            BSChE &lsquo;01 <br>
+                            Louis Owen Assistant Professor of Chemical &amp; Biomolecular Engineering</p>
+                          <p>Please look for registration link in October!</p>
+                          <p>In 2010, REA began the practice of recognizing each year a faculty member in the School of Engineering who, although relatively new to Rice, has already brought considerable recognition and distinction to Rice and to the School.  The honoree is asked to give the keynote talk at the REA Fall Social.</p>
+                          <p>In this Centennial year, we are proud to recognize one of our fellow alumni as our New Faculty Speaker.  Professor Rafael Verduzco joined the Rice faculty in 2009 after earning his BS summa cum laude from Rice, completing his MS and PhD at Caltech, and conducting postdoctoral research at Oak Ridge National Laboratory.  At Rice he leads <a href="http://verduzcolab.blogs.rice.edu/about-2/">a research group </a>that is breaking important new ground in polymer materials, including the development ofsemiconductive block copolymers for use in polymer- based solar cells, which are significantly cheaper and easier to fabricate compared with silicon-based solar cells.</p>
+                        </blockquote>
+                        <p>*To cover costs and to properly steward REA funds, certain events carry a nominal charge.  This fee is waived for <strong>REA Sponsors</strong>, whose contributions provide essential support for REA&rsquo;s <a href="http://alumni.rice.edu/rea/scholarship.html">scholarships</a>, <a href="http://alumni.rice.edu/rea/spgp.html">grants</a> and other programs.  Please consider becoming an REA Sponsor today.  Sponsorship levels range from $25 for young alumni to $2500 for REA Fellows.  Please visit the <a href="http://alumni.rice.edu/rea/support.html">Support REA  page</a> for further details. </p>
+<hr>
+                        <p class="mainSubtitle"><strong>Past Events</strong></p>
+<p class="mainSubtitle"><strong>Spring 2012</strong></p>
+<table width="100%" border="0" cellspacing="0" cellpadding="15">
+  <tr>
+    <td bgcolor="#E4E4E4" class="mainSmall"><p><strong>Thu Mar 22:&nbsp; &ldquo;The       State of the School&rdquo;:&nbsp; The Dean's       Address to Alumni</strong></p>
+      <p>6:30 pm<br />
+        McMurtry Auditorium,  Duncan Hall<br />
+        <a href="http://tinyurl.com/DeanThomasStateOfTheSchool2012">Live webcast</a> (details TBA)<br />
+        Reception following</p>
+      <p>Edwin  &quot;Ned&quot; Thomas, the William &amp; Stephanie Sick Dean of Engineering,  joined Rice in 2011 having built a distinguished career as a materials  scientist and having served for several years as chair of the Department of  Materials Science at MIT, the leading program in the nation.&nbsp; In his first eight months at Rice, Ned has  been busy observing and assessing every aspect of the Rice engineering program,  from undergraduate teaching to faculty research to alumni experiences.&nbsp; Now, in his first major address to alumni,  Ned will discuss the current state of the School of Engineering and present his  vision for the School's future.</p>
+      <p> Because  of the importance of this event, a live webcast is planned.&nbsp; Check back here for further information.&nbsp; </p>
+      <p>Please  join us for this special program and reception presented by and for the Rice  Engineering Alumni.</p>
+      <p>Click <a href="https://online.alumni.rice.edu/default.aspx?Page=EVNTEventDetail&EventID=1463">here</a> to RSVP and for other details.</p>
+      <hr>
+      <p><strong>Mirror event in Austin at National Instruments</strong></p>
+      <p>While the event will be broadcast over the web  from Houston, the Rice Engineering Alumni - Austin Chapter would like to  invite you to a mirror event, with a reception following, in North  Austin at the National Instruments campus.<br>
+        <br>
+        <em>Special thanks to National Instruments for hosting this event.</em></p>
+      <p>Click <a href="https://online.alumni.rice.edu/default.aspx?Page=EVNTEventDetail&EventID=1478">here</a> to RSVP and for other details.</p>
+      <p><br>
+      </p></td>
+  </tr>
+</table>
+<br>
+<ul type="disc">
+  <li><strong>Sat       Mar 31:&nbsp; <a href="http://rpc.rice.edu/beer-bike/">Beer-Bike</a></strong></li>
+</ul>
+<ul type="disc">
+  <li><strong><a name="picnic"></a>Sat       Apr 14:&nbsp; REA/School of Engineering       End-of-Year Picnic</strong></li>
+</ul>
+<blockquote>
+  <p>4:30-7:00 pm<br />
+    Engineering Quad</p>
+  <p>Join the entire Rice  engineering community for this celebration, hosted by REA, of the many accomplishments  of Rice students, faculty and staff in the past year! &nbsp;Enjoy entertainment, drinks, and barbecue in  the company of fellow students, faculty, staff, alumni and friends as we  recognize major achievements of the year and award over $100,000 in  scholarships and prizes to Rice students. &nbsp;Families and friends are always welcome as we salute  another great year of Engineering at Rice. &nbsp;No RSVP is necessary. </p>
+  <p>Click <strong><a href="docs/Student Awards Picnic - April 2011.pdf">here</a></strong> for the 2011 event program.</p>
+</blockquote>
+<ul type="disc">
+  <li><strong>Sat       Apr 21:&nbsp; REA Baseball Tailgate</strong></li>
+</ul>
+<blockquote>
+  <p>12:00-1:45 pm (first  pitch at 2:00 pm)<br />
+    Reckling Park</p>
+  <p>REA invites  engineering alumni, family, friends, and fans to cheer on the Rice Owls as they  take on conference foe East Carolina at Reckling Park. &nbsp;Be sure to wear your Rice gear!</p>
+  <p>Tailgate tickets are  $5 for adults and free to Rice students and children 12 and under. Cost  includes hamburgers, hot dogs, veggie burgers, assorted chips, soft drinks,  water, and beer. &nbsp;Door prizes will be  awarded. </p>
+  <p>Game tickets are available  through REA for $5. Tickets will be distributed at the tailgate tent. </p>
+  <p>Click <a href="https://online.alumni.rice.edu/default.aspx?Page=EVNTEventDetail&EventID=1462">here</a> to register for the Tailgate and to order game tickets.</p>
+</blockquote>
+<ul type="disc">
+  <li><strong>Thu Apr 24:</strong><strong>&nbsp; </strong><strong>2012 Engineering Design Showcase and Poster       Session</strong></li>
+</ul>
+<blockquote>
+  <p>4:30-6:30 pm<br />
+    Tudor Fieldhouse</p>
+  <p>As part of the Rice  Centennial's <a href="http://www.rice.edu/unconvention/" target="_blank">UnConvention</a><strong>,</strong> this competition  will showcase the innovative work of our talented and ambitious undergraduate  students. &nbsp;Engineering alumni are asked  to serve as judges for the competition.&nbsp; </p>
+  <p><a href="mentoring.html#oedk">Details and  registration</a></p>
+</blockquote>
+<ul type="disc">
+  <li><strong>Thu May 3:</strong><strong>&nbsp; </strong><strong>3rd Annual Rice Undergraduate Technology       Venture Challenge</strong></li>
+</ul>
+<blockquote>
+  <p>Times TBD<br />
+    Jones Graduate School of Business </p>
+  <p><a href="mentoring.html#oedk">Details and  registration</a></p>
+</blockquote>
+                        <ul>
+                          <li><strong>Mon       Feb 20:&nbsp; &ldquo;Engineering Your Career&rdquo;       panel discussion</strong></li>
+                        </ul>
+                        <blockquote>
+                          <p>7:00 pm<br />
+                            McMurtry Auditorium,  Duncan Hall<br />
+                            Dessert reception  following<br>
+                            <br>
+                            As part of National  Engineers Week, REA, the George R. Brown School of Engineering and Rice&rsquo;s  student engineering groups are co-sponsoring &quot;Engineering Your  Career,&quot; a panel discussion designed to inform current students and recent  alumni about careers open to Rice engineering graduates and how to manage their  career paths.&nbsp; Help mentor today&rsquo;s  engineering majors and network with fellow alums.<br>
+                            <br>
+                            <a href="mentoring.html#feb20">Panelists and Details</a></p>
+                        </blockquote>
+                        <ul type="disc">
+                          <li><strong>Tue       Feb 28:&nbsp; &ldquo;Engineering for Impact:       Effecting Sustainable Change in the Developing World&rdquo;</strong></li>
+                        </ul>
+                        <blockquote>
+                          <p><strong>National  Academy of Engineering regional meeting</strong><br />
+                            1:45-5:10 pm<br />
+                            Bioscience Research  Collaborative<br />
+                            Reception following</p>
+                          <p>For the list of  distinguished speakers and to register, visit <a href="http://www.rice360.rice.edu/">Rice  360</a>.</p>
+                          <p>The NAE regional  meeting is held in conjuction with the De Lange Conference VIII:&nbsp; The Future of the Research University in a  Global Age, which begins Mon Feb 27.&nbsp; For  details and to register for the De Lange Conference, visit the <a href="http://delange.rice.edu/">De Lange Conference</a> site.&nbsp; </p>
+                        </blockquote>
+                        <ul type="disc">
+                          <li><strong>Fri       Mar 2:&nbsp; Science &amp; Engineering       Fair of Houston -&ldquo; REA judging and scholarship interviewing</strong></li>
+                        </ul>
+                        <blockquote>
+                          <p>George R. Brown  Convention Center, Hall D</p>
+                          <p>Through a  long-standing partnership, REA provides alumni volunteers who serve as judges  and scholarship interviewers at the <a href="http://hunstem.uhd.edu/SEFH/sefh.html">Science  and Engineering Fair of Houston</a> and select two high  school students to receive $5000 scholarships to Rice.&nbsp; For further details, or to serve as an REA judge  and to help select the winner of the Rice scholarships, please visit our <a href="mentoring.html#sefh">Mentoring</a> page.&nbsp; <strong> </strong></p>
+                        </blockquote>
+                        <ul type="disc">
+                          <li><strong>Thu Mar 8:</strong><strong>&nbsp; </strong><strong>Around the Kitchen Table Discussion -&ldquo; Energy and       Sustainability</strong><strong> </strong></li>
+                        </ul>
+                        <blockquote>
+                          <p>5:30-7:30 pm <br />
+                            OEDK classroom<strong> </strong><br />
+                            <br />
+                            Dine with students as they present their ideas and seek advice about their  design projects from seasoned professionals.<strong> </strong></p>
+                          <p><a href="mentoring.html#oedk">Details and  registration</a></p>
+                        </blockquote>
+                        <p class="mainSubtitle"><strong> Fall 2011</strong></p>
+                        <ul type="disc">
+                          <li><strong>Wed Sept 21:       Austin: Engineering Networking Mixer</strong> <br />
+                            6:30-8:00 pm</li>
+                        </ul>
+                        <blockquote>
+                          <p>Scholz Garten<br />
+                            1607 San Jacinto<br />
+                            Austin, TX 78701<br />
+                            <br />
+                            Join like-minded engineering professionals at our first dedicated networking  mixer at <a href="http://www.scholzgarten.net/">Scholz Garten</a>.  Bring your ideas and suggestions to build a  vibrant Rice engineering network in Austin, and REA president George Webb &rsquo;88,  &rsquo;91 will be in attendance to give feedback.<br />
+                            <br />
+                            Although there is no fee to attend, please <a href="mailto:llamb@rice.edu"><strong>email  us</strong></a> if you plan to attend.</p>
+                          <p><em>Special thanks to Austin  hosts Rajiv Bala &rsquo;02 and Javier Prado &rsquo;79.</em></p>
+                        </blockquote>
+                        <ul type="disc">
+                          <li><strong>Sat Oct 8: </strong><strong>REA       Football Tailgate party</strong><br />
+                            9:30-11:00 am (kickoff at 11:30 am)<br />
+                            Rice Stadium east side<br />
+                          </li>
+                        </ul>
+                        <blockquote>
+                          <p>REA invites  engineering alumni, family, friends, and fans to cheer on the Rice Owls as they  take on the Memphis Tigers!  The pregame  tailgate begins at 9:30 a.m. (or 2 hours prior to kickoff if game time  changes). Be sure to wear your Rice gear!</p>
+                          <p>Related  URL: <a href="https://online.alumni.rice.edu/default.aspx?Page=EVNTEventDetail&EventID=1418">Register</a> for the tailgate online by Wednesday, October 5!</p>
+                        </blockquote>
+                        <ul>
+                          <li><strong>Fri Nov 4:  Dr Bill Wilson IEEE Student Lounge dedication </strong></li>
+                        </ul>
+                        <blockquote>
+                          <p>3:00 pm<br />
+                            A147 Abercrombie Lab</p>
+                          <p>In memory of William  &ldquo;Dr Bill&rdquo; Wilson, professor of electrical engineering 1972-2006 and resident  associate of Wiess College 1978-2006.</p>
+                          <p>Click and <a href="docs/Dr Bill Lounge dedication - Nov 2011.pdf">here</a> for a copy of the dedication, and <a href="http://www.ece.rice.edu/news/featurestories/2011wlw_lounge">here</a> for the news story.  </p>
+                        </blockquote>
+                        <ul type="disc">
+                          <li><strong>Fri Nov 4: </strong><strong>Outstanding </strong><strong>Engineering       Alumni Awards Presentation &amp; Reception</strong><strong> </strong></li>
+                        </ul>
+                        <blockquote>
+                          <p>4:00 pm <br />
+                            McMurtry Auditorium,  Duncan Hall<br />
+                            Reception following<br />
+                            <br />
+                            <strong>Welcome:  <a href="http://engineering.rice.edu/DeanThomas.aspx">Ned  Thomas</a>, </strong>William and Stephanie  Sick Dean of Engineering <br />
+                            <strong>&ldquo;</strong><a href="docs/REA - A Year in Progress - Nov 2011.pdf"><strong>REA: A  Year in Progress</strong></a><strong>&rdquo;:  </strong>George Webb, EE &rsquo;88, MEE&rsquo; 91, REA  President<strong></strong><br />
+                            <strong>Outstanding  Young Engineering Alumnus:  </strong>Aaron Hertzmann, CS  &lsquo;96<br />
+                            <strong>Outstanding Engineering Alumnus:  </strong>R. Norris Keeler, ChE &lsquo;51<br />
+                            <br />
+                            For further details on the honorees and the awards presentation, please visit  our <a href="honors_outstanding.html">Outstanding Engineering Alumni</a> page</p>
+                        </blockquote>
+                        <ul type="disc">
+                          <li><strong>Thu Dec 1:  REA </strong><strong>Lecture       Series</strong></li>
+                        </ul>
+                        <blockquote>
+                          <p>6:30  pm<br />
+                            McMurtry Auditorium,  Duncan Hall</p>
+                          <p><strong>Jeff Ross &rsquo;75:  &quot;New Paradigms in Public Sector  Engineering&quot;</strong><br />
+                            <br />
+                            During a time when the common cry in the country was to reduce governmental  regulation and taxation, members of the Houston Council of Engineering  Companies organized a grass roots campaign to establish a dedicated fund for  street and drainage improvements and maintenance. The resulting amendment  charged the Council to adopt a drainage fee, eliminate future debt financing,  and convert a portion of the City&rsquo;s tax rate to &quot;pay as you go&quot;  funding. Learn about the journey of these paradigm changers and the effort that  it took to win this historic election.<br />
+                            <br />
+                            Refreshments will be served.  Although  there is no cost to attend, we ask that you <a href="https://online.alumni.rice.edu/default.aspx?Page=EVNTEventDetail&amp;EventID=1445" title="REA Lecture  Registration"><strong>register online</strong></a> by Tuesday, November 29, or contact the alumni office by phone at  713-348-4270.</p>
+                        </blockquote>
+                        <ul type="disc">
+                          <li><strong>Tue Dec 6:  </strong><strong>Fall Social and Outstanding New       Faculty Address</strong></li>
+                        </ul>
+                        <blockquote>
+                          <p>6:30  pm<br />
+                            Saint  Arnold Brewing Company<br />
+                            2000 Lyons Avenue<br />
+                            Houston, TX 77020</p>
+                          <p><strong>Welcome:  <a href="http://engineering.rice.edu/DeanThomas.aspx">Ned Thomas</a>, </strong>William and Stephanie  Sick Dean of Engineering <br>
+                            <strong>Special Honoree:  <a href="http://www.caam.rice.edu/~rat/">Richard Tapia</a>, </strong>Maxfield-Oshman  Professor in Engineering and National Medal of Science recipient<br />
+                            <strong>Keynote Speaker:  <a href="http://mcdevitt.rice.edu/john-mcdevitt/">John  McDevitt</a>, </strong>Brown-Wiess Professor  of Bioengineering and Chemistry<br />
+                            <strong>&quot;Building the Biomarker Highway: A  Pathway to Affordable Healthcare&quot;</strong><br />
+                            <br />
+                            Programmable bio-nano-chip sensors are now in development at Rice University  with goal of diagnosing chronic health conditions like cardiac heart disease  and various types of cancers early in their development when their treatment  costs are more affordable and patient outcomes are better.<br />
+                            <br />
+                            Join fellow engineering alumni and friends for food from Treebeards and drinks  at Saint Arnold.  Tickets are $10. <br />
+                            <br />
+                            Related URL: <a href="https://online.alumni.rice.edu/default.aspx?Page=EVNTEventDetail&amp;EventID=1427"><strong>Register  online by Friday, December 2!</strong></a><strong> </strong><br />
+                            Update:  Click <a href="docs/Fall Social event program - Dec 2011.pdf">here</a> for the complete program  from this event. </p>
+                        </blockquote>
+                        <p>&nbsp;</p>
+                        <blockquote>&nbsp; </blockquote>
+                        <p>&nbsp;</p></td>
+                    </tr>
+                  </table></td>
+                <td width="1" background="../images/dots_bg.gif"><img src="../images/clear.gif" width="1" height="50"></td>
+                <td width="10"><img src="../images/clear.gif" width="10" height="50"></td>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><img src="../images/clear.gif" width="115" height="10" alt="spacer"></td>
+                    </tr>
+                    <tr>
+                      <td><img src="../images/title_realinks.png" width="115" height="20" alt="REA Links"></td>
+                    </tr>
+                    <tr>
+                      <td><table width="100%" border="0" cellspacing="3" cellpadding="0">
+                        <tr>
+                          <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="index.html">REA Home</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="events.html">REA Events</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="stayintouch.html">Stay in Touch</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="leadership.html">REA Leadership</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'" height="8"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="scholarship.html">Scholarship Program</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="spgp.html">Student Project Grant Program</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="mentoring.html">Student Mentoring</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="honors_recognition.html">REA Honors: Recognition Program</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="honors_outstanding.html">REA Honors: Outstanding Engineering Alumni</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="austin.html">REA Austin</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="support.html">Support REA</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="http://engr.rice.edu/">George R. Brown School of Engineering</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="../index.html">ARA Home</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                      </table></td>
+                    </tr>
+                    <tr>
+                      <td><img src="../images/clear.gif" width="115" height="14" alt="spacer"></td>
+                    </tr>
+                    <tr>
+                      <td><img src="../images/clear.gif" width="100" height="8" alt="spacer"></td>
+                    </tr>
+                  </table>
+                  
+                  <!-- <a href="http://giving.rice.edu" target="_blank"><img src="../images/rice_nextcent.gif" width="83" height="40" border="0" alt="Rice: The Next Century Campaign" hspace="3"></a><br> --> 
+                  <a href="http://www.rice.edu" target="_blank"><img src="../images/rice_home.gif" width="75" height="40" border="0" alt="Rice: Home" vspace="10" hspace="3"></a></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td><img src="../images/clear.gif" width="100" height="5" alt="spacer"></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="15">
+        <tr>
+          <td width="57%"><font class="mainSmall"><a href="#"onClick="SecWin=window.open('../contact.html','SecWin','width=260,height=450,toolbar=no,status=yes,resizable=no,scrollbars=yes,location=no,directories=no,menubar=no');return false;">Contact 
+            the Office of Alumni Affairs</a> | <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('DjxlMPhaZYXRcnxAamtqrg')">Email 
+            the REA</a> | <a href="../index.html">Home</a></font></td>
+          <td width="43%" align="right"><font class="mainSmall"> 
+            <script language="JavaScript">
+<!--
+today = new Date()
+cy = today.getFullYear()
+{
+}
+//-->
+</script> 
+            Copyright &copy; 
+            <script language="JavaScript">
+<!--
+document.write(cy)
+{
+}
+//-->
+</script> 
+            Rice University</font></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script> 
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>

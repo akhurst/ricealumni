@@ -1,0 +1,843 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "images/btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "images/btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=350,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (srch.alum.checked == true){
+	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (srch.rice.checked == true){
+	srch.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  srch.submit();
+
+}
+
+function checkKey(evt){
+
+	srch.search.value=srch.q.value;
+	if (evt.keyCode == 13 && srch.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+</script>
+
+<script language="JavaScript">
+function chkForm(frm) {
+  // the name of the form
+  f = frm;
+
+  // change msg to the name of any field you want to make required.
+  if (f.msg) {
+    if (f.msg.value == '') {
+      alert('Check all required fields');
+      return false;
+    }
+  }
+
+  // if 'from' address field is used, this checks it to make sure address is valid
+  if (f.email) {
+    if (f.email.value != '' && (f.email.value.lastIndexOf('.') < 0 || f.email.value.lastIndexOf('@') < 1)) {
+      alert('Invalid email address');
+      return false;
+    }
+    else if (f.email.value == '') {
+      return confirm('Are you sure you want to send this message without an email address?');
+    }
+  }
+}
+</script>
+
+</head>
+
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<form id="srch" action="http://alumni.cgi.rice.edu/events/txtmailer.php" name="txtmail" onSubmit="return chkForm(this)" method="post">
+<input type="hidden" name="sendto" value="volunteer@alumni.rice.edu">
+<input type="hidden" name="returnto" value="">
+<input type="hidden" name="subject" value="Volunteer Interest Form">
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top"> 
+            <td width="221" rowspan="2"> <a href="index.html"><img src="images/logo.gif" width="221" height="94" alt="Association of Rice Alumni" border="0"></a><br>
+            <table width="191" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="http://alumni.cgi.rice.edu/events/calendar.php">EVENTS 
+                        CALENDAR</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="alumni_groups.html">ALUMNI 
+                        GROUPS</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="youngalum_stds.html">YOUNG 
+                        ALUMNI /STUDENTS</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="career_connection.html">CAREER 
+                        CONNECTION</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_over_nav.gif" align="center" valign="middle"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="volunteer.html">VOLUNTEER</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="learning_trav.html">LEARNING 
+                        &amp; TRAVEL</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="honors_awards.html">HONORS 
+                        &amp; AWARDS</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="new_at_rice.html">WHAT'S 
+                        NEW @ RICE</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="about_alumassoc.html">ABOUT 
+                        THE ARA</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="faq_file.html">FAQ 
+                        FILE</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="http://giving.rice.edu" target="_blank">GIVE 
+                        TO RICE</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            
+          </td>
+          <td align="right"><img src="images/clear.gif" width="100" height="20"><br>
+            <img src="images/subpic_aboutr.jpg" width="526" height="56" ="Young people smiling"></td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td colspan="4">&nbsp;</td>
+              </tr>
+              <tr valign="top"> 
+                <td width="414"> 
+                  <p><img src="images/sub_title_volunteer.gif" width="410" height="17" alt="About Alumni Association"></p>
+                  <table class="mainTable" border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tr valign="top"> 
+                      <td> 
+                          <p><font class="mainSubtitle"><b>Volunteer Interest 
+                            Form</b></font></p>
+                        <p><font class="mainSmall">Please check the boxes next 
+                          to the volunteer opportunities you're interested in, 
+                          and a program representative will contact you with more 
+                          information.</font></p>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="3">
+                          <tr> 
+                            <td colspan="2" valign="top"><font class="mainSmall"><b>Recruiting 
+                              and Mentoring Students</b></font></td>
+                          </tr>
+                          <tr>
+                            <td align="right" valign="top">&nbsp;</td>
+                            <td><font class="mainSmall"><a href="http://futureowls.rice.edu/futureowls/RAVA.asp">Rice Alumni Volunteers for Admission</a></font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top">&nbsp; 
+                            </td>
+                            <td width="97%"><font class="mainSmall"><a href="https://online.alumni.rice.edu/Career/default.asp">Rice Career Network</a> (formerly the Alumni Contact Service)</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="career_svc" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Career Services</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="coll_cm_asc" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">College Community 
+                              Associates</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="ldr_rice" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Leadership 
+                              Rice</font></td>
+                          </tr>
+                          <!--<tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="sa_ment" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Student/Alumni Mentoring</font></td>
+                          </tr>-->
+                          <tr> 
+                            <td width="3%" align="right" valign="top">&nbsp;</td>
+                            <td width="97%">&nbsp;</td>
+                          </tr>
+                          <tr> 
+                            <td colspan="2" valign="top"><font class="mainSmall"><b>Association 
+                              of Rice Alumni (ARA)</b></font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="ara_board" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">ARA Board</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="alum_coll_cm" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Alumni College 
+                              Committee</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="homecm_reun" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Homecoming 
+                              Event/Class Reunion</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="reg_alum_grps" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Regional Alumni 
+                              Groups</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="rice_alum_grtrs" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Rice Alumni 
+                              Event Greeters</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top">&nbsp;</td>
+                            <td width="97%">&nbsp;</td>
+                          </tr>
+                          <tr> 
+                            <td colspan="2" valign="top"><font class="mainSmall"><b>Philanthropy</b></font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="cls_agt_prg" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Class Agent 
+                              Program</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="crp_agt_prg" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Corporate 
+                              Agent Program</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="gdann_sch_prg" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Golden Anniversary 
+                              Scholarship Program</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="reun_giv_prg" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Reunion Giving 
+                              Program</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top">&nbsp;</td>
+                            <td width="97%">&nbsp;</td>
+                          </tr>
+                          <tr> 
+                            <td colspan="2" valign="top"><font class="mainSmall"><b>Friends 
+                              Group</b></font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="fr_fond_lib" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Friends of 
+                              Fondren Library</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="fr_rice_plyrs" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Friends of 
+                              Rice Players</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="jns_scl_prtn" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Jones Partners</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                              <input type="checkbox" name="owl_club" value="checkbox">
+</td>
+                            <td width="97%"><font class="mainSmall">Rice Athletics Fund </font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="rice_des_alnc" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Rice Design 
+                              Alliance</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="rice_eng_alum" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Rice Engineering 
+                              Alumni</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="rice_hist_soc" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Rice Historical 
+                              Society</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="shep_soc" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Shepherd Society</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top">&nbsp;</td>
+                            <td width="97%">&nbsp;</td>
+                          </tr>
+                          <tr> 
+                            <td colspan="2" valign="top"><font class="mainSmall"><b>Academic 
+                              Programs</b></font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="ctr_ns_tech" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Center for 
+                              Nanoscale Science &amp; Technology</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="cpt_it_ins" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Computer and 
+                              Information Technology Institute</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="dpt_arthist" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Department 
+                              of Art &amp; Art History</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="env_es_ins" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Environmental 
+                              and Energy Systems Institute</font></td>
+                          </tr>
+                          <tr>
+                            <td align="right" valign="top"><input type="checkbox" name="ctr_std_cult" value="checkbox">
+                            </td>
+                            <td><font class="mainSmall">Humanities Research Center</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="ins_bio" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Institute 
+                              for Biosciences and Bioengineering</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="jns_scl_mgt" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Jones Graduate 
+                              School of Management</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="mdv_stu_prg" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Medieval Studies 
+                              Program</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="scl_cnt_stu" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">School of 
+                              Continuing Studies</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="grb_scl_eng" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">George R. 
+                              Brown School of Engineering</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="wie_scl_ns" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Wiess School 
+                              of Natural Sciences</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top">&nbsp;</td>
+                            <td width="97%">&nbsp;</td>
+                          </tr>
+                          <tr> 
+                            <td colspan="2" valign="top"><font class="mainSmall"><b>Alumni 
+                              Special Interest Groups</b></font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="asc_ruba" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Association 
+                              of Rice University Black Alumni (ARUBA)</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="ru_chaa" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Rice University 
+                              Chinese Alumni Association</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="nrotc_aa" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">NROTC Alumni 
+                              Association</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="rbna" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Rice Business 
+                              Networking Association</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="glaa" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Rice Gay and 
+                              Lesbian Alumni Association</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="rubpw" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Rice University 
+                              Business and Professional Women</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="rugby_alum" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Rugby Alumni</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" value="checkbox" name="soc_lar">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Society of 
+                              Latino Alumni of Rice (SOLAR)</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="soc_ruw" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Society of 
+                              Rice University Women (SRUW)</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="sth_asa" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">South Asian 
+                              Society Alumni</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="yng_alum" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Young Alumni</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top">&nbsp;</td>
+                            <td width="97%">&nbsp;</td>
+                          </tr>
+                          <tr> 
+                            <td colspan="2" valign="top"><font class="mainSmall"><b>Miscellaneous</b></font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="grd_stu_loan" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Graduate Student 
+                              Loan Closet</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="pray_owls" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">Praying Rice 
+                              Owls</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top"> 
+                                <input type="checkbox" name="r_asc" value="checkbox">
+                            </td>
+                            <td width="97%"><font class="mainSmall">&quot;R&quot; 
+                              Association</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" align="right" valign="top">&nbsp;</td>
+                            <td width="97%">&nbsp;</td>
+                          </tr>
+                          <tr> 
+                            <td colspan="2" valign="top"><font class="mainSmall">Name: 
+                                <input class="formSmall" type="text" name="name">
+                              <img src="images/clear.gif" width="32" height="15" alt="spacer">Class 
+                              of: 
+                                <input class="formSmall" type="text" name="class_of" size="5">
+                              </font></td>
+                          </tr>
+                          <tr> 
+                            <td colspan="2" valign="top"><font class="mainSmall">Phone 
+                              Number: 
+                                <input class="formSmall" type="text" name="phone" size="12">
+                              </font></td>
+                          </tr>
+                          <tr> 
+                            <td colspan="2" valign="top"><font class="mainSmall">Email: 
+                                <input class="formSmall" type="text" name="email" size="40">
+                              </font></td>
+                          </tr>
+                          <tr> 
+                            <td colspan="2" valign="top"> 
+                              <input class="formSmall" type="submit" name="Submit" value="Submit">
+                              <input class="formSmall" type="reset" name="Reset" value="Reset">
+                            </td>
+                          </tr>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td width="1" background="images/dots_bg.gif"><img src="images/clear.gif" width="1" height="50"></td>
+                <td width="10"><img src="images/clear.gif" width="10" height="50"></td>
+                <td>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td>
+                          <input type="hidden" value="web" name="tab">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr> 
+                              <td colspan="4"> 
+                                <input type=text name=q size=15 maxlength=255 value="" onChange="srch.search.value=this.value;" class="formSmall">
+                                <span id="spn" style="background-image: URL(images/btn_go_new.gif);width:19;height:14" onClick="doSearch()" /> 
+                                <input type="hidden" name="hidden_site" value="alumni.rice.edu">
+                                <input type="hidden" name="search" value="">
+                                </span></td>
+                            </tr>
+                            <tr>
+                              <td width="10"> 
+                                <input id="alum" type="radio" name="sitesearch" value="alumni.rice.edu" checked>
+                              </td><td width="85"><font class="mainSmalldark">Search 
+                                this site</font></td>
+                            </tr>
+                            <tr>
+                              <td width="10" align="right"> 
+                                <input id="rice" type="radio" name="sitesearch" value="www.rice.edu">
+                              </td>
+                              <td width="85"><font class="mainSmalldark">Search 
+                                rice.edu</font></td>
+                            </tr>
+                          </table>
+                        </td>
+                    </tr>
+                    <tr> 
+                      <td><img src="images/clear.gif" width="115" height="20" alt="spacer"></td>
+                    </tr>
+                    <tr> 
+                      <td><a href="https://online.alumni.rice.edu/asp/Welcome.asp"><img src="images/title_onlinesvcs.gif" width="115" height="9" alt="Online Services" border="0"></a></td>
+                    </tr>
+                    <tr> 
+                      <td> 
+                        <table width="100%" border="0" cellspacing="3" cellpadding="0">
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/events/calendar.php" title="Events calendar and online registration">Find Events/RSVP</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/detailsearch.asp" title="Search the directory of Rice alumni">Alumni Directory</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/profile.asp" title="Update your directory information">Update Address</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Online/emailforwarding/eforwarding.asp" title="Manage or create an alumni.rice.edu account">Email Forwarding</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Career/default.asp" title="Connect with alums in your career field">Career Network</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+						  <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/bizfinder/" title="Find or promote alumni-owned businesses">Business Finder</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+<tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                    <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/remotelibrary.asp?type=8" title="Get your latest news into the Owlmanac" target="_blank">Online Classnotes </a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/library.asp" title="Access research tools and periodicals">Digital Library</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td><img src="images/clear.gif" width="115" height="14" alt="spacer"></td>
+                    </tr>
+                  </table>
+                  <!-- <a href="http://giving.rice.edu" target="_blank"><img src="images/rice_nextcent.gif" width="83" height="40" border="0" alt="Rice: The Next Century Campaign" hspace="3"></a><br> -->
+                  <a href="http://www.rice.edu" target="_blank"><img src="images/rice_home.gif" width="75" height="40" border="0" alt="Rice: Home" vspace="10" hspace="3"></a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td><img src="images/clear.gif" width="100" height="5" alt="spacer"></td>
+  </tr>
+  <tr> 
+    <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="15">
+        <tr>
+          <td width="57%"><font class="mainSmall"><a href="#"onClick="SecWin=window.open('contact.html','SecWin','width=260,height=450,toolbar=no,status=yes,resizable=no,scrollbars=yes,location=no,directories=no,menubar=no');return false;">Contact 
+             the Office of Alumni Affairs</a> | <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('dFuDc6BYQoX5nNNobzmYL4')">Send a Comment</a> | <a href="index.html">Home</a></font></td>
+            <td width="43%" align="right"><font class="mainSmall">
+              <script language="JavaScript">
+<!--
+today = new Date()
+cy = today.getFullYear()
+{
+}
+//-->
+</script>
+              Copyright &copy;
+              <script language="JavaScript">
+<!--
+document.write(cy)
+{
+}
+//-->
+</script>
+              Rice University</font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</form>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>

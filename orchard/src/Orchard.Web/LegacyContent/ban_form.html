@@ -1,0 +1,1068 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "images/btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "images/btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=350,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (f.alum.checked == true){
+	f.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (f.rice.checked == true){
+	f.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  f.submit();
+
+}
+
+function checkKey(evt){
+
+	f.search.value=f.q.value;
+	if (evt.keyCode == 13 && f.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+</SCRIPT>
+
+<script language="JavaScript">
+function chkForm(frm) {
+  // the name of the form
+  f = frm;
+
+  // change msg to the name of any field you want to make required.
+  if (f.msg) {
+    if (f.msg.value == '') {
+      alert('Check all required fields');
+      return false;
+    }
+  }
+
+  // if 'from' address field is used, this checks it to make sure address is valid
+  if (f.email) {
+    if (f.email.value != '' && (f.email.value.lastIndexOf('.') < 0 || f.email.value.lastIndexOf('@') < 1)) {
+      alert('Invalid email address');
+      return false;
+    }
+    else if (f.email.value == '') {
+      return confirm('Are you sure you want to send this message without an email address?');
+    }
+  }
+}
+</script>
+
+</HEAD>
+<BODY onkeypress=checkKey(event); text=#000000 bgColor=#ffffff leftMargin=0 topMargin=0 marginheight="0" marginwidth="0">
+<form id="f" name="txtmail" action="http://alumni.cgi.rice.edu/events/txtmailer.php" onSubmit="return chkForm(this)" method="post">
+<input type="hidden" name="sendto" value="wichmann@rice.edu">
+<input type="hidden" name="returnto" value="">
+<input type="hidden" name="subject" value="Builders Award Nomination Form">
+<TABLE cellSpacing=0 cellPadding=0 width=760 border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR vAlign=top>
+              <TD width=221 rowSpan=2><A 
+            href="index.html"><IMG height=94 
+            alt="Association of Rice Alumni" src="images/logo.gif" 
+            width=221 border=0></A><BR>
+            <TABLE cellSpacing=0 cellPadding=0 width=191 border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=top width=19><IMG height=19 alt=spacer 
+                  src="images/clear.gif" width=19></TD>
+                <TD onMouseOver="this.background='images/btn_over_nav.gif'" 
+                onmouseout="this.background='images/btn_nav.gif'" vAlign=center 
+                align=middle width=172 background=images/btn_nav.gif>
+                  <TABLE cellSpacing=0 cellPadding=0 width="90%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><FONT class=nav><A class=nav 
+                        href="http://alumni.cgi.rice.edu/events/calendar.php">EVENTS 
+                        CALENDAR</A></FONT></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD vAlign=top width=19><IMG height=14 alt=spacer 
+                  src="images/clear.gif" width=19></TD>
+                <TD vAlign=center align=middle width=172><IMG height=14 
+                  alt="dots spacer" src="images/nav_dots.gif" 
+              width=1></TD></TR>
+              <TR>
+                <TD vAlign=top width=19><IMG height=19 alt=spacer 
+                  src="images/clear.gif" width=19></TD>
+                <TD onMouseOver="this.background='images/btn_over_nav.gif'" 
+                onmouseout="this.background='images/btn_nav.gif'" vAlign=center 
+                align=middle width=172 background=images/btn_nav.gif>
+                  <TABLE cellSpacing=0 cellPadding=0 width="90%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><FONT class=nav><A class=nav 
+                        href="alumni_groups.html">ALUMNI 
+                        GROUPS</A></FONT></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD vAlign=top width=19><IMG height=14 alt=spacer 
+                  src="images/clear.gif" width=19></TD>
+                <TD vAlign=center align=middle width=172><IMG height=14 
+                  alt="dots spacer" src="images/nav_dots.gif" 
+              width=1></TD></TR>
+              <TR>
+                <TD vAlign=top width=19><IMG height=19 alt=spacer 
+                  src="images/clear.gif" width=19></TD>
+                <TD onMouseOver="this.background='images/btn_over_nav.gif'" 
+                onmouseout="this.background='images/btn_nav.gif'" vAlign=center 
+                align=middle width=172 background=images/btn_nav.gif>
+                  <TABLE cellSpacing=0 cellPadding=0 width="90%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><FONT class=nav><A class=nav 
+                        href="youngalum_stds.html">YOUNG 
+                        ALUMNI /STUDENTS</A></FONT></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD vAlign=top width=19><IMG height=14 alt=spacer 
+                  src="images/clear.gif" width=19></TD>
+                <TD vAlign=center align=middle width=172><IMG height=14 
+                  alt="dots spacer" src="images/nav_dots.gif" 
+              width=1></TD></TR>
+              <TR>
+                <TD vAlign=top width=19><IMG height=19 alt=spacer 
+                  src="images/clear.gif" width=19></TD>
+                <TD onMouseOver="this.background='images/btn_over_nav.gif'" 
+                onmouseout="this.background='images/btn_nav.gif'" vAlign=center 
+                align=middle width=172 background=images/btn_nav.gif>
+                  <TABLE cellSpacing=0 cellPadding=0 width="90%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><FONT class=nav><A class=nav 
+                        href="career_connection.html">CAREER 
+                        CONNECTION</A></FONT></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD vAlign=top width=19><IMG height=14 alt=spacer 
+                  src="images/clear.gif" width=19></TD>
+                <TD vAlign=center align=middle width=172><IMG height=14 
+                  alt="dots spacer" src="images/nav_dots.gif" 
+              width=1></TD></TR>
+              <TR>
+                <TD vAlign=top width=19><IMG height=19 alt=spacer 
+                  src="images/clear.gif" width=19></TD>
+                <TD onMouseOver="this.background='images/btn_over_nav.gif'" 
+                onmouseout="this.background='images/btn_nav.gif'" vAlign=center 
+                align=middle width=172 background=images/btn_nav.gif>
+                  <TABLE cellSpacing=0 cellPadding=0 width="90%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><FONT class=nav><A class=nav 
+                        href="volunteer.html">VOLUNTEER</A></FONT></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD vAlign=top width=19><IMG height=14 alt=spacer 
+                  src="images/clear.gif" width=19></TD>
+                <TD vAlign=center align=middle width=172><IMG height=14 
+                  alt="dots spacer" src="images/nav_dots.gif" 
+              width=1></TD></TR>
+              <TR>
+                <TD vAlign=top width=19><IMG height=19 alt=spacer 
+                  src="images/clear.gif" width=19></TD>
+                <TD onMouseOver="this.background='images/btn_over_nav.gif'" 
+                onmouseout="this.background='images/btn_nav.gif'" vAlign=center 
+                align=middle width=172 background=images/btn_nav.gif>
+                  <TABLE cellSpacing=0 cellPadding=0 width="90%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><FONT class=nav><A class=nav 
+                        href="learning_trav.html">LEARNING 
+                        &amp; TRAVEL</A></FONT></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD vAlign=top width=19><IMG height=14 alt=spacer 
+                  src="images/clear.gif" width=19></TD>
+                <TD vAlign=center align=middle width=172><IMG height=14 
+                  alt="dots spacer" src="images/nav_dots.gif" 
+              width=1></TD></TR>
+              <TR>
+                <TD vAlign=top width=19><IMG height=19 alt=spacer 
+                  src="images/clear.gif" width=19></TD>
+                <TD vAlign=center align=middle width=172 
+                background=images/btn_over_nav.gif>
+                  <TABLE cellSpacing=0 cellPadding=0 width="90%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><FONT class=navOver><A 
+                        href="honors_awards.html">HONORS 
+                        &amp; AWARDS</A></FONT></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD vAlign=top width=19>&nbsp;</TD>
+                <TD vAlign=center align=middle width=172>
+                  <TABLE cellSpacing=3 cellPadding=0 width="90%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD onMouseOver="this.background='images/gray2_bg.gif'" 
+                      onmouseout="this.background='images/gray1_bg.gif'" 
+                      width="49%" background=images/gray1_bg.gif>
+                        <TABLE cellSpacing=0 cellPadding=0 width="90%" 
+                        align=center border=0>
+                          <TBODY>
+                          <TR>
+                            <TD><FONT class=mainSmalldark><A 
+                              href="honors_awards.html#honorsdinner">2007 Honors Dinner</A></FONT></TD></TR></TBODY></TABLE></TD></TR>
+                    <TR>
+                      <TD onMouseOver="this.background='images/gray2_bg.gif'" 
+                      onmouseout="this.background='images/gray1_bg.gif'" 
+                      width="49%" background=images/gray1_bg.gif>
+                        <TABLE cellSpacing=0 cellPadding=0 width="90%" 
+                        align=center border=0>
+                          <TBODY>
+                          <TR>
+                            <TD><FONT class=mainSmalldark><A 
+                              href="honors_awards.html#araawards">ARA 
+                              Awards</A></FONT></TD></TR></TBODY></TABLE></TD></TR>
+                    <TR>
+                      <TD onMouseOver="this.background='images/gray2_bg.gif'" 
+                      onmouseout="this.background='images/gray1_bg.gif'" 
+                      width="49%" background=images/gray1_bg.gif>
+                        <TABLE cellSpacing=0 cellPadding=0 width="90%" 
+                        align=center border=0>
+                          <TBODY>
+                          <TR>
+                            <TD><FONT class=mainSmalldark><A 
+                              href="honors_awards.html#laureates">All 
+                              ARA Laureates</A></FONT></TD></TR></TBODY></TABLE></TD></TR>
+                    <TR>
+                      <TD onMouseOver="this.background='images/gray2_bg.gif'" 
+                      onmouseout="this.background='images/gray1_bg.gif'" 
+                      width="49%" background=images/gray1_bg.gif>
+                        <TABLE cellSpacing=0 cellPadding=0 width="90%" 
+                        align=center border=0>
+                          <TBODY>
+                          <TR>
+                            <TD><FONT class=mainSmalldark><A 
+                              href="honors_nominate.html">Call 
+                              for 
+                    Nominations</A></FONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD vAlign=top width=19><IMG height=14 alt=spacer 
+                  src="images/clear.gif" width=19></TD>
+                <TD vAlign=center align=middle width=172><IMG height=14 
+                  alt="dots spacer" src="images/nav_dots.gif" 
+              width=1></TD></TR>
+              <TR>
+                <TD vAlign=top width=19><IMG height=19 alt=spacer 
+                  src="images/clear.gif" width=19></TD>
+                <TD onMouseOver="this.background='images/btn_over_nav.gif'" 
+                onmouseout="this.background='images/btn_nav.gif'" vAlign=center 
+                align=middle width=172 background=images/btn_nav.gif>
+                  <TABLE cellSpacing=0 cellPadding=0 width="90%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><FONT class=nav><A class=nav 
+                        href="new_at_rice.html">WHAT'S NEW @ RICE</A></FONT></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD vAlign=top width=19><IMG height=14 alt=spacer 
+                  src="images/clear.gif" width=19></TD>
+                <TD vAlign=center align=middle width=172><IMG height=14 
+                  alt="dots spacer" src="images/nav_dots.gif" 
+              width=1></TD></TR>
+              <TR>
+                <TD vAlign=top width=19><IMG height=19 alt=spacer 
+                  src="images/clear.gif" width=19></TD>
+                <TD onMouseOver="this.background='images/btn_over_nav.gif'" 
+                onmouseout="this.background='images/btn_nav.gif'" vAlign=center 
+                align=middle width=172 background=images/btn_nav.gif>
+                  <TABLE cellSpacing=0 cellPadding=0 width="90%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><FONT class=nav><A class=nav 
+                        href="about_alumassoc.html">ABOUT 
+                        THE ARA</A></FONT></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD vAlign=top width=19><IMG height=14 alt=spacer 
+                  src="images/clear.gif" width=19></TD>
+                <TD vAlign=center align=middle width=172><IMG height=14 
+                  alt="dots spacer" src="images/nav_dots.gif" 
+              width=1></TD></TR>
+              <TR>
+                <TD vAlign=top width=19><IMG height=19 alt=spacer 
+                  src="images/clear.gif" width=19></TD>
+                <TD onMouseOver="this.background='images/btn_over_nav.gif'" 
+                onmouseout="this.background='images/btn_nav.gif'" vAlign=center 
+                align=middle width=172 background=images/btn_nav.gif>
+                  <TABLE cellSpacing=0 cellPadding=0 width="90%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><FONT class=nav><A class=nav 
+                        href="faq_file.html">FAQ 
+                        FILE</A></FONT></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD vAlign=top width=19><IMG height=14 alt=spacer 
+                  src="images/clear.gif" width=19></TD>
+                <TD vAlign=center align=middle width=172><IMG height=14 
+                  alt="dots spacer" src="images/nav_dots.gif" 
+              width=1></TD></TR>
+              <TR>
+                <TD vAlign=top width=19><IMG height=19 alt=spacer 
+                  src="images/clear.gif" width=19></TD>
+                <TD onMouseOver="this.background='images/btn_over_nav.gif'" 
+                onmouseout="this.background='images/btn_nav.gif'" vAlign=center 
+                align=middle width=172 background=images/btn_nav.gif>
+                  <TABLE cellSpacing=0 cellPadding=0 width="90%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><FONT class=nav><A class=nav 
+                        href="http://giving.rice.edu/" target=_blank>GIVE TO 
+                        RICE</A></FONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD>
+          <TD align=right><IMG height=20 src="images/clear.gif" 
+            width=100><BR><IMG height=56 
+            alt="Rice campus collaged with image of trophy and award" 
+            src="images/subpic_about.jpg" width=526> </TD></TR>
+        <TR vAlign=top>
+          <TD>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD colSpan=4>&nbsp;</TD></TR>
+              <TR vAlign=top>
+                <TD width=414>
+                  <P><IMG height=17 alt="About Alumni Association" 
+                  src="images/sub_title_honors.gif" width=410></P>
+                  <TABLE class=mainTable cellSpacing=0 cellPadding=0 
+                  align=center border=0>
+                    <TBODY>
+                    <TR vAlign=top>
+                      <TD>
+                        <P><FONT class="mainSubtitle"><b>BUILDER'S AWARD:</b></FONT><br/>
+                          <a class="mainSmall" href="ban_info.html">(Builder's Award Information)</a><br/><br/>
+                            <FONT class="mainSmall"><b>Young Alumni Service 
+                            Award Nomination Form</b></FONT></P>
+                          <TABLE cellSpacing=3 cellPadding=0 width="100%" 
+border=0>
+                            <TBODY> 
+                            <TR> 
+                              <TD vAlign=top align=right width="21%"><FONT 
+                              class=mainSmall>Nominee: </FONT></TD>
+                              <TD vAlign=top colSpan=2> 
+                                <INPUT class=formSmall 
+                              size=35 name=nomname>
+                              </TD>
+                            </TR>
+                            <tr> 
+                              <td valign=top align=right width="21%"><font 
+                              class=mainSmall>Email: </font></td>
+                              <td valign=top colspan=2> 
+                                <input class=formSmall 
+                              name=nomname_email>
+                              </td>
+                            </tr>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%"><FONT 
+                              class=mainSmall>Phone: </FONT></TD>
+                              <TD vAlign=top colSpan=2> 
+                                <INPUT class=formSmall 
+                              name=nomphone>
+                              </TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%"><FONT 
+                              class=mainSmall>Fax: </FONT></TD>
+                              <TD vAlign=top colSpan=2> 
+                                <INPUT class=formSmall 
+                              name=nomfax>
+                              </TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%"><FONT 
+                              class=mainSmall>Address: </FONT></TD>
+                              <TD vAlign=top colSpan=2> 
+                                <INPUT class=formSmall 
+                              size=35 name=nom_address>
+                              </TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%"><FONT 
+                              class=mainSmall>City: </FONT></TD>
+                              <TD vAlign=top colSpan=2> 
+                                <INPUT class=formSmall 
+                              size=15 name=nom_city>
+                              </TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%"><FONT 
+                              class=mainSmall>State: </FONT></TD>
+                              <TD vAlign=top> 
+                                <SELECT class=formSmall size=1 
+                              name=nom_state>
+                                  <OPTION value=AL 
+                                selected>Alabama</OPTION>
+                                  <OPTION 
+                                value=AK>Alaska</OPTION>
+                                  <OPTION 
+                                value=AZ>Arizona</OPTION>
+                                  <OPTION 
+                                value=AR>Arkansas</OPTION>
+                                  <OPTION 
+                                value=CA>California</OPTION>
+                                  <OPTION 
+                                value=CO>Colorado</OPTION>
+                                  <OPTION 
+                                value=CT>Connecticut</OPTION>
+                                  <OPTION 
+                                value=DE>Delaware</OPTION>
+                                  <OPTION 
+                                value=FL>Florida</OPTION>
+                                  <OPTION 
+                                value=GA>Georgia</OPTION>
+                                  <OPTION 
+                                value=HI>Hawaii</OPTION>
+                                  <OPTION 
+                                value=ID>Idaho</OPTION>
+                                  <OPTION 
+                                value=IL>Illinois</OPTION>
+                                  <OPTION 
+                                value=IN>Indiana</OPTION>
+                                  <OPTION 
+                                value=IA>Iowa</OPTION>
+                                  <OPTION 
+                                value=KS>Kansas</OPTION>
+                                  <OPTION 
+                                value=KY>Kentucky</OPTION>
+                                  <OPTION 
+                                value=LA>Louisiana</OPTION>
+                                  <OPTION 
+                                value=ME>Maine</OPTION>
+                                  <OPTION 
+                                value=MD>Maryland</OPTION>
+                                  <OPTION 
+                                value=MA>Massachusetts</OPTION>
+                                  <OPTION 
+                                value=MI>Michigan</OPTION>
+                                  <OPTION 
+                                value=MN>Minnesota</OPTION>
+                                  <OPTION 
+                                value=MS>Mississippi</OPTION>
+                                  <OPTION 
+                                value=MO>Missouri</OPTION>
+                                  <OPTION 
+                                value=MT>Montana</OPTION>
+                                  <OPTION 
+                                value=NE>Nebraska</OPTION>
+                                  <OPTION 
+                                value=NV>Nevada</OPTION>
+                                  <OPTION value=NH>New Hampshire</OPTION>
+                                  <OPTION value=NJ>New Jersey</OPTION>
+                                  <OPTION value=NM>New Mexico</OPTION>
+                                  <OPTION value=NY>New York</OPTION>
+                                  <OPTION value=NC>North Carolina</OPTION>
+                                  <OPTION value=ND>North Dakota</OPTION>
+                                  <OPTION value=OH>Ohio</OPTION>
+                                  <OPTION value=OK>Oklahoma</OPTION>
+                                  <OPTION 
+                                value=OR>Oregon</OPTION>
+                                  <OPTION 
+                                value=PA>Pennsylvania</OPTION>
+                                  <OPTION 
+                                value=RI>Rhode Island</OPTION>
+                                  <OPTION 
+                                value=SC>South Carolina</OPTION>
+                                  <OPTION 
+                                value=SD>South Dakota</OPTION>
+                                  <OPTION 
+                                value=TN>Tennessee</OPTION>
+                                  <OPTION 
+                                value=TX>Texas</OPTION>
+                                  <OPTION 
+                                value=UT>Utah</OPTION>
+                                  <OPTION 
+                                value=VT>Vermont</OPTION>
+                                  <OPTION 
+                                value=VA>Virginia</OPTION>
+                                  <OPTION 
+                                value=WA>Washington</OPTION>
+                                  <OPTION 
+                                value=DC>Washington, D.C.</OPTION>
+                                  <OPTION 
+                                value=WV>West Virginia</OPTION>
+                                  <OPTION 
+                                value=WI>Wisconsin</OPTION>
+                                  <OPTION 
+                                value=WY>Wyoming</OPTION>
+                                </SELECT>
+                              </TD>
+                              <TD align=right vAlign=top nowrap><FONT 
+                              class=mainSmall>Zip: </FONT> 
+                                <INPUT class=formSmall 
+                              size=9 name=nom_zip>
+                              </TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%"><nobr><FONT 
+                              class=mainSmall>Rice Class Year(s): </FONT></nobr></TD>
+                              <TD vAlign=top colSpan=2> 
+                                <INPUT class=formSmall 
+                              size=30 name=class_yrs>
+                              </TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%">&nbsp;</TD>
+                              <TD class=mainSmall vAlign=top 
+                          colSpan=2>&nbsp;</TD>
+                            </TR>
+                            <TR> 
+                              <TD class=mainSmall vAlign=top colSpan=3>The Builder's 
+                                Award for Young Alumni Service is designed to 
+                                recognize recent Rice alumni who have made outstanding 
+                                contributions in service to Rice University.  The following 
+                                criteria will be considered:<br/>
+                                <TABLE cellSpacing=0 cellPadding=0 width="100%" 
+                              border=0>
+                                  <TBODY> 
+                                  <TR vAlign=top> 
+                                    <TD width="6%">&nbsp;</TD>
+                                    <TD class=mainSmall width="94%"><br/>
+                                      a) The candidate's voluntary contribution 
+                                      to Rice (whether through reunion classes, 
+                                      mentoring, academic departments, colleges, 
+                                      athletics, or any other area)<br/>
+                                      b) The candidate must have received an undergraduate 
+                                      or graduate degree from Rice within the 
+                                      last fifteen years.</TD>
+                                  </TR>
+                                  </TBODY> 
+                                </TABLE>
+                              </TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%">&nbsp;</TD>
+                              <TD vAlign=top colSpan=2>&nbsp;</TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%"><FONT 
+                              class=mainSmall>Nominated by: </FONT></TD>
+                              <TD vAlign=top colSpan=2> 
+                                <INPUT class=formSmall 
+                              size=35 name=nomby_name>
+                              </TD>
+                            </TR>
+                            <tr> 
+                              <td valign=top align=right width="21%"><font 
+                              class=mainSmall>Email: </font></td>
+                              <td valign=top colspan=2> 
+                                <input class=formSmall 
+                              name=nomby_email>
+                              </td>
+                            </tr>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%"><FONT 
+                              class=mainSmall>Phone: </FONT></TD>
+                              <TD vAlign=top colSpan=2> 
+                                <INPUT class=formSmall 
+                              name=nomby_phone>
+                              </TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%"><FONT 
+                              class=mainSmall>Fax: </FONT></TD>
+                              <TD vAlign=top colSpan=2> 
+                                <INPUT class=formSmall 
+                              name=nomby_fax>
+                              </TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%"><FONT 
+                              class=mainSmall>Address: </FONT></TD>
+                              <TD vAlign=top colSpan=2> 
+                                <INPUT class=formSmall 
+                              size=35 name=nomby_address>
+                              </TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%"><FONT 
+                              class=mainSmall>City: </FONT></TD>
+                              <TD vAlign=top colSpan=2> 
+                                <INPUT class=formSmall 
+                              size=15 name=nomby_city>
+                              </TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%"><FONT 
+                              class=mainSmall>State: </FONT></TD>
+                              <TD vAlign=top> 
+                                <SELECT class=formSmall size=1 
+                              name=nomby_state>
+                                  <OPTION value=AL 
+                                selected>Alabama</OPTION>
+                                  <OPTION 
+                                value=AK>Alaska</OPTION>
+                                  <OPTION 
+                                value=AZ>Arizona</OPTION>
+                                  <OPTION 
+                                value=AR>Arkansas</OPTION>
+                                  <OPTION 
+                                value=CA>California</OPTION>
+                                  <OPTION 
+                                value=CO>Colorado</OPTION>
+                                  <OPTION 
+                                value=CT>Connecticut</OPTION>
+                                  <OPTION 
+                                value=DE>Delaware</OPTION>
+                                  <OPTION 
+                                value=FL>Florida</OPTION>
+                                  <OPTION 
+                                value=GA>Georgia</OPTION>
+                                  <OPTION 
+                                value=HI>Hawaii</OPTION>
+                                  <OPTION 
+                                value=ID>Idaho</OPTION>
+                                  <OPTION 
+                                value=IL>Illinois</OPTION>
+                                  <OPTION 
+                                value=IN>Indiana</OPTION>
+                                  <OPTION 
+                                value=IA>Iowa</OPTION>
+                                  <OPTION 
+                                value=KS>Kansas</OPTION>
+                                  <OPTION 
+                                value=KY>Kentucky</OPTION>
+                                  <OPTION 
+                                value=LA>Louisiana</OPTION>
+                                  <OPTION 
+                                value=ME>Maine</OPTION>
+                                  <OPTION 
+                                value=MD>Maryland</OPTION>
+                                  <OPTION 
+                                value=MA>Massachusetts</OPTION>
+                                  <OPTION 
+                                value=MI>Michigan</OPTION>
+                                  <OPTION 
+                                value=MN>Minnesota</OPTION>
+                                  <OPTION 
+                                value=MS>Mississippi</OPTION>
+                                  <OPTION 
+                                value=MO>Missouri</OPTION>
+                                  <OPTION 
+                                value=MT>Montana</OPTION>
+                                  <OPTION 
+                                value=NE>Nebraska</OPTION>
+                                  <OPTION 
+                                value=NV>Nevada</OPTION>
+                                  <OPTION value=NH>New Hampshire</OPTION>
+                                  <OPTION value=NJ>New Jersey</OPTION>
+                                  <OPTION value=NM>New Mexico</OPTION>
+                                  <OPTION value=NY>New York</OPTION>
+                                  <OPTION value=NC>North Carolina</OPTION>
+                                  <OPTION value=ND>North Dakota</OPTION>
+                                  <OPTION value=OH>Ohio</OPTION>
+                                  <OPTION value=OK>Oklahoma</OPTION>
+                                  <OPTION 
+                                value=OR>Oregon</OPTION>
+                                  <OPTION 
+                                value=PA>Pennsylvania</OPTION>
+                                  <OPTION 
+                                value=RI>Rhode Island</OPTION>
+                                  <OPTION 
+                                value=SC>South Carolina</OPTION>
+                                  <OPTION 
+                                value=SD>South Dakota</OPTION>
+                                  <OPTION 
+                                value=TN>Tennessee</OPTION>
+                                  <OPTION 
+                                value=TX>Texas</OPTION>
+                                  <OPTION 
+                                value=UT>Utah</OPTION>
+                                  <OPTION 
+                                value=VT>Vermont</OPTION>
+                                  <OPTION 
+                                value=VA>Virginia</OPTION>
+                                  <OPTION 
+                                value=WA>Washington</OPTION>
+                                  <OPTION 
+                                value=DC>Washington, D.C.</OPTION>
+                                  <OPTION 
+                                value=WV>West Virginia</OPTION>
+                                  <OPTION 
+                                value=WI>Wisconsin</OPTION>
+                                  <OPTION 
+                                value=WY>Wyoming</OPTION>
+                                </SELECT>
+                              </TD>
+                              <TD vAlign=top align=right><FONT 
+                              class=mainSmall>Zip: </FONT> 
+                                <INPUT class=formSmall 
+                              size=9 name=nomby_zip>
+                              </TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%">&nbsp;</TD>
+                              <TD vAlign=top colSpan=2>&nbsp;</TD>
+                            </TR>
+                            <TR> 
+                              <TD class=mainSmall vAlign=top colSpan=3>Please 
+                                list up to two other people (i.e., colleague, 
+                                classmate, university staff) whom we may contact 
+                                to further validate your nomination.</TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top align=right width="25%">&nbsp;</TD>
+                              <TD vAlign=top colSpan=2>&nbsp;</TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%"><FONT 
+                              class=mainSmall>Name: </FONT></TD>
+                              <TD vAlign=top colSpan=2> 
+                                <INPUT class=formSmall 
+                              size=35 name=other1_name>
+                              </TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top align=right width="25%"><FONT 
+                              class=mainSmall>Relationship: </FONT></TD>
+                              <TD vAlign=top colSpan=2> 
+                                <INPUT class=formSmall 
+                              size=35 name=other1_rel>
+                              </TD>
+                            </TR>
+                            <tr> 
+                              <td valign=top align=right width="21%"><font 
+                              class=mainSmall>Email: </font></td>
+                              <td valign=top colspan=2> 
+                                <input class=formSmall 
+                              name=other1_email>
+                              </td>
+                            </tr>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%"><FONT 
+                              class=mainSmall>Phone: </FONT></TD>
+                              <TD vAlign=top colSpan=2> 
+                                <INPUT class=formSmall 
+                              name=other1_phone>
+                              </TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%"><FONT 
+                              class=mainSmall>Fax: </FONT></TD>
+                              <TD vAlign=top colSpan=2> 
+                                <INPUT class=formSmall 
+                              name=other1_fax>
+                              </TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%">&nbsp;</TD>
+                              <TD vAlign=top colSpan=2>&nbsp;</TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%"><FONT 
+                              class=mainSmall>Name: </FONT></TD>
+                              <TD vAlign=top colSpan=2> 
+                                <INPUT class=formSmall 
+                              size=35 name=other2_name>
+                              </TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%"><FONT 
+                              class=mainSmall>Relationship: </FONT></TD>
+                              <TD vAlign=top colSpan=2> 
+                                <INPUT class=formSmall 
+                              size=35 name=other2_rel>
+                              </TD>
+                            </TR>
+                            <tr> 
+                              <td valign=top align=right width="21%"><font 
+                              class=mainSmall>Email: </font></td>
+                              <td valign=top colspan=2> 
+                                <input class=formSmall 
+                              name=other2_email>
+                              </td>
+                            </tr>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%"><FONT 
+                              class=mainSmall>Phone: </FONT></TD>
+                              <TD vAlign=top colSpan=2> 
+                                <INPUT class=formSmall 
+                              name=other2_phone>
+                              </TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%"><FONT 
+                              class=mainSmall>Fax: </FONT></TD>
+                              <TD vAlign=top colSpan=2> 
+                                <INPUT class=formSmall 
+                              name=other2_fax>
+                              </TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%">&nbsp;</TD>
+                              <TD vAlign=top colSpan=2>&nbsp;</TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%" class="mainSmall">Why 
+                                should this person receive the Builder's Award?</TD>
+                              <TD vAlign=top colSpan=2> 
+                                <textarea class="formSmall" cols="35" name="letter_of_nom" rows="20"></textarea>
+                              </TD>
+                            </TR>
+                            <TR> 
+                              <TD vAlign=top align=right width="21%">&nbsp;</TD>
+                              <TD vAlign=top colSpan=2>&nbsp;</TD>
+                            </TR>
+                            <tr> 
+                              <td valign=top align=right width="21%">&nbsp;</td>
+                              <td valign=top colspan=2> 
+                                <input class=formSmall type=submit value=Submit name=Submit>
+                                <input class=formSmall type=reset value=Reset name=Reset>
+                                <!--<input class="formSmall" type=hidden name=subject value="Gold Medal Nomination Form">
+<input class="formSmall" type=hidden name=outform1 value="
+            				
+        Gold Medal Nomination Form
+                                        
+	    Nominee: $nomname
+
+	    Phone: $nomphone
+
+	    Fax: $nomfax
+
+	    Address: $nom_address
+
+	    City: $nom_city
+
+	    State: $nom_state
+
+	    Zip: $nom_zip
+
+	    Rice Class Year(s): $class_yrs
+
+
+<input class="formSmall" type=hidden name=outform2 value="
+
+	    Nominated by: $nomby_name
+
+	    Phone: $nomby_phone
+
+	    Fax: $nomby_fax
+
+	    Address: $nomby_address
+
+	    City: $nomby_city
+
+	    State: $nomby_state
+
+	    Zip: $nomby_zip">
+
+
+<input class="formSmall" type=hidden name=outform3 value="
+
+	    Please list two other people (i.e., colleague, classmate) whom you have asked to write a letter of support to further validate your nomination.
+
+	    Name: $other1_name
+
+	    Relationship: $other1_rel
+
+	    Phone: $other1_phone
+
+	    Fax: $other1_fax
+
+	    Address: $other1_address
+
+	    City: $other1_city
+
+	    State: $other1_state
+
+	    Zip: $other1_zip">
+
+<input class="formSmall" type=hidden name=outform4 value="
+
+	    Name: $other2_name
+
+	    Relationship: $other2_rel
+
+	    Phone: $other2_phone
+
+	    Fax: $other2_fax
+
+	    Address: $other2_address
+
+	    City: $other2_city
+
+	    State: $other2_state
+
+	    Zip: $other2_zip"> -->
+                              </td>
+                            </tr>
+                           
+                            <tr> 
+                              <td valign=top colspan="3" class="mainSmall">&nbsp;</td>
+                            </tr>
+                            <tr> 
+                              <td valign=top colspan="3" class="mainSmall">For 
+                                more information about the Builder's Award, please 
+                                contact Grace Wichmann in the alumni office at 
+                                713-348-5305 or <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('PNzVyBtWhWV0OhlQeiP9FK')">by email</a>.</td>
+                            </tr>
+                            </TBODY> 
+                          </TABLE>
+                        <P>&nbsp;</P>
+                        <P>&nbsp;</P></TD></TR></TBODY></TABLE></TD>
+                <TD width=1 background=images/dots_bg.gif><IMG height=50 
+                  src="images/clear.gif" width=1></TD>
+                <TD width=10><IMG height=50 src="images/clear.gif" 
+                  width=10></TD>
+                <TD>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><!-- MAIN SITE SEARCH --><INPUT type=hidden 
+                        value=web name=tab> 
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" 
+border=0>
+                          <TBODY>
+                          <TR>
+                            <TD colSpan=4><INPUT class=formSmall maxLength=255 
+                              onchange=srch.search.value=this.value; size=15 
+                              name=q> <SPAN id=spn 
+                              style="BACKGROUND-IMAGE: url(images/btn_go_new.gif); WIDTH: 19px; HEIGHT: 14px" 
+                              onclick=doSearch()><INPUT type=hidden 
+                              value=alumni.rice.edu name=hidden_site> <INPUT 
+                              type=hidden name=search> </SPAN></TD></TR>
+                          <TR>
+                            <TD width=10><INPUT id=alum type=radio CHECKED 
+                              value=alumni.rice.edu name=sitesearch> </TD>
+                            <TD width=85><FONT class=mainSmalldark>Search this 
+                              site</FONT></TD></TR>
+                          <TR>
+                            <TD align=right width=10><INPUT id=rice type=radio 
+                              value=www.rice.edu name=sitesearch> </TD>
+                            <TD width=85><FONT class=mainSmalldark>Search 
+                              rice.edu</FONT></TD></TR></TBODY></TABLE><!-- END OF MAIN SITE SEARCH --></TD></TR>
+                    <TR>
+                      <TD><IMG height=20 alt=spacer 
+                        src="images/clear.gif" width=115></TD></TR>
+                    <tr> 
+                      <td><a href="https://online.alumni.rice.edu/asp/Welcome.asp"><img src="images/title_onlinesvcs.gif" width="115" height="9" alt="Online Services" border="0"></a></td>
+                    </tr>
+                    <tr> 
+                      <td> 
+                        <table width="100%" border="0" cellspacing="3" cellpadding="0">
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/events/calendar.php" title="Events calendar and online registration">Find Events/RSVP</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/detailsearch.asp" title="Search the directory of Rice alumni">Alumni Directory</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/profile.asp" title="Update your directory information">Update Address</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Online/emailforwarding/eforwarding.asp" title="Manage or create an alumni.rice.edu account">Email Forwarding</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Career/default.asp" title="Connect with alums in your career field">Career Network</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+						  <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/bizfinder/" title="Find or promote alumni-owned businesses">Business Finder</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+<tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                          <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/remotelibrary.asp?type=8" title="Get your latest news into the Owlmanac" target="_blank">Online Classnotes </a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/library.asp" title="Access research tools and periodicals">Digital Library</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+
+                        </table>
+<!-- <a href="http://giving.rice.edu" target="_blank"><img src="images/rice_nextcent.gif" width="83" height="40" border="0" alt="Rice: The Next Century Campaign" hspace="3"></a><br> --><A 
+                  href="http://www.rice.edu/" target=_blank><IMG height=40 
+                  alt="Rice: Home" hspace=3 src="images/rice_home.gif" 
+                  width=75 vspace=10 border=0></A> 
+                  <P></P>
+                  <P>&nbsp;</P>
+                  <P>&nbsp;</P>
+                  <P> </P></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD><IMG height=5 alt=spacer src="images/clear.gif" width=100></TD></TR>
+  <TR>
+    <TD colspan="2">
+      <TABLE cellSpacing=0 cellPadding=15 width="100%" border=0>
+        <TBODY>
+          <tr>
+            <td><font class="mainSmall"><a href="#"onClick="SecWin=window.open('contact.html','SecWin','width=260,height=450,toolbar=no,status=yes,resizable=no,scrollbars=yes,location=no,directories=no,menubar=no');return false;">Contact the Office of Alumni Affairs</a> | <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('dFuDc6BYQoX5nNNobzmYL4')">Send a Comment</a> | <a href="index.html">Home</a></font></td>
+                      <td align="right"><font class="mainSmall"> 
+                        <script language="JavaScript">
+<!--
+today = new Date()
+cy = today.getFullYear()
+{
+}
+//-->
+          </script>
+                        Copyright &copy; 
+                        <script language="JavaScript">
+<!--
+document.write(cy)
+{
+}
+//-->
+</script>
+                        Rice University</font></td>
+          </tr>
+        </TBODY></TABLE></TD></TR></TBODY></TABLE></FORM><script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body></HTML>

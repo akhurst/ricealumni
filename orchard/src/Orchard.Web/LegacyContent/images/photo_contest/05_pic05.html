@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="../../styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "../btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "../btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=350,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (srch.alum.checked == true){
+	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (srch.rice.checked == true){
+	srch.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  srch.submit();
+
+}
+
+function checkKey(evt){
+
+	srch.search.value=srch.q.value;
+	if (evt.keyCode == 13 && srch.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+</script>
+<script language="JavaScript1.2">
+<!--
+
+var head="display:''"
+function doit(header){
+var head=header.style
+if (head.display=="none")
+head.display=""
+else
+head.display="none"
+}
+//-->
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style></head>
+
+<body>
+<table width="450"  border="0" cellspacing="0" cellpadding="10">
+  <tr>
+    <td width="330" valign="top"><img src="05_pic05.jpg" width="450" height="338" border="0"></td>
+  </tr>
+  <tr>
+    <td valign="top" class="mainSmall"><p><b>Honorable Mention</b><br>
+        <i>Wooden Churches of Kizhi</i>, Frank Shelden '48</p>
+      <p>Kizhi Island, Lake Onega, Russia<br>
+      Journey of the Czars<br>
+      2004</p>
+    <p>The isle of Kizhi was the northern most extension of our Russian cruise in 2004 and is located in the north end of Lake Onega, about the same latitude as Anchorage, Alaska. Unique to the island are ancient wooden churches that are weathered and shine with a silver patina. The shingles covering the many cupolas are made from aspen and are attached to the structure with wooden pegs. After our tour we embarked on our boat to return down Lake Onega and thence on to St. Petersburg. As our boat sailed past the churches of Kizhi for the last time I snapped this photo.</p></td>
+  </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>

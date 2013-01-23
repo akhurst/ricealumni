@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" href="styles.css">
+
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "images/btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "images/btn_over_nav.gif";
+
+//-->
+
+function ld_mon(){
+	f.submit();
+}
+
+function prvnxt(btn){
+var f = document.getElementById("f");
+
+	if ((f.M.selectedIndex == 0) && (btn=="prev")) {
+		f.M[11].selected = true;
+		f.Y[f.Y.selectedIndex -1].selected = true;
+	} else if ((f.M.selectedIndex == 11) && (btn=="next")) {
+		f.M[0].selected = true;
+		f.Y[f.Y.selectedIndex +1].selected = true; 
+	} else if (btn=="prev") {
+		f.M[f.M.selectedIndex-1].selected = true;
+	} else if (btn=="next") {
+		f.M[f.M.selectedIndex + 1].selected = true;
+	}
+
+	f.submit();
+}
+
+function setScroll(){
+	document.body.scrollTop = 0;
+}
+
+function getDtl(id){
+
+		 var tag = document.getElementById(id);
+		 //var href = tag.getAttribute("href");
+	var f = document.getElementById("f");
+
+		 f.evtid.value= id;
+	 f.action = "event_dtl.php";
+		 f.submit();
+}
+
+function getMore(lnk){
+	f.evtid.value=lnk.id;
+
+	f.action = lnk.href;
+	f.submit();
+}
+
+function advSearch(){
+	var f = document.getElementById("f");
+
+	f.action = "adv_search.php";
+	f.submit();
+}
+
+function doSearch(){
+var f = document.getElementById("f");
+
+  if (f.alum.checked == true){
+	f.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (f.rice.checked == true){
+	f.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  f.submit();
+
+}
+
+function checkKey(evt){
+
+	var f = document.getElementById("f");
+	f.search.value=f.q.value;
+	if (evt.keyCode == 13 && f.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+function getEvents(qry)
+{
+	var f = document.getElementById("f");
+	f.key_word.value=qry;
+	f.action = "http://alumni.cgi.rice.edu/events/proc_adv_search.php";
+	f.submit();
+	return null;
+}
+
+function scrollMe()
+{
+	var f = document.getElementById("f");
+	f.scroll.value=document.body.scrollTop;
+}
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=350,scrollbars=no,toolbar=no");
+}
+
+</script></head>
+
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onScroll="scrollMe()" onLoad="setScroll();">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr> 
+<td colspan="4">&nbsp;</td>
+</tr>
+<tr valign="top"> 
+<td width="414"> 
+<p><img src="images/sub_title_calendar.gif" width="150" height="17" alt="About Alumni Association"></p>
+<table class="mainTable" border="0" cellspacing="0" cellpadding="0" align="center">
+<tr valign="top"> 
+<td> 
+<p><font class="mainSmall">The Association of Rice Alumni sponsors events throughout the year: on campus, in major cities throughout the United States, and beyond. Many 			  other campus departments and schools also sponsor events that  can be found  <a href="http://events.rice.edu" target="_blank">here</a>.</font></p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr> 
+<td width="56%" valign="top" height="15">
+<font class="mainSmall"><b><a name="upmajevents"></a>Upcoming Major Events</b></font></td>
+</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><tr> 
+<td width="3%" valign="top" align="right">
+<img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+<td width="97%"><font class="mainSmall">Rice Centennial &#0151; October 10-14, 2012</font></td>
+</tr>
+<tr>
+<td colspan="3">&nbsp;

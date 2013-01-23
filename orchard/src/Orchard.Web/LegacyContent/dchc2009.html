@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "images/btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "images/btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=350,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (srch.alum.checked == true){
+	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (srch.rice.checked == true){
+	srch.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  srch.submit();
+
+}
+
+function checkKey(evt){
+
+	srch.search.value=srch.q.value;
+	if (evt.keyCode == 13 && srch.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+function redir() {
+
+	window.opener.location="staff_listing.html";
+	window.close();
+}
+
+function redir2() {
+
+	window.opener.location="oconnor_house.html";
+	window.close();
+}
+
+</script>
+
+</head>
+
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr valign="top"> 
+    <td rowspan="2"><br>
+      <table width="235" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+          <td valign="top"> <p align="center"><font class="mainSmall"><b>The Centennial 
+              Campaign<br>
+              Washington, D.C. Reception<br>
+              Host Committee<br>
+              </b><em>As of March 9th<br>
+              <br>
+              </em></font><font class="mainSmall">Catriona Ayer &#8217;91<br>
+              Jeff Ayer &#8217;91<br>
+              Julie Gianelloni Connor &#8217;73<br>
+              James R. Doty &#8217;62<br>
+              William T. Free, Jr. &#8217;65<br>
+              Allison Marble Gilmore &#8217;99<br>
+              Shefa D. Gordon &#8217;98<br>
+              Matthew A. Haynie &#8217;03<br>
+              Brandy Hays &#8217;98/&#8217;05<br>
+              James Holt &#8217;75<br>
+              Susan Holt<br>
+              Stephanie Jennings &#8217;08<br>
+              Britt E. Jung &#8217;89/&#8217;93<br>
+              Laura Kelley &#8217;08<br>
+              Shin-Wen Kuo &#8217;96<br>
+              L. Charles Landgraf &#8217;75<br>
+              Philip Layton &#8217;85/&#8217;86<br>
+              June L. Marshall &#8217;00<br>
+              Benjamin Norris &#8217;04<br>
+              Rebecca Schendel Norris &#8217;04<br>
+              Christi R. Oliver &#8217;71<br>
+              Rex Pendley &#8217;76<br>
+              David M. Phillips &#8217;85<br>
+              Rob Quartel &#8217;72<br>
+              Jane Washburn Robinson &#8217;57<br>
+              Carol Linn Starr &#8217;67<br>
+              Kenneth H. Taura &#8217;83<br>
+              Tamara Leong Taura &#8217;83<br>
+              Karen Whitney &#8217;79<br>
+              Richard Whitney &#8217;80/&#8217;81<br>
+              Allyson Woods  &#8217;97<br>
+              Victoria Zyp &#8217;04<br>
+              </font><font class="mainSmall"><br>
+              </font></p>
+            </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr valign="top"> </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>

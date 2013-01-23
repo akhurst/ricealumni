@@ -1,0 +1,753 @@
+<html>
+<head>
+<title></title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="../styles.css">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="../common/common.js"></script>
+<script type="text/javascript" src="../common/accordion.js"></script>
+<script type="text/javascript" src="../common/zoom.js"></script>
+<script type="text/javascript" charset="utf-8">
+		$(document).ready(function() {
+			$('div.photo a').fancyZoom({scaleImg: true, closeOnClick: true});
+	
+		});
+		ddaccordion.init({
+	headerclass: "travel", //Shared CSS class name of headers group
+	contentclass: "thelanguage", //Shared CSS class name of contents group
+	revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+	mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+	collapseprev: false, //Collapse previous content (so only one open at any time)? true/false 
+	defaultexpanded: [], //index of content(s) open by default [index1, index2, etc]. [] denotes no content.
+	onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: false, //persist state of opened contents within browser session?
+	toggleclass: ["closedlanguage", "openlanguage"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+	/* togglehtml: ["prefix", "&#8226; ", "&middot; "], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs) */
+	animatespeed: "fast", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+	oninit:function(expandedindices){ //custom code to run when headers have initalized
+		//do nothing
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})
+
+	</script>
+<style type="text/css">
+.travel {
+	cursor: hand;
+	cursor: pointer;
+	font-family: calibri, verdana, arial, helvetica, sans-serif;
+	font-size: 13px;
+	padding: 10px;
+	color: #333333;
+	margin-top: 10px;
+	margin-right: 0;
+	margin-bottom: 10px;
+	margin-left: 0;
+	background-color: #EFC887;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.thelanguage {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+}
+
+.openlanguage { /*class added to contents of 2nd demo when they are open*/
+	color: #630;
+	font-weight: bold;
+	background-color: #FFF;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.closedlanguage { /*class added to contents of 2nd demo when they are closed*/
+	color: #300;
+}
+
+
+.acwicons {
+	color: #FFF;
+	font-size: 12px;
+}
+.earth {
+	color: #FFF;
+	background-color: #005953;
+	padding: 8px;
+}
+.arts {
+	color: #FFF;
+	background-color: #747C31;
+	padding: 8px;
+}.science {
+	color: #FFF;
+	background-color: #BF2E1B;
+	padding: 8px;
+}.ccc {
+	color: #FFF;
+	background-color: #57331B;
+	padding: 8px;
+}
+
+.earth, .science, .ccc, .arts {
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	font-family: Calibri, Verdana, Geneva, sans-serif;
+}
+
+</style>
+</head>
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top">
+          <td width="221" rowspan="2"><a href="../index.html"><img src="../images/logo.gif" width="221" height="94" alt="Association of Rice Alumni" border="0"></a><br>
+            <table width="191" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="http://alumni.cgi.rice.edu/events/calendar.php">EVENTS CALENDAR</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../alumni_groups.html">ALUMNI GROUPS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../youngalum_stds.html">YOUNG ALUMNI /STUDENTS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../career_connection.html">CAREER CONNECTION</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../volunteer.html">VOLUNTEER</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_over_nav.gif" align="center" valign="middle"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="navOver"><a href="../learning_trav.html">LEARNING &amp; TRAVEL</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top">&nbsp;</td>
+                <td width="172" align="center" valign="middle"><table width="90%" border="0" cellspacing="3" cellpadding="0">
+                    <tr>
+                      <td width="49%" background="../images/gray2_bg.gif"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark">Alumni College</font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="http://online.alumni.rice.edu/directory/library.asp">Rice Alumni Digital Library </a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="../travel.html">Travel/Study Program</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td background="../images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="../learning_scholar.html">Scholarships & Fellowships</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../honors_awards.html">HONORS &amp; AWARDS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../new_at_rice.html">WHAT'S NEW @ RICE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../about_alumassoc.html">ABOUT THE ARA</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../faq_file.html">FAQ FILE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="http://giving.rice.edu" target="_blank">GIVE TO RICE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+          <td align="left"><img src="../images/clear.gif" width="100" height="20"><br>
+            <img src="../images/alumnicollege/2011/header.jpg" alt="Alumni College Weekend 2011" width="560" height="97" ="Owl and art"> 
+          </td>
+        </tr>
+        <tr valign="top">
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td colspan="4">&nbsp;</td>
+              </tr>
+              <tr valign="top">
+                <td width="414"><p><img src="../images/sub_title_learntrav.gif" width="411" height="17" alt="Learning &amp; Travel"></p>
+                  <table class="mainTable" border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tr valign="top">
+                      <td class="mainSmall"><p class="mainSubtitle"><strong>Rice University Alumni College Weekend</strong><br>
+                        March 18&ndash;20, 2011</p>
+                          <p class="mainSubtitle"> <strong>What is Alumni College Weekend?</strong></p>
+                          <p class="mainSmall">Since  1995, the Association of Rice Alumni has held this annual event inviting alumni,  parents, and friends to campus for a uniquely Rice experience: a weekend of  classes from our outstanding faculty.&nbsp; We  are one of the few institutions throughout the nation that can support  continuing education in precisely this way.&nbsp;  The Association of Rice Alumni firmly believes that the pursuit of  knowledge should continue beyond your time as a student, and Alumni College  Weekend is a fabulous opportunity to sample the recent research and first-class  teaching emerging from the university.&nbsp;  And when you&rsquo;re not in class, Alumni College offers a chance to mix, mingle,  and network with your fellow &ldquo;classmates&rdquo;&mdash; a broad spectrum of Rice alumni  from various class years and regions, plus parents of current students and  other knowledge-seeking friends.&nbsp; Read  through the course descriptions, decide which classes interest you most and  sign up today!</p>
+                          <p class="mainSubtitle"> <b>The 2011 Program</b></p>
+<p class="mainSmall">  You'll notice icons next to each of the course descriptions throughout this brochure. The classes offered at Alumni College are grouped into tracks: themes that help you identify topics of particular interest. This year we are pleased to present the following tracks:</p>
+                        <table border="0" align="center" cellpadding="7" cellspacing="0" class="mainSmall" height="42">
+                            <tr valign="top">
+                              <td valign="top" bgcolor="#747C31">&nbsp;</td>
+                              <td valign="top"><strong><img src="../images/alumnicollege/2011/arts.jpg" alt="" width="75" height="75" /></strong></td>
+                              <td bgcolor="#747C31" class="acwicons"><b>Arts and Letters</b><br>
+                              Research and presentations from the breadth of the humanities</td>
+                            </tr>
+                            <tr valign="top">
+                              <td valign="top" bgcolor="#BF2E1B">&nbsp;</td>
+                              <td valign="top"><strong><img src="../images/alumnicollege/2011/science.jpg" alt="" width="75" height="75" /></strong></td>
+                              <td bgcolor="#BF2E1B" class="acwicons"><b>Modern Science</b><br>
+                                Continuing insight into the current trends in science and how Rice is involved</td>
+                            </tr>
+                            <tr valign="top">
+                              <td valign="top" bgcolor="#57331B">&nbsp;</td>
+                              <td valign="top"><strong><img src="../images/alumnicollege/2011/rice.jpg" alt="" width="75" height="75" /></strong></td>
+                              <td bgcolor="#57331B" class="acwicons"><b>Campus, Culture, and City</b><br>
+                              An examination of the research, programs, and opportunities at Rice that directly benefit the city of Houston</td>
+                            </tr>
+                            <tr valign="top">
+                              <td valign="top" bgcolor="#005953">&nbsp;</td>
+                              <td valign="top"><strong><img src="../images/alumnicollege/2011/earth.jpg" alt="" width="75" height="75" /></strong></td>
+                              <td bgcolor="#005953" class="acwicons"><b>Biography of Earth</b><br>
+                              A broad look at the Earth and the people who inhabit it</td>
+                            </tr>
+                        </table>
+                        <p><img src="../images/gray2_bg.gif" width="100%" height="1"></p>
+                        <table cellpadding="10">
+                          <tr>
+                            <td bgcolor="#F1F2D5" class="mainSmall"><a href="https://online.alumni.rice.edu/default.aspx?Page=EVNTEventDetail&EventID=1306"><b>To 
+                              register for Alumni College Weekend, please click 
+                              here.</b></a> Once you have registered, you will 
+                              receive an email confirmation with a link for you 
+                              to follow to make your class selections. If you 
+                              have any questions, please contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('5alvr6sNAPNA9rXYMwoHPx')">Lauren 
+                              Linn</a> at 713-348-6093 or 800-742-3258.</td>
+                          </tr>
+                        </table>
+                        <p class="mainSmall">&nbsp;</p>
+                        </td>
+                    </tr>
+                  </table></td>
+                <td width="1" background="../images/dots_bg.gif"><img src="../images/clear.gif" width="1" height="50"></td>
+                <td width="10"><img src="../images/clear.gif" width="10" height="50"></td>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><form id="srch" method=GET action="" onSubmit="doSearch();">
+                          <input type="hidden" value="web" name="tab">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td colspan="4"><input type=text name=q size=15 maxlength=255 value="" onChange="srch.search.value=this.value;" class="formSmall">
+                                <span id="spn" style="background-image: url(../images/btn_go_new.gif);width:19;height:14" onClick="doSearch()" />
+                                <input type="hidden" name="hidden_site" value="alumni.rice.edu">
+                                <input type="hidden" name="search" value="">
+                                </span></td>
+                            </tr>
+                            <tr>
+                              <td width="10"><input id="alum" type="radio" name="sitesearch" value="alumni.rice.edu" checked>
+                              </td>
+                              <td width="85"><font class="mainSmalldark">Search this site</font></td>
+                            </tr>
+                            <tr>
+                              <td width="10" align="right"><input id="rice" type="radio" name="sitesearch" value="www.rice.edu">
+                              </td>
+                              <td width="85"><font class="mainSmalldark">Search rice.edu</font></td>
+                            </tr>
+                          </table>
+                        </form></td>
+                    </tr>
+                    <tr>
+                      <td><img src="../images/clear.gif" width="115" height="20" alt="spacer"></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://online.alumni.rice.edu/asp/Welcome.asp"><img src="../images/title_onlinesvcs.gif" width="115" height="9" alt="Online Services" border="0"></a></td>
+                    </tr>
+                    <tr>
+                      <td><table width="100%" border="0" cellspacing="3" cellpadding="0">
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/events/calendar.php" title="Events calendar and online registration">Find Events/RSVP</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/detailsearch.asp" title="Search the directory of Rice alumni">Alumni Directory</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/profile.asp" title="Update your directory information">Update Address</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Online/emailforwarding/eforwarding.asp" title="Manage or create an alumni.rice.edu account">Email Forwarding</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Career/default.asp" title="Connect with alums in your career field">Career Network</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/bizfinder/" title="Find or promote alumni-owned businesses">Business Finder</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/remotelibrary.asp?type=8" title="Get your latest news into the Owlmanac" target="_blank">Online Classnotes</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/library.asp" title="Access research tools and periodicals">Digital Library</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td><img src="../images/clear.gif" width="115" height="14" alt="spacer"></td>
+                    </tr>
+                  </table>
+                  <!-- <a href="http://giving.rice.edu" target="_blank"><img src="images/rice_nextcent.gif" width="83" height="40" border="0" alt="Rice: The Next Century Campaign" hspace="3"></a><br> -->
+                  <a href="http://www.rice.edu" target="_blank"><img src="../images/rice_home.gif" width="75" height="40" border="0" alt="Rice: Home" vspace="10" hspace="3"></a> <br>
+                  <img src="../images/clear.gif" width="115" height="3" alt="spacer">
+                <p></p></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="mainCell" valign="top"><img src="../images/clear.gif" width="20" height="20"></td>
+                <td width="100%" class="mainSmall"><p class="mainSubtitle">
+                    <LINK href="../faq_css.css" type=text/css rel=stylesheet>
+                    <strong> <br>
+                    Course Offerings and Descriptions: </strong> <a href="#" onClick="ddaccordion.collapseall('travel'); return false">Collapse 
+                    all</a> | <a href="#" onClick="ddaccordion.expandall('travel'); return false">Expand 
+                    all</a>
+                <p class="mainSubtitle"><strong>Friday, March 18</strong></p>
+                  <p>Class 1, 2&ndash;3:30 p.m.</p>
+                  <div  class="travel"> <strong>John Anderson</strong><br>
+                  Global Change Impact on Antarctica and Antarctica&rsquo;s  Contribution to Global Change</div>
+                  <div class="thelanguage"> 
+                    <p class="earth">Biography of Earth</p>
+                    <p>While debate continues concerning climate change and its  causes, it is now certain that global warming in historical time has resulted  in a measureable increase in the temperature of the global ocean and that, in  turn, has resulted in a five-fold increase in the rate of sea-level rise.&nbsp;&nbsp; The Antarctic Peninsula has experienced the  most dramatic rise in temperature and that has resulted in unprecedented change  in glaciers and ice shelves, as well as the ecosystems associated with these  settings.&nbsp; The big concern now is the  impact of climate change on the larger ice streams that drain the ice  sheet.&nbsp; These ice streams are showing  signs of instability and, if this trend continues, the consequences would be  dramatic increases in sea level that will have a profound impact on coastal  cities.
+                    </p>
+                    <p><b><img src="../images/alumnicollege/2011/faculty/John Anderson - use this pic!!!!.JPG" width="200" height="222" hspace="5" align="right">John Anderson</b> joined the faculty at Rice University in 1975 and served as chairman of  the Department of Earth Science from 1992 through 1998. Anderson has participated in 24 scientific  expeditions to Antarctica, his research there focusing on the history of the  ice sheet, glacial response to climate change and potential contributions to  sea level rise. His other research focuses on the evolution of the Texas coast  and on predicting coastal response to climate change this century. &nbsp;He has authored two books <em>Antarctic Marine Geology</em> and <em>The  Formation and Future of the Upper Texas Coast</em>, and has co-edited four books;  he has most recently contributed to a Geological Society of America Special Paper entitled <em>Response of Upper Gulf Coast Estuaries to  Holocene Climate Change and Sea-Level Rise</em>. He has published 195  peer-reviewed papers and mentored more than 50 graduate students. Anderson received the  1992 GCAGS Outstanding Educator Award, the 1996 Rice University Graduate  Teaching Award, 2004 Rice University Presidential Mentoring Award,  and was the 2007 recipient of the Society of Sedimentary Research Shepard  Medal. He is a Fellow of the Geological Society of America, past president of  the Society for Sedimentary Research, and academic director of the Shell Center  for Sustainability. </p>
+                  </div>
+                  <div  class="travel"><strong>Linda Neagley</strong><br />
+The Bayeux Tapestry:&nbsp; Telling the  Tale of the Battle of Hastings</div>
+                  <div class="thelanguage">
+                    <p class="arts">Arts and Letters</p>
+                    <p>This lecture will discuss the most important pictorial narrative epic of the Middle Ages&mdash;the 230-foot Bayeux Tapestry that depicts the Battle of Hastings in 1066 and the events leading up to William&rsquo;s crossing into to England.&nbsp;We will discuss how and why the tapestry presents an ambiguous perspective of the story and how medieval people might have read and experienced the imagery.</p>
+                    <p><strong>Suggested readings or  recordings:</strong> <br />
+Bernstein, David J. <em>The Mystery of  the Bayeux Tapestry</em> (University of Chicago Press, 1986)<br />
+CD-ROM: <em>The Battle of Hastings  1066 - Tapestry of a Battle</em>, narrated by Michael Leighton</p>
+<p><strong><img src="../images/alumnicollege/2011/faculty/Neagley pic.jpg" width="144" height="176" hspace="5" align="right">Linda Elaine Neagley</strong> is associate professor and director of graduate  studies at Rice University.&nbsp; Her research  interests include late gothic architecture and sculpture of northern Europe;  Gothic design theory; late medieval urban planning; issues of vision  and visuality in the Middle Ages; and medieval narrative and pictorial space.&nbsp; She is the author of <em>Disciplined Exuberance: The Parish Church of Saint-Maclou and Late  Gothic Architecture in Rouen</em> and has published articles in <em>The Art Bulletin, Journal of the Society of  Architectural Historians, </em>and <em>Gesta. </em>&nbsp;She is currently writing a chapter on late  Gothic architecture for the <em>Cambridge  History of Medieval Architecture, </em>and is beginning computer reconstruction  of the medieval city of Rouen based on the extraordinary maps in the <em>Livre des Fontaines.&nbsp; </em><br />
+Professor Neagley received her PhD  at Indiana University in 1983.&nbsp;&nbsp; She came to Rice University in 1992 after having taught in the School of  Architecture at Berkeley and in the art history departments of UCLA, University  of Michigan, and Colgate University.&nbsp; She was the director of  three plan survey projects in France funded by the National Endowment of the Arts  Interpretive Research Grants and the University of Michigan.&nbsp; </p>
+                  </div>
+                  <div  class="travel"><strong>Maria Oden</strong><br />
+Advances in Engineering Design  Education at Rice: Undergraduate Students Solving Real-World Challenges</div>
+                  <div class="thelanguage">
+                    <p class="science">Modern Science</p>
+                    <p>Dr. Oden will provide an overview  of the new Oshman Engineering Design Kitchen, a facility that has transformed  the engineering design education provided to our students. This  lecture will focus on the undergraduate student's design experience and  show examples of those same students solving significant challenges. We will  discuss many of the new initiatives and opportunities for design work  that now exist at Rice, including technology entrepreneurship, and interdisciplinary team work. </p>
+                    <p><img src="../images/alumnicollege/2011/faculty/Oden pic.jpg" width="200" height="205" hspace="5" align="right">Since  joining the Department of Bioengineering as a lecturer and laboratory  coordinator in 2004, <strong>Maria Oden</strong> has  collaborated with Rice faculty members to develop capstone engineering design  programs for undergraduate students in both the bioengineering and&nbsp;Beyond Traditional Borders (BTB)&nbsp;programs.  She has also developed several core undergraduate laboratory courses that emphasize open-ended problem solving as part of the laboratory experience.&nbsp; As director of Rice&rsquo;s&nbsp;<strong>Oshman Engineering Design Kitchen</strong><strong>,</strong> an  appointment she received in 2008, Oden orchestrates engineering education  initiatives&nbsp;in the school of engineering that&nbsp;provide&nbsp;students  from multiple departments&nbsp;in the George R. Brown School of  Engineering,&nbsp;Wiess School of Natural Sciences, and the School of  Humanities&nbsp;with unique hands-on design experience and opportunities to  carry ideas to application.</p>
+                  </div>
+                  <div  class="travel"><strong>Nicolas Shumway</strong><br />
+Why the Humanities?</div>
+                  <div class="thelanguage">
+                    <p class="ccc">Campus, Culture, and City</p>
+                    <p>This lecture has two  purposes.&nbsp; First, it will offer an  overview of the School of Humanities at Rice and point out a few of its most  outstanding and unusual features.&nbsp; Second,  we will explore why humanistic studies are not only necessary, but perhaps,  unavoidable.</p>
+                    <p><img src="../images/alumnicollege/2011/faculty/Shumway pic.jpg" width="159" height="198" hspace="5" align="right">Graduating with highest honors, <strong>Nicolas Shumway</strong> received his BA degree  from BYU in 1969 with majors in music and Spanish and a minor in French. He  completed his MA in 1971 and PhD in 1976 at UCLA with concentrations in  Hispanic literature and linguistics. After receiving his doctorate, he taught  at Pepperdine University, Indiana University Northwest, Yale University, and the  University of Texas at Austin. At Yale he chaired the Latin American Studies  program for three years and directed the Spanish language program for eight. In  1987, he received tenure at Yale and was promoted to full professor in 1992.  After fourteen years at Yale, he accepted in 1993 an appointment at the  University of Texas at Austin as the Tom&aacute;s Rivera Regents Professor of Spanish.  Two years later he became director of the UT Teresa Lozano Long Institute of  Latin American Studies, a position he held for eleven years. From 2008 to 2010,  he served as chair of the UT Department of Spanish and Portuguese. In July of  2010, he became dean of humanities and the Frances Moody Newman Professor of  Humanities at Rice University.</p>
+                  </div>
+                  <p>Class 2, 3:45&ndash;5: 15 p.m.</p>
+                  <div  class="travel"><strong>John Casbarian</strong><br />
+Architectural Method:  The Education of an Architect</div>
+                  <div class="thelanguage">
+                    <p class="arts">Arts and Letters</p>
+                    <p>This course will  postulate architectural method as a separate process in delineating the  practical and theoretical content of an undergraduate curriculum in  architecture.&nbsp; Drawing on the Rice School of Architecture's educational  philosophy, ranked third in the nation for its undergraduate program, Professor  Casbarian will look at how the broad-based and extensive education that  potential architects receive can be a model for a foundational curriculum in  any field.</p>
+                    <p><strong><img src="../images/alumnicollege/2011/faculty/Casbarian pic.jpg" width="125" height="150" hspace="5" align="right">John J. Casbarian</strong>, FAIA, is director  and Harry K. &amp; Albert K. Smith Professor at the School of Architecture,  Rice University, and director, Rice School of Architecture Program, where he  has taught design and design theory at both undergraduate and graduate levels,  since 1973. He received a BA and BArch from Rice University and a MFA in design  from the California Institute of the Arts. After apprenticing with Cesar Pelli  and Craig Hodgetts, in Los Angeles, in 1972 he founded the internationally  recognized design firm, Taft Architects with his partners Danny Samuels, FAIA,  and Robert H. Timme, FAIA. The work of this Houston-based office has received  more than 60 major design awards, has been exhibited extensively, including appearing at the  Venice Biennale, and has appeared in more than 200 articles in books and journals  worldwide, including <em>The New York Times</em>, <em>Time</em>, and <em>Newsweek</em>.&nbsp; The firm recently  completed their first Rice building, the Rice Children&rsquo;s Campus.</p>
+                  </div>
+                  <div  class="travel"><strong>Anthony Brandt</strong><br />
+Music and the Mind</div>
+                  <div class="thelanguage">
+                    <p class="arts">Arts and Letters</p>
+                    <p><img src="../images/alumnicollege/2011/faculty/Brandt pic, credit Beryl Strewski.jpg" alt="" width="169" height="222" hspace="5" align="right">The scientific exploration of the human mind is relatively  young and brain imaging technology is very new.&nbsp;  Yet the arts and philosophy have been researching the mind for thousands  of years &mdash; how we think; how we feel; what we notice, care about, and remember;  how we search for and recognize patterns, and ascribe meaning to them.&nbsp; Thus, a partnership between the science and  the arts offers one of the richest ways to investigate the mind.&nbsp; Because music is abstract, non-verbal, and  universal to human culture, it has the potential to offer especially powerful  insights into how we think, remember, and relate.</p>
+                    <p>An associate professor of composition and theory at Rice&rsquo;s  Shepherd School of Music <strong>Anthony Brandt</strong> began his career with degrees from the California Institute of Arts and Harvard  University.&nbsp; He is co-founder and  president of the acclaimed contemporary music ensemble Musiqa.&nbsp; Brandt has received Rice&rsquo;s Phi Beta Kappa  Teaching Prize and the Access to Artistic Excellence Grant from the National  Endowment for the Arts.</p>
+                  </div>
+                  <div  class="travel"><strong>Beverly Mitchell</strong><br />
+An American Perspective on the Practice of Circumcision</div>
+                  <div class="thelanguage">
+                    <p class="earth">Biography of Earth</p>
+                    <p>The  practice of female circumcision poses challenges for our medical, legal, and  other cultural institutions, while male circumcision remains deeply embedded in  our culture with minimal critique. Circumcision is a challenging topic for  anthropology, which promotes cultural relativism &mdash; understanding culture  through the eyes of those in a given culture &mdash; without condoning or condemning  the practices it strives to understand. Beverly Mitchell, PhD, lecturer and  research associate, will address how the United States has reacted to  immigrants from countries that practice female circumcision and discuss  American views of male circumcision.<u> </u></p>
+                    <p><strong>Beverly Mitchell</strong>,<strong> </strong>PhD, is a lecturer and research  associate in anthropology at Rice University.&nbsp;  She completed all of her degrees in the anthropology department at Rice,  receiving her BA in 1985, her MA in 2000, and her PhD in 2003.&nbsp; Her research is founded in cultural  anthropology and centers around the dichotomous ideology that  has pitted cultural relativists against political activists aimed at  eradicating the practice commonly known as female circumcision. </p>
+                  </div>
+                  <div  class="travel"><strong>Philip B. Bedient </strong><br />
+Living with floods and hurricanes  in the Gulf Coast of Texas </div>
+                  <div class="thelanguage">
+                    <p class="ccc">Campus, Culture, and City</p>
+                    <p>The Houston/Galveston region is  relatively susceptible to flooding from inland rainfall and hurricanes.&nbsp; Dr. Bedient will discuss the causes and  consequences of flooding by showcasing recent storm events and transition into  the structural and non-structural mitigation options Rice's Severe Storm  Prediction, Education, and Evacuation from Disasters (SSPEED) Center is  researching.&nbsp; The presentation will  conclude with a case study of the Texas Medical Center and how innovative  technology developed by  Bedient is protecting them from future floods.&nbsp;&nbsp;&nbsp; </p>
+                    <p><strong>Suggested readings or  recordings:</strong> <br />
+                      SSPEED website:&nbsp; <a href="http://hydrology.rice.edu/sspeed/learned_IKE.html">http://hydrology.rice.edu/sspeed/learned_IKE.html</a></p>
+                    <p><strong>Follow-up readings:</strong> <br />
+                      SSPEED website: &nbsp;<a href="http://sspeed.rice.edu/sspeed/index.html">http://sspeed.rice.edu/sspeed/index.html</a></p>
+                    <p>Recommended articles include dimensions  of flooding (i.e., storm simulations, the Ike Dike, the vulnerability of utilities,  risk assessment, etc.) and a collection of photographs documenting the damage to  Galveston after Hurricane Ike.</p>
+                    <p><strong><img src="../images/alumnicollege/2011/faculty/Bedient Photo.JPG" width="200" height="180" hspace="5" align="right">Philip B. Bedient</strong> is the Herman  Brown Professor of Engineering in the Department of Civil and Environmental  Engineering at Rice University. He teaches and conducts research in surface and  ground water hydrology, disaster management, and flood prediction systems.&nbsp; Bedient served as chair of environmental  engineering from 1992 to 1999.&nbsp; He has  directed 55 research projects over the past 33 years, has written more than 180  articles in journals and conference proceedings. He is the lead author on a  text on &ldquo;Hydrology and Floodplain Analysis&rdquo; (Prentice Hall, 4rd ed.,  2008) used in more than 75 universities across the US. He was elected a fellow in the American Society of Civil Engineers in 2006 and received the prestigious C.V. Theis Award from the American  Institute of Hydrology in 2007. He currently is the director of the Severe  Storm Prediction Center (SSPEED) at Rice University which consists of a team of  seven Gulf Coast universities and 15 investigators dedicated  to improving storm prediction, education, and evacuation from disaster. </p>
+                  </div>
+                  <p class="mainSubtitle"><strong>Saturday morning, March 19
+                    </strong></p>
+                  <p>Class 3, 9&ndash;10:30 a.m.</p>
+                  <div  class="travel"><strong>David Caprette</strong><br />
+A Biological Basis for Human  Behavior</div>
+                  <div class="thelanguage">
+                    <p class="science">Modern Science</p>
+                    <p><img src="../images/alumnicollege/2011/faculty/Caprette 2 pic.jpg" width="200" height="200" hspace="5" align="right">This talk will present a century  and a half of observation and controversy over the role of the brain in human  and animal behavior and how nerves communicate signals, including evidence from  experimentation and from observations of human behavior following brain injury,  and finishing with an overview of the biological basis for perception.</p>
+                    <p><strong>David Caprette</strong> graduated from Case Western Reserve University in  1974 and obtained his doctorate in regulatory biology from Cleveland State  University in 1982.&nbsp; Following   postdoctoral work at the Baylor College of Medicine and University of Houston,  he began teaching laboratory courses at Rice University in 1987.&nbsp; Since joining the Department of Biochemistry  &amp; Cell Biology, he has developed and taught several laboratory and lecture  courses, including the fundamentals of neuroscience.<strong></strong></p>
+                  </div>
+                  <div  class="travel"><strong>Melissa Kean </strong><br />
+Captain Baker's Institute: Rice before Lovett</div>
+                  <div class="thelanguage">
+                    <p class="ccc">Campus, Culture, and City</p>
+                    <p><strong><img src="../images/alumnicollege/2011/faculty/Kean pic.jpg" alt="" width="200" height="192" align="right"></strong>The Rice Institute was founded with a donation by William  Marsh Rice in 1891. Although he claimed that he wanted no action taken with regard to the formation of the institution before his death, Mr. Rice, envisioning the  creation of a school for vocational training, did in fact take some small steps  toward its opening. After his murder in 1900, the Board of Trustees, led by  Captain James A. Baker, was left to sort out what Rice's intentions were for the new  institute, what resources were available, and what were the possibilities open  to them in the rapidly changing landscape of American higher education. By the  time they offered the presidency to Edgar Odell Lovett some seven years after  Rice's death, their thinking had evolved in ways that allowed them to embrace  Lovett's bold vision of Rice as a globally influential center of learning. This  talk will explore how they got there.</p>
+<p><strong>Melissa  Kean</strong> is the Rice University Centennial Historian.&nbsp; A student of the history of American higher  education, she has written histories of Rice&rsquo;s School of Continuing Studies and  the Jesse H. Jones Graduate School of Management. In 2000, she won Rice&rsquo;s John  W. Gardner Award for Best Dissertation in the schools of Humanities and Social  Sciences. Her book, &ldquo;The Desegregation of Private Universities in the South:  Duke, Emory, Rice, Tulane and Vanderbilt&rdquo; was published in 2008 by LSU Press.  Kean&rsquo;s current projects are a scholarly history of Rice University and a study  of the collapse of social regulations on college campuses in the 1960s. </p>
+                  </div>
+                  <div  class="travel"><strong>Sarah Kielt Costello</strong><br />
+Ritual, Riches, and Ruins: The  Royal Cemetery of Ur</div>
+                  <div class="thelanguage">
+                    <p class="arts">Arts and Letters</p>
+                    <p><img src="../images/alumnicollege/2011/faculty/Costello photo.jpg" width="200" height="267" hspace="5" align="right">This lecture will explore the  remains of the third millennium BCE Royal Cemetery of Ur. Burials rich with  both gold and the grisly evidence of human sacrifice provide evidence to help  us understand the religious beliefs as well as the social and political  struggles of the Mesopotamian city-state. </p>
+                    <p><strong>Suggested readings or  recordings: </strong><br />
+  &ldquo;Ur: the Royal Graves,&rdquo; in <em>The Heilbrunn Timeline of History</em>,  The Metropolitan Museum of Art. <br />
+                      http://www.metmuseum.org/toah/hd/urrg/hd_urrg.htm</p>
+                    <p><strong>Follow-up readings:</strong> <br />
+                      Moorey, P. R. S. &quot;What Do We Know  About the People Buried in the Royal Cemetery?&quot; <em>Expedition</em> 20.1 (1977), pp. 24&ndash;40. <br />
+                      Woolley, C. Leonard, and P. R. S. Moorey. <em>Ur 'of the Chaldees.'</em> Rev. ed. Ithaca,  N.Y.: Cornell University Press, 1982.</p>
+                    <p><strong>Sarah Costello</strong> is an archaeologist whose geographical focus is the  Near East and eastern Mediterranean. She earned her PhD in anthropology from  the State University of New York, Binghamton, and her Masters degree in  Classical and Near Eastern Archaeology at Bryn Mawr College. She is an instructional  assistant professor in art history at the University of Houston, and an adjunct  assistant professor of anthropology at Rice University. She has excavated in  Turkey, Cyprus, Israel, Greece, and the United States. Her work has appeared in  the journals <em>Cambridge Archaeological  Journal</em>, <em>Antiquity</em>, <em>Near Eastern Archaeology</em>, and <em>Istanbuler Mitteilungen. </em></p>
+                  </div>
+                  <p>Class 4, 10:45 a.m.&ndash;12:15 p.m.</p>
+                  <div  class="travel"><strong>Arthur Gottschalk</strong><br />
+Understanding and Enjoying Music  for Film</div>
+                  <div class="thelanguage">
+                    <p class="arts">Arts and Letters</p>
+                    <p>Motion pictures generally have a  common musical structure, in one sense. This consists of an opening-titles  piece, an underscore, and a closing-credits piece. For the audience, the most  memorable music, that which they leave the theater humming or whose later  hearing recalls the picture most vividly, is usually that of the main titles &mdash;  the so-called theme music. But for the composer/practitioner, the real interest  and challenge often lies more in the underscore&hellip;.</p>
+                    <p>Suggested readings:<br />
+                    Burt, George. <em>The Art of Film Music</em> (Northeastern University Press, 1995)</p>
+                    <p><strong>Follow-up readings:</strong></p>
+                    <p>Films: <em>Mutiny on The Bounty</em> (1935), <em>Citizen  Kane</em> (1941), <em>The Best Years of Our  Lives</em> (1946),&nbsp; <em>Ben-Hur</em> (1959), <em>The  Children&rsquo;s Hour</em> (1961), <em>Psycho</em> (1960), <em>How the West Was Won</em> (1962), <em>A Patch of Blue</em> (1965), <em>Fantastic Voyage</em> (1966), <em>Taxi Driver</em> (1976), <em>Dragonslayer</em> (1981), <em>Schindler&rsquo;s  List</em> (1993), <em>Crimson Tide</em> (1995). </p>
+                    <p><strong><img src="../images/alumnicollege/2011/faculty/Gottschalk pic.jpg" width="200" height="218" hspace="5" align="right">Arthur Gottschalk</strong> attended the  University of Michigan, studying with William Bolcom, Ross Lee Finney, and  Leslie Bassett. On the faculty of the Shepherd School of Music at Rice  University since 1977, he is professor of music theory and composition. As a  film and television composer he numbers six feature films, twelve television  scores, and numerous industrial films and commercials among his credits. He is the  recipient of many national and international awards in the field of music,  including the Charles Ives Prize of the American Academy of Arts and Letters.  With well over a hundred compositions in his catalog, his music is performed domestically  and internationally on a regular basis, is recorded on New Ariel, Crystal,  Summit, Capstone, Beauport Classical, ERM<em>Media</em>,  Golden Crest, and AURecordings, and is published by Subito Music, Shawnee  Press, TrevCo Music, European American Music Distributors,  Alea Publishing, and The Spectrum Press (ASCAP). His book, <em>Functional Hearing</em>, is published by  Scarecrow Press.</p>
+                  </div>
+                  <div  class="travel"><strong>Marjorie Corcoran</strong><br />
+Beyond Nano&mdash;The Structure of  Matter at the FemtoScale and How it Shapes the Nature of Our Universe</div>
+                  <div class="thelanguage">
+                    <p class="science">Modern Science</p>
+                    <p>Over the past 40 years, we have  made great strides in our understanding of the structure of matter at the  smallest scale, but our standard model leaves many questions unanswered.&nbsp; This talk will review the historical  development of the field of particle physics and our current understanding of  the nature of matter at the femto-scale, with the discussion centered on the  unanswered questions.&nbsp; The close  interplay of physics at the smallest scale and physics at the largest scale  (astrophysics) will be described. </p>
+                    <p><strong>Suggested readings or  recordings:</strong> <br />
+                      Interactive website: <a href="http://www.particleadventure.org/">http://www.particleadventure.org/</a></p>
+                    <p><strong>Follow-up readings:</strong><br />
+                      Don Lincoln, <em>Understanding the Universe: from Quarks to the Cosmos</em></p>
+                    <p>Marj Corcoran received her BS in  physics from the University of Dayton and her PhD in the physics from Indiana  University.&nbsp; She first joined the faculty  at Rice in 1980 as an assistant professor in the Department of Physics and has  risen through the academic ranks and was named a full professor in 
+                      1992.&nbsp; Corcoran has also served as the chair of the  Department of Physics and speaker of the faculty senate.&nbsp;  Her  research focuses on experimental particle physics with interests in CP  violation, tests of fundamental symmetries, and searches for physics beyond the  standard model.</p>
+                  </div><div  class="travel"><strong>Brandon Dugan</strong> <br />
+The Earth Around Us</div>
+                  <div class="thelanguage">
+                    <p class="earth">Biography of Earth</p>
+                    <p><img src="../images/alumnicollege/2011/faculty/Dugan1.jpg" width="200" height="201" hspace="5" align="right">Over the 4.6 billion years of  Earth&rsquo;s history, complex interactions between its systems have yielded the  environment in which we live. This includes feedbacks between rocks, water,  atmosphere, and life. We will explore the basic evolution of these systems and  the feedbacks between them with an emphasis on major events of the deep past  and the recent past. We will conclude with thoughts on how the past tells us  about the future. </p>
+                    <p><strong>Suggested readings or  recordings:</strong> <br />
+                      Class participants are encouraged  to scan recent news articles that discuss Earth science in action. Examples  include global climate change, earthquakes, volcanoes, and the like. Many of these  articles describe the events. We will discuss the science behind these events.</p>
+                    <p><strong>Brandon Dugan</strong> has been at Rice since 2005. Prior to  starting as faculty of Earth science, Brandon earned a bachelor&rsquo;s degree in  geological engineering from the University of Minnesota, a doctorate in  geosciences from Pennsylvania State University, and completed a  postdoctoral  fellowship with the US Geological Survey. Brandon&rsquo;s research centers on how  fluids move through the shallow Earth with applications to a range of problems  encompassing freshwater resources, natural hazards, unconventional natural  resources, and oil and gas exploration.</p>
+                  </div>
+                  <div  class="travel"><strong>Christina Willis</strong><br />
+                    Language and Culture</div>
+                  <div class="thelanguage">
+                    <p class="earth">Biography of Earth</p>
+                    <p>This lecture will explore some  of the key topics addressed in studies of language and culture (also known as  linguistic anthropology). We will begin by examining the notion of linguistic  relativity, which suggests that our language shapes our thoughts. We will  consider the implications of such an hypothesis on the concept of worldview.  This will be followed by exploring how the relationship between language,  culture and thought is explored through ethnographic and experimental research  in linguistics and anthropology.</p>
+                    <p><strong>Christina  Willis </strong>is an assistant professor of linguistics at Rice University.  She received her doctorate from the University of Texas at Austin. Willis&rsquo;  research centers on the issues surrounding language endangerment with an  emphasis on linguistic description and documentation. Her primary methodology  is a discourse-centered approach to data collection, which concentrates on  naturally-occurring data for analysis. She is also interested in ethnographic  approaches to documentation and description. Willis specializes in the  Tibeto-Burman languages of the Himalayas; she has written a descriptive grammar  of Darma, which is spoken in India by fewer than 2,600 people. </p>
+                  </div>
+                  <p>Class 5, 2&ndash;3:30 p.m.</p>
+                  <div  class="travel"><strong>Erika Medrado</strong><br />
+ Rice Education Entrepreneurship Program: a Leadership  Development Program for K-12 Educators</div>
+                  <div class="thelanguage">
+                    <p class="ccc">Campus, Culture, and City</p>
+                    <p><img src="../images/alumnicollege/2011/faculty/Medrado pic.png" width="157" height="156" hspace="5" align="right">In this lecture Medrado will  present an introduction of Rice Education Entrepreneurship Program (REEP) including  its mission and goals, and highlight each of the three REEP programs offered at  the Jesse H. Jones Graduate School of Business.&nbsp;  We will discuss the need for education reform and the impact of REEP in  the Houston community and how REEP is transforming talented educators into  extraordinary school campus leaders.&nbsp; </p>
+                    <p><strong>Erika Medrado</strong> is the Associate Director of Recruiting  &amp; Marketing for REEP &mdash; Rice Entrepreneurship Program at the Jones Graduate  School of Business. She has a bachelor&rsquo;s degree in communications and a  master&rsquo;s degree in hospitality management. Her professional background includes  experience in education, marketing, human resources, and the hospitality  industry. <strong></strong></p>
+                  </div>
+                  <div  class="travel"><strong>Enrique V. Barrera</strong><br />
+Political Materials:&nbsp;  Materials Science Design Project</div>
+                  <div class="thelanguage">
+                    <p class="science">Modern Science</p>
+                    <p><strong><img src="../images/alumnicollege/2011/faculty/Barrera photo.jpg" alt="" width="127" height="183" hspace="5" align="right"></strong>During the 20 years that Enrique Barrera has been in the materials  science program he has introduced students to numerous inventive design projects.&nbsp; Most recently the students have taken on projects  in green engineering, combating poverty, and &ldquo;Political Materials.&rdquo;&nbsp; This talk will highlight recent work by Rice  students into the realm of materials that have global impact on society and the  way countries work with each other.</p>
+                    <p><strong>Suggested readings or recordings: </strong><br />
+                      <a href="http://cohesion.rice.edu/engineering/mems/people.cfm?doc_id=9637">Enrique Barrera&rsquo;s website</a> includes resources for suggested reading materials.</p>
+                    <p><strong>Enrique Barrera</strong> is professor of materials science at Rice  University, director of the Infrastructure Center for Advanced Materials, and a  professional engineer in the state of Texas. He is the co-founder of NanoRidge  Materials, Inc., a new nanotechnology company based in Houston that produces  advanced nanomaterials across a broad range of platforms.&nbsp; He is the author of more than 140 journal  papers, proceedings, edited books, chapters, and reports and has 52 patents  issued or pending internationally.&nbsp; He is a  recipient of the 2002 Presidential Award for Excellence in Science,  Mathematics, and Engineering Mentoring, which is given to up to ten individuals annually.&nbsp;</p>
+                  </div><div  class="travel"><strong>Denise Chen</strong><br />
+Developmental Psychology: What  Develops?&nbsp; What Remains the Same?</div>
+                  <div class="thelanguage">
+                    <p class="earth">Biography of Earth</p>
+                    <p><img src="../images/alumnicollege/2011/faculty/Chen pic.jpg" width="133" height="180" hspace="5" align="right">&ldquo;Nothing,&rdquo; to quote scientist and writer Jared Diamond, &ldquo;is so  fascinating or complicated as the trajectory of a human life.&rdquo; The issues that developmental  psychology is concerned with include stabilities and changes in life, whether  the developmental trajectory takes one course or many, and the ever relevant question  of nature versus nurture. In this lecture,<strong> </strong>Denise Chen will  introduce the subject and present results from contemporary research that is  pertinent to the basic issues. </p>
+                    <p><strong>Suggested readings or  recordings: </strong></p>
+Apted,  Michael. <em>The Up Series</em> (<em>Seven Up </em>/ <em>7  Plus Seven </em>/ <em>21 Up </em>/ <em>28 Up </em>/ <em>35 Up </em>/ <em>42 Up </em>/ <em>49 Up</em>). Documentary (2007)
+<p>France, Arte. <em>The Secret Life of Babies</em>. Documentary (2005)<br />
+  <strong>&nbsp;</strong><br />
+  Denise Chen is an assistant professor of psychology at Rice. She received  her BA and MA from the University of Chicago and PhD from Rutgers University.  She received postdoctoral training at the Monell Chemical Senses Center and the  University of Chicago.&nbsp; Her research  concerns the psychology and neuroscience of human olfaction.</p>
+</div><div  class="travel"><strong>Laura Segatori</strong> <br />
+Protein Misfolding Diseases: Pathogenicity  and Therapeutic Perspectives</div>
+                  <div class="thelanguage">
+                    <p class="science">Modern Science</p>
+                    <p><strong><img src="../images/alumnicollege/2011/faculty/Segatori pic.jpg" alt="" width="144" height="224" hspace="5" align="right"></strong>Among  the building blocks of all living systems, proteins are versatile molecules  with a remarkably broad variety of functions, including enzymatic, structural,  regulatory, transport, and signaling. It is widely accepted that 3D structure  and biological activity of a protein are very tightly linked, such that small  structural changes can cause functional impairments leading to a cellular  toxicity and, eventually, to development of devastating human diseases, collectively  referred to as &quot;protein misfolding  diseases.&quot; By analyzing a few examples of loss of function diseases  (lysosomal storage disorders) and gain of function diseases (Parkinson&rsquo;s and  Alzheimer&rsquo;s disease), this talk will provide an overview of the current  knowledge of protein misfolding in association with disease development and of  the therapeutic perspectives for protein misfolding diseases. </p>
+                    <p><strong>Laura Segatori</strong> is the T.N. Law Assistant Professor of  Chemical and Biomolecular Engineering at Rice University. She also holds joint appointments in the  departments of bioengineering and biochemistry and cell biology at Rice.&nbsp; She received her bachelors degree in biotechnology  from the University of Bologna (Italy) in 2000 and her PhD in chemical  engineering from the University of Texas at Austin in 2005. She was a  postdoctoral research fellow at The Scripps Research Institute from 2005 to 2007. Segatori&rsquo;s research focuses on cellular protein folding,  particularly in association with the development of human diseases.</p>
+                  </div>
+                  <p>Class 6, 3:45&ndash;5:15 p.m.</p>
+                  <div  class="travel"><strong>John T. McDevitt</strong><br />
+Tools for Affordable Healthcare  Based on Bio-Nano-Chips<strong> </strong></div>
+                  <div class="thelanguage">
+                    <p class="science">Modern Science</p>
+                    <p><img src="../images/alumnicollege/2011/faculty/McDevitt pic.jpg" alt="" width="200" height="247" hspace="5" align="right">In this presentation Dr. McDevitt  will describe steps that are now being taken for the development of next-generation Nano-Bio-Chip Sensors. The key technology that will enable  developments here is based on powerful medical micro-devices that are capable  of sophisticated measurements of the molecules of life that are present in  complex bio-fluid samples like blood, urine, and saliva. These Rice efforts have  the potential to reduce health care-costs, revolutionize diagnostic medicine by  creating the platform that enables personalized medicine to become a reality,  create a new Texas nano-bioscience industry with strong economic impact, and  establish Texas as the world&rsquo;s leader in nano-bio-chip sensor systems.</p>
+                    <p><strong>John T. McDevitt</strong> joined the Rice faculty as the Brown-Wiess Professor of Bioengineering and  Chemistry in 2009. He was previously at the University of Texas at Austin where he  and his research group of 25 members established one of largest patent  portfolios in the history of UT. The McDevitt laboratory at Rice focuses  on the development of micro-medical devices that are fabricated with the same  methods that are used to make the integrated circuit. These powerful yet  affordable mini-sensor ensembles have the potential to reduce health care costs  while at the same time improving treatment for patients suffering from cancer,  stroke, cardiac and neurological diseases.&nbsp;  He earned a PhD in chemistry from Stanford University in 1987 and holds  a BS in chemistry from California Polytechnic State University at San Luis  Obispo. McDevitt completed a postdoctoral fellowship at the University  of North Carolina&nbsp;at Chapel Hill before joining the UT faculty.</p>
+                  </div>
+                  <div  class="travel"><strong>Stephen Klineberg</strong><br />
+The Changing Face of Houston: Tracking the Economic and  Demographic Transformations through 29 Years of Houston Surveys</div>
+                  <div class="thelanguage">
+                    <p class="ccc">Campus, Culture, and City</p>
+                    <p>The Houston region recovered from the collapse of the  oil boom in the 1980s to find itself squarely in the midst of a restructured  economy and a demographic revolution. We will review the findings from almost  30 years of the &quot;Houston Area Survey&quot; (1982&ndash;2010) to measure these  remarkable transformations and to consider their implications for the  challenges and opportunities that lie ahead.</p>
+                    <p>A graduate of Haverford College, with an MA from the  University of Paris and a PhD from Harvard, Stephen Klineberg is professor of sociology  at Rice University and co-director of the new Kinder Institute for Urban  Research. The recipient of ten major teaching awards at Rice, including the  Lifetime Award for Excellence in Teaching, he is the founding-director of the  annual &ldquo;Houston Area Survey,&rdquo; now beginning its 30th year of tracking the  remarkable changes in the population patterns, economic outlooks, experiences,  and beliefs of Harris County residents. </p>
+                  </div><div  class="travel"><strong>Cyrus Mody and  Kevin Kelly</strong><br />
+Technological Disasters: Learning  from the Past to Prepare Rice Students for Tomorrow<strong> </strong></div>
+                  <div class="thelanguage">
+                    <p class="arts">Arts and Letters</p>
+                    <p><img src="../images/alumnicollege/2011/faculty/Mody pic maybe.jpg" width="200" height="221" hspace="5" align="right">How can 18th-century  German forestry presage flaws in 20th-century standardized testing?  What can cargo ship collisions tell us about the ever increasing use of  satellite technology? Is one form of government or culture more prone to  technological failure than another? This lecture gives an overview of the  themes and aims in our interdisciplinary undergraduate course, including some  entertaining examples of the types of disasters we have covered.&nbsp; </p>
+                    <p><strong>Suggested readings or  recordings:</strong> <br />
+                      Clancey, Gregory. &ldquo;The Meiji  Earthquake: Nature, Nation, and the Ambiguities of Catastrophe,&rdquo; <em>Modern Asian Studies</em> 40.4 (2006):  909-951.<br />
+                      Burke, John G. &ldquo;Bursting Boilers  and the Federal Power,&rdquo; <em>Technology and  Culture</em> 7.1 (1966): 1-23.</p>
+                    <p>&nbsp;</p>
+                    <p><strong><img src="../images/alumnicollege/2011/faculty/Kelly pic.jpg" alt="" width="187" height="253" hspace="5" align="right">Follow-up readings:</strong> <br />
+                      Carson, John. &ldquo;Army Alpha, Army  Brass, and the Search for Army Intelligence,&rdquo; <em>Isis</em> 84.2 (1993): 278-309.<br />
+                      Vaughan, Diane. &ldquo;The Trickle-Down  Effect: Policy Decisions, Risky Work, and the <em>Challenger</em> Tragedy,&rdquo; <em>California  Management Review</em> 39.2 1997): 80-102.</p>
+                    <p><strong>Cyrus Mody </strong>is an assistant professor in the Rice history  department.&nbsp; He has an undergraduate  degree in mechanical and materials engineering and a PhD in science and  technology studies.&nbsp; His research area is  American science and science policy, particularly in the physical and  engineering sciences in the late Cold War and post-Cold War era.</p>
+                    <p><strong>Kevin Kelly</strong> is an associate professor of electrical and computer engineering.&nbsp;&nbsp; His research has focused on imaging and  spectroscopy at the nanoscale, including carbon nanotubes, plasmonic  nanostructures, and single molecule devices.&nbsp;  His most recent research involves fundamental issues in imaging with the  development of the single pixel camera. </p>
+                  </div><div  class="travel"><strong>William Parsons</strong><br />
+Freud, Jung, and the Creation of Modern Spirituality</div>
+                  <div class="thelanguage">
+                    <p class="earth">Biography of Earth</p>
+                    <p><img src="../images/alumnicollege/2011/faculty/Parsons pic.JPG" width="200" height="241" hspace="5" align="right">In recent years it has  become fashionable to describe one&rsquo;s relation to the divine as &ldquo;spiritual but  not religious.&rdquo; This saying usually means that yes, one is &ldquo;religious&rdquo; but not  in the usual manner of subscribing to a particular religious tradition or  participating in its prescribed rituals. On the contrary, institutional religion  is seen as the enemy, a place where authoritarianism, mendacity, and dogmatism  have replaced authentic, living religious experience. Those professing modern  spirituality are notably eclectic, adopting a supermarket approach to religious  traditions and practices and constructing a highly individualized form of  relating to the divine. Recent surveys estimate that more than 25% of those living  in the United States profess this kind of spirituality. This lecture will  explore the contours and nature of modern spirituality, focusing on how the  rise of psychology, particularly those strands affiliated with the  depth-psychological tradition of Freud and Jung, were and still are complicit  in its cultural ascendancy. </p>
+                    <p><strong>William B. Parsons</strong> is associate professor of religious studies at Rice University. His  publications include <em>The Enigma of the  Oceanic Feeling</em>, <em>Religion and  Psychology: Mapping the Terrain</em>, <em>Mourning  Religion</em>, <em>Disciplining Freud on  Religion</em>, <em>Teaching Mysticism,</em> and  dozens of essays in multiple journals and edited books. He has served as chair  of the Department of Religious Studies at Rice University, director of the Rice  University Humanities Research Center, editor of <em>Religious Studies Review</em>, and has been a fellow at the Martin Marty  Center of the University of Chicago and at the Institute for Advanced Studies  (IAS) at Hebrew University.</p>
+                  </div>
+                  <p class="mainSubtitle"><strong>Saturday afternoon, March 19</strong> </p>
+                  <p>Class 7, 9&ndash;10:30 a.m.</p>
+                  <div  class="travel"> <strong>Andr</strong><strong>&eacute;</strong><strong> Droxler</strong><br />
+                  The Future of Coral Reefs in a  Warming Earth                  </div>
+                  <div class="thelanguage">
+                    <p class="earth">Biography of Earth</p>
+                    <p><strong><img src="../images/alumnicollege/2011/faculty/Droxler pic.jpg" alt="" width="200" height="321" hspace="5" align="right"></strong>Tropical corals reefs are  considered to be equivalent to the rain forests of the oceans. Although they cover  less than one percent of the global ocean sea floor, coral reefs contain the  highest ocean biodiversity. In the past century, local, regional, and global  anthropogenic activities, such as an increase of atmospheric CO2,  have introduced increasing stresses on modern coral reefs at alarming rates.  More than fifty percent of the tropical coral reefs are under threat to  collapse in the next few decades; twenty percent have already been destroyed.  Because of their sensitivity to environmental changes, <em>coral reefs</em> are  considered the &ldquo;<em>canary</em><strong> </strong>in the<strong> </strong><em>mine</em><strong> </strong>shaft&rdquo; for the world&rsquo;s oceans. In the  context of a warming Earth and the global decay of its environments, what is  the future in the next century for coral reefs and the oceans in general?</p>
+                    <p><strong>Suggested readings or  recordings:</strong> <br />
+                      Veron, J.E.N. <em>A Reef in Time: The  Great Barrier Reef from Beginning to End</em> (Harvard Press,2010)<br />
+                      <a href="http://www.eoearth.org/article/Coral_reefs_and_climate_change">The Encyclopedia of Earth online</a></p>
+                    <p><strong>Follow-up  readings:</strong><br />
+                      Archer, David. <em>The Long Thaw: How Humans  Are Changing the Next 100,000 Years of Earth's Climate</em> (Princeton University Press,2010) </p>
+                    <p><strong>Andr&eacute; W. Droxler</strong> received his master&rsquo;s degree  equivalent in 1978 from University of Neuch&acirc;tel (Switzerland) and his  PhD at the Rosenstiel School of Marine and Atmospheric Science at the University  of Miami in 1984. He was a postdoctoral research scientist  at University of South Carolina from 1985-1986 and joined the Rice faculty in  1987.&nbsp; Droxler is currently a professor  in the Department of Earth Science and, since 2007, the director of the Rice  Center for the Study of Environment and  Society. In the past 30 years, he has conducted research programs in the  Bahamas, offshore Jamaica, along the Belize margin, in the western Gulf of  Mexico, in the Maldives, along the Australian Great Barrier Reef, and the Gulf  of Papua. The main focuses of his research include the regional and global  evolution of coral reefs, paleo-oceanographic/climatic records, past sea level  fluctuations archived in sediments deposited around reefs and carbonate  platforms. </p>
+                  </div>
+                  <div  class="travel"><strong>Vicki Colvin</strong> <br />
+Nanotechnology:  An Emerging Industry</div>
+                  <div class="thelanguage">
+                    <p class="science">Modern Science</p>
+                    <p><strong><img src="../images/alumnicollege/2011/faculty/Colvin Photo.jpg" alt="" width="200" height="300" hspace="5" align="right"></strong>Nanotechnology-enabled  systems offer great promise for solving difficult social problems and,  consequently, enormous possibility for commerce.&nbsp; Some of these innovations are related to the  fundamental material properties at the heart of any nanotechnology.&nbsp; Their small size, high surface areas, and  unique properties render these materials useful to industries ranging from  transportation to pharmaceuticals.&nbsp;  Recently, nanotechnology has been used to treat cancer, clean water, and  increase independence from fossil fuels.&nbsp;  Yet there are larger social concerns about whether the new economies for  manufacturing would disenfranchise poor people tied to the non-nano  world.&nbsp;&nbsp; This presentation will cover how these promising developments can help create a more  sustainable and socially acceptable industry.</p>
+<p><strong>Vicki Colvin</strong> is the director of the Center  for Biological and Environmental Nanotechnology (CBEN) and the co-director of  the Richard E. Smalley Institute for Nanoscale Science and Technology at Rice  University.&nbsp; Currently she serves as the  Kenneth S. Pitzer-Schlumberger Professor of Chemistry and professor of  chemistry and chemical and biomolecular engineering.&nbsp; Colvin studies how nanoscale particles  interact with the environment and living systems.&nbsp; Her research draws on both synthetic  chemistry for the preparation and control of novel nanophase systems as well as  physical chemistry for the investigation of their unusual behavior.&nbsp; Colvin&rsquo;s projects utilize the unique and  responsive behavior of nanoparticles to solve problems related to water  purification and targeted cell death.&nbsp;  Colvin received her bachelor&rsquo;s degree in chemistry and physics from  Stanford University, and her PhD in chemistry from the University of  California, Berkeley.</p>
+                  </div>
+                  <div  class="travel"><strong>Alexander X. Byrd</strong> <br />
+Brown Then and Now</div>
+                  <div class="thelanguage">
+                    <p class="arts">Arts and Letters</p>
+                    <p><img src="../images/alumnicollege/2011/faculty/Byrd pic.jpg" width="199" height="265" hspace="5" align="right">An exploration of the continuing importance of Brown v.  Board of Education in American life, particularly as it relates to questions of  racial and economic equity in urban schools.</p>
+                    <p>Suggested Readings:<br />
+                      Ogletree, Charles.  <em>All  Deliberate Speed</em></p>
+                    <p><strong>Follow-up  readings:</strong> <br />
+                      Balkin, Jack. Ed.<em> What  Brown v. Board of Education Should Have Said: The Nation's Top Legal Experts Rewrite America's Landmark Civil Rights Decision</em>. (NYU Press, 2002)</p>
+                    <p>Dr. Byrd&rsquo;s area of expertise is Afro America, especially  black life in the Atlantic world and the Jim Crow South. His study of free and  forced transatlantic black migration in the period of the American Revolution  is entitled <a href="http://www.lsu.edu/lsupress/bookPages/9780807133590.html" target="_blank"><em>Captives &amp;  Voyagers</em></a> and was awarded the <a href="http://www.historians.org/annual/2010/2009prizes.cfm#logan" target="_blank" title="2009 Wesley-Logan Prize">2009 Wesley-Logan Prize</a>&nbsp;  in African diaspora history.&nbsp; Byrd is a  Rice alumnus and received his BA in history in 1990 and his PhD in 2001 from  Duke University. He joined the Rice faculty in 2001 and is now an associate  professor in the history department.</p>
+                  </div>
+                  <p>Class 8, 10:45 a.m.&ndash;12:15 p.m.</p>
+                  <div  class="travel">Spotlight  on Student Research</div>
+                  <div class="thelanguage">
+                    <p>In this  very special session we will introduce you to four students whose research  during their time at Rice has been instrumental in continuing Rice&rsquo;s reputation  as a top tier research institution.&nbsp; The students will give back-to-back  presentations and illustrate the strength of Rice as a university for  undergraduate and graduate research.</p>
+                  </div>
+                  <div class="thelanguage"> </div></TD>
+              </TR><tr><td class="mainCell" valign="top"><img src="../images/clear.gif" width="20" height="20"></td><td class="mainSmall"><br>
+                  <img src="../images/gray2_bg.gif" width="100%" height="1"><br>
+                  <p class="mainSmall"><b>Books</b><br>
+                    Most of the titles mentioned can be found at your local bookstore 
+                    or at an online bookstore such as <a href="http://www.barnesandnoble.com/" target="_blank">barnesandnoble.com</a>.</p>
+                  <p class="mainSmall"><span class="mainSmallred"><b>Scholarship</b></span><br>
+                    The Leo S. Shamblin Scholarship Fund was established to provide 
+                    scholarship support to potential Alumni College participants 
+                    with a strong record of volunteer service to the Rice community. 
+                    Recipients must plan to participate in the entire Alumni College 
+                    Weekend, and young alumni and out-of-town participants are 
+                    especially encouraged to apply. Individuals interested in 
+                    applying for the scholarship funds should address a letter 
+                    to the executive director of alumni affairs explaining why 
+                    the funds would assist them in attending Alumni College Weekend 
+                    and how they satisfy the criteria regarding volunteer service. 
+                    The deadline for application is February 25.</p></td></tr>
+            </TABLE>             
+            <p class="mainSmall">&nbsp;</p>
+            </td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<tr>
+  <td><img src="../images/clear.gif" width="100" height="5" alt="spacer"></td>
+</tr>
+<tr>
+  <td><table width="100%" border="0" cellspacing="0" cellpadding="15">
+      <tr>
+        <td width="57%"><font class="mainSmall"><a href="#"onClick="SecWin=window.open('contact.html','SecWin','width=260,height=450,toolbar=no,status=yes,resizable=no,scrollbars=yes,location=no,directories=no,menubar=no');return false;">Contact the Office of Alumni Affairs</a> | <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('dFuDc6BYQoX5nNNobzmYL4')">Send a Comment</a> | <a href="../index.html">Home</a></font></td>
+        <td width="43%" align="right"><font class="mainSmall"> 
+          <script language="JavaScript">
+<!--
+today = new Date()
+cy = today.getFullYear()
+{
+}
+//-->
+</script>
+          Copyright &copy; 
+          <script language="JavaScript">
+<!--
+document.write(cy)
+{
+}
+//-->
+</script>
+          Rice University</font></td>
+      </tr>
+    </table></td>
+</tr>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>

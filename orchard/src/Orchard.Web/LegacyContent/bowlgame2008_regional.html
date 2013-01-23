@@ -1,0 +1,549 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "images/btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "images/btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=350,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (srch.alum.checked == true){
+	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (srch.rice.checked == true){
+	srch.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  srch.submit();
+
+}
+
+function checkKey(evt){
+
+	srch.search.value=srch.q.value;
+	if (evt.keyCode == 13 && srch.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+</script>
+<script language="JavaScript1.2">
+<!--
+
+var head="display:''"
+function doit(header){
+var head=header.style
+if (head.display=="none")
+head.display=""
+else
+head.display="none"
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+.tableborder {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+-->
+</style>
+
+</head>
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top">
+          <td width="221" rowspan="2"><a href="index.html"><img src="images/logo.gif" width="221" height="94" alt="Association of Rice Alumni" border="0"></a><br>
+            <table width="191" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="http://alumni.cgi.rice.edu/events/calendar.php">EVENTS CALENDAR</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="alumni_groups.html">ALUMNI GROUPS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="youngalum_stds.html">YOUNG ALUMNI /STUDENTS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="career_connection.html">CAREER CONNECTION</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="volunteer.html">VOLUNTEER</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="learning_trav.html">LEARNING &amp; TRAVEL</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="honors_awards.html">HONORS &amp; AWARDS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a href="new_at_rice.html">WHAT'S NEW @ RICE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="about_alumassoc.html">ABOUT THE ARA</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="faq_file.html">FAQ FILE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="http://giving.rice.edu" target="_blank">GIVE TO RICE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+          <td align="right"><img src="images/clear.gif" width="100" height="20"><br>
+            <img src="images/subpic_bowlgame06.jpg" alt="Rice Goes Bowling!" width="526" height="56" ="Owl and art"> 
+          </td>
+        </tr>
+        <tr valign="top">
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td colspan="4">&nbsp;</td>
+              </tr>
+              <tr valign="top">
+                <td width="414"><img src="images/sub_title_athletics.gif" width="410" height="17" alt="Baseball Game-Watching Parties"> 
+                  <table class="mainTable" border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tr valign="top">
+                      <td class="mainSmall"> <p class="mainSubtitle"><br>
+                          <strong>Regional Game-Watching Parties</strong> </p>
+                        <p><span class="mainSmallred"><strong>Please check back 
+                          frequently for updates on game-watching parties.</strong></span> 
+                          Game-watching parties will be posted as they are finalized. 
+                          If you are interested in hosting a gathering in your 
+                          area and are unsure if there are already alumni volunteers 
+                          organizing a local event, please contact the Rice alumni office.</p>
+                        <table width="100%" border="0" cellpadding="8" cellspacing="0">
+                          <tr class="mainSmall">
+                            <td valign="top" class="cellbgGray"><p>Texas Bowl 
+                                on the NFL Network<br>
+                                <span class="mainSubtitle"><strong>Tuesday, December 
+                                30, 7 p.m. Central</strong><br>
+                                Rice vs. Western Michigan</span></p></td>
+                          </tr>
+                        </table>
+                        <table width="380" border="0" cellpadding="8" cellspacing="0">
+                          <tr class="mainSmall"> 
+                            <td width="20%" valign="top" nowrap class="tableborder"><strong>AUSTIN</strong></td>
+                            <td valign="top" class="tableborder"><p>7 p.m. Central<br>
+                                <a href="http://www.hotelaustin.com/html/legends.html" target="_blank">Legends 
+                                Sport Bar</a><br>
+                                Holiday Inn Northwest Arboretum<br>
+                                8901 Business Park Dr.<br>
+                                Austin, TX<br>
+                              </p>
+                              </td>
+                          </tr><tr class="mainSmall"> 
+                            <td width="20%" valign="top" nowrap class="tableborder"><strong>BAY 
+                              AREA </strong></td>
+                            <td valign="top" class="tableborder"><p>4:30 p.m. 
+                                Pacific<br>
+                                Malibu Grill<br>
+                                5735 Camden Ave.<br>
+                                San Jose, CA<br>
+                                <strong>RSVP to: <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('5MJ6nuX8mnJEfbFAxO7IC8')">Mike 
+                                Ross '70</a></strong><br>
+                                <br>
+                                5 p.m. Pacific<br>
+                                <a href="http://www.oldpropa.com/" target="_blank">Old 
+                                Pro Palo Alto</a><br>
+                                541 Ramona St.<br>
+                                Palo Alto, CA<br>
+                                <strong>Contact: </strong><a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('c8J0ZwcKeJwA7vT2RiLTEc')"></a><b><a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('c8J0ZwcKeJwA7vT2RiLTEc')">Ed 
+                                Feng '99</a></b><br>
+                              </p>
+                              </td>
+                          </tr><tr class="mainSmall"> 
+                            <td width="20%" valign="top" nowrap class="tableborder"><strong>BOSTON</strong></td>
+                            <td valign="top" class="tableborder"><p>8 p.m. Eastern<br>
+                                <a href="http://www.marriottmodules.com/restaurant/hotels/hotel-information/travel/bosco-boston-marriott-copley-place/champions_copley">Champions</a><br>
+                                Boston Marriott Copley Place<br>
+                                110 Huntington Ave<br>
+                                Boston, MA<br>
+                                <strong>RSVP to: </strong><a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('XMOj7rLa6nZ7aiwKa6dhtU')"><strong>Dave 
+                                Archibald '02</strong></a> or 617-827-9104<br>
+                              </p></td>
+                          </tr><tr class="mainSmall"> 
+                            <td width="20%" valign="top" nowrap class="tableborder"><strong>DALLAS</strong></td>
+                            <td valign="top" class="tableborder"><p>7 p.m. Central<br>
+                                <a href="http://maps.google.com/maps?f=q&hl=en&geocode=&q=3227%2BMcKinney,%2BDallas,%2BTX%2B75204&sll=32.803883,-96.799698&sspn=0.007431,0.014505&ie=UTF8&ll=32.806412,-96.7997&spn=0.007431,0.014505&z=16&iwloc=addr">Frankie's</a><br>
+                                3227 McKinney Avenue, Suite 102<br>
+                                Dallas, TX<br>
+                                <strong>RSVP to: <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('SsVlQm3JNmz7R69X97CsAY')">Russ 
+                                Coleman '82</a></strong><br>
+                                <br>
+                                <em>Free parking at the Gables Uptown parking 
+                                garage, next door. </em><br>
+                                <br>
+                                Sign up for the <a href="https://mailman.rice.edu/mailman/listinfo/dfw-owls-l">DFW 
+                                listserv</a> to receive updates on the party.<br>
+                              </p>
+                              </td>
+                          </tr>
+						  <tr class="mainSmall"> 
+                            <td width="20%" valign="top" nowrap class="tableborder"><strong>DENVER 
+                              AREA </strong></td>
+                            <td valign="top" class="tableborder"><p>6 p.m. Mountain<br>
+                                ESPN Zone<br>
+                                1187 16th St.<br>
+                                Denver, CO<br>
+                                <strong>RSVP to: </strong><a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('uCLI7afRzhuK42eHVWDIGH')"><strong>Paul 
+                                Godec '83</strong></a><br>
+                                <br>
+                                Sign up for the <a href="https://mailman.rice.edu/mailman/listinfo/colorado-owls-l">Colorado 
+                                listserv</a>.<br>
+                              </p></td>
+                          </tr>
+						  <tr class="mainSmall"> 
+                            <td width="20%" valign="top" nowrap class="tableborder"><strong>KANSAS 
+                              CITY </strong></td>
+                            <td valign="top" class="tableborder"><p>7 p.m. Central<br>
+                                Ugly Joe's Sports Bar<br>
+                                103rd and State Line Rd<br>
+                                Kansas City, MO<br>
+                                <strong>RSVP to: <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('Xr21pWc54Nq6Z2BiUJsFnZ')">Sam 
+                                Scott '01</a> </strong>or<strong> <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('ZEuDSnHoNr0wG37k5brrlQ')">Debby 
+                                Cortes '65</a></strong></p></td>
+                          </tr><tr class="mainSmall"> 
+                            <td width="20%" valign="top" nowrap class="tableborder"><strong>NEW 
+                              YORK </strong></td>
+                            <td valign="top" class="tableborder"><p>7:30 p.m. 
+                                Eastern<br>
+                                <a href="http://www.towntavernnyc.com/" target="_blank">The 
+                                Town Tavern</a><br>
+                                134 West Third St.<br>
+                                New York, NY<br>
+                                <strong>Contact: <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('uv5rLPBEZyggJeOvA6ohHF')">Sean 
+                                McSherry '02</a><br>
+                                <br>
+                                </strong><em>Drink and wing specials. Accessible 
+                                via: ACEBDFV trains at W 4th St stop; #1 train 
+                                at Christopher St.; L train @ 6th Ave.; Path Train 
+                                @ 9th St.</em><br>
+                                <br>
+                                Sign up for the <a href="https://mailman.rice.edu/mailman/listinfo/nyc-owls-l">New 
+                                York listserv</a>.<br>
+                              </p>
+                              </td>
+                          </tr><tr class="mainSmall"> 
+                            <td width="20%" valign="top" nowrap class="tableborder"><strong>ORANGE 
+                              COUNTY, CA</strong></td>
+                            <td valign="top" class="tableborder"><p>5 p.m. Pacific<br>
+                                <em>Hosted by William Stone '90 and Doug Miller 
+                                '91</em><br>
+                                The Ranch Sports Grill<br>
+                                27412 Antonio Parkway, #R-1<br>
+                                Ladera Ranch, CA<br>
+                                <strong>RSVP to: <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('1716cKJU5CiZVdVW5FrKoB')">Doug 
+                                Miller '91</a> </strong>at 949-429-1700</p></td>
+                          </tr><tr class="mainSmall"> 
+                            <td width="20%" valign="top" nowrap class="tableborder"><strong>PHOENIX</strong></td>
+                            <td valign="top" class="tableborder"><p>6 p.m. Mountain<br>
+                                Floyd's Grill<br>
+                                12601 N. Tatum Blvd.<br>
+                                Phoenix, AZ<br>
+                                <strong>RSVP to: <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('2ZcIkI9gjnGYdp3HziG7Pj')">Ed 
+                                Westerfield '79</a> </strong>at 602-424-0275</p></td>
+                          </tr><tr class="mainSmall"> 
+                            <td width="20%" valign="top" nowrap class="tableborder"><strong>SALT 
+                              LAKE CITY</strong></td>
+                            <td valign="top" class="tableborder"><p>6 p.m. Mountain<br>
+                                Home of Doyle Arnold '70 and Anne Glarner<br>
+                                1439 Perrys Hollow Dr.<br>
+                                Salt Lake City, UT <br>
+                                <strong>RSVP to: <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('G1DWtgMaznl3INZyaa9cD6')">Doyle 
+                                Arnold</a><br>
+                                <br>
+                                </strong><em>Potluck: please bring chips, hors 
+                                d&#8217;oeuvres, soda, beer, wine. </em></p>
+                              </td>
+                          </tr><tr class="mainSmall"> 
+                            <td width="20%" valign="top" nowrap class="tableborder"><strong>SAN 
+                              DIEGO </strong></td>
+                            <td valign="top" class="tableborder"><p>5 p.m. Pacific<br>
+                                Oggi's Pizza &amp; Brewing Company<br>
+                                12840 Carmel Country Rd<br>
+                                San Diego, CA<br>
+                                <strong>Contact: <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('5GMwDg9hoJKqEOUZSnLD6N')">Bill 
+                                Van Vooren '99</a></strong></p>
+                              </td>
+                          </tr><tr class="mainSmall"> 
+                            <td width="20%" valign="top" nowrap class="tableborder"><strong>ST. 
+                              LOUIS</strong></td>
+                            <td valign="top" class="tableborder"><p>7 p.m. Central<br>
+                                Weber's Bar and Grill<br>
+                                8169 Big Bend<br>
+                                Webster Groves, MO<br>
+                                <strong>RSVP to: <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('1CYT8hqWGb9hKr7ysz2Y2q')">John 
+                                James '89 and Tracy Nitzsche James '90</a> </strong>or 
+                                314-963-2082 </p>
+                              </td>
+                          </tr><tr class="mainSmall"> 
+                            <td width="20%" valign="top" nowrap class="tableborder"><strong>WASHINGTON, 
+                              D.C. </strong></td>
+                            <td valign="top" class="tableborder"><p><span class="mainSmallred"><strong>New 
+                                venue:</strong></span><br>
+                                8 p.m. Eastern <br>
+                                <a href="http://www.greeneturtle.com/" target="_blank">Greene 
+                                Turtle</a><br>
+                                Verizon Center<br>
+                                601 F Street, NW<br>
+                                Washington, DC<br>
+                                <em>Metro: Chinatown/Gallery Place</em> <br>
+                                <strong>Contact: <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('4s8bhYNrwfZNsfFJE4yA3V')">Matt 
+                                Haynie '04</a></strong><em><br>
+                                </em><br>
+                              </p></td>
+                          </tr></table>
+                        <p class="mainSmall">&nbsp;</p>
+                        <p class="mainSmall">&nbsp; </p></td>
+                    </tr>
+                </table></td>
+                <td width="1" background="images/dots_bg.gif"><img src="images/clear.gif" width="1" height="50"></td>
+                <td width="10"><img src="images/clear.gif" width="10" height="50"></td>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><form id="srch" method=GET action="" onSubmit="doSearch();">
+                          <input type="hidden" value="web" name="tab">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td colspan="4"><input type=text name=q size=15 maxlength=255 value="" onChange="srch.search.value=this.value;" class="formSmall">
+                                <span id="spn" style="background-image: url(images/btn_go_new.gif);width:19;height:14" onClick="doSearch()" />
+                                <input type="hidden" name="hidden_site" value="alumni.rice.edu">
+                                <input type="hidden" name="search" value="">
+                                </span></td>
+                            </tr>
+                            <tr>
+                              <td width="10"><input id="alum" type="radio" name="sitesearch" value="alumni.rice.edu" checked>
+                              </td>
+                              <td width="85"><font class="mainSmalldark">Search this site</font></td>
+                            </tr>
+                            <tr>
+                              <td width="10" align="right"><input id="rice" type="radio" name="sitesearch" value="www.rice.edu">
+                              </td>
+                              <td width="85"><font class="mainSmalldark">Search rice.edu</font></td>
+                            </tr>
+                          </table>
+                        </form></td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/clear.gif" width="115" height="20" alt="spacer"></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://online.alumni.rice.edu/asp/Welcome.asp"><img src="images/title_onlinesvcs.gif" width="115" height="9" alt="Online Services" border="0"></a></td>
+                    </tr>
+                    <tr>
+                      <td><table width="100%" border="0" cellspacing="3" cellpadding="0">
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/events/calendar.php" title="Events calendar and online registration">Find Events/RSVP</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/detailsearch.asp" title="Search the directory of Rice alumni">Alumni Directory</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/profile.asp" title="Update your directory information">Update Address</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Online/emailforwarding/eforwarding.asp" title="Manage or create an alumni.rice.edu account">Email Forwarding</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Career/default.asp" title="Connect with alums in your career field">Career Network</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/bizfinder/" title="Find or promote alumni-owned businesses">Business Finder</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/remotelibrary.asp?type=8" title="Get your latest news into the Owlmanac" target="_blank">Online Classnotes</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/library.asp" title="Access research tools and periodicals">Digital Library</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/clear.gif" width="115" height="14" alt="spacer"></td>
+                    </tr>
+                  </table>
+                  <!-- <a href="http://giving.rice.edu" target="_blank"><img src="images/rice_nextcent.gif" width="83" height="40" border="0" alt="Rice: The Next Century Campaign" hspace="3"></a><br> -->
+                  <a href="http://www.rice.edu" target="_blank"><img src="images/rice_home.gif" width="75" height="40" border="0" alt="Rice: Home" vspace="10" hspace="3"></a> <br>
+                  <img src="images/clear.gif" width="115" height="3" alt="spacer">
+                  <p></p></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td><img src="images/clear.gif" width="100" height="5" alt="spacer"></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="15">
+        <tr>
+          <td width="57%"><font class="mainSmall"><a href="#"onClick="SecWin=window.open('contact.html','SecWin','width=260,height=450,toolbar=no,status=yes,resizable=no,scrollbars=yes,location=no,directories=no,menubar=no');return false;">Contact the Office of Alumni Affairs</a> | <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('dFuDc6BYQoX5nNNobzmYL4')">Send a Comment</a> | <a href="index.html">Home</a></font></td>
+          <td width="43%" align="right"><font class="mainSmall"><a href="http://www.rice.edu/about/cr-notice.html" target="_blank">
+            <script language="JavaScript">
+<!--
+today = new Date()
+cy = today.getFullYear()
+{
+}
+//-->
+</script>
+            Copyright &copy;
+            <script language="JavaScript">
+<!--
+document.write(cy)
+{
+}
+//-->
+</script>
+            Rice University</a></font></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>
