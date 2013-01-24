@@ -76,7 +76,7 @@
 		<div class="container">
 			<div class="sixteen columns">
 				<div class="dropdown">
-					<img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Content/Images/rice_alumni_logo.png"))" class="headlogo"/>
+					<a href="~/"><img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Content/Images/rice_alumni_logo.png"))" class="headlogo"/></a>
 					@if (Model.Navigation != null)
 					{
 						@Zone(Model.Navigation)
@@ -145,28 +145,6 @@
 	@Zone(Model.Social)
 }
 
-<div id="section-invite">
-	<div class="container">
-		<div class="sixteen columns">
-			<h2></h2>
-		</div>
-
-		<div class="clear"></div>
-
-		<div class="eight columns">
-			<p class="headline"></p>
-			<div class="spaceheight"></div>
-		</div>
-
-		<div class="clear"></div>
-
-		<div class="sixteen columns">
-			<p></p>
-		</div>
-
-		<div class="clear"></div>
-	</div>
-</div>
 
 <div id="section-footer">
 	<div class="container">

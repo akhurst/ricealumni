@@ -9,6 +9,8 @@
         },
         error: function(request, status, error){
             alert("error");
+            var calendarTable = buildCalendarTable(new Date());
+            $("#calendar-table").html(calendarTable);
         }
     });    
 }
@@ -104,5 +106,7 @@ function buildCalendarTable(monthYear) {
         }
     }
     // end of table
-    calendarTable+="</TABLE>";
+    calendarTable += "</TABLE>";
+
+    return calendarTable;
 }

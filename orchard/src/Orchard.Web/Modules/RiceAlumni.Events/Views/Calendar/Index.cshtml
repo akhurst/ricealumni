@@ -4,7 +4,9 @@
 	Script.Include("calendar.js");
   
 }
-
+<div class="calendar">
+	<div id="calendar-table"></div>
+</div>
 <script>
     $(function () {
         fillCalendar('@Url.Action("GetEvents", "Calendar", new { arg = DateTime.Now.ToString("MM-dd-yyyy") })');
