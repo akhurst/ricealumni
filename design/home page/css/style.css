@@ -1702,6 +1702,81 @@ padding-top:5px;
 }
 
 
+/*#Mobile Styles*/
+
+/* ============================= */
+/* Layout 1024px version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 1024px) {
+	.characteristics img{
+		margin-left: 25px;
+	}
+}
+
+@media handheld, only screen and (max-width: 768px) {
+
+	#menu{
+		display: none;	
+	}
+	.tinynav {
+		display: inline;
+		width: 100%;		
+		background: white;
+		margin: 20px 0 5px 0;
+		font-size: 14px;
+		border: 1px solid #dbdbdb;
+		height: 35px;	
+	}
+	.image-bg .title h1{
+		line-height: 60px;
+		margin: 10px auto 50px auto;
+	}
+
+}
+
+@media handheld, only screen and (max-width: 380px) {
+	
+
+}
+
+
+.mainCell{display: none}
+
+
+.thenewhead {
+width: 100%;
+height: 280px;
+padding-bottom: 3px;
+border-bottom: 1px solid #eee;
+position: relative;
+background: #eee;
+top: 0;
+}
+
+.thenewhead {
+background: #eee top center fixed no-repeat;
+}
+
+.newholder {
+position: relative;
+background: white;
+margin-top: 20px;
+}
+
+
+#maincontent{padding-bottom: 40px;}
+
+#maincontent.newholder .container .twelve h1{font-size: 32px; padding-bottom:10px;}
+#maincontent.newholder .container .four h4{color: grey;}
+#maincontent.newholder .container .four ul li{color: grey;}
+#maincontent.newholder .container .four ul li a{color: #2E76FF; font-size: 12px; padding-left: 10px;}
+#maincontent.newholder .container .four ul li a:hover{text-decoration: underline;}
+
+#maincontent.newholder .container .four ul li a:before {
+    content: '- ';
+}
+
 /* HTML5 Placeholder */
 ::-webkit-input-placeholder {
 color:#2e76ff;
