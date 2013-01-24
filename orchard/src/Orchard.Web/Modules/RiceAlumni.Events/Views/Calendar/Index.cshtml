@@ -1,0 +1,12 @@
+﻿@{
+	Script.Require("knockout");
+	Script.Require("jQuery");
+	Script.Include("calendar.js");
+  
+}
+
+<script>
+    $(function () {
+        fillCalendar('@Url.Action("GetEvents", "Calendar", new { arg = DateTime.Now.ToString("MM-dd-yyyy") })');
+    })
+</script>

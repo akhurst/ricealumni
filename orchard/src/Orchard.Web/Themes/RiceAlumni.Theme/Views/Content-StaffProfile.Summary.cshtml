@@ -1,30 +1,18 @@
-﻿
-<style type="text/css">
-	.staff-profile-summary-image-container {
-		float: left;
-	}
-
-	.staff-profile-summary-text-container {
-		margin-left: 220px;
-	}
-
-	.staff-profile-summary-title { }
-</style>
-<div>
+﻿<div>
 	<div class="staff-profile-summary-image-container">
 		@{ var fileName = Model.ContentItem.ImageField.Image.FileName; if (!string.IsNullOrEmpty(fileName))
 			 {
-				 <img src="@Url.Content(fileName)" alt="@Model.Title" />
+				 <a href="#"><img src="@Url.Content(fileName)" alt="@Model.Title" /></a>
 			 } 
        }
 	</div>
 	<div class="staff-profile-summary-text-container">
-		<div class="staff-profile-summary-name">
-			@Model.ContentItem.TitlePart.Title
-		</div>
-		<div class="staff-profile-summary-title">
+		<h3 class="staff-profile-summary-name">
+			<a>@Model.ContentItem.TitlePart.Title</a>
+		</h3>
+		<h4 class="staff-profile-summary-title">
 			@Model.ContentItem.StaffProfilePart.Title
-		</div>
+		</h4>
 		<div class="staff-profile-summary-body">
 			@Html.Raw(Model.ContentItem.BodyPart.Text)
 		</div>

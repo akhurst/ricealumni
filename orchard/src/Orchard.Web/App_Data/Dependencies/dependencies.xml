@@ -302,6 +302,12 @@
     <References />
   </Dependency>
   <Dependency>
+    <ModuleName>Orchard.Knockout</ModuleName>
+    <VirtualPath>~/Modules/Orchard.Knockout/Orchard.Knockout.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
     <ModuleName>Orchard.Lists</ModuleName>
     <VirtualPath>~/Modules/Orchard.Lists/bin/Orchard.Lists.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>

@@ -127,6 +127,12 @@
     <Hash>48fd3b7996e70345</Hash>
   </Dependency>
   <Dependency>
+    <ExtensionId>Orchard.Knockout</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Orchard.Knockout/Orchard.Knockout.csproj</VirtualPath>
+    <Hash>91d3877b3a29a37f</Hash>
+  </Dependency>
+  <Dependency>
     <ExtensionId>Orchard.Lists</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/Orchard.Lists/bin/Orchard.Lists.dll</VirtualPath>
@@ -292,7 +298,7 @@
     <ExtensionId>RiceAlumni.Events</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/RiceAlumni.Events/bin/RiceAlumni.Events.dll</VirtualPath>
-    <Hash>4907272c94bc940f</Hash>
+    <Hash>490728035814b464</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>RiceAlumni.Homepage</ExtensionId>
@@ -310,7 +316,7 @@
     <ExtensionId>RiceAlumni.Theme</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Themes/RiceAlumni.Theme/bin/RiceAlumni.Theme.dll</VirtualPath>
-    <Hash>db959436e55067d2</Hash>
+    <Hash>db9595dd3a01cf8b</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>SysCache</ExtensionId>

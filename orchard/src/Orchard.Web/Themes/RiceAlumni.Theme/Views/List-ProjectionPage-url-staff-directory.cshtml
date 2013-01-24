@@ -1,24 +1,3 @@
-
-<style type="text/css">
- .staff-directory-group {
-	 clear: both;
- }
-
- .staff-directory-profile {
-	 clear: both;
- }
- .staff-directory-featured-group {
-
- }
-
- .staff-directory-featured-profile {
-
- }
-
- .staff-directory-featured-group .staff-directory-group-name {
-	 display: none;
- }
-</style>
 @using System.Linq;
 @using System.Collections.Generic;
 
@@ -34,7 +13,7 @@
 			}
 			else if (existingProfile.ContentItem.ContainablePart.Weight == newProfile.ContentItem.ContainablePart.Weight)
 			{
-				if (newProfile.ContentItem.TitlePart.Title < existingProfile.ContentItem.TitlePart.Title)
+				if (newProfile.ContentItem.TitlePart.Title.CompareTo(existingProfile.ContentItem.TitlePart.Title)<0)
 				{
 					break;
 				}
@@ -61,41 +40,64 @@
 
 }
 @{
-    var groupsByWeight = new SortedDictionary<int,List<dynamic>>();
-  
-}
-@foreach(var profileContentItem in Model.Items)
-{
-	int staffGroupWeight = profileContentItem.ContentItem.StaffProfilePart.StaffGroupWeight;
-	List<dynamic> staffGroupProfiles;
-	if (!groupsByWeight.ContainsKey(staffGroupWeight))
-	{
-		staffGroupProfiles = new List<dynamic>();
-		groupsByWeight.Add(staffGroupWeight, staffGroupProfiles);
-	}
-	else
-	{
-		staffGroupProfiles = groupsByWeight[staffGroupWeight];
-	}
+	var groupsByWeight = new SortedDictionary<int, SortedDictionary<string,List<dynamic>>>();
 
-	AddProfileToGroupList(profileContentItem, staffGroupProfiles);
-}
-
-@{
-	var groupIndex = 0;
-}
-@foreach(var group in groupsByWeight.Reverse())
-{
-	var profileIndex = 0;
-	<div class="staff-directory-group @(groupIndex == 0 ? " staff-directory-featured-group" : "")">
-		<div class="staff-directory-group-name">@group.Value[0].ContentItem.StaffProfilePart.StaffGroupName</div>
-		@foreach (var profile in group.Value)
+	foreach (var profileContentItem in Model.Items)
+	{
+		int groupWeight = profileContentItem.ContentItem.StaffProfilePart.StaffGroupWeight;
+		string groupName = profileContentItem.ContentItem.StaffProfilePart.StaffGroupName;
+		SortedDictionary<string, List<dynamic>> groupsByName;
+		List<dynamic> groupProfiles;
+		if (!groupsByWeight.ContainsKey(groupWeight))
 		{
-			<div class="staff-directory-profile@(profileIndex == 0 ? " staff-directory-featured-profile" : "")">
-				@Display(profile)
-			</div>
-			profileIndex++;
+			groupsByName = new SortedDictionary<string, List<dynamic>>();
+			groupsByWeight.Add(groupWeight, groupsByName);
+            groupProfiles = new List<dynamic>();
+            groupsByName.Add(groupName,groupProfiles);
 		}
-	</div>
-	groupIndex++;
+		else
+		{
+			groupsByName = groupsByWeight[groupWeight];
+			if (!groupsByName.ContainsKey(groupName))
+			{
+				groupProfiles = new List<dynamic>();
+				groupsByName.Add(groupName, groupProfiles);
+			}
+			else
+			{
+				groupProfiles = groupsByName[groupName];
+			}
+		}
+
+		AddProfileToGroupList(profileContentItem, groupProfiles);
+	}
+
+  
+	var groupIndex = 0;
+
+	foreach (var groupWeight in groupsByWeight.Keys.Reverse())
+	{
+		foreach (var group in groupsByWeight[groupWeight])
+		{
+			var profileIndex = 0;
+			<div class="container staff-directory-group @(groupIndex == 0 ? " staff-directory-featured-group" : "")">
+				<div class="sixteen columns">
+					<h2 class="staff-directory-group-name">@group.Value[0].ContentItem.StaffProfilePart.StaffGroupName</h2>
+				</div>
+                <div class="clear"></div>
+				@foreach (var profile in group.Value)
+				{
+					<div class="four columns staff-directory-profile@(profileIndex == 0 ? " staff-directory-featured-profile" : "")">
+						@Display(profile)
+					</div>
+					if ((profileIndex+1)%4 == 0)
+					{
+						<div class="clear"></div>
+					}
+					profileIndex++;
+				}
+			</div>
+			groupIndex++;
+		}
+	}
 }
