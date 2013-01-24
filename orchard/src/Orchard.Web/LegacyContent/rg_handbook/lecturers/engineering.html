@@ -1,0 +1,653 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="../../styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "http://alumni.rice.edu/images/btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "http://alumni.rice.edu/images/btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=350,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (f.alum.checked == true){
+	f.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (f.rice.checked == true){
+	f.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  f.submit();
+
+}
+
+function getEvents(qry)
+{
+	f.region.value=qry;
+	f.action = "http://alumni.cgi.rice.edu/events/proc_adv_search.php";
+	f.submit();
+	return null;
+}
+
+function checkKey(evt){
+
+	f.search.value=f.q.value;
+	if (evt.keyCode == 13 && f.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+</script>
+</head>
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top">
+          <td width="221" rowspan="2"><a href="../../index.html"><img src="../../images/logo.gif" width="221" height="94" alt="Rice Alumni: Established 1919" border="0"></a><br>
+            <table width="191" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../../images/btn_over_nav.gif'" onMouseOut="this.background='../../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="http://alumni.cgi.rice.edu/events/calendar.php">EVENTS CALENDAR</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../../images/btn_over_nav.gif" align="center" valign="middle"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../../alumni_groups.html">ALUMNI GROUPS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top">&nbsp;</td>
+                <td width="172" align="center" valign="middle"><table width="90%" border="0" cellspacing="3" cellpadding="0">
+                    <tr>
+                      <td width="49%" background="../../images/gray1_bg.gif"  onMouseOver="this.background='../../images/gray2_bg.gif'" onMouseOut="this.background='../../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="../../alumni_groups.html#specialinterest">Special Interest Groups</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="../../images/gray2_bg.gif"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="../../regional_groups.html">Regional Groups</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="../../images/gray1_bg.gif"  onMouseOver="this.background='../../images/gray2_bg.gif'" onMouseOut="this.background='../../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="../../alumni_groups.html#schoolbased">School-Based Groups</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="../../images/gray1_bg.gif"  onMouseOver="this.background='../../images/gray2_bg.gif'" onMouseOut="this.background='../../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="../../grad_deg_alumni.html">Graduate-Degree Alumni</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="../../images/gray1_bg.gif"  onMouseOver="this.background='../../images/gray2_bg.gif'" onMouseOut="this.background='../../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="../../alumni_groups.html#friends">Friends Groups</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../../images/btn_over_nav.gif'" onMouseOut="this.background='../../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../../youngalum_stds.html">YOUNG ALUMNI /STUDENTS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../../images/btn_over_nav.gif'" onMouseOut="this.background='../../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../../career_connection.html">CAREER CONNECTION</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../../images/btn_over_nav.gif'" onMouseOut="this.background='../../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../../volunteer.html">VOLUNTEER</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../../images/btn_over_nav.gif'" onMouseOut="this.background='../../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../../learning_trav.html">LEARNING &amp; TRAVEL</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../../images/btn_over_nav.gif'" onMouseOut="this.background='../../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../../honors_awards.html">HONORS &amp; AWARDS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../../images/btn_over_nav.gif'" onMouseOut="this.background='../../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../../new_at_rice.html">WHAT'S NEW @ RICE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../../images/btn_over_nav.gif'" onMouseOut="this.background='../../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../../about_alumassoc.html">ABOUT THE ARA</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../../images/btn_over_nav.gif'" onMouseOut="this.background='../../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../../faq_file.html">FAQ FILE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../../images/btn_over_nav.gif'" onMouseOut="this.background='../../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="http://giving.rice.edu" target="_blank">GIVE TO RICE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+          <td align="right"><img src="../../images/clear.gif" width="100" height="20"><br>
+            <img src="../../images/subpic_reggrps.jpg" width="526" height="56" ="Photo Of Rice Campus"> </td>
+        </tr>
+        <tr valign="top">
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td colspan="4">&nbsp;</td>
+              </tr>
+              <tr valign="top">
+                <td width="414"><p><img src="../../images/sub_title_reggrps.gif" width="410" height="17" alt="About Alumni Association"></p>
+                  <table class="mainTable" border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tr valign="top">
+                      <td class="mainSmall"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="100%" class="mainSubtitle"><LINK href="../../faq_css.css" type=text/css rel=stylesheet>
+                              <SCRIPT language=JavaScript src="../../faq_navFunctions.js"></SCRIPT>
+                              <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                <TBODY>
+                                  <TR>
+                                    <TD><p class="mainSubtitle"><b>Faculty Lecturers in Engineering</b></p>
+                                      <!-- START_adamsbio -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_adamsbio>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><a href="javascript:tDisplay('fcrA_adamsbio');"><strong>Wade Adams,</strong></a> Nanotechnology </TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_adamsbio>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p> Director of the Richard E. Smalley Institute for Nanoscale Science and Technology<br>
+&nbsp; </p>
+                                              </TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_adams1 -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_adams1>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrA_adams1');">"Nanotechnology and Energy &ndash; Be a Scientist, Save the World"</a></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_adams1>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p> As demand for energy increases to fuel advancing technologies and markets, the need to develop new sources of power that are widespread, cheap, and clean will become ever more acute. Solving this problem will demand revolutionary breakthroughs in the physical sciences and engineering, particularly in nanotechnology. This class will briefly describe how nanotechnology revolutions might be able to address the energy problem. We will also examine workforce issues surrounding new technologies and address how Houston must change to retain its dominance in the energy industry.<br>
+&nbsp; </p></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_drezekbio -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_drezekbio>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><a href="javascript:tDisplay('fcrA_drezekbio');"><strong><br>
+                                                Rebekah Drezek,</strong></a> Bioengineering, Electrical and Computer Engineering </TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_drezekbio>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p>Associate professor of bioengineering and associate professor in electrical and computer engineering<br>
+                                                <br>
+                                                <em>Scholarly interests: </em>the development of minimally invasive imaging approaches for the detection, diagnosis, and monitoring of disease, especially cancer<br>
+                                                <em>Achievements: </em> first engineering to receive a M.D. Anderson Odyssey Fellowship (2001-2002); MIT Technology Review&rsquo;s list of the world&rsquo;s top 100 young innovators (2004); Rice&rsquo;s graduate teaching and mentoring award (2004).<br>
+&nbsp;</p>
+                                              </TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_drezek1 -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_drezek1>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrA_drezek1');">"Nanotechnology in Medicine"</a></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_drezek1>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p>With nanotechnology, we can construct tiny molecules and tailor them for specific purposes. For medicine, the nanomaterials are so small that they can enter blood cells and travel through blood vessels, giving scientists new methods of detecting and diagnosing disease, particularly cancer. This class will introduce you to the principles and possibilities of this exciting new field.<br>
+&nbsp; </p></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_mikosbio -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_mikosbio>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><a href="javascript:tDisplay('fcrA_mikosbio');"><strong><br>
+                                                Antonios Mikos,</strong></a> Bioengineering</TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_mikosbio>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p>John W. Cox Professor of Bioengineering and Chemical and Biomolecular Engineering<br>
+                                                <br>
+                                                <em>Scholarly interests:</em> synthesis of new biomaterials for tissue engineering as carriers for controlled drug delivery and as non-viral vectors for gene therapy.<br>
+                                                  <em>Achievements:</em> 2007 O'Donnell Award from The Academy of Medicine, Engineering and Science of Texas (TAMEST); Orthopaedic Research Society's 2005 Marshall R. Urist Award for Excellence in Tissue Regeneration Research; holds 19 patents.<br>
+                                                &nbsp;</p>
+                                              </TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_mikos1 -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_mikos1>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrA_mikos1');">"Tissue Engineering at Rice"</a></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_mikos1>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p> Rice's Center for Excellence in Tissue Engineering (CETE) focuses on the science and technology of tissue engineering and the development of new means of replacing damaged or diseased body parts and restoring function. This presentation will discuss the research and educational activities of CETE and the promise of the field to revolutionize health care in the future.<br>
+&nbsp;</p></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_richardskortumbio -->
+                                      <!--<DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_richardskortumbio>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><a href="javascript:tDisplay('fcrA_richardskortumbio');"><strong><br>
+                                                Rebecca Richards-Kortum,</strong></a> Bioengineering, Electrical and Computer Engineering</TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_richardskortumbio>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p>Stanley C. Moore Professor of Bioengineering, professor of electrical and computer engineering, and chair of the department of bioengineering<br>
+                                                <br>
+                                                <em>Scholarly interests: </em>high-resolution, in vivo, optical imaging for enhanced detection of cancer; fluorescence imaging for cancer detection; electro-magnetic modeling of light scattering by cells and tissues; fiber optic sensors for in vivo detection of cancer<br>
+                                                  <em>Achievements: </em> Howard Hughes Medical Institute Professor (2002); Presidential Faculty Fellow, National Science Foundation (1992); Outstanding Engineering Teaching by an Assistant Professor Award, UT Austin (1994); National Advisory Council for Biomedical Imaging and Bioengineering for the National Institutes of Health<br>
+                                                &nbsp;</p>
+                                              </TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>-->
+                                      <!-- END -->
+                                      <!-- START_richardskortum1 -->
+                                      <!--<DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_richardskortum1>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrA_richardskortum1');">""</a></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_richardskortum1>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p><br>
+&nbsp; </p></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>-->
+                                      <!-- END -->
+                                      <!-- START_vardibio -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_vardibio>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><a href="javascript:tDisplay('fcrA_vardibio');"><strong><br>
+                                                Moshe Vardi,</strong></a> Computational Engineering </TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_vardibio>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p>Karen Ostrum George Professor in Computational Engineering and director of the Computer and Information Technology Institute (CITI) at Rice<br>
+                                                <br>
+                                                <em>Scholarly interests: </em>applications of logic to computer science, including database theory, finite-model theory, knowledge in multi-agent systems, computer-aided verification and reasoning, and teaching logic across the curriculum<br>
+                                                  <em>Achievements: </em> President of the International Federation of Computational Logicians; 2002, elected into the U.S. National Academy of Engineering; 2002, elected into the European Academy of Sciences; 2005, awarded a Guggenheim fellowship<br>
+                                                &nbsp;</p>
+                                              </TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_vardi1 -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_vardi1>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrA_vardi1');">"Who Started the Information Revolution?"</a></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_vardi1>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p> The revolution begun by the development of the silicon chip radically altered the technological tools of our lives and launched the information age. This lecture will investigate the origins of this revolution and the inventors and visionaries involved.<br>
+&nbsp; </p></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+									  
+									  
+									  
+									  
+                                  <tr>
+                                    <td class="mainSmall"><p><br>
+                                      </p></td>
+                                  </tr>
+                              </table></TD>
+                          </TR>
+                        </TABLE>
+                        <p class="mainSubtitle">&nbsp;</p>
+                        <p class="mainSmall">&nbsp;</p></td>
+                    </tr>
+                  </table></td>
+                <td width="1" background="../../images/dots_bg.gif"><img src="../../images/clear.gif" width="1" height="50"></td>
+                <td width="10"><img src="../../images/clear.gif" width="10" height="50"></td>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><form id="srch" method=GET action="" onSubmit="doSearch();">
+                          <input type="hidden" value="web" name="tab">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td colspan="4"><input type=text name=q size=15 maxlength=255 value="" onChange="srch.search.value=this.value;" class="formSmall">
+                                <span id="spn" style="background-image: url(../../images/btn_go_new.gif);width:19;height:14" onClick="doSearch()" />
+                                <input type="hidden" name="hidden_site" value="alumni.rice.edu">
+                                <input type="hidden" name="search" value="">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="10"><input id="alum" type="radio" name="sitesearch" value="alumni.rice.edu" checked>
+                              </td>
+                              <td width="85"><font class="mainSmalldark">Search this site</font></td>
+                            </tr>
+                            <tr>
+                              <td width="10" align="right"><input id="rice" type="radio" name="sitesearch" value="www.rice.edu">
+                              </td>
+                              <td width="85"><font class="mainSmalldark">Search rice.edu</font></td>
+                            </tr>
+                          </table>
+                        </form></td>
+                    </tr>
+                    <tr>
+                      <td><img src="../../images/clear.gif" width="115" height="20" alt="spacer"></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://online.alumni.rice.edu/default.asp"><img src="../../images/title_onlinesvcs.gif" width="115" height="9" alt="Online Services" border="0"></a></td>
+                    </tr>
+                    <tr>
+                      <td><table width="100%" border="0" cellspacing="3" cellpadding="0">
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/events/calendar.php" title="Events calendar and online registration">Find Events/RSVP</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/detailsearch.asp" title="Search the directory of Rice alumni">Alumni Directory</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/profile.asp" title="Update your directory information">Update Address</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Online/emailforwarding/eforwarding.asp" title="Manage or create an alumni.rice.edu account">Email Forwarding</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Career/default.asp" title="Connect with alums in your career field">Career Network</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/bizfinder/" title="Find or promote alumni-owned businesses">Business Finder</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="http://alumni.rice.edu/submit_note.html" title="Get your latest news into the Owlmanac">Submit Classnote</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/library.asp" title="Access research tools and periodicals">Digital Library</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td><img src="../../images/clear.gif" width="115" height="14" alt="spacer"></td>
+                    </tr>
+                  </table>
+                  <!-- <a href="http://giving.rice.edu" target="_blank"><img src="../images/rice_nextcent.gif" width="83" height="40" border="0" alt="Rice: The Next Century Campaign" hspace="3"></a><br> -->
+                  <a href="http://www.rice.edu" target="_blank"><img src="../../images/rice_home.gif" width="75" height="40" border="0" alt="Rice: Home" vspace="10" hspace="3"></a> <br>
+                  <img src="../../images/clear.gif" width="115" height="3" alt="spacer"><br>
+                  <p></p></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td><img src="../../images/clear.gif" width="100" height="5" alt="spacer"></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="15">
+        <tr>
+          <td width="57%"><font class="mainSmall"><a href="#"onClick="SecWin=window.open('../contact.html','SecWin','width=260,height=450,toolbar=no,status=yes,resizable=no,scrollbars=yes,location=no,directories=no,menubar=no');return false;">Contact the Office of Alumni Affairs</a> | <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('dFuDc6BYQoX5nNNobzmYL4')">Send a Comment</a> | <a href="../../index.html">Home</a></font></td>
+          <td width="43%" align="right"><font class="mainSmall"><a href="http://www.rice.edu/about/cr-notice.html" target="_blank">
+            <script language="JavaScript">
+<!--
+today = new Date()
+cy = today.getFullYear()
+{
+}
+//-->
+</script>
+            Copyright &copy;
+            <script language="JavaScript">
+<!--
+document.write(cy)
+{
+}
+//-->
+</script>
+            Rice University</a></font></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>

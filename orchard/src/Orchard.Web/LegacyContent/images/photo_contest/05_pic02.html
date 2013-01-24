@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="../../styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "../btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "../btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=350,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (srch.alum.checked == true){
+	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (srch.rice.checked == true){
+	srch.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  srch.submit();
+
+}
+
+function checkKey(evt){
+
+	srch.search.value=srch.q.value;
+	if (evt.keyCode == 13 && srch.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+</script>
+<script language="JavaScript1.2">
+<!--
+
+var head="display:''"
+function doit(header){
+var head=header.style
+if (head.display=="none")
+head.display=""
+else
+head.display="none"
+}
+//-->
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style></head>
+
+<body>
+<table width="95%"  border="0" cellspacing="0" cellpadding="10">
+  <tr>
+    <td width="330" valign="top"><img src="05_pic02.jpg" width="330" height="487" border="0"></td>
+    <td valign="top" class="mainSmall"><p><b>Honorable Mention</b><br>
+        <i>Late December 1974, Guatemala</i>, Joe Hess '68</p>
+    <p> Chichicastenango, Guatemala<br>
+      1974</p>
+    <p>Market day on the steps of the Church of Santo Tomas. Shamans burn incense on the church steps. Christmas fiesta flags fly on the facade. Not one of the people on the steps is looking directly at the photographer, for surely to take one&rsquo;s picture is to steal one&rsquo;s soul. And yet, if today we could glimpse behind the lens, what these people so carefully did not quite see, we would find a young couple at least as colorful, as strange, and foreign, to this world of the 21st century&hellip; orange bell-bottoms and all.<br>
+    </p></td>
+  </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>

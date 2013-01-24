@@ -40,14 +40,15 @@ namespace RiceAlumni.StaffDirectory
 				);
 
 			ContentDefinitionManager.AlterTypeDefinition("StaffGroup", builder => builder
-				.Creatable()
-				.WithPart("StaffGroupPart")
 				//.WithPart("CommonPart", partBuilder => partBuilder.WithSetting("OwnerEditorSettings.ShowOwnerEditor", "false"))
+				.Creatable()
 				.WithPart("CommonPart")
 				.WithPart("TitlePart")
 				.WithPart("BodyPart", partBuilder => partBuilder.WithSetting("BodyTypePartSettings.Flavor", "text"))
 				.WithPart("ContainablePart")
 				.WithPart("ContainerPart")
+				.WithPart("MenuPart")
+				.WithPart("AdminMenuPart")
 				.WithPart("AutoroutePart", cfg => cfg
 						.WithSetting("AutorouteSettings.AllowCustomPattern", "false")
 						.WithSetting("AutorouteSettings.AutomaticAdjustmentOnEdit", "false")

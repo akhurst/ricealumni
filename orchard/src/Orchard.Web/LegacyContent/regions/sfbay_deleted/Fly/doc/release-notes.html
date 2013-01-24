@@ -1,0 +1,365 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+  <title>GIFs on the fly: Contributors and Release Notes
+ </title>
+  <link rev="made" href="mailto:gleeson@unimelb.edu.au">
+  <meta name="description"
+     content="Contributors and Release Notes for fly.">
+
+  <meta name="robots"
+     content="nofollow">
+</head>
+ <body bgcolor="#FFFFFF">
+ <!-- ===================================================================== -->
+ <hr size="2" noshade>
+ <table border="0" width="100%" cellpadding="5" cellspacing="3">
+  <tr align="center" valign="middle">
+   <td><h1>fly: Documentation: Contributors and Release Notes</h1>
+  </td>
+   <td><a href="http://www.unimelb.edu.au/fly/"><img
+       src="fly-logo.gif" border="0" hspace="5" vspace="5"
+       alt=" [fly] " width="157" height="52"></a>
+  </td>
+ </tr>
+</table>
+ <!-- ===================================================================== -->
+ <hr size="2" noshade>
+<H2>Table of Contents</H2>
+<OL>
+    <LI><A HREF="#contrib">Contributors</A>
+    <LI><A HREF="#notes">Release notes.</A>
+</OL>
+<!-- ===================================================================== -->
+<HR SIZE="2" NOSHADE>
+
+<H2><A NAME="contrib">Contributors</A>
+</H2>
+<P>Claus Hofmann &lt;claush@ipfr.bau-verm.uni-karlsruhe.de&gt; - see
+   release notes for v0.95b.
+</P>
+<P>John Bowe &lt;bowe@osf.org&gt; - better Makefile, argument parsing, quiet
+   mode, comment lines, and other suggestions.
+</P>
+<P>Jean-Louis Damez &lt;F1NZC@amsat.org&gt; - Compilation of the
+   Windows NT/95 version.
+</P>
+<P>Laurent Domisse &lt;domisse@credm.com&gt; - Compilation of the
+   RPC-SA version and hosting the European mirror.
+</P>
+<P>Tam Siu Lung &lt;sltam@sn1.speednet.net&gt; - see release notes for
+   v1.5.0.
+</P>
+<P>Jukka Manner &lt;jukka.manner@capgemini.fi&gt; - Code improvements and
+   bug fixes - see release notes for v1.5.0.
+</P>
+<P>Alex Ibrado &lt;alex@ibrado.com&gt; - Compilation of the BSDI version
+   and hosting the US mirror.
+</P>
+<P>Eric Turenne &lt;Eric.Turenne@cum.qc.ca&gt; - Compilation of the Solaris
+   2.5.1 version.
+</P>
+<P>Peter Fosseus &lt;peter@quantum.co.za&gt; - Compilation of the SCO
+   version.
+</P>
+<P>John Mitchell &lt;johnm@magnet.com&gt; - Bug fix for get_image routine.
+</P>
+<P>Henrik S. Christensen &lt;hc@dde.dk&gt; - Bug fix for argument type to
+   gdImageString and gdImageStringUp;
+</P>
+<P>Igor Bilyi &lt;igor@natali.cz&gt; - Compilation of the OS/2 version.
+</P>
+<P>Ariel Faigon &lt;ariel@sgi.com&gt; - Makefile correction.
+</P>
+<P>Shoji Mori &lt;mori@moriken.com&gt; - Fix for Win32 binmode problem.
+</P>
+<P>Geraint Edwards &lt;gedge@inner.demon.co.uk&gt; - Compilation of the
+   FreeBSD version.
+</P>
+<P>Anatoly A. Orehovsky &lt;tolik@mpeks.tomsk.su&gt; - Bug fix for garbage
+   input file or empty input file.
+</P>
+<P>Daniel Alabaster &lt;dalabast@brainlink.com&gt; - Compilation of
+   the OS/2 Warp version.
+</P>
+<!-- ===================================================================== -->
+<HR SIZE="1" NOSHADE>
+<H2><A NAME="notes">Release notes</A>
+</H2>
+<DL>
+<DT> Version: <B>1.6.5 15th January 1999</B></DT>
+<DD>
+    <P>Minor bug fix. Seg fault on garbage input file or empty input file.
+       Thanks to Anatoly A. Orehovsky &lt;tolik@mpeks.tomsk.su&gt; for
+       the report and code fix.
+    </P>
+</DD>
+<DT> Version: <B>1.6.4 24th November 1998</B></DT>
+<DD>
+    <P>Minor bug fixes. Removing warnings and fixing minor errors in some
+       print statements. Thanks to Bernie Kirby &lt;bernie@iii.rmit.edu.au&gt;
+       for reporting the warnings.
+    </P>
+</DD>
+<DT> Version: <B>1.6.3 22nd October 1998</B></DT>
+<DD>
+    <P>Minor additional feature: any pair of diametrically opposite vertices
+       in any order will now be accepted for <TT>rect</TT> and <TT>frect</TT>.
+    </P>
+</DD>
+<DT> Version: <B>1.6.2 25th September 1998</B></DT>
+<DD>
+    <P>Minor bug fix - some return codes in case of fatal errors were 0
+     when they should have been 1.<BR> Addition of code for win32 binmode
+     problem. (thanks to Shoji Mori &lt;mori@moriken.com&gt;)
+    </P>
+</DD>
+<DT> Version: <B>1.6.1 9th June 1998</B></DT>
+<DD>
+    <P>Minor bug fixes - get_image routine (thanks to John Mitchell
+     &lt;johnm@magnet.com&gt;) and argument type to gdImageString and
+     gdImageStringUp (thanks to Henrik S. Christensen &lt;hc@dde.dk&gt;)
+    </P>
+</DD>
+<DT> Version: <B>1.6.0 25th March 1998</B></DT>
+<DD>
+     <P>New Commands:<BR>
+        <TT>ellipse</TT> - draw an ellipse, specifying origin, width and
+                           height.<BR>
+        <TT>colourchange</TT> - change a colour in the GIF to another
+                           colour.<BR>
+        <TT>rotate</TT> - rotate the GIF 90, 180 or 270 degrees.<BR>
+    </P>
+     <P>Change: Now uses GD version 1.3. This fixes the long-standing
+        filled polygon bug. GD 1.3 also includes a change to the method
+        of GIF encoding (from LZW to Run Length Encoding) to avoid copyright
+        problems with the LZW algorithm. The effect of this is that images
+        produced by fly will be larger than they used to be. GD 1.3 also
+        includes a number of other changes that won't affect fly users.
+    </P>
+</DD>
+<DT> Version: <B>1.5.4 3rd February 1998</B></DT>
+<DD> <P>Bug fix: Wouldn't terminate if there was an 'end' directive at
+        the very end of the input file (i.e. not followed by a 'new' or
+        'existing' directive). Thanks to Harold Kloosterhof
+        &lt;haroldkl@stack.nl&gt; and Chris (PGP key ID 0xC0DED00D) for
+        reporting this bug.
+    </P>
+     <P>Bug fix: The 'copy' and 'copyresized' bug fix of version 1.5.0
+        had caused another bug - 'copy' was leaving a one-pixel-wide
+        line along the left and bottom edges of the destination region.
+    </P>
+     <P>Bug fix: Fly would hang if there was one space after a 'new'
+        directive. Thanks to Mark Heath &lt;mheath@netspace.net.au&gt;
+        for reporting this bug.
+    </P>
+</DD>
+<DT> Version: <B>1.5.3 17th December 1997</B></DT>
+<DD> <P>Bug fix: Problems with string commands on some platforms. Thanks to
+        Rende Luitjes &lt;Rende.Luitjes@digital.com&gt; for reporting this bug.
+    </P>
+     <P>Minor code changes: move some #defines to beginning of lines, some
+        pointer naming changes, moving code to make verbose output more
+        meaningful for string directives. Thanks to Rende Luitjes
+        &lt;Rende.Luitjes@digital.com&gt; for suggesting the changes.
+    </P>
+</DD>
+<DT> Version: <B>1.5.2 16th December 1997</B></DT>
+<DD> <P>Bug fix: a line of code had gone MIA! Only affected the <TT>copy</TT>
+        and <TT>copyresized</TT> functions.
+    </P>
+</DD>
+<DT> Version: <B>1.5.1 15th December 1997</B></DT>
+<DD> <P>Removed modification of opening stdout in binary mode as it
+        didn't work on most operating systems.
+    </P>
+</DD>
+<DT> Version: <B>1.5.0 9th December 1997</B></DT>
+<DD> <P>New Feature:<BR>
+        With the <KBD>copy</KBD> and <KBD>copyresized</KBD> directives,
+        you can now use the output of a command instead of a filename
+        to import a GIF. For example:<BR>
+        <KBD>copy 10,20,-1,-1,-1,-1,`ppmtogif image.ppm`</KBD><BR>
+        This feature kindly provided by Ian Reid &lt;ian@robots.ox.ac.uk&gt;
+    </P>
+     <P>Modification: Open <TT>stdout</TT> in explicit binary mode when
+        writing gif to stdout (for Windows NT/95 which stupidly defaults
+        to ascii for stdout). Thanks to Andrew Rivett
+        &lt;andrew@infopreneur.net&gt;
+    </P>
+     <P>Bug fix: when using copy and copyresized, area would be one pixel
+        short on right and bottom sides if not using the -1,-1,-1,-1
+        coordinates. Thanks to Tam Siu Lung &lt;sltam@sn1.speednet.net&gt;
+        for reporting this bug.
+    </P>
+     <P>Bug fix: was erroneously allowing filltoborder to be used with
+        settile. Thanks to Jukka Manner &lt;jukka.manner@capgemini.fi&gt;
+        for reporting this bug.
+    </P>
+</DD>
+<DT> Version: <B>1.4.2 26th June 1997</B></DT>
+<DD> <P>Bug fix: error when using copyresized with -1,-1,-1,-1 coordinates.
+    </P>
+</DD>
+<DT> Version: <B>1.4.1 29th January 1997</B></DT>
+<DD> <P>Bug fix: fixed fatal error on Solaris when sending output to stdout.
+    </P>
+</DD>
+<DT> Version: <B>1.4 23rd January 1997</B></DT>
+<DD> <P>- Multiple GIFs from the one command file - use the new <B>end</B>
+          command<BR>
+        - New commands: <B>getpixel</B> returns the colour index of a pixel;
+                      <B>square</B> and <B>fsquare</B> draw a square or filled square;
+                      <B>fcircle</B> draws a filled circle;<BR>
+        - Some extra examples in the file examples/test.fly
+    </P>
+</DD>
+<DT> Version: <B>1.3.1 13th February 1996</B></DT>
+<DD> <P>- verbose output now goes to stderr rather than stdout <STRONG>only
+        </STRONG>when gif output goes to stdout.<BR>
+        Bug fix: <KBD>fly -h</KBD> wouldn't work due to uninitialised filehandle.
+    </P>
+</DD>
+<DT> Version: <B>1.3 23rd January 1996</B></DT>
+<DD> <P>Addition of comment lines and bug fixes, both contributed by John Bowe
+        &lt;bowe@osf.org&gt;:<BR>
+        - verbose output now goes to stderr rather than stdout.<BR>
+        - bad first line caused core dump.
+    </P>
+</DD>
+<DT> Version: <B>1.2 22nd January 1996</B></DT>
+<DD> <P>Addition of <KBD>circle</KBD> directive, and more examples (incl. CGI).
+    </P>
+</DD>
+<DT> Version: <B>1.1.3 4th January 1996</B></DT>
+<DD> <P>Bug fix: first <KBD>string</KBD> directive interpreted as
+        <KBD>stringup</KBD> directive on some platforms.
+    </P>
+</DD>
+<DT> Version: <B>1.1.2 2nd January 1996</B></DT>
+<DD> <P>Various bug fixes for platform-specific peculiarities (BSDI, SunOS,
+        HP/UX).
+    </P>
+</DD>
+<DT> Version: <B>1.1.1 21st December 1995</B></DT>
+<DD> <P>Bugfix for quiet mode: <KBD>copy</KBD> and <KBD>copyresized</KBD>
+        were talking when they shouldn't.
+    </P>
+</DD>
+<DT> Version: <B>1.1 19th December 1995</B></DT>
+<DD> <P></P>
+     <UL>
+        <LI>New command line options:<BR>
+               <KBD>fly [-h] [-q] [-i inputfile] [-o outputfile]</KBD><BR>
+               if inputfile and/or outputfile omitted, directives and output
+               go to stdin and/or stdout.
+        <LI>New directives: <KBD>stringup</KBD>, <KBD>setstyle</KBD>,
+               <KBD>settile</KBD>, <KBD>fpoly</KBD>.
+        <LI>Better argument parsing and quiet mode, thanks to John Bowe.
+     </UL>
+     <P></P>
+</DD>
+<DT> Version: <B>1.0 24th November 1995</B></DT>
+<DD> <P>Release version, including support for 5 font sizes in
+        <KBD>string</KBD>.
+    </P>
+</DD>
+<DT> Version: <B>0.99b 20th November 1995</B></DT>
+<DD> <P>Better Makefile (thanks to John Bowe), takes into account if you
+        already have gd installed.
+    </P>
+</DD>
+<DT> Version: <B>0.98b 8th November 1995</B></DT>
+<DD> <P>Changed a calloc to a malloc due to BSDI problem.
+    </P>
+</DD>
+<DT> Version: <B>0.97b 5th November 1995</B></DT>
+<DD> <P>Miscellaneous bug fixes.
+    </P>
+</DD>
+<DT> Version: <B>0.96b 1st November 1995</B></DT>
+<DD> <P>Fixed major bug in polygon code.
+    </P>
+</DD>
+<DT> Version: <B>0.95b 18th October 1995</B></DT>
+<DD><P>Additions contributed by Claus Hofmann
+       &lt;claush@ipfr.bau-verm.uni-karlsruhe.de&gt;
+    </P>
+    <UL>
+      <LI>addition of <KBD>transparent</KBD> directive.
+      <LI>addition of code to check if colour already allocated before
+          allocating
+      <LI>addition of feature to copy whole image if all coords are -1
+   </UL>
+     <P></P>
+</DD>
+<DT> Version: <B>0.94b 11th October 1995</B></DT>
+<DD> <P>1. Added support for gdImageSX, gdImageSY. 
+        2. Added support for gdSetBrush.
+    </P>
+</DD>
+<DT> Version: <B>0.93b 10th October 1995</B></DT>
+<DD> <P>Added support for gdCopyResized, for copying and scaling. 
+    </P>
+</DD>
+<DT> Version: <B>0.92b 6th October 1995</B></DT>
+<DD> <P>1. Added support for gdImageString, to enable writing of strings, in
+        small or large fonts, onto GIFs created by fly.<BR>
+        2. Changed write out command to support OS/2<BR>
+        Thanks to Andreas Rudolf &lt;rudolf@vnet.ibm.com&gt;<BR>
+    </P>
+</DD>
+<DT> Version: <B>0.91b 16th August 1995</B></DT>
+<DD> <P>Fixed problem reading from stdin<BR>
+     Thanks to Nick Kennedy &lt;nbk@ariel.its.unimelb.edu.au&gt;
+    </P>
+</DD>
+<DT> Version: <B>0.9b 12 August 1995</B></DT>
+<DD> <P>First Release.
+</DD>
+</DL>
+
+ <!-- ===================================================================== -->
+ <hr size="2" noshade>
+
+ <p align="center"><a href="index.html"><img src="nav-home.gif" border="0"
+    alt="[Home]" width="52" height="24"></a> <a
+    href="documentation.html"><img src="nav-docs.gif" border="0"
+    alt="[Documentation]" width="120" height="24"></a> <a
+    href="copyright.html"><img src="nav-copyright.gif" border="0"
+    alt="[Copyright]" width="86" height="24"></a> <a href="feedback.html"><img
+    src="nav-feedback.gif" border="0" alt="[Feedback]" width="80"
+    height="24"></a>
+</p>
+
+ <!-- ===================================================================== -->
+ <hr size="2" noshade>
+
+<pre>Created:       21 June 1995
+Last modified: 11 June 1999
+Access:        Unrestricted.
+Copyright &#169 1994-1998 <a href="http://www.unimelb.edu.au/">The University of Melbourne.</a>
+&lt;URL:http://www.unimelb.edu.au/fly/&gt;</pre>
+
+ <!-- ===================================================================== -->
+ <hr size="1" noshade>
+ <table border="0" width="100%">
+  <tr>
+   <td>
+    <address>
+    <a href="http://www.unimelb.edu.au/%7Egleeson/">Martin Gleeson,</a>
+    <a href="mailto:gleeson@unimelb.edu.au">gleeson@unimelb.edu.au</a>
+   </address>
+  </td>
+   <td align="RIGHT">
+    <p> <a href="http://www.unimelb.edu.au/html-check/validation-form.html">
+        <img src="http://www.unimelb.edu.au/images/valid_html.4.0.gif"
+             alt="HTML 4.0 Checked!" border="0"></a>
+   </p>
+  </td>
+ </tr>
+</table>
+ <!-- ===================================================================== -->
+ <hr size="2" noshade>
+</body>
+</html>

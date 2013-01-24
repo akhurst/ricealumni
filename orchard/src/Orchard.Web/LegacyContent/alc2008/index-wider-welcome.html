@@ -1,0 +1,537 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="../styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "http://alumni.rice.edu/images/btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "http://alumni.rice.edu/images/btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=350,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (srch.alum.checked == true){
+	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (srch.rice.checked == true){
+	srch.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  srch.submit();
+
+}
+
+function checkKey(evt){
+
+	srch.search.value=srch.q.value;
+	if (evt.keyCode == 13 && srch.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+</script>
+<style type="text/css">
+<!--
+.style2 {color: #0099FF}
+-->
+</style>
+</head>
+
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top"> 
+          <td width="221" rowspan="3"> <a href="../index.html"><img src="../images/logo.gif" width="221" height="94" alt="Rice Alumni: Established 1919" border="0"></a><br>
+            <table width="191" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="http://alumni.cgi.rice.edu/events/calendar.php">EVENTS 
+                        CALENDAR</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="../alumni_groups.html">ALUMNI 
+                        GROUPS</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="../youngalum_stds.html">YOUNG 
+                        ALUMNI /STUDENTS</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="../career_connection.html">CAREER 
+                        CONNECTION</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_over_nav.gif" align="center" valign="middle"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="navOver">VOLUNTEER</font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top">&nbsp;</td>
+                <td width="172" align="center" valign="middle"> 
+                  <table width="90%" border="0" cellspacing="3" cellpadding="0">
+                    <tr> 
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="../alumni_groups.html#specialinterest">Alumni 
+                              Special Interest Groups</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="../vol_athsports.html">Athletics 
+                              &amp; Sports</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="../vol_philanthropy.html">Philanthropy</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="../vol_araboard.html">ARA 
+                              Board &amp; Committees</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="../vol_businterests.html">Business 
+                              Interests</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="../vol_scienceeng.html">Science 
+                              &amp; Engineering</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="../vol_artshum.html">Arts 
+                              &amp; Humanities</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="../vol_homecoming.html">Homecoming 
+                              &amp; Reunion</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="../vol_suppstud.html">Supporting 
+                              Students</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="../vol_othinterests.html">Other 
+                              Interests</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="../vol_noliveinhst.html">What 
+                              if I don't live in Houston?</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="../learning_trav.html">LEARNING 
+                        &amp; TRAVEL</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="../honors_awards.html">HONORS 
+                        &amp; AWARDS</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="../new_at_rice.html">WHAT'S 
+                        NEW @ RICE</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="../about_alumassoc.html">ABOUT 
+                        THE ARA</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="../faq_file.html">FAQ 
+                        FILE</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="http://giving.rice.edu" target="_blank">GIVE 
+                        TO RICE</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td align="right"><img src="../images/clear.gif" width="100" height="20"><br>
+            <img src="../images/xcat/alc2008_emailfooter.jpg" width="610" height="56" ="Rice Leading Locally and Globally">          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td colspan="4">&nbsp;</td>
+              </tr>
+              <tr valign="top"> 
+                <td> 
+                  <table width="100" border="0" align="center" cellpadding="0" cellspacing="0" class="mainTable">
+                    <tr valign="top"> 
+                      <td class="mainSmall"> 
+					    <p><img src="alc2008.jpg" alt="The Conference for Rice Alumni Leaders | Rice University | April 25-26, 2008"><br>
+					    </p>
+					    <p><a href="https://online.alumni.rice.edu/EventsNew/EventView.asp?ID=740"><strong>Register 
+                          online</strong></a><strong> by Friday, April 18,</strong> 
+                          and see below for the conference schedule and details. 
+                          <span class="mainSmallred">Space is limited, so sign 
+                          up today!</span><br>
+                        </p>
+                        <table width="444" border="0">
+                          <tr>
+                            <td width="151" class="mainSmall">:: <a href="http://alumni.rice.edu/alc2008/index-wider-schedule.html"><strong>Conference Agenda</strong></a></td>
+                            <td width="171" class="mainSmall">:: <a href="http://alumni.rice.edu/alc2008/index-wider-information.html"><strong>Additional Information</strong></a></td>
+                            <td width="99" class="mainSmall">:: <a href="https://online.alumni.rice.edu/EventsNew/EventView.asp?ID=740"><strong>Registration</strong></a></td>
+                          </tr>
+                        </table>
+                        <br>
+                        <table width="100%"  border="0" cellspacing="0" cellpadding="10">
+						<tr class="cellbgGray2"><td class="mainSmall"><p>Dear 
+                                Rice alumni leader,<strong><br>
+                                <br>
+                                </strong>The history of any great institution 
+                                is one of great leadership. As we approach Rice's 
+                                centennial, we celebrate the unique accomplishments 
+                                of our alma mater while preparing for the challenges 
+                                ahead. As a leader and volunteer with the university, 
+                                you play a key role in implementing Rice's <em><a href="http://www.rice.edu/v2c" target="_blank">Vision 
+                                for the Second Century</a></em>.<br>
+                                <br>
+                                We invite you to join us at the 2008 Conference 
+                                for Rice Alumni Leaders. Held every three years, 
+                                this conference brings together the best and brightest 
+                                of our alumni and friends to receive an &quot;insider's 
+                                view&quot; of Rice from campus leadership. This 
+                                year's conference focuses on the new initiatives 
+                                at Rice that are changing the way we lead the 
+                                nation and the world. We also have recruited some 
+                                of your fellow alumni to share how their Rice 
+                                experience shaped them as leaders and what challenges 
+                                they face in their respective fields. We hope 
+                                this opportunity for personal leadership learning 
+                                will complement the updates you'll receive from 
+                                campus communicators. This will be your chance 
+                                to mix and mingle with vice presidents, deans, 
+                                faculty, and institute heads, and to hear from 
+                                President Leebron. <br>
+                                <br>
+                                Join us as we celebrate Rice's innovative spirit 
+                                and rediscover the commitment and connections 
+                                of everyone involved with leading Rice into a 
+                                bold future with &quot;no upper limit.&quot;<br>
+                                <br>
+                                <strong>Maryana Iskander '97<br>
+                                Jeffery O. Rose '77</strong><em><br>
+                                Conference Chairs</em></p>
+                              </td></tr></table>
+                        <p class="mainSubtitle"><strong>Conference Committee Members</strong></p>
+                      <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                        <tr valign="top" class="mainSmall">
+                          <td colspan="2">Maryana Iskander '97 &amp; Jeffery O. Rose 
+                            '77<em>, Conference Co-Chairs</em></td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr valign="top" class="mainSmall">
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr valign="top" class="mainSmall">
+                          <td width="50%">Henry Hernandez '78, <em>invitation chair</em></td>
+                          <td>Robert Taylor '74, <em>operations chair</em></td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr valign="top" class="mainSmall">
+                          <td>Courtney Hall '90, <em>program chair</em></td>
+                          <td>Leticia Trauber '86, <em>publicity chair</em></td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr valign="top" class="mainSmall">
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr valign="top" class="mainSmall">
+                          <td>Rakesh Agrawal '97</td>
+                          <td>Felicia Martin '99</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr valign="top" class="mainSmall">
+                          <td>Michael Applebaum '93</td>
+                          <td>Michael Munson '97</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr valign="top" class="mainSmall">
+                          <td>Catriona Ayer '91</td>
+                          <td>Kerry Overton '87</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr valign="top" class="mainSmall">
+                          <td>Donald Bowers '91</td>
+                          <td>Rob Quartel '72</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr valign="top" class="mainSmall">
+                          <td>Bryan Hassin '01</td>
+                          <td>Mitra Miller Roehr '92</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr valign="top" class="mainSmall">
+                          <td>Tom Heatherington '94</td>
+                          <td>Charles Szalkowski '71</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr valign="top" class="mainSmall">
+                          <td>Larry Johnson '78</td>
+                          <td>Troy Williams '94</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr valign="top" class="mainSmall">
+                          <td>Michael Lee '86</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr valign="top" class="mainSmall">
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                      </table></td>
+                    </tr>
+                  </table>                </td>
+                <td width="1" background="../images/dots_bg.gif"><img src="../images/clear.gif" width="1" height="50"></td>
+                
+                
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td valign="top"><img src="../images/clear.gif" width="20" height="20"></td>
+                <td class="mainSmall" valign="top">
+                           <p><img src="../images/gray2_bg.gif" width="100%" height="1"></p>
+				  <p class="mainSubtitle"><img src="../images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p class="mainSubtitle">&nbsp;</p>
+                  <p><em>Sponsored by the <a href="http://alumni.rice.edu/about_alumassoc.html">Association 
+                    of Rice Alumni</a></em></p>
+</td>
+              </tr>
+            </table><p>&nbsp;</p></td>
+        </tr>
+</table>
+    </td>
+  </tr>
+  <tr> 
+    <td><img src="../images/clear.gif" width="100" height="5" alt="spacer"></td>
+  </tr>
+  <tr> 
+    <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="15">
+        <tr>
+          <td width="57%"><font class="mainSmall"><a href="#"onClick="SecWin=window.open('../contact.html','SecWin','width=260,height=450,toolbar=no,status=yes,resizable=no,scrollbars=yes,location=no,directories=no,menubar=no');return false;">Contact 
+             the Office of Alumni Affairs</a> | <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('dFuDc6BYQoX5nNNobzmYL4')">Send a Comment</a> | <a href="../index.html">Home</a></font></td>
+          <td width="43%" align="right"><font class="mainSmall"><a href="http://www.rice.edu/about/cr-notice.html" target="_blank"><script language="JavaScript">
+<!--
+today = new Date()
+cy = today.getFullYear()
+{
+}
+//-->
+</script>
+Copyright &copy;<script language="JavaScript">
+<!--
+document.write(cy)
+{
+}
+//-->
+</script> Rice University</a></font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>

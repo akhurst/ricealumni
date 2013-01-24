@@ -1,0 +1,753 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "images/btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "images/btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=350,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (srch.alum.checked == true){
+	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (srch.rice.checked == true){
+	srch.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  srch.submit();
+
+}
+
+function checkKey(evt){
+
+	srch.search.value=srch.q.value;
+	if (evt.keyCode == 13 && srch.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+</script></head>
+</html>
+<html>
+<head>
+</head>
+
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top"> 
+          <td width="221" rowspan="2"> <a href="index.html"><img src="images/logo.gif" width="221" height="94" alt="Association of Rice Alumni" border="0"></a><br>
+            <table width="191" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="http://alumni.cgi.rice.edu/events/calendar.php">EVENTS 
+                        CALENDAR</a></font></td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_over_nav.gif" align="center" valign="middle"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="navOver">ALUMNI GROUPS</font></td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top">&nbsp;</td>
+                <td width="172" align="center" valign="middle"> 
+                  <table width="90%" border="0" cellspacing="3" cellpadding="0">
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="#specialinterest">Special 
+                              Interest Groups</a></font></td>
+                          </tr>
+                        </table>                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="regional_groups.html">Regional 
+                              Groups</a></font></td>
+                          </tr>
+                        </table>                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="#schoolbased">School-Based 
+                              Groups</a></font></td>
+                          </tr>
+                        </table>                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="grad_deg_alumni.html">Graduate-Degree 
+                              Alumni</a></font></td>
+                          </tr>
+                        </table>                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="#friends">Friends 
+                              Groups</a></font></td>
+                          </tr>
+                        </table>                      </td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="youngalum_stds.html">YOUNG 
+                        ALUMNI /STUDENTS</a></font></td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="career_connection.html">CAREER 
+                        CONNECTION</a></font></td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="volunteer.html">VOLUNTEER</a></font></td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="learning_trav.html">LEARNING 
+                        &amp; TRAVEL</a></font></td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="honors_awards.html">HONORS 
+                        &amp; AWARDS</a></font></td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="new_at_rice.html">WHAT'S 
+                        NEW @ RICE</a></font></td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="about_alumassoc.html">ABOUT 
+                        THE ARA</a></font></td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="faq_file.html">FAQ 
+                        FILE</a></font></td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="http://giving.rice.edu" target="_blank">GIVE 
+                        TO RICE</a></font></td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+            </table>          </td>
+          <td align="right"><img src="images/clear.gif" width="100" height="20"><br>
+            <img src="images/subpic_about.jpg" width="526" height="56" ="Group of young women sitting and talking">          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td colspan="4">&nbsp;</td>
+              </tr>
+              <tr valign="top"> 
+                <td width="414"> 
+                  <p><img src="images/sub_title_groups.gif" width="410" height="17" alt="About Alumni Association"></p>
+                  <table class="mainTable" border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tr valign="top"> 
+                      <td> 
+                        <p> 
+                          <!-- <b><font class="mainSubtitle">Get Together: Alumni 
+                          Groups</font></b><br>
+                          <br> -->
+                          <font class="mainSmall">So you want to get together 
+                          with fellow alumni and friends? A number of groups provide 
+                          opportunities for members of the Rice community to unite 
+                          around common interests:<br>
+                          <a href="#specialinterest"><br>
+                          Special Interest Groups</a> are largely Houston-based 
+                          groups that are formed on the basis of shared ethnicity, 
+                          career or leisure interests, and so on.<br>
+                          <br>
+                          <a href="regional_groups.html">Regional Groups</a> provide 
+                          a means for alumni and friends living outside of Houston 
+                          to interact with one another and to stay in touch with 
+                          Rice.<br>
+                          <br>
+                          <a href="#academic">Academic Groups</a> 
+                          provide opportunities for alumni with common academic 
+                          backgrounds, such as their school, department, or major, to stay in touch.</font></p>
+                        <p><font class="mainSmall"><a href="grad_deg_alumni.html">Graduate-Degree 
+                          Alumni</a> can stay connected through networking events, 
+                          educational opportunities, career assistance, student 
+                          mentoring programs, and much more.</font></p>
+                        <p><font class="mainSmall"><a href="#friends">Friends 
+                          Groups</a> offer ways for individuals to support with 
+                          their time and means various academic schools, departments, 
+                          and other university entities and interests.</font></p>                      </td>
+                    </tr>
+                  </table>                </td>
+                <td width="1" background="images/dots_bg.gif"><img src="images/clear.gif" width="1" height="50"></td>
+                <td width="10"><img src="images/clear.gif" width="10" height="50"></td>
+                <td>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td>
+                        <form id="srch" method=GET action="" onSubmit="doSearch();">
+                          <input type="hidden" value="web" name="tab">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr> 
+                              <td colspan="4"> 
+                                <input type=text name=q size=15 maxlength=255 value="" onChange="srch.search.value=this.value;" class="formSmall">
+                                <span id="spn" style="background-image: URL(images/btn_go_new.gif);width:19;height:14" onClick="doSearch()" /> 
+                                <input type="hidden" name="hidden_site" value="alumni.rice.edu">
+                                <input type="hidden" name="search" value="">
+                                </span></td>
+                            </tr>
+                            <tr>
+                              <td width="10"> 
+                                <input id="alum" type="radio" name="sitesearch" value="alumni.rice.edu" checked>                              </td><td width="85"><font class="mainSmalldark">Search 
+                                this site</font></td>
+                            </tr>
+                            <tr>
+                              <td width="10" align="right"> 
+                                <input id="rice" type="radio" name="sitesearch" value="www.rice.edu">                              </td>
+                              <td width="85"><font class="mainSmalldark">Search 
+                                rice.edu</font></td>
+                            </tr>
+                          </table>
+                        </form></td>
+                    </tr>
+                    <tr> 
+                      <td><img src="images/clear.gif" width="115" height="20" alt="spacer"></td>
+                    </tr>                    <tr> 
+                      <td><a href="https://online.alumni.rice.edu/asp/Welcome.asp"><img src="images/title_onlinesvcs.gif" width="115" height="9" alt="Online Services" border="0"></a></td>
+                    </tr>
+                    <tr> 
+                      <td> 
+                        <table width="100%" border="0" cellspacing="3" cellpadding="0">
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/events/calendar.php" title="Events calendar and online registration">Find Events/RSVP</a></font></td>
+                                </tr>
+                              </table>                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/detailsearch.asp" title="Search the directory of Rice alumni">Alumni Directory</a></font></td>
+                                </tr>
+                              </table>                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/profile.asp" title="Update your directory information">Update Address</a></font></td>
+                                </tr>
+                              </table>                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Online/emailforwarding/eforwarding.asp" title="Manage or create an alumni.rice.edu account">Email Forwarding</a></font></td>
+                                </tr>
+                              </table>                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Career/default.asp" title="Connect with alums in your career field">Career Network</a></font></td>
+                                </tr>
+                              </table>                            </td>
+                          </tr>
+						  <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/bizfinder/" title="Find or promote alumni-owned businesses">Business Finder</a></font></td>
+                                </tr>
+                              </table>                            </td>
+                          </tr>
+<tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/remotelibrary.asp?type=8" title="Get your latest news into the Owlmanac" target="_blank">Online Classnotes</a></font></td>
+                                </tr>
+                              </table>                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/library.asp" title="Access research tools and periodicals">Digital Library</a></font></td>
+                                </tr>
+                              </table>                            </td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr> 
+                      <td><img src="images/clear.gif" width="115" height="14" alt="spacer"></td>
+                    </tr>
+                  </table>
+                  <!-- <a href="http://giving.rice.edu" target="_blank"><img src="images/rice_nextcent.gif" width="83" height="40" border="0" alt="Rice: The Next Century Campaign" hspace="3"></a><br> -->
+                  <a href="http://www.rice.edu" target="_blank"><img src="images/rice_home.gif" width="75" height="40" border="0" alt="Rice: Home" vspace="10" hspace="3"></a>
+                  <p></p>                </td>
+              </tr>
+            </table>
+			
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr valign="top"> 
+                <td class="mainCell"> <img src="images/clear.gif" width="20" height="20"></td>
+                <td width="529"> 
+                  <p><br>
+                    <font class="mainSubtitle"><b>Alumni Special Interest Groups<a name="specialinterest"></a></b></font><br>
+                    <font class="mainSmall">With a population base of more than 
+                    14,700 Owls, Houston-area alumni have formed a number of special-interest 
+                    groups. These groups have various agendas and interests, but 
+                    many offer networking and social gatherings, seminars, and 
+                    other means for alumni to stay connected to one another and 
+                    to Rice. For more information about a particular group, contact 
+                    the person listed after each organization below, or <a href="javascript:_compose('b208aEiy7EvMtIBqtGlVFj')">LaCresha Lamb</a> in the alumni office at 713-348-4270.<br>
+                    <br>
+                    </font> 
+                  <table border="0" cellpadding="8" width="100%" cellspacing="4">
+                    <tr> 
+                      <td class="cellbgGray" width="40%"  align="left" valign="top"> 
+                        <font class="mainSmall"><a href="aruba/index.html">Association 
+                        of Rice University Black Alumni (ARUBA)</a></font></td>
+                      <td class="cellbgGray" align="left" valign="top"><a href="mailto:angieberry@alumni.rice.edu" class="mainSmall">Angela Berry Roberson '90</a></td>
+                      <td align="left" valign="top" nowrap class="cellbgGray"><font class="mainSmall">214-280-7203</font></td>
+                    </tr>
+                    <tr> 
+                      <td class="cellbgGray"  align="left" valign="top"><a href="gala/index.html" class="mainSmall">Gay 
+                        and Lesbian Alumni (GALA)</a></td>
+                      <td class="cellbgGray" align="left" valign="top"><font class="mainSmall"><a href="javascript:_compose('RInX3283Ia3TvIzB6X2t6X')">Corey 
+                        Devine '03</a></font></td>
+                      <td class="cellbgGray" align="left" valign="top"><font class="mainSmall">713-373-7600</font></td>
+                    </tr>
+                    <tr> 
+                      <td class="cellbgGray" align="left" valign="top"><font class="mainSmall"><a href="2-0_alumni.html">Houston 
+                        Alumni 2.0 </a></font></td>
+                      <td class="cellbgGray" align="left" valign="top"><font class="mainSmall"><a href="javascript:_compose('4NS2mOKVmU0fFHhr68w4H4')">Mitra Miller Roehr '92</a><a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('yBOcQelkrwodwYQFvlmIDo')"></a><a href="javascript:_compose('6qFC331654Om2KutvaYcHd')"></a></font></td>
+                      <td class="cellbgGray" align="left" valign="top">&nbsp;</td>
+                    </tr>
+                    <tr> 
+                      <td class="cellbgGray" align="left" valign="top"><font class="mainSmall"><a href="youngalum_stds.html">Houston 
+                        Young Alumni Committee</a></font></td>
+                      <td class="cellbgGray" align="left" valign="top"><font class="mainSmall"><a href="javascript:_compose('hkZxzBjtlBy9q1Vf6Q6OTu')">Sparky Frost '07 and Brenden Marquardt '08, Co-Chairs</a></font></td>
+                      <td class="cellbgGray" align="left" valign="top">&nbsp;</td>
+                    </tr>
+                    <tr> 
+                      <td class="cellbgGray" width="40%"  align="left" valign="top"> 
+                        <font class="mainSmall">NROTC Alumni Association</font></td>
+                      <td class="cellbgGray" align="left" valign="top"><font class="mainSmall"><a href="javascript:_compose('VvObqlRM3yri6vnufHUylv')">Rice 
+                        NROTC Office</a></font></td>
+                      <td class="cellbgGray" align="left" valign="top"><font class="mainSmall">713-348-4825</font></td>
+                    </tr>
+                    <tr> 
+                      <td class="cellbgGray" width="40%"  align="left" valign="top" height="19"> 
+                        <font class="mainSmall">Praying Rice Owls</font></td>
+                      <td class="cellbgGray" align="left" valign="top" height="19"> 
+                        <font class="mainSmall"><a href="javascript:_compose('Vc89LzGb8OV0rAD8VSgwIJ')">Ryn 
+                        Bowers '64</a></font></td>
+                      <td class="cellbgGray" align="left" valign="top" height="19"> 
+                        <font class="mainSmall">713-626-4940</font></td>
+                    </tr>
+                    <tr> 
+                      <td class="cellbgGray" width="40%"  align="left" valign="top"> 
+                        <font class="mainSmall"><a href="rbn/index.html">Rice 
+                        Business Network</a></font></td>
+                      <td class="cellbgGray" align="left" valign="top"> <font class="mainSmall"><a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('kGqLlRa5iFu03rioQxj1LE')">Tony 
+                        Ackerman '82</a></font></td>
+                      <td class="cellbgGray" align="left" valign="top">&nbsp;</td>
+                    </tr>
+                    <tr> 
+                      <td class="cellbgGray" width="40%"  align="left" valign="top"> 
+                        <font class="mainSmall"><a href="rea/index.html">Rice 
+                        Engineering Alumni</a></font></td>
+                      <td class="cellbgGray" align="left" valign="top"><font face="Arial, Verdana, Tahoma, Microsoft Sans Serif" size="2" class="mainSmall"><a href="javascript:_compose('HD9X6ey8pnkvPa0jmeiQaf')">George Webb
+EE '88, '91</a></font></td>
+                      <td class="cellbgGray" align="left" valign="top">&nbsp;</td>
+                    </tr>
+                    <tr> 
+                      <td class="cellbgGray"  align="left" valign="top"><font class="mainSmall"><a href="http://www.facebook.com/group.php?sid=2041bfa51575f8b1f93be287d1107b7e&refurl=http%3A%2F%2Fwww.facebook.com%2Fs.php%3Fref%3Dsearch%26init%3Dq%26q%3Drice%2Binternational%2Bstudent%2Balumni%2Bgroup%26sid%3D2041bfa51575f8b1f93be287d1107b7e&gid=33895722802">Rice 
+                        International Student Alumni Group</a></font></td>
+                      <td class="cellbgGray" align="left" valign="top"><font class="mainSmall"><a href="javascript:_compose('P4jxYKE9GU0o2ALiJsFhHv')">Cory 
+                        Owen</a></font></td>
+                      <td class="cellbgGray" align="left" valign="top">&nbsp;</td>
+                    </tr>
+                    <tr> 
+                      <td class="cellbgGray"  align="left" valign="top"><font class="mainSmall"><a href="romeo">Rice 
+                        Owl Mentors Eating Out (ROMEO)</a></font></td>
+                      <td class="cellbgGray" align="left" valign="top"><font class="mainSmall"><a href="javascript:_compose('4kd6C0FmameFZIflJXffvp')">Woods 
+                        Martin '49</a> </font></td>
+                      <td class="cellbgGray" align="left" valign="top"><font class="mainSmall">713-621-3786</font></td>
+                    </tr>
+                    <tr> 
+                      <td class="cellbgGray"  align="left" valign="top"><font class="mainSmall"><a href="http://rubpa.rice.edu/" target="_blank">Rice 
+                        University Baseball Players Association</a> </font></td>
+                      <td class="cellbgGray" align="left" valign="top"><font class="mainSmall"><a href="javascript:_compose('zWe22SRkcEjsbEhjqlFSY2')">Steven 
+                        Herce '03 </a></font></td>
+                      <td class="cellbgGray" align="left" valign="top">&nbsp;</td>
+                    </tr>
+                    <tr> 
+                      <td class="cellbgGray" width="40%"  align="left" valign="top"> 
+                        <font class="mainSmall"><a href="rubpw/index.html">Rice 
+                        University Business and Professional Women (RUBPW)</a></font></td>
+                      <td class="cellbgGray" align="left" valign="top"><font class="mainSmall"><a href="javascript:_compose('yRW95UfudWsPicqb0hg1ZM')">Corrinn 
+                        Davis '01 </a></font></td>
+                      <td class="cellbgGray" align="left" valign="top"><font class="mainSmall">713-501-1285</font></td>
+                    </tr>
+                    <tr> 
+                      <td class="cellbgGray"  align="left" valign="top"><font class="mainSmall">Rice 
+                        University Community of Asian Alumni (RUCAA)</font></td>
+                      <td class="cellbgGray" align="left" valign="top"><font class="mainSmall"><a href="javascript:_compose('LU9HPmpoOinGb70NEZVuaf')">Lawrence Chan, PhD '88</a></font></td>
+                      <td class="cellbgGray" align="left" valign="top">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td class="cellbgGray"  align="left" valign="top"><a href="http://www.facebook.com/pages/Rice-University-Muslim-Alumni/414127458633601" class="mainSmall">Rice University Muslim Alumni (RUMA)</a></td>
+                      <td class="cellbgGray" align="left" valign="top"><p><a href="mailto:rice.muslim.alumni@gmail.com" class="mainSmall">Ahmed Elnably  '12 &nbsp;</a><br>
+                          <a href="osman.athar@alumni.rice.edu" class="mainSmall">Osman  Athar '11                     </a></p></td>
+                      <td class="cellbgGray" align="left" valign="top"><p class="mainSmall">&nbsp;</p></td>
+                    </tr>
+                    <tr> 
+                      <td class="cellbgGray" width="40%"  align="left" valign="top"> 
+                        <font class="mainSmall">Rugby Alumni</font></td>
+                      <td class="cellbgGray" align="left" valign="top"><font class="mainSmall"><a href="javascript:_compose('3YyLHfgTRB8NwTNGo7rbhs')">Cary Kottler '03</a></font></td>
+                      <td class="cellbgGray" align="left" valign="top"><font class="mainSmall">&nbsp;</font></td>
+                    </tr>
+                    <tr> 
+                      <td class="cellbgGray" width="40%"  align="left" valign="top"><font class="mainSmall"><font class="mainSmall">Society 
+                        of Rice Indigenous Alumni</font> (<font class="mainSmall">SRIA</font>)</font></td>
+                      <td class="cellbgGray" align="left" valign="top"><font class="mainSmall"><a href="javascript:_compose('6A9R0EFQYOPMbCBxINzwEv')">Ken 
+                        Masters '00</a></font></td>
+                      <td class="cellbgGray" align="left" valign="top">&nbsp;</td>
+                    </tr>
+                    <tr> 
+                      <td class="cellbgGray"  align="left" valign="top"><font class="mainSmall"><a href="solar/index.html">Society 
+                        of Latino Alumni of Rice (SOLAR)</a></font></td>
+                      <td class="cellbgGray" align="left" valign="top"> <font class="mainSmall"><a href="javascript:_compose('gagf4ikKcO7E3wQNg1fDN6')">Jos&eacute; 
+                        Leal '01</a></font></td>
+                      <td class="cellbgGray" align="left" valign="top"><font class="mainSmall">&nbsp; 
+                        </font></td>
+                    </tr>
+                    <tr> 
+                      <td class="cellbgGray" width="40%"  align="left" valign="top"> 
+                        <font class="mainSmall"><a href="sruw/index.html">Society 
+                        of Rice University Women (SRUW)</a></font></td>
+                      <td class="cellbgGray" align="left" valign="top"><p><font class="mainSmall"><a href="javascript:_compose('Oi7K8v24jAExX5gkZ8dKYm')">Carol Ann Shipp '67</a></font><br>
+                      <font class="mainSmall"><a href="javascript:_compose('ZMq0TPJIwmVDQ4RzMhvkqC')">Karen Rogers '68 </a></font></p></td>
+                      <td class="cellbgGray" align="left" valign="top"><p class="mainSmall">713-965-9699<br>
+                      713-523-1815</p></td>
+                    </tr>
+                  </table>
+                  <br>
+                  <br>
+                  <p> <font class="mainSubtitle"><b>Academic Groups<a name="academic" id="academic"></a></b></font> 
+                    <br>
+                    <br>
+                    <font class="mainSmall"><a href="http://www.jonesgsm.rice.edu/jonesgsm/JGSAA_.asp?SnID=277385272"><strong>Jones 
+                    Graduate School Alumni Association (JGSAA)</strong></a><br>
+                    The network of Jones Graduate School of Business graduates 
+                    includes more than 2,900 Jones School alumni living and working 
+                    throughout the United States and in several foreign countries. 
+                    All alumni become lifetime members upon graduation and are 
+                    eligible for all of the benefits and services provided by 
+                    the JGSAA. The JGSAA sponsors an annual career forum for students, 
+                    hosts social events, awards scholarships, and publishes an 
+                    online directory for its members. The JGSAA is led by an 18-member 
+                    board of directors that cultivates alumni engagement with 
+                    the school through planning and development of the Jones School's 
+                    alumni program. The board maintains several standing committees, 
+                    such as Student-Alumni, Area Groups, Events, and External 
+                    Relations. Student-alumni liaisons work hand-in-hand with 
+                    the members of the Student-Alumni Committee to develop and 
+                    execute that facet of the alumni program. For more information, 
+                    contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('8k6QWKuxiZashmEPrwQIRh')">Shaheen 
+                    Ladhani '97</a>, associate director for alumni affairs at 
+                    the Jones School, at 713-348-4489.<br>
+                    <br>
+                    <strong>Jones Leaders </strong><br>
+                    The Jones Leaders is a select group of more than 50 active 
+                    Jones Graduate School of Business alumni who serve as an operational 
+                    arm for the Jones Graduate School Alumni Association (JGSAA) 
+                    Board of Directors. Jones Leaders participate through such 
+                    activities as conducting mock interviews, presenting career 
+                    panels, calling and interviewing prospective students, serving 
+                    on the school's standing committees, and many other important 
+                    activities. JGSAA board members are also Jones Leaders. You 
+                    may have already met several members of the board of directors 
+                    or Jones Leaders through admission activities. If you would 
+                    like a complete list of the alumni who participate in the 
+                    Jones Leaders or JGSAA Board of Directors, please contact 
+                    the JGSB alumni office at 713-348-4489.<br>
+                    <br>
+                    <b><a href="rea/index.html">Rice Engineering Alumni</a></b> 
+                    <br>
+                    Dedicated to providing support to the George R. Brown School 
+                    of Engineering. Membership in the REA is open to alumni of 
+                    the eight departments of the George R. Brown School of Engineering: 
+                    Bioengineering, Chemical and Biomolecular Engineering (formerly 
+                    Chemical Engineering), Civil Engineering, Computational and 
+                    Applied Mathematics, Computer Science, Electrical and Computer 
+                    Engineering, Environmental Science and Engineering, Mechanical 
+                    Engineering and Materials Science, and Statistics. Formed 
+                    in 1938, the REA is the oldest alumni organization at Rice. 
+                    <br>
+                    <br>
+                    <b><a href="http://www.ruf.rice.edu/%7Emusi/alumni/index.html" target="_blank">Shepherd 
+                    School Alumni</a></b> <br>
+                    Shepherd School graduates are represented across the world 
+                    as premier musicians, and their accomplishments continually 
+                    renew the value of musical study at Rice University. The Alumni 
+                    Profiles section of our web site features many of our graduates 
+                    who are embarking on their musical careers. If you have not 
+                    been included in this area and you are a Shepherd School graduate 
+                    or you attended the Shepherd School, please contact us. We 
+                    would like to hear from you.</font></p>
+                  <p>&nbsp;</p>
+                  <p><font class="mainSubtitle"><b>Friends Groups<a name="friends"></a></b></font><br>
+                    <br>
+                    <font class="mainSmall"><b><a href="http://www.ruf.rice.edu/%7Efofl//" target="_blank">Friends 
+                    of Fondren</a></b> <br>
+                    Friends of Fondren strives to enhance Fondren Library's collection 
+                    and facilities. Graduating students may join the Friends of 
+                    Fondren for a $15 annual membership fee for their first five 
+                    years after graduating from Rice; afterward, the basic membership 
+                    fee is $100 with a 25% discount for Rice alumni. For more 
+                    information, contact <a href="javascript:_compose('PaVcXvc6lmTvTy226A7iE6')">Mary 
+                    Bixby</a>, 713-348-5157. <br>
+                    <br>
+                    <b><a href="http://www.facebook.com/groups.php?ref=sb#/group.php?gid=47207247085">Friends of Rice Players</a></b> <br>
+                    Friends of Rice Players provides ongoing financial support 
+                    for Rice's dramatic activities and facilities. In the past, 
+                    the Friends have underwritten residential college productions 
+                    and invited non-collegiate acting troupes to campus. To get involved in FoRP, contact <a href="mailto:friendsofriceplayers@gmail.com">Rachel Kimbro '01</a> or find us on <a href="http://www.facebook.com/groups.php?ref=sb#/group.php?gid=47207247085">our Facebook page</a>. <br>
+                    <br>
+                    <b><a href="http://ricegallery.org/new/support/">Friends of the Rice University Art Gallery</a></b> <br>
+                    This group works to strengthen the gallery's influence in 
+                    the Houston area by presenting exhibitions, sponsoring lectures, 
+                    adding to the permanent collection, and enlarging the overall 
+                    scope of Rice University Art Gallery programs. For additional 
+                    information, contact <a href="javascript:_compose('0wVO2F9j278D45tFDkWY7p')">Jaye Anderton</a> 
+                    at 713-348-6069. <br>
+                    <br>
+                    <b><a href="http://jonesgsm.rice.edu/images/jonesgsm/campaign/campaign_friends.html" target="_blank">Jones 
+                    Graduate School Partners</a></b> <br>
+                    The mission of the Partners is to promote and support the 
+                    Jones Graduate School. Annual dues vary with level of membership, 
+                    ranging from $50 to $25,000+ for Senior Corporate Partners. 
+                    For information, call 713-348-5376 or <a href="javascript:_compose('obh6GSjUzxiZivYkGorlwn')">contact the Partners</a>.                    </font></p>
+                  <p><font class="mainSmall"><strong><a href="http://swg.rice.edu/join/">Partners of the Center for the Study of Women, Gender, and Sexuality</a></strong></font><br>
+                    <font class="mainSmall">The Partners of the Center supports the academic and community programming of the Center for the Study of Women, Gender, and Sexuality. Annual dues for Partners begin at $125, and range up to $2,500+ for Founding Partners. For more information, call Brian Riedel at 713-348-2162.</font><font class="mainSmall"><br>
+                    <br>
+                    <b><a href="http://riceinfo.rice.edu/projects/RDA" target="_blank">Rice 
+                    Design Alliance</a></b> <br>
+                    Stimulates public awareness and discussion of the urban environment 
+                    through seminars, a lecture series, design exhibitions, and 
+                    an annual architectural tour. Membership includes discounted 
+                    tickets to RDA programs and four issues of Cite, a magazine 
+                    that spotlights important issues of city life and provides 
+                    a forum for architectural critique. For additional information, 
+                    <a href="javascript:_compose('AbFvWUxy6TkdqJGQ5uhVcD')">contact Linda Sylvan</a> or call 713-348-4876.<br>
+                    <!-- <br>
+                    <b><a href="http://cohesion.rice.edu/engineering/engineering/alumni.cfm?doc_id=2594">Rice 
+                    Engineering Alumni</a></b> <br>
+                    Dedicated to providing support to the George R. Brown School 
+                    of Engineering. Membership in the REA is open to alumni of 
+                    the nine departments of the George R. Brown School of Engineering: 
+                    Bioengineering, Chemical Engineering, Civil Engineering, Computational 
+                    and Applied Mathematics, Computer Science, Electrical and 
+                    Computer Engineering, Environmental Science and Engineering, 
+                    Mechanical Engineering and Materials Science, and Statistics. 
+                    Formed in 1938, the REA is the oldest alumni organization 
+                    at Rice.<br> -->
+                    <br>
+                    <b><a href="http://ricehistoricalsociety.org/" target="_blank">Rice 
+                    Historical Society</a></b> <br>
+                    The RHS works to collect and preserve the history of Rice 
+                    University by taking oral histories, collecting artifacts 
+                    and documents, and by arranging public displays of these items 
+                    at university functions. Membership benefits include a quarterly 
+                    newsletter, invitations to program lunches/dinners, special 
+                    events, and field trips. Membership starts at $25 and up. 
+                    For more information contact Karen Rogers at 713-960-8600. 
+                  </font></p>
+                  <p class="mainSmall"><strong><a href="http://www.riceowls.com/owlclub/" target="_blank">The Owl Club</a></strong><br>
+                    The Owl Club serves as the primary fundraising organization  for Rice University Athletics.&nbsp; Gifts to the Owl Club or the Athletic  Scholarship Endowment directly support scholarships for Rice  scholar-athletes.&nbsp; Sports Interest Groups (SIG) and Athletic Capital Funds  are designed for donors who have an interest in a specific sports program or  facility project(s).&nbsp; The &quot;R&quot; Association is an organization  comprised of Rice letterwinners. For more information, <a href="javascript:_compose('9z98ZA60w8pHTeihwdHymj')">contact Kim Koehn</a> or the Owl Club Office at 713-348-6957.<font class="mainSmall"><br>
+                    <br>
+                    <b><a href="http://www.ruf.rice.edu/%7Emusi/contact/shepherd_society.html" target="_blank">Shepherd 
+                    Society</a></b> <br>
+                    Formed in 1977 to support the cause of music at Rice and in 
+                    Houston, the 1,000+ members of the Shepherd Society provide 
+                    more than $200,000 in scholarships for musicians studying 
+                    at the Shepherd School. The society sponsors a series of special 
+                    events for its members, such as the annual Madrigal dinners. 
+                    Membership: $35 and up. For further information, contact the 
+                    <a href="javascript:_compose('AQRAOhA8hrQwBc3exrFnjm')">Shepherd Society</a> at 
+                    713-348-3492. <br>
+                    <br>
+                  </font></p>
+<p>&nbsp;</p>                </td>
+              </tr>
+            </table>          </td>
+        </tr>
+      </table>    </td>
+  </tr>
+  <tr> 
+    <td><img src="images/clear.gif" width="100" height="5" alt="spacer"></td>
+  </tr>
+  <tr> 
+    <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="15">
+        <tr>
+          <td width="57%"><font class="mainSmall"><a href="#"onClick="SecWin=window.open('contact.html','SecWin','width=260,height=450,toolbar=no,status=yes,resizable=no,scrollbars=yes,location=no,directories=no,menubar=no');return false;">Contact 
+             the Office of Alumni Affairs</a> | <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('dFuDc6BYQoX5nNNobzmYL4')">Send a Comment</a> | <a href="index.html">Home</a></font></td>
+          <td width="43%" align="right"><font class="mainSmall">
+            <script language="JavaScript">
+<!--
+today = new Date()
+cy = today.getFullYear()
+{
+}
+//-->
+</script>
+            Copyright &copy;
+            <script language="JavaScript">
+<!--
+document.write(cy)
+{
+}
+//-->
+</script>
+            Rice University</font></td>
+        </tr>
+      </table>    </td>
+  </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>
+

@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "images/btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "images/btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=350,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (srch.alum.checked == true){
+	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (srch.rice.checked == true){
+	srch.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  srch.submit();
+
+}
+
+function checkKey(evt){
+
+	srch.search.value=srch.q.value;
+	if (evt.keyCode == 13 && srch.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+function redir() {
+
+	window.opener.location="staff_listing.html";
+	window.close();
+}
+
+function redir2() {
+
+	window.opener.location="oconnor_house.html";
+	window.close();
+}
+
+</script>
+
+</head>
+
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr valign="top"> 
+    <td rowspan="2"><br>
+      <table width="235" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+          <td valign="middle"> <p align="center"><font class="mainSmall"><b>The 
+              Centennial Campaign<br>
+              Austin Reception Host Committee</b></font></p>
+            <p align="center"><font class="mainSmall">Michael Cruess ’79<br>
+              Timothy Ryan Dehne ’87<br>
+              Abraham Delgado ’71<br>
+              Deborah Harvey Delgado ’73, ’76, ’82<br>
+              John D. Fisher ’69, ’74<br>
+              Thomas S. Fornoff ’78<br>
+              Jon Gillum ’98<br>
+              Leah Gillum ’00<br>
+              Eric Heineman ’89<br>
+              Stela Balderas Holcombe ’93<br>
+              W. Lee Holcombe ’86<br>
+              Pradeep Kumar ’87<br>
+              Jay Lamy ’95<br>
+              James Lloyd ’06<br>
+              Keith H. Lovin ’71<br>
+              Valerie J. Luessenhop ’77<br>
+              Christina Martin ’97<br>
+              Jeremy B. Martin ’97<br>
+              Robert McKee ’74<br>
+              Kathleen Davis Niendorff ’69, ’71<br>
+              Robert Prentice ’00<br>
+              Anne Countiss Prentice ’00<br>
+              Hector de J. Ruiz ’73<br>
+              Sunday Yokubaitis ’98</font><font class="mainSmall"> </font></p>
+            </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr valign="top"> </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>

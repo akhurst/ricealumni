@@ -1,0 +1,793 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "images/btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "images/btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=530,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (srch.alum.checked == true){
+	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (srch.rice.checked == true){
+	srch.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  srch.submit();
+
+}
+
+function checkKey(evt){
+
+	srch.search.value=srch.q.value;
+	if (evt.keyCode == 13 && srch.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+</script>
+</head>
+
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top"> 
+          <td width="221" rowspan="2"> <a href="index.html"><img src="images/logo.gif" width="221" height="94" alt="Rice Alumni: Established 1919" border="0"></a><br>
+            <table width="191" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="http://alumni.cgi.rice.edu/events/calendar.php">EVENTS 
+                        CALENDAR</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="alumni_groups.html">ALUMNI 
+                        GROUPS</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="youngalum_stds.html">YOUNG 
+                        ALUMNI /STUDENTS</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="career_connection.html">CAREER 
+                        CONNECTION</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_over_nav.gif" align="center" valign="middle"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="volunteer.html">VOLUNTEER</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top">&nbsp;</td>
+                <td width="172" align="center" valign="middle"> 
+                  <table width="90%" border="0" cellspacing="3" cellpadding="0">
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="alumni_groups.html#specialinterest">Alumni 
+                              Special Interest Groups</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+					<tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="http://futureowls.rice.edu/futureowls/RAVA1.asp" target="_blank">Admission 
+                              Office (RAVA)</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="vol_athsports.html">Athletics 
+                              &amp; Sports</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="http://giving.rice.edu/Content.aspx?id=231" target="_blank">Philanthropy</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="vol_araboard.html">ARA 
+                              Board &amp; Committees</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="vol_businterests.html">Business 
+                              Interests</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="vol_scienceeng.html">Science 
+                              &amp; Engineering</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="images/gray2_bg.gif"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark">Arts &amp; Humanities</font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="vol_homecoming.html">Homecoming 
+                              &amp; Reunion</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="vol_suppstud.html">Supporting 
+                              Students</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="vol_othinterests.html">Other 
+                              Interests</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="vol_noliveinhst.html">What 
+                              if I don't live in Houston?</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="learning_trav.html">LEARNING 
+                        &amp; TRAVEL</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="honors_awards.html">HONORS 
+                        &amp; AWARDS</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="new_at_rice.html">WHAT'S 
+                        NEW @ RICE</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="about_alumassoc.html">ABOUT 
+                        THE ARA</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="faq_file.html">FAQ 
+                        FILE</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="http://giving.rice.edu" target="_blank">GIVE 
+                        TO RICE</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            
+          </td>
+          <td align="right"><img src="images/clear.gif" width="100" height="20"><br>
+            <img src="images/subpic_about.jpg" width="526" height="56" ="Young people smiling"></td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td colspan="4">&nbsp;</td>
+              </tr>
+              <tr valign="top"> 
+                <td width="414"> 
+                  <p><img src="images/sub_title_volunteer.gif" width="410" height="17" alt="About Alumni Association"></p>
+                  <table class="mainTable" border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tr valign="top"> 
+                      <td> 
+                        <p> <font class="mainSubtitle"><b>Volunteer Opportunities 
+                          in the Arts &amp; Humanities</b></font></p>
+                        <p><font class="mainSmall"><a href="http://culture.rice.edu/" target="_blank"><img src="images/studies_culture.jpg" width="250" height="59" border="0"></a></font></p>
+                        <p><font class="mainSmall"><a href="http://culture.rice.edu/" target="_blank"><b>Humanities Research Center</b></a></font></p>
+                        <p><font class="mainSmall">Each year the Humanities Research Center, which studies cultures around the 
+                          world and across time, organizes about 50 meetings and 
+                          conferences and serves as &quot;home-base&quot; to a 
+                          number of postdoctoral fellows and visiting scholars. 
+                        </font></p>
+                        <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                        <p><font class="mainSmall"><a href="http://www.ruf.rice.edu/%7Earts" target="_blank"><b>Department 
+                          of Art and Art History</b></a></font></p>
+                        <p><font class="mainSmall">The art studio invites volunteer 
+                          assistance with several tasks, such as organizing the art 
+                          room, maintaining computerized records, and running errands 
+                          for artists. Contact: <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('1gFRT0w0qLpKSXNAsOY8Vz')">Suzanne 
+                        Vaughn</a>, 713-348-4815.</font></p>
+                        <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                        <p><font class="mainSmall"><a href="http://www.rice.edu/fondren/friends" target="_blank"><b>Friends 
+                          of Fondren Library</b></a></font></p>
+                        <p><font class="mainSmall">The Friends of Fondren Library is 
+                          an association of individuals, led by a board of directors, 
+                          interested in increasing and publicizing the resources of 
+                          the Fondren Library at Rice University. The organization secures 
+                          gifts and bequests and provides funds for the purchase of 
+                          books, manuscripts, and other materials, both rare and new, 
+                          which could not otherwise be acquired by the library. The 
+                          FOFL board sponsors a biennial book sale and a gala which 
+                          raise funds, as well as an annual lecture, Homecoming brunch, 
+                          and reception to honor Rice authors. Volunteers assist with 
+                          these events, particularly the book sale. Volunteer leadership 
+                          consists of 30 board members and officers ranging from president 
+                          to the chairmanship of an event. For more information contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('Wd3L6tnKH3mEjooN3Bm0Tx')">Mary 
+                          Bixby</a>, 713-348-5157 </font></p></td>
+                    </tr>
+                  </table>
+                </td>
+                <td width="1" background="images/dots_bg.gif"><img src="images/clear.gif" width="1" height="50"></td>
+                <td width="10"><img src="images/clear.gif" width="10" height="50"></td>
+                <td>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td>
+                        <form id="srch" method=GET action="" onSubmit="doSearch();">
+                          <input type="hidden" value="web" name="tab">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr> 
+                              <td colspan="4"> 
+                                <input type=text name=q size=15 maxlength=255 value="" onChange="srch.search.value=this.value;" class="formSmall">
+                                <span id="spn" style="background-image: URL(images/btn_go_new.gif);width:19;height:14" onClick="doSearch()" /> 
+                                <input type="hidden" name="hidden_site" value="alumni.rice.edu">
+                                <input type="hidden" name="search" value="">
+                                </span></td>
+                            </tr>
+                            <tr>
+                              <td width="10"> 
+                                <input id="alum" type="radio" name="sitesearch" value="alumni.rice.edu" checked>
+                              </td><td width="85"><font class="mainSmalldark">Search 
+                                this site</font></td>
+                            </tr>
+                            <tr>
+                              <td width="10" align="right"> 
+                                <input id="rice" type="radio" name="sitesearch" value="www.rice.edu">
+                              </td>
+                              <td width="85"><font class="mainSmalldark">Search 
+                                rice.edu</font></td>
+                            </tr>
+                          </table>
+                        </form></td>
+                    </tr>
+                    <tr> 
+                      <td><img src="images/clear.gif" width="115" height="20" alt="spacer"></td>
+                    </tr>                    <tr> 
+                      <td><a href="https://online.alumni.rice.edu/asp/Welcome.asp"><img src="images/title_onlinesvcs.gif" width="115" height="9" alt="Online Services" border="0"></a></td>
+                    </tr>
+                    <tr> 
+                      <td> 
+                        <table width="100%" border="0" cellspacing="3" cellpadding="0">
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/events/calendar.php" title="Events calendar and online registration">Find Events/RSVP</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/detailsearch.asp" title="Search the directory of Rice alumni">Alumni Directory</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/profile.asp" title="Update your directory information">Update Address</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Online/emailforwarding/eforwarding.asp" title="Manage or create an alumni.rice.edu account">Email Forwarding</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Career/default.asp" title="Connect with alums in your career field">Career Network</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+						  <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/bizfinder/" title="Find or promote alumni-owned businesses">Business Finder</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+<tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="http://alumni.rice.edu/submit_note.html" title="Get your latest news into the Owlmanac">Submit Classnote</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/library.asp" title="Access research tools and periodicals">Digital Library</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+
+                        </table>
+</td>
+                    </tr>
+                    <tr> 
+                      <td><img src="images/clear.gif" width="115" height="14" alt="spacer"></td>
+                    </tr>
+                  </table>
+                  <!-- <a href="http://giving.rice.edu" target="_blank"><img src="images/rice_nextcent.gif" width="83" height="40" border="0" alt="Rice: The Next Century Campaign" hspace="3"></a><br> -->
+                  <a href="http://www.rice.edu" target="_blank"><img src="images/rice_home.gif" width="75" height="40" border="0" alt="Rice: Home" vspace="10" hspace="3"></a>
+                    <br>
+                    <img src="images/clear.gif" width="115" height="3" alt="spacer"><br>
+                  <p></p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp; </p>
+                  </td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="mainCell" valign="top">&nbsp;</td>
+                <td width="100%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td class="mainCell" valign="top"><img src="images/clear.gif" width="20" height="20"></td>
+                <td width="100%"><p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+<p><font class="mainSmall"><a href="http://medieval.rice.edu" target="_blank"><img src="images/med_studies.gif" width="116" height="116" align="left" border="0"><b>Medieval 
+                    Studies Program</b></a></font></p>
+                  <p><font class="mainSmall">Do castles, cathedrals, crusades, 
+                    and chant stir your imagination? Volunteer with people who 
+                    are passionate about them! The Medieval Studies Workshop operates 
+                    within Rice University's <a href="http://culture.rice.edu/" target="_blank">Humanities Research Center</a> and is responsible for organizing 
+                    and funding speakers, special events, and reading groups on 
+                    topics related to medieval studies. Every three years the 
+                    Workshop also hosts a thematic conference, the Neil J. O'Brien 
+                    Symposium on Medieval Studies. Contact: <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('gXwbagfdkcLt2izUFNHO6U')">Angela 
+                    Wall</a>, 713-348-5784.</font></p>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td colspan="2" valign="top"><font class="mainSmall">Volunteer 
+                        opportunities through the Medieval Studies Program include:</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="97%"><font class="mainSmall">host an off-campus 
+                        dinner the weekend of October 18-19 in honor of Icelandic 
+                        film director Hrafn Gunnlaugsson, who will visit Rice 
+                        to show one or more of his films, which readapt medieval 
+                        sagas;</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="97%"><font class="mainSmall">be a &quot;host 
+                        family&quot; for a visiting scholar;</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="97%"><font class="mainSmall">help with registration 
+                        at an international meeting or conference;</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="97%"><font class="mainSmall">assemble registration 
+                        packets to distribute to conference attendees;</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="97%"><font class="mainSmall">gather local information 
+                        to include in packets given to conference attendees;</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="97%"><font class="mainSmall">provide transportation 
+                        to Houston museums or restaurants during one or more conferences;</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="97%"><font class="mainSmall">if you are involved 
+                        in a local museum, serve as a liaison/docent for conference 
+                        attendees who tour that museum;</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="97%"><font class="mainSmall">provide pro bono 
+                        graphic design or printing of publicity posters and brochures 
+                        for one or more conferences.</font></td>
+                    </tr>
+                  </table>
+                  <p><font class="mainSmall"> </font><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><a href="http://rda.rice.edu" target="_blank"><b>Rice 
+                    Design Alliance</b></a></font></p>
+                  <p><font class="mainSmall">The RDA works to stimulate public 
+                    awareness and discussion of the urban environment through 
+                    seminars, a lecture series, design exhibitions, and an annual 
+                    architectural tour - none of which is possible without the 
+                    work of committed volunteers. &quot;Entry-level&quot; volunteer 
+                    opportunities include serving as a volunteer docent at the 
+                    RDA's annual house tour in the spring; serving on the RDA's 
+                    gala auction committee; and helping set up the day of the 
+                    auction. Active committees include the gala underwriting committee, 
+                    gala auction committee, tour committee, program committee, 
+                    membership committee and Cite editorial committee (professional 
+                    writing skills required for the latter). The RDA is governed 
+                    by a board of directors, also volunteers. Contact: <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('zX3cUwuU2DIa6NMx8WYmDr')">Linda 
+                    Sylvan</a>, 713-348-4876.</font></p>
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><a href="http://ricehistoricalsociety.org/" target="_blank"><img src="images/rice_hist.jpg" width="160" height="96" align="left" border="0"><b>Rice 
+                    Historical Society</b></a><b> (RHS)</b></font></p>
+                  <p><font class="mainSmall">The Rice Historical Society is a 
+                    volunteer organization dedicated to the preservation and promotion 
+                    of the history of Rice University, and draws on its membership 
+                    for various tasks. Standing committees are:</font></p>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td width="2%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="50%"><font class="mainSmall">Archives</font></td>
+                      <td width="1%" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="50%"><font class="mainSmall">Hospitality</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="2%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="50%"><font class="mainSmall">Membership</font></td>
+                      <td width="1%" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="50%"><font class="mainSmall">Newsletter</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="2%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="50%"><font class="mainSmall">Program</font></td>
+                      <td width="1%" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="50%"><font class="mainSmall">Publicity</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="2%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="50%"><font class="mainSmall">Student History</font></td>
+                      <td width="1%" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="50%"><font class="mainSmall">Video Oral History</font></td>
+                    </tr>
+                  </table>
+                  <p><font class="mainSmall">We welcome new memberships into the 
+                    RHS, where there is opportunity to serve on one or more of 
+                    the committees. To get involved write to the RHS <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('f1s0Cd8G2xHacgQY3fNBZM')">by email</a>.</font></p>
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><a href="http://www.ruf.rice.edu/%7Emedia" target="_blank"><b>Rice 
+                    Media Center</b></a></font></p>
+                  <p><font class="mainSmall">As the home of film and photography 
+                    at Rice University, the Rice Media Center seeks to provide 
+                    a channel through which different peoples of the world could 
+                    communicate. The Media Center could use assistance throughout 
+                    the academic year in distributing materials (movie flyers, 
+                    etc.) around town; contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('cqHjjvcrknB9mNl7135VZN')">Rachel 
+                    Boyle</a>, 713-348-4882, to help out. Volunteers are needed 
+                    in the spring semester to assist in set-up for the annual 
+                    student art show. Contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('Z9LNCPb1EcEvlOFndP2FvB')">Jeff 
+                    Fegley</a>, 713-348-3137, for more information.</font></p>
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><a href="http://www.rice.edu/players" target="_blank"><img src="images/rice_players.gif" width="60" height="89" align="left" border="0"><b>Rice 
+                    Players</b></a><b>, Friends of the Rice Players</b></font></p>
+                  <p><font class="mainSmall">The Rice Players welcomes anyone 
+                    with an interest in any aspect of theater - experience not 
+                    required! We need artists, designers, performers, writers, 
+                    people with muscles, and people with math skills. The time 
+                    commitment is flexible: you can devote your whole life . . 
+                    . or just an hour. Please visit our <a href="http://www.ruf.rice.edu/%7Eplayers/recruit_full.htm" target="_blank">Web 
+                    site</a> for specific individuals to contact for various volunteer 
+                    tasks.</font></p>
+                  <p><font class="mainSmall">The Friends of the Rice Players (FoRP) 
+                    is a support group consisting primarily, but not exclusively, 
+                    of former Rice Players interested in supporting the current 
+                    and future work of the Rice Players. Members are encouraged 
+                    to attend Rice Players productions and to contribute to the 
+                    FoRP endowment, which is used to support productions and educational 
+                    opportunities when regular income isn't enough. Volunteer 
+                    leadership is needed to help organize fundraising events, 
+                    allocate funding, organize gatherings of former Rice Players, 
+                    and to help build audiences for the Players. To get involved 
+                    in FoRP contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('7YqFxRYCgVEZancuy2BUBO')">Trish
+                    Rigdon</a>, director of theater for the Rice Players.</font></p>
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><a href="http://scs.rice.edu" target="_blank"><img src="images/scs_logo.gif" width="200" height="71" align="left" border="0"><b>School 
+                    of Continuing Studies</b></a></font></p>
+                  <p><font class="mainSmall">Join a Class Act! Each semester Rice's 
+                    School of Continuing Studies conducts nearly 100 courses, 
+                    most of them in the evening, for thousands of Houstonians 
+                    who come to hear the best of Rice faculty and expert community 
+                    instructors. The School of Continuing Studies needs volunteers 
+                    to welcome students to the Rice campus and help make their 
+                    experience an enjoyable one. You can help support lifelong 
+                    education at Rice and attend interesting classes at the same 
+                    time. Course fees are waived for Continuing Studies alumni 
+                    volunteers.</font></p>
+                  <p><font class="mainSmall">You can attend weekly classes in 
+                    the arts, history, philosophy, psychology, science, math, 
+                    and many other subjects and help assure that classes run smoothly. 
+                    Volunteers agree to attend every class session, typically 
+                    1-2 hours, in the evening or on Saturday for six to ten weeks. 
+                    Most fall classes are scheduled between mid-September and 
+                    mid-November; most spring classes are held between mid-February 
+                    and late April. Duties include:</font></p>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="97%"><font class="mainSmall">greeting students 
+                        at the door</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="97%"><font class="mainSmall">checking names on 
+                        the class roll</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="97%"><font class="mainSmall">distributing instructor 
+                        materials</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="97%"><font class="mainSmall">communicating student 
+                        and instructor feedback to Continuing Studies</font></td>
+                    </tr>
+                  </table>
+                  <p><font class="mainSmall">Plus, you'll enjoy intellectually 
+                    challenging classes you have always wanted to take from your 
+                    favorite professors! This is your opportunity to return to 
+                    the Rice classroom in a relaxed atmosphere and join other 
+                    adults interested in the latest research or issues of the 
+                    day. See the <a href="http://scs.rice.edu" target="_blank">Continuing 
+                    Studies Web site</a> for a listing of current courses. To 
+                    volunteer, email <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('pB4IsybINDZp0uSTAI53LP')">Czolgus 
+                    Evans</a> or call him at 713-348-6109.</font></p>
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><a href="http://www.ruf.rice.edu/%7Emusi/contact/shepherd_society.html" target="_blank"><b>Shepherd 
+                    Society</b></a></font></p>
+                  <p><font class="mainSmall">The Shepherd Society marks its 25th 
+                    anniversary this year, continuing its <br>
+                    vital mission to support the cause of music at Rice University 
+                    and in Houston. Each year the 1200+ members of the Shepherd 
+                    Society provide more than $200,000 in scholarship support 
+                    for the talented young musicians studying at the <a href="http://www.ruf.rice.edu/%7Emusi/index.html">Shepherd 
+                    School of Music</a>. The Shepherd Society is led by a group 
+                    of officers, a governing council, and advisory board - each 
+                    consisting of dedicated volunteers. To get involved in the 
+                    Shepherd Society, contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('8bwfcR0EuCDWdDfOLlwsZb')">Stephanie Jones</a> or submit questions via the Shepherd Society's 
+                    <a href="http://www.ruf.rice.edu/%7Emusi/contact/society.htm" target="_blank">online 
+                    form</a>.</font></p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td><img src="images/clear.gif" width="100" height="5" alt="spacer"></td>
+  </tr>
+  <tr> 
+    <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="15">
+        <tr>
+          <td width="57%"><font class="mainSmall"><a href="#"onClick="SecWin=window.open('contact.html','SecWin','width=260,height=450,toolbar=no,status=yes,resizable=no,scrollbars=yes,location=no,directories=no,menubar=no');return false;">Contact 
+             the Office of Alumni Affairs</a> | <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('dFuDc6BYQoX5nNNobzmYL4')">Send a Comment</a> | <a href="index.html">Home</a></font></td>
+          <td width="43%" align="right"><font class="mainSmall"><a href="http://www.rice.edu/about/cr-notice.html" target="_blank"><script language="JavaScript">
+<!--
+today = new Date()
+cy = today.getFullYear()
+{
+}
+//-->
+</script>
+Copyright &copy;<script language="JavaScript">
+<!--
+document.write(cy)
+{
+}
+//-->
+</script> Rice University</a></font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>

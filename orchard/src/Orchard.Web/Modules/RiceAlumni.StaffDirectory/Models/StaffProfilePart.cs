@@ -54,12 +54,6 @@ namespace RiceAlumni.StaffDirectory.Models
 			}
 		}
 
-		public StaffGroupPart StaffGroupPart
-		{
-			get { return this.As<ICommonPart>().Container.As<StaffGroupPart>(); }
-			set { this.As<ICommonPart>().Container = value; }
-		}
-
 		public virtual string Title { get { return Record.Title; } set { Record.Title = value; } }
 		public virtual string Email { get { return Record.Email; } set { Record.Email = value; } }
 		public virtual string Phone { get { return Record.Phone; } set { Record.Phone = value; } }

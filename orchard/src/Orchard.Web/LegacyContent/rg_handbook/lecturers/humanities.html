@@ -1,0 +1,1146 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="../../styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "http://alumni.rice.edu/images/btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "http://alumni.rice.edu/images/btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=350,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (f.alum.checked == true){
+	f.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (f.rice.checked == true){
+	f.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  f.submit();
+
+}
+
+function getEvents(qry)
+{
+	f.region.value=qry;
+	f.action = "http://alumni.cgi.rice.edu/events/proc_adv_search.php";
+	f.submit();
+	return null;
+}
+
+function checkKey(evt){
+
+	f.search.value=f.q.value;
+	if (evt.keyCode == 13 && f.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+</script>
+</head>
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top">
+          <td width="221" rowspan="2"><a href="../../index.html"><img src="../../images/logo.gif" width="221" height="94" alt="Rice Alumni: Established 1919" border="0"></a><br>
+            <table width="191" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../../images/btn_over_nav.gif'" onMouseOut="this.background='../../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="http://alumni.cgi.rice.edu/events/calendar.php">EVENTS CALENDAR</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../../images/btn_over_nav.gif" align="center" valign="middle"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../../alumni_groups.html">ALUMNI GROUPS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top">&nbsp;</td>
+                <td width="172" align="center" valign="middle"><table width="90%" border="0" cellspacing="3" cellpadding="0">
+                    <tr>
+                      <td width="49%" background="../../images/gray1_bg.gif"  onMouseOver="this.background='../../images/gray2_bg.gif'" onMouseOut="this.background='../../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="../../alumni_groups.html#specialinterest">Special Interest Groups</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="../../images/gray2_bg.gif"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="../../regional_groups.html">Regional Groups</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="../../images/gray1_bg.gif"  onMouseOver="this.background='../../images/gray2_bg.gif'" onMouseOut="this.background='../../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="../../alumni_groups.html#schoolbased">School-Based Groups</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="../../images/gray1_bg.gif"  onMouseOver="this.background='../../images/gray2_bg.gif'" onMouseOut="this.background='../../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="../../grad_deg_alumni.html">Graduate-Degree Alumni</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="../../images/gray1_bg.gif"  onMouseOver="this.background='../../images/gray2_bg.gif'" onMouseOut="this.background='../../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="../../alumni_groups.html#friends">Friends Groups</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../../images/btn_over_nav.gif'" onMouseOut="this.background='../../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../../youngalum_stds.html">YOUNG ALUMNI /STUDENTS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../../images/btn_over_nav.gif'" onMouseOut="this.background='../../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../../career_connection.html">CAREER CONNECTION</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../../images/btn_over_nav.gif'" onMouseOut="this.background='../../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../../volunteer.html">VOLUNTEER</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../../images/btn_over_nav.gif'" onMouseOut="this.background='../../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../../learning_trav.html">LEARNING &amp; TRAVEL</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../../images/btn_over_nav.gif'" onMouseOut="this.background='../../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../../honors_awards.html">HONORS &amp; AWARDS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../../images/btn_over_nav.gif'" onMouseOut="this.background='../../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../../new_at_rice.html">WHAT'S NEW @ RICE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../../images/btn_over_nav.gif'" onMouseOut="this.background='../../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../../about_alumassoc.html">ABOUT THE ARA</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../../images/btn_over_nav.gif'" onMouseOut="this.background='../../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../../faq_file.html">FAQ FILE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../../images/btn_over_nav.gif'" onMouseOut="this.background='../../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="http://giving.rice.edu" target="_blank">GIVE TO RICE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+          <td align="right"><img src="../../images/clear.gif" width="100" height="20"><br>
+            <img src="../../images/subpic_reggrps.jpg" width="526" height="56" ="Photo Of Rice Campus"> </td>
+        </tr>
+        <tr valign="top">
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td colspan="4">&nbsp;</td>
+              </tr>
+              <tr valign="top">
+                <td width="414"><p><img src="../../images/sub_title_reggrps.gif" width="410" height="17" alt="About Alumni Association"></p>
+                  <table class="mainTable" border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tr valign="top">
+                      <td class="mainSmall"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="100%" class="mainSubtitle"><LINK href="../../faq_css.css" type=text/css rel=stylesheet>
+                              <SCRIPT language=JavaScript src="../../faq_navFunctions.js"></SCRIPT>
+                              <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                <TBODY>
+                                  <TR>
+                                    <TD><p class="mainSubtitle"><b>Faculty Lecturers in the Humanities</b></p>
+                                      <!-- START_bolesbio -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_bolesbio>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><a href="javascript:tDisplay('fcrA_bolesbio');"><strong>John Boles '65,</strong></a> History</TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_bolesbio>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p>William P. Hobby Professor of History and managing editor of the <em>Journal of Southern History</em><br>
+                                                <br>
+                                                <em>Scholarly interests: </em> U.S. Southern history and history of Rice University<br>
+                                                  <em>Achievements: </em>written or edited 16 books; many teaching awards; ARA distinguished alumni award<br>
+&nbsp; </p>
+                                              </TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_boles1 -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_boles1>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrA_boles1');">"The Enigma of Thomas Jefferson"</a></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_boles1>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p> Thomas Jefferson was an extraordinarily gifted, energetic, creative, and conflicted person, who at times seems a bundle of contradictions. This lecture will attempt to make sense of this multitalented man, understanding him in terms of the context of his age and evaluating his contribution to American history. As both a slave owner and an eloquent defender of liberty, he embodies the contradictions and promise of this nation.<br>
+&nbsp; </p></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_boles2 -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_boles2>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrA_boles2');">"The Education of a President: Edgar Odell Lovett and the Making of Rice University"</a></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_boles2>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p> The butler did it. Captain Baker to the rescue. Lovett's 'round-the-world adventures during his first year as president. We've all taken the campus tour, seen &quot;The Trust,&quot; or somehow put together enough random bits of Rice lore over the years that we know the Rice story, right? Think again.<br>
+&nbsp; </p></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_costellobio -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_costellobio>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><a href="javascript:tDisplay('fcrA_costellobio');"><strong><br>
+                                                Leo Costello,</strong></a> Art History</TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_costellobio>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p>Assistant professor of art history<br>
+                                                <br>
+                                                <em>Scholarly interests: </em>European art<br>
+                                                &nbsp;</p>
+                                              </TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_costello1 -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_costello1>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrA_costello1');">"Monet and the Impressionists at Argenteuil"</a></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_costello1>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p>The Parisian suburb of Argenteuil has secured a place in art history as perhaps the single most important site of Impressionism. It was here during the 1870s that Claude Monet and his colleagues came to artistic and professional maturity, creating some of the most enduring masterpieces of the Impressionist movement. This lecture will explore the pictorial, personal, and historical significance of this site. In particular, we will look at the work of Monet, noting the importance of Argenteuil as a varied motif for his work and a stable base for his personal and professional aspirations.<br>
+&nbsp; </p></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_emdenbio -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_emdenbio>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><a href="javascript:tDisplay('fcrA_emdenbio');"><strong><br>
+                                                Christian J. Emden,</strong></a> German</TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_emdenbio>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p>Assistant professor of German; co-director of Focus Europe, a new undergraduate program, and Changing Perspectives of the Public Sphere, a two-year collaboration between the Rice School of Humanities and the University of Cambridge.<br>
+                                                <br>
+                                                <em>Scholarly interests:</em> German intellectual history<br>
+&nbsp;</p>
+                                              </TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_emden1 -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_emden1>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrA_emden1');">"War, Morality, and Modernity"</a></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_emden1>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p> While much recent discussion about the nature of war is limited to questions concerned with public policy, it is often forgotten that &mdash; especially in the European tradition &mdash; thinking about war is also part of wider cultural and intellectual processes on the path to modernity. This lecture will focus on the changes that the cultural perception and intellectual discussion of war and organized violence have undergone, drawing on both political philosophy and media studies.<br>
+&nbsp;</p></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_henzebio -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_henzebio>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><a href="javascript:tDisplay('fcrA_henzebio');"><strong><br>
+                                                Matthias Henze,</strong></a> Religious Studies</TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_henzebio>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p>Watt J. and Illy G. Jackson Assistant Professor of Biblical Studies<br>
+                                                <br>
+                                                <em>Scholarly interests: </em>Hebrew Bible and the history of biblical interpretation, Dead Seas scrolls, early Syriac literature, apocalyptic literature, biblical theology<br>
+                                                <em>Achievements: </em>Phi Beta Kappa Teaching Prize (2003)<br>
+&nbsp;</p>
+                                              </TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_henze1 -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_henze1>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrA_henze1');">"The Gospel of Thomas, the Gospel of Luke and the Beginnings of Christian Historiography"</a></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_henze1>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p>How did early Christians remember Jesus? Whereas the <em>Gospel of Thomas</em> is a collection of sayings of Jesus with no narrative context, the author of the <em>Gospel of Luke</em> composes a biographical account of the life, death and resurrection of Jesus.<br>
+&nbsp; </p></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_henze2 -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_henze2>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><li><!--<a href="javascript:tDisplay('fcrA_henze2');">-->"Apocalypticism in the Dead Sea Scrolls and the New Testament"<!--</a>--></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!--<DIV class=faqAnswer id=fcrA_henze2>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p><br>
+&nbsp; </p></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>-->
+                                      <!-- END -->
+                                      <!-- START_hustonbio -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_hustonbio>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><a href="javascript:tDisplay('fcrA_hustonbio');"><strong><br>
+                                                J. Dennis Huston,</strong></a> English</TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_hustonbio>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p>Professor of English<br>
+                                                <br>
+                                                <em>Scholarly interests: </em>Shakespeare, drama, public speaking, film<br>
+                                                <em>Achievements: </em>numerous teaching prizes at Rice; state of Texas as a Minnie Stevens Piper Professor (2002); Council for Advancement and Support of Education and the Carnegie Foundation National Professor of the Year (1989-1990).<br>
+&nbsp;</p>
+                                              </TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_huston1 -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_huston1>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrA_huston1');">"Movies: The Language of Film"</a></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_huston1>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p> Drawing from films as different as <em>My Fair Lady, Romeo and Juliet, The Third Man, Dirty Dancing, Hamlet, Witness, The Graduate, </em>and <em>Crimson Tide,</em> Professor Huston will talk about the way directors use the many elements of film to convey meaning. He will show clips from movies and talk about the way costumes, makeup, camera angles, blocking, focus, set, cutting, lighting, and color suggest thematic meaning, often at a subconscious level, to an audience watching these films.<br>
+&nbsp; </p></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_huston2 -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_huston2>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrA_huston2');">"Detective Fiction: English vs. American"</a></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_huston2>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p>This lecture will delve into the darkness and complexity of American detective fiction in contrast to its more formal English cousin.<br>
+&nbsp; </p></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_matusowbio -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_matusowbio>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><a href="javascript:tDisplay('fcrA_matusowbio');"><strong><br>
+                                                Allen Matusow,</strong></a> History</TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_matusowbio>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p> William Gaines Twyman Professor of History; associate director for academic programs at the Baker Institute<br>
+                                                <br>
+                                                <em>Scholarly interests: </em> Foreign policy of Nixon and Kissinger; post World War II American foreign policy and U.S. history 1945-1974                                                <br>
+                                                <em> Achievements: </em> Dean of humanities 1981-1995; several teaching awards                                                <br>
+&nbsp;</p>
+                                              </TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_matusow1 -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_matusow1>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrA_matusow1');">"Did Reagan Win the Cold War?"</a></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_matusow1>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p> The most astonishing event of the post-World War II Era was the sudden end of the Cold War. In 1983 President Ronald Reagan, in the midst of the largest military build-up in peacetime American history, called the Soviet Union &quot;the evil empire.&quot; In 1988, during his summit meeting in Moscow with Mikhail Gorbachev, Reagan said of his remark, &quot;I was talking about another time, another era.&quot; This lecture will try to assess Reagan's policies during the 1980s to answer this question: Did he force the end of the evil empire?<br>
+&nbsp;</p></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_morrisbio -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_morrisbio>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><a href="javascript:tDisplay('fcrA_morrisbio');"><strong><br>
+                                                Wesley Morris,</strong></a> English</TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_morrisbio>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p> Professor of English, Hanszen master<br>
+                                                <br>
+                                                <em>Scholarly interests: </em>Twentieth-century literary theory; William Faulkner<br>
+                                                  <em>Achievements: </em>Former department chair<br>
+&nbsp;</p>
+                                              </TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_morris1 -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_morris1>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrA_morris1');">"Breaking the Frame: The Story of Three Postmodern Pigs"</a></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_morris1>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p>There are more than seventy-five version of <em>The Three Little Pigs</em> available today, but are they all alike? What if the three pigs broke free of their story and wandered into other tales? Would they still be the same little pigs? Would the story be the same story so many of us know and love? This class will provide answers to these questions by looking at David Wiesner's prize-winning book, <em>The Three Pigs</em>.<br>
+&nbsp;</p></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_ostherrbio -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_ostherrbio>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><a href="javascript:tDisplay('fcrA_ostherrbio');"><strong><br>
+                                                Kirsten Ostherr,</strong></a> English</TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_ostherrbio>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p>Assistant professor in English, Scientia lecturer<br>
+                                                <br>
+                                                <em>Scholarly interests: </em>documentary and educational film; gender and racial representation; censorship; film and political movements; new media; global media cultures; public health<br>
+                                                <em>Achievements: </em>Invited to speak to the United Nations in Geneva on &quot;Visual Media in the Pursuit of World Health&quot;<br>
+&nbsp;</p>
+                                              </TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_ostherr1 -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_ostherr1>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><li><!--<a href="javascript:tDisplay('fcrA_ostherr1');">-->"Violence in the Mass Media"<!--</a>--></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!--<DIV class=faqAnswer id=fcrA_ostherr1>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p><br>
+&nbsp; </p></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>-->
+                                      <!-- END -->
+                                      <!-- START_ostherr2 -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_ostherr2>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><li><!--<a href="javascript:tDisplay('fcrA_ostherr2');">-->"Motion Pictures, Medicine, and Methodology"<!--</a>--></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!--<DIV class=faqAnswer id=fcrA_ostherr2>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p><br>
+&nbsp; </p></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>-->
+                                      <!-- END -->
+                                      <!-- START_ostherr3 -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_ostherr3>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><li><!--<a href="javascript:tDisplay('fcrA_ostherr3');">-->"Bioterrorism/Biotelevision"<!--</a>--></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!--<DIV class=faqAnswer id=fcrA_ostherr3>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p><br>
+&nbsp; </p></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>-->
+                                      <!-- END -->
+                                      <!-- START_pinnbio -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_pinnbio>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><a href="javascript:tDisplay('fcrA_pinnbio');"><strong><br>
+                                                Anthony Pinn,</strong></a> Humanities, Religious Studies</TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_pinnbio>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p> Agnes Cullen Arnold Professor of the Humanities; professor of religious studies<br>
+                                                <br>
+                                                <em>Scholarly interests: </em>liberation theologies, African American religious thought, religion and popular culture, and African American humanism<br>
+&nbsp;</p>
+                                              </TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_pinn1 -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_pinn1>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrA_pinn1');">"Malcolm X and the Nation of Islam"</a></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_pinn1>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p> Any discussion of the Nation of Islam will turn to its most well-known leader, Malcolm X. His efforts and ministry transformed the Nation of Islam and greatly expanded its prominence. This class will survey the history and theology of the Nation of Islam and trace its development, focusing on the work of Malcolm X.<br>
+&nbsp;</p></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_quenemoenbio -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_quenemoenbio>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><a href="javascript:tDisplay('fcrA_quenemoenbio');"><strong><br>
+                                                Caroline Quenemoen,</strong></a> Art History</TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_quenemoenbio>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p> Assistant professor of art history<br>
+                                                <br>
+                                                <em>Scholarly interests: </em>Roman art and architecture of the late republic and Augustan periods<br>
+&nbsp;</p>
+                                              </TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_quenemoen1 -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_quenemoen1>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrA_quenemoen1');">"Rethinking the Pantheon"</a></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_quenemoen1>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p>The 2,000-year-old Pantheon stands as a testament to the brilliance of Roman concrete technology. Despite the building's iconic status in Western architecture, it remains the most misunderstood monuments of antiquity. This lecture will reveal that the Pantheon was not a temple to all the gods, as its name implies, and that it was not a design failure, as artists and scholars since the Renaissance have argued.<br>
+&nbsp;</p></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_quillenbio -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_quillenbio>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><a href="javascript:tDisplay('fcrA_quillenbio');"><strong><br>
+                                                Carol Quillen,</strong></a> History</TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_quillenbio>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p> Associate professor of history, vice-provost for academic affairs, and director of Rice's Boniuk Center for the Study and Advancement of Religious Tolerance.<br>
+                                                <br>
+                                                <em>Scholarly interests:</em><strong></strong> European humanism and feminist political theory.<br>
+                                                  <em>Achievements:</em><strong></strong> George R. Brown Award for Superior Teaching (3 times)<br>
+&nbsp;</p>
+                                              </TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_quillen1 -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_quillen1>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrA_quillen1');">"In Defense of Tolerance: The Mission of the Boniuk Center"</a></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_quillen1>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p> Tolerance as an ideal finds few strong advocates. Those who value religious diversity argue that we should delight in and learn from our differences, rather than simply tolerate them. For others, tolerance means condoning acts they know to be wrong or beliefs they know to be false. This lecture will explore how a rich understanding of and an active commitment to tolerance can foster peaceful co-existence among persons of profoundly different religious backgrounds.<br>
+&nbsp;</p></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_wildenthalbio -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_wildenthalbio>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><a href="javascript:tDisplay('fcrA_wildenthalbio');"><strong><br>
+                                                Lori Wildenthal '87,</strong></a> History</TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_wildenthalbio>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p> Associate professor of history<br>
+                                                <br>
+                                                <em>Scholarly interests:</em> human rights<br>
+                                                &nbsp;</p>
+                                                </TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_wildenthal1 -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_wildenthal1>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrA_wildenthal1');">"Torture in Historical Perspective"</a></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_wildenthal1>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p>This lecture will discuss how the place of torture in the European legal system has changed through the years and then focus on the distinctive nature of state-sponsored torture in the twentieth and twenty-first centuries worldwide.<br>
+&nbsp;</p></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+                                      <!-- START_wildenthal2 -->
+                                      <DIV class=faqQuestion id=fcrHead></DIV>
+                                      <DIV class=faqQuestion id=fcrQ_wildenthal2>
+                                        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrA_wildenthal2');">"What are 'Human Rights'?"</a></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <DIV class=faqAnswer id=fcrA_wildenthal2>
+                                        <TABLE cellSpacing=0 cellPadding=2 width="100%" border=0>
+                                          <TBODY>
+                                            <TR>
+                                              <TD vAlign="top"><img src="../../images/clear.gif" height="13" width="12" border="0"></TD>
+                                              <TD class="mainSmall" width="100%"><p> The language of international human rights has become ever more prominent since the Second World War &ndash; and especially so in recent years. This lecture will offer an introduction to the historical setting in which that language emerged, a discussion of the helpful and problematic aspects of describing situations in terms of human rights and a sketch of recent debates over expanding human rights norms to address not only individuals but also groups other than nation states.<br>
+&nbsp;</p></TD>
+                                            </TR>
+                                          </TBODY>
+                                        </TABLE>
+                                      </DIV>
+                                      <!-- END -->
+									  
+									  
+									  
+									  
+                                  <tr>
+                                    <td class="mainSmall"><p><br>
+                                      </p></td>
+                                  </tr>
+                              </table></TD>
+                          </TR>
+                        </TABLE>
+                        <p class="mainSubtitle">&nbsp;</p>
+                        <p class="mainSmall">&nbsp;</p></td>
+                    </tr>
+                  </table></td>
+                <td width="1" background="../../images/dots_bg.gif"><img src="../../images/clear.gif" width="1" height="50"></td>
+                <td width="10"><img src="../../images/clear.gif" width="10" height="50"></td>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><form id="srch" method=GET action="" onSubmit="doSearch();">
+                          <input type="hidden" value="web" name="tab">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td colspan="4"><input type=text name=q size=15 maxlength=255 value="" onChange="srch.search.value=this.value;" class="formSmall">
+                                <span id="spn" style="background-image: url(../../images/btn_go_new.gif);width:19;height:14" onClick="doSearch()" />
+                                <input type="hidden" name="hidden_site" value="alumni.rice.edu">
+                                <input type="hidden" name="search" value="">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td width="10"><input id="alum" type="radio" name="sitesearch" value="alumni.rice.edu" checked>
+                              </td>
+                              <td width="85"><font class="mainSmalldark">Search this site</font></td>
+                            </tr>
+                            <tr>
+                              <td width="10" align="right"><input id="rice" type="radio" name="sitesearch" value="www.rice.edu">
+                              </td>
+                              <td width="85"><font class="mainSmalldark">Search rice.edu</font></td>
+                            </tr>
+                          </table>
+                        </form></td>
+                    </tr>
+                    <tr>
+                      <td><img src="../../images/clear.gif" width="115" height="20" alt="spacer"></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://online.alumni.rice.edu/default.asp"><img src="../../images/title_onlinesvcs.gif" width="115" height="9" alt="Online Services" border="0"></a></td>
+                    </tr>
+                    <tr>
+                      <td><table width="100%" border="0" cellspacing="3" cellpadding="0">
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/events/calendar.php" title="Events calendar and online registration">Find Events/RSVP</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/detailsearch.asp" title="Search the directory of Rice alumni">Alumni Directory</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/profile.asp" title="Update your directory information">Update Address</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Online/emailforwarding/eforwarding.asp" title="Manage or create an alumni.rice.edu account">Email Forwarding</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Career/default.asp" title="Connect with alums in your career field">Career Network</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/bizfinder/" title="Find or promote alumni-owned businesses">Business Finder</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="http://alumni.rice.edu/submit_note.html" title="Get your latest news into the Owlmanac">Submit Classnote</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/library.asp" title="Access research tools and periodicals">Digital Library</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td><img src="../../images/clear.gif" width="115" height="14" alt="spacer"></td>
+                    </tr>
+                  </table>
+                  <!-- <a href="http://giving.rice.edu" target="_blank"><img src="../images/rice_nextcent.gif" width="83" height="40" border="0" alt="Rice: The Next Century Campaign" hspace="3"></a><br> -->
+                  <a href="http://www.rice.edu" target="_blank"><img src="../../images/rice_home.gif" width="75" height="40" border="0" alt="Rice: Home" vspace="10" hspace="3"></a> <br>
+                  <img src="../../images/clear.gif" width="115" height="3" alt="spacer"><br>
+                  <p></p></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td><img src="../../images/clear.gif" width="100" height="5" alt="spacer"></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="15">
+        <tr>
+          <td width="57%"><font class="mainSmall"><a href="#"onClick="SecWin=window.open('../contact.html','SecWin','width=260,height=450,toolbar=no,status=yes,resizable=no,scrollbars=yes,location=no,directories=no,menubar=no');return false;">Contact the Office of Alumni Affairs</a> | <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('dFuDc6BYQoX5nNNobzmYL4')">Send a Comment</a> | <a href="../../index.html">Home</a></font></td>
+          <td width="43%" align="right"><font class="mainSmall"><a href="http://www.rice.edu/about/cr-notice.html" target="_blank">
+            <script language="JavaScript">
+<!--
+today = new Date()
+cy = today.getFullYear()
+{
+}
+//-->
+</script>
+            Copyright &copy;
+            <script language="JavaScript">
+<!--
+document.write(cy)
+{
+}
+//-->
+</script>
+            Rice University</a></font></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>

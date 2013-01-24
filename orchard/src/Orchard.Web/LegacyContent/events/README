@@ -1,0 +1,17 @@
+The subdirectories in this directory are the home
+directories for the various regional Alumni groups.
+
+The directory, /home/cwis/www/alumni/events, is linked
+to the directory, /home/alumni/events, so that the 
+content stored in the subdirectories is available on
+the web.
+
+The reason that we do the link and not store these
+directories directly under the cwis directory is that
+.forward files do not work if any directory above
+the home directory are group writable.  This format
+assures that they are not.
+
+Questions or comments can be forwarded to Dean Lane,
+dlane@rice.edu.
+

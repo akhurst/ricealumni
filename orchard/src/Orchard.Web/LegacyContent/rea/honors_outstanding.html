@@ -1,0 +1,541 @@
+<html>
+<head>
+<title>Rice University || Rice Engineering Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="../styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "../images/btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "../images/btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=350,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (srch.alum.checked == true){
+	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (srch.rice.checked == true){
+	srch.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  srch.submit();
+
+}
+
+function checkKey(evt){
+
+	srch.search.value=srch.q.value;
+	if (evt.keyCode == 13 && srch.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top">
+          <td width="221" rowspan="2"><a href="../index.html"><img src="../images/logo.gif" width="221" height="94" alt="Association of Rice Alumni" border="0"></a><br>
+            <table width="191" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="http://alumni.cgi.rice.edu/events/calendar.php">EVENTS 
+                        CALENDAR</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_over_nav.gif" align="center" valign="middle"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="navOver"><a href="../alumni_groups.html">ALUMNI 
+                        GROUPS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top">&nbsp;</td>
+                <td width="172" align="center" valign="middle"><table width="90%" border="0" cellspacing="3" cellpadding="0">
+                    <tr>
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="../alumni_groups.html#specialinterest">Special 
+                              Interest Groups</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="../regional_groups.html">Regional 
+                              Groups</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="../alumni_groups.html#schoolbased">School-Based 
+                              Groups</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="../grad_deg_alumni.html">Graduate-Degree 
+                              Alumni</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="../alumni_groups.html#friends">Friends 
+                              Groups</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../youngalum_stds.html">YOUNG 
+                        ALUMNI /STUDENTS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../career_connection.html">CAREER 
+                        CONNECTION</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../volunteer.html">VOLUNTEER</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../learning_trav.html">LEARNING 
+                        &amp; TRAVEL</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../honors_awards.html">HONORS 
+                        &amp; AWARDS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../new_at_rice.html">WHAT'S 
+                        NEW @ RICE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../about_alumassoc.html">ABOUT 
+                        THE ARA</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../faq_file.html">FAQ 
+                        FILE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='../images/btn_over_nav.gif'" onMouseOut="this.background='../images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="http://giving.rice.edu" target="_blank">GIVE 
+                        TO RICE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+          <td align="right"><img src="../images/clear.gif" width="100" height="20"><br>
+            <img src="../images/sub_rea.jpg" width="526" height="56" ="Group of young women sitting and talking"></td>
+        </tr>
+        <tr valign="top">
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td colspan="4">&nbsp;</td>
+              </tr>
+              <tr valign="top">
+                <td width="414"><p><img src="../images/sub_title_rea.png" width="410" height="30" alt="Rice Engineering Alumni"></p>
+                  <table border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tr valign="top">
+                      <td class="mainSmall"><p class="mainSubtitle"><strong>REA Honors:  Outstanding Engineering Alumni </strong><strong> </strong></p>
+                        <p><strong>Overview</strong></p>
+                        <p>The George R. Brown School of Engineering recognizes exemplary engineering alumni in threeprincipal categories: </p>
+                        <ul>
+                          <li>	The <strong>Outstanding Engineering Alumnus</strong> award, established in 1974, recognizes Rice engineering alumni for careers of outstanding professional achievement and service. <br>
+                           </li>
+                          <li> The <strong>Outstanding Young Engineering Alumnus</strong> award, established in 1996, recognizes the achievements of Rice engineering alumni under the age of 40. <br>
+                           </li>
+                          <li> The <strong>Distinguished Service Medal</strong>, established in 2012, recognizes Rice engineering alumni for extraordinary service to the School of Engineering and its alumni community.  This award need not be given every year. </li>
+                        </ul>
+                        <p>                          The Alumni Honors program is administered on behalf of the School by the REA Board of Directors, through its Alumni Honors Committee. </p>
+                        <p><strong>Presentation of Awards</strong></p>
+                        <p>                          2012 Alumni Honors Presentation<br>
+                          Friday, October 12<br>
+                          4:00 pm<br>
+                        McMurtry Auditorium, Duncan Hall. </p>
+                        <p>Followed by<br>
+                          Engineering Centennial Reception<br>
+                          4:30 to 6:30 pm<br>
+                        Duncan Hall</p>
+                        <p>                          The Alumni Honors Presentation typically takes place the Friday afternoon of Rice Homecoming, with a reception following.In addition to receiving the award, each honoree gives a 5-10 minute talk on his or her work or career.  Past honorees whoare in attendance are also recognized at this ceremony.</p>
+                        <p>                          The 2012 Alumni Honors Presentation and Engineering Reunion are part of Rice&rsquo;s Homecoming and Centennial Celebration.  Please visit <a href="http://www.ruf.rice.edu/~events/homecoming/schedule.html"><strong>their site</strong></a> for the complete weekend schedule.</p>
+<p><strong>Nominations for Alumni Honors</strong></p>
+                        <p>All members of the Rice community are encouraged to nominate deserving individuals for these honors. Nominations are actively solicited from previous honorees, School of Engineering faculty and the engineering community and are welcome from any other interested parties. A nomination should include a work history or <em>curriculum vitae</em> of the nominee along with any additional information the nominating party considers relevant. No particular nomination form is required. </p>
+                        <p>                          The Alumni Honors Committee accepts applications continuously; reviews applications December through March of each year; and presents its recommendations to the REA Board of Directors in April. A prospective honoree must be able to attend the Alumni Honors Presentation in order to receive the award.</p>
+                        <p> To  submit a nomination or for more information, please contact the <strong><a href="leadership.html#cmte">Alumni Honors Chair</a></strong>. </p>
+                        <p><strong>2012 Honorees</strong></p>
+                        <p><strong>Outstanding Engineering Alumnus:</strong></p>
+                        <blockquote>
+                          <p>                          <strong>N. Wayne Hale Jr.</strong><br>
+                            BSME 1976<br>
+                            MS Purdue University<br>
+                            <em>Space Shuttle Program Manager and Deputy Associate Administrator of NASA</em></p>
+                        </blockquote>
+                        <p>                          Wayne Hale is honored for his distinguished career at NASA in manned spaceflight operations.  Since joining the agency at Johnson Space Center in 1978, Hale has worked in nearly every aspect of flight operations, from propulsion officer on the earliest Space Shuttle flights to Flight Director of forty-one shuttle missions.  In 2003, he moved to Kennedy Space Center to become the Shuttle Launch Integration Manager &ndash; just before the tragic re-entry accident that claimed the shuttle Columbia.  In the aftermath of the accident investigation, Hale was named deputy program manager and then manager of the renewed Space Shuttle program.  It was in this role that Hale achieved his proudest professional accomplishment:  helping to bring about a change in culture at NASA to create a stronger focus on safety.  As one member of the investigative board later wrote, &ldquo;Hale had the experience, the attitude, and the reputation for doing the right thing that NASA needed for the shuttle. . . . He&rsquo;s one of the good guys.&rdquo;  In 2010, Hale retired from NASA as Deputy Associate Administrator of Strategic Partnerships in the Space Operations Mission Directorate.  He has received many of the agency&rsquo;s highest professional honors, including the NASA Leadership Medal (three times), NASA Exceptional Service Medal (1992) and NASA Space Flight Awareness Leadership Award (2002).  In 2007, the space community accorded Hale a distinctive double honor:  he was named the Goddard Memorial Astronautics Engineer of the Year by the National Space Club and received the National Air and Space Museum&rsquo;s Achievement of the Year Award.</p>
+                        <p><strong>                          Outstanding Young Engineering Alumnus: </strong></p>
+                        <blockquote>
+                          <p>                          <strong>Troy Thacker</strong><br>
+                            BSChE 1995<br>
+                            MBA Harvard University<br>
+                            <em>Founder and CEO of R360 Environmental Solutions</em></p>
+                        </blockquote>
+                        <p>                          Over the past 17 years, Troy Thacker has achieved tremendous success as a discerning investor and &ldquo;serial builder&rdquo; of businesses in the environmental and energy sectors.  After working as an analyst in the power and energy industries for Morgan Stanley &amp; Co., Thacker moved into private equity with the energy-focused firm SCF Partners.  He was a founding partner of Paine &amp; Partners, a global private equity firm that together with its predecessors, manages approximately $3 billion in equity capital.  In 2010, seeing both a market and societal need and an intriguing professional opportunity, Thacker left the finance arena to found and run R360 Environmental Solutions, the nation&rsquo;s leading provider of recycling, treatment and disposal solutions for oilfield waste management. </p>
+                        <p><strong>                        Distinguished Service Medal:</strong></p>
+                        <blockquote>
+                          <p>                        <strong>J. Bartlett&ldquo;Bart&rdquo; Sinclair</strong><br>
+                            BSEE 1973<br>
+                            MEE 1974<br>
+                            PhD 1978<br>
+                            <em>Professor of Electrical Engineering and Associate Dean of Engineering at Rice University</em></p>
+                        </blockquote>
+                        <p>                          Bart Sinclair has devoted his entire career to Rice Engineering, entering as a freshman in 1969, earning all of his degrees at Rice, and joining the faculty in 1978, immediately after completing his Ph.D.  Since 2000, he has served as Associate Dean of Engineering, with primary responsibility for academic affairs, faculty recruitment and administration.  We honor him principally for his tireless dedication to his fellow alumni.  The stated mission of REA is to foster collaboration and lifelong connections between alumni and the School of Engineering.  In many ways, Dr. Sinclair has made this his personal mission as well &ndash; a mission that he fulfills constantly, not only through REA but also by working with the Engineering Development team, through his own personal contacts with alumni, and as keeper of much of the School&rsquo;s institutional memory.  As liaison and wise counselor to REA&rsquo;s Board of Directors, Dr. Sinclair has been instrumental in guiding the School&rsquo;s Alumni Honors program and has been an indispensable facilitator of REA&rsquo;s scholarship program and spring picnic, which has grown into the School of Engineering end-of-year celebration.  It is fitting that the first Distinguished Service Medal be presented to Dr. Bart Sinclair. </p>
+                        <p><strong>Complete List of  Honorees</strong><br />
+                          <strong>Outstanding  Engineering Alumni</strong><br />
+                          <br />
+ 2012&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; N. Wayne Hale &rsquo;76<br>
+2011      R. Norris Keeler &rsquo;51<br />
+                          2010      Lynn Laverty Elsenhans &rsquo;78<br />
+                          <br />
+                          2009      Wanda Sigur &rsquo;79<br />
+                          2008      Charles J. Newell &rsquo;78, &rsquo;80, &rsquo;89<br />
+                          2007      Richard Massey &rsquo;53, &rsquo;54<br />
+                          2006      Hector Ruiz &rsquo;73<br />
+                          2005      Pat H. Moore &rsquo;52<br />
+                          2004      Stephen J. Sheafor &rsquo;72 <br />
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;John R. Treichler &rsquo;69<br />
+                          2003      William N. Sick &rsquo;57<br />
+                          2002      Richard Bost &rsquo;76, &rsquo;78<br />
+                          2001      Sidney Burrus &rsquo;57, &rsquo;58, &rsquo;60<br />
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Philip Glynn &rsquo;59<br />
+                          2000      Fred Russell &rsquo;57<br />
+                          <br />
+                          1999      Robert R. Maxfield &rsquo;63<br />
+                          1998      Patsy Chappelear &rsquo;53<br />
+                          1997      Joseph Reilly &rsquo;48<br />
+                          1996      Terry Koonce &rsquo;60, &rsquo;64<br />
+                          1995      Orville D. Gaither &rsquo;49<br />
+                          1994      Kenneth E. Jones &rsquo;33<br />
+                          1993      Burton J. McMurtry &rsquo;57<br />
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M. Kenneth Oshman &rsquo;62<br />
+                          1992      W. Bernard &quot;Ber&quot; Pieper &rsquo;54<br />
+                          1991      Walter P. Moore Jr. &rsquo;60<br />
+                          1990      Griff Lee &rsquo;51<br />
+                          <br />
+                          1989      George Miner &rsquo;50<br />
+                          1988      Patrick Conley &rsquo;42<br />
+                          1987      I.A. Naman &rsquo;38<br />
+                          1986      Charles S. Matthews &rsquo;41, &rsquo;43, &rsquo;44<br />
+                          1985      Riki Kobayashi &rsquo;44<br />
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Warren E. White &rsquo;57<br />
+                          1984      Louis D. Spaw Jr. &rsquo;40<br />
+                          1983      Alan J. Chapman &rsquo;45<br />
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;James R. Sims &rsquo;41<br />
+                          1982      Lewis A. Waters &rsquo;60<br />
+                          1981      David E. Farnsworth &rsquo;42<br />
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;John G. Holland &rsquo;30<br />
+                          1980      Jennings A. Massingill &rsquo;42<br />
+                          <br />
+                          1979      David L. Rooke &rsquo;44<br />
+                          1978      Ernest Dell Butcher &rsquo;34<br />
+                          1977      Stanley C. Moore &rsquo;37<br />
+                          1976      Walter P. Moore Sr. &rsquo;27<br />
+                          1975      Herbert Allen &rsquo;29<br />
+                          1974      George R. Brown &rsquo;20</p>
+                        <p><strong>Outstanding Young Engineering Alumni</strong><br />
+                          <br />
+                          2012&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Troy Thacker &rsquo;95<br>
+                          2011      Aaron Hertzmann &rsquo;96<br />
+                          2010      Justin Romberg &rsquo;97, &rsquo;99, &rsquo;04<br />
+                          <br />
+                          2009      Christof Spieler &rsquo;97, &rsquo;99 <br />
+                          2008      Parthasarathy Ranganathan &rsquo;97, &rsquo;01<br />
+                          2007      Chaitali Sengupta &rsquo;95, &rsquo;99 <br />
+                          2006      J. Patrick Frantz &rsquo;97 <br />
+                          2005      Timothy R. Dehne &rsquo;87<br />
+                          2004      Theodora Overfelt Pounds &rsquo;96 <br />
+                          2003      John D. Miner &rsquo;88<br />
+                          2002      Eric Sachs &rsquo;93<br />
+                          2001      Donald Greive &rsquo;84<br />
+                          2000      Lawrence Ciscon &rsquo;88, &rsquo;90, &rsquo;93<br />
+                          <br />
+                          1999      J.D. Sitton III &rsquo;85<br />
+                          1998      Al Hirshberg &rsquo;82, 83<br />
+                          1997      Matthew Barry &rsquo;84, &rsquo;85, &rsquo;92, &rsquo;02<br />
+                          1996      William H. White &rsquo;85</p>
+                        <p><strong>Distinguished Service Medal</strong></p>
+                        <p>2012&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; J. Bartlett Sinclair &rsquo;73, &rsquo;74, &rsquo;78<br>
+                        </p></td>
+                    </tr>
+                  </table></td>
+                <td width="1" background="../images/dots_bg.gif"><img src="../images/clear.gif" width="1" height="50"></td>
+                <td width="10"><img src="../images/clear.gif" width="10" height="50"></td>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><img src="../images/clear.gif" width="115" height="10" alt="spacer"></td>
+                    </tr>
+                    <tr>
+                      <td><img src="../images/title_realinks.png" width="115" height="20" alt="REA Links"></td>
+                    </tr>
+                    <tr>
+                      <td><table width="100%" border="0" cellspacing="3" cellpadding="0">
+                        <tr>
+                          <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="index.html">REA Home</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="events.html">REA Events</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="stayintouch.html">Stay in Touch</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="leadership.html">REA Leadership</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'" height="8"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="scholarship.html">Scholarship Program</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="spgp.html">Student Project Grant Program</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="mentoring.html">Education &amp; Mentoring</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="honors_recognition.html">REA Honors: Recognition Program</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="honors_outstanding.html">REA Honors: Outstanding Engineering Alumni</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="austin.html">REA Austin</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="support.html">Support REA</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="http://engr.rice.edu/">George R. Brown School of Engineering</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='../images/gray2_bg.gif'" onMouseOut="this.background='../images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                              <td><font class="mainSmalldark"><a href="../index.html">ARA Home</a></font></td>
+                            </tr>
+                          </table></td>
+                        </tr>
+                      </table></td>
+                    </tr>
+                    <tr>
+                      <td><img src="../images/clear.gif" width="115" height="14" alt="spacer"></td>
+                    </tr>
+                    <tr>
+                      <td><img src="../images/clear.gif" width="100" height="8" alt="spacer"></td>
+                    </tr>
+                  </table>
+                  
+                  <!-- <a href="http://giving.rice.edu" target="_blank"><img src="../images/rice_nextcent.gif" width="83" height="40" border="0" alt="Rice: The Next Century Campaign" hspace="3"></a><br> --> 
+                  <a href="http://www.rice.edu" target="_blank"><img src="../images/rice_home.gif" width="75" height="40" border="0" alt="Rice: Home" vspace="10" hspace="3"></a></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td><img src="../images/clear.gif" width="100" height="5" alt="spacer"></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="15">
+        <tr>
+          <td width="57%"><font class="mainSmall"><a href="#"onClick="SecWin=window.open('../contact.html','SecWin','width=260,height=450,toolbar=no,status=yes,resizable=no,scrollbars=yes,location=no,directories=no,menubar=no');return false;">Contact 
+            the Office of Alumni Affairs</a> | <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('DjxlMPhaZYXRcnxAamtqrg')">Email 
+            the REA</a> | <a href="../index.html">Home</a></font></td>
+          <td width="43%" align="right"><font class="mainSmall"> 
+            <script language="JavaScript">
+<!--
+today = new Date()
+cy = today.getFullYear()
+{
+}
+//-->
+</script> 
+            Copyright &copy; 
+            <script language="JavaScript">
+<!--
+document.write(cy)
+{
+}
+//-->
+</script> 
+            Rice University</font></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script> 
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+  <title>GIFs on the fly
+ </title>
+  <link rev="made" href="mailto:gleeson@unimelb.edu.au">
+  <meta name="description"
+     content="How to use fly.">
+
+  <meta name="robots"
+     content="nofollow">
+</head>
+ <body bgcolor="#FFFFFF">
+ <!-- ===================================================================== -->
+ <hr size="2" noshade>
+ <table border="0" width="100%" cellpadding="5" cellspacing="3">
+  <tr align="center" valign="middle">
+   <td><h1>fly: Documentation: Using fly</h1>
+  </td>
+   <td><a href="http://www.unimelb.edu.au/fly/"><img
+       src="fly-logo.gif" border="0" hspace="5" vspace="5"
+       alt=" [fly] " width="157" height="52"></a>
+  </td>
+ </tr>
+</table>
+ <!-- ===================================================================== -->
+ <hr size="2" noshade>
+<H2>Table of Contents</H2>
+<OL>
+        <LI><A HREF="#invoking">Invoking fly.</A>
+        <LI><A HREF="#command">The command file.</A>
+        <LI><A HREF="#direct">Directives and explanations.</A>
+        <LI><A HREF="#comment">Comments.</A>
+</OL>
+<!-- ===================================================================== -->
+<HR SIZE="2" NOSHADE>
+<H3><A NAME="invoking">Invoking fly</A></H3>
+<P> <STRONG><EM>Note that the command line arguments for v1.1 and later are
+    different from v1.0 and earlier.</EM></STRONG>
+</P>
+<P>  The standard manner used to invoke <B>fly</B> is:<BR>
+<KBD> fly -i &lt;input file&gt; -o &lt;output file&gt;</KBD>
+</P>
+<P>  You can omit the input file, and fly takes its directives from stdin,
+     and if you omit the output file, the output goes to stdout.
+</P>
+<UL>
+    <LI>Using the <KBD>-q</KBD> switch sets fly to quiet mode - no on-screen
+        reporting.
+    <LI>A quick reference to directives may be seen by using the <KBD>-h</KBD>
+        switch.
+</UL>
+<!-- ===================================================================== -->
+<HR SIZE="1" NOSHADE>
+<H3> <A NAME="command">The command file</A>
+</H3>
+<P>  The command file uses a number of directives. It must start with one
+     of the following lines:
+</P>
+<DL><DT><KBD>existing /path/to/file.gif</KBD></DT>
+         <DD>if modifying an existing image, OR</DD>
+    <DT><KBD>new<BR>size x,y</KBD></DT>
+         <DD>for creating a new image of width <B>x</B> pixels, height
+     <B>y</B> pixels.</DD>
+</DL>
+<P>  After the initial command, any of the commands below may be used.<BR>
+</P>
+<P>  To create more than one image from a command file, use the directive
+     <B><KBD>end</KBD></B>, followed by either
+</P>
+<DL><DT><KBD>existing /path/to/file.gif<BR>name &lt;filename.gif&gt;</KBD></DT>
+         <DD>if modifying an existing image, OR</DD>
+    <DT><KBD>new<BR>size x,y<BR>name &lt;filename.gif&gt;</KBD></DT>
+         <DD>for creating a new image.</DD>
+</DL>
+<P>  <B>Note:</B>
+     <UL>
+         <LI>All x,y values are in pixels measured from the top left of the
+             image. For a 256x256 image, top left is 0,0 and bottom right
+             is 255,255. All x1,y1,x2,y2 pairs must specify the top left and
+             bottom right of the shape, where appropriate.
+        </LI>
+         <LI>All RGB colour values are in integer format, not hexadecimal.
+        </LI>
+         <LI>Arc sweeps are <B>clockwise.</B>
+        </LI>
+     </UL>
+<!-- ===================================================================== -->
+<HR SIZE="1" NOSHADE>
+<H4><A NAME="direct">Directives & explanations</A>
+</H4>
+<DL>
+    <DT><STRONG><KBD>line x1,y1,x2,y2,R,G,B</KBD></STRONG>
+   </DT>
+        <DD><P> Creates a line from coordinates <B>x1,y1</B> to coordinates
+             <B>x2,y2</B> of colour <B>R,G,B</B>.
+           </P>
+       </DD>
+    <DT><STRONG><KBD>dline x1,y1,x2,y2,R,G,B</KBD></STRONG>
+   </DT>
+        <DD><P> Creates a <I>dashed</I> line from coordinates <B>x1,y1</B> to
+             coordinates <B>x2,y2</B> of colour <B>R,G,B</B>.
+           </P>
+       </DD>
+    <DT><STRONG><KBD>rect x1,y1,x2,y2,R,G,B</KBD></STRONG>
+   </DT>
+        <DD><P> Creates a rectangle from coordinates <B>x1,y1</B> to coordinates
+             <B>x2,y2</B> with edging of colour <B>R,G,B</B>.
+           </P>
+       </DD>
+    <DT><STRONG><KBD>frect x1,y1,x2,y2,R,G,B</KBD></STRONG>
+   </DT>
+        <DD><P> Creates a filled rectangle from coordinates <B>x1,y1</B> to
+             coordinates <B>x2,y2</B> filled with colour <B>R,G,B</B>. 
+           </P>
+       </DD>
+    <DT><STRONG><KBD>square x1,y1,s,R,G,B</KBD></STRONG>
+   </DT>
+        <DD><P> Creates a square qith the top left corner at coordinates
+             <B>x1,y1</B>, with side <B>s</B> in length, with edge
+             of colour <B>R,G,B</B>.
+           </P>
+       </DD>
+    <DT><STRONG><KBD>fsquare x1,y1,s,R,G,B</KBD></STRONG>
+   </DT>
+        <DD><P> Creates a square qith the top left corner at coordinates
+             <B>x1,y1</B>, with side <B>s</B> in length, filled with
+             colour <B>R,G,B</B>.
+           </P>
+       </DD>
+    <DT><STRONG><KBD>poly R,G,B,x1,y1...,x<I>n</I>,y<I>n</I></KBD></STRONG>
+   </DT>
+        <DD><P> Creates a polygon (has to be closed) through the points
+             <B>x1,y1</B> to <B>x2,y2</B> to ... to <B>x<I>n</I>,y<I>n</I></B>,
+             of colour <B>R,G,B</B>.<BR>
+             Note that the colour values appear before the coordinates in this
+             directive.
+           </P>
+       </DD>
+    <DT><STRONG><KBD>fpoly R,G,B,x1,y1...,x<I>n</I>,y<I>n</I></KBD></STRONG>
+   </DT>
+        <DD><P> Creates a polygon (has to be closed) through the points
+             <B>x1,y1</B> to <B>x2,y2</B> to ... to <B>x<I>n</I>,y<I>n</I></B>,
+             filled with colour <B>R,G,B</B>.<BR>
+             Note that the colour values appear before the coordinates in this
+             directive.
+           </P>
+       </DD>
+    <DT><STRONG><KBD>arc x1,y1,w,h,start,finish,R,G,B</KBD></STRONG>
+   </DT>
+        <DD><P> Creates an arc of colour <B>R,G,B</B> centered at coordinates
+             <B>x1,y1</B>, of width <B>w</B> and height <B>h</B>, starting
+             at <B>start</B> degrees and finishing at <B>finish</B> degrees.
+           </P>
+       </DD>
+    <DT><STRONG><KBD>ellipse x1,y1,w,h,R,G,B</KBD></STRONG>
+   </DT>
+        <DD><P> Creates an ellipse of colour <B>R,G,B</B> centered at coordinates
+             <B>x1,y1</B>, of width <B>w</B> and height <B>h</B>.
+           </P>
+       </DD>
+    <DT><STRONG><KBD>fcircle x1,y1,d,R,G,B</KBD></STRONG>
+   </DT>
+        <DD><P> Creates a circle centered at coordinates <B>x1,y1</B>, of
+             diameter <B>d</B>, filled with colour <B>R,G,B</B>.
+           </P>
+       </DD>
+    <DT><STRONG><KBD>circle x1,y1,d,R,G,B</KBD></STRONG>
+   </DT>
+        <DD><P> Creates a circle of colour <B>R,G,B</B> centered at coordinates
+             <B>x1,y1</B>, of diameter <B>d</B>.
+           </P>
+       </DD>
+    <DT><STRONG><KBD>fill x,y,R,G,B</KBD></STRONG>
+   </DT>
+        <DD><P> Flood fills with the colour <B>R,G,B</B> from the coordinates
+             <B>x,y</B> to the edge of the area of the original color of x,y. 
+           </P>
+       </DD>
+    <DT><STRONG><KBD>filltoborder x,y,R1,G1,B1,R2,B2,G2</KBD></STRONG>
+   </DT>
+        <DD><P> Flood fills with colour <B>R2,G2,B2</B> from <B>x,y</B> to the
+             border of colour <B>R1,G1,B1</B>.
+           </P>
+       </DD>
+    <DT><STRONG><KBD>string R,G,B,x,y,&lt;size&gt;,&lt;string&gt;</KBD>
+       </STRONG>
+   </DT>
+        <DD><P> Writes a string starting at <B>x,y</B> (in the colour
+             <B>R,G,B</B>), of font size <B>&lt;size&gt;</B>, where size
+             can be one of <B>tiny</B> (5x8), <B>small</B> (6x12),
+             <B>medium</B> (7x13, bold), <B>large</B> (8x16) or
+             <B>giant</B> (9x15, bold).
+           </P>
+       </DD>
+    <DT><STRONG><KBD>stringup R,G,B,x,y,&lt;size&gt;,&lt;string&gt;</KBD>
+       </STRONG>
+   </DT>
+        <DD><P> Writes a string vertically starting at <B>x,y</B> (in the
+             colour <B>R,G,B</B>), of font size <B>&lt;size&gt;</B>, where
+             size can be one of <B>tiny</B>, <B>small</B>, <B>medium</B>,
+             <B>large</B> or <B>giant</B>. The string will go up from the
+             coordinates supplied.
+           </P>
+       </DD>
+    <DT><STRONG><KBD>copy x,y,x1,y1,x2,y2,[source-filename.gif|`command`]</KBD>
+       </STRONG>
+   </DT>
+        <DD><P> Copies region <B>x1,y1 - x2,y2</B> of <B>source-filename.gif</B>
+                or the GIF output of <B>command</B> to the coordinates <B>x,y</B>
+                of the image being created/modified. <BR>
+                If <B>x1,y1,x2,y2</B> are all <B>-1</B>, copy the entire image.
+           </P>
+       </DD>
+    <DT><STRONG><KBD>
+        copyresized x1,y1,x2,y2,dx1,dy1,dx2,dy2,[source-filename.gif|`command`]
+       </KBD></STRONG>
+   </DT>
+        <DD><P>Copies region <B>x1,y1 - x2,y2</B> of <B>source-filename.gif</B>
+               or the GIF output of <B>command</B> to the area <B>dx1,dy1 -
+               dx2,dy2</B> of the image being created/modified, resizing the
+               image to fit.<BR> If <B>x1,y1,x2,y2</B> are all <B>-1</B>, copy
+               the entire image.
+           </P>
+       </DD>
+    <DT><STRONG><KBD>getpixel x,y</KBD></STRONG>
+   </DT>
+        <DD><P> Gets the colour index of the point at <B>x,y</B>. 
+           </P>
+       </DD>
+    <DT><STRONG><KBD>setpixel x,y,R,G,B</KBD></STRONG>
+   </DT>
+        <DD><P> Sets the point at <B>x,y</B> to the colour <B>R,G,B</B>. 
+           </P>
+       </DD>
+    <DT><STRONG><KBD>colourchange R1,G1,B1,R2,G2,B2</KBD></STRONG>
+   </DT>
+        <DD><P> Changes all pixels of colour <B>R1,G1,B1</B> to <B>R2,G2,B2.</B>
+           </P>
+       </DD>
+    <DT><STRONG><KBD>setbrush filename.gif</KBD></STRONG>
+   </DT>
+        <DD><P> Sets the current &quot;brush&quot; to <B>filename.gif.</B>
+             Subsequent directives of <KBD>line</KBD>, <KBD>dline</KBD>,
+             <KBD>rect</KBD>, <KBD>poly</KBD> and <KBD>arc</KBD> will use the
+             selected &quot;brush&quot; to draw their lines, until a call of
+            <KBD>killbrush.</KBD>
+           </P>
+       </DD>
+    <DT><STRONG><KBD>killbrush</KBD></STRONG>
+   </DT>
+        <DD><P> Turns off the brush selection. Calls to <KBD>line</KBD>,
+             <KBD>dline</KBD>, <KBD>rect</KBD>, <KBD>poly</KBD> and
+             <KBD>arc</KBD> will then use the standard single-pixel
+             width brush.
+           </P>
+       </DD>
+    <DT><STRONG><KBD>settile filename.gif</KBD></STRONG>
+   </DT>
+        <DD><P> Sets the current &quot;tile&quot; to <B>filename.gif.</B>
+             Subsequent directives of <KBD>fill</KBD>, and
+             <KBD>fpoly</KBD> will use the selected &quot;tile&quot;
+             as a fill pattern, until a call of <KBD>killtile.</KBD>
+           </P>
+       </DD>
+    <DT><STRONG><KBD>killtile</KBD></STRONG>
+   </DT>
+        <DD><P> Turns off the tile selection. Calls to <KBD>fill</KBD>,
+             <KBD>filltoborder</KBD> and <KBD>fpoly</KBD> will then use
+             the specified colour for fills.
+           </P>
+       </DD>
+    <DT><STRONG><KBD>setstyle R1,G1,B1, R2, G2, B2, ..., Rn,Gn,Bn</KBD>
+       </STRONG>
+   </DT>
+        <DD><P> Various line calls can use a style, specified by one or more
+             colour settings for each pixel, that is repeated for the length
+             of the &quot;line&quot;.  All subsequent directives of
+             <KBD>line</KBD>, <KBD>dline</KBD>, <KBD>rect</KBD>,
+             <KBD>poly</KBD> and <KBD>arc</KBD> will use the selected
+             &quot;style&quot; to draw their lines, until a call of
+             <KBD>killstyle.</KBD>
+           </P>
+       </DD>
+    <DT><STRONG><KBD>killstyle</KBD></STRONG>
+   </DT>
+        <DD><P> Turns off the style selection. Calls to <KBD>line</KBD>,
+             <KBD>dline</KBD>, <KBD>rect</KBD>, <KBD>poly</KBD> and
+             <KBD>arc</KBD> will then use the standard single-pixel
+             width brush.
+           </P>
+       </DD>
+    <DT><STRONG><KBD>transparent R,G,B</KBD></STRONG>
+   </DT>
+        <DD><P> Makes the colour <B>R,G,B</B> the transparent colour.
+           </P>
+       </DD>
+    <DT><STRONG><KBD>sizex</KBD></STRONG>
+   </DT>
+        <DD><P> Returns the width of the image in pixels.
+           </P>
+       </DD>
+    <DT><STRONG><KBD>sizey</KBD></STRONG>
+   </DT>
+        <DD><P> Returns the height of the image in pixels.
+           </P>
+       </DD>
+    <DT><STRONG><KBD>rotate deg</KBD></STRONG>
+   </DT>
+        <DD><P> Rotates the GIF image <TT>deg</TT> degrees clockwise, where
+                <TT>deg</TT> is 90, 180 or 270.
+           </P>
+       </DD>
+    <DT><STRONG><KBD>interlace</KBD></STRONG>
+   </DT>
+        <DD><P> Makes the image output by fly an interlaced GIF. 
+           </P>
+       </DD>
+</DL>
+ <!-- ===================================================================== -->
+<HR SIZE="1" NOSHADE>
+ <H4> <A NAME="comment">Comments in the command file</A>
+</H4>
+ <P>At any point in the command file, you can insert
+    a comment line starting with &quot;#&quot;.
+</P>
+ <P>Example:
+</P>
+<PRE>new
+size 256,256
+#
+# start with a background fill
+fill 1,1,255,255,255
+#
+# then a circle in the middle
+circle 128,128,180,0,0,0
+#
+<I>etc.</I>
+ <!-- ===================================================================== -->
+ <hr size="2" noshade>
+
+ <p align="center"><a href="index.html"><img src="nav-home.gif" border="0"
+    alt="[Home]" width="52" height="24"></a> <a
+    href="documentation.html"><img src="nav-docs.gif" border="0"
+    alt="[Documentation]" width="120" height="24"></a> <a
+    href="copyright.html"><img src="nav-copyright.gif" border="0"
+    alt="[Copyright]" width="86" height="24"></a> <a href="feedback.html"><img
+    src="nav-feedback.gif" border="0" alt="[Feedback]" width="80"
+    height="24"></a>
+</p>
+
+ <!-- ===================================================================== -->
+ <hr size="2" noshade>
+
+<pre>Created:       21 June 1995
+Last modified: 10 June 1999
+Access:        Unrestricted.
+Copyright &#169 1994-1998 <a href="http://www.unimelb.edu.au/">The University of Melbourne.</a>
+&lt;URL:http://www.unimelb.edu.au/fly/&gt;</pre>
+
+ <!-- ===================================================================== -->
+ <hr size="1" noshade>
+ <table border="0" width="100%">
+  <tr>
+   <td>
+    <address>
+    <a href="http://www.unimelb.edu.au/%7Egleeson/">Martin Gleeson,</a>
+    <a href="mailto:gleeson@unimelb.edu.au">gleeson@unimelb.edu.au</a>
+   </address>
+  </td>
+   <td align="RIGHT">
+    <p> <a href="http://www.unimelb.edu.au/html-check/validation-form.html">
+        <img src="http://www.unimelb.edu.au/images/valid_html.4.0.gif"
+             alt="HTML 4.0 Checked!" border="0"></a>
+   </p>
+  </td>
+ </tr>
+</table>
+ <!-- ===================================================================== -->
+ <hr size="2" noshade>
+</body>
+</html>

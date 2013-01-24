@@ -1,0 +1,12 @@
+﻿Name: Events
+AntiForgery: enabled
+Author: Improving Enterprises
+Website: http://alumni.rice.edu
+Version: 1.0
+OrchardVersion: 1.0
+Description: Provides event functionality
+Dependencies: RiceAlumni.Core, Orchard.PublishLater, Contrib.ImageField
+Category: Rice University
+Features:
+    RiceAlumni.Events:
+        Description: Description for feature RiceAlumni.Events.

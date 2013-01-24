@@ -1,0 +1,53 @@
+/* ie */
+.main {font-family:verdana,arial,helvetica,sans-serif; font-size:12px; color: #000000; line-height:1.45}
+.mainSmall {font-family:verdana,arial,helvetica,sans-serif; font-size:10px; color: #666666}
+.mainSmallred {font-family:verdana,arial,helvetica,sans-serif; font-size:10px; color: #990000}
+.nav {font-family:verdana,arial,helvetica,sans-serif; font-size:10px; color: #6699CC; letter-spacing:-1}
+.navOver {font-family:verdana,arial,helvetica,sans-serif; font-size:10px; color: #666666; letter-spacing:-1}
+.mainSmalldark {font-family:verdana,arial,helvetica,sans-serif; font-size:9px; color: #333333; letter-spacing:-1; line-height:-1}
+.mainSubtitle {font-family:verdana,arial,helvetica,sans-serif; font-size:12px; color: #666666}
+.formSmall {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; color:#666666}
+
+A:link {color: #0033CC; text-decoration:none}
+A:active {color: #99CCFF; text-decoration:none}
+A:visited {color: #6699CC; text-decoration:none}
+A:hover {
+	color: #999999;
+	text-decoration:none;
+	font-family: verdana, arial, helvetica, sans-serif;
+}
+
+A.nav:link {color: #0033CC; text-decoration:none}
+A.nav:active {color: #99CCFF; text-decoration:none}
+A.nav:visited {color: #6699CC; text-decoration:none}
+A.nav:hover {color: #666666; text-decoration:none}
+
+.mainSmalldarkIntl {font-family:verdana,arial,helvetica,sans-serif; font-size:9px; color: #6699CC; letter-spacing:-1; line-height:-3}
+A.mainSmalldarkIntl:link {font-family:verdana,arial,helvetica,sans-serif; font-size:9px; color: #6699CC; letter-spacing:-1; line-height:-3}
+A.mainSmalldarkIntl:active {font-family:verdana,arial,helvetica,sans-serif; font-size:9px; color: #6699CC; letter-spacing:-1; line-height:-3}
+A.mainSmalldarkIntl:visited {font-family:verdana,arial,helvetica,sans-serif; font-size:9px; color: #6699CC; letter-spacing:-1; line-height:-3}
+A.mainSmalldarkIntl:hover {font-family:verdana,arial,helvetica,sans-serif; font-size:9px; color: #6699CC; letter-spacing:-1; line-height:-3}
+
+/* Formatting */
+/* LineCell: Used for table cell background colors on subpages */
+.cellbgGray { background-color: #F5F5F5 }
+.cellbgGray2 { background-color: #ECECEC }
+.cellbgGreen { background-color: #F1F8ED }
+.mainTable {width: 90%}
+.mainCell {width: 20}
+.youngAlumnCity {
+	font-size: larger;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #003366;
+}
+
+
+.youngAlumHeader {
+	font-size: 24px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #CC0000;
+	font-weight: bold;
+}
+ol li {
+	padding-bottom: 5px;
+}

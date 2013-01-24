@@ -4,5 +4,6 @@
 	<Place Parts_Homepage="Content:2"/>
 	<Match DisplayType="SummaryAdmin">
 		<Place Parts_Homepage="-"/>
+		<Place Parts_Widget="Content:2"/>
 	</Match>
 </Placement>

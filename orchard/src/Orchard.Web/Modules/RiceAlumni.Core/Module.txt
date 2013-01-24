@@ -5,7 +5,7 @@ Website: http://alumni.rice.edu
 Version: 1.0
 OrchardVersion: 1.0
 Description: A foundational module used by all Rice modules
-Dependencies: Common, Orchard.Alias, Orchard.Autoroute, Orchard.Scripting, Orchard.Scripting.Lightweight, Orchard.Roles, Orchard.Projections, UrlAlternates, Shapes, Feeds, Navigation, Orchard.Widgets, Orchard.jQuery, Orchard.Migrations, Orchard.MultiTenancy, TinyMce, Orchard.Widgets.ControlWrapper, Orchard.Widgets.PageLayerHinting, Contents.ControlWrapper, Orchard.ContentTypes
+Dependencies: Common, Orchard.Alias, Orchard.Autoroute, Orchard.Scripting, Orchard.Scripting.Lightweight, Orchard.Roles, Orchard.Projections, UrlAlternates, Shapes, Feeds, Navigation, Orchard.Widgets, Orchard.jQuery, Orchard.Migrations, Orchard.MultiTenancy, TinyMce, Orchard.Widgets.PageLayerHinting, Orchard.ContentTypes
 Category: Rice University
 Features:
     RiceAlumni.Core:

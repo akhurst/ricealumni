@@ -97,7 +97,6 @@
     <Compile Include="Drivers\StaffProfilePartDriver.cs" />
     <Compile Include="Handlers\StaffProfileHandler.cs" />
     <Compile Include="Migrations.cs" />
-    <Compile Include="Models\StaffGroupPart.cs" />
     <Compile Include="Models\StaffProfilePart.cs" />
     <Compile Include="Models\StaffProfilePartRecord.cs" />
   </ItemGroup>

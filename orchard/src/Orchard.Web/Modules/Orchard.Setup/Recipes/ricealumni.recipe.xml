@@ -36,18 +36,18 @@
 		layer create NotHomepage /LayerRule:"not url '~/'" /Description:"The widgets in this layer are displayed on every page except the home page"
 		site setting set baseurl
 		menu create /MenuName:"Main Menu"
-		menu create /MenuName:"Home Menu"
-		menuitem create /MenuPosition:"1" /MenuText:"Alumni Resources" /Url:"~/#" /MenuName:"Home Menu"
-		menuitem create /MenuPosition:"2" /MenuText:"Office of Alumni Affairs" /Url:"http://alumni.rice.edu/home.html" /MenuName:"Home Menu"
 		menu create /MenuName:"Footer Menu"
-		menuitem create /MenuPosition:"1" /MenuText:"Alumni Resources" /Url:"http://alumni.rice.edu/home.html" /MenuName:"Footer Menu"
-		menuitem create /MenuPosition:"2" /MenuText:"Facebook" /Url:"https://www.facebook.com/ricealumni" /MenuName:"Footer Menu"
-		menuitem create /MenuPosition:"3" /MenuText:"Twitter" /Url:"https://twitter.com/ricealumni" /MenuName:"Footer Menu"
-		menuitem create /MenuPosition:"4" /MenuText:"Contact" /Url:"http://alumni.rice.edu/contact.html" /MenuName:"Footer Menu"
 		page create /Slug:"home" /Title:"Unconventionally Wise" /Path:"home" /Homepage:true /Publish:true /UseWelcomeText:true /MenuText:"Home" /MenuName:"Main Menu"
-		widget create MenuWidget /Title:"Main Menu" /RenderTitle:false /Zone:"Navigation" /Position:"1" /Layer:"NotHomepage" /Identity:"MenuWidget1" /MenuName:"Main Menu"
-		widget create MenuWidget /Title:"Home Menu" /RenderTitle:false /Zone:"Navigation" /Position:"2" /Layer:"TheHomepage" /Identity:"MenuWidget3" /MenuName:"Home Menu"
-		widget create MenuWidget /Title:"Footer Menu" /RenderTitle:false /Zone:"FooterRight" /Position:"1" /Layer:"Default" /Identity:"MenuWidget2" /MenuName:"Footer Menu"
+		menuitem create /MenuPosition:"2" /MenuText:"About" /Url:"#section-anotherabout" /MenuName:"Main Menu"
+		menuitem create /MenuPosition:"3" /MenuText:"Schedule" /Url:"#section-programs" /MenuName:"Main Menu"
+		menuitem create /MenuPosition:"4" /MenuText:"Price" /Url:"#section-fees" /MenuName:"Main Menu"
+		menuitem create /MenuPosition:"5" /MenuText:"Classes" /Url:"#section-speakers" /MenuName:"Main Menu"
+		menuitem create /MenuPosition:"6" /MenuText:"Lodging" /Url:"#section-map" /MenuName:"Main Menu"
+		widget create MenuWidget /Title:"Main Menu" /RenderTitle:false /Zone:"Navigation" /Position:"1" /Layer:"Default" /Identity:"MainMenu" /MenuName:"Main Menu"
+		widget create MenuWidget /Title:"Home Menu" /RenderTitle:false /Zone:"Navigation" /Position:"2" /Layer:"TheHomepage" /Identity:"HomeMenu" /MenuName:"Home Menu"
+		widget create MenuWidget /Title:"Footer Menu" /RenderTitle:false /Zone:"FooterRight" /Position:"1" /Layer:"Default" /Identity:"FooterMenu" /MenuName:"Footer Menu"
+		widget create HtmlWidget /Title:"Social Block" /RenderTitle:false /Zone:"Social" /Position:"1" /Layer:"TheHomepage" /Identity:"SocialBlock"
 		theme activate "Association of Rice Alumni"
 	</Command>
 </Orchard>
+<!--enable these in core    , Orchard.Widgets.ControlWrapper, Contents.ControlWrapper-->

@@ -1,0 +1,508 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "images/btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "images/btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=350,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (srch.alum.checked == true){
+	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (srch.rice.checked == true){
+	srch.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  srch.submit();
+
+}
+
+function checkKey(evt){
+
+	srch.search.value=srch.q.value;
+	if (evt.keyCode == 13 && srch.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+</script>
+<script language="JavaScript1.2">
+<!--
+
+var head="display:''"
+function doit(header){
+var head=header.style
+if (head.display=="none")
+head.display=""
+else
+head.display="none"
+}
+//-->
+</script>
+</head>
+
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top"> 
+          <td width="221" rowspan="2"> <a href="index.html"><img src="images/logo.gif" width="221" height="94" alt="Association of Rice Alumni" border="0"></a><br>
+            <table width="191" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="http://alumni.cgi.rice.edu/events/calendar.php">EVENTS 
+                        CALENDAR</a></font></td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="alumni_groups.html">ALUMNI 
+                        GROUPS</a></font></td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="youngalum_stds.html">YOUNG 
+                        ALUMNI /STUDENTS</a></font></td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="career_connection.html">CAREER 
+                        CONNECTION</a></font></td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="volunteer.html">VOLUNTEER</a></font></td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_over_nav.gif" align="center" valign="middle"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="navOver">LEARNING &amp; TRAVEL</font></td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+<tr> 
+                <td width="19" valign="top">&nbsp;</td>
+                <td width="172" align="center" valign="middle"> 
+                  <table width="90%" border="0" cellspacing="3" cellpadding="0"><tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="alumcoll.html">Alumni College</a></font></td>
+                          </tr>
+                        </table>                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="http://online.alumni.rice.edu/directory/library.asp">Rice Alumni Digital Library </a></font></td>
+                          </tr>
+                        </table>                      </td>
+                    </tr>
+                    <tr>
+                      <td background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="travel.html">Travel/Study Program</a></font></td>
+                          </tr>
+                      </table></td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="learning_scholar.html">Scholarships 
+                              &amp; Fellowships</a></font></td>
+                          </tr>
+                        </table>                      </td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+			  <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="honors_awards.html">HONORS 
+                        &amp; AWARDS</a></font></td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="new_at_rice.html">WHAT'S 
+                        NEW @ RICE</a></font></td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="about_alumassoc.html">ABOUT 
+                        THE ARA</a></font></td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="faq_file.html">FAQ 
+                        FILE</a></font></td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="http://giving.rice.edu" target="_blank">GIVE 
+                        TO RICE</a></font></td>
+                    </tr>
+                  </table>                </td>
+              </tr>
+            </table>          </td>
+          <td align="right"><img src="images/clear.gif" width="100" height="20"><br>
+            <img src="images/subpic_goodbooks.jpg" width="526" height="56" ="Owl and art">          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td>&nbsp;</td>
+              </tr>
+              <tr valign="top"> 
+                <td width="414"> 
+                  <table width="115" border="0" align="right" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td><form id="srch" method=GET action="" onSubmit="doSearch();">
+                          <input type="hidden" value="web" name="tab">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td colspan="4"><input type=text name=q size=15 maxlength=255 value="" onChange="srch.search.value=this.value;" class="formSmall">
+                                  <span id="spn" style="background-image: url(images/btn_go_new.gif);width:19;height:14" onClick="doSearch()" />                    
+                                  <input type="hidden" name="hidden_site" value="alumni.rice.edu">
+                                  <input type="hidden" name="search" value="">
+                                  </span></td>
+                            </tr>
+                            <tr>
+                              <td width="10"><input id="alum" type="radio" name="sitesearch" value="alumni.rice.edu" checked>
+                              </td>
+                              <td width="85"><font class="mainSmalldark">Search 
+                                this site</font></td>
+                            </tr>
+                            <tr>
+                              <td width="10" align="right"><input id="rice" type="radio" name="sitesearch" value="www.rice.edu">
+                              </td>
+                              <td width="85"><font class="mainSmalldark">Search 
+                                rice.edu</font></td>
+                            </tr>
+                          </table>
+                      </form></td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/clear.gif" width="115" height="20" alt="spacer"></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://online.alumni.rice.edu/asp/Welcome.asp"><img src="images/title_onlinesvcs.gif" width="115" height="9" alt="Online Services" border="0"></a></td>
+                    </tr>
+                    <tr>
+                      <td><table width="100%" border="0" cellspacing="3" cellpadding="0">
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/events/calendar.php" title="Events calendar and online registration">Find Events/RSVP</a></font></td>
+                                </tr>
+                            </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/detailsearch.asp" title="Search the directory of Rice alumni">Alumni Directory</a></font></td>
+                                </tr>
+                            </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/profile.asp" title="Update your directory information">Update Address</a></font></td>
+                                </tr>
+                            </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Online/emailforwarding/eforwarding.asp" title="Manage or create an alumni.rice.edu account">Email Forwarding</a></font></td>
+                                </tr>
+                            </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Career/default.asp" title="Connect with alums in your career field">Career Network</a></font></td>
+                                </tr>
+                            </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/bizfinder/" title="Find or promote alumni-owned businesses">Business Finder</a></font></td>
+                                </tr>
+                            </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/remotelibrary.asp?type=8" title="Get your latest news into the Owlmanac">Online Classnotes </a></font></td>
+                                </tr>
+                            </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/library.asp" title="Access research tools and periodicals">Digital Library</a></font></td>
+                                </tr>
+                            </table></td>
+                          </tr>
+                      </table></td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/clear.gif" width="115" height="14" alt="spacer"><br>
+                        <a href="http://www.rice.edu" target="_blank"><img src="images/rice_home.gif" width="75" height="40" border="0" alt="Rice: Home" vspace="10" hspace="3"></a></td>
+                    </tr>
+                  </table>
+                  <p><img src="images/sub_title_goodbooks.gif" width="410" height="17" alt="About Alumni Association"></p>
+                  <p class="mainSmall">Who doesn't love a good summer read?  Whether your summer plans will take you to the local pool or on a plane halfway across the world, you're likely to have a few good books (or their electronic equivalent) in tow. <br>
+                    <br>
+The Association of Rice Alumni asked leading  Rice faculty members and senior campus administrators for their top summer reading recommendations for Rice alumni. Our guidelines were broad: their recommendations could be related to their teaching or professional interests--or not. Non-fiction or fiction, current bestseller or classic, intellectually weighty or pure fun--anything was fair game as long as it was something they were truly interested in and appropriate for lay readers. <br>
+<br>
+Their selections are below, and are sure to provide plenty of ideas for your summer reading pleasure. So from the Association of Rice Alumni, happy reading and have a terrific summer! <br>
+                  <br>
+                  <br>
+                  </p>
+                  <p><span class="mainSmall"><span class="mainSubtitle"><strong>What We're Reading</strong></span><br>
+                    <br>
+                    June 1, 2010<br>
+  <br>
+  <strong>Rick Greenspan</strong><br>
+                    Director of Athletics, Recreation, and Fitness<br>
+  <br>
+                    I read almost exclusively non-fiction with a preference for American history. I read anything John Maxwell  or John Ellis write as well as anything about Teddy Roosevelt. Additionally, I read many books on leadership, management and innovation.<br>
+  <br>
+  <em>-Legacy of Ashes: The History of the CIA</em>, by Tim Weiner<br>
+                    I am currently finishing this interesting book. This is a scary and well researched book about the birth and inadequacy of the CIA. <br>
+  <br>
+  <em>-My Stroke of Insight: A Brain Scientist's Personal Journey,</em> by Jill Bolte Taylor<br>
+                    I plan to read this one. Jill was our neighbor in Bloomington, Indiana, and her story of recovery from a stroke at a young age and the documentation of her experiences is from a scientist's perspective. Her book is close to being developed into a major motion picture. <br>
+  <br>
+  <em>-George Washington&rsquo;s Sacred Fire</em>, by Peter Lillback<br>
+                    I am fascinated with the life of our first president and the manner in which he led without a blueprint and peacefully transferred power despite his overwhelming popularity.<br>
+  <br>
+  <br>
+  <strong>Mikki Hebl</strong><br>
+                    Associate Professor of Psychology and winner, 2010 George R. Brown Prize for Excellence in Teaching<br>
+  <br>
+  <em>-Straight Man,</em> by Richard Russo<br>
+                    This is an absolute must read and laugh out loud funny for professors or people who understand the workings of academia.<br>
+  <br>
+  <em>-Daisy Fay and the Miracle Man,</em> by Fanny Flagg<br>
+                    Just a downright enjoyable read.<br>
+  <br>
+  <em>-The Count of Monte Cristo,</em> by Alexandre Dumas<br>
+                    Remains my all-time favorite book.<br>
+  <br>
+  <br>
+  <strong>J. Dennis Huston</strong><br>
+                    Professor of English<br>
+  <br>
+  <em>-Emma,</em> by Jane Austen<br>
+                    A book less well known than <em>Pride and Prejudice</em> but every bit as interesting and containing a more complex plot.  Also a fine film starring Kate Beckinsale (the Gweneth Paltrow film is not nearly as good). <br>
+  <br>
+  <em>-L.A. Outlaws,</em> by T. Jefferson Parker<br>
+                    A romance and a detective-fiction novel in one. He has won the Edgar Award for two of his books, one written in 2004 or 2005,  with &quot;California&quot; in the title.  I like <em>L.A. Outlaws</em> a lot, though--even better than the other of his Edgar Award winners, &quot;Silent Joe.&quot;<br>
+  <br>
+  <em>-The Day of the Jackal,</em> by Frederick Forsyth<br>
+                    A novel about forty years old, but, I think, it is the best chase novel ever written.  Also a wonderful film brilliantly directed by Fred Zinnemann (who directed, among other great films, &quot;High Noon&quot;). <br>
+  <br>
+  <br>
+  <strong>Amy Jaffe</strong><br>
+                    Associate Director, Rice Energy Program<br>
+                    Wallace Wilson Fellow, James A. Baker III Institute for Public Policy<br>
+  <br>
+  <em>-Three Girls and Their Brother,</em> by Theresa Rebeck<br>
+                    I bought this book after seeing her play &quot;Our House&quot; with my son Jordan, a theatre arts major at Rice. &quot;Our House&quot; was an incredible satire about the news media in America and how it has become indistinguishable from entertainment reality television. I expect Rebeck to be one of the rising stars in theatre in the coming years and I am guessing <em>Three Girls and Their Brother,</em> which is a satire of a family that becomes famous by accident, will be a great and insightful read. (I also highly recommend the play.)<br>
+  <br>
+  <em>-The Pull of the Moon,</em> by Elizabeth Berg <br>
+                    I heard Elizabeth Berg on NPR speaking about this book and I liked her so I figured I would like the book. The book is about women's relationships with each other as seen through the eyes of a 50 year old woman who decides to run away from home.<br>
+  <br>
+  <em>-Peddling Peril: How the Secret Nuclear Trade Arms America's Enemies,</em> by David Albright<br>
+                    I am serving on a Congressionally funded task force on the problem of Iran's nuclear weapons program and David Albright is one of the members and perhaps the top expert in the United States on secret weapons programs. He gave me his new book <em>Peddling Peril</em> and I am guessing it will be a frightening but riveting read. <br>
+  <br>
+  <em>-Dispatches from the Edge: A Memoir of War, Disasters, and Survival,</em> by Anderson Cooper<br>
+                    This book was recommended to me by a close friend (she thought I'd like it as a former journalist) and she was right. It is an insightful insider's look at what it is like to cover war and disasters as a journalist.<br>
+  <br>
+  <br>
+  <strong>Sara Lowman</strong><br>
+                    Vice Provost and University Librarian<br>
+  <br>
+  <em>-Matterhorn,</em> by Karl Marlantes<br>
+                    This is an epic war story set in Vietnam--the battle scenes are very graphic and exciting (my analogy would be to the movie &quot;Platoon&quot; on steroids), and the character development among the best in any book that I've read. <br>
+  <br>
+  <em>-The Girl Who Kicked the Hornet's Next,</em> by Stieg Larsson<br>
+                    This is the final book in a trilogy of books about a Swedish journalist and his relationship with an odd computer hacker.  All three of the books in this series are excellent; this final book pulls plot lines from the previous two books together in an exciting conclusion. <br>
+  <br>
+  <em>-The Swan Thieves,</em> by Elizabeth Kostova<br>
+                    This follow-up book  to the author's debut novel, <em>The Historian,</em> is a great summer read.  In the <em>Swan Thieves</em> Kostova weaves an intricate story of a mentally ill painter obsessed with a 19th-century painter.  I thoroughly enjoyed the plot and the author's use of different narrators and letters from the past to move the story forward.<br>
+  <br>
+  <br>
+  <strong>Allen Matusow</strong><br>
+                    William Gaines Twyman Professor of History, Interim Dean of Humanities<br>
+                    2010 winner, Association of Rice Alumni Gold Medal<br>
+  <br>
+                    This summer I hope to read:<br>
+  <br>
+  <em>-Freefall: America, Free Markets, and the Sinking of the World Economy,</em> by Joseph Stiglitz<br>
+  <br>
+  <em>-The Bridge: The Life and Rise of Barack Obama,</em> by David Remnick<br>
+  <em><br>
+    -The Rebellion of Ronald Reagan: A History of the End of the Cold War,</em> by Jim Mann<br>
+  <br>
+  <br>
+  <strong>Richard Tapia</strong><br>
+                    University Professor and Maxfield-Oshman Chair in Engineering<br>
+  <br>
+  <em>-Esalen: America and the Religion of No Religion,</em> by Jeffrey Kripal<br>
+                    Kripal is 
+                    the chair of the Rice Religious Studies Department. I am interested because I lived those times, California in the '60s. </span></p>
+                  </td>
+              </tr>
+            </table>
+            </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td><img src="images/clear.gif" width="100" height="5" alt="spacer"></td>
+  </tr>
+  <tr> 
+    <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="15">
+        <tr>
+          <td width="57%"><font class="mainSmall"><a href="#"onClick="SecWin=window.open('contact.html','SecWin','width=260,height=450,toolbar=no,status=yes,resizable=no,scrollbars=yes,location=no,directories=no,menubar=no');return false;">Contact 
+             the Office of Alumni Affairs</a> | <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('dFuDc6BYQoX5nNNobzmYL4')">Send a Comment</a> | <a href="index.html">Home</a></font></td>
+          <td width="43%" align="right"><font class="mainSmall">
+            <script language="JavaScript">
+<!--
+today = new Date()
+cy = today.getFullYear()
+{
+}
+//-->
+</script>
+            Copyright &copy;
+            <script language="JavaScript">
+<!--
+document.write(cy)
+{
+}
+//-->
+</script>
+            Rice University</font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>

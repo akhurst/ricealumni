@@ -1,0 +1,563 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" href="styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "images/btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "images/btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=530,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (srch.alum.checked == true){
+	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (srch.rice.checked == true){
+	srch.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  srch.submit();
+
+}
+
+function checkKey(evt){
+
+	srch.search.value=srch.q.value;
+	if (evt.keyCode == 13 && srch.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+</script>
+
+</head>
+
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top"> 
+          <td width="221" rowspan="2"> <a href="index.html"><img src="images/logo.gif" width="221" height="94" alt="Rice Alumni: Established 1919" border="0"></a><br>
+            <table width="191" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="http://alumni.cgi.rice.edu/events/calendar.php">EVENTS 
+                        CALENDAR</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="alumni_groups.html">ALUMNI 
+                        GROUPS</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="youngalum_stds.html">YOUNG 
+                        ALUMNI /STUDENTS</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="career_connection.html">CAREER 
+                        CONNECTION</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="volunteer.html">VOLUNTEER</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="learning_trav.html">LEARNING 
+                        &amp; TRAVEL</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="honors_awards.html">HONORS 
+                        &amp; AWARDS</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="new_at_rice.html">WHAT'S 
+                        NEW @ RICE</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_over_nav.gif" align="center" valign="middle"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="navOver"><a href="about_alumassoc.html">ABOUT THE ARA</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top">&nbsp;</td>
+                <td width="172" align="center" valign="middle"> 
+                  <table width="90%" border="0" cellspacing="3" cellpadding="0">
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="#strategic_plan">Strategic 
+                              Plan</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>                    <!--<tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="#comm_goals">Committee 
+                              Goals 2003-2004</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>-->
+<tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="#araboard">ARA 
+                              Board</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="#nominations">Nominations</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="#alumoffice">Alumni 
+                              Office</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="faq_file.html">FAQ 
+                        FILE</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="http://giving.rice.edu" target="_blank">GIVE 
+                        TO RICE</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td align="right"><img src="images/clear.gif" width="100" height="20"><br>
+            <img src="images/subpic_about.jpg" width="526" height="56" ="Photo Of Rice Campus"> 
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td colspan="4">&nbsp;</td>
+              </tr>
+              <tr valign="top"> 
+                <td width="414"> 
+                  <p><img src="images/sub_title_aboutaa.gif" width="410" height="17" alt="About Alumni Association"></p>
+                  <table class="mainTable" border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tr valign="top"> 
+                      <td class="mainSmall"><p><span class="mainSubtitle"><strong>Constitution</strong></span><strong><br>
+                          As propopsed by the ARA board, December, 2005</strong></p>
+                        <p align="center"><strong>Article I - Name and Purpose </strong></p>
+                        <p> Section 1. <em> Name</em> &ndash; The Association is incorporated as the Association of Rice Alumni. </p>
+                        <p> Section 2.<em> Purpose</em> &ndash; The purpose of the Association of Rice Alumni (&quot;the Association&quot;) is to provide the means of a continuing relationship between Rice University (&quot;the University&quot;) and its former students. To help achieve this purpose, the Association sponsors distinguished programs meant to stimulate intellectual and social participation of all members of the Association and to enable them to contribute to and share in the enhancement of the University. In addition, the Association endeavors to foster deeper concern among its members for the welfare of the University, to strengthen the bond of sympathetic understanding between the University and the community, to encourage gifts, to attract outstanding students and faculty, and to contribute toward maintaining Rice as a university in keeping with the ideals and aims of its founder. </p>
+                        <p align="center"><strong> Article II - Memberships</strong></p>
+                        <p> Section 1. <em>Types of Membership</em> &ndash; Membership in this Association shall be either Participating or Honorary. </p>
+                        <p> Section 2. <em>Participating Members</em> &ndash; Individuals who have completed at least one full academic year at Rice University in a degree-granting program, excluding current students, and all individuals who were members of the Association prior to the adoption of this Constitution shall be members. Participating Members shall not be excluded by virtue of again being enrolled in a degree-granting program. There shall be no dues or fees required for membership. </p>
+                        <p> Section 3. <em>Honorary Members</em> &ndash; Individuals who have rendered distinguished service or extraordinary devotion to the University, the Association, or its programs may be elected Honorary Members by the Association of Rice Alumni board of directors (&quot;the Board&quot;) at any meeting of the Association upon recommendation for such action and approval by the Board. </p>
+                        <p align="center"><strong>Article III - Meetings </strong></p>
+                        <p> Section 1. <em>Annual Meeting</em> &ndash; There shall be an Annual Meeting of the Association for the purpose of transacting the business of the Association, the time and place of such meeting to be fixed by the Board. </p>
+                        <p> Section 2. <em>Notice of Annual Meeting</em> &ndash;The President of the Association shall direct the Executive Director to send notice of the annual meeting, giving the time and place of such meeting, to every member of the Association. Such notice shall be sent to the latest address in alumni records for each member at least thirty days prior to the date fixed for said meeting. </p>
+                        <p> Section 3. <em> Special Meetings</em> &ndash; A special meeting of the Association shall be held if a call for such a meeting, stating its purpose, is voted at a meeting of the Association, or is requested by one-third of the members of the Board, or is requested by a written petition to the Board, signed by at least one percent of Participating Members of the Association who are living. The President of the Association within fifteen days after such special meeting has been properly voted or requested shall direct the Executive Director to send notice of such special meeting, giving the time and place of such meeting and stating its purpose, to every member of the Association. Such notice shall be sent to the latest address in alumni records for each member at least thirty days prior to the date fixed for said meeting. </p>
+                        <p align="center"><strong>Article IV - The Association of Rice Alumni <br>
+                        Board of Directors </strong></p>
+                        <p> Section 1. <em>Membership and Terms of Office</em> &ndash; The Board shall be composed of the following: </p>
+                        <p> * The President, the President-Elect, and the immediate Past-President, each of whom shall serve a one-year term in his or her respective office beginning July 1 following election. </p>
+                        <p> * Twenty-one additional members, whose term of office shall be three years, commencing July 1 following election. Seven of these shall be elected each year, apportioned according to the By-Laws of this Association. </p>
+                        <p> Section 2. <em>Duties of the Board</em> &ndash; The Board shall manage, direct, control, and administer the affairs and business of the Association as provided by such By-Laws as may be enacted by the Board; shall determine and set all matters of policy for the Association; shall elect its officers; shall act for and on behalf of the Association in all matters within the jurisdiction of the Board; shall serve as a liaison between alumni, the Board of Trustees, and University administrators, championing alumni programs and services, and serving as ambassadors of the University to alumni and the public at-large. </p>
+                        <p> Section 3.<em> Meetings of the Board </em>&ndash; Regular meetings of the Board shall be held to conduct business of the Association, to elect officers, and to consider any other matter within the jurisdiction of the Board. </p>
+                                                <p> Section 4. <em> Special Meetings</em> &ndash; A special meeting of the Board shall be held if a call for such a meeting, stating its purpose, is made by the President of the Association, or is requested by one-third of the members of the Board. The President of the Association shall direct the Executive Director to give notice of such special meeting to every member of the Board, giving the time and place of such meeting and stating its purpose, pursuant to the procedures set forth in the Association By-Laws. </p>
+                        <p> Section 5. <em>Quorum &ndash; </em>At any meeting of the Board, a simple majority of its members, including officers, shall constitute a quorum. </p>
+                        <p> Section 6. <em>Voting</em> &ndash; At any meeting of the Board, the Board may decide by means of a simple majority of concurring votes any matter submitted for action to the Board unless an alternative concurrence of votes is otherwise expressly specified in this Constitution or the Association By-Laws. </p>
+                        <p> Section 7. <em> Committees </em>&ndash; The President, by and with the advice and consent of the Board, shall appoint such Committees from among the membership of the Association as may be necessary for the conduct of the business of this Association. Each such Committee shall include at least one member of the Board. </p>
+                        <p> Section 8. <em>Vacancies</em> &ndash; Vacancies that occur during the terms of office of members and officers of the Board, unless otherwise provided for in this Constitution or the Association By-Laws, shall be filled by the appointment of a successor by the Board to serve the unexpired term of such office. Such vacancies shall be filled within ninety days. </p>
+                        <p align="center"><strong> Article V - Officers</strong></p>
+                        <p> Section 1. <em> President</em> &ndash; The President of the Association shall be a Participating Member of the Association. The President shall have completed a term as an elected member or officer of the Board prior to beginning his or her term as President. In the case of a member who has completed the unexpired term of another member, he or she must have completed a minimum of two years in that position prior to beginning his or her term as President. The President shall be the chief executive officer of the Association. The President shall perform all the duties that are required of the position under this Constitution and its regularly enacted By-Laws, those delegated by the Board, and those that are usual and incidental to this office. The President is a member of and shall preside at meetings of the Association and of the Board. The President shall sign matters of the Association whereon the President's signature is required. </p>
+                                                <p> Section 2. <em> President-Elect</em> &ndash; The President-Elect shall have all the qualifications required of the President. The President-Elect shall perform such duties as prescribed by the By-Laws and other duties as may be properly assigned by the President or the Board. The President-Elect shall become familiar with the duties and operations of the office of President in order to be prepared to discharge the duties of that office. The President-Elect shall assume the duties of the President in the event of the latter's absence, disability, resignation, or demise. </p>
+                        <p> Section 3. <em>Past-President</em> &ndash; The Past-President shall perform such duties as prescribed by the By-Laws and other duties as may be properly assigned by the President or the Board. </p>
+                        <p> Section 4. <em> Executive Director</em> &ndash; The Board shall provide recommendations to the University regarding the appointment or removal of the Executive Director. The Executive Director shall be responsible for the ongoing operations of the Association. The Executive Director shall serve as secretary and be responsible for the keeping of all Association records, financial transactions of the Association, and shall keep a complete record of all alumni activities. The Executive Director shall have charge of the publishing of such materials as the Board shall direct to be published, and shall have such additional duties as may be assigned by the University and the Board. </p>
+                        <p> Section 5. <em>Additional Officers</em> &ndash; The Board shall appoint and remove such additional officers as its work may require, whose term of office shall not exceed three years. </p>
+                                                <p> Section 6. <em> Election of Officers</em> &ndash; Officers of the Association shall be elected by the members of the Board. </p>
+                        <p align="center"><strong>Article VI - Nominations </strong></p>
+                        <p><em> Committees on Nominations</em> &ndash; The President shall appoint members of the Board, and such other members of the Association as might seem necessary to ensure a balanced alumni representation, to serve as a Committee on Board Nominations and a Committee on Alumni Trustee Nominations. The terms of office of the Committee members shall run to June 30 following their appointment. </p>
+                        <p> These Committees shall select candidates for membership to the Board and shall select candidates for Alumni Trustee in accordance with the rules set forth in the By-Laws of the Association. </p>
+                        <p align="center"><strong> Article VII - By-Laws </strong></p>
+                        <p> By-Laws governing the conduct of the Association meetings and other matters not regulated by the Constitution, may be adopted, repealed, altered, or amended by a concurring vote of two-thirds of the members of the Board. The Association shall be notified of any such changes and shall have the power to revise or repeal such action of the Board at any meeting of the Association. A majority vote of those present shall be required to revise or repeal such changes. </p>
+                        <p align="center"><strong> Article VIII - Amendments </strong></p>
+                        <strong>                        </strong>
+                        <p> This Constitution may be amended by a two-thirds majority of the votes cast by the members of the Association. A notice containing a copy of the proposed amendment, the purpose of the amendment, the reason for the change, and a ballot shall be sent to every member at least thirty days prior to the date the proposed amendments are to take effect. Voting by mail and other Board-approved means shall be allowed on such amendments.</p>
+                        <p><strong> Adopted Effective July 1, 1988<br>
+                        Amended Effective July 1, 1996<br>
+                        <br>
+                        Proposed Amendments December, 2005</strong></p>
+                        <hr>
+                        <p> <strong class="mainSubtitle">By-Laws<br>
+                          </strong>  <strong>As amended and approved by the ARA board, </strong><strong>May 14, 2005  </strong></p>
+                        <p align="center"><strong> Article I - Finances </strong></p>
+                        <p> Section 1. <em>Budget</em> &ndash; The president of the University or the president's designee shall authorize the budget for the office of alumni affairs at the beginning of the University's fiscal year. </p>
+                        <p> Section 2. <em>Expenditures</em> &ndash; Expenditures of the office of alumni affairs shall be processed in accordance with University policies and procedures. </p>
+                        <p align="center"><strong> Article II - Nominations for the Board <br>
+                        and Alumni Trustee</strong></p>
+                        <p> A. <em>Selection of Candidates for Nomination to the Board </em></p>
+                        <p> Section 1.<em> Process </em>&ndash; After review and consideration of nominations solicited from the entire membership of the Association, the Committee on Board Nominations shall select the names of those alumni whom it shall designate as nominees for Board. Unless otherwise directed by the Board, the Committee on Board Nominations shall nominate only one candidate for each open Board position at each election. The names of such nominees shall be certified to the Board over the signature of the chairman of the Committee on Board Nominations. No member of this Committee shall be eligible for selection as one of its nominees. </p>
+                        <em>                        </em>
+                        <p> Section 2. <em>Apportionment </em>&ndash; In selecting candidates for the Board, the Committee on Board Nominations shall make a concerted effort to ensure that the membership of the Board is representative of the overall alumni population. Directors shall be selected according to their ability to represent the alumni of Rice University, to further the mission statement and goals of the Association, to attend Board meetings, and to expend the time and energy necessary to make the Association a success. </p>
+                        <p> Section 3. <em>Vacancy</em> &ndash; Upon the death or resignation of a Board member, the vacancy shall be filled by the same nominating procedure as is used to fill the annual vacancy. The term of office of members so elected shall begin on the date of their election and shall extend through the unexpired term of the predecessor. </p>
+                        <p> Section 4. <em>Approval</em> &ndash; The Standing Committee on Board Nominations will submit the names of the candidates certified by its chair to the Board for acceptance or rejection. Upon receipt of the candidates' names, the Board will vote on the recommendations at its next meeting. </p>
+                        <p> Section 5. <em>Announcement</em> &ndash; An official announcement of the names of those elected for Board membership shall be prepared by the Executive Director and sent to the latest addresses shown on alumni records for each member within six months of election. The announcement shall include a solicitation for nominees for consideration by the following year's Committee on Board Nominations. </p>
+                        <p> B. <em>Selection of Candidates for Nominations for Alumni Trustee</em></p>
+                        <p> Section 1. <em>History</em> &ndash; By a resolution of the Board of Trustees of Rice University dated July 19, 1968, the Board of Governors was enlarged by four non-voting alumni members termed &quot;Alumni Governors.&quot; The term &quot;Governor&quot; was changed to &quot;Trustee&quot; in 1998. With the change, the Alumni Trustees were granted voting privileges. The terms of these Alumni Trustees are to run four years beginning July 1 following their selection and approval by the Board and the Board of Trustees. </p>
+                        <p> Section 2. <em>Process </em>&ndash; After review and consideration of nominations solicited from the entire membership of the Association, the Committee on Alumni Trustee Nominations shall select the name of a candidate and three ranked alternates whom it shall designate, respectively, as nominee and alternate nominees for Alumni Trustee. The names of such nominees shall be certified to the Board over the signature of the chairman of the Committee on Alumni Trustee Nominations. No member of this Committee shall be eligible for selection as one of its nominees. </p>
+                        <p> Section 3. <em>Considerations </em>&ndash; The Committee on Alumni Trustee Nominations will consider the following as their guidelines in the selection of the nominees for Alumni Trustees: </p>
+                        <p> (a) The nominee(s) should be a Participating Member of the Association whose year of graduation or, for non-graduates, the year when they would have graduated, is at least five years prior to the July 1 on which they would take office. </p>
+                        <p> (b) The Committee should nominate those individuals who have a profound interest in higher education and a particular interest in Rice University. Success in chosen career or civic achievements are important but these should be secondary to an interest in higher education. </p>
+                        <p> (c) Nominees for the position of Alumni Trustee should be individuals who can envision what Rice University, at its very best, could be. </p>
+                        <p> (d) There should be two Alumni Trustees who reside in the Houston metropolitan area. Of the remaining two Alumni Trustees, both should reside outside the Houston metropolitan area, and at least one should reside outside of Texas. </p>
+                                                <p> (e) No alumnus or alumna of Rice University who receives a salary or other compensation from Rice University as a full- or part-time employee or otherwise shall be eligible for nomination or election as an Alumni Trustee. </p>
+                        <p> Section 4. <em>Vacancy</em> &ndash; Upon the death or resignation of an Alumni Trustee the vacancy shall be filled by the same nominating procedure as is used to fill the annual vacancy. The persons nominated for the vacancy shall satisfy the same geographic considerations as their predecessor at the time of his or her predecessor's election. The term of office of members so elected shall begin on the date of their election and shall extend through the unexpired term of the predecessor. </p>
+                        <p> Section 5. <em>Approval</em> &ndash; The Committee on Alumni Trustee Nominations will submit the names certified by its chair to the Board for acceptance or rejection. Upon receipt of the nominees' names, the Board will vote on the recommendations at its next meeting. </p>
+                        <p> Section 6. <em>Submission to Board of Trustees</em> &ndash; Upon approval by the Board, the names of the candidate for Alumni Trustee and the three ranked alternates will be certified to the Board of Trustees by the President and Executive Director in accordance with the nominations process of the Board of Trustees. The Board of Trustees will then approve the candidate or, if that candidate is not approved or declines the nomination, will select a candidate from the ranked list of three alternates and thereafter will notify the Board of its action. </p>
+                        <p>Section 7. <em>Board of Trustee Responsibilities</em> &ndash; The duties and responsibilities of the Alumni Trustees shall be set by the Board of Trustees of Rice University. </p>
+                        <p> Section 8. <em>Association of Rice Alumni</em><em> Board Responsibilities &ndash; </em>Alumni Trustees are ex-officio members of the Board and shall attend meetings so that appropriate information exchange occurs between boards. Alumni Trustees shall not have the right to vote upon matters submitted for action to the Board. </p>
+                        <p> Section 9. <em>Announcement</em> &ndash; An official announcement of the name of the person elected as Alumni Trustee shall be prepared by the Executive Director and sent to the latest addresses shown on alumni records for each member within six months of election. The announcement shall include a solicitation for nominees for consideration by the following year's Committee on Alumni Trustee Nominations. </p>
+                        <p align="center"><strong>Article III - Committees</strong></p>
+                                                <p> Section 1. <em>Committees</em> &ndash; Such committees as may be necessary to carry out the work of the Association shall be appointed by the President in accordance with the requirements of the Constitution (Article IV, Section 7), and each such committee should include at least one member of the Board. Although the work of the Association changes from time to time, thereby requiring new committees to be formed and old committees to be phased out, the following committees seem desirable. These committees are considered standing committees and are as follows: </p>
+                                                <p> * Executive Committee <br>
+                          * 
+                        Committee on Board Nominations <br>
+                        * 
+                        Committee on Alumni Trustee Nominations<br>
+                        * 
+                        Committee for Creating Community<br>
+  * Committee for Encouraging Excellence<br>
+  * Committee for Lifelong Learning<br>
+  * Committee for Supporting Students </p>
+                        <p>Section 2. <em>Executive Committee</em> &ndash; This committee shall attend to routine daily business functions and such other matters that need attention between regularly scheduled Board meetings and shall have and may exercise all the powers of the Board except for the following: amending, altering, or repealing the Constitution and By-Laws, or modifying any previous action of the Board. The President shall chair this committee. The other members shall be the Past President, the President-Elect, and three members of the Board to be elected to the Executive Committee by the Board. A quorum shall consist of any three of the members. </p>
+                        <p> Section 3. <em>Committee on Board Nominations and the Committee on Alumni Trustee Nominations &ndash; </em>The duties of these committees are outlined in Article II. </p>
+                        <p> Section 4. <em>Committee on Creating Community </em>&ndash; This committee&nbsp;shall promote continued alumni relationships with Rice by providing guidance to the University and assistance in the creation of new and enhancement of existing programs and services that provide alumni opportunities to socialize and network with fellow alumni, students, and faculty. </p>
+                        <p> Section 5. <em>Committee for Encouraging Excellence </em>&ndash; This committee&nbsp;shall recommend for recognition alumni, faculty, and students who have achieved the highest levels of personal, professional, and civic excellence, and who have enhanced the success and reputation of Rice University. </p>
+                        <p> Section 6. <em>Committee for Lifelong Learning </em>&ndash; This committee&nbsp;shall provide guidance to the University and assistance in the creation of new and enhancement of existing programs and services that encourage alumni to pursue continued education throughout their lives.&nbsp; </p>
+                        <p> Section 7. <em>Committee for Supporting Students </em>&ndash; This committee&nbsp;shall provide guidance to the University and assistance in the creation of new and enhancements of existing programs and services that engage alumni in Rice's mission of providing students an educational experience of the highest caliber, while introducing students to their role as alumni.&nbsp; </p>
+                        <p align="center"><strong>Article IV - Amendments </strong></p>
+                        <p> At any meeting of the Board, by the concurring vote of not less than two-thirds of its membership, the Board may modify any provisions of these By-Laws whenever and to the extent and in the manner such authority is expressly given it by Article VII of the Constitution. A notice containing a copy of the proposed amendment, the purpose of the amendment, and the reason for the change shall be sent to every member of the Board at least fifteen days before the meeting. <strong></strong></p>
+                        <p align="center"><strong> Article V - Notice </strong></p>
+                        <p> Section 1. <em>Board Meetings </em>&ndash; Except as may be otherwise required by the Constitution, any notice required by either the Constitution or these By-Laws shall be sent to all interested parties at least seven days prior to any regular or special meeting of the Board; provided, however, that this requirement shall be waived in the event actual notice is received by such interested parties of any such meeting by telephone, fax, or by other Board-approved means at least forty-eight hours prior to any such meeting. </p>
+                        <p>Section 2. <em>Nominations</em> &ndash; All members of the Board shall be furnished the names of all persons nominated by any Nominating Committee at least fifteen days prior to any regular or special meeting of the Board. </p>
+                        <p><a name="QuickMark"></a><strong> &nbsp;</strong></p>
+                        <p><strong>Adopted Effective July 1, 1988<br>
+                        </strong><strong>Amended Effective July 1, 1996<br>
+                        </strong><strong>Amended Effective March 21, 1997<br>
+                        </strong><strong>Amended Effective January 17, 1998<br>
+                        </strong><strong>Amended Effective June 30, 2002<br>
+                        </strong><strong>Amended Effective May 14, 2005</strong></p>
+                        <p>&nbsp; </p>
+                        <p>&nbsp;</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td width="1" background="images/dots_bg.gif"><img src="images/clear.gif" width="1" height="50"></td>
+                <td width="10"><img src="images/clear.gif" width="10" height="50"></td>
+                <td>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td>
+                        <form id="srch" method=GET action="" onSubmit="doSearch();">
+                          <input type="hidden" value="web" name="tab">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr> 
+                              <td colspan="4"> 
+                                <input type=text name=q size=15 maxlength=255 value="" onChange="srch.search.value=this.value;" class="formSmall">
+                                <span id="spn" style="background-image: url(images/btn_go_new.gif);width:19;height:14" onClick="doSearch()" /> 
+                                <input type="hidden" name="hidden_site" value="alumni.rice.edu">
+                                <input type="hidden" name="search" value="">
+                                </span></td>
+                            </tr>
+                            <tr>
+                              <td width="10"> 
+                                <input id="alum" type="radio" name="sitesearch" value="alumni.rice.edu" checked>
+                              </td><td width="85"><font class="mainSmalldark">Search 
+                                this site</font></td>
+                            </tr>
+                            <tr>
+                              <td width="10" align="right"> 
+                                <input id="rice" type="radio" name="sitesearch" value="www.rice.edu">
+                              </td>
+                              <td width="85"><font class="mainSmalldark">Search 
+                                rice.edu</font></td>
+                            </tr>
+                          </table>
+                        </form></td>
+                    </tr>
+                    <tr> 
+                      <td><img src="images/clear.gif" width="115" height="20" alt="spacer"></td>
+                    </tr>                    <tr> 
+                      <td><a href="https://online.alumni.rice.edu/asp/Welcome.asp"><img src="images/title_onlinesvcs.gif" width="115" height="9" alt="Online Services" border="0"></a></td>
+                    </tr>
+                    <tr> 
+                      <td> 
+                        <table width="100%" border="0" cellspacing="3" cellpadding="0">
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/events/calendar.php" title="Events calendar and online registration">Find Events/RSVP</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/detailsearch.asp" title="Search the directory of Rice alumni">Alumni Directory</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/profile.asp" title="Update your directory information">Update Address</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Online/emailforwarding/eforwarding.asp" title="Manage or create an alumni.rice.edu account">Email Forwarding</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Career/default.asp" title="Connect with alums in your career field">Career Network</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+						  <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/bizfinder/" title="Find or promote alumni-owned businesses">Business Finder</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+<tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="http://alumni.rice.edu/submit_note.html" title="Get your latest news into the Owlmanac">Submit Classnote</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/library.asp" title="Access research tools and periodicals">Digital Library</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td><img src="images/clear.gif" width="115" height="14" alt="spacer"></td>
+                    </tr>
+                  </table>
+                  <!-- <a href="http://giving.rice.edu" target="_blank"><img src="images/rice_nextcent.gif" width="83" height="40" border="0" alt="Rice: The Next Century Campaign" hspace="3"></a><br> -->
+                  <a href="http://www.rice.edu" target="_blank"><img src="images/rice_home.gif" width="75" height="40" border="0" alt="Rice: Home" vspace="10" hspace="3"></a>
+                  <p></p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp; </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td><img src="images/clear.gif" width="100" height="5" alt="spacer"></td>
+  </tr>
+  <tr> 
+    <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="15">
+        <tr>
+          <td width="57%"><font class="mainSmall"><a href="#"onClick="SecWin=window.open('contact.html','SecWin','width=265,height=440,toolbar=no,status=yes,resizable=no,scrollbars=yes,location=no,directories=no,menubar=no');return false;">Contact 
+             the Office of Alumni Affairs</a> | <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('dFuDc6BYQoX5nNNobzmYL4')">Send a Comment</a> | <a href="index.html">Home</a></font></td>
+          <td width="43%" align="right"><font class="mainSmall"><a href="http://www.rice.edu/about/cr-notice.html" target="_blank"><script language="JavaScript">
+<!--
+today = new Date()
+cy = today.getFullYear()
+{
+}
+//-->
+</script>
+Copyright &copy;<script language="JavaScript">
+<!--
+document.write(cy)
+{
+}
+//-->
+</script> Rice University</a></font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>

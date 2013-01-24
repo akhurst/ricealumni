@@ -127,6 +127,12 @@
     <Hash>48fd3b7996e70345</Hash>
   </Dependency>
   <Dependency>
+    <ExtensionId>Orchard.Knockout</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Orchard.Knockout/Orchard.Knockout.csproj</VirtualPath>
+    <Hash>91d3877b3a29a37f</Hash>
+  </Dependency>
+  <Dependency>
     <ExtensionId>Orchard.Lists</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/Orchard.Lists/bin/Orchard.Lists.dll</VirtualPath>
@@ -286,25 +292,31 @@
     <ExtensionId>RiceAlumni.Core</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/RiceAlumni.Core/bin/RiceAlumni.Core.dll</VirtualPath>
-    <Hash>48ffbe946a5a64aa</Hash>
+    <Hash>48ffc7707719f5a9</Hash>
+  </Dependency>
+  <Dependency>
+    <ExtensionId>RiceAlumni.Events</ExtensionId>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/RiceAlumni.Events/bin/RiceAlumni.Events.dll</VirtualPath>
+    <Hash>490728035814b464</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>RiceAlumni.Homepage</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/RiceAlumni.Homepage/bin/RiceAlumni.Homepage.dll</VirtualPath>
-    <Hash>250d747249dbd1dc</Hash>
+    <Hash>250d7ab2c9cbf8a3</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>RiceAlumni.StaffDirectory</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/RiceAlumni.StaffDirectory/bin/RiceAlumni.StaffDirectory.dll</VirtualPath>
-    <Hash>118b7db0dc1b53d</Hash>
+    <Hash>118be335f9b7068</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>RiceAlumni.Theme</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Themes/RiceAlumni.Theme/bin/RiceAlumni.Theme.dll</VirtualPath>
-    <Hash>490310f101f7e653</Hash>
+    <Hash>db9595dd3a01cf8b</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>SysCache</ExtensionId>

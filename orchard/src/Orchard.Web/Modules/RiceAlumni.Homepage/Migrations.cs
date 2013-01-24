@@ -29,7 +29,6 @@ namespace RiceAlumni.Homepage
 
 			ContentDefinitionManager.AlterTypeDefinition("HomepageLink", builder => builder
 				.Draftable()
-				.Creatable()
 				.WithPart("WidgetPart")
 				.WithPart("CommonPart")
 				.WithPart("BodyPart", partBuilder => partBuilder.WithSetting("BodyTypePartSettings.Flavor", "text"))
@@ -42,15 +41,14 @@ namespace RiceAlumni.Homepage
 			ContentDefinitionManager.AlterPartDefinition("HomepagePrimaryImage", part => part
 				.WithField("Image", field => field
 					.OfType("ImageField")
-					.WithSetting("ImageFieldSettings.Width", "691")
-					.WithSetting("ImageFieldSettings.Height", "95")
+					.WithSetting("ImageFieldSettings.Width", "1980")
+					.WithSetting("ImageFieldSettings.Height", "650")
 					.WithSetting("ImageFieldSettings.ResizeAction", "Validate")
 				)
 			);
 
 			ContentDefinitionManager.AlterTypeDefinition("HomepageSlide", builder => builder
 				.Draftable()
-				.Creatable()
 				.WithPart("WidgetPart")
 				.WithPart("CommonPart")
 				.WithPart("BodyPart", partBuilder => partBuilder.WithSetting("BodyTypePartSettings.Flavor", "text"))

@@ -1,0 +1,663 @@
+<html>
+<head>
+<title></title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="../styles.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="../common/common.js"></script>
+<script type="text/javascript" src="../common/accordion.js"></script>
+<script type="text/javascript" src="../common/zoom.js"></script>
+<script type="text/javascript" charset="utf-8">
+		$(document).ready(function() {
+			$('div.photo a').fancyZoom({scaleImg: true, closeOnClick: true});
+	
+		});
+		ddaccordion.init({
+	headerclass: "travel", //Shared CSS class name of headers group
+	contentclass: "thelanguage", //Shared CSS class name of contents group
+	revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+	mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+	collapseprev: false, //Collapse previous content (so only one open at any time)? true/false 
+	defaultexpanded: [], //index of content(s) open by default [index1, index2, etc]. [] denotes no content.
+	onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: false, //persist state of opened contents within browser session?
+	toggleclass: ["closedlanguage", "openlanguage"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+	/* togglehtml: ["prefix", "&#8226; ", "&middot; "], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs) */
+	animatespeed: "fast", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+	oninit:function(expandedindices){ //custom code to run when headers have initalized
+		//do nothing
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})
+
+	</script>
+<style type="text/css">
+.travel {
+	cursor: hand;
+	cursor: pointer;
+	font-family: calibri, verdana, arial, helvetica, sans-serif;
+	font-size: 13px;
+	padding: 10px;
+	color: #333333;
+	margin-top: 10px;
+	margin-right: 0;
+	margin-bottom: 10px;
+	margin-left: 0;
+	background-color: #EFC887;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.thelanguage {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+}
+.openlanguage { /*class added to contents of 2nd demo when they are open*/
+	color: #630;
+	font-weight: bold;
+	background-color: #FFF;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.closedlanguage { /*class added to contents of 2nd demo when they are closed*/
+	color: #300;
+}
+.acwicons {
+	color: #FFF;
+	font-size: 12px;
+}
+.earth {
+	color: #FFF;
+	background-color: #005953;
+	padding: 8px;
+}
+.arts {
+	color: #FFF;
+	background-color: #747C31;
+	padding: 8px;
+}
+.science {
+	color: #FFF;
+	background-color: #BF2E1B;
+	padding: 8px;
+}
+.ccc {
+	color: #FFF;
+	background-color: #57331B;
+	padding: 8px;
+}
+.earth, .science, .ccc, .arts {
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	font-family: Calibri, Verdana, Geneva, sans-serif;
+}
+</style>
+</head>
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top">
+          <td width="221" rowspan="2"><a href="../index.html"><img src="../images/logo.gif" width="221" height="94" alt="Association of Rice Alumni" border="0"></a><br>
+            <table width="191" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="http://alumni.cgi.rice.edu/events/calendar.php">EVENTS CALENDAR</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../alumni_groups.html">ALUMNI GROUPS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../youngalum_stds.html">YOUNG ALUMNI /STUDENTS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../career_connection.html">CAREER CONNECTION</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../volunteer.html">VOLUNTEER</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_over_nav.gif" align="center" valign="middle"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="navOver"><a href="../learning_trav.html">LEARNING &amp; TRAVEL</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top">&nbsp;</td>
+                <td width="172" align="center" valign="middle"><table width="90%" border="0" cellspacing="3" cellpadding="0">
+                    <tr>
+                      <td width="49%" background="../images/gray2_bg.gif"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark">Alumni College</font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="http://online.alumni.rice.edu/directory/library.asp">Rice Alumni Digital Library </a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="../images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="../travel.html">Travel/Study Program</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td background="../images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="../learning_scholar.html">Scholarships & Fellowships</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../honors_awards.html">HONORS &amp; AWARDS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../new_at_rice.html">WHAT'S NEW @ RICE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../about_alumassoc.html">ABOUT THE ARA</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="../faq_file.html">FAQ FILE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="../images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="../images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="../images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="http://giving.rice.edu" target="_blank">GIVE TO RICE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+          <td align="left"><img src="../images/clear.gif" width="100" height="20"><br>
+            <img src="../images/alumnicollege/2012/header.jpg" alt="Alumni College Weekend 2011" width="560" height="97" ="Owl and art"></td>
+        </tr>
+        <tr valign="top">
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td colspan="4">&nbsp;</td>
+              </tr>
+              <tr valign="top">
+                <td width="414"><p><img src="../images/sub_title_learntrav.gif" width="411" height="17" alt="Learning &amp; Travel"></p>
+                  <table class="mainTable" border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tr valign="top">
+                      <td class="mainSmall"><p class="mainSubtitle"><strong>Rice University Alumni College Weekend</strong><br>
+                          March 9-11, 2012</p>
+                        <p class="mainSubtitle"> <strong>What is Alumni College Weekend?</strong></p>
+                        <p>Welcome to Rice's 18th annual Alumni College  Weekend! Since 1995, the Association of Rice Alumni has held this weekend-long  event inviting alumni, parents, and friends to campus for an experience that is  uniquely Rice.&nbsp; Join us for a series of  classes from some of our best and brightest professors and rising stars March 9-11, 2012.&nbsp; The Association of  Rice Alumni firmly believes that the pursuit of knowledge should continue beyond  your time as a student, and Alumni College Weekend is a fabulous opportunity to  expand your intellectual horizons.&nbsp; And when  you&rsquo;re not in class, the program offers a chance to mix, mingle, and network  with your fellow &ldquo;classmates&rdquo; &mdash; a broad spectrum of Rice community  members.&nbsp; </p>
+                        <p class="mainSubtitle"> <b>The 2012 Program</b></p>
+                        <p class="mainSmall"> You'll notice icons next to each of the course descriptions throughout this brochure. The classes offered at Alumni College are grouped into tracks: themes that help you identify topics of particular interest. This year we are pleased to present the following tracks:</p>
+                        <table border="0" align="center" cellpadding="7" cellspacing="0" class="mainSmall" height="42">
+                          <tr valign="top">
+                            <td valign="top" bgcolor="#73C147">&nbsp;</td>
+                            <td valign="top"><strong><img src="http://alumni.rice.edu/images/alumnicollege/2012/TakeABreak2.jpg" alt="" width="75" height="75" /></strong></td>
+                            <td bgcolor="#73C147" class="acwicons"><b>Take a Break</b><br>
+                              An often requested chance to have light exercise during an otherwise purely academic weekend.</td>
+                          </tr>
+                          <tr valign="top">
+                            <td valign="top" bgcolor="#3282B5">&nbsp;</td>
+                            <td valign="top"><strong><img src="http://alumni.rice.edu/images/alumnicollege/2012/Centennial2.jpg" alt="" width="75" height="75" /></strong></td>
+                            <td bgcolor="#3282B5" class="acwicons"><b>The Centennial</b><br>
+                              Classes dealing with the people and actions surrounding the founding Rice as we honor our centennial year.</td>
+                          </tr>
+                          <tr valign="top">
+                            <td valign="top" bgcolor="#F24034">&nbsp;</td>
+                            <td valign="top"><strong><img src="http://alumni.rice.edu/images/alumnicollege/2012/CenturyInTheMaking2.jpg" alt="" width="75" height="75" /></strong></td>
+                            <td bgcolor="#F24034" class="acwicons"><strong>A Century in the Making</strong><br>
+                              Topics from biology to architecture, music to physics: What were they like in 1912 and how have they changed.</td>
+                          </tr>
+                          <tr valign="top">
+                            <td valign="top" bgcolor="#03A5A7">&nbsp;</td>
+                            <td valign="top"><strong><img src="http://alumni.rice.edu/images/alumnicollege/2012/Professionals2.jpg" alt="" width="75" height="75" /></strong></td>
+                            <td bgcolor="#03A5A7" class="acwicons"><b>Biography of Earth</b><br>
+                              A broad look at the Earth and the people who inhabit it</td>
+                          </tr>
+                        </table>
+                        <p><img src="../images/gray2_bg.gif" width="100%" height="1"></p>
+                        <table cellpadding="10">
+                          <tr>
+                            <td bgcolor="#F1F2D5" class="mainSmall"><a href="https://online.alumni.rice.edu/default.aspx?Page=EVNTAdminEventEdit&EventID=1464"><b>To 
+                              register for Alumni College Weekend, please click 
+                              here.</b></a> Once you have registered, you will 
+                              receive an email confirmation. Once class selections are fully available, we will email you with a link to make your class selections. If you 
+                              have any questions, please contact Jennifer Harding at 713-348-6094 or 800-742-3258.</td>
+                          </tr>
+                        </table>
+                        <p class="mainSmall">&nbsp;</p></td>
+                    </tr>
+                  </table></td>
+                <td width="1" background="../images/dots_bg.gif"><img src="../images/clear.gif" width="1" height="50"></td>
+                <td width="10"><img src="../images/clear.gif" width="10" height="50"></td>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><form id="srch" method=GET action="" onSubmit="doSearch();">
+                          <input type="hidden" value="web" name="tab">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td colspan="4"><input type=text name=q size=15 maxlength=255 value="" onChange="srch.search.value=this.value;" class="formSmall">
+                                <span id="spn" style="background-image: url(../images/btn_go_new.gif);width:19;height:14" onClick="doSearch()" />
+                                <input type="hidden" name="hidden_site" value="alumni.rice.edu">
+                                <input type="hidden" name="search" value="">
+                                </span></td>
+                            </tr>
+                            <tr>
+                              <td width="10"><input id="alum" type="radio" name="sitesearch" value="alumni.rice.edu" checked></td>
+                              <td width="85"><font class="mainSmalldark">Search this site</font></td>
+                            </tr>
+                            <tr>
+                              <td width="10" align="right"><input id="rice" type="radio" name="sitesearch" value="www.rice.edu"></td>
+                              <td width="85"><font class="mainSmalldark">Search rice.edu</font></td>
+                            </tr>
+                          </table>
+                        </form></td>
+                    </tr>
+                    <tr>
+                      <td><img src="../images/clear.gif" width="115" height="20" alt="spacer"></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://online.alumni.rice.edu/asp/Welcome.asp"><img src="../images/title_onlinesvcs.gif" width="115" height="9" alt="Online Services" border="0"></a></td>
+                    </tr>
+                    <tr>
+                      <td><table width="100%" border="0" cellspacing="3" cellpadding="0">
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/events/calendar.php" title="Events calendar and online registration">Find Events/RSVP</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/detailsearch.asp" title="Search the directory of Rice alumni">Alumni Directory</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/profile.asp" title="Update your directory information">Update Address</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Online/emailforwarding/eforwarding.asp" title="Manage or create an alumni.rice.edu account">Email Forwarding</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Career/default.asp" title="Connect with alums in your career field">Career Network</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/bizfinder/" title="Find or promote alumni-owned businesses">Business Finder</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/remotelibrary.asp?type=8" title="Get your latest news into the Owlmanac" target="_blank">Online Classnotes</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/library.asp" title="Access research tools and periodicals">Digital Library</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td><img src="../images/clear.gif" width="115" height="14" alt="spacer"></td>
+                    </tr>
+                  </table>
+                  
+                  <!-- <a href="http://giving.rice.edu" target="_blank"><img src="images/rice_nextcent.gif" width="83" height="40" border="0" alt="Rice: The Next Century Campaign" hspace="3"></a><br> --> 
+                  <a href="http://www.rice.edu" target="_blank"><img src="../images/rice_home.gif" width="75" height="40" border="0" alt="Rice: Home" vspace="10" hspace="3"></a> <br>
+                  <img src="../images/clear.gif" width="115" height="3" alt="spacer">
+                  <p></p></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="mainCell" valign="top"><img src="../images/clear.gif" width="20" height="20"></td>
+                <td width="100%" class="mainSmall"><p class="mainSubtitle">
+                    <LINK href="../faq_css.css" type=text/css rel=stylesheet>
+                    <strong> <br>
+                    Course Offerings and Descriptions: </strong> <a href="#" onClick="ddaccordion.collapseall('travel'); return false">Collapse 
+                    all</a> | <a href="#" onClick="ddaccordion.expandall('travel'); return false">Expand 
+                    all</a>
+                  <p class="mainSubtitle"><strong>Friday, March 9</strong></p>
+                  <p>Class 1, 2&ndash;3:30 p.m.</p>
+                  <div  class="travel"> <strong>B. Paul Padley</strong><br>
+                    Progress Through Failure, A Century of Physics</div>
+                  <div class="thelanguage">
+                    <p class="earth"> A Century in the Making</p>
+                    <p>If you have ever taken a physics class, you can rest assured  that whatever you learned was wrong to some extent.&nbsp; In fact our greatest leaps forward come when  what we believe to be true is shown to fail to explain nature correctly.&nbsp;&nbsp; We will look at past failures, including  some examples with a Rice connection.&nbsp; It  turns out that we can prove quite conclusively that currently we are failing to  describe 95% of the universe! We must be on the verge of a really big leap  forward in our understanding of nature. </p>
+                    <p><strong>B. Paul Padley, PhD</strong>, is professor of physics and astronomy at Rice University, where he&nbsp;conducts research in experimental particle physics in an attempt to understand the basic constituents of matter and the laws of nature that govern them.&nbsp;He has worked on experiments at several of the world's leading particle physics facilities and currently is working on the Large Hadron Collider at CERN. He has also been active in bringing physics to the public, contributing&nbsp;to an episode of the Magic Schoolbus and&nbsp;giving advice to programs and appearing on the Discovery Channel.</p>
+                    <br>
+                  </div>
+                  <div  class="travel"><strong>Art Tour</strong><br />
+                  </div>
+                  <div class="thelanguage">
+                    <p class="arts">Take a Break</p>
+                    <p>A walking tour of the campus that will focus on the numerous pieces of art that have been added to the campus over the recent years. Led by one of the staff from the Rice Art Program, this tour will discuss artists, origins, and future plans.</p>
+                    <p><strong>The Rice Art Program </strong>is directed by Molly Hubbard and led by the Rice Art Committee, which is chaired by alumnus Raymond Brochstein and co-chaired by alumna Suzanne Deal Booth. Members include Rice trustees, students, faculty and staff, in addition to community representatives. Funding for the site-specific projects is provided from a new one-half-percent-for-art initiative for new buildings and funded by philanthropy.<br>
+                      &nbsp; </p>
+                  </div>
+                  <p>Class 2, 3:45&ndash;5: 15 p.m.</p>
+                  <div  class="travel"><strong>Malcolm Gillis</strong><br />
+                    Looking Backward: The Economy of 1912 </div>
+                  <div class="thelanguage">
+                    <p class="arts">A Century in the Making</p>
+                    <p><strong>TBN</strong></p>
+                    <p><strong>Malcolm Gillis </strong>was  president of Rice University from 1993-2004. He served as Dean of the Faculty  of Arts and Sciences at Duke University from 1991-1993. He is now the University  Professor and the Ervin Kenneth Zingler Professor of Economics at Rice University.  He spent the first 25 years of his professional life teaching economics and bringing  economic analysis to bear on important issues of public policy in nearly 20 countries,  from the United States and Canada to Ecuador, Colombia, Ghana, Indonesia, and  Korea. He is author, coauthor, or editor of eight books and was the principal  author of the leading textbook in the field of economics, <em>Economics of Development</em>, now available in five languages. </p>
+                  </div>
+                  <div  class="travel"><strong>Campus Tour</strong><br />
+                  </div>
+                  <div class="thelanguage">
+                    <p class="arts">Take a Break</p>
+                    <p>Receive a refresher and learn  something new about your favorite buildings on campus. Discover details about our  newest architectural additions from current students.&nbsp; Join Rice  Ambassadors for a walking tour of campus, with special emphasis on some of the most  recent and modern buildings.&nbsp; Note: This is a walking tour, please be sure  that you wear comfortable shoes and are prepared to walk.</p>
+                    <p>The Rice Ambassadors are current undergraduate students selected to represent the university through the Office of University Relations. Each student is trained to provide campus tours and support for major events. </p>
+                  </div>
+                  <div  class="travel"><strong>Walter Bailey</strong><br />
+                    Modern Music in 1912 </div>
+                  <div class="thelanguage">
+                    <p class="earth">A century in the making</p>
+                    <p>What constituted &ldquo;modern music&rdquo; in 1912?&nbsp; Works such as Arnold Schoenberg&rsquo;s <em>Pierrot lunaire,</em> Claude Debussy&rsquo;s <em>Jeux,</em> and compositions by American  composers Henry Cowell and Charles Ives, set the bar for musical modernism that  year.&nbsp; What did audiences in the United  States think about such music, and how did the music played at the opening  festivities of the Rice Institute reflect these perceptions of musical  modernism?&nbsp; With the help of music  critics, commentators, and other journalists published in 1912, we can get a  sense of &ldquo;what modern was.&rdquo; </p>
+                    <p><strong>Walter Bailey </strong>is Associate Professor and Chair of Musicology at Rice  University&rsquo;s Shepherd School of Music.&nbsp;  He received a bachelor of music in composition from Lewis and Clark  College and master of arts and Ph.D. degrees in musicology from the University  of Southern California. He joined the Shepherd School faculty in 1982. He  has taught a variety of courses for undergraduate and graduate students,  including surveys, period studies, and seminars on the music of Schoenberg,  Stravinsky, Strauss, Satie, and on American art music.&nbsp; His research interests include American and  European music from the early 1900s.</p>
+                    <p>Bailey has received grants and fellowships from the National  Endowment for the Humanities and Rice University.&nbsp; He is the author of <em>Programmatic Elements in the Works of Schoenberg</em> (UMI Research  Press, 1984), coauthor (with Nancy Gisbrecht Bailey) of <em>Radie Britain:&nbsp; A  Bio-Bibliography</em> (Greenwood Press, 1990), and editor of <em>The Schoenberg Companion</em> (Greenwood  Press, 1998), to which he also contributed several articles.&nbsp; His articles and reviews have appeared in a  number of journals and collections, including <em>Arnold Sch&ouml;nberg&mdash;Interpretationen seiner Werke </em>(Laaber Verlag,  2002), <em>The Cambridge Companion to  Schoenberg </em>(2010)<em>,</em> the <em>Journal of the Arnold Schoenberg Institute, </em>the <em>Musical Quarterly,</em> <em>Notes, </em>the <em>Journal of Southern History,</em> <em>American  Music, </em>and the <em>Journal of the Society  for American Music</em>.</p>
+                  </div>
+                  <p class="mainSubtitle"><strong>Saturday, March 10 </strong></p>
+                  <p>Class 3, 9&ndash;10:30 a.m.</p>
+                  <div class="travel"><strong>Allison Meyer Vann</strong><br />
+                    Pilates for Beginners </div>
+                  <div class="thelanguage">
+                  <p class="science">Take a Break</p>
+                  <p> Pilates is a body conditioning routine that helps build flexibility and long, lean muscles, strength and endurance in the legs, abdominals, arms, hips, and back. It puts emphasis on spinal and pelvic alignment, breathing to relieve stress and allow adequate oxygen flow to muscles, developing a strong core or center (tones abdominals while strengthening the back), and improving coordination and balance.&nbsp; </p>
+                  <p><strong>Alison Vann</strong> has been a student of classical Pilates for over  13 years.&nbsp; She is certified in the mat work and the equipment through Peak  Pilates.&nbsp; Alison is committed to sharing her love of Pilates and movement  to people of all ages and fitness levels.&nbsp; She&nbsp; is a practicing  attorney and lives in Southampton with her husband. </p>
+                  </div><div  class="travel"><strong>Wesley Morris</strong><br />
+                    <strong>The Challenge of Teaching &ldquo;American Fiction 1910 to  1950&rdquo;</strong></div>
+                  <div class="thelanguage">
+                    <p class="ccc">A Century in the Making</p>
+                    <p>It is not surprising,  that in Morris' 40+ years of teaching American fiction the  course has changed significantly.&nbsp; This change is  much more than a matter of what texts are taught.&nbsp;  There is still significant focus on classical texts by Ernest Hemingway,  F. Scott Fitzgerald, and William Faulkner, but new texts have been added over the years: Kate Chopin, Jean Toomer,  and John Dos Passos to name a few.&nbsp; The change,  however, is not merely what is taught, but how Morris teaches these new and classical  texts.&nbsp; In this Alumni College class I  would like to explore the reasons for these changes.&nbsp;&nbsp; </p>
+                    <p><strong>Wesley Morris </strong>has a BA and MA in  English from The University of Kentucky and a PhD in Literary Theory and  English from The University of Iowa.&nbsp; He has published several articles and reviews as well as three books: <u>Toward a  New Historicism</u>, <u>Friday&rsquo;s Footprint</u>, and <u>Reading Faulkner</u>.&nbsp; Morris came to Rice from The University of Iowa in 1968 to teach literary theory and  criticism, learned about William Faulkner from his colleague and Faulkner  mentor, David Minter, and expanded his interests to Modern American  Literature.&nbsp;He has served as Chair of  the Department of English and Master of Hanszen College.&nbsp; </p>
+                  </div>
+                  <div  class="travel"><strong>Michael Grojean</strong><br />
+                    Management, TBN</div>
+                  <div class="thelanguage">
+                    <p class="arts">Classes for Professionals</p>
+                    <p>TBN</p>
+                    <p> <strong> Michael Grojean </strong>joins Rice University Executive Education as Professor in the Practice of&nbsp;Management and Executive Director, coming from a managing Partner&rsquo;s position in an&nbsp;Executive Development Consultancy firm. Prior to that, Dr Grojean was a member of the faculty&nbsp;at Aston Business School in the United Kingdom where he served as Associate Professor of&nbsp;Management, Head of Executive Education and Associate Dean for Corporate Activities and&nbsp;Partnerships. Additionally, Dr Grojean&rsquo;s broad experience base includes having served as the&nbsp;Leadership Policy Officer for the U.S Army as well as the Director of Human Resources for a&nbsp;28,000 member organization. Of note, as the Leadership Policy Officer, he was responsible for&nbsp;developing, coordinating and implementing leadership and leader development policy and&nbsp;doctrine for the 1.4 million person active and reserve force in the U.S. Army. In this role, he also&nbsp;authored the Army&rsquo;s mentorship doctrine, critically changing the organizational paradigm of&nbsp;developmental relationships. joins Rice University Executive Education as Professor in the Practice of&nbsp;Management and Executive Director, coming from a managing Partner&rsquo;s position in an&nbsp;Executive Development Consultancy firm. Prior to that, Dr Grojean was a member of the faculty&nbsp;at Aston Business School in the United Kingdom where he served as Associate Professor of&nbsp;Management, Head of Executive Education and Associate Dean for Corporate Activities and&nbsp;Partnerships. Additionally, Dr Grojean&rsquo;s broad experience base includes having served as the&nbsp;Leadership Policy Officer for the U.S Army as well as the Director of Human Resources for a&nbsp;28,000 member organization. Of note, as the Leadership Policy Officer, he was responsible for&nbsp;developing, coordinating and implementing leadership and leader development policy and&nbsp;doctrine for the 1.4 million person active and reserve force in the U.S. Army. In this role, he also&nbsp;authored the Army&rsquo;s mentorship doctrine, critically changing the organizational paradigm of&nbsp;developmental relationships. </p>
+                    <p>Dr Grojean&rsquo;s research interests and expertise lie in the intersection between organizational&nbsp;change, strategy and leadership. His research has been published in British Journal of&nbsp;Management, The Journal of Occupational and Organizational Psychology, Human&nbsp;Performance, Leadership Quarterly, the Journal of Business Ethics and The Reader's Guide to&nbsp;the Social Sciences, as well as numerous confidential internal organizational reports and&nbsp;publications. In addition to the publications noted above, Dr Grojean has made recent media&nbsp;appearances in the Guardian, the Scotsman, The Pat Kenny Show, RTE Radio, the Birmingham&nbsp;Post, Newstalk Ireland and BBC Radio. He also holds memberships in the American&nbsp;Psychological Society, Society of Industrial Organizational Psychology, British Academy of&nbsp;Management, Society of Human Resource Management, International&nbsp;Leadership Association and Center for Advancement of Research&nbsp;Methods Analysis.&nbsp; </p>
+                  </div>
+                  <p>Class 4, 10:45 a.m.&ndash;12:15 p.m.</p>
+                  <div  class="travel"><strong>Campus Tour</strong></div>
+                  <div class="thelanguage">
+                  <p class="arts">Take a Break</p>
+                  <p>Receive a refresher and learn  something new about your favorite buildings on campus. Discover details about our  newest architectural additions from current students.&nbsp; Join Rice  Ambassadors for a walking tour of campus, with special emphasis on some of the most  recent and modern buildings.&nbsp; Note: This is a walking tour, please be sure  that you wear comfortable shoes and are prepared to walk.</p>
+                  <p>The Rice Ambassadors are current undergraduate students selected to represent the university through the Office of University Relations. Each student is trained to provide campus tours and support for major events. </p>
+                  <p></p></div>
+                  <div  class="travel"><strong>James Tour</strong><br />
+                    Nanotechnology.&nbsp;  From nanocars to medicine</div>
+                  <div class="thelanguage">
+                    <p class="science">A Century in the making</p>
+                    <p>An overview of the nanotechnology being  developed in the presenter&rsquo;s laboratory will be delivered.&nbsp; This will include topics such as nanocars  (single molecule cars), nano for cancer chemotherapy and brain injury, and nano  for oil drilling and downhole oil detection.&nbsp; </p>
+                    <p> James M. Tour, a synthetic organic chemist, received his Bachelor of Science degree in chemistry from Syracuse University, his Ph.D. in synthetic organic and organometallic chemistry from Purdue University, and postdoctoral training in synthetic organic chemistry at the University of Wisconsin and Stanford University. After spending 11 years on the faculty of the Department of Chemistry and Biochemistry at the University of South Carolina, he joined the Center for Nanoscale Science and Technology at Rice University in 1999 where he is presently the T. T. and W. F. Chao Professor of Chemistry, Professor of Computer Science, and Professor of Mechanical Engineering and Materials Science. Tour&rsquo;s scientific research areas include nanoelectronics, graphene electronics, carbon nanovectors for medical applications, green carbon research for enhanced oil recovery and environmentally friendly oil and gas extraction, graphene photovoltaics, chemical self-assembly, flame retarding polymer additives, carbon nanotube and graphene synthetic modifications, carbon composites, hydrogen storage on nanoengineered carbon scaffolds, synthesis of single-molecule nanomachines which include molecular motors and nanocars, use of the NanoKids concept for K-12 education in nanoscale science, Dance Dance Revolution and Guitar Hero science educational package development for middle school education, and methods for retarding chemical terrorist attacks. Tour has over 400 research publications and 50 patents. </p>
+                  </div>
+                  <div  class="travel"><strong>Reto Geiser</strong><br />
+                    &quot;2 OU 3 CHOSES QUE JE SAIS D'ELLE&quot;: Observations  on Contemporary Architecture </div>
+                  <div class="thelanguage">
+                    <p class="earth">A Century in the making</p>
+                    <p>A closer look at contemporary architecture.</p>
+                    <p><strong>Reto Geiser</strong> is an architect and scholar with a focus in  modern architecture and the contemporary architectural and urban discourse. He  is currently the Wortham Assistant Professor at the Rice School of  Architecture. He studied architecture at ETH Zurich and Columbia University in  New York, and holds a PhD from ETH Zurich with a thesis investigating aspects  of cultural transfer and transatlantic exchange in the work of the  architectural historian Sigfried Giedion. </p>
+                    <p> A founding principal of the collaborative design practice  MG&amp;Co., he is developing spatial strategies in a range of scales from the  book to the house, exploring the boundaries of design and research with a  special focus on the intersections and overlaps between architecture,  installation, textiles and typography. His curatorial works include the  exhibition &quot;Explorations: Teaching, Design, Research,&quot; Switzerland&rsquo;s  official contribution to the 11th Venice Architecture Biennale. Geiser's writings  have been published in anthologies and such publications as <em>Abitare, Future Anterior</em>, and <em>Hunch</em>. He is the editor of award-winning <em>Explorations in Architecture</em> (Birkh&auml;user, 2008), and the series editor of <em>Standpunkte Magazine</em>, and <em>Standpunkte  Dokumente</em>.&nbsp;</p>
+                  </div>
+                  <div  class="travel"><strong>Business, TBA</strong><br />
+                  </div>
+                  <div class="thelanguage">
+                    <p class="earth">Classes for Professionals</p>
+                    <p>&nbsp;</p>
+                  </div>
+                  <p>Class 5, 2&ndash;3:30 p.m.</p>
+                  <div  class="travel"><strong>John Boles</strong><br />
+                    Edgar Odell Lovett and the Founding and Shaping  of the Rice Institute</div>
+                  <div class="thelanguage">
+                    <p class="ccc">The Centennial</p>
+                    <p>This lecture will discuss Lovett&rsquo;s education, his teaching  experience, his round-the-world trip, his charisma, and his leadership and show  how he took William Marsh Rice vague charter and turned it into a blueprint for  the creation of a great university, and then show his role and making this  vision become reality. </p>
+                    <p><strong>John B. Boles</strong>, the William Pettus Hobby  Professor of History at Rice University and editor of the <em>Journal of Southern History</em>, received his undergraduate training at  Rice (BA, 1965) and his doctorate from the University of Virginia (PhD, 1969),  where he was a Thomas Jefferson Foundation Fellow and a Woodrow Wilson  Dissertation Fellow; he later held an N.E.H. postdoctoral fellowship in  anthropology at Johns Hopkins University. He is the author of ten books&mdash;<em>The Great Revival, 1787&ndash;1805:&nbsp; Origins of the Southern Evangelical Mind</em> (1972); <em>Religion in Antebellum Kentucky</em> (1976); <em>Black Southerners, 1619&ndash;1869 </em>(1983); <em>Rice University and the 1990 Economic  Summit of Industrialized Nations </em>(1991); <em>A University So Conceived:&nbsp; A  Brief History of Rice </em>(1992); <em>The  Irony of Southern Religion</em> (1994); and <em>The  South Through Time:&nbsp; A History of an  American Region</em> (1995; 3rd ed., 2004), <em>University  Builder: Edgar Odell Lovett and the Founding of the Rice Institute </em>(2007),and  co-author of <em>Unto a Good Land: A History  of the American People</em> (2005)&mdash;and the editor or coeditor of eleven other  books, including <em>Interpreting Southern  History</em> (1987), <em>A Companion to the  American South</em> (2002), <em>Shapers of</em> <em>Southern History: Autobiographical  Reflections</em> (2004), and most recently, <em>Seeing  Jefferson Anew: In His Time and Ours</em> (2010).&nbsp;&nbsp; He has also written many reviews and  articles and spoken widely on history, editing, and teaching, and he directs a  large graduate training program in southern history at Rice. </p>
+                    <p>In 1991 he was  awarded the Meritorious Service Award by the Association of Rice Alumni and in  2004 he received their Distinguished Alumni Award; in 1994 and 2004 he received  the Graduate Student Association Teaching Award. He won the Presidential  Mentoring Award in 2006 and the George R. Brown Award for Superior Teaching in  2007 and 2009. During the spring semester of 2000 he held the Robert Foster  Cherry Distinguished Teaching Professorship at Baylor University; in the winter  semester of 2005-6 he held the Fulbright-Leipzig Distinguished Chair in  American Studies at the University of Leipzig, Germany; and in the winter  semester of 2009-10 he held the Leibniz Professorship at the Institute of  Advanced Study, University of Leipzig, Germany.&nbsp;  He is an associate of Will Rice College and a member of the Houston  Philosophical Society, the Philosophical Society of Texas, and the Southern Historical  Association.<strong></strong></p>
+                  </div>
+                  <div  class="travel"><strong>Campus Tour</strong><br />
+                  </div>
+                  <div class="thelanguage">
+                    <p class="science">Take a Break</p>
+                    <p>Receive a refresher and learn  something new about your favorite buildings on campus. Discover details about our  newest architectural additions from current students.&nbsp; Join Rice  Ambassadors for a walking tour of campus, with special emphasis on some of the most  recent and modern buildings.&nbsp; Note: This is a walking tour, please be sure  that you wear comfortable shoes and are prepared to walk.</p>
+                    <p>The Rice Ambassadors are current undergraduate students selected to represent the university through the Office of University Relations. Each student is trained to provide campus tours and support for major events. </p>
+                  </div>
+                  <div  class="travel"><strong>Business, TBA</strong><br />
+                  </div>
+                  <div class="thelanguage">
+                    <p class="earth">Classes for Professionals</p>
+                    <p>&nbsp;</p>
+                  </div>
+                  <p>Class 6, 3:45&ndash;5:15 p.m.</p>
+                  <div  class="travel"><strong>John Hopkins</strong><br />
+                    The Parthenon and Architectural Meaning<u> </u></div>
+                  <div class="thelanguage">
+                    <p class="science">a Century in the Making</p>
+                    <p>In this lecture I discuss some of the material from my  course this semester on the Parthenon.&nbsp;  The course investigates not only the meaning that the Parthenon held for  an ancient Athenian, but also, how later people in Athens (Romans, Ottomans,  British diplomats) interpreted its significance.&nbsp; I will close by questioning the meaning of  the campus architecture of Rice and whether one can use some of the same tools  for understanding the Parthenon to look at architecture in the modern world. </p>
+                    <p><strong>John Hopkins</strong> is ACLS  New Faculty Fellow in the Department of Art History at Rice.&nbsp; He specializes in the art and architecture of  the ancient Mediterranean with a particular focus on Roman architecture  and sculpture, spatial experience and cultural and societal change.&nbsp; Much of his work incorporates the use of  virtual technology for the reconstruction of ancient Rome, as a means to  present as full a picture of the architecture of antiquity as possible to  students and colleagues.&nbsp; He is currently  finishing a book manuscript on the genesis of Roman architecture and has  previously published on the Capitoline Temple and on the creation of the Roman  Forum. He is Fellow of the American Academy in Rome, the American Council of  Learned Societies and the Getty Research Institute.</p>
+                  </div>
+                  <div  class="travel"><strong>Art Tour</strong></div>
+                  <div class="thelanguage">
+                    <p class="ccc">Take a Break</p>
+                    <p>A walking tour of the campus that will focus on the numerous pieces of art that have been added to the campus over the recent years. Led by one of the staff from the Rice Art Program, this tour will discuss artists, origins, and future plans.</p>
+                    <p><strong>The Rice Art Program </strong>is directed by Molly Hubbard and led by the Rice Art Committee, which is chaired by alumnus Raymond Brochstein and co-chaired by alumna Suzanne Deal Booth. Members include Rice trustees, students, faculty and staff, in addition to community representatives. Funding for the site-specific projects is provided from a new one-half-percent-for-art initiative for new buildings and funded by philanthropy.</p>
+                  </div>
+                  <div  class="travel"><strong>Business, TBA</strong></div>
+                  <div class="thelanguage">
+                  <p class="arts">classes for Professionals</p>
+                  <p></p></div>
+                  <div class="travel"><b>Special Lecture: Shakespeare's "Winter's Tale"</b><br>
+                    Joseph Lockett, director, and Rice professor Dennis Huston</div>
+                  <div class="thelanguage">
+                    <p>Through the Alumni College website, buy tickets for William Shakespeare's &quot;Winter's Tale&quot; produced and performed by the students at Baker College, and get a special lecture presented by director Joseph Lockett and Dennis Huston.</p>
+                    <p><strong>J. Dennis Huston</strong>, is professor of English at Rice University where he has taught since 1969. He has won a number of George R. Brown teaching awards, the Nicholas Salgo Teaching Prize and received the 1990 Professor of the Year award from the Council for the Advancement and Support of Education and the Carnegie Foundation. In 1990, Houston Metropolitan magazine named him one of the Ninety Best Things About Houston. Over the past ten years at Rice he has taught humanities, drama, public speaking and Shakespeare on film, and he is the author of the book "Shakespeare&rsquo;s Comedies of Play."&nbsp;Dr. Huston holds a PhD from Yale University.</p>
+                    <br>
+                  </div>
+                  <p class="mainSubtitle"><strong>Sunday, March 11</strong></p>
+                  <p>Class 7, 10&ndash;11:30 a.m.</p>
+                  <div  class="travel"> <strong>Art Tour</strong><strong></strong><br />
+                  </div>
+                  <div class="thelanguage">
+                    <p class="earth">Take a Break</p>
+                    <p>A walking tour of the campus that will focus on the numerous pieces of art that have been added to the campus over the recent years. Led by one of the staff from the Rice Art Program, this tour will discuss artists, origins, and future plans. <strong>NOTE: This tour will be self-guided.</strong></p>
+                    <p><strong>The Rice Art Program </strong>is directed by Molly Hubbard and led by the Rice Art Committee, which is chaired by alumnus Raymond Brochstein and co-chaired by alumna Suzanne Deal Booth. Members include Rice trustees, students, faculty and staff, in addition to community representatives. Funding for the site-specific projects is provided from a new one-half-percent-for-art initiative for new buildings and funded by philanthropy.</p>
+                  </div>
+                  <div  class="travel"><strong>Faculty Panel on Diversity</strong> <br />
+                    Richard Tapia, Chandler Davidson, others TBA</div>
+                  <div class="thelanguage">
+                    <p class="science">A Century in the Making</p>
+                    <p>This panel of faculty members will discuss the great strides toward equal rights in academic institutions for people of diverse ethnicity, women, and the LGBT community. </p>
+                    <p> <strong>Richard Tapia </strong>joined Rice's faculty in 1970. He is a University Professor -- Rice&rsquo;s highest rank -- and the Maxfield-Oshman Professor in Engineering and a professor of computational and applied mathematics. He is also director of Rice&rsquo;s Center for Excellence and Equity in Education.<br>
+                      <br>
+                      The son of Mexican immigrants, Tapia grew up in Los Angeles and was the first member of his family to attend college. He excelled in math and science and went on to earn international acclaim for his research into numerical optimization methods, and that success led to his election to the National Academy of Engineering. Tapia has authored or co-authored two books and more than 100 mathematical research papers, and he is currently authoring a graduate-level textbook on the foundations of optimization.   Tapia has directed or co-directed more underrepresented minority and women doctoral students in mathematics than anyone else in the country. Due partly to his influence, Rice's Department of Computational and Applied Mathematics has graduated more than double the national average of both minority and female Ph.D. students for more than a decade. </p>
+                    <p> <strong>Chandler Davidson</strong>, Research Professor and Tsanoff Chair of Public Affairs Emeritus, taught at Rice from 1966 to 2003. He was a founding member of the Department of Sociology and served as departmental chair for fourteen years between 1979 and 2003. In the latter part of his career, he had a joint appointment with the Department of Political Science. Davidson has won five university-wide teaching prizes, including Rice's top award, the George R. Brown Excellence in Teaching Prize. In addition to many articles appearing in academic journals and popular magazines, he has written or edited a number of books. In the early 1990s he and Professor Bernard Grofman of the University of California at Irvine directed a major scholarly effort to assess the impact of the Voting Rights Act of 1965 in the South. Funded by the National Science Foundation and the Rockefeller Foundation, the project involved almost thirty political scientists, historians, sociologists, and voting rights lawyers. The resulting book, Quiet Revolution in the South (Princeton University Press, 1994), was co-edited by Davidson and Grofman and won the Richard Fenno Prize awarded by the American Political Science Association for the best book published on legislative behavior that year. Davidson's scholarship on voting rights has been cited at least seven times in U.S. Supreme Court opinions and numerous times in lower court opinions. In a 2011 case before the U.S. District Court for the District Court of Columbia concerning whether Section 5 of the Voting Rights Act was still valid, the Court affirmatively cited two of his books as well as his 2006 U.S. Senate testimony a total of 27 times. He is also continuing research on minority voting rights. In 2005-06 Davidson was asked to serve on the ten-member National Commission on the Voting Rights Act as Congress prepared to consider reauthorizing the non-permanent provisions of the Act. In that capacity he was the primary drafter and author of the Commission's 2006 report, Protecting Minority Voters. He was also invited that year to testify before the U.S. Senate Judiciary Committee regarding the Act's reauthorization.&nbsp; In 2011 he was asked by a civil rights organization, The Advancement Project, to present an affidavit to the U.S. Department of Justice regarding the history of racial discrimination in elections in Texas, the purpose of which affidavit was to question the motives and impact of Texas&rsquo; recently enacted law requiring a photo ID as a prerequisite to voting. </p>
+                  </div>
+                  <div class="thelanguage"> </div></TD>
+              </TR>
+              <tr>
+                <td class="mainCell" valign="top"><img src="../images/clear.gif" width="20" height="20"></td>
+                <td class="mainSmall"><br>
+                  <img src="../images/gray2_bg.gif" width="100%" height="1"><br>
+                  <p class="mainSmall"><b>Books</b><br>
+                    Most of the titles mentioned can be found at your local bookstore 
+                    or at an online bookstore such as <a href="http://www.barnesandnoble.com/" target="_blank">barnesandnoble.com</a>.</p>
+                  <p class="mainSmall"><span class="mainSmallred"><b>Scholarship</b></span><br>
+                    The Leo S. Shamblin Scholarship Fund was established to provide 
+                    scholarship support to potential Alumni College participants 
+                    with a strong record of volunteer service to the Rice community. 
+                    Recipients must plan to participate in the entire Alumni College 
+                    Weekend, and young alumni and out-of-town participants are 
+                    especially encouraged to apply. Individuals interested in 
+                    applying for the scholarship funds should address a letter 
+                    to the executive director of alumni affairs explaining why 
+                    the funds would assist them in attending Alumni College Weekend 
+                    and how they satisfy the criteria regarding volunteer service. </p>
+                  <p class="mainSmall">&nbsp;</p></td>
+              </tr>
+            </TABLE>
+             
+            <p class="mainSmall">&nbsp;</p></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<tr>
+  <td><img src="../images/clear.gif" width="100" height="5" alt="spacer"></td>
+</tr>
+<tr>
+  <td><table width="100%" border="0" cellspacing="0" cellpadding="15">
+      <tr>
+        <td width="57%"><font class="mainSmall"><a href="#"onClick="SecWin=window.open('contact.html','SecWin','width=260,height=450,toolbar=no,status=yes,resizable=no,scrollbars=yes,location=no,directories=no,menubar=no');return false;">Contact the Office of Alumni Affairs</a> | <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('dFuDc6BYQoX5nNNobzmYL4')">Send a Comment</a> | <a href="../index.html">Home</a></font></td>
+        <td width="43%" align="right"><font class="mainSmall"> 
+          <script language="JavaScript">
+<!--
+today = new Date()
+cy = today.getFullYear()
+{
+}
+//-->
+</script> 
+          Copyright &copy; 
+          <script language="JavaScript">
+<!--
+document.write(cy)
+{
+}
+//-->
+</script> 
+          Rice University</font></td>
+      </tr>
+    </table></td>
+</tr>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script> 
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>

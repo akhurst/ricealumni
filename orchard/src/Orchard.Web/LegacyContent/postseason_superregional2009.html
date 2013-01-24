@@ -1,0 +1,721 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="styles.css">
+<script language="JavaScript">
+
+  btn1 = new Image(95, 31);
+  btn1.src= "http://alumni.rice.edu/images/btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "http://alumni.rice.edu/images/btn_over_nav.gif";
+
+//
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=350,scrollbars=no,toolbar=no");
+}
+
+function doSearch(){
+
+  if (srch.alum.checked == true){
+	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (srch.rice.checked == true){
+	srch.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  srch.submit();
+
+}
+
+function checkKey(evt){
+
+	srch.search.value=srch.q.value;
+	if (evt.keyCode == 13 && srch.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+</script>
+<script language="JavaScript1.2">
+
+
+var head="display:''"
+function doit(header){
+var head=header.style
+if (head.display=="none")
+head.display=""
+else
+head.display="none"
+}
+//
+</script>
+<style type="text/css">
+
+.tableborder {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+
+.style3 {color: #FFFFFF}
+.style4 {border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #CCCCCC; font-weight: bold; }
+</style>
+</head>
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top">
+          <td width="221" rowspan="2"><a href="index.html"><img src="images/logo.gif" width="221" height="94" alt="Rice Alumni: Established 1919" border="0"></a><br>
+            <table width="191" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="http://alumni.cgi.rice.edu/events/calendar.php">EVENTS CALENDAR</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="alumni_groups.html">ALUMNI GROUPS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="youngalum_stds.html">YOUNG ALUMNI /STUDENTS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="career_connection.html">CAREER CONNECTION</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="volunteer.html">VOLUNTEER</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="learning_trav.html">LEARNING &amp; TRAVEL</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="honors_awards.html">HONORS &amp; AWARDS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a href="new_at_rice.html">WHAT'S NEW @ RICE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="about_alumassoc.html">ABOUT THE ARA</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="faq_file.html">FAQ FILE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="http://giving.rice.edu" target="_blank">GIVE TO RICE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+          <td align="right"><img src="images/clear.gif" width="100" height="20"><br>
+            <img src="images/subpic_postseason.jpg" width="526" height="56" ="Owl and art"> </td>
+        </tr>
+        <tr valign="top">
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td colspan="4">&nbsp;</td>
+              </tr>
+              <tr valign="top">
+                <td width="414"><div align="center"><img src="rice_statslogo.gif" alt="Rice Athletics Logo" width="80" height="50" border="0"> <span class="style3">-</span><img src="lsu_statslogo.gif" alt="LSU Athletiics Logo" width="80" height="50" border="0"> 
+                  </div>
+                  <table class="mainTable" border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tr valign="top">
+                      <td class="mainSmall"><p><strong>June 5&ndash;6/7, 2009</strong><br>
+                          <span class="mainSubtitle">Baton Rouge Super Regional</span><br>
+Alex Box Stadium, Baton Rouge, Louisiana<br>
+                          <br>
+                          <!--<strong><span class="mainSmallred">Congratulations to 
+                          the Rice Owls Baseball team on a great season!</span></strong><br>
+                          <br>-->
+                          <span class="mainSubtitle"><strong>Events for 
+                          Rice Alumni, Fans, and Friends</strong></span><br>
+                      </p>
+                        <table width="380" border="0" cellpadding="8" cellspacing="0">
+                          <tr class="mainSmall">
+                            <td colspan="2" valign="top" nowrap class="cellbgGray"><span class="mainSubtitle"><strong> 
+                              Friday, June 5</strong></span></td>
+                          </tr>
+                          <tr class="mainSmall">
+                            <td valign="top" nowrap class="style4">6:00 p.m.<br>
+                              central</td>
+                            <td valign="top" class="tableborder">Super Regional Game 2<br>
+                              <span class="mainSubtitle"><strong>Rice vs LSU</strong></span></td>
+                          </tr>
+                          <tr class="mainSmall">
+                            <td valign="top" nowrap class="style4">6:00 p.m.<br>
+                              central</td>
+                            <td valign="top" class="tableborder"><p><strong>Austin: Game Watching Party</strong><br>
+                                <br>
+                            Third Base Sports Bar<BR>
+                            1717 West 6th Street (Hartland   Plaza east of MoPac)<BR>
+                            Building 2, Suite 210R<BR>
+                            Austin, TX , 78703<br>
+                            <br>
+                            <a href="http://www.thirdbaseaustin.com/index.php/downtown" target="_blank">http://www.thirdbaseaustin.com/index.php/downtown</a><br>
+                            <br>
+                            Contact Name: <A href="mailto:leongc@alumni.rice.edu">Cheng Leong &rsquo;95</A><br>
+                            </p>                            </td>
+                          </tr>
+                          <tr class="mainSmall">
+                            <td width="20%" valign="top" nowrap class="style4">6:00 p.m. <br>
+                              central</td>
+                            <td valign="top" class="tableborder"><p><strong>Dallas: Game Watching Party</strong><br>
+                                <br>
+                                Frankie&rsquo;s Sports Bar and Grill<BR>
+                                3227 McKinney Ave #   102<BR>
+                                Dallas, TX  75204 <br>
+                                <br>
+                                <a href="http://frankiesbar.com/index-5.html" target="_blank">http://frankiesbar.com/index-5.html</a><br>
+                                <br>
+                                Contact Name: <A href="mailto:kurt@mediacart.com">Kurt   Nehrenz &rsquo;07</A><br>
+                            </p>                            </td>
+                          </tr>
+                          <tr class="mainSmall">
+                            <td valign="top" nowrap class="style4">6:00 p.m.<br>
+                              central</td>
+                            <td valign="top" class="tableborder"><strong>Houston: Rice Campus Game Watching Party</strong><br>
+                            <br>
+                            The GSA and Valhalla invite all Rice baseball fans to come watch the Owls take   on the LSU Tigers. We'll have 3 screens of exciting baseball, plus free food and special beers on   tap! Friday&rsquo;s special is Abita beer from Louisiana. Free hot dogs and hamburgers. <br>
+                            <br>
+                            Valhalla, Rice Campus<br>
+                            <br>
+                            <p>Contact Name: <A href="mailto:meyer@rice.edu">Eileen   Meyer</A><BR>
+                            </p>                            </td>
+                          </tr>
+                          <tr class="mainSmall">
+                            <td valign="top" nowrap class="tableborder"><span class="mainSmall"><strong>6:00 p.m.<br>
+                            central</strong></span></td>
+                            <td valign="top" class="tableborder"><strong>Houston: Rice Village Game Watching Party<br>
+                              <br>
+                              Drink/food specials:</strong><BR>
+                                Friday: Happy Hour 4-7 - $2.25 pints, $1.00 off   mixed drinks and wine<BR>
+                              <strong><br>
+                              </strong>
+                              <p>Two Rows in the Rice Village<BR>
+                                2400 University Blvd   #200<BR>
+                                Houston, TX , 77005 <br>
+                                <br>
+                                <a href="http://tworows.com/locations/houston.php" target="_blank">http://tworows.com/locations/houston.php</a><BR>
+                              </p>
+                            <p>Contact Name: <A href="mailto:pschwarz@alumni.rice.edu">Phil Schwarz &rsquo;91</A></p></td>
+                          </tr>
+                          <tr class="mainSmall">
+                            <td valign="top" nowrap class="tableborder"><span class="mainSmall"><strong>6:00 p.m.<br>
+                            central</strong></span></td>
+                            <td valign="top" class="tableborder"><strong>Oklahoma: Game Watching Party</strong><br>
+                              <BR>
+                            <p>Buffalo Wild Wings<BR>
+                              1333 N. Santa Fe Suite   106<BR>
+                              Edmond, OK , 73003<br>
+                              <br>
+                              Please contact Matt Kane &rsquo;96 (<a href="mailto:mhkane@alumni.rice.edu">mhkane@alumni.rice.edu</a>, 405-503-9071)   or Laura McElfresh &rsquo;95 (<a href="mailto:lauramac@alumni.rice.edu">lauramac@alumni.rice.edu</a>,   404-931-6895) if you plan to attend. <br>
+                              <br>
+                              Related URL: <A href="http://locations.buffalowildwings.com/" target="_blank">Map and Directions</A></p>                            </td>
+                          </tr>
+                        </table>
+                        <br><table width="380" border="0" cellpadding="8" cellspacing="0">
+                          <tr class="mainSmall">
+                            <td colspan="2" valign="top" nowrap class="cellbgGray"><span class="mainSubtitle"><strong> 
+                              Saturday, June 6</strong></span></td>
+                          </tr>
+                          
+                          <tr class="mainSmall">
+                            <td width="25%" valign="top" nowrap class="style4">1:00 p.m. <br>
+                              central</td>
+                            <td valign="top" class="tableborder"><p><strong>Party 
+                              at the Ballpark!</strong></strong><br>
+                              Alex Box Stadium<br>
+                              <br>
+                              Rice Athletics cordially invites<br>
+                              Rice alumni, fans, and friends for <br>
+                              <br>
+                              <strong>Crawfish and Tiger Stew*</strong> <br>
+                              (*a.k.a., Jambalaya) <br>
+                              <br>
+                              $20 for adults; $10 for kids 10 and under<br>
+                              <br>
+                              Register online at <a href="https://online.alumni.rice.edu/default.aspx?Page=EVNTEventDetail&EventID=1094" target="_blank">https://online.alumni.rice.edu/default.aspx?Page=EVNTEventDetail&amp;EventID=1094</a> <br>
+                            </p>                              </td>
+                          </tr>
+                          <tr class="mainSmall">
+                            <td valign="top" nowrap class="tableborder"><strong>4:00 p.m.<br>
+                            central</strong></td>
+                            <td valign="top" class="tableborder">Super Regional Game 2<br>
+                              <span class="mainSubtitle"><strong>Rice vs LSU</strong></span></td>
+                          </tr>
+                          <tr class="mainSmall">
+                            <td height="162" valign="top" nowrap class="tableborder"><strong>5:00 p.m.<br>
+                            eastern</strong></td>
+                            <td valign="top" class="tableborder"><strong>Atlanta: Game Watching Party</strong><br>
+                            <br>
+                            Taco Mac<BR>
+1211 Ashford Crossing<BR>
+Atlanta, GA ,   30346<br>
+<br>
+<a href="http://www.taco-mac.com/perimeter.htm" target="_blank">http://www.taco-mac.com/perimeter.htm</a><BR>
+                            <BR>
+                            Kids are welcome at   this family establishment!<BR>
+                            <BR>
+                            Please contact Jack Terry &rsquo;84 if you plan to   attend: <A href="mailto:jmterry@riceowls.com">jmterry@riceowls.com</A><BR>
+                            770-452-1103</td>
+                          </tr>
+                          <tr class="mainSmall">
+                            <td valign="top" nowrap class="tableborder"><strong>4:00 p.m.<br>
+                            central</strong></td>
+                            <td valign="top" class="tableborder"><strong>Austin: Game Watching Party</strong><br>
+                              <br>
+Third Base Sports Bar<BR>
+1717 West 6th Street (Hartland   Plaza east of MoPac)<BR>
+Building 2, Suite 210R<BR>
+Austin, TX , 78703<br>
+<br>
+<a href="http://www.thirdbaseaustin.com/index.php/downtown" target="_blank">http://www.thirdbaseaustin.com/index.php/downtown</a><br>
+<br>
+Contact Name: <A href="mailto:leongc@alumni.rice.edu">Cheng Leong &rsquo;95</A></td>
+                          </tr>
+                          <tr class="mainSmall">
+                            <td valign="top" nowrap class="tableborder"><strong>4:00 p.m.<br>
+                            central</strong></td>
+                            <td valign="top" class="tableborder"><strong>Houston: Rice Campus Game Watching Party</strong><br>
+                              <br>
+The GSA and Valhalla invite all Rice baseball fans to come watch the Owls take   on the LSU Tigers. We'll have 3 screens of exciting baseball, plus free food and special beers on   tap! Free hot dogs and hamburgers Saturday (grills will be out all weekend ifyou want   to bring your own!).<br>
+<br>
+Valhalla, Rice Campus<br>
+<br>
+<p>Contact Name: <A href="mailto:meyer@rice.edu">Eileen   Meyer</A></p></td>
+                          </tr>
+                          <tr class="mainSmall">
+                            <td valign="top" nowrap class="tableborder"><strong>4:00 p.m.<br>
+                            central</strong></td>
+                          <td valign="top" class="tableborder"><strong>Houston: Two Rows Game Watching Party<br>
+                                <br>
+Drink/food specials:</strong><BR>
+Saturday: 11-6 - $2.25 pints and $.35 wings<BR>
+<strong><br>
+</strong>
+<p>Two Rows in the Rice Village<BR>
+  2400 University Blvd   #200<BR>
+  Houston, TX , 77005 <br>
+  <br>
+  <a href="http://tworows.com/locations/houston.php" target="_blank">http://tworows.com/locations/houston.php</a><BR>
+</p>
+<p>Contact Name: <A href="mailto:pschwarz@alumni.rice.edu">Phil Schwarz &rsquo;91</A></p></td>
+                          </tr>
+                          <tr class="mainSmall">
+                            <td valign="top" nowrap class="style4">4:00 p.m.<br>
+                              central</td>
+                            <td valign="top" class="tableborder"><strong>Oklahoma: Game Watching Party</strong><br>
+                              <BR>
+                              <p>Fox &amp; Hound<BR>
+                                7001 South Garnett Road<BR>
+                                Broken   Arrow, OK , 74012 <br>
+  <br>
+                                Please contact Matt Kane &rsquo;96 (<a href="mailto:mhkane@alumni.rice.edu">mhkane@alumni.rice.edu</a>, 405-503-9071)   or Laura McElfresh &rsquo;95 (<a href="mailto:lauramac@alumni.rice.edu">lauramac@alumni.rice.edu</a>,   404-931-6895) if you plan to attend. <br>
+  <br>
+  Related URL: <A href="http://www.tentcorp.com/" target="_blank">Fox and   Hound website</A></p></td>
+                          </tr>
+                          <tr class="mainSmall">
+                            <td valign="top" nowrap class="style4">2:00 p.m.<br>
+                            pacific</td>
+                            <td valign="top" class="tableborder"><strong>Portland: Game Watching Party</strong><br>
+                            <br>
+                            Cooper Mountain Grill<br>
+                            18855 SW Tualatin Valley Highway<br>
+                            <br>
+                            Happy Hour served all day<br>
+                            <br>
+                            Contact Name: <A href="mailto:karenk@alumni.rice.edu">Karen King '83</A><br></td>
+                          </tr>
+                        </table>
+
+						<!--<table width="380" border="0" cellpadding="8" cellspacing="0">
+                          <tr class="mainSmall">
+                            <td colspan="2" valign="top" nowrap class="cellbgGray"><span class="mainSubtitle"><strong> 
+                              Tuesday, June 17</strong></span></td>
+                          </tr>
+                          <tr class="mainSmall">
+                            <td width="20%" valign="top" nowrap class="tableborder"><strong>Time 
+                              TBD</strong></td>
+                            <td valign="top" class="tableborder">Please check 
+                              back for information after the conclusion of Rice's 
+                              first game.<br><strong>
+                              Party 
+                              at the Ballpark!</strong><br>
+                              Rosenblatt Stadium<br>
+                              <br>
+                              Join Rice fans for burgers and brats before the 
+                              game! $10 per person, $5 for kids 12 and under, 
+                              payable at the door. Come celebrate Father&#8217;s 
+                              Day with your Rice family.<br>
+                              <br>
+                              <em>Look for the Rice banners at the white hospitality 
+                              tents next to Fan Fest. We&#8217;ll provide burgers, 
+                              brats, sides, dessert, iced tea, and lemonade.</em>
+                              <br> </td>
+                          </tr>
+                          <tr class="mainSmall">
+                            <td valign="top" nowrap class="tableborder"><strong>Time 
+                              TBD </strong></td>
+                            <td valign="top" class="tableborder">CWS Game<br>
+                              <span class="mainSubtitle"><strong>Rice vs. TBA</strong></span></td>
+                          </tr>
+						  
+                        </table><br>
+                        <table width="380" border="0" cellpadding="8" cellspacing="0">
+                          <tr class="mainSmall">
+                            <td colspan="2" valign="top" nowrap class="cellbgGray"><span class="mainSubtitle"><strong> Wednesday, June 20 </strong></span></td>
+                          </tr>
+                          
+                          <tr class="mainSmall">
+                            <td width="25%" valign="top" nowrap class="tableborder"><strong>11:00 
+                              a.m. - <br>
+                              12:30 p.m.</strong></td>
+                            <td valign="top" class="tableborder"><strong>Take 
+                              Me Out to the Ballgame!</strong><br>
+                              Rosenblatt Stadium<br>
+                              <br>
+                              Get into the swing of things with fellow Owls with 
+                              a light lunch at the ballpark. Baseball, hot dogs, 
+                              and Rice fans: can&#8217;t beat that!<br>
+                              $5 for adults, payable at the door; kids eat free.<br>
+                              <br>
+                              <em>Look for the Rice banners at the white hospitality 
+                              tents next to Fan Fest. This is the same general 
+                              area where we hosted Sunday's party.</em><br> </td>
+                          </tr>
+                          <tr class="mainSmall">
+                            <td valign="top" nowrap class="tableborder"><strong>1:00 p.m. </strong></td>
+                            <td valign="top" class="tableborder">CWS Game 11 <br>
+                            <span class="mainSubtitle"><strong>Rice 1, North Carolina 6 </strong></span></td>
+                          </tr>
+                        </table><br>
+                        <table width="380" border="0" cellpadding="8" cellspacing="0">
+                          <tr class="mainSmall">
+                            <td colspan="2" valign="top" nowrap class="cellbgGray"><span class="mainSubtitle"><strong> Thursday, June 21</strong></span></td>
+                          </tr>
+                          <tr class="mainSmall">
+                            <td width="25%" valign="top" nowrap class="tableborder"><strong>9:30 a.m.<br>
+                            </strong></td>
+                            <td valign="top" class="tableborder"><strong>&quot;Rally 
+                              'Round the Owls</strong>&quot;<br>
+                              Hilton Garden Inn (Team Hotel)<br>
+                              Corner of 10th and Dodge Streets<br>
+                              <br>
+                              Join us for Rally Donuts (a.k.a. Krispy Kremes) 
+                              at the team hotel! Start the day off right with 
+                              your fellow Owls!</td>
+                          </tr>
+						  <tr class="mainSmall">
+                            <td width="25%" valign="top" nowrap class="tableborder"><strong>2:00 
+                              - <br>
+                              4:00 p.m.<br>
+                              </strong></td>
+                            <td valign="top" class="tableborder"><p><strong>Rice 
+                                Pregame Mixer<br>
+                                </strong> Spaghetti Works, Old Market Sqaure<br>
+                                Corner of 11th and Howard Streets<br>
+                                <br>
+                                Kick back with Rice fans and friends at a casual 
+                                afternoon reception. Complimentary hors d'oeuvres 
+                                and soft drinks; cash bar.<br>
+                              </p>
+                              </td>
+                          </tr><tr class="mainSmall">
+                            <td width="25%" valign="top" nowrap class="tableborder"><strong>6:00 p.m. </strong></td>
+                            <td valign="top" class="tableborder">CWS Game 13<br>
+                                <span class="mainSubtitle"><strong>Rice vs. North Carolina</strong></span></td>
+                          </tr>
+                        </table>-->                        
+                        <table width="380" border="0" cellpadding="8" cellspacing="0">
+                          <tr class="mainSmall">
+                            <td colspan="2" valign="top" nowrap class="cellbgGray"><span class="mainSubtitle"><strong> Sunday, June 7 (Game 3 and all events are only if necessary)</strong></span></td>
+                          </tr>
+                          <tr class="mainSmall">
+                            <td valign="top" nowrap class="tableborder"><strong>6:00 p.m. <br>
+                            central</strong></td>
+                          <td valign="top" class="tableborder">Super Regional Game 3<br>
+                                <span class="mainSubtitle"><strong>Rice vs LSU</strong></span></td>
+                          </tr>
+                          <tr class="mainSmall">
+                            <td width="25%" valign="top" nowrap class="style4"><strong>6:00 p.m.<br>
+                            central</strong></td>
+                            <td valign="top" class="tableborder"><p><strong>Austin: Game Watching Party</strong><br>
+                                <br>
+Third Base Sports Bar<BR>
+1717 West 6th Street (Hartland   Plaza east of MoPac)<BR>
+Building 2, Suite 210R<BR>
+Austin, TX , 78703<br>
+<br>
+<a href="http://www.thirdbaseaustin.com/index.php/downtown" target="_blank">http://www.thirdbaseaustin.com/index.php/downtown</a><br>
+<br>
+Contact Name: <A href="mailto:leongc@alumni.rice.edu">Cheng Leong &rsquo;95</A><br>
+                            </p></td>
+                          </tr>
+                          <tr class="mainSmall">
+                            <td valign="top" nowrap class="tableborder"><strong>6:00 p.m.<br>
+                            central</strong></td>
+                            <td valign="top" class="tableborder"><strong>Houston: Rice Campus Game Watching Party</strong><br>
+                              <br>
+The GSA and Valhalla invite all Rice baseball fans to come watch the Owls take   on the LSU Tigers. We'll have 3 screens of exciting baseball, plus free food and special beers on   tap! <br>
+<br>
+Valhalla, Rice Campus<br>
+<br>
+<p>Contact Name: <A href="mailto:meyer@rice.edu">Eileen   Meyer</A></p></td>
+                          </tr>
+                          <tr class="mainSmall">
+                            <td valign="top" nowrap class="tableborder"><strong>6:00 p.m.<br>
+                            central</strong></td>
+                          <td valign="top" class="tableborder"><strong>Houston: Two Rows Game Watching Party<br>
+                                <br>
+Drink/food specials:</strong><BR>
+Saturday: 11-6 - $2.25 pints and $.35 wings<BR>
+<strong><br>
+</strong>
+<p>Two Rows in the Rice Village<BR>
+  2400 University Blvd   #200<BR>
+  Houston, TX , 77005 <br>
+  <br>
+  <a href="http://tworows.com/locations/houston.php" target="_blank">http://tworows.com/locations/houston.php</a><BR>
+</p>
+<p>Contact Name: <A href="mailto:pschwarz@alumni.rice.edu">Phil Schwarz &rsquo;91</A></p></td>
+                          </tr>
+                        </table>
+                        <p><em>Rice Athletics and the Association of Rice Alumni 
+                          wish to thank the alumni volunteers involved in coordinating these events. Without their efforts, these events would not have been possible. Go Owls!</em> </p>
+                      </td>
+                    </tr>
+                </table></td>
+                <td width="1" background="images/dots_bg.gif"><img src="images/clear.gif" width="1" height="50"></td>
+                <td width="10"><img src="images/clear.gif" width="10" height="50"></td>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><form id="srch" method=GET action="" onSubmit="doSearch();">
+                          <input type="hidden" value="web" name="tab">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td colspan="4"><input type=text name=q size=15 maxlength=255 value="" onChange="srch.search.value=this.value;" class="formSmall">
+                                <span id="spn" style="background-image: url(images/btn_go_new.gif);width:19;height:14" onClick="doSearch()" />
+                                <input type="hidden" name="hidden_site" value="alumni.rice.edu">
+                                <input type="hidden" name="search" value="">
+                                </span></td>
+                            </tr>
+                            <tr>
+                              <td width="10"><input id="alum" type="radio" name="sitesearch" value="alumni.rice.edu" checked>
+                              </td>
+                              <td width="85"><font class="mainSmalldark">Search this site</font></td>
+                            </tr>
+                            <tr>
+                              <td width="10" align="right"><input id="rice" type="radio" name="sitesearch" value="www.rice.edu">
+                              </td>
+                              <td width="85"><font class="mainSmalldark">Search rice.edu</font></td>
+                            </tr>
+                          </table>
+                        </form></td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/clear.gif" width="115" height="20" alt="spacer"></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://online.alumni.rice.edu/default.asp"><img src="images/title_onlinesvcs.gif" width="115" height="9" alt="Online Services" border="0"></a></td>
+                    </tr>
+                    <tr>
+                      <td><table width="100%" border="0" cellspacing="3" cellpadding="0">
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/events/calendar.php" title="Events calendar and online registration">Find Events/RSVP</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/detailsearch.asp" title="Search the directory of Rice alumni">Alumni Directory</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="http://alumni.rice.edu/update_address.html" title="Update your directory information">Update Address</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Online/emailforwarding/eforwarding.asp" title="Manage or create an alumni.rice.edu account">Email Forwarding</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Career/default.asp" title="Connect with alums in your career field">Career Network</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/bizfinder/" title="Find or promote alumni-owned businesses">Business Finder</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="http://alumni.rice.edu/submit_note.html" title="Get your latest news into the Owlmanac">Submit Classnote</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/library.asp" title="Access research tools and periodicals">Digital Library</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/clear.gif" width="115" height="14" alt="spacer"></td>
+                    </tr>
+                  </table>
+                  <br>
+                  <a href="http://www.rice.edu" target="_blank"><img src="images/rice_home.gif" width="75" height="40" border="0" alt="Rice: Home" vspace="10" hspace="3"></a> <br>
+                  <img src="images/clear.gif" width="115" height="3" alt="spacer">
+                  <p></p></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td><img src="images/clear.gif" width="100" height="5" alt="spacer"></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="15">
+        <tr>
+          <td width="57%"><font class="mainSmall"><a href="#"onClick="SecWin=window.open('contact.html','SecWin','width=260,height=450,toolbar=no,status=yes,resizable=no,scrollbars=yes,location=no,directories=no,menubar=no');return false;">Contact the Office of Alumni Affairs</a> | <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('dFuDc6BYQoX5nNNobzmYL4')">Send a Comment</a> | <a href="index.html">Home</a></font></td>
+          <td width="43%" align="right"><font class="mainSmall"><a href="http://www.rice.edu/about/cr-notice.html" target="_blank">
+            <script language="JavaScript">
+
+today = new Date()
+cy = today.getFullYear()
+{
+}
+//
+</script>
+            Copyright &copy;
+            <script language="JavaScript">
+
+document.write(cy)
+{
+}
+//
+</script>
+            Rice University</a></font></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>

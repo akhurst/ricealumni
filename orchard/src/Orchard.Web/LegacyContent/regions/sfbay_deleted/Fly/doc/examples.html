@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+  <title>GIFs on the fly: Examples
+ </title>
+  <link rev="made" href="mailto:gleeson@unimelb.edu.au">
+  <meta name="description"
+     content="Examples using Fly.">
+
+  <meta name="robots"
+     content="nofollow">
+</head>
+ <body bgcolor="#FFFFFF">
+ <!-- ===================================================================== -->
+ <hr size="2" noshade>
+ <table border="0" width="100%" cellpadding="5" cellspacing="3">
+  <tr align="center" valign="middle">
+   <td><h1>fly: Documentation: Examples</h1>
+  </td>
+   <td><a href="http://www.unimelb.edu.au/fly/"><img
+       src="fly-logo.gif" border="0" hspace="5" vspace="5"
+       alt=" [fly] " width="157" height="52"></a>
+  </td>
+ </tr>
+</table>
+ <!-- ===================================================================== -->
+ <hr size="2" noshade>
+ <H2> <A NAME="examples">Examples</A>
+</H2>
+ <P>  If you are using fly from within a CGI program, here are some examples:
+ <DL>
+  <DT><STRONG>Perl</STRONG></DT>
+  <DD><P>If you use perl, you should really use Lincoln Stein's
+      <a href="http://stein.cshl.org/WWW/software/GD/">GD.pm</a>.<P>
+      <P>Nevertheless...</P>
+  <PRE>#!/usr/local/bin/perl
+
+$flyprog = &quot;/usr/local/bin/fly&quot;;
+$outfile = &quot;temp.gif&quot;;
+
+open(FLY,&quot;| $flyprog -o $outfile &quot;);
+print FLY &quot;new\n&quot;;
+print FLY &quot;size 256,256\n&quot;;
+print FLY &quot;fill 1,1,255,255,255\n&quot;;
+print FLY &quot;circle 128,128,180,0,0,0\n&quot;;
+print FLY &quot;fill 128,128,255,255,0\n&quot;;
+print FLY &quot;arc 128,128,120,120,0,180,0,0,0\n&quot;;
+print FLY &quot;circle 96,96,10,0,0,0\n&quot;;
+print FLY &quot;circle 160,96,10,0,0,0\n&quot;;
+print FLY &quot;fill 96,96,0,0,0\n&quot;;
+print FLY &quot;fill 160,96,0,0,0\n&quot;;
+close(FLY);
+</PRE>
+ </DD>
+  <DT><STRONG>csh</STRONG></DT>
+  <DD><PRE>
+#!/bin/csh
+# test out fly!
+
+cat &gt; /tmp/fly.$$ &lt;&lt;EOD
+new
+size 256,256
+fill 1,1,255,255,255
+circle 128,128,180,0,0,0
+fill 128,128,255,255,0
+arc 128,128,120,120,0,180,0,0,0
+circle 96,96,10,0,0,0
+circle 160,96,10,0,0,0
+fill 96,96,0,0,0
+fill 160,96,0,0,0
+EOD
+
+fly -i /tmp/fly.$$ -o test.gif
+</PRE>
+ </DD>
+  <DT>Fly Scripts</DT>
+  <DD><P>You can even create your own fly &quot;scripts&quot;!</P>
+  <PRE>
+#!/usr/local/bin/fly -q
+new
+size 256,256
+fill 1,1,255,255,255
+&lt;etc&gt;
+</PRE>
+   <P>Thanks to Andrew Finkenstadt &lt;andyf@simutronics.com&gt; for noting
+      this unintentional feature of fly.</P>
+ <DT><STRONG>C</STRONG>
+</DT>
+ <DD>If you're using C, then you might as well <A
+     HREF="http://www.boutell.com/gd/">use gd!!</A>
+</DD>
+</DL>
+ <P>Can you guess what the above examples produce?
+    <A HREF="example.gif">Here's the answer!</A>
+</P>
+<P><IMG SRC="new.gif" ALT="[New!]"> I have created a <A
+    HREF="http://www.unimelb.edu.au/%7Egleeson/cgi-bin/fly-tester.pl">Fly
+    Tester</A> CGI program that lets you test fly commands quickly in a
+    convenient interface. The program is also included in the fly
+    distribution.
+</P>
+ <!-- ===================================================================== -->
+ <hr size="2" noshade>
+
+ <p align="center"><a href="index.html"><img src="nav-home.gif" border="0"
+    alt="[Home]" width="52" height="24"></a> <a
+    href="documentation.html"><img src="nav-docs.gif" border="0"
+    alt="[Documentation]" width="120" height="24"></a> <a
+    href="copyright.html"><img src="nav-copyright.gif" border="0"
+    alt="[Copyright]" width="86" height="24"></a> <a href="feedback.html"><img
+    src="nav-feedback.gif" border="0" alt="[Feedback]" width="80"
+    height="24"></a>
+</p>
+
+ <!-- ===================================================================== -->
+ <hr size="2" noshade>
+
+<pre>Created:       21 June 1995
+Last modified: 10 June 1999
+Access:        Unrestricted.
+Copyright &#169 1994-1998 <a href="http://www.unimelb.edu.au/">The University of Melbourne.</a>
+&lt;URL:http://www.unimelb.edu.au/fly/&gt;</pre>
+
+ <!-- ===================================================================== -->
+ <hr size="1" noshade>
+ <table border="0" width="100%">
+  <tr>
+   <td>
+    <address>
+    <a href="http://www.unimelb.edu.au/%7Egleeson/">Martin Gleeson,</a>
+    <a href="mailto:gleeson@unimelb.edu.au">gleeson@unimelb.edu.au</a>
+   </address>
+  </td>
+   <td align="RIGHT">
+    <p> <a href="http://www.unimelb.edu.au/html-check/validation-form.html">
+        <img src="http://www.unimelb.edu.au/images/valid_html.4.0.gif"
+             alt="HTML 4.0 Checked!" border="0"></a>
+   </p>
+  </td>
+ </tr>
+</table>
+ <!-- ===================================================================== -->
+ <hr size="2" noshade>
+</body>
+</html>

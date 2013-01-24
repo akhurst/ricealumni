@@ -1,0 +1,875 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "images/btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "images/btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=530,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (srch.alum.checked == true){
+	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (srch.rice.checked == true){
+	srch.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  srch.submit();
+
+}
+
+function checkKey(evt){
+
+	srch.search.value=srch.q.value;
+	if (evt.keyCode == 13 && srch.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+</script>
+
+</head>
+
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top"> 
+          <td width="221" rowspan="2"> <a href="index.html"><img src="images/logo.gif" width="221" height="94" alt="Rice Alumni: Established 1919" border="0"></a><br>
+            <table width="191" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="http://alumni.cgi.rice.edu/events/calendar.php">EVENTS 
+                        CALENDAR</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="alumni_groups.html">ALUMNI 
+                        GROUPS</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="youngalum_stds.html">YOUNG 
+                        ALUMNI /STUDENTS</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="career_connection.html">CAREER 
+                        CONNECTION</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="volunteer.html">VOLUNTEER</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="learning_trav.html">LEARNING 
+                        &amp; TRAVEL</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="honors_awards.html">HONORS 
+                        &amp; AWARDS</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="new_at_rice.html">WHAT'S 
+                        NEW @ RICE</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_over_nav.gif" align="center" valign="middle"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="navOver">ABOUT THE ARA</font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top">&nbsp;</td>
+                <td width="172" align="center" valign="middle"> 
+                  <table width="90%" border="0" cellspacing="3" cellpadding="0">
+                    <tr> 
+                      <td width="49%" background="images/gray2_bg.gif"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="about_alumassoc.html#strategic_plan">Strategic 
+                              Plan</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>                    <!--<tr>
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="about_alumassoc.html#comm_goals">Committee Goals 2003-2004</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>-->
+<tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="about_alumassoc.html#araboard">ARA 
+                              Board</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="about_alumassoc.html#nominations">Nominations</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="about_alumassoc.html#alumoffice">Alumni 
+                              Office</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="faq_file.html">FAQ 
+                        FILE</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="http://giving.rice.edu" target="_blank">GIVE 
+                        TO RICE</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            
+          </td>
+          <td align="right"><img src="images/clear.gif" width="100" height="20"><br>
+            <img src="images/subpic_about.jpg" width="526" height="56" ="Photo Of Rice Campus"> 
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td colspan="4">&nbsp;</td>
+              </tr>
+              <tr valign="top"> 
+                <td width="414"> 
+                  <p><img src="images/sub_title_aboutaa.gif" width="411" height="17" alt="About Alumni Association"></p>
+                  <table class="mainTable" border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tr valign="top"> 
+                      <td> 
+                        <p><font class="mainSubtitle"><b>ARA Strategic Plan</b></font></p>
+                        <p><font class="mainSmall">Communications and Marketing</font></p>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr> 
+                            <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                            <td width="97%"><font class="mainSmall">Build a comprehensive 
+                              marketing and communications program that promotes 
+                              the association to its internal and external constituencies, 
+                              strengthens the interchange of ideas and issues 
+                              between the university and its alumni, and informs 
+                              and enhances ARA programs and services through market 
+                              research.</font></td>
+                          </tr>
+                        </table>
+                        <br>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr> 
+                            <td valign="top" height="15" colspan="2"><font class="mainSmall">I. 
+                              Message</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" valign="top" align="right">&nbsp;</td>
+                            <td width="97%"><font class="mainSmall">A. Define 
+                              the overall message of the ARA to appropriately 
+                              complement the university's message.</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" valign="top" align="right">&nbsp;</td>
+                            <td width="97%"> 
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr> 
+                                  <td width="3%">&nbsp;</td>
+                                  <td width="97%"><font class="mainSmall">1. Keep 
+                                    ARA board and staff abreast of university 
+                                    priorities and initiatives.<br>
+                                    2. Revisit and revise the ARA's mission, strategies, 
+                                    and objectives as needed to ensure that the 
+                                    association's overall goals and priorities 
+                                    are in step with those of the university.</font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td valign="top" height="15" colspan="2">&nbsp;</td>
+                          </tr>
+                          <tr> 
+                            <td valign="top" height="15" colspan="2"><font class="mainSmall">II. 
+                              Association Identity</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" valign="top" align="right">&nbsp;</td>
+                            <td width="97%"><font class="mainSmall">A. Create 
+                              a consistent and powerful image of the association 
+                              by communicating the ARA's identity, involvement, 
+                              message, and accomplishments.</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" valign="top" align="right">&nbsp;</td>
+                            <td width="97%"> 
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr> 
+                                  <td width="3%">&nbsp;</td>
+                                  <td width="97%"><font class="mainSmall">1. Develop 
+                                    a consistent look to create awareness of the 
+                                    ARA and its efforts.<br>
+                                    2. Implement a branding strategy through alumni 
+                                    programs and communication mediums.<br>
+                                    3. Strategically market the ARA through all 
+                                    available and appropriate marketing mediums.<br>
+                                    4. Maintain the integrity of the ARA brand 
+                                    and enhance its constituents' confidence and 
+                                    pride in the brand, the ARA, and the university 
+                                    through a consistently positive impression 
+                                    of affiliated programs, services, representatives, 
+                                    messages, or other contexts.<br>
+                                    5. Limit the utilization of the ARA look through 
+                                    legal and other means.<br>
+                                    6. Ensure that ARA sponsorship, endorsement, 
+                                    or other involvement is in keeping with the 
+                                    mission, strategic plan, and objectives of 
+                                    the organization.<br>
+                                    7. Establish and maintain effective communications 
+                                    with relevant campus offices and organizations 
+                                    to keep them aware of the association's purpose, 
+                                    programs, and progress, as well as opportunities 
+                                    for ARA partnerships.<br>
+                                    8. Strengthen existing, and cultivate new, 
+                                    relationships with campus offices and groups 
+                                    through joint programs and consistent communication.<br>
+                                    9. Work to secure ARA space on campus that 
+                                    enhances the association's visibility, is 
+                                    suited to the physical needs of the association 
+                                    and alumni staff, and acknowledges the ongoing 
+                                    importance of alumni in the life of the university.</font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td valign="top" height="15" colspan="2">&nbsp;</td>
+                          </tr>
+                          <tr> 
+                            <td valign="top" height="15" colspan="2"><font class="mainSmall">III. 
+                              Communications</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" valign="top" align="right">&nbsp;</td>
+                            <td width="97%"><font class="mainSmall">A. Create 
+                              a consistent and strategic communication infrastructure 
+                              and plan that effectively conveys the<br>
+                              intended image and message of Rice and the ARA.</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" valign="top" align="right">&nbsp;</td>
+                            <td width="97%"> 
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr> 
+                                  <td width="3%">&nbsp;</td>
+                                  <td width="97%"> 
+                                    <p><font class="mainSmall">1. Develop a comprehensive 
+                                      communications approach that takes into 
+                                      account the opportunities and limitations 
+                                      of various communication mediums; the nature 
+                                      of the program, service, or message being 
+                                      communicated; and the needs of the audience.</font></p>
+                                  </td>
+                                </tr>
+                                <tr> 
+                                  <td width="3%">&nbsp;</td>
+                                  <td width="97%"> 
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tr> 
+                                        <td width="3%">&nbsp;</td>
+                                        <td width="97%"> 
+                                          <p><font class="mainSmall">a. Continue 
+                                            to work with the editors of the Owlmanac, 
+                                            Sallyport, @Rice, Rice News, and the 
+                                            university website to marshal communication 
+                                            resources for marketing the university 
+                                            and the ARA.<br>
+                                            b. Enhance the ARA website into the 
+                                            leading medium for alumni to receive 
+                                            information about Rice, the ARA, and 
+                                            other relevant areas. Develop strategies 
+                                            that will drive such use.</font></p>
+                                        </td>
+                                      </tr>
+                                      <tr> 
+                                        <td width="3%">&nbsp;</td>
+                                        <td width="97%"> 
+                                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr> 
+                                              <td width="3%">&nbsp;</td>
+                                              <td width="97%"> 
+                                                <p><font class="mainSmall">i. 
+                                                  Continue to work with off-campus 
+                                                  partners in the further enhancement 
+                                                  of the online community.</font></p>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <tr> 
+                                        <td width="3%">&nbsp;</td>
+                                        <td width="97%"> 
+                                          <p><font class="mainSmall">c. Develop 
+                                            a comprehensive email policy that 
+                                            addresses the needs of university 
+                                            offices and organizations, respects 
+                                            the privacy of our alumni, and keeps 
+                                            with best practices from both within<br>
+                                            and outside alumni relations.</font></p>
+                                        </td>
+                                      </tr>
+                                      <tr> 
+                                        <td width="3%">&nbsp;</td>
+                                        <td width="97%"> 
+                                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr> 
+                                              <td width="3%">&nbsp;</td>
+                                              <td width="97%"> 
+                                                <p><font class="mainSmall">i. 
+                                                  Explore the options for refining 
+                                                  bulk emailing procedures to 
+                                                  minimize loss to filtering.</font></p>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <tr> 
+                                        <td>&nbsp;</td>
+                                        <td> 
+                                          <p><font class="mainSmall">d. Utilize 
+                                            events as strategic tools to communicate 
+                                            messages.<br>
+                                            e. Work with Public Affairs to more 
+                                            effectively utilize classnote coordinators 
+                                            to expand ARA programs and awareness.</font></p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" valign="top" align="right">&nbsp;</td>
+                            <td width="97%"> 
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr> 
+                                  <td width="3%">&nbsp;</td>
+                                  <td width="97%"> 
+                                    <p><font class="mainSmall">2. Ensure the efficacy 
+                                      of alumni communications.</font></p>
+                                  </td>
+                                </tr>
+                                <tr> 
+                                  <td width="3%">&nbsp;</td>
+                                  <td width="97%"> 
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tr> 
+                                        <td width="3%">&nbsp;</td>
+                                        <td width="97%"> 
+                                          <p><font class="mainSmall">a. Work with 
+                                            divisional administrators to ensure 
+                                            that the alumni/donor database is 
+                                            up-to-date and accurate.<br>
+                                            b. Evaluate communications on an ongoing 
+                                            basis to ensure constituent awareness 
+                                            of all ARA programs and services.</font></p>
+                                        </td>
+                                      </tr>
+                                      <tr> 
+                                        <td width="3%">&nbsp;</td>
+                                        <td width="97%"> 
+                                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr> 
+                                              <td width="3%">&nbsp;</td>
+                                              <td width="97%"> 
+                                                <p><font class="mainSmall">i. 
+                                                  Continue to identify university 
+                                                  benefits available to alumni 
+                                                  and determine the best ways 
+                                                  to promote these benefits.</font></p>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <tr> 
+                                        <td width="3%">&nbsp;</td>
+                                        <td width="97%"> 
+                                          <p><font class="mainSmall">c. Develop 
+                                            protocols to ensure that all communications 
+                                            convey quality, are error-free, and 
+                                            are designed appropriately for the 
+                                            event, service, or message communicated.</font></p>
+                                        </td>
+                                      </tr>
+                                      <tr> 
+                                        <td width="3%">&nbsp;</td>
+                                        <td width="97%"> 
+                                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr> 
+                                              <td width="3%">&nbsp;</td>
+                                              <td width="97%"> 
+                                                <p><font class="mainSmall">i. 
+                                                  Seek appropriate training and 
+                                                  professional development opportunities 
+                                                  for alumni staff, and outsource 
+                                                  design and other communications 
+                                                  projects as needed.</font></p>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td colspan="2" valign="top" align="right">&nbsp;</td>
+                          </tr>
+                          <tr> 
+                            <td valign="top" height="15" colspan="2"><font class="mainSmall">IV. 
+                              Market Research</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" valign="top" align="right">&nbsp;</td>
+                            <td width="97%"><font class="mainSmall">A. Develop 
+                              and utilize further constituent and market research.</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" valign="top" align="right">&nbsp;</td>
+                            <td width="97%"> 
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr> 
+                                  <td width="3%">&nbsp;</td>
+                                  <td width="97%"> 
+                                    <p><font class="mainSmall">1. Work with Resource 
+                                      Development administrators to ensure that 
+                                      the alumni/donor database is fully conducive 
+                                      to the needs of an advancing alumni program.<br>
+                                      2. Utilize generational and other demographic 
+                                      marketing research to enhance and develop 
+                                      programs and services.</font></p>
+                                  </td>
+                                </tr>
+                                <tr> 
+                                  <td width="3%">&nbsp;</td>
+                                  <td width="97%"> 
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tr> 
+                                        <td width="3%">&nbsp;</td>
+                                        <td width="97%"> 
+                                          <p><font class="mainSmall">a. Forward 
+                                            information to the alumni office for 
+                                            consideration by the appropriate programming 
+                                            arm, such as those that create community 
+                                            and encourage lifelong learning.<br>
+                                            b. Be a part of the most important 
+                                            milestones of Rice alumni through 
+                                            strategic, yet easily executed, recognition 
+                                            means.</font></p>
+                                        </td>
+                                      </tr>
+                                      <tr> 
+                                        <td width="3%">&nbsp;</td>
+                                        <td width="97%"> 
+                                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr> 
+                                              <td width="3%">&nbsp;</td>
+                                              <td width="97%"> 
+                                                <p><font class="mainSmall">i. 
+                                                  Send appropriate recognition 
+                                                  for important alumni milestones.<br>
+                                                  ii. Identify a volunteer team 
+                                                  that can meet quarterly to oversee 
+                                                  such a program.</font></p>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <tr> 
+                                        <td width="3%">&nbsp;</td>
+                                        <td width="97%"> 
+                                          <p><font class="mainSmall">c. Build 
+                                            an expanding and changing communication 
+                                            and programming medium through technology 
+                                            that prepares for and serves the new 
+                                            generation of alumni.</font></p>
+                                        </td>
+                                      </tr>
+                                      <tr> 
+                                        <td colspan="2" height="12"><font class="mainSmall">3. 
+                                          Routinely survey and otherwise query 
+                                          targeted constituencies to derive information 
+                                          that will assist in refining and developing 
+                                          programs and services.<br>
+                                          4. Ascertain and capitalize on best 
+                                          practices in constituent relations among 
+                                          peer institutions and beyond academia 
+                                          to develop programming and services 
+                                          that constantly evolve to meet the changing 
+                                          needs of alumni.<br>
+                                          5. Develop a comprehensive measuring 
+                                          system to determine programmatic and 
+                                          communication success, then promote 
+                                          such measurements to relevant constituencies.</font></td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td colspan="2" valign="top" align="right">&nbsp;</td>
+                          </tr>
+                          <tr> 
+                            <td valign="top" height="15" colspan="2"><font class="mainSmall">V. 
+                              Advocacy</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" valign="top" align="right">&nbsp;</td>
+                            <td width="97%"><font class="mainSmall">A. Encourage 
+                              and equip Rice alumni as advocates in promoting 
+                              the university.<br>
+                              B. Provide forums for Rice alumni to voice their 
+                              issues, concerns, and suggestions to the university.</font></td>
+                          </tr>
+                          <tr> 
+                            <td width="3%" valign="top" align="right">&nbsp;</td>
+                            <td width="97%"> 
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr> 
+                                  <td width="3%">&nbsp;</td>
+                                  <td width="97%"><font class="mainSmall">1. Evaluate 
+                                    a website program through which alumni could 
+                                    provide input on critical issues that would 
+                                    be communicated to the university.<br>
+                                    2. Pursue webcast technology allowing online 
+                                    conversations with key university officials.</font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td width="1" background="images/dots_bg.gif"><img src="images/clear.gif" width="1" height="50"></td>
+                <td width="10"><img src="images/clear.gif" width="10" height="50"></td>
+                <td>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td>
+                        <form id="srch" method=GET action="" onSubmit="doSearch();">
+                          <input type="hidden" value="web" name="tab">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr> 
+                              <td colspan="4"> 
+                                <input type=text name=q size=15 maxlength=255 value="" onChange="srch.search.value=this.value;" class="formSmall">
+                                <span id="spn" style="background-image: URL(images/btn_go_new.gif);width:19;height:14" onClick="doSearch()" /> 
+                                <input type="hidden" name="hidden_site" value="alumni.rice.edu">
+                                <input type="hidden" name="search" value="">
+                                </span></td>
+                            </tr>
+                            <tr>
+                              <td width="10"> 
+                                <input id="alum" type="radio" name="sitesearch" value="alumni.rice.edu" checked>
+                              </td><td width="85"><font class="mainSmalldark">Search 
+                                this site</font></td>
+                            </tr>
+                            <tr>
+                              <td width="10" align="right"> 
+                                <input id="rice" type="radio" name="sitesearch" value="www.rice.edu">
+                              </td>
+                              <td width="85"><font class="mainSmalldark">Search 
+                                rice.edu</font></td>
+                            </tr>
+                          </table>
+                        </form></td>
+                    </tr>
+                    <tr> 
+                      <td><img src="images/clear.gif" width="115" height="20" alt="spacer"></td>
+                    </tr>
+                    <tr> 
+                      <td><a href="https://online.alumni.rice.edu/asp/Welcome.asp"><img src="images/title_onlinesvcs.gif" width="115" height="9" alt="Online Services" border="0"></a></td>
+                    </tr>
+                    <tr> 
+                      <td> 
+                        <table width="100%" border="0" cellspacing="3" cellpadding="0">
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/events/calendar.php" title="Events calendar and online registration">Find Events/RSVP</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/detailsearch.asp" title="Search the directory of Rice alumni">Alumni Directory</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/profile.asp" title="Update your directory information">Update Address</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Online/emailforwarding/eforwarding.asp" title="Manage or create an alumni.rice.edu account">Email Forwarding</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Career/default.asp" title="Connect with alums in your career field">Career Network</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+						  <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/bizfinder/" title="Find or promote alumni-owned businesses">Business Finder</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+<tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="http://alumni.rice.edu/submit_note.html" title="Get your latest news into the Owlmanac">Submit Classnote</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/library.asp" title="Access research tools and periodicals">Digital Library</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td><img src="images/clear.gif" width="115" height="14" alt="spacer"></td>
+                    </tr>
+                  </table>
+                  <!-- <a href="http://giving.rice.edu" target="_blank"><img src="images/rice_nextcent.gif" width="83" height="40" border="0" alt="Rice: The Next Century Campaign" hspace="3"></a><br> -->
+                  <a href="http://www.rice.edu" target="_blank"><img src="images/rice_home.gif" width="75" height="40" border="0" alt="Rice: Home" vspace="10" hspace="3"></a>
+                  <p></p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp; </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td><img src="images/clear.gif" width="100" height="5" alt="spacer"></td>
+  </tr>
+  <tr> 
+    <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="15">
+        <tr>
+          <td width="57%"><font class="mainSmall"><a href="#"onClick="SecWin=window.open('contact.html','SecWin','width=265,height=440,toolbar=no,status=yes,resizable=no,scrollbars=yes,location=no,directories=no,menubar=no');return false;">Contact 
+             the Office of Alumni Affairs</a> | <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('dFuDc6BYQoX5nNNobzmYL4')">Send a Comment</a> | <a href="index.html">Home</a></font></td>
+          <td width="43%" align="right"><font class="mainSmall"><a href="http://www.rice.edu/about/cr-notice.html" target="_blank"><script language="JavaScript">
+<!--
+today = new Date()
+cy = today.getFullYear()
+{
+}
+//-->
+</script>
+Copyright &copy;<script language="JavaScript">
+<!--
+document.write(cy)
+{
+}
+//-->
+</script> Rice University</a></font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>

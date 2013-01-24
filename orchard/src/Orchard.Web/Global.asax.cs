@@ -26,7 +26,7 @@ namespace Orchard.Web {
         }
 
         protected void Application_BeginRequest() {
-            _starter.OnBeginRequest(this);
+					_starter.OnBeginRequest(this);
         }
 
         protected void Application_EndRequest() {

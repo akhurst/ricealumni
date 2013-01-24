@@ -1,0 +1,738 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "images/btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "images/btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=530,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (srch.alum.checked == true){
+	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (srch.rice.checked == true){
+	srch.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  srch.submit();
+
+}
+
+function checkKey(evt){
+
+	srch.search.value=srch.q.value;
+	if (evt.keyCode == 13 && srch.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+		function calculate()
+		{
+			var ttl = parseInt(document.getElementById("r1_wknd_sat").value) + parseInt(document.getElementById("r2_wknd_sat").value) + 30 * parseInt(document.getElementById("guests_fri").value) + 30 * parseInt(document.getElementById("guests_sat").value);
+			document.getElementById("divTotal").innerHTML = ttl;
+			document.getElementById("total").value = ttl;
+		}
+		
+		function validate(val)
+		{
+			var rx = new RegExp("\\d{1}");
+			var matches = rx.exec(val);
+			if (matches != null && val == matches[0])
+				return val;
+			else
+				return 0;   
+		}
+	//-->
+	</script>
+<script language="JavaScript1.2">
+<!--
+
+var head="display:''"
+function doit(header){
+var head=header.style
+if (head.display=="none")
+head.display=""
+else
+head.display="none"
+}
+//-->
+</script>
+
+<script language="JavaScript">
+function chkForm(frm) {
+  // the name of the form
+  f = frm;
+
+  // change msg to the name of any field you want to make required.
+  if (f.msg) {
+    if (f.msg.value == '') {
+      alert('Check all required fields');
+      return false;
+    }
+  }
+
+  // if 'from' address field is used, this checks it to make sure address is valid
+  if (f.email) {
+    if (f.email.value != '' && (f.email.value.lastIndexOf('.') < 0 || f.email.value.lastIndexOf('@') < 1)) {
+      alert('Invalid email address');
+      return false;
+    }
+    else if (f.email.value == '') {
+      return confirm('Are you sure you want to send this message without an email address?');
+    }
+  }
+}
+</script>
+
+</head>
+
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top"> 
+          <td width="221" rowspan="2"> <a href="index.html"><img src="images/logo_learntrav.gif" width="221" height="94" alt="Rice Alumni: Established 1919" border="0"></a><br>
+            <table width="191" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="http://alumni.cgi.rice.edu/events/calendar.php">EVENTS 
+                        CALENDAR</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="alumni_groups.html">ALUMNI 
+                        GROUPS</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="youngalum_stds.html">YOUNG 
+                        ALUMNI /STUDENTS</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="career_connection.html">CAREER 
+                        CONNECTION</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="volunteer.html">VOLUNTEER</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td background="images/btn_over_nav.gif" align="center" valign="middle"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="navOver"><a href="learning_trav.html">LEARNING &amp; TRAVEL</a></font></td>
+                    </tr>
+                </table></td>
+              </tr>
+              <tr>
+                <td valign="top">&nbsp;</td>
+                <td align="center" valign="middle"><table width="90%" border="0" cellspacing="3" cellpadding="0"><tr>
+                      <td width="49%" background="images/gray1_bg.gif"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="alumcoll.html">Alumni College</a></font></td>
+                          </tr>
+                      </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="http://online.alumni.rice.edu/directory/library.asp">Rice Alumni Digital Library </a></font></td>
+                          </tr>
+                      </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="travel.html">Travel/Study Program</a></font></td>
+                          </tr>
+                      </table></td>
+                    </tr>
+                    <tr>
+                      <td background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="learning_scholar.html">Scholarships</a></font></td>
+                          </tr>
+                      </table></td>
+                    </tr>
+                </table></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="honors_awards.html">HONORS 
+                        &amp; AWARDS</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="new_at_rice.html">WHAT'S 
+                        NEW @ RICE</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="about_alumassoc.html">ABOUT 
+                        THE ARA</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="faq_file.html">FAQ 
+                        FILE</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td><font class="nav"><a class="nav" href="http://giving.rice.edu" target="_blank">GIVE 
+                        TO RICE</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            
+          </td>
+          <td align="right"><img src="images/clear.gif" width="100" height="20"><br>
+            <img src="images/subpic_groups.jpg" width="526" height="56" ="Owl and art"> 
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td colspan="4">&nbsp;</td>
+              </tr>
+              <tr valign="top"> 
+                <td width="414"> 
+                  <p><img src="images/sub_title_alumcoll.gif" width="411" height="17" alt="About Alumni Association"></p>
+                  <table class="mainTable" border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tr valign="top"> 
+                      <td class="mainSmall"> 
+                        <form id="f" action="http://alumni.cgi.rice.edu/events/txtmailer-acw-2007sat.php" name="txtmail" onSubmit="return chkForm(this)" method="post" class="bodytextclass">
+                          <input type="hidden" name="sendto" value="lblinn@rice.edu">
+                          <input type="hidden" name="returnto" value="">
+                          <input type="hidden" name="subject" value="Alumni College Weekend Registration Form">
+                          <table class="mainSmall" width="100%" border="0" cellpadding="3" cellspacing="0">
+                            <tr> 
+                              <td colspan="2" height="13"><p><span class="mainSubtitle"><strong>Saturday-only Class Selection</strong></span></p>
+                                <p>A Saturday-only pass to  Alumni College is $165 per person. Because the main registration deadline has passed, we cannot guarantee you will be registered for your class choices. The cost includes course fees, meals, and parking. Please be aware that enrollment in Alumni College may be limited by space constraints and will be allocated on a first-come, first-served basis.</p>
+                                <p><b>REGISTRANT 1<br>
+                                </b></p></td>
+                            </tr>
+                            <tr> 
+                              <td align="right"><strong>Name:</strong></td>
+                              <td> 
+                                <input class="formSmall" type=text name=name_reg1 value="" size=40>
+                              </td>
+                            </tr>
+                          </table>
+                          <table class="mainSmall" width="100%" border="0" cellpadding="3" cellspacing="0">
+                            <tr> 
+                              <td colspan="2"><b>REGISTRANT 2<br>
+                                </b></td>
+                            </tr>
+                            <tr> 
+                              <td align="right"><strong>Name:</strong></td>
+                              <td> 
+                                <input class="formSmall" type=text name=name_reg2 value="" size=40>
+                              </td>
+                            </tr>
+                          </table>
+                          <table class="mainSmall" width="100%" border="0" cellpadding="3" cellspacing="0">
+                            <tr> 
+                              <td width="82%" colspan="3"><p><br>
+                                Please indicate which classes each registrant will attend.<b><br>&nbsp;
+                                </b></p>
+                              </td>
+                            </tr>
+                            <tr> 
+                              <td colspan="3"><img src="images/gray2_bg.gif" width="100%" height="1"></td>
+                            </tr>
+                            <tr> 
+                              <td colspan="3">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="3"><b>Saturday morning, February 24 <br>
+                              </b></td>
+                            </tr>
+                            <tr>
+                              <td colspan="3"><img src="images/clear.gif" width="115" height="1" alt="spacer"></td>
+                            </tr>
+                            <tr>
+                              <td align="center"><img src="images/r1.gif" width="12" height="11"></td>
+                              <td align="center"><img src="images/r2.gif" width="13" height="11"></td>
+                              <td><b>Class 3 &#151; 9:00&#150;10:30 am</b></td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top"><input type="radio" name="R1_Class3_9AM" value="2-24_r1_jaffe">
+                              </td>
+                              <td align="center" valign="top"><input type="radio" name="R2_Class3_9AM" value="2-24_r2_jaffe">
+                              </td>
+                              <td>The Changing Geopolitics of Energy, <i>Amy Myers Jaffe</i></td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top"><input type="radio" name="R1_Class3_9AM" value="2-24_r1_leeds">
+                              </td>
+                              <td align="center" valign="top"><input type="radio" name="R2_Class3_9AM" value="2-24_r2_leeds">
+                              </td>
+                              <td><p>Organizations, Treaties, and Law in International Politics, <i>Brett Ashley Leeds</i></p></td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top"><input type="radio" name="R1_Class3_9AM" value="2-24_r1_byrd">
+                              </td>
+                              <td align="center" valign="top"><input type="radio" name="R2_Class3_9AM" value="2-24_r2_byrd">
+                              </td>
+                              <td>Teaching the American History Survey at Rice, <i>Alexander X. Byrd &rsquo;90</i></td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top"><input type="radio" name="R1_Class3_9AM" value="2-24_r1_joseph">
+                              </td>
+                              <td align="center" valign="top"><input type="radio" name="R2_Class3_9AM" value="2-24_r2_joseph">
+                              </td>
+                              <td>Globalization in Contemporary Literature, <i>Betty Joseph</i></td>
+                            </tr>
+                            <tr>
+                              <td colspan="3"><img src="images/clear.gif" width="115" height="1" alt="spacer"></td>
+                            </tr>
+                            <tr>
+                              <td colspan="3"><img src="images/clear.gif" width="115" height="1" alt="spacer"></td>
+                            </tr>
+                            <tr>
+                              <td align="center"><img src="images/r1.gif" width="12" height="11"></td>
+                              <td align="center"><img src="images/r2.gif" width="13" height="11"></td>
+                              <td><b>Class 4 &#151; 10:45 am&#150;12:15 pm</b></td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top"><input type="radio" name="R1_Class4_10:45AM" value="2-24_r1_gorry">
+                              </td>
+                              <td align="center" valign="top"><input type="radio" name="R2_Class4_10:45AM" value="2-24_r2_gorry">
+                              </td>
+                              <td><p>Intimacy with Machines in the Digital Age, <i>G. Anthony Gorry</i></p></td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top"><input type="radio" name="R1_Class4_10:45AM" value="2-24_r1_garza_lopez-alonso">
+                              </td>
+                              <td align="center" valign="top"><input type="radio" name="R2_Class4_10:45AM" value="2-24_r2_garza_lopez-alonso">
+                              </td>
+                              <td>Immigration: The Latin American Perspective, <i>Erika de la Garza and Moramay L&oacute;pez-Alonso</i></td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top"><input type="radio" name="R1_Class4_10:45AM" value="2-24_r1_allen">
+                              </td>
+                              <td align="center" valign="top"><input type="radio" name="R2_Class4_10:45AM" value="2-24_r2_allen">
+                              </td>
+                              <td>Samples from Space: Exploring the Moon, Mars, Comets, Asteroids, Our Sun, and Other Stars, <i>Carlton Allen &rsquo;70</i></td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top"><input type="radio" name="R1_Class4_10:45AM" value="2-24_r1_brandt">
+                              </td>
+                              <td align="center" valign="top"><input type="radio" name="R2_Class4_10:45AM" value="2-24_r2_brandt">
+                              </td>
+                              <td>Music and the Mind, <i>Anthony K. Brandt</i></td>
+                            </tr>
+                            <tr> 
+                              <td colspan="3"><img src="images/clear.gif" width="115" height="1" alt="spacer"></td>
+                            </tr>
+                          </table>
+                          <table class="mainSmall" width="100%" border="0" cellpadding="3" cellspacing="0">
+                            <tr> 
+                              <td width="87%" colspan="3">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td colspan="3"><b>Saturday afternoon, February 24<br>
+                              </b></td>
+                            </tr>
+                            <tr>
+                              <td align="center"><img src="images/r1.gif" width="12" height="11"></td>
+                              <td align="center"><img src="images/r2.gif" width="13" height="11"></td>
+                              <td><b>Class 5 &#151; 2:00&#150;3:30 pm</b></td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top"><input type="radio" name="R1_Class5_2PM" value="2-24aft_r1_adams">
+                              </td>
+                              <td align="center" valign="top"><input type="radio" name="R2_Class5_2PM" value="2-24aft_r2_adams">
+                              </td>
+                              <td><p>Nanotechnology and Energy &mdash; Be a Scientist, Save the World, <i>Wade Adams</i></p></td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top"><input type="radio" name="R1_Class5_2PM" value="2-24aft_r1_wittenberg">
+                              </td>
+                              <td align="center" valign="top"><input type="radio" name="R2_Class5_2PM" value="2-24aft_r2_wittenberg">
+                              </td>
+                              <td><p>Current Trends: Energy and Architecture, <i>Gordon Wittenberg</i></p></td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top"><input type="radio" name="R1_Class5_2PM" value="2-24aft_r1_costello">
+                              </td>
+                              <td align="center" valign="top"><input type="radio" name="R2_Class5_2PM" value="2-24aft_r2_costello">
+                              </td>
+                              <td><p>J.M.W. Turner and Horatio Nelson: Picturing the Hero, <i>Leo Costello</i></p></td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top"><input type="radio" name="R1_Class5_2PM" value="2-24aft_r1_jones">
+                              </td>
+                              <td align="center" valign="top"><input type="radio" name="R2_Class5_2PM" value="2-24aft_r2_jones">
+                              </td>
+                              <td><p>Moving to the Left? &mdash; Politics and Elections in Latin America, <i>Mark P. Jones</i></p></td>
+                            </tr>
+                            <tr>
+                              <td colspan="3"><img src="images/clear.gif" width="115" height="1" alt="spacer"></td>
+                            </tr>
+                            <tr>
+                              <td colspan="3"><img src="images/clear.gif" width="115" height="1" alt="spacer"></td>
+                            </tr>
+                            <tr>
+                              <td align="center"><img src="images/r1.gif" width="12" height="11"></td>
+                              <td align="center"><img src="images/r2.gif" width="13" height="11"></td>
+                              <td><b>Class 6 &#151; 3:45&#150;5:15 pm</b></td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top"><input type="radio" name="R1_Class6_3:45PM" value="2-24aft_r1_pastrano">
+                              </td>
+                              <td align="center" valign="top"><input type="radio" name="R2_Class6_3:45PM" value="2-24aft_r2_pastrano">
+                              </td>
+                              <td><p>Migratory Labor in America, <i>Jos&eacute; Guillermo Pastrano</i></p></td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top"><input type="radio" name="R1_Class6_3:45PM" value="2-24aft_r1_taylor">
+                              </td>
+                              <td align="center" valign="top"><input type="radio" name="R2_Class6_3:45PM" value="2-24aft_r2_taylor">
+                              </td>
+                              <td><p>A Sustainable Building Program in Houston, <i>Rives T. Taylor &rsquo;82</i></p></td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top"><input type="radio" name="R1_Class6_3:45PM" value="2-24aft_r1_morgan">
+                              </td>
+                              <td align="center" valign="top"><input type="radio" name="R2_Class6_3:45PM" value="2-24aft_r2_morgan">
+                              </td>
+                              <td><p>Economic Sanctions and Foreign Policy, <i>T. Clifton Morgan</i></p></td>
+                            </tr>
+                            <tr>
+                              <td colspan="3">&nbsp;</td>
+                            </tr>
+                            <tr> 
+                              <td colspan="3"> 
+                                  <input class="formSmall" type=submit name=Submit value="Submit and Continue">
+                                  <input class="formSmall" type=reset value="Reset" name="reset">                              
+                              </td>
+                            </tr>
+                          </table>
+                          <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+						  <p><b>Parking</b><br>
+                          Included in your registration fee is a parking permit that will allow you to access specified parking lots during the scheduled program.</p>
+                          <p><b>Hotel Accommodations</b><br>
+                            The alumni office maintains the following list of 
+                            hotels near campus for accommodations. All have shuttle 
+                            service to the campus available at your request. The 
+                            alumni office is not responsible for room rates or 
+                            availability; however, most hotels offer weekend specials.</p>
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr valign="top">
+                              <td class="mainSmall" width="50%" align="center">Hilton 
+                                &#151; Houston Plaza<br>
+                                6633 Travis Street<br>
+                                713-313-4000</td>
+                              <td width="50%" align="center" class="mainSmall">Holiday Inn &mdash; Med Center<br>
+                                6800 Main Street<br>
+                              800-465-4329</td>
+                            </tr>
+                            <tr valign="top"> 
+                              <td class="mainSmall" width="50%" align="center">&nbsp;</td>
+                              <td width="50%" align="center" class="mainSmall">&nbsp;</td>
+                            </tr>
+                            <tr valign="top"> 
+                              <td class="mainSmall" width="50%" align="center"> 
+                                <p>Marriott &mdash; Med Center<br>
+                                  6580 Fannin<br>
+                                  713-796-0080</p>
+                              </td>
+                              <td width="50%" align="center" class="mainSmall">Residence Inn by Marriott &mdash; West U<br>
+                              2939 Westpark Drive<br>
+                              713-661-4660</td>
+                            </tr>
+                          </table>
+                          <p><b>Questions</b><br>
+                            If you have any questions, please call <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('5alvr6sNAPNA9rXYMwoHPx')">Lauren Linn</a> 
+                            at 713-348-6093 or 800-742-3258. You may also access 
+                          this information online at <a href="http://alumni.rice.edu/alumcoll.html">http://alumni.rice.edu/alumcoll.html</a>.</p>
+                        </form>
+                        <span style="display:none; "></span> </td>
+                    </tr>
+                  </table>
+                </td>
+                <td width="1" background="images/dots_bg.gif"><img src="images/clear.gif" width="1" height="50"></td>
+                <td width="10"><img src="images/clear.gif" width="10" height="50"></td>
+                <td>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td>
+                        <form id="srch" method=GET action="" onSubmit="doSearch();">
+                          <input type="hidden" value="web" name="tab">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr> 
+                              <td colspan="4"> 
+                                <input type=text name=q size=15 maxlength=255 value="" onChange="srch.search.value=this.value;" class="formSmall">
+                                <span id="spn" style="background-image: url(images/btn_go_new.gif);width:19;height:14" onClick="doSearch()" /> 
+                                <input type="hidden" name="hidden_site" value="alumni.rice.edu">
+                                <input type="hidden" name="search" value="">
+                                </span></td>
+                            </tr>
+                            <tr>
+                              <td width="10"> 
+                                <input id="alum" type="radio" name="sitesearch" value="alumni.rice.edu" checked>
+                              </td><td width="85"><font class="mainSmalldark">Search 
+                                this site</font></td>
+                            </tr>
+                            <tr>
+                              <td width="10" align="right"> 
+                                <input id="rice" type="radio" name="sitesearch" value="www.rice.edu">
+                              </td>
+                              <td width="85"><font class="mainSmalldark">Search 
+                                rice.edu</font></td>
+                            </tr>
+                          </table>
+                        </form></td>
+                    </tr>
+                    <tr> 
+                      <td><img src="images/clear.gif" width="115" height="20" alt="spacer"></td>
+                    </tr>
+                    <tr> 
+                      <td><a href="https://online.alumni.rice.edu/asp/Welcome.asp"><img src="images/title_onlinesvcs.gif" width="115" height="9" alt="Online Services" border="0"></a></td>
+                    </tr>
+                    <tr> 
+                      <td> 
+                        <table width="100%" border="0" cellspacing="3" cellpadding="0">
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/events/calendar.php" title="Events calendar and online registration">Find Events/RSVP</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/detailsearch.asp" title="Search the directory of Rice alumni">Alumni Directory</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/profile.asp" title="Update your directory information">Update Address</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Online/emailforwarding/eforwarding.asp" title="Manage or create an alumni.rice.edu account">Email Forwarding</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Career/default.asp" title="Connect with alums in your career field">Career Network</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+						  <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/bizfinder/" title="Find or promote alumni-owned businesses">Business Finder</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+<tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="http://alumni.rice.edu/submit_note.html" title="Get your latest news into the Owlmanac">Submit Classnote</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr> 
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
+                              <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr> 
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/library.asp" title="Access research tools and periodicals">Digital Library</a></font></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td><img src="images/clear.gif" width="115" height="14" alt="spacer"></td>
+                    </tr>
+                  </table>
+                  <!-- <a href="http://giving.rice.edu" target="_blank"><img src="images/rice_nextcent.gif" width="83" height="40" border="0" alt="Rice: The Next Century Campaign" hspace="3"></a><br> -->
+                  <a href="http://www.rice.edu" target="_blank"><img src="images/rice_home.gif" width="75" height="40" border="0" alt="Rice: Home" vspace="10" hspace="3"></a>
+                    <br>
+                    <img src="images/clear.gif" width="115" height="3" alt="spacer"><p></p>
+                  </td>
+              </tr>
+            </table>
+            
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td><img src="images/clear.gif" width="100" height="5" alt="spacer"></td>
+  </tr>
+  <tr> 
+    <td>
+      <table width="100%" border="0" cellspacing="0" cellpadding="15">
+        <tr>
+          <td width="57%"><font class="mainSmall"><a href="#"onClick="SecWin=window.open('contact.html','SecWin','width=260,height=450,toolbar=no,status=yes,resizable=no,scrollbars=yes,location=no,directories=no,menubar=no');return false;">Contact 
+             the Office of Alumni Affairs</a> | <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('dFuDc6BYQoX5nNNobzmYL4')">Send a Comment</a> | <a href="index.html">Home</a></font></td>
+          <td width="43%" align="right"><font class="mainSmall"><a href="http://www.rice.edu/about/cr-notice.html" target="_blank"><script language="JavaScript">
+<!--
+today = new Date()
+cy = today.getFullYear()
+{
+}
+//-->
+</script>
+Copyright &copy;<script language="JavaScript">
+<!--
+document.write(cy)
+{
+}
+//-->
+</script> Rice University</a></font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>

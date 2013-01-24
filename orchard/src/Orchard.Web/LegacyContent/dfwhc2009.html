@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "images/btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "images/btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=350,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (srch.alum.checked == true){
+	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (srch.rice.checked == true){
+	srch.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  srch.submit();
+
+}
+
+function checkKey(evt){
+
+	srch.search.value=srch.q.value;
+	if (evt.keyCode == 13 && srch.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+function redir() {
+
+	window.opener.location="staff_listing.html";
+	window.close();
+}
+
+function redir2() {
+
+	window.opener.location="oconnor_house.html";
+	window.close();
+}
+
+</script>
+
+</head>
+
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr valign="top"> 
+    <td rowspan="2"><br>
+      <table width="235" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+          <td valign="top"> <p align="center"><font class="mainSmall"><b>The Centennial 
+              Campaign<br>
+              Dallas/Fort Worth Reception<br>
+              Host Committee<br>
+              </b><em>As of March 26th<br>
+              <br>
+              </em></font><font class="mainSmall">Randall Block &#8217;94<br>
+              Corinne Clemons Bryan &#8217;74<br>
+              W. J. Bryan III &#8217;74<br>
+              Daniel B. Burgess &#8217;87 <br>
+              Gregg R. Cannady &#8217;77<br>
+              Clint Carlson &#8217;79, &#8217;82<br>
+              Nancy Packer Carlson &#8217;80<br>
+              W. Michael Carter &#8217;66 <br>
+              Steven A. Caufield &#8217;03<br>
+              Barbara Madden Chapman &#8217;54<br>
+              Richard A. Chapman &#8217;54, &#8217;55, &#8217;57<br>
+              Russell F. Coleman &#8217;82<br>
+              Martha Coleman<br>
+              Brian Crowe &#8217;80<br>
+              Edward A. Dominguez &#8217;82<br>
+              Richard J. Gass &#8217;78, &#8217;79<br>
+              Wanda English Gass &#8217;78<br>
+              Lindsay Germano &#8217;01</font><font class="mainSmall"><br>
+              Don Glendenning &#8217;76<br>
+              Tracie M. Hall &#8217;92, &#8217;03<br>
+              Jack W. Hawkins &#8217;55<br>
+              Diana Howard &#8217;82<br>
+              Pete Huff &#8217;59, &#8217;60<br>
+              Nancy Huff<br>
+              Vester T. Hughes, Jr. &#8217;49<br>
+              Richard Hunt &#8217;78<br>
+              John V. Jaggers &#8217;73<br>
+              Rusty Campbell Jaggers &#8217;73<br>
+              Karen Gren Johnson &#8217;79<br>
+              Neal T. Lacey, Jr. &#8217;52, &#8217;53<br>
+              Sarah Lacey &#8217;55<br>
+              Stella Lin &#8217;97<br>
+              Douglas Maclay &#8217;50 <br>
+              Gregory A. Magel &#8217;81<br>
+              Lissa King Magel &#8217;83<br>
+              James K. Peden III &#8217;63 <br>
+              Pat Rangel &#8217;76<br>
+              Angela Berry Roberson &#8217;90<br>
+              Duane Roberts &#8217;80 <br>
+              Topp Robertson &#8217;76<br>
+              Drew Skaggs &#8217;04<br>
+              Martin Sosland &#8217;75<br>
+              Bruce Stewart &#8217;79<br>
+              Denise Stom &#8217;04<br>
+              Leigh Peden Straughn &#8217;95<br>
+              Sharon Cutcher Sykes &#8217;96<br>
+              Gloria Meckel Tarpley &#8217;81<br>
+              Gerald Urbach &#8217;65<br>
+              Michele Vobach &#8217;85<br>
+              Stephen Vobach &#8217;85<br>
+              </font></p>
+            </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr valign="top"> </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>

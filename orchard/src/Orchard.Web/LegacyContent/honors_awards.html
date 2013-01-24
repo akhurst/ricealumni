@@ -1,0 +1,603 @@
+<html>
+<head>
+<title>Rice University || Association of Rice Alumni</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="styles.css">
+<script language="JavaScript">
+<!--
+  btn1 = new Image(95, 31);
+  btn1.src= "images/btn_nav.gif";
+  bl_btn1 = new Image(95, 31);
+  bl_btn1.src= "images/btn_over_nav.gif";
+
+//-->
+
+function _compose(e_code) {
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=530,scrollbars=yes,toolbar=no");
+}
+
+function doSearch(){
+
+  if (srch.alum.checked == true){
+	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (srch.rice.checked == true){
+	srch.action="http://www.rice.edu/Internet/search/query.php";
+  }
+
+  srch.submit();
+
+}
+
+function checkKey(evt){
+
+	srch.search.value=srch.q.value;
+	if (evt.keyCode == 13 && srch.search.value != ''){
+		doSearch();
+	}
+	
+}
+
+</script>
+</head>
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top">
+          <td width="221" rowspan="2"><a href="index.html"><img src="images/logo.gif" width="221" height="94" alt="Association of Rice Alumni" border="0"></a><br>
+            <table width="191" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="http://alumni.cgi.rice.edu/events/calendar.php">EVENTS CALENDAR</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="alumni_groups.html">ALUMNI GROUPS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="youngalum_stds.html">YOUNG ALUMNI /STUDENTS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="career_connection.html">CAREER CONNECTION</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="volunteer.html">VOLUNTEER</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="learning_trav.html">LEARNING &amp; TRAVEL</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_over_nav.gif" align="center" valign="middle"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="navOver"><a href="honors_awards.html">HONORS &amp; AWARDS</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top">&nbsp;</td>
+                <td width="172" align="center" valign="middle"><table width="90%" border="0" cellspacing="3" cellpadding="0">
+                    <tr>
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="honors_awards.html#honorsdinner">Laureates 
+                              Dinner</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="honors_awards.html#araawards">ARA Awards</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="honors_awards.html#laureates">All ARA Laureates</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="honors_nominate.html">Call for Nominations</a></font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="new_at_rice.html">WHAT'S NEW @ RICE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="about_alumassoc.html">ABOUT THE ARA</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="faq_file.html">FAQ FILE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="14" alt="spacer"></td>
+                <td width="172" align="center" valign="middle"><img src="images/nav_dots.gif" width="1" height="14" alt="dots spacer"></td>
+              </tr>
+              <tr>
+                <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><font class="nav"><a class="nav" href="http://giving.rice.edu" target="_blank">GIVE TO RICE</a></font></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+          <td align="right"><img src="images/clear.gif" width="100" height="20"><br>
+            <img src="images/subpic_about.jpg" width="526" height="56" ="Rice campus collaged with image of trophy and award"></td>
+        </tr>
+        <tr valign="top">
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td colspan="4">&nbsp;</td>
+              </tr>
+              <tr valign="top">
+                <td width="414"><p><img src="images/sub_title_honors.gif" width="410" height="17" alt="About Alumni Association"></p>
+                  <table class="mainTable" border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tr valign="top">
+                      <td class="mainSmall"><p class="mainSubtitle"><b>ARA Laureates Program</b></p>
+                        <p>Established in 1937, the Association of Rice Alumni's 
+                          laureates program recognizes the contributions and accomplishments 
+                          of outstanding Rice alumni and friends of the university.</p>
+                        <p><a name="honorsdinner"></a><b>2012 Laureates Dinner</b><br>
+                          Saturday, May 12, 2012 &mdash; River Oaks Country Club<br>
+                          1600 River Oaks Boulevard, Houston, TX 77019</p>
+                        <p><span class="mainSmallred"> </span>If you would like 
+                          to attend the Laureates Dinner or would like additional 
+                          information about the ARA Laureates Program, contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('pVd3e0jVyOT0jqClcSbBXb')">Molly Goldstein</a> at 713-348-4057 or 800-742-3258. <br>
+                          &nbsp; </p>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="15">
+                          <tr>
+                            <td align="center" bgcolor="#CCCCCC" class="mainSmall"><strong><a href="https://online.alumni.rice.edu/default.aspx?Page=EVNTEventDetail&EventID=1480">Click here to make dinner reservations.</a></strong></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+                <td width="1" background="images/dots_bg.gif"><img src="images/clear.gif" width="1" height="50"></td>
+                <td width="10"><img src="images/clear.gif" width="10" height="50"></td>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><form id="srch" method=GET action="" onSubmit="doSearch();">
+                          <input type="hidden" value="web" name="tab">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td colspan="4"><input type=text name=q size=15 maxlength=255 value="" onChange="srch.search.value=this.value;" class="formSmall">
+                                <span id="spn" style="background-image: url(images/btn_go_new.gif);width:19;height:14" onClick="doSearch()" />
+                                <input type="hidden" name="hidden_site" value="alumni.rice.edu">
+                                <input type="hidden" name="search" value=""></td>
+                            </tr>
+                            <tr>
+                              <td width="10"><input id="alum" type="radio" name="sitesearch" value="alumni.rice.edu" checked></td>
+                              <td width="85"><font class="mainSmalldark">Search this site</font></td>
+                            </tr>
+                            <tr>
+                              <td width="10" align="right"><input id="rice" type="radio" name="sitesearch" value="www.rice.edu"></td>
+                              <td width="85"><font class="mainSmalldark">Search rice.edu</font></td>
+                            </tr>
+                          </table>
+                        </form></td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/clear.gif" width="115" height="20" alt="spacer"></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://online.alumni.rice.edu/asp/Welcome.asp"><img src="images/title_onlinesvcs.gif" width="115" height="9" alt="Online Services" border="0"></a></td>
+                    </tr>
+                    <tr>
+                      <td><table width="100%" border="0" cellspacing="3" cellpadding="0">
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/events/calendar.php" title="Events calendar and online registration">Find Events/RSVP</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/detailsearch.asp" title="Search the directory of Rice alumni">Alumni Directory</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/profile.asp" title="Update your directory information">Update Address</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Online/emailforwarding/eforwarding.asp" title="Manage or create an alumni.rice.edu account">Email Forwarding</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/Career/default.asp" title="Connect with alums in your career field">Career Network</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="http://alumni.cgi.rice.edu/bizfinder/" title="Find or promote alumni-owned businesses">Business Finder</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/remotelibrary.asp?type=8" title="Get your latest news into the Owlmanac" target="_blank">Online Classnotes</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                          <tr>
+                            <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                  <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/library.asp" title="Access research tools and periodicals">Digital Library</a></font></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/clear.gif" width="115" height="14" alt="spacer"></td>
+                    </tr>
+                  </table>
+                  <!-- <a href="http://giving.rice.edu" target="_blank"><img src="images/rice_nextcent.gif" width="83" height="40" border="0" alt="Rice: The Next Century Campaign" hspace="3"></a><br> -->
+                  <a href="http://www.rice.edu" target="_blank"><img src="images/rice_home.gif" width="75" height="40" border="0" alt="Rice: Home" vspace="10" hspace="3"></a> <br>
+                  <img src="images/clear.gif" width="115" height="3" alt="spacer">
+                  <p></p></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="mainCell" valign="top"><img src="images/clear.gif" width="20" height="20"></td>
+                <LINK href="faq_css.css" type=text/css rel=stylesheet>
+                <SCRIPT language=JavaScript src="faq_navFunctions.js"></SCRIPT>
+                <td width="100%" class="mainSmall"><TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                    <TR>
+                      <TD><p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                                    <p class="mainSubtitle"><a name="meritsvc" />2012 Gold Medal</p>
+                                    <!-- START_Baker -->
+                                    <DIV class=faqQuestion id=fcrHead></DIV>
+                                    <DIV class=faqQuestion id=fcrQ_RBB>
+                                      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                        <TR>
+                                          <TD class="mainSmall" width="100%"><li>
+                                              <xA href="javascript:tDisplay('fcrA_RBB');">
+                                              <a href="javascript:tDisplay('fcrA_RBB');">John B. Boles '65</a></TD>
+                                        </TR>
+                                      </TABLE>
+                                    </DIV>
+                                    <DIV class=faqAnswer id=fcrA_RBB>
+                                      <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+                                        <TR>
+                                          <TD vAlign="top"><img src="images/clear.gif" height="13" width="12" border="0"></TD>
+                                          <TD class="mainSmall" width="100%"><p>John Boles is perhaps one of the best known professors  at Rice University today.&nbsp; A 1965  graduate of Rice with a BA in History, Boles attended the University of  Virginia for his PhD, also in history.&nbsp;  He returned to Rice in 1981 and has been teaching history here ever  since.&nbsp;&nbsp; He continues to serve on  substantial committees both on and off campus, take an active role on editorial  journals and in professional societies, teach both undergraduate and graduate  students, and publish significant books and articles on Southern History and on  Rice&rsquo;s founding president Edgar Odell Lovett.&nbsp;  In the past 20 years, Boles has participated in approximately 15 Alumni  College Weekends, both in Houston and on the road, been a speaker in some 14 or  more travel programs, given dozens of lectures at the request of the  President&rsquo;s Office and Office of Alumni Affairs, and served as a faculty  lecturer at Families Weekend and Homecoming &amp; Reunion events.&nbsp; He is also an ambassador for Rice to the  Houston community, having presented nearly 50 talks as a part of Continuing  Studies courses.&nbsp; A past winner of both  of the other awards presented by the Association of Rice Alumni, the  Meritorious Service Award and the Distinguished Alumni Award, Boles has proven  himself as uniquely engaged in university life and history and as an exemplary  scholar.&nbsp;&nbsp; Few other individuals have  demonstrated a deeper and more abiding commitment to Rice &ndash; from his student  days to the present &ndash; and has had as profound an influence on innumerable  students, a host of faculty, and many facets of institutional life.&nbsp; As supporter and fellow Gold Medal recipient  Allen Matusow said, &ldquo;The only issue regarding the nomination of John Boles for  the Gold Medal of the Association of Rice Alumni is why he has not already been  a recipient.&nbsp; In nearly 50 years at Rice,  I have known no one who has been more devoted the university, served it in more  ways, or enjoyed more success as a teacher and scholar.&rdquo;</p></TD>
+                                        </TR>
+                                      </TABLE>
+                                    </DIV>
+                        <p class="mainSmall">                                      This is the highest award presented by the Association of Rice Alumni. The Gold Medal is designed to recognize Rice alumni, faculty, staff, or friends who have rendered extraordinary service to the university. Each recipient must demonstrate one or more of the following criteria: outstanding service in promoting the ideals of the founder of the university OR unusually deep dedication to and advancement of the academic excellence of the university OR uncommon generosity of time and means in support of the university. Preference will be given to living nominees, but posthumous awards are not forbidden.</p>
+                        <p class="mainSubtitle"><a name="distalum" />2012 Distinguished Alumni Awards</p>
+                        <!-- START_Boyan -->
+                        <DIV class=faqQuestion id=fcrHead></DIV>
+                        <DIV class=faqQuestion id=fcrQ_KTA>
+                          <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TR>
+                              <TD class="mainSmall" width="100%"><li>
+                                  <xA href="javascript:tDisplay('fcrA_Boyan');">
+                                  <a href="javascript:tDisplay('fcrA_KTA');">Orenthial J. Brigance '92 </A></TD>
+                            </TR>
+                          </TABLE>
+                        </DIV>
+                        <DIV class=faqAnswer id=fcrA_KTA>
+                          <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+                            <TR>
+                              <TD vAlign="top"><img src="images/clear.gif" height="13" width="12" border="0"></TD>
+                              <TD class="mainSmall" width="100%"><p>O.J. Brigance, a 1992 graduate in  Managerial Studies, received a number of Rice and Southwest Conference  recognitions for his collegiate football career.&nbsp; Off the field at Rice,  Brigance served as team liaison to the Career Services Office and inspired many  football players to consider how they would be better prepared for life after  Rice.&nbsp; His gridiron career spanned two professional leagues, four  professional teams, and nearly 10 years.&nbsp; He is one of very few players to  have won both Canadian Football League and National Football League  Championships and the only player to have done so in the same city:  Baltimore.&nbsp; In 2004, Brigance made the transition to an NFL front office  as he assumed the position of Director of Player Development for the Baltimore  Ravens.&nbsp; In that position, he developed programs to assist players in  positioning themselves to have robust careers on and off the field of play,  including player internship and continuing education programs.&nbsp; The NFL  honored Brigance with the Best Overall Player Development Program Award in 2005  and 2006, the Most Outstanding Internship Program Award in 2005, and the  Outstanding Continuing Education Program Award in 2007.&nbsp; That same year,  2007, Brigance was diagnosed with ALS, also known as Lou Gehrig&rsquo;s Disease, a  progressive neurodegenerative disease that currently has no cure.&nbsp; He  chose to make the best of his diagnosis and has since founded the Brigance  Brigade Foundation and partners with the Johns Hopkins Center&nbsp;for ALS  Research, becoming their ALS Ambassador.&nbsp; Richard W. Cass, president of  the Baltimore Ravens, said, &ldquo;It is difficult for me to imagine a better role  model for current Rice students than O.J. Brigance.&nbsp; He has had an  outstanding career, but to achieve that success he has had to overcome adversity  every step of the way. &nbsp;I am confident  that he would be an inspiration to Rice&rsquo;s current students, in much the same  way he is an inspiration to all of us at the Ravens and in Baltimore.&rdquo;</p>                              <p align="left">&nbsp;</p></TD>
+                            </TR>
+                          </TABLE>
+                        </DIV>
+                        <!-- END -->
+                        <!-- START_Fatjo -->
+                        <DIV class=faqQuestion id=fcrHead></DIV>
+                        <DIV class=faqQuestion id=fcrQ_LKB>
+                          <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TR>
+                              <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrA_LKB');">James L. Powell '51</a></TD>
+                            </TR>
+                          </TABLE>
+                        </DIV>
+                        <DIV class=faqAnswer id=fcrA_LKB>
+                          <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+                            <TR>
+                              <TD vAlign="top"><img src="images/clear.gif" height="13" width="12" border="0"></TD>
+                              <TD class="mainSmall" width="100%"><p>James &ldquo;Jimmie&rdquo; Powell is a 1951  graduate of Rice University and has spent the majority of his professional  career as a rancher.&nbsp; His nominators say  that he &ldquo;has been a committed and visionary leader of organizations that  support agriculture and stewards of agricultural land.&rdquo;&nbsp; Powell claims that he learned to diversify at  Rice, which has made him successful in several fields of endeavor and an  important benefactor of communities, museums, and universities.&nbsp; Powell served as president of the Texas and  Southwestern Cattle Raisers Association (TSCRA) from 1988 to 1990 and was  instrumental in sweeping improvements in the ranching industry as well as the  growth of the organization whose members now manage or own more than 5 million  acres.&nbsp; TSCRA is a 134-year-old trade  organization and the largest livestock association in Texas, representing more  than 15,000 beef cattle producers, ranching families, and businesses.&nbsp; He has encouraged continual research into  animal health and diseases and strongly supports national biosecurity programs.&nbsp; In addition, he is dedicated to education and  has worked with students in ranch management programs,  sharing his philosophy on land stewardship and animal husbandry.&nbsp; Powell has led other industry organizations,  including the Texas Sheep and Goat Raisers Association and the National Wool  Growers Association. On a national level, he served on the Advisory Committee  for the U.S. Department of Agriculture Packers and Stockyard Administration and  on the Secretary of Agriculture&rsquo;s Technical Advisory Committee for Multilateral  Trade Negotiation.&nbsp; His awards include  induction into the International Stockmen&rsquo;s Hall of Fame in 1990, induction  into the Texas Heritage Hall of Honor in 2008, the Texas Agriculture Lifetime  Leadership Achievement Award in 2005, and the National Golden Spur Award from  the National Ranching Heritage Center in 2002.&nbsp; </p>                              <p align="left"><br>
+                              &nbsp;</p></TD>
+                            </TR>
+                          </TABLE>
+                        </DIV>
+                        <!-- END -->
+                        <!-- START_Nichols -->
+                        <DIV class=faqQuestion id=fcrHead></DIV>
+                        <DIV class=faqQuestion id=fcrQ_EME>
+                          <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TR>
+                              <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrA_EME');">Charles Renfro '87, '89</a></TD>
+                            </TR>
+                          </TABLE>
+                        </DIV>
+                        <DIV class=faqAnswer id=fcrA_EME>
+                          <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+                            <TR>
+                              <TD vAlign="top"><img src="images/clear.gif" height="13" width="12" border="0"></TD>
+                              <TD class="mainSmall" width="100%"><p>Charles Renfro graduated in 1987 with  a BA in studio art/architecture and in 1989 completed his Bachelor of  Architecture, both from Rice University.&nbsp;  Since then, he has become one of the most celebrated architects  representing the School of Architecture at Rice.&nbsp; Few Rice alumni practicing architecture today  have had such a significant impact on architecture and its future direction  over the past two decades.&nbsp; His firm,  Diller Scofidio + Renfro, has just completed the renovation of the Lincoln  Center and the conversion of an abandoned elevated rail line into the wildly  successful High Line, a linear public park in Manhattan.&nbsp; Additionally, Diller Scofidio + Renfro has,  in the past year, obtained commissions for the Broad Museum in Los Angeles and  the Berkeley Art Museum and Pacific Film Archive.&nbsp; Renfro played a key role in the firm&rsquo;s  transition from upstart studio at the margins of the architectural professional  to a major influence in contemporary design worldwide.&nbsp; He is known for his intellectual curiosity  and multi-disciplinary approach, a hallmark of Rice graduates, that binds  together an interest in architecture and design, art and urban culture.&nbsp; Renfro has been a faculty member at Columbia  University since 2000, is a visiting professor at Parsons New School for  Design, and in 2010 traveled to New Zealand, where he gave lectures at the  University of Auckland and at the Adam Auditorium in Wellington.&nbsp; Additionally, he mentors young designers and  welcomes qualified Rice fifth year architecture students to intern at his firm. 
+One of his nominators wrote, &ldquo;As  a practitioner, an educator, a writer, and an ambassador of Rice, Charles  consistently pushes architecture&rsquo;s boundaries in unforeseen directions.&rdquo;</p></TD>
+                            </TR>
+                          </TABLE>
+                        </DIV>
+                        <DIV class=faqQuestion id=fcrQ_MRO>
+                          <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                            <TR>
+                              <TD class="mainSmall" width="100%"><li><A href="javascript:tDisplay('fcrA_MRO');">Rebecca Greene Udden '73 </A></TD>
+                            </TR>
+                          </TABLE>
+                        </DIV>
+                        <DIV class=faqAnswer id=fcrA_MRO>
+                          <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+                            <TR>
+                              <TD vAlign="top"><img src="images/clear.gif" height="13" width="12" border="0"></TD>
+                              <TD class="mainSmall" width="100%"><p>Rebecca Greene Udden &rsquo;73 is the  Founding Artistic Director of Houston&rsquo;s Main Street Theater.&nbsp; Begun in 1975 as a collective of artists in  Autry House, in 1978 it became a more conventional non-profit theater and was  transformed again in 1981 when the theater outgrew its original location and  remodeled a new space in West University into a 99-seat theater.&nbsp; By 1996, the theater had grown enough to open  a second space in Chelsea Market.&nbsp; The  newest 274-seat theater showcases large-scale classics and musicals and is home  to Houston&rsquo;s top youth theater program, The Main Street Youth Theater.&nbsp; Udden has championed new works by young  playwrights and has helmed several Houston premieres from playwrights such as  Tom Stoppard, Wendy Wasserstein, and Tina Howe.&nbsp;  The theater has aided the careers of local actors, such as Tess Harper,  who went on to star with Robert Duvall in &ldquo;Tender Mercies,&rdquo; but has also  nourished the growth of a few local playwrights.&nbsp; She has also championed the work of women  playwrights, including Frances Burney, Lillian Hellmann, and Clare Boothe  Luce.&nbsp; Through the Main Street Youth  Theater and the Kids on Stage, Udden has brought the magic of theater and the  educational experience theater can provide to children throughout the Houston  area.&nbsp; As two of her nominators said, &ldquo;No  person in the history of theater in Houston other than Nina Vance (who founded  the Alley Theater) has had a more meaningful impact to date on our community  than Becky Udden.&rdquo;</p>                              <p align="left">&nbsp;</p></TD>
+                            </TR>
+                          </TABLE>
+                        </DIV>
+                        <DIV class=faqAnswer id=fcrA_ADP>
+                          <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+                            <TR>
+                              <TD vAlign="top"><img src="images/clear.gif" height="13" width="12" border="0"></TD>
+                            </TR>
+                          </TABLE>
+                        </DIV>
+                        <!-- END -->
+                        <!-- START_Turley -->
+                        <DIV class=faqQuestion id=fcrHead></DIV>
+                        <DIV class=faqQuestion id=fcrQ_Turley> </DIV>
+                        <DIV class=faqAnswer id=fcrA_Turley> </DIV>
+                        <!-- END -->
+                        <TABLE width="100%" border=0 cellPadding=0 cellSpacing=0>
+                          <TR>
+                            <TD>
+                          <TR>
+                            <TD><p class="mainSmall"><br>
+                                This award is presented to alumni who have advanced the interests and standards of excellence of Rice University through distinctive professional or volunteer careers. It is reserved for those who attended the university as an undergraduate or graduate student for a period of at least one year and are living at the time of consideration. No one who has received the Gold Medal is eligible for this award.<br>
+                                <br>
+                                <font class="mainSmall"><b><a href="awards_distalumni.html"></a></b></font></p>
+                              <p class="mainSubtitle"><a name="meritsvc" />2012 Meritorious Service Awards</p>
+                              <DIV class=faqQuestion id=fcrQ_RBH>
+                                <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                  <TR>
+                                    <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrA_RBH');">Robert Flatt '69, '70</a></TD>
+                                  </TR>
+                                </TABLE>
+                              </DIV>
+                              <DIV class=faqAnswer id=fcrA_RBH>
+                                <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+                                  <TR>
+                                    <TD vAlign="top"><img src="images/clear.gif" height="13" width="12" border="0"></TD>
+                                    <TD class="mainSmall" width="100%"><p>Robert Flatt has given generously to Rice in many  ways.&nbsp; In 1987, Flatt began teaching as  an Adjunct Professor at the Jones Graduate School of Business (JGSB), where he  developed and taught the core second year course in Production and Operations  Management until 2010.&nbsp; He remains as an  instructor teaching a second year elective on Leading Operational Change.&nbsp; Continuing his involvement with the Jones  School, Flatt served on the curriculum committee for the Executive MBA program  in 1999.&nbsp; Through his work at JGSB, he  has influenced more than two decades of leaders in the Rice and Houston communities.&nbsp; As supporter Deborah Brochstein said, &ldquo;Rice  is full of intelligent, capable professors, many of whom have had a positive  impact on my life and business, but none affected me as much as Robert.&rdquo; He has  had as much an impact on others through his work with many other groups on  campus, including the Association of Rice Alumni (ARA), Rice Athletics, and  Wiess College.&nbsp; In the early 1990s, Flatt  was engaged in long term planning for the ARA, including ensuring that the  current alumni board more fully captured the alumni of the university by adding  positions to the board representing cities and regions other than Houston.&nbsp; He remains a Community Associate at Wiess  College, continuing his nearly 30-year engagement with those students,  including working with Wiess senior Austin Lipinski to produce the documentary  &ldquo;Running Water&rdquo;.&nbsp; Flatt is probably best  known around campus as the talented photographer who has captured the wonderful  images of owls on campus.&nbsp; He has taken  nearly every photography course on campus and has taught a number of them himself.&nbsp; Flatt is a treasured faculty member, alumni  member, and volunteer, and he is an integral part of the fabric of the  university.</p>                                    <p align="left"><br>
+                                    &nbsp;</p></TD>
+                                  </TR>
+                                </TABLE>
+                              </DIV>
+                              <!-- END -->
+                              <!-- START_Steiner -->
+                              <DIV class=faqQuestion id=fcrHead></DIV>
+                              <!-- START_Barnett -->
+                              <DIV class=faqQuestion id=fcrHead></DIV>
+                              <DIV class=faqQuestion id=fcrQ_JCD>
+                                <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                  <TR>
+                                    <TD class="mainSmall" width="100%"><li>
+                                        <xA href="javascript:tDisplay('fcrA_JCD');">
+                                        <a href="javascript:tDisplay('fcrA_JCD');">Eva Jean Lee</a></TD>
+                                  </TR>
+                                </TABLE>
+                              </DIV>
+                              <DIV class=faqAnswer id=fcrA_JCD>
+                                <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+                                  <TR>
+                                    <TD vAlign="top"><img src="images/clear.gif" height="13" width="12" border="0"></TD>
+                                    <TD class="mainSmall" width="100%"><p>Dr. Eva Lee came to the Rice campus in 1969 as a  physical education instructor and to help run the women&rsquo;s sports programs.&nbsp; She unexpectedly found herself a home for the  next 40 years; Lee was awarded Professor Emeritus status in 2000.&nbsp; She coordinated women&rsquo;s basketball,  volleyball, and tennis and also taught in the Department of Kinesiology.&nbsp; At the time, women&rsquo;s athletics were not  formally organized, so Lee&rsquo;s involvement coaching those sports required  practices and travel, not financed by the university, to venues outside of  Houston.&nbsp; These activities were outside  of her actual job responsibilities.&nbsp;  Equally important was Lee&rsquo;s role as a faculty associate and, from 1975  through 1983, as a Resident Associate at Jones College, where she assisted in  the transition from an all-female to a co-ed residential college.&nbsp; In addition, she served as Director of the  Equal Opportunity Office (EEO) for thirteen years before to returning to  kinesiology in 1993 to resume her teaching and research responsibilities.&nbsp; As the director of the EEO, Lee formed a  Women&rsquo;s Commission and worked closely with the members to identify issues and  develop avenues for correction of biases and misconceptions and to equalize  workloads, position descriptions, and salaries of staff and faculty  members.&nbsp; During her tenure as director,  she made great progress for minority employees and women faculty and  staff.&nbsp; Lee is still active on the  Women&rsquo;s Athletic Advisory Board and maintains an interest in all athletic  endeavors.&nbsp; As supporter Kathy Matthews  said, she &ldquo;cleared paths and paved roads so that the women who followed her  would have a clearer, and easier, trek to their goals.&nbsp; She opened new opportunities for women and  minority faculty and staff.&rdquo;&nbsp; Lee was an  integral female role model on the Rice campus for over 40 years, and she  remains an inspiration to female graduates, faculty, and staff. </p>                                    <p align="left">&nbsp;</p></TD>
+                                  </TR>
+                                </TABLE>
+                              </DIV>
+                              <!-- END -->
+                              <!-- START_Poindexter -->
+                              <DIV class=faqQuestion id=fcrHead></DIV>
+                              <DIV class=faqQuestion id=fcrQ_RLP>
+                                <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                  <TR>
+                                    <TD class="mainSmall" width="100%"><li><a href="javascript:tDisplay('fcrA_RLP');">Edward E. Williams</a></TD>
+                                  </TR>
+                                </TABLE>
+                              </DIV>
+                              <DIV class=faqAnswer id=fcrA_RLP>
+                                <TABLE cellSpacing=0 cellPadding=3 width="100%" border=0>
+                                  <TR>
+                                    <TD vAlign="top"><img src="images/clear.gif" height="13" width="12" border="0"></TD>
+                                    <TD class="mainSmall" width="100%"><p>Dr. Ed Williams is Henry Gardiner Symonds Professor at  Rice University and the Jesse H. Jones Graduate School of Business (JGSB).&nbsp; Since he joined the Rice faculty in 1978, he  has made extensive contributions to the university and added immeasurably to  the prestige of the JGSB and Rice as a whole.&nbsp;  The Jones School Entrepreneurship Program was initiated by Williams when  there were few such programs established in business schools within the United  States.&nbsp; In 2010, the Entrepreneurship  Program was recognized as the 6th best graduate school level program  of its kind, and the highest in Texas, as determined by the Princeton  Review.&nbsp; Williams has received the  Teaching Excellence Award from JGSB students seven times and finally asked that  he not be considered for the award going forward.&nbsp; One year, his student evaluations were  recognized as the highest throughout the university, not just within the Jones  School.&nbsp; His work to improve the  reputation and class programming at JGSB remains an important part of his  focus.&nbsp; He has participated on numerous  committees, including the Entrepreneurship Enhancement Committee, and in  several programs, including the Jones Graduate School Entrepreneur  Organization, where he works on creating alliances between the Entrepreneur  Organization and the Jones School by bringing Houston-area entrepreneurs  together with Jones students.&nbsp; Williams  was also the driving force behind the beginnings of Rice&rsquo;s Business Plan  Competition, which has evolved into the leading business plan competition for  graduate schools in the world.&nbsp; It offers  the largest pool of candidates and the richest opportunities for rewards and  financing.&nbsp;&nbsp; As one of his former  students, Gretchen Penny wrote, &ldquo;I believe that Ed Williams exemplifies someone  who is a tireless ambassador and emissary on Rice&rsquo;s behalf.&nbsp; He has demonstrated a commitment to the  lifelong vitality of Rice University and the entrepreneurship program at the  Jones Graduate School of Business, in particular&rdquo;.&nbsp;&nbsp; The reputation of the Jones Graduate School  of Business, and of Rice University, would not be the same without the benefit  of having Williams as a part of the institution.</p>
+                                      <br clear="all">                                    </TD>
+                                  </TR>
+                                </TABLE>
+                              </DIV>
+                              <!-- END -->
+                              <!-- START_Tapia -->
+                              <DIV class=faqQuestion id=fcrHead></DIV>
+                              <DIV class=faqAnswer id=fcrA_LES></DIV>
+                              <!-- END -->
+                              <TABLE width="100%" border=0 cellPadding=0 cellSpacing=0>
+                                <TR>
+                                  <TD><p class="mainSmall"><br>
+                                    This award was established in 1986 to provide recognition for those who have made significant, sustained, and voluntary contributions of energy, time, and creativity toward the advancement of the university. Alumni, active or retired faculty, staff, administrators, and friends of the university who are living at the time of their selection are eligible. No one who has received the Gold Medal is eligible for this award.<br>
+                                      <br>
+                                  </p>
+                                    <!-- END -->
+                                    <!-- START_Reed -->
+                                    <DIV class=faqQuestion id=fcrHead></DIV>
+                                    <!-- END -->
+                                    <TABLE width="100%" border=0 cellPadding=0 cellSpacing=0>
+                                      <TR>
+                                        <TD><p class="mainSmall"><font class="mainSmall"><b><a href="awards_distalumni.html">List of Previous Distinguished Alumni Award Recipients</a></b></font><br>
+                                            <a href="awards_merit.html"><b>List of Previous Meritorious Service Award Recipients</b></a><br>
+                                            <b><a href="awards_gold.html">List of Previous Gold Medal Recipients</a></b>                                          </p>
+                                          <p class="mainSmall"><b><a name="laureates"></a>All ARA Laureates</b><br>
+                                            <a href="honors_alpha.html">Alphabetical Listing</a><br>
+                                            <a href="honors_year.html">By Class Year or Other Rice Affiliation</a></p>
+                                          <p class="mainSmall"><b>ARA Awards<a name="araawards"></a></b><br>
+                                            Nominations are accepted each year for three awards: 
+                                            the Gold Medal, the Distinguished Alumni Award, and 
+                                            the Meritorious Service Award. The selection committee 
+                                            may award one or more of each award each year. <a href="honors_nominate.html">Completed 
+                                              nominations</a> for 2013 candidates may be submitted at any time. The deadline for submissions is August 31, 2012.</p>
+                                          <table width="100%" border="0" cellspacing="0" cellpadding="15">
+                                            <tr>
+                                              <td align="center" bgcolor="#CCCCCC" class="mainSmall"><strong>Nomination Deadline: August 31, 2012</strong></td>
+                                            </tr>
+                                          </table>
+                                          <p class="mainSmall"><br>
+                                          </p>
+                                        </table>
+                              </table>
+                        </table>
+                  </table></TD>
+              </TR>
+            </TABLE></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td><img src="images/clear.gif" width="100" height="5" alt="spacer"></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="15">
+        <tr>
+          <td><font class="mainSmall"><a href="#"onClick="SecWin=window.open('contact.html','SecWin','width=260,height=450,toolbar=no,status=yes,resizable=no,scrollbars=yes,location=no,directories=no,menubar=no');return false;">Contact the Office of Alumni Affairs</a> | <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('dFuDc6BYQoX5nNNobzmYL4')">Send a Comment</a> | <a href="index.html">Home</a></font></td>
+          <td align="right"><font class="mainSmall">
+            <script language="JavaScript">
+<!--
+today = new Date()
+cy = today.getFullYear()
+{
+}
+//-->
+        </script>
+            Copyright &copy;
+            <script language="JavaScript">
+<!--
+document.write(cy)
+{
+}
+//-->
+</script>
+            Rice University</font></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-831972-1";
+urchinTracker();
+</script>
+</body>
+</html>
