@@ -1815,3 +1815,8 @@ h3.staff-profile-summary-name{
 .staff-directory-group{
 	margin-bottom: 20px;
 }
+
+.widget-homepage-link:nth-child(4)
+{
+    clear: left;
+}

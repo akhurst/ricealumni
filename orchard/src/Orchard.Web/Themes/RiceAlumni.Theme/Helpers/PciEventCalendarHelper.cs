@@ -6,8 +6,6 @@ using System.Net;
 using System.Web;
 using System.Xml.Linq;
 using CsQuery;
-using HtmlAgilityPack;
-
 namespace RiceAlumni.Theme.Helpers
 {
 	public class PciEventCalendarHelper
