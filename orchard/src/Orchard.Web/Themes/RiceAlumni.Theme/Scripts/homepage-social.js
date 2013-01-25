@@ -13,6 +13,7 @@
         if (window.location.hash) {
             var start_styling = window.location.hash.replace('#', '');
             $('#facebook_wall').removeClass('standard alt1 alt2 alt3').addClass(start_styling);
+            $('styling-buttons').find('a[href=#' + start_styling + ']').addClass('current');
         }
 
         /*var hash = document.location.hash;
@@ -24,6 +25,8 @@
         }*/
 
         $('.styling-buttons a').click(function (e) {
+            $(this).siblings().removeClass('current');
+            $(this).addClass('current');
             var new_styling = $(this).attr('href').replace('#', '');
             $('#facebook_wall').removeClass('standard alt1 alt2 alt3').addClass(new_styling);
             e.preventDefault();

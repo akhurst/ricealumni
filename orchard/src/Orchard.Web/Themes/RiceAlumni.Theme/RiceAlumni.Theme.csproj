@@ -162,7 +162,6 @@
     <Content Include="Content\Images\texback.png" />
     <Content Include="Content\Images\twitter-bird-hover.png" />
     <Content Include="Content\Images\vcolvin.jpg" />
-    <Content Include="Scripts\bootstrap-scrollspy.js" />
     <Content Include="Scripts\facebook_wall.plugin.js" />
     <Content Include="Scripts\homepage-social.js" />
     <Content Include="Scripts\homepage.js" />
@@ -170,8 +169,9 @@
     <Content Include="Scripts\responsiveslides.js" />
     <Content Include="Scripts\rotate.js" />
     <Content Include="Scripts\script.js" />
-    <Content Include="Scripts\selectnav.min.js" />
+    <Content Include="Scripts\superfish.js" />
     <Content Include="Scripts\tabcontent.js" />
+    <Content Include="Scripts\tinynav.js" />
     <Content Include="Scripts\twitter-feed.js" />
     <Content Include="Styles\alpha_background.css" />
     <Content Include="Styles\grid.css" />
@@ -258,6 +258,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Parts.Title-url-staff-directory.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Widget-Name-MainMenu.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\User.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
