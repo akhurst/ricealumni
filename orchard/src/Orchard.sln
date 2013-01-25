@@ -162,6 +162,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiceAlumni.Tests", "RiceAlu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiceAlumni.Events", "Orchard.Web\Modules\RiceAlumni.Events\RiceAlumni.Events.csproj", "{F31965B4-BE34-42DC-B50E-0E2B57A4D3B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiceAlumni.Admin", "Orchard.Web\Themes\RiceAlumni.Admin\RiceAlumni.Admin.csproj", "{D522C4B1-2EB6-4A02-85F4-EEC3EC46D959}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CodeCoverage|Any CPU = CodeCoverage|Any CPU
@@ -886,6 +888,13 @@ Global
 		{F31965B4-BE34-42DC-B50E-0E2B57A4D3B5}.FxCop|Any CPU.ActiveCfg = Release|Any CPU
 		{F31965B4-BE34-42DC-B50E-0E2B57A4D3B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F31965B4-BE34-42DC-B50E-0E2B57A4D3B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D522C4B1-2EB6-4A02-85F4-EEC3EC46D959}.CodeCoverage|Any CPU.ActiveCfg = Release|Any CPU
+		{D522C4B1-2EB6-4A02-85F4-EEC3EC46D959}.Coverage|Any CPU.ActiveCfg = Release|Any CPU
+		{D522C4B1-2EB6-4A02-85F4-EEC3EC46D959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D522C4B1-2EB6-4A02-85F4-EEC3EC46D959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D522C4B1-2EB6-4A02-85F4-EEC3EC46D959}.FxCop|Any CPU.ActiveCfg = Release|Any CPU
+		{D522C4B1-2EB6-4A02-85F4-EEC3EC46D959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D522C4B1-2EB6-4A02-85F4-EEC3EC46D959}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -970,5 +979,6 @@ Global
 		{367F8E64-9B2D-4A5E-9E04-E06B88E66942} = {FCC25E02-51B3-47E7-85FE-9AB78FDD3313}
 		{AEEAFD27-7281-4274-8094-6CEA9AFFD3A2} = {FCC25E02-51B3-47E7-85FE-9AB78FDD3313}
 		{F31965B4-BE34-42DC-B50E-0E2B57A4D3B5} = {FCC25E02-51B3-47E7-85FE-9AB78FDD3313}
+		{D522C4B1-2EB6-4A02-85F4-EEC3EC46D959} = {FCC25E02-51B3-47E7-85FE-9AB78FDD3313}
 	EndGlobalSection
 EndGlobal

@@ -289,10 +289,16 @@
     <Hash>dbabb320f0cc7aa1</Hash>
   </Dependency>
   <Dependency>
+    <ExtensionId>RiceAlumni.Admin</ExtensionId>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <VirtualPath>~/Themes/RiceAlumni.Admin/bin/RiceAlumni.Admin.dll</VirtualPath>
+    <Hash>4902c90b06599835</Hash>
+  </Dependency>
+  <Dependency>
     <ExtensionId>RiceAlumni.Core</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/RiceAlumni.Core/bin/RiceAlumni.Core.dll</VirtualPath>
-    <Hash>48ffc7707719f5a9</Hash>
+    <Hash>48ffc908060f4343</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>RiceAlumni.Events</ExtensionId>
@@ -316,7 +322,7 @@
     <ExtensionId>RiceAlumni.Theme</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Themes/RiceAlumni.Theme/bin/RiceAlumni.Theme.dll</VirtualPath>
-    <Hash>db9595dd3a01cf8b</Hash>
+    <Hash>db95960c3a27a088</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>SysCache</ExtensionId>

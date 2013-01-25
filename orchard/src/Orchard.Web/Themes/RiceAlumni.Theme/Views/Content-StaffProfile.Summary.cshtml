@@ -1,11 +1,8 @@
 ﻿<div>
-	<div class="staff-profile-summary-image-container">
 		@{ var fileName = Model.ContentItem.ImageField.Image.FileName; if (!string.IsNullOrEmpty(fileName))
-			 {
-				 <a href="#"><img src="@Url.Content(fileName)" alt="@Model.Title" /></a>
+			 {<a class="staff-profile-summary-image" style="background:url(@Url.Content(fileName)) center center no-repeat" href="#"></a>
 			 } 
        }
-	</div>
 	<div class="staff-profile-summary-text-container">
 		<h3 class="staff-profile-summary-name">
 			<a>@Model.ContentItem.TitlePart.Title</a>
@@ -13,8 +10,5 @@
 		<h4 class="staff-profile-summary-title">
 			@Model.ContentItem.StaffProfilePart.Title
 		</h4>
-		<div class="staff-profile-summary-body">
-			@Html.Raw(Model.ContentItem.BodyPart.Text)
-		</div>
 	</div>
 </div>

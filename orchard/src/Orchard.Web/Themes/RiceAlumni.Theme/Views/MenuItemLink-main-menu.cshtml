@@ -6,4 +6,10 @@
 	}
 }
 
-<a href="@link">@Model.Text</a>
+<a href="@link">
+	@Model.Text
+	@if(Model.Text.ToString() == "Alumni Resources")
+	{
+		<span class="carrot">˘</span>
+	}
+</a>

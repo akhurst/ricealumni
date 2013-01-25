@@ -546,6 +546,12 @@
     <References />
   </Dependency>
   <Dependency>
+    <ModuleName>RiceAlumni.Admin</ModuleName>
+    <VirtualPath>~/Themes/RiceAlumni.Admin/bin/RiceAlumni.Admin.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
     <ModuleName>RiceAlumni.Core</ModuleName>
     <VirtualPath>~/Modules/RiceAlumni.Core/bin/RiceAlumni.Core.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>

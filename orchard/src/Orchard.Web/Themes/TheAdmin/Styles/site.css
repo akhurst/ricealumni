@@ -1185,3 +1185,7 @@ fieldset.delete-button {
     top:36px;
     right:16px;
 }
+
+#branding {
+	background: #333 url('images/rice_alumni_logo.png') no-repeat;
+}

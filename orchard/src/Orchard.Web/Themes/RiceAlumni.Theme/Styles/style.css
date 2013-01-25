@@ -43,8 +43,7 @@ font-size:80%;
 }
 
 h2 {
-font:bold 36px/48px Lato, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
-text-transform:uppercase;
+font: 32px/48px Lato, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 p.desc {
@@ -1787,10 +1786,32 @@ color:#2e76ff;
 }
 
 .user-display{
-	z-index: 20000;
+	z-index: 900;
 	position: fixed;
 	background: white;
 	right: 0;
 	bottom: 0;
-	padding: 10px;
+	padding: 15px;
+}
+
+/* Staff Profile */
+
+.staff-profile-summary-image{
+	width: 150px;
+	height: 150px;
+	border-radius: 50em;
+	display: block;
+	-webkit-border-radius: 50em;
+	border: 10px solid white;
+	box-shadow: 2px 3px 17px #ccc;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+h3.staff-profile-summary-name{
+	font-weight: bold;
+}
+
+.staff-directory-group{
+	margin-bottom: 20px;
 }

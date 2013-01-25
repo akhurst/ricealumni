@@ -67,6 +67,7 @@
   <ItemGroup>
     <Content Include="..\Orchard.Setup\Recipes\ricealumni.recipe.xml">
       <Link>ricealumni.recipe.xml</Link>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Web.config" />
     <Content Include="Views\Web.config" />
