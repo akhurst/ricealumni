@@ -18,9 +18,9 @@ window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"
 function doSearch(){
 
   if (srch.alum.checked == true){
-	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
+  srch.action="http://www.rice.edu/cgi-bin/subgoogle";
   } else if (srch.rice.checked == true){
-	srch.action="http://www.rice.edu/Internet/search/query.php";
+  srch.action="http://www.rice.edu/Internet/search/query.php";
   }
 
   srch.submit();
@@ -29,32 +29,14 @@ function doSearch(){
 
 function checkKey(evt){
 
-	srch.search.value=srch.q.value;
-	if (evt.keyCode == 13 && srch.search.value != ''){
-		doSearch();
-	}
-	
+  srch.search.value=srch.q.value;
+  if (evt.keyCode == 13 && srch.search.value != ''){
+    doSearch();
+  }
+  
 }
 
-</script></head>
-</html>
-<html>
-<head>
-    <!-- ADDING RYAN'S STUFF -->
-
-                   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-               <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.8.0/build/cssreset/cssreset-min.css" />
-               <link rel="stylesheet" href="css/alpha_background.css" />
-               <link rel="stylesheet" href="css/grid.css" />
-               <link rel="stylesheet" href="css/style.css" />
-               <link rel="stylesheet" href="css/responsive_custom.css" />
-               <!--[if lt IE 9]>
-               <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-               <![endif]-->
-               <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css" />
-
-
-    <!-- /ADDING RYAN'S STUFF -->
+</script>
 </head>
 
 <body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
@@ -505,7 +487,7 @@ function checkKey(evt){
                                 </tr>
                               </table>                            </td>
                           </tr>
-						  <tr> 
+              <tr> 
                             <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
                               <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
                                 <tr> 
@@ -540,8 +522,8 @@ function checkKey(evt){
                   <p></p>                </td>
               </tr>
             </table>
-			
-			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr valign="top"> 
                 <td class="mainCell"> <img src="images/clear.gif" width="20" height="20"></td>
                 <td width="529"> 
