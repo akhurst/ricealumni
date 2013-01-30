@@ -23,6 +23,7 @@ namespace RiceAlumni.Core {
 
 				public IEnumerable<RouteDescriptor> GetRoutes()
 				{
+
 					return new[]
 					       {
 						       new RouteDescriptor
@@ -69,7 +70,17 @@ namespace RiceAlumni.Core {
 
 		public static string FindPath(HttpContextBase httpContext, string fileName)
 		{
-			string filePath = httpContext.Request.MapPath("~/LegacyContent/" + fileName);
+			string fullFileName = fileName;
+
+			var splitPath = fullFileName.Split('/');
+
+			if (splitPath.Length > 0 && !splitPath[splitPath.Length - 1].Contains("."))
+			{
+				fullFileName = fullFileName + "/index.html";
+			}
+
+			string filePath = httpContext.Request.MapPath("~/LegacyContent/" + fullFileName);
+
 			if( File.Exists(filePath))
 				return filePath;
 			else

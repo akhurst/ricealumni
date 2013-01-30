@@ -298,7 +298,7 @@
     <ExtensionId>RiceAlumni.Core</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/RiceAlumni.Core/bin/RiceAlumni.Core.dll</VirtualPath>
-    <Hash>48ffc90de599867d</Hash>
+    <Hash>48ffcd7784beab72</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>RiceAlumni.Events</ExtensionId>

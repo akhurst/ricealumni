@@ -8,9 +8,17 @@ namespace RiceAlumni.Core.Controllers
 		public ActionResult RenderLegacyContent(string path)
 		{
 			if (path == "index.html")
-				Redirect("~/");
+				return Redirect("~/");
 
-			var filePath = LegacyContentConstraint.FindPath(HttpContext, path);
+			var splitPath = path.Split('/');
+			var finalPath = path;
+
+			if(splitPath.Length > 0 && !splitPath[splitPath.Length-1].Contains("."))
+			{
+				finalPath = finalPath + "/index.html";
+			}
+
+			var filePath = LegacyContentConstraint.FindPath(HttpContext, finalPath);
 			var stream = new FileStream(filePath, FileMode.Open);
 			return new FileStreamResult(stream, "text/html");
 		}

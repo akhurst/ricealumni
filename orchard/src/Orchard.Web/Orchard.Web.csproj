@@ -523,6 +523,7 @@
     <Content Include="LegacyContent\sria\newsletters\SRIAlumniSpring04.5.pdf" />
     <Content Include="LegacyContent\_notes\index.html.mno" />
     <Content Include="LegacyContent\_notes\indextest.html.mno" />
+    <Content Include="LegacyContent\Web.config" />
     <None Include="Media\web.config">
       <SubType>Designer</SubType>
     </None>
