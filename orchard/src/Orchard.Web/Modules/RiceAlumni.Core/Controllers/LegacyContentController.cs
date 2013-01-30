@@ -7,6 +7,9 @@ namespace RiceAlumni.Core.Controllers
 	{
 		public ActionResult RenderLegacyContent(string path)
 		{
+			if (path == "index.html")
+				Redirect("~/");
+
 			var filePath = LegacyContentConstraint.FindPath(HttpContext, path);
 			var stream = new FileStream(filePath, FileMode.Open);
 			return new FileStreamResult(stream, "text/html");
