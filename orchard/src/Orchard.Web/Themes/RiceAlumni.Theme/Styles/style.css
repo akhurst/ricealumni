@@ -1820,3 +1820,7 @@ h3.staff-profile-summary-name{
 {
     clear: left;
 }
+
+.widget-EventsCalendar p {
+	text-align: left;
+}
