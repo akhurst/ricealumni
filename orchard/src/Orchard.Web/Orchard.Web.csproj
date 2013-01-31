@@ -524,7 +524,6 @@
     <Content Include="LegacyContent\_notes\index.html.mno" />
     <Content Include="LegacyContent\_notes\indextest.html.mno" />
     <Content Include="LegacyContent\Web.config" />
-    <Content Include=".deployment" />
     <None Include="Media\web.config">
       <SubType>Designer</SubType>
     </None>
