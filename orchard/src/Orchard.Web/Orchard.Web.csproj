@@ -177,6 +177,8 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\ricealumni - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\ricealumni - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\ricealumni.improvinghouston.com - Web Deploy.pubxml" />
   </ItemGroup>
   <PropertyGroup>
