@@ -18,10 +18,6 @@ namespace RiceAlumni.Core.Controllers
 				finalPath = finalPath + "/index.html";
 			}
 			return Redirect("legacycontent/"+finalPath);
-
-//			var filePath = LegacyContentConstraint.FindPath(HttpContext, finalPath);
-//			var stream = new FileStream(filePath, FileMode.Open);
-//			return new FileStreamResult(stream, "text/html");
 		}
 	}
 }
