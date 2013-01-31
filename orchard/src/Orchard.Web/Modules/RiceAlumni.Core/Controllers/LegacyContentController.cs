@@ -17,7 +17,7 @@ namespace RiceAlumni.Core.Controllers
 			{
 				finalPath = finalPath + "/index.html";
 			}
-			return Redirect("legacycontent/"+finalPath);
+			return Redirect("~/legacycontent/"+finalPath);
 		}
 	}
 }

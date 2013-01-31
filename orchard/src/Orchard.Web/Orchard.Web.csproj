@@ -138,6 +138,7 @@
     <Content Include="Config\Sample.HostComponents.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="LegacyContent\Web.config" />
     <None Include="Media\web.config">
       <SubType>Designer</SubType>
     </None>
