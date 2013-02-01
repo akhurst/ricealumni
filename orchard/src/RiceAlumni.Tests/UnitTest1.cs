@@ -20,7 +20,7 @@ namespace RiceAlumni.Tests
 		{
 			var pages = new List<string>
 			            {
-
+										"contact.html"
 			            };
 
 			foreach (var page in pages)
