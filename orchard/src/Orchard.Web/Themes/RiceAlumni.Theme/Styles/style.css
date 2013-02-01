@@ -1531,6 +1531,11 @@ max-width:960px;
 margin:0 auto;
 }
 
+.rslides .capit p{
+	text-align: left;
+	margin-top: 10px;
+}
+
 .rslides .capit h5 {
 float:left;
 max-width:960px;
