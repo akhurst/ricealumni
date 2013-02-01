@@ -7,7 +7,7 @@ namespace RiceAlumni.Core.Controllers
 	{
 		public ActionResult RenderLegacyContent(string path)
 		{
-			if (path == "index.html")
+			if (path == "index.html" || path == "legacycontent/index.html")
 				return Redirect("~/");
 
 			var splitPath = path.Split('/');
