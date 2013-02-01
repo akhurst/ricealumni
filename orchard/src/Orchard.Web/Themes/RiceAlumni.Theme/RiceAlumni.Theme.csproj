@@ -111,6 +111,9 @@
     <Content Include="Content\Images\ava.jpg" />
     <Content Include="Content\Images\backblur.jpg" />
     <Content Include="Content\Images\backpatch.jpg" />
+    <Content Include="Content\Images\banner1_728x90.jpg" />
+    <Content Include="Content\Images\banner2_300x250.jpg" />
+    <Content Include="Content\Images\banner3_728x90.jpg" />
     <Content Include="Content\Images\bg_gradient.jpg" />
     <Content Include="Content\Images\bg_head17.jpg" />
     <Content Include="Content\Images\bg_head2.jpg" />
@@ -264,9 +267,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\User.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Menu-footer-menu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\MenuItem-footer-menu.cshtml" />

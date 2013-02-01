@@ -585,6 +585,12 @@
       <SubType>Designer</SubType>
     </None>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Properties\PublishProfiles\ricealumni-dev - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\ricealumni-dev - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\ricealumni-prod - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\ricealumni-prod - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\ricealumni-staging - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\ricealumni-staging - Web Deploy.pubxml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
@@ -3452,11 +3458,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\PublishProfiles\ricealumni - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\ricealumni - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\ricealumni.improvinghouston.com - Web Deploy.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
