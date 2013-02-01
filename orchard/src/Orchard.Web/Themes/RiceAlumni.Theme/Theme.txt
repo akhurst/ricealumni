@@ -4,4 +4,4 @@ Website: http://www.improvingenterprises.com
 Description: The theme for alumni.rice.adu
 Dependencies: RiceAlumni.Homepage, RiceAlumni.StaffDirectory, UrlAlternates
 Version: 1.0
-Zones: Header, Navigation, Slides, Content, Links, Social, FooterRight, Footer
+Zones: Header, Navigation, Slides, Content, Links, Social, SubFooter, FooterRight, Footer

@@ -104,8 +104,7 @@ menuitem create /MenuPosition:"1" /MenuText:"Alumni Resources" /Url:"~/#section-
 		menuitem create /MenuPosition:"4" /MenuText:"Contact Us" /Url:"#" /MenuName:"Main Menu"
 		menuitem create /MenuPosition:"5" /MenuText:"Log In" /Url:"http://online.alumni.rice.edu" /MenuName:"Main Menu"
 		widget create MenuWidget /Title:"Main Menu" /RenderTitle:false /Zone:"Navigation" /Position:"1" /Layer:"Default" /Identity:"MainMenu" /MenuName:"Main Menu"
-		widget create MenuWidget /Title:"Home Menu" /RenderTitle:false /Zone:"Navigation" /Position:"2" /Layer:"TheHomepage" /Identity:"HomeMenu" /MenuName:"Home Menu"
-		widget create MenuWidget /Title:"Footer Menu" /RenderTitle:false /Zone:"FooterRight" /Position:"1" /Layer:"Default" /Identity:"FooterMenu" /MenuName:"Footer Menu"
+		widget create MenuWidget /Title:"Footer Menu" /RenderTitle:false /Zone:"SubFooter" /Position:"1" /Layer:"Default" /Identity:"FooterMenu" /MenuName:"Footer Menu"
 		widget create HtmlWidget /Title:"Social Block" /RenderTitle:false /Zone:"Social" /Position:"1" /Layer:"TheHomepage" /Identity:"SocialBlock"
 		theme activate "Association of Rice Alumni"
 	</Command>
