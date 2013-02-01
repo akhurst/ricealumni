@@ -12,7 +12,7 @@
 //-->
 
 function _compose(e_code) {
-window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=530,scrollbars=yes,toolbar=no");
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=350,scrollbars=yes,toolbar=no");
 }
 
 function doSearch(){
@@ -40,7 +40,7 @@ function checkKey(evt){
 
 </head>
 
-<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"><!-- ADDING RYAN'S STUFF --> <div id="fb-root"></div> <script>(function (d, s, id) {var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=285205008268336"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); </script> <!-- Header  --> <header class="head"> <div class="row container"> <div class="five columns"> <a href="index.html"> <img src="images/rice_alumni_logo.png" alt="Logo" class="logo" /> </a> </div> <!--End Logo --> <!-- nav  --> <nav class="eleven columns last"> <ul id="menu" class="sf-menu"> <li> <a href="#">Alumni Resources <span class="carrot">&#728;</span></a> <ul> <li> <a href="events/calendar.php">Events Calendar</a> <ul> <li><a href="http://alumni.cgi.rice.edu/events/calendar.php#upmajevents">Upcoming Major Events</a></li> <li><a href="http://alumni.cgi.rice.edu/events/calendar.php#araevents">ARA Events and Activities</a></li> </ul> </li> <li> <a href="volunteer.html">Volunteer</a> <ul> <li><a href="alumni_groups.html#specialinterest">Alumni Special Interest Groups</a></li> <li><a href="futureowls/RAVA1.asp">Admission Office (RAVA)</a></li> <li><a href="vol_athsports.html">Athletics & Sports</a></li> <li><a href="Content.aspx?id=231">Philanthropy</a></li> <li><a href="vol_araboard.html">ARA Board & Committees</a></li> <li><a href="vol_businterests.html">Business Interests</a></li> <li><a href="vol_scienceeng.html">Science & Engineering</a></li> <li><a href="vol_artshum.html">Arts & Humanities</a></li> <li><a href="vol_homecoming.html">Homecoming & Reunion</a></li> <li><a href="vol_suppstud.html">Supporting Students</a></li> <li><a href="vol_othinterests.html">Other Interests</a></li> <li><a href="vol_noliveinhst.html">What if I don't live in Houston?</a></li> </ul> </li> <li> <a href="alumni_groups.html">Alumni Groups</a> <ul> <li><a href="alumni_groups.html#specialinterest">Special Interest Groups</a></li> <li><a href="regional_groups.html">Regional Groups</a></li> <li><a href="alumni_groups.html#schoolbased">School-Based Groups</a></li> <li><a href="grad_deg_alumni.html">Graduate-Degree Alumni</a></li> <li><a href="alumni_groups.html#friends">Friends Groups</a></li> </ul> </li> <li> <a href="youngalum_stds.html">Young Alumni</a> <ul> <li><a href="ban_info.html">Builder's Award</a></li> <li><a href="ya_houston.html">Houston Young Alumni</a></li> <li><a href="youngalum_stds.html#students">Students</a></li> </ul> </li> <li> <a href="career_connection.html">Career Connection</a> <ul> <li><a href="career_connection.html#netwkop">Networking Opportunities</a></li> <li><a href="career_connection.html#recruiting">Recruiting at Rice</a></li> </ul> </li> <li> <a href="learning_trav.html">Learning & Travel</a> <ul> <li><a href="http://alumni.rice.edu/alumnicollege/">Alumni College</a></li> <li><a href="http://online.alumni.rice.edu/directory/library.asp">Rice Alumni Digital Library</a></li> <li><a href="travel.html">Travel Program</a></li> <li><a href="learning_scholar.html">Scholarships & Fellowships</a></li> </ul> </li> </ul> </li> <li> <a href="learning_trav.html">Online Services</a> <ul> <li><a href="http://alumni.cgi.rice.edu/events/calendar.php">Find Events/RSVP</a></li> <li><a href="https://online.alumni.rice.edu/directory/detailsearch.asp">Alumni Directory</a></li> <li><a href="https://online.alumni.rice.edu/directory/profile.asp">Update Address</a></li> <li><a href="https://online.alumni.rice.edu/Online/emailforwarding/eforwarding.asp">Email Forwarding</a></li> <li><a href="https://online.alumni.rice.edu/Career/default.asp">Career Network</a></li> <li><a href="http://alumni.cgi.rice.edu/bizfinder/">Business Finder</a></li> <li><a href="https://online.alumni.rice.edu/directory/remotelibrary.asp?type=8">Online Classnotes</a></li> <li><a href="https://online.alumni.rice.edu/directory/library.asp">Digital Library</a></li> </ul> </li> <li> <a href="#">About the ARA</a></li> <li> <a href="#">Contact Us</a></li> <li> <a href="#">Log In</a></li> </ul> </nav> <!-- End Nav  --> </div> <div class="clearfix"></div> </header> <!-- End Header --> <!-- /ADDING RYAN'S STUFF -->
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 <table width="760" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td>
@@ -172,11 +172,10 @@ function checkKey(evt){
                       </td>
                     </tr>
                     <tr> 
-                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                      <td width="49%" background="images/gray2_bg.gif"> 
                         <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
                           <tr> 
-                            <td><font class="mainSmalldark"><a href="vol_businterests.html">Business 
-                              Interests</a></font></td>
+                            <td><font class="mainSmalldark">Business Interests</font></td>
                           </tr>
                         </table>
                       </td>
@@ -202,10 +201,11 @@ function checkKey(evt){
                       </td>
                     </tr>
                     <tr> 
-                      <td width="49%" background="images/gray2_bg.gif"> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
                         <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
                           <tr> 
-                            <td><font class="mainSmalldark">Homecoming &amp; Reunion</font></td>
+                            <td><font class="mainSmalldark"><a href="vol_homecoming.html">Homecoming 
+                              &amp; Reunion</a></font></td>
                           </tr>
                         </table>
                       </td>
@@ -351,27 +351,31 @@ function checkKey(evt){
                     <tr valign="top"> 
                       <td> 
                         <p> <font class="mainSubtitle"><b>Volunteer Opportunities 
-                          with Homecoming and Reunions</b></font></p>
-                        <p><font class="mainSmall"><a href="http://www.rice.edu/homecoming" target="_blank"><b>Homecoming 
-                          &amp; Reunion</b></a></font></p>
-                        <p><font class="mainSmall">Be a Homecoming event or class 
-                          reunion chair. Each fall there are fifty opportunities 
-                          to be the point person for one of the many events and 
-                          parties at Homecoming. The focus for alumni volunteers 
-                          is public relations: your connections help get the word 
-                          to fellow alumni that Rice Homecoming &amp; Reunion 
-                          is the &quot;place to be.&quot; The logistics are handled 
-                          largely by alumni staff, which helps to keep your time 
-                          commitment manageable. For information contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('0aZI6z38zqV6jmTPhMoCct')">Jennifer 
-                          Harding</a>, 713-348-6094.</font></p>
-                        <p><img src="images/gray2_bg.gif" style="height: 1px" width="100%" height="1"></p>
-                        <p><font class="mainSmall"><b>Reunion Giving Program</b></font></p>
-                        <p><font class="mainSmall">Volunteers in this program 
-                          raise money for the Rice Annual Fund from their classmates 
-                          in honor of their 5th, 10th, 15th, 20th, 25th, 30th, 
-                          35th, or 40th reunions, in addition to the Golden Anniversary 
-                          (50th and beyond) scholarship. <a href="http://www.giving.rice.edu/giving/Volunteer_Opportunties.asp" target="_blank">Click 
-                          here</a> for more information.</font></p>
+                          Related to Business and Professional Interest</b></font></p>
+                        <p><font class="mainSmall"><b>Rice Career Network</b> (formerly the Alumni Contact Service)</font></p>
+                        <p><font class="mainSmall">A searchable database of Rice alumni who have specifically consented 
+                          to be contacted by Rice students and by fellow alumni 
+                          for career networking purposes. RCN participants provide 
+                          informal mentoring to job seekers, and typically field 
+                          questions about their job field, company, graduate degree 
+                          institution, city of residence, and the like. To join the Rice Career Network as a volunteer contact, visit the <a href="https://online.alumni.rice.edu/Career/default.asp">online RCN</a> (registration required) and select &quot;Volunteer&quot; from the menu. </font></p>
+                        <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                        <p><font class="mainSmall"><b>Center for Student Professional 
+                          Development Speakers</b></font></p>
+                        <p><font class="mainSmall">Your knowledge of the working 
+                          world can be invaluable to students. Volunteer to speak 
+                          to groups of students in various workshops and seminars 
+                          put on by the Center for Student Professional Development 
+                          (formerly Career Services). For example, you could help 
+                          lead a seminar on interviewing, or even conduct mock 
+                          interviews; help broaden students' horizons about career 
+                          possibilities by speaking about your job and your typical 
+                          work day; share tips on how to market yourself; map 
+                          out a strategy for students to &quot;get where you are&quot;; 
+                          share ideas about overseas employment - and so on! Help 
+                          students learn how to make a life, not just a living. 
+                          Email the <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('9y4IHlagkhb8iaBnbJpKaE')">CSPD</a> 
+                          or call 713-348-4055.</font></p>
                       </td>
                     </tr>
                   </table>
@@ -507,7 +511,143 @@ function checkKey(evt){
                   </td>
               </tr>
             </table>
-            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="mainCell" valign="top">&nbsp;</td>
+                <td width="100%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td class="mainCell" valign="top"><img src="images/clear.gif" width="20" height="20"></td>
+                <td width="100%">
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><b>Center for Student Professional 
+                    Development Internships &amp; Recruiting</b></font></p>
+                  <p><font class="mainSmall">How many Rice alumni and students 
+                    work at your organization? Could there be more? If you know 
+                    of employment opportunities or internships in your company 
+                    or career field, the Center for Student Professional Development 
+                    (CSPD) wants to hear from you! Perhaps you're in a position 
+                    to hire, or can help Rice set up a closer working relationship 
+                    with your company. Email the <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('9y4IHlagkhb8iaBnbJpKaE')">CSPD</a> 
+                    to help pave the way for the next generation of Rice alumni.</font></p>
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><b><a href="http://www.jonesgsm.rice.edu/jonesgsm/JGSAA_.asp?SnID=277385272">Jones 
+                    Graduate School Alumni Association</a></b></font></p>
+                  <p><font class="mainSmall">The JGSAA provides alumni with opportunities 
+                    to stay involved through service on the Jones School's standing 
+                    committees, advising students on career paths, participating 
+                    in mock interviews to polish their skills, and providing telephone 
+                    follow-up to recruit prospective students.</font></p>
+                  <p><font class="mainSmall">The Jones Leaders is a volunteer 
+                    organization established as an extension of the JGSAA Board 
+                    to further the school&#146;s vision and mission. Key objectives 
+                    of the Jones Leaders include reconnecting a broader group 
+                    of alumni to the Jones Graduate School, providing a vehicle 
+                    to grow the school&#146;s reputation and communicate the school&#146;s 
+                    message, equipping a stable of volunteers for service projects, 
+                    and supplying a potential pool for future board members.</font></p>
+                  <p><font class="mainSmall">If you have questions on becoming 
+                    active in either the JGSAA or the Jones Leaders, contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('SZpZRyqAUN9yMTX84cT8Qw')">Shaheen 
+                    Ladhani '97</a>, associate director of alumni affairs for 
+                    the Jones School, at 713-348-4489.</font></p>
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><a href="http://www.jonesgsm.rice.edu/jonesgsm/About_Jones_Partners.asp" target="_blank"><b>Jones 
+                    Partners</b></a></font></p>
+                  <p><font class="mainSmall">The Jones Partners organization promotes 
+                    activities that help the <a href="http://www.jonesgsm.rice.edu" target="_blank">Jones 
+                    Graduate School of Business</a> attract business leaders and 
+                    students who are capable of making substantial contributions 
+                    as future business leaders. The Partners need people to volunteer 
+                    to be on their board, and to participate in the committees 
+                    needed to set up and implement events. For more information 
+                    contact <a href="javascript:_compose('obh6GSjUzxiZivYkGorlwn')">Delma 
+                    Esparza</a>.</font></p>
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><a href="http://www.rice.edu/leadership" target="_blank"><img src="images/leadership_logo.gif" width="190" height="59" border="0" align="left"><b>Leadership 
+                    Rice</b></a></font></p>
+                  <p><font class="mainSmall">Be a mentor as part of Leadership 
+                    Rice's Summer Mentorship Experience or help<br>
+                    identify great mentorship opportunities. Leadership Rice serves 
+                    students from all years and all majors, and seeks a wide array 
+                    of placements both nationally and internationally. Each student 
+                    chosen to participate in Leadership Rice is placed in a full-time, 
+                    paying, eight-week mentorship. What distinguishes Leadership 
+                    Rice mentorships from other internships is the preparation 
+                    Leadership Rice provides, the ongoing contact Leadership Rice 
+                    maintains with its students during the summer, and the presence 
+                    of a mentor who commits to help the student stretch and grow 
+                    during the summer.</font></p>
+                  <p><font class="mainSmall">In addition, Leadership Rice students, 
+                    from time to time, need mentors in <br>
+                    specific content areas. Those working on <a href="http://www.ruf.rice.edu/%7Eleading/leaderpages/grants.html" target="_blank">Envision 
+                    Grants</a> need community mentors to help them develop strategic 
+                    plans. Students in our <a href="http://www.ruf.rice.edu/%7Eleading/leaderpages/courses.html" target="_blank">leadership 
+                    course</a> who write Strategic Vision Papers also need contact 
+                    with community resources.</font></p>
+                  <p><font class="mainSmall">Our <a href="http://www.rice.edu/leadership" target="_blank">Web 
+                    site</a> provides more detail, including <a href="http://www.ruf.rice.edu/%7Eleading/leaderpages/sme.html" target="_blank">specific 
+                    information about the mentorship experience</a>.</font></p>
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><a href="rbn/index.html"><b>Rice Business 
+                    Networking</b></a></font></p>
+                  <p><font class="mainSmall">Formed to facilitate networking activities 
+                    among Houston-area alumni, the RBN provides opportunities 
+                    for networking through monthly gatherings, offers educational 
+                    programing, and publishes a networking directory of its members. 
+                    All programs and activities are volunteer-driven, and the 
+                    route to involvement is through membership. Contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('yolz8F1vYJFWmFDkOqIxd2')">Karl
+                    Maier</a> for more information.</font></p>
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><a href="http://alumni.rice.edu/rea/"><img src="images/rea_logo.gif" width="110" height="75" border="0" align="left"><b>Rice 
+                    Engineering Alumni (REA)</b></a></font></p>
+                  <p><font class="mainSmall">The Rice Engineering Alumni (REA) 
+                    are dedicated to providing support to the <a href="http://engr.rice.edu" target="_blank">George 
+                    R. Brown School of Engineering</a> and providing networking 
+                    opportunities for Rice engineering alumni. Through student 
+                    scholarships, recognition of outstanding engineering alumni 
+                    and a variety of other programs, the REA also promotes interaction 
+                    between engineering alumni and the Brown School faculty and 
+                    students. Formed in 1938, the REA is Rice's oldest alumni 
+                    organization.</font></p>
+                  <p><font class="mainSmall">The REA board is a group of 24&ndash;25 engineering alumni from various class<br>
+                    years and disciplines. Members serve for four years. They 
+                    meet once a<br>
+                    month and members serve on at least one of the following committees:<br>
+                    student awards and chapters, publicity, alumni involvement 
+                    and membership, the Outstanding Engineering Alumni awards, 
+                    social, and board member recruitment. The REA board welcomes 
+                    inquiries from engineering alumni interested in serving on 
+                    the board and taking an active role in furthering its goals. 
+                    Please visit the <a href="http://alumni.rice.edu/rea/">REA website</a> for more information. </font></p>
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><a href="http://scs.rice.edu" target="_blank"><img src="images/scs_logo.gif" width="200" height="71" border="0" align="left"><b>School 
+                    of Continuing Studies</b></a></font></p>
+                  <p><font class="mainSmall">Join a Class Act! Help welcome Continuing 
+                    Studies students to the Rice campus and enjoy interesting 
+                    noncredit courses at the same time &mdash; including various topics 
+                    <br>
+                    relating to business and professional interests. Course fees 
+                    are waived for Continuing Studies alumni volunteers. Volunteers 
+                    agree to attend every class session, typically 1&ndash;2 hours, 
+                    in the evening or on Saturday for six to ten weeks. Most fall 
+                    classes are scheduled between mid-September and mid-November; 
+                    most spring classes are held between mid-February and late 
+                    April. Duties include greeting students, checking class roll, 
+                    distributing materials, and providing feedback to Continuing 
+                    Studies. See the <a href="http://www.scs.rice.edu" target="_blank">Continuing 
+                    Studies Web site</a> for a listing of our current courses. 
+                    To volunteer, email or call <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('pB4IsybINDZp0uSTAI53LP')">Czolgus 
+                    Evans</a>, 713-348-6109.</font></p>
+                  <!--<p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><b><a href="mentoring.html">Student/Alumni Mentoring</a></b></font></p>
+                  <p><font class="mainSmall">This program offers involvement in 
+                    the Rice community at the most personal level by pairing alumni 
+                    mentors with students having similar academic, career, or 
+                    general interests. Contact: <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('5alvr6sNAPNA9rXYMwoHPx')">Lauren 
+                    Linn</a>, 713-348-6093.</font></p>-->
+                </td>
+              </tr>
+            </table>
           </td>
         </tr>
       </table>
@@ -548,5 +688,5 @@ document.write(cy)
 _uacct = "UA-831972-1";
 urchinTracker();
 </script>
-      <!-- ADDING RYAN'S STUFF --> <div id="section-subfooter"> <div class="container"> <div class="zone zone-sub-footer"> <article class="widget-sub-footer widget-menu-widget widget"> <nav> <ul class="menu menu-footer-menu"> <li class="dropdown first">			<div class="four columns"> <h4>Alumni Resources</h4> <ul> <li><a href="http://alumni.cgi.rice.edu/events/calendar.php">Events Calendar</a> </li> <li><a href="/alumni_groups.html">Alumni Groups</a> </li> <li><a href="/youngalum_stds.html">Young Alumni</a> </li> </ul> </div> </li> <li class="dropdown">			<div class="four columns"> <h4>Online Services</h4> <ul> <li><a href="https://online.alumni.rice.edu/directory/detailsearch.asp">Alumni Directory</a> </li> <li><a href="/career_connection.html">Career Network</a> </li> <li><a href="http://alumni.cgi.rice.edu/bizfinder/">Business Finder</a> </li> </ul> </div> </li> <li class="dropdown">			<div class="four columns"> <h4>Opportunities</h4> <ul> <li><a href="/career_connection.html">Career Connection</a> </li> <li><a href="/learning_trav.html">Learning &amp;amp; Travel</a> </li> <li><a href="/volunteer.html">Volunteer</a> </li> </ul> </div> </li> <li class="dropdown last">			<div class="four columns"> <h4>Alumni Association</h4> <ul> <li><a href="http://online.alumni.rice.edu">Login</a> </li> <li><a href="/about_alumassoc.html">About the ARA</a> </li> <li><a href="/#">Contact Us</a> </li> </ul> </div> </li> </ul> </nav> </article></div> <div class="clear"></div> </div> </div> <!-- // .container --> <!-- // #section-footer --> <div id="section-footer"> <div class="container"> <div class="eight columns"> <p id="copytext">Copyright &copy; <a href="http://alumni.rice.edu/" title="">Rice University Alumni</a> 2013</p> </div> <!-- // .eight --> <div class="clear"></div> </div> <!-- // .container --> </div> <!-- // #section-footer --> <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> <script src="js/selectnav.min.js"></script> <script src="js/bootstrap-scrollspy.js"></script> <script src="js/jquery.custom.js"></script> <script src="js/tabcontent.js" type="text/javascript"></script> <script src="js/rotate.js"></script> <script src="js/nav/tinynav.js" type="text/javascript"></script> <script src="js/nav/superfish.js" type="text/javascript"></script> <script src="ryanmagic.js"></script> <!-- /ADDING RYAN'S STUFF -->
+</body>
 </html>

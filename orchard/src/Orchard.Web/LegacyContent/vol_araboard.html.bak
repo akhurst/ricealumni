@@ -12,7 +12,7 @@
 //-->
 
 function _compose(e_code) {
-window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=530,scrollbars=yes,toolbar=no");
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=350,scrollbars=yes,toolbar=no");
 }
 
 function doSearch(){
@@ -40,7 +40,7 @@ function checkKey(evt){
 
 </head>
 
-<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"><!-- ADDING RYAN'S STUFF --> <div id="fb-root"></div> <script>(function (d, s, id) {var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=285205008268336"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); </script> <!-- Header  --> <header class="head"> <div class="row container"> <div class="five columns"> <a href="index.html"> <img src="images/rice_alumni_logo.png" alt="Logo" class="logo" /> </a> </div> <!--End Logo --> <!-- nav  --> <nav class="eleven columns last"> <ul id="menu" class="sf-menu"> <li> <a href="#">Alumni Resources <span class="carrot">&#728;</span></a> <ul> <li> <a href="events/calendar.php">Events Calendar</a> <ul> <li><a href="http://alumni.cgi.rice.edu/events/calendar.php#upmajevents">Upcoming Major Events</a></li> <li><a href="http://alumni.cgi.rice.edu/events/calendar.php#araevents">ARA Events and Activities</a></li> </ul> </li> <li> <a href="volunteer.html">Volunteer</a> <ul> <li><a href="alumni_groups.html#specialinterest">Alumni Special Interest Groups</a></li> <li><a href="futureowls/RAVA1.asp">Admission Office (RAVA)</a></li> <li><a href="vol_athsports.html">Athletics & Sports</a></li> <li><a href="Content.aspx?id=231">Philanthropy</a></li> <li><a href="vol_araboard.html">ARA Board & Committees</a></li> <li><a href="vol_businterests.html">Business Interests</a></li> <li><a href="vol_scienceeng.html">Science & Engineering</a></li> <li><a href="vol_artshum.html">Arts & Humanities</a></li> <li><a href="vol_homecoming.html">Homecoming & Reunion</a></li> <li><a href="vol_suppstud.html">Supporting Students</a></li> <li><a href="vol_othinterests.html">Other Interests</a></li> <li><a href="vol_noliveinhst.html">What if I don't live in Houston?</a></li> </ul> </li> <li> <a href="alumni_groups.html">Alumni Groups</a> <ul> <li><a href="alumni_groups.html#specialinterest">Special Interest Groups</a></li> <li><a href="regional_groups.html">Regional Groups</a></li> <li><a href="alumni_groups.html#schoolbased">School-Based Groups</a></li> <li><a href="grad_deg_alumni.html">Graduate-Degree Alumni</a></li> <li><a href="alumni_groups.html#friends">Friends Groups</a></li> </ul> </li> <li> <a href="youngalum_stds.html">Young Alumni</a> <ul> <li><a href="ban_info.html">Builder's Award</a></li> <li><a href="ya_houston.html">Houston Young Alumni</a></li> <li><a href="youngalum_stds.html#students">Students</a></li> </ul> </li> <li> <a href="career_connection.html">Career Connection</a> <ul> <li><a href="career_connection.html#netwkop">Networking Opportunities</a></li> <li><a href="career_connection.html#recruiting">Recruiting at Rice</a></li> </ul> </li> <li> <a href="learning_trav.html">Learning & Travel</a> <ul> <li><a href="http://alumni.rice.edu/alumnicollege/">Alumni College</a></li> <li><a href="http://online.alumni.rice.edu/directory/library.asp">Rice Alumni Digital Library</a></li> <li><a href="travel.html">Travel Program</a></li> <li><a href="learning_scholar.html">Scholarships & Fellowships</a></li> </ul> </li> </ul> </li> <li> <a href="learning_trav.html">Online Services</a> <ul> <li><a href="http://alumni.cgi.rice.edu/events/calendar.php">Find Events/RSVP</a></li> <li><a href="https://online.alumni.rice.edu/directory/detailsearch.asp">Alumni Directory</a></li> <li><a href="https://online.alumni.rice.edu/directory/profile.asp">Update Address</a></li> <li><a href="https://online.alumni.rice.edu/Online/emailforwarding/eforwarding.asp">Email Forwarding</a></li> <li><a href="https://online.alumni.rice.edu/Career/default.asp">Career Network</a></li> <li><a href="http://alumni.cgi.rice.edu/bizfinder/">Business Finder</a></li> <li><a href="https://online.alumni.rice.edu/directory/remotelibrary.asp?type=8">Online Classnotes</a></li> <li><a href="https://online.alumni.rice.edu/directory/library.asp">Digital Library</a></li> </ul> </li> <li> <a href="#">About the ARA</a></li> <li> <a href="#">Contact Us</a></li> <li> <a href="#">Log In</a></li> </ul> </nav> <!-- End Nav  --> </div> <div class="clearfix"></div> </header> <!-- End Header --> <!-- /ADDING RYAN'S STUFF -->
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 <table width="760" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td>
@@ -162,11 +162,10 @@ function checkKey(evt){
                       </td>
                     </tr>
                     <tr> 
-                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                      <td width="49%" background="images/gray2_bg.gif"> 
                         <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
                           <tr> 
-                            <td><font class="mainSmalldark"><a href="vol_araboard.html">ARA 
-                              Board &amp; Committees</a></font></td>
+                            <td><font class="mainSmalldark">ARA Board &amp; Committees</font></td>
                           </tr>
                         </table>
                       </td>
@@ -202,10 +201,11 @@ function checkKey(evt){
                       </td>
                     </tr>
                     <tr> 
-                      <td width="49%" background="images/gray2_bg.gif"> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
                         <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
                           <tr> 
-                            <td><font class="mainSmalldark">Homecoming &amp; Reunion</font></td>
+                            <td><font class="mainSmalldark"><a href="vol_homecoming.html">Homecoming 
+                              &amp; Reunion</a></font></td>
                           </tr>
                         </table>
                       </td>
@@ -334,6 +334,7 @@ function checkKey(evt){
                 </td>
               </tr>
             </table>
+            
           </td>
           <td align="right"><img src="images/clear.gif" width="100" height="20"><br>
             <img src="images/subpic_about.jpg" width="526" height="56" ="Young people smiling"></td>
@@ -351,27 +352,36 @@ function checkKey(evt){
                     <tr valign="top"> 
                       <td> 
                         <p> <font class="mainSubtitle"><b>Volunteer Opportunities 
-                          with Homecoming and Reunions</b></font></p>
-                        <p><font class="mainSmall"><a href="http://www.rice.edu/homecoming" target="_blank"><b>Homecoming 
-                          &amp; Reunion</b></a></font></p>
-                        <p><font class="mainSmall">Be a Homecoming event or class 
-                          reunion chair. Each fall there are fifty opportunities 
-                          to be the point person for one of the many events and 
-                          parties at Homecoming. The focus for alumni volunteers 
-                          is public relations: your connections help get the word 
-                          to fellow alumni that Rice Homecoming &amp; Reunion 
-                          is the &quot;place to be.&quot; The logistics are handled 
-                          largely by alumni staff, which helps to keep your time 
-                          commitment manageable. For information contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('0aZI6z38zqV6jmTPhMoCct')">Jennifer 
-                          Harding</a>, 713-348-6094.</font></p>
-                        <p><img src="images/gray2_bg.gif" style="height: 1px" width="100%" height="1"></p>
-                        <p><font class="mainSmall"><b>Reunion Giving Program</b></font></p>
-                        <p><font class="mainSmall">Volunteers in this program 
-                          raise money for the Rice Annual Fund from their classmates 
-                          in honor of their 5th, 10th, 15th, 20th, 25th, 30th, 
-                          35th, or 40th reunions, in addition to the Golden Anniversary 
-                          (50th and beyond) scholarship. <a href="http://www.giving.rice.edu/giving/Volunteer_Opportunties.asp" target="_blank">Click 
-                          here</a> for more information.</font></p>
+                          on the ARA Board and Committees</b></font></p>
+                        <p><font class="mainSmall"><b>Alumni College Committee</b></font></p>
+                        <p><font class="mainSmall">Alumni College is an annual 
+                          weekend on campus during which alumni and friends take 
+                          noncredit classes tailored specifically to lay interests. 
+                          Outside of classes, participants enjoy special tours, 
+                          campus athletics and cultural events, and other activities. 
+                          Alumni College committee members help plan the classes 
+                          and activities of Alumni College Weekend and help ensure 
+                          that the event runs smoothly. Past participation in 
+                          Alumni College is strongly recommended. For more information 
+                          contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('5alvr6sNAPNA9rXYMwoHPx')">Lauren 
+                          Linn</a>, 713-348-6093.</font></p>
+                        <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                        <p><font class="mainSmall"><a href="about_alumassoc.html#araboard" target="_blank"><b>ARA 
+                          Board</b></a></font></p>
+                        <p><font class="mainSmall">The Association of Rice Alumni 
+                          is governed by a 28-member alumni board which oversees 
+                          its operations and programs. Members of the ARA board 
+                          represent the alumni body to the university and represent 
+                          the ARA to its constituents - Rice alumni. All Rice 
+                          alumni are eligible to serve on the alumni board. Board 
+                          members serve a three-year term, and must be committed 
+                          to expending the time and energy necessary to make the 
+                          ARA a success. Duties include such things as attending 
+                          thrice-yearly board meetings, serving on ARA committees, 
+                          and overall support for ARA programs and activities. 
+                          Applications are made in writing to the nominations 
+                          committee. For more information contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('awKUBIA2IveOOWCxizBtpp')">Rose 
+                          Sundin</a>, 713-348-4678.</font></p>
                       </td>
                     </tr>
                   </table>
@@ -507,7 +517,84 @@ function checkKey(evt){
                   </td>
               </tr>
             </table>
-            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="mainCell" valign="top">&nbsp;</td>
+                <td width="100%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td class="mainCell" valign="top"><img src="images/clear.gif" width="20" height="20"></td>
+                <td width="100%"> 
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><a href="http://www.rice.edu/homecoming" target="_blank"><b>Homecoming 
+                    &amp; Reunion</b></a></font></p>
+                  <p><font class="mainSmall">Be a Homecoming event or class reunion 
+                    chair. Each fall there are fifty opportunities to be the point 
+                    person for one of the many events and parties at Homecoming. 
+                    The focus for alumni volunteers is public relations: your 
+                    connections help get the word to fellow alumni that Rice Homecoming 
+                    &amp; Reunion is the &quot;place to be.&quot; The logistics 
+                    are handled largely by alumni staff, which helps to keep your 
+                    time commitment manageable. For information contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('0aZI6z38zqV6jmTPhMoCct')">Jennifer 
+                    Harding</a>, 713-348-6094.</font></p>
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><a href="regional_groups.html"><b>Regional 
+                    Alumni Groups</b></a></font></p>
+                  <p><font class="mainSmall">Help alumni and friends outside of 
+                    Houston to stay connected to Rice through regional alumni 
+                    activities! The alumni office facilitates alumni gatherings 
+                    in major cities throughout the U.S. (and occasionally beyond), 
+                    and is always in need of regional volunteers and event ideas. 
+                    Events typically include student send-off parties, faculty 
+                    lectures, happy hours, networking mixers, gatherings related 
+                    to Rice athletics events, picnics, museum outings or other 
+                    cultural activities - anything that is likely to appeal to 
+                    and facilitate interaction among our far-flung alumni and 
+                    Rice parents. Volunteer opportunities include coordinating 
+                    a single event (with alumni staff assistance), hosting an 
+                    event in your home, offering access to a private club or corporate 
+                    venue, serving as a city contact for Rice alums who may be 
+                    new to your area, or (in cities with very large Rice populations) 
+                    heading up a special-interest group (for example, happy hour, 
+                    book club, or investment club). Visit the <a href="regional_groups.html">Regional 
+                    Alumni Groups Web site</a> for more information and a list 
+                    of contacts in various cities.</font></p>
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p></p>
+                  <p><font class="mainSmall"><b>Rice Alumni Event Greeters</b></font></p>
+                  <p><font class="mainSmall">Be on the front line and greet alumni 
+                    and their guests as they arrive at Association of Rice Alumni 
+                    events. On campus opportunities include <a href="http://www.rice.edu/homecoming" target="_blank">Rice 
+                    Homecoming &amp; Reunion</a>, the Alumni Crawfish Boil (held 
+                    before a home baseball game each spring), the Alumni Cookout 
+                    before the Rice vs. Houston football game, and the Presidential 
+                    Address and Reception (typically held in January or February). 
+                    In addition, there is <a href="http://www.rice.edu/famweek" target="_blank">Rice 
+                    Families Weekend</a> for current Rice students and their families. 
+                    Parents of current students will appreciate your warm welcome 
+                    to Rice, and fellow alumni will truly appreciate a friendly 
+                    smile and greeting (not to mention how much the alumni office 
+                    staff will appreciate your assistance!). Duties include general 
+                    meet-and-greet, assisting guests with name tags, making change, 
+                    fielding questions, and generally facilitating guest arrival 
+                    at events. Contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('0aZI6z38zqV6jmTPhMoCct')">Jennifer 
+                    Harding</a> for more information or to get involved.</font></p>
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><a href="youngalum_stds.html"><b>Young 
+                    Alumni Committee</b></a></font></p>
+                  <p><font class="mainSmall">A Houston-area group that works to 
+                    introduce recent graduates (last 10 years) to the alumni association 
+                    and encourage close ties to the university. The committee 
+                    plans events throughout the year, including Homecoming activities, 
+                    football tents, and Beer Bike activities. For more information 
+                    contact co-chairs <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('05evXABeqQzAHWLLmtF79r')">Kate 
+                    Gunn '05 and Timmie Wang '05</a>, or <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('PNzVyBtWhWV0OhlQeiP9FK')">Nicole 
+                    Peralta</a> in the alumni office at 713-348-4534.</font></p>
+                        <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                </td>
+              </tr>
+            </table>
           </td>
         </tr>
       </table>
@@ -548,5 +635,5 @@ document.write(cy)
 _uacct = "UA-831972-1";
 urchinTracker();
 </script>
-      <!-- ADDING RYAN'S STUFF --> <div id="section-subfooter"> <div class="container"> <div class="zone zone-sub-footer"> <article class="widget-sub-footer widget-menu-widget widget"> <nav> <ul class="menu menu-footer-menu"> <li class="dropdown first">			<div class="four columns"> <h4>Alumni Resources</h4> <ul> <li><a href="http://alumni.cgi.rice.edu/events/calendar.php">Events Calendar</a> </li> <li><a href="/alumni_groups.html">Alumni Groups</a> </li> <li><a href="/youngalum_stds.html">Young Alumni</a> </li> </ul> </div> </li> <li class="dropdown">			<div class="four columns"> <h4>Online Services</h4> <ul> <li><a href="https://online.alumni.rice.edu/directory/detailsearch.asp">Alumni Directory</a> </li> <li><a href="/career_connection.html">Career Network</a> </li> <li><a href="http://alumni.cgi.rice.edu/bizfinder/">Business Finder</a> </li> </ul> </div> </li> <li class="dropdown">			<div class="four columns"> <h4>Opportunities</h4> <ul> <li><a href="/career_connection.html">Career Connection</a> </li> <li><a href="/learning_trav.html">Learning &amp;amp; Travel</a> </li> <li><a href="/volunteer.html">Volunteer</a> </li> </ul> </div> </li> <li class="dropdown last">			<div class="four columns"> <h4>Alumni Association</h4> <ul> <li><a href="http://online.alumni.rice.edu">Login</a> </li> <li><a href="/about_alumassoc.html">About the ARA</a> </li> <li><a href="/#">Contact Us</a> </li> </ul> </div> </li> </ul> </nav> </article></div> <div class="clear"></div> </div> </div> <!-- // .container --> <!-- // #section-footer --> <div id="section-footer"> <div class="container"> <div class="eight columns"> <p id="copytext">Copyright &copy; <a href="http://alumni.rice.edu/" title="">Rice University Alumni</a> 2013</p> </div> <!-- // .eight --> <div class="clear"></div> </div> <!-- // .container --> </div> <!-- // #section-footer --> <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> <script src="js/selectnav.min.js"></script> <script src="js/bootstrap-scrollspy.js"></script> <script src="js/jquery.custom.js"></script> <script src="js/tabcontent.js" type="text/javascript"></script> <script src="js/rotate.js"></script> <script src="js/nav/tinynav.js" type="text/javascript"></script> <script src="js/nav/superfish.js" type="text/javascript"></script> <script src="ryanmagic.js"></script> <!-- /ADDING RYAN'S STUFF -->
+</body>
 </html>

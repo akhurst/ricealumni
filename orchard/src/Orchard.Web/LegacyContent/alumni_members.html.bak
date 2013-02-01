@@ -38,7 +38,7 @@ function checkKey(evt){
 
 </script>
 </head>
-<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"><!-- ADDING RYAN'S STUFF --> <div id="fb-root"></div> <script>(function (d, s, id) {var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=285205008268336"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); </script> <!-- Header  --> <header class="head"> <div class="row container"> <div class="five columns"> <a href="index.html"> <img src="images/rice_alumni_logo.png" alt="Logo" class="logo" /> </a> </div> <!--End Logo --> <!-- nav  --> <nav class="eleven columns last"> <ul id="menu" class="sf-menu"> <li> <a href="#">Alumni Resources <span class="carrot">&#728;</span></a> <ul> <li> <a href="events/calendar.php">Events Calendar</a> <ul> <li><a href="http://alumni.cgi.rice.edu/events/calendar.php#upmajevents">Upcoming Major Events</a></li> <li><a href="http://alumni.cgi.rice.edu/events/calendar.php#araevents">ARA Events and Activities</a></li> </ul> </li> <li> <a href="volunteer.html">Volunteer</a> <ul> <li><a href="alumni_groups.html#specialinterest">Alumni Special Interest Groups</a></li> <li><a href="http://futureowls.rice.edu/futureowls/rava.asp">Admission Office (RAVA)</a></li> <li><a href="vol_athsports.html">Athletics & Sports</a></li> <li><a href="Content.aspx?id=231">Philanthropy</a></li> <li><a href="vol_araboard.html">ARA Board & Committees</a></li> <li><a href="vol_businterests.html">Business Interests</a></li> <li><a href="vol_scienceeng.html">Science & Engineering</a></li> <li><a href="vol_artshum.html">Arts & Humanities</a></li> <li><a href="vol_homecoming.html">Homecoming & Reunion</a></li> <li><a href="vol_suppstud.html">Supporting Students</a></li> <li><a href="vol_othinterests.html">Other Interests</a></li> <li><a href="vol_noliveinhst.html">What if I don't live in Houston?</a></li> </ul> </li> <li> <a href="alumni_groups.html">Alumni Groups</a> <ul> <li><a href="alumni_groups.html#specialinterest">Special Interest Groups</a></li> <li><a href="regional_groups.html">Regional Groups</a></li> <li><a href="alumni_groups.html#schoolbased">School-Based Groups</a></li> <li><a href="grad_deg_alumni.html">Graduate-Degree Alumni</a></li> <li><a href="alumni_groups.html#friends">Friends Groups</a></li> </ul> </li> <li> <a href="youngalum_stds.html">Young Alumni</a> <ul> <li><a href="ban_info.html">Builder's Award</a></li> <li><a href="ya_houston.html">Houston Young Alumni</a></li> <li><a href="youngalum_stds.html#students">Students</a></li> </ul> </li> <li> <a href="career_connection.html">Career Connection</a> <ul> <li><a href="career_connection.html#netwkop">Networking Opportunities</a></li> <li><a href="career_connection.html#recruiting">Recruiting at Rice</a></li> </ul> </li> <li> <a href="learning_trav.html">Learning & Travel</a> <ul> <li><a href="http://alumni.rice.edu/alumnicollege/">Alumni College</a></li> <li><a href="http://online.alumni.rice.edu/directory/library.asp">Rice Alumni Digital Library</a></li> <li><a href="travel.html">Travel Program</a></li> <li><a href="learning_scholar.html">Scholarships & Fellowships</a></li> </ul> </li> </ul> </li> <li> <a href="learning_trav.html">Online Services</a> <ul> <li><a href="http://alumni.cgi.rice.edu/events/calendar.php">Find Events/RSVP</a></li> <li><a href="https://online.alumni.rice.edu/directory/detailsearch.asp">Alumni Directory</a></li> <li><a href="https://online.alumni.rice.edu/directory/profile.asp">Update Address</a></li> <li><a href="https://online.alumni.rice.edu/Online/emailforwarding/eforwarding.asp">Email Forwarding</a></li> <li><a href="https://online.alumni.rice.edu/Career/default.asp">Career Network</a></li> <li><a href="http://alumni.cgi.rice.edu/bizfinder/">Business Finder</a></li> <li><a href="https://online.alumni.rice.edu/directory/remotelibrary.asp?type=8">Online Classnotes</a></li> <li><a href="https://online.alumni.rice.edu/directory/library.asp">Digital Library</a></li> </ul> </li> <li> <a href="#">About the ARA</a></li> <li> <a href="#">Contact Us</a></li> <li> <a href="#">Log In</a></li> </ul> </nav> <!-- End Nav  --> </div> <div class="clearfix"></div> </header> <!-- End Header --> <!-- /ADDING RYAN'S STUFF -->
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 <table width="760" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -158,15 +158,12 @@ function checkKey(evt){
                             <td><font class="mainSmalldark"><a href="about_alumassoc.html#strategic_plan">Strategic Plan</a></font></td>
                           </tr>
                         </table></td>
-                    </tr>                    <!--<tr> 
-                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
-                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
-                          <tr> 
-                            <td><font class="mainSmalldark"><a href="about_alumassoc.html#comm_goals">Committee 
-                              Goals 2003-2004</a></font></td>
+                    </tr>                    <!--<tr>
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td><font class="mainSmalldark"><a href="about_alumassoc.html#comm_goals">Committee Goals 2003-2004</a></font></td>
                           </tr>
-                        </table>
-                      </td>
+                        </table></td>
                     </tr>-->
 <tr>
                       <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"><table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
@@ -230,30 +227,46 @@ function checkKey(evt){
                     <tr valign="top">
                       <td><p><font class="mainSubtitle"><b>2012&ndash;2013 ARA 
                           Board Members</b></font></p>
-                        <font class="mainSmall">
                         <dl>
-                          <dt><b>Alumni Trustees<br>
-                          </b></dt>
-                          <dd> 
-                            <p>Subha  V. Barry &rsquo;85 (Princeton, NJ)<br>
-                              Charles  Szalkowski &rsquo;70, &rsquo;71 (Houston, TX)<br>
-                              John  V. Jaggers &rsquo;73 (Dallas, TX)<br>
-                              Robert  M. Taylor, Jr. &rsquo;74 (Houston, TX)</p>
+                          <dt><font class="mainSmall"> <b>Members<br>
+                            &nbsp;</b></font></dt>
+                          <dd>
+                            <p class="mainSmall"> Doyle L. Arnold &rsquo;70 (Salt Lake City, UT)<br>
+                              Suzanne M. Boué &rsquo;91 (Houston, TX)<br>
+Donald N. Bowers II &rsquo;91 (Manvel, TX)<br>
+                              Russell F. Coleman &rsquo;82 (Dallas, TX)<br>
+                              Alejandro Gonzalez &rsquo;97 (Houston, TX)<br>
+                              Matthew Haynie &rsquo;03 (Washington, D.C.)<br>
+Brandy Hays &rsquo;98, &rsquo;05 (Camp Springs, MD)<br>
+                              Frank Jones &rsquo;63 (Houston, TX)<br>
+Tommy O. Huie &rsquo;87 (Glenview, IL)<br>
+Ronald R. Ladd &rsquo;72, &rsquo;73 (Seminole, FL)<br>
+L. Charles Landgraf &rsquo;75 (McLean, VA)<br>
+Harriet C. Latimer &rsquo;56 (Houston, TX)<br>
+Daniel J. McCormack &rsquo;82 (Springfield, IL)<br>
+                              Sue K. Oldham &rsquo;90 (Houston, TX)<br>
+                            Hector Olea &rsquo;88, &rsquo;89 (Mexico D.F.)<br>
+                            James K. Peden, III &rsquo;68 (Dallas, TX)<br>
+Nancy T. Schmitt &rsquo;80 (New York, NY)<br>
+                            Monique V. Shankle &rsquo;86 (Houston, TX)<br>
+                            Julie Yau-Yee Tam &rsquo;03 (Dallas, TX)<br>
+                            Shannon T. Vale &rsquo;77 (Austin, TX) <br>
+                            Norma Rangel Welscher &rsquo;77 (Houston, TX)<br>
+                            </p>
+<p align="center">&nbsp;</p>
+<br>
                           </dd>
                         </dl>
-                        </font>
                         <table width="100%" border="0" cellspacing="5" cellpadding="5">
                           <tr align="center">
                             <td class="cellbgGray"><font class="mainSmall"><a href="alumni_officers.html">Board Officers</a></font></td>
-                            <td class="cellbgGray"><font class="mainSmall"><a href="alumni_members.html">Board Members</a></font></td>
+                            <td class="cellbgGray"><font class="mainSmall">Board Members</font></td>
                           </tr>
                           <tr align="center">
-                            <td class="cellbgGray"><font class="mainSmall">Alumni Trustees</font></td>
+                            <td class="cellbgGray"><font class="mainSmall"><a href="alumni_trustees.html">Alumni Trustees</a></font></td>
                             <td class="cellbgGray"><font class="mainSmall"><a href="alumni_commchairs.html">Committee Chairs</a></font></td>
                           </tr>
-                        </table>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p></td>
+                      </table></td>
                     </tr>
                   </table></td>
                 <td width="1" background="images/dots_bg.gif"><img src="images/clear.gif" width="1" height="50"></td>
@@ -417,5 +430,5 @@ document.write(cy)
 _uacct = "UA-831972-1";
 urchinTracker();
 </script>
-      <!-- ADDING RYAN'S STUFF --> <div id="section-subfooter"> <div class="container"> <div class="zone zone-sub-footer"> <article class="widget-sub-footer widget-menu-widget widget"> <nav> <ul class="menu menu-footer-menu"> <li class="dropdown first">			<div class="four columns"> <h4>Alumni Resources</h4> <ul> <li><a href="http://alumni.cgi.rice.edu/events/calendar.php">Events Calendar</a> </li> <li><a href="/alumni_groups.html">Alumni Groups</a> </li> <li><a href="/youngalum_stds.html">Young Alumni</a> </li> </ul> </div> </li> <li class="dropdown">			<div class="four columns"> <h4>Online Services</h4> <ul> <li><a href="https://online.alumni.rice.edu/directory/detailsearch.asp">Alumni Directory</a> </li> <li><a href="/career_connection.html">Career Network</a> </li> <li><a href="http://alumni.cgi.rice.edu/bizfinder/">Business Finder</a> </li> </ul> </div> </li> <li class="dropdown">			<div class="four columns"> <h4>Opportunities</h4> <ul> <li><a href="/career_connection.html">Career Connection</a> </li> <li><a href="/learning_trav.html">Learning &amp;amp; Travel</a> </li> <li><a href="/volunteer.html">Volunteer</a> </li> </ul> </div> </li> <li class="dropdown last">			<div class="four columns"> <h4>Alumni Association</h4> <ul> <li><a href="http://online.alumni.rice.edu">Login</a> </li> <li><a href="/about_alumassoc.html">About the ARA</a> </li> <li><a href="/#">Contact Us</a> </li> </ul> </div> </li> </ul> </nav> </article></div> <div class="clear"></div> </div> </div> <!-- // .container --> <!-- // #section-footer --> <div id="section-footer"> <div class="container"> <div class="eight columns"> <p id="copytext">Copyright &copy; <a href="http://alumni.rice.edu/" title="">Rice University Alumni</a> 2013</p> </div> <!-- // .eight --> <div class="clear"></div> </div> <!-- // .container --> </div> <!-- // #section-footer --> <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> <script src="js/selectnav.min.js"></script> <script src="js/bootstrap-scrollspy.js"></script> <script src="js/jquery.custom.js"></script> <script src="js/tabcontent.js" type="text/javascript"></script> <script src="js/rotate.js"></script> <script src="js/nav/tinynav.js" type="text/javascript"></script> <script src="js/nav/superfish.js" type="text/javascript"></script> <script src="ryanmagic.js"></script> <!-- /ADDING RYAN'S STUFF -->
+</body>
 </html>

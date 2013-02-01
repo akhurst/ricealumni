@@ -12,25 +12,33 @@
 //-->
 
 function _compose(e_code) {
-window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=530,scrollbars=yes,toolbar=no");
+window.open("http://alumni.cgi.rice.edu/email/send_message.php?e_code="+e_code,"message_"+e_code,"width=550,height=350,scrollbars=yes,toolbar=no");
 }
 
 function doSearch(){
 
-  if (srch.alum.checked == true){
-	srch.action="http://www.rice.edu/cgi-bin/subgoogle";
-  } else if (srch.rice.checked == true){
-	srch.action="http://www.rice.edu/Internet/search/query.php";
+  if (f.alum.checked == true){
+	f.action="http://www.rice.edu/cgi-bin/subgoogle";
+  } else if (f.rice.checked == true){
+	f.action="http://www.rice.edu/Internet/search/query.php";
   }
 
-  srch.submit();
+  f.submit();
 
+}
+
+function getEvents(qry)
+{
+	f.key_word.value=qry;
+	f.action = "http://alumni.cgi.rice.edu/events/proc_adv_search.php";
+	f.submit();
+	return null;
 }
 
 function checkKey(evt){
 
-	srch.search.value=srch.q.value;
-	if (evt.keyCode == 13 && srch.search.value != ''){
+	f.search.value=f.q.value;
+	if (evt.keyCode == 13 && f.search.value != ''){
 		doSearch();
 	}
 	
@@ -40,7 +48,8 @@ function checkKey(evt){
 
 </head>
 
-<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"><!-- ADDING RYAN'S STUFF --> <div id="fb-root"></div> <script>(function (d, s, id) {var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=285205008268336"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); </script> <!-- Header  --> <header class="head"> <div class="row container"> <div class="five columns"> <a href="index.html"> <img src="images/rice_alumni_logo.png" alt="Logo" class="logo" /> </a> </div> <!--End Logo --> <!-- nav  --> <nav class="eleven columns last"> <ul id="menu" class="sf-menu"> <li> <a href="#">Alumni Resources <span class="carrot">&#728;</span></a> <ul> <li> <a href="events/calendar.php">Events Calendar</a> <ul> <li><a href="http://alumni.cgi.rice.edu/events/calendar.php#upmajevents">Upcoming Major Events</a></li> <li><a href="http://alumni.cgi.rice.edu/events/calendar.php#araevents">ARA Events and Activities</a></li> </ul> </li> <li> <a href="volunteer.html">Volunteer</a> <ul> <li><a href="alumni_groups.html#specialinterest">Alumni Special Interest Groups</a></li> <li><a href="futureowls/RAVA1.asp">Admission Office (RAVA)</a></li> <li><a href="vol_athsports.html">Athletics & Sports</a></li> <li><a href="Content.aspx?id=231">Philanthropy</a></li> <li><a href="vol_araboard.html">ARA Board & Committees</a></li> <li><a href="vol_businterests.html">Business Interests</a></li> <li><a href="vol_scienceeng.html">Science & Engineering</a></li> <li><a href="vol_artshum.html">Arts & Humanities</a></li> <li><a href="vol_homecoming.html">Homecoming & Reunion</a></li> <li><a href="vol_suppstud.html">Supporting Students</a></li> <li><a href="vol_othinterests.html">Other Interests</a></li> <li><a href="vol_noliveinhst.html">What if I don't live in Houston?</a></li> </ul> </li> <li> <a href="alumni_groups.html">Alumni Groups</a> <ul> <li><a href="alumni_groups.html#specialinterest">Special Interest Groups</a></li> <li><a href="regional_groups.html">Regional Groups</a></li> <li><a href="alumni_groups.html#schoolbased">School-Based Groups</a></li> <li><a href="grad_deg_alumni.html">Graduate-Degree Alumni</a></li> <li><a href="alumni_groups.html#friends">Friends Groups</a></li> </ul> </li> <li> <a href="youngalum_stds.html">Young Alumni</a> <ul> <li><a href="ban_info.html">Builder's Award</a></li> <li><a href="ya_houston.html">Houston Young Alumni</a></li> <li><a href="youngalum_stds.html#students">Students</a></li> </ul> </li> <li> <a href="career_connection.html">Career Connection</a> <ul> <li><a href="career_connection.html#netwkop">Networking Opportunities</a></li> <li><a href="career_connection.html#recruiting">Recruiting at Rice</a></li> </ul> </li> <li> <a href="learning_trav.html">Learning & Travel</a> <ul> <li><a href="http://alumni.rice.edu/alumnicollege/">Alumni College</a></li> <li><a href="http://online.alumni.rice.edu/directory/library.asp">Rice Alumni Digital Library</a></li> <li><a href="travel.html">Travel Program</a></li> <li><a href="learning_scholar.html">Scholarships & Fellowships</a></li> </ul> </li> </ul> </li> <li> <a href="learning_trav.html">Online Services</a> <ul> <li><a href="http://alumni.cgi.rice.edu/events/calendar.php">Find Events/RSVP</a></li> <li><a href="https://online.alumni.rice.edu/directory/detailsearch.asp">Alumni Directory</a></li> <li><a href="https://online.alumni.rice.edu/directory/profile.asp">Update Address</a></li> <li><a href="https://online.alumni.rice.edu/Online/emailforwarding/eforwarding.asp">Email Forwarding</a></li> <li><a href="https://online.alumni.rice.edu/Career/default.asp">Career Network</a></li> <li><a href="http://alumni.cgi.rice.edu/bizfinder/">Business Finder</a></li> <li><a href="https://online.alumni.rice.edu/directory/remotelibrary.asp?type=8">Online Classnotes</a></li> <li><a href="https://online.alumni.rice.edu/directory/library.asp">Digital Library</a></li> </ul> </li> <li> <a href="#">About the ARA</a></li> <li> <a href="#">Contact Us</a></li> <li> <a href="#">Log In</a></li> </ul> </nav> <!-- End Nav  --> </div> <div class="clearfix"></div> </header> <!-- End Header --> <!-- /ADDING RYAN'S STUFF -->
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<form id="f" method="post" action="" onSubmit="doSearch();">
 <table width="760" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td>
@@ -65,11 +74,67 @@ function checkKey(evt){
               </tr>
               <tr> 
                 <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
-                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
+                <td width="172" background="images/btn_over_nav.gif" align="center" valign="middle"> 
                   <table width="90%" border="0" cellspacing="0" cellpadding="0">
                     <tr> 
-                      <td><font class="nav"><a class="nav" href="alumni_groups.html">ALUMNI 
+                      <td><font class="navOver"><a href="alumni_groups.html">ALUMNI 
                         GROUPS</a></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td width="19" valign="top">&nbsp;</td>
+                <td width="172" align="center" valign="middle"> 
+                  <table width="90%" border="0" cellspacing="3" cellpadding="0">
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                              <td><font class="mainSmalldark"><a href="alumni_groups.html#specialinterest">Special 
+                                Interest Groups</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark"><a href="regional_groups.html">Regional 
+                              Groups</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                              <td><font class="mainSmalldark"><a href="alumni_groups.html#schoolbased">School-Based 
+                                Groups</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="images/gray2_bg.gif"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                            <td><font class="mainSmalldark">Graduate-Degree Alumni</font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr> 
+                              <td><font class="mainSmalldark"><a href="alumni_groups.html#friends">Friends 
+                                Groups</a></font></td>
+                          </tr>
+                        </table>
+                      </td>
                     </tr>
                   </table>
                 </td>
@@ -110,135 +175,10 @@ function checkKey(evt){
               </tr>
               <tr> 
                 <td width="19" valign="top"><img src="images/clear.gif" width="19" height="19" alt="spacer"></td>
-                <td width="172" background="images/btn_over_nav.gif" align="center" valign="middle"> 
+                <td width="172" background="images/btn_nav.gif" align="center" valign="middle" onMouseOver="this.background='images/btn_over_nav.gif'" onMouseOut="this.background='images/btn_nav.gif'"> 
                   <table width="90%" border="0" cellspacing="0" cellpadding="0">
                     <tr> 
                       <td><font class="nav"><a class="nav" href="volunteer.html">VOLUNTEER</a></font></td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr> 
-                <td width="19" valign="top">&nbsp;</td>
-                <td width="172" align="center" valign="middle"> 
-                  <table width="90%" border="0" cellspacing="3" cellpadding="0">
-                    <tr> 
-                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
-                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
-                          <tr> 
-                            <td><font class="mainSmalldark"><a href="alumni_groups.html#specialinterest">Alumni 
-                              Special Interest Groups</a></font></td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-					<tr> 
-                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
-                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
-                          <tr> 
-                            <td><font class="mainSmalldark"><a href="http://futureowls.rice.edu/futureowls/RAVA1.asp" target="_blank">Admission 
-                              Office (RAVA)</a></font></td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                    <tr> 
-                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
-                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
-                          <tr> 
-                            <td><font class="mainSmalldark"><a href="vol_athsports.html">Athletics 
-                              &amp; Sports</a></font></td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                    <tr> 
-                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
-                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
-                          <tr> 
-                            <td><font class="mainSmalldark"><a href="http://giving.rice.edu/Content.aspx?id=231" target="_blank">Philanthropy</a></font></td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                    <tr> 
-                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
-                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
-                          <tr> 
-                            <td><font class="mainSmalldark"><a href="vol_araboard.html">ARA 
-                              Board &amp; Committees</a></font></td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                    <tr> 
-                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
-                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
-                          <tr> 
-                            <td><font class="mainSmalldark"><a href="vol_businterests.html">Business 
-                              Interests</a></font></td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                    <tr> 
-                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
-                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
-                          <tr> 
-                            <td><font class="mainSmalldark"><a href="vol_scienceeng.html">Science 
-                              &amp; Engineering</a></font></td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                    <tr> 
-                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
-                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
-                          <tr> 
-                            <td><font class="mainSmalldark"><a href="vol_artshum.html">Arts 
-                              &amp; Humanities</a></font></td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                    <tr> 
-                      <td width="49%" background="images/gray2_bg.gif"> 
-                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
-                          <tr> 
-                            <td><font class="mainSmalldark">Homecoming &amp; Reunion</font></td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                    <tr> 
-                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
-                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
-                          <tr> 
-                            <td><font class="mainSmalldark"><a href="vol_suppstud.html">Supporting 
-                              Students</a></font></td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                    <tr> 
-                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
-                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
-                          <tr> 
-                            <td><font class="mainSmalldark"><a href="vol_othinterests.html">Other 
-                              Interests</a></font></td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                    <tr> 
-                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
-                        <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
-                          <tr> 
-                            <td><font class="mainSmalldark"><a href="vol_noliveinhst.html">What 
-                              if I don't live in Houston?</a></font></td>
-                          </tr>
-                        </table>
-                      </td>
                     </tr>
                   </table>
                 </td>
@@ -334,9 +274,11 @@ function checkKey(evt){
                 </td>
               </tr>
             </table>
+            
           </td>
           <td align="right"><img src="images/clear.gif" width="100" height="20"><br>
-            <img src="images/subpic_about.jpg" width="526" height="56" ="Young people smiling"></td>
+              <img src="images/subpic_about.jpg" width="526" height="56" ="Group of young women sitting and talking"> 
+            </td>
         </tr>
         <tr valign="top">
           <td>
@@ -346,33 +288,22 @@ function checkKey(evt){
               </tr>
               <tr valign="top"> 
                 <td width="414"> 
-                  <p><img src="images/sub_title_volunteer.gif" width="410" height="17" alt="About Alumni Association"></p>
+                  <p><img src="images/sub_title_groups.gif" width="410" height="17" alt="About Alumni Association"></p>
                   <table class="mainTable" border="0" cellspacing="0" cellpadding="0" align="center">
                     <tr valign="top"> 
                       <td> 
-                        <p> <font class="mainSubtitle"><b>Volunteer Opportunities 
-                          with Homecoming and Reunions</b></font></p>
-                        <p><font class="mainSmall"><a href="http://www.rice.edu/homecoming" target="_blank"><b>Homecoming 
-                          &amp; Reunion</b></a></font></p>
-                        <p><font class="mainSmall">Be a Homecoming event or class 
-                          reunion chair. Each fall there are fifty opportunities 
-                          to be the point person for one of the many events and 
-                          parties at Homecoming. The focus for alumni volunteers 
-                          is public relations: your connections help get the word 
-                          to fellow alumni that Rice Homecoming &amp; Reunion 
-                          is the &quot;place to be.&quot; The logistics are handled 
-                          largely by alumni staff, which helps to keep your time 
-                          commitment manageable. For information contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('0aZI6z38zqV6jmTPhMoCct')">Jennifer 
-                          Harding</a>, 713-348-6094.</font></p>
-                        <p><img src="images/gray2_bg.gif" style="height: 1px" width="100%" height="1"></p>
-                        <p><font class="mainSmall"><b>Reunion Giving Program</b></font></p>
-                        <p><font class="mainSmall">Volunteers in this program 
-                          raise money for the Rice Annual Fund from their classmates 
-                          in honor of their 5th, 10th, 15th, 20th, 25th, 30th, 
-                          35th, or 40th reunions, in addition to the Golden Anniversary 
-                          (50th and beyond) scholarship. <a href="http://www.giving.rice.edu/giving/Volunteer_Opportunties.asp" target="_blank">Click 
-                          here</a> for more information.</font></p>
-                      </td>
+                        <p> 
+                          <!-- <b><font class="mainSubtitle">Get Together: Alumni 
+                          Groups</font></b><br>
+                          <br> -->
+                          <img src="images/subpic_gac.jpg" width="350" height="146" alt="Graduate-Degree Alumni"></p>
+                          <p><font class="mainSmall">The Association of Rice Alumni 
+                            (ARA) is pleased to offer programs and services specifically 
+                            designed to meet the needs of graduate degree alumni. 
+                            Stay connected to fellow graduate alumni, the university, 
+                            your department, and current graduate students through 
+                            networking events, educational opportunities, career 
+                        assistance, student mentoring programs, and more.</font></p></td>
                     </tr>
                   </table>
                 </td>
@@ -382,7 +313,6 @@ function checkKey(evt){
                   <table width="100%" border="0" cellspacing="0" cellpadding="0">
                     <tr>
                       <td>
-                        <form id="srch" method=GET action="" onSubmit="doSearch();">
                           <input type="hidden" value="web" name="tab">
                           <table width="100%" border="0" cellspacing="0" cellpadding="0">
                             <tr> 
@@ -407,7 +337,7 @@ function checkKey(evt){
                                 rice.edu</font></td>
                             </tr>
                           </table>
-                        </form></td>
+                        </td>
                     </tr>
                     <tr> 
                       <td><img src="images/clear.gif" width="115" height="20" alt="spacer"></td>
@@ -475,7 +405,7 @@ function checkKey(evt){
                             <td width="49%" background="http://alumni.rice.edu/images/gray1_bg.gif"  onMouseOver="this.background='http://alumni.rice.edu/images/gray2_bg.gif'" onMouseOut="this.background='http://alumni.rice.edu/images/gray1_bg.gif'"> 
                               <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
                                 <tr> 
-                                  <td><font class="mainSmalldark"><a href="http://alumni.rice.edu/submit_note.html" title="Get your latest news into the Owlmanac">Submit Classnote</a></font></td>
+                                    <td><font class="mainSmalldark"><a href="https://online.alumni.rice.edu/directory/remotelibrary.asp?type=8" title="Get your latest news into the Owlmanac" target="_blank">Online Classnotes</a></font></td>
                                 </tr>
                               </table>
                             </td>
@@ -499,15 +429,105 @@ function checkKey(evt){
                   </table>
                   <!-- <a href="http://giving.rice.edu" target="_blank"><img src="images/rice_nextcent.gif" width="83" height="40" border="0" alt="Rice: The Next Century Campaign" hspace="3"></a><br> -->
                   <a href="http://www.rice.edu" target="_blank"><img src="images/rice_home.gif" width="75" height="40" border="0" alt="Rice: Home" vspace="10" hspace="3"></a>
-                    <br>
-                    <img src="images/clear.gif" width="115" height="3" alt="spacer"><br>
                   <p></p>
-                  <p>&nbsp;</p>
-                  <p>&nbsp; </p>
-                  </td>
+                </td>
               </tr>
             </table>
-            
+			
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr valign="top"> 
+					
+                <td class="mainCell"> <img src="images/clear.gif" width="20" height="20"></td>
+					
+                  <td width="529" class="mainSmall"> 
+                    <p><font class="mainSubtitle"><b>Stay Connected</b></font>
+                      <input type="hidden" name="key_word" class="formSmall" size="40"/>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="5">
+                      <tr>
+                        <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="5">
+                          <tr>
+                            <td width="50%" valign="top"><font class="mainSmall"><a href="http://online.alumni.rice.edu"><b>Update 
+                              Your Contact Information</b></a><br>
+                              Let us know where you are so that we can make you aware 
+                              of graduate alumni programming in your area. </font></td>
+                            <td width="50%" valign="top"><font class="mainSmall"><b>Career 
+                              Services<br>
+                            </b>Click <a href="http://alumni.rice.edu/career_connection.html">here</a> to find career services support  for graduate degree alums.</font></td>
+                          </tr>
+                          <tr>
+                            <td width="50%" valign="top"><p><font class="mainSmall"><b>Graduate Alumni Publications<br>
+                              </b></font><font class="mainSmall">Interested in being your 
+                                department's recorder for alumni publications? Contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('PNzVyBtWhWV0OhlQeiP9FK')">Nicole Peralta</a> in the alumni office at 713-348-4534. </font>
+                              <p><font class="mainSmall">The Grad Notes section of the Owlmanac is now available online!  See <a href="https://online.alumni.rice.edu/">https://online.alumni.rice.edu/</a>.  We would like to celebrate your achievements with you.  Please submit news online or send an email to <a href="gradnotes@alumni.rice.edu">gradnotes@alumni.rice.edu</a>.</font></td>
+                            <td width="50%" valign="top"><font class="mainSmall"><b>Graduate Alumni and Student 
+                              Events<br>
+                              </b></font><font class="mainSmall">Click <a href="javascript:getEvents('graduate alumni')">here</a> to view upcoming and past graduate alumni and student 
+                                events or visit the <a href="http://alumni.cgi.rice.edu/events/calendar.php">event 
+                                  calendar</a> for other upcoming alumni events.</font></td>
+                          </tr>
+                          <tr>
+                            <td valign="top"><span class="mainSmall"><strong>Facebook</strong><br>
+                              Follow the <a href="http://www.facebook.com/RiceGAC">GAC Facebook page</a> here. </span><br></td>
+                            <td valign="top"><span class="mainSmall"><strong>Twitter</strong><br>
+Follow  <a href="http://twitter.com/RiceGAC">GAC on Twitter </a>here. </span><br></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                    </table>
+                    <p><font class="mainSubtitle"><b>Get Involved</b></font> 
+                    <p><font class="mainSmall"><b>Graduate Alumni Committee</b></font> 
+                      <br>
+                      <font class="mainSmall">The Graduate Alumni Committee (GAC) 
+                      meets bi-monthly to share ideas and coordinate programs. 
+                      If you would like to be a part of this leadership team, 
+                      please contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('fRRKL5CsDr1jb46yoHytJd')"><strong>Bryan Hassin '01/'02</strong></a>.</font></p>
+                    <blockquote>
+                      <p>                        <strong>Bryan Hassin '01/'02, chair <br>
+                      </strong>Corinne Allen '10 <br>
+                      Rashmi Desai '67 <br>
+                      Radu Filip '08 <br>
+                      Lin Giralt '82 <br>
+                      Jon Holverson '82 <br>
+                      Cynthia Johnson '83 <br>
+                      Sheila Moore '07, chair-elect <br>
+                      Julia Smith Wellner '01, past chair </p>
+</blockquote>                    
+                    <p><font class="mainSmall"><b>Supporting Graduate Students</b></font> 
+                      <br>
+                      <font class="mainSmall">There are a variety of volunteer 
+                        opportunities at Rice in support of students, including 
+                        graduate students. You can get involved through selected 
+                        departments, serve as a mentor, or offer career advice through 
+                        the <a href="https://online.alumni.rice.edu/Career/default.asp"onClick="SecWin=window.open('alumni_contact.html','SecWin','width=260,height=500,toolbar=no,status=yes,resizable=no,scrollbars=yes,location=no,directories=no,menubar=no');return false;">Rice Career Network</a> (formerly the Alumni Contact Service).
+					     You can also donate gently-used 
+                        household items for re-use through the Graduate Student 
+                        Loan Closet. Visit our <a href="vol_suppstud.html">Supporting 
+                      Students</a> page for more information.</font></p>
+                    <p><font class="mainSmall"><b>Graduate Alumni Fund</b><br>
+                      The GAF supports programs and services for graduate alumni 
+                      and current graduate students, including alumni events, 
+                      student-run programming, and improvements to graduate student 
+                      facilities on campus. </font> 
+                    <p><font class="mainSmall"><a href="http://giving.rice.edu" target="_blank"><b>Make 
+                    a donation to the Graduate Alumni Fund</b></a><br>
+                    Please designate your gift as &quot;other&quot; and enter 
+                    &quot;Graduate Alumni Fund&quot; under Special Instructions. 
+                    You may also make a gift to the fund by contacting <a href="javascript:_compose('b208aEiy7EvMtIBqtGlVFj')">LaCresha Lamb</a> in the alumni office at 713-348-4057. </font> 
+                    <p><font class="mainSmall"><b><a href="/gac/GrantProposalProcedure.pdf">Submit 
+                      a proposal to receive funding from the Graduate Alumni Fund (right click to download)</a></b><br>
+                      Write a proposal for the program or service you would like 
+                      the GAF to finance. Submit your proposal and contact information 
+                      to the fund manager, <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('36w2Vymlj0wPvNB6IlpMgq')">Radu Filip '08</a>, and you will be contacted shortly. <b><br>
+                      <br>
+                      Not from Houston?</b><br>
+                      Volunteer with one of our many regional alumni groups and 
+                      represent the interests of graduate alumni. </font> 
+                    <p>
+                  <p>&nbsp;</p>
+				  </td>
+				</tr>
+			</table>
+                  
           </td>
         </tr>
       </table>
@@ -542,11 +562,12 @@ document.write(cy)
     </td>
   </tr>
 </table>
+</form>
 <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
 </script>
 <script type="text/javascript">
 _uacct = "UA-831972-1";
 urchinTracker();
 </script>
-      <!-- ADDING RYAN'S STUFF --> <div id="section-subfooter"> <div class="container"> <div class="zone zone-sub-footer"> <article class="widget-sub-footer widget-menu-widget widget"> <nav> <ul class="menu menu-footer-menu"> <li class="dropdown first">			<div class="four columns"> <h4>Alumni Resources</h4> <ul> <li><a href="http://alumni.cgi.rice.edu/events/calendar.php">Events Calendar</a> </li> <li><a href="/alumni_groups.html">Alumni Groups</a> </li> <li><a href="/youngalum_stds.html">Young Alumni</a> </li> </ul> </div> </li> <li class="dropdown">			<div class="four columns"> <h4>Online Services</h4> <ul> <li><a href="https://online.alumni.rice.edu/directory/detailsearch.asp">Alumni Directory</a> </li> <li><a href="/career_connection.html">Career Network</a> </li> <li><a href="http://alumni.cgi.rice.edu/bizfinder/">Business Finder</a> </li> </ul> </div> </li> <li class="dropdown">			<div class="four columns"> <h4>Opportunities</h4> <ul> <li><a href="/career_connection.html">Career Connection</a> </li> <li><a href="/learning_trav.html">Learning &amp;amp; Travel</a> </li> <li><a href="/volunteer.html">Volunteer</a> </li> </ul> </div> </li> <li class="dropdown last">			<div class="four columns"> <h4>Alumni Association</h4> <ul> <li><a href="http://online.alumni.rice.edu">Login</a> </li> <li><a href="/about_alumassoc.html">About the ARA</a> </li> <li><a href="/#">Contact Us</a> </li> </ul> </div> </li> </ul> </nav> </article></div> <div class="clear"></div> </div> </div> <!-- // .container --> <!-- // #section-footer --> <div id="section-footer"> <div class="container"> <div class="eight columns"> <p id="copytext">Copyright &copy; <a href="http://alumni.rice.edu/" title="">Rice University Alumni</a> 2013</p> </div> <!-- // .eight --> <div class="clear"></div> </div> <!-- // .container --> </div> <!-- // #section-footer --> <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> <script src="js/selectnav.min.js"></script> <script src="js/bootstrap-scrollspy.js"></script> <script src="js/jquery.custom.js"></script> <script src="js/tabcontent.js" type="text/javascript"></script> <script src="js/rotate.js"></script> <script src="js/nav/tinynav.js" type="text/javascript"></script> <script src="js/nav/superfish.js" type="text/javascript"></script> <script src="ryanmagic.js"></script> <!-- /ADDING RYAN'S STUFF -->
+</body>
 </html>

@@ -40,7 +40,7 @@ function checkKey(evt){
 
 </head>
 
-<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"><!-- ADDING RYAN'S STUFF --> <div id="fb-root"></div> <script>(function (d, s, id) {var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=285205008268336"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); </script> <!-- Header  --> <header class="head"> <div class="row container"> <div class="five columns"> <a href="index.html"> <img src="images/rice_alumni_logo.png" alt="Logo" class="logo" /> </a> </div> <!--End Logo --> <!-- nav  --> <nav class="eleven columns last"> <ul id="menu" class="sf-menu"> <li> <a href="#">Alumni Resources <span class="carrot">&#728;</span></a> <ul> <li> <a href="events/calendar.php">Events Calendar</a> <ul> <li><a href="http://alumni.cgi.rice.edu/events/calendar.php#upmajevents">Upcoming Major Events</a></li> <li><a href="http://alumni.cgi.rice.edu/events/calendar.php#araevents">ARA Events and Activities</a></li> </ul> </li> <li> <a href="volunteer.html">Volunteer</a> <ul> <li><a href="alumni_groups.html#specialinterest">Alumni Special Interest Groups</a></li> <li><a href="futureowls/RAVA1.asp">Admission Office (RAVA)</a></li> <li><a href="vol_athsports.html">Athletics & Sports</a></li> <li><a href="Content.aspx?id=231">Philanthropy</a></li> <li><a href="vol_araboard.html">ARA Board & Committees</a></li> <li><a href="vol_businterests.html">Business Interests</a></li> <li><a href="vol_scienceeng.html">Science & Engineering</a></li> <li><a href="vol_artshum.html">Arts & Humanities</a></li> <li><a href="vol_homecoming.html">Homecoming & Reunion</a></li> <li><a href="vol_suppstud.html">Supporting Students</a></li> <li><a href="vol_othinterests.html">Other Interests</a></li> <li><a href="vol_noliveinhst.html">What if I don't live in Houston?</a></li> </ul> </li> <li> <a href="alumni_groups.html">Alumni Groups</a> <ul> <li><a href="alumni_groups.html#specialinterest">Special Interest Groups</a></li> <li><a href="regional_groups.html">Regional Groups</a></li> <li><a href="alumni_groups.html#schoolbased">School-Based Groups</a></li> <li><a href="grad_deg_alumni.html">Graduate-Degree Alumni</a></li> <li><a href="alumni_groups.html#friends">Friends Groups</a></li> </ul> </li> <li> <a href="youngalum_stds.html">Young Alumni</a> <ul> <li><a href="ban_info.html">Builder's Award</a></li> <li><a href="ya_houston.html">Houston Young Alumni</a></li> <li><a href="youngalum_stds.html#students">Students</a></li> </ul> </li> <li> <a href="career_connection.html">Career Connection</a> <ul> <li><a href="career_connection.html#netwkop">Networking Opportunities</a></li> <li><a href="career_connection.html#recruiting">Recruiting at Rice</a></li> </ul> </li> <li> <a href="learning_trav.html">Learning & Travel</a> <ul> <li><a href="http://alumni.rice.edu/alumnicollege/">Alumni College</a></li> <li><a href="http://online.alumni.rice.edu/directory/library.asp">Rice Alumni Digital Library</a></li> <li><a href="travel.html">Travel Program</a></li> <li><a href="learning_scholar.html">Scholarships & Fellowships</a></li> </ul> </li> </ul> </li> <li> <a href="learning_trav.html">Online Services</a> <ul> <li><a href="http://alumni.cgi.rice.edu/events/calendar.php">Find Events/RSVP</a></li> <li><a href="https://online.alumni.rice.edu/directory/detailsearch.asp">Alumni Directory</a></li> <li><a href="https://online.alumni.rice.edu/directory/profile.asp">Update Address</a></li> <li><a href="https://online.alumni.rice.edu/Online/emailforwarding/eforwarding.asp">Email Forwarding</a></li> <li><a href="https://online.alumni.rice.edu/Career/default.asp">Career Network</a></li> <li><a href="http://alumni.cgi.rice.edu/bizfinder/">Business Finder</a></li> <li><a href="https://online.alumni.rice.edu/directory/remotelibrary.asp?type=8">Online Classnotes</a></li> <li><a href="https://online.alumni.rice.edu/directory/library.asp">Digital Library</a></li> </ul> </li> <li> <a href="#">About the ARA</a></li> <li> <a href="#">Contact Us</a></li> <li> <a href="#">Log In</a></li> </ul> </nav> <!-- End Nav  --> </div> <div class="clearfix"></div> </header> <!-- End Header --> <!-- /ADDING RYAN'S STUFF -->
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 <table width="760" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td>
@@ -202,10 +202,11 @@ function checkKey(evt){
                       </td>
                     </tr>
                     <tr> 
-                      <td width="49%" background="images/gray2_bg.gif"> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
                         <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
                           <tr> 
-                            <td><font class="mainSmalldark">Homecoming &amp; Reunion</font></td>
+                            <td><font class="mainSmalldark"><a href="vol_homecoming.html">Homecoming 
+                              &amp; Reunion</a></font></td>
                           </tr>
                         </table>
                       </td>
@@ -231,7 +232,7 @@ function checkKey(evt){
                       </td>
                     </tr>
                     <tr> 
-                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                      <td width="49%" background="images/gray2_bg.gif"> 
                         <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
                           <tr> 
                             <td><font class="mainSmalldark"><a href="vol_noliveinhst.html">What 
@@ -351,27 +352,17 @@ function checkKey(evt){
                     <tr valign="top"> 
                       <td> 
                         <p> <font class="mainSubtitle"><b>Volunteer Opportunities 
-                          with Homecoming and Reunions</b></font></p>
-                        <p><font class="mainSmall"><a href="http://www.rice.edu/homecoming" target="_blank"><b>Homecoming 
-                          &amp; Reunion</b></a></font></p>
-                        <p><font class="mainSmall">Be a Homecoming event or class 
-                          reunion chair. Each fall there are fifty opportunities 
-                          to be the point person for one of the many events and 
-                          parties at Homecoming. The focus for alumni volunteers 
-                          is public relations: your connections help get the word 
-                          to fellow alumni that Rice Homecoming &amp; Reunion 
-                          is the &quot;place to be.&quot; The logistics are handled 
-                          largely by alumni staff, which helps to keep your time 
-                          commitment manageable. For information contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('0aZI6z38zqV6jmTPhMoCct')">Jennifer 
-                          Harding</a>, 713-348-6094.</font></p>
-                        <p><img src="images/gray2_bg.gif" style="height: 1px" width="100%" height="1"></p>
-                        <p><font class="mainSmall"><b>Reunion Giving Program</b></font></p>
-                        <p><font class="mainSmall">Volunteers in this program 
-                          raise money for the Rice Annual Fund from their classmates 
-                          in honor of their 5th, 10th, 15th, 20th, 25th, 30th, 
-                          35th, or 40th reunions, in addition to the Golden Anniversary 
-                          (50th and beyond) scholarship. <a href="http://www.giving.rice.edu/giving/Volunteer_Opportunties.asp" target="_blank">Click 
-                          here</a> for more information.</font></p>
+                          for Individuals Living Outside of Houston</b></font></p>
+                        <p><font class="mainSmall">There are plenty of volunteer 
+                          opportunities for alumni, Rice parents, and friends 
+                          who have easy access to the Rice campus, but what about 
+                          opportunities outside of Houston? While it is easier 
+                          for Houston-area volunteers to get involved with Rice, 
+                          some possibilities for out-of-towners are compiled below.</font></p>
+                        <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                        <p><font class="mainSmall"><b>Rice Career Network</b> (formerly the Alumni Contact Service)</font></p>
+                        <p><font class="mainSmall">A searchable database of Rice alumni who have specifically consented to be contacted by Rice students and by fellow alumni for career networking purposes. RCN participants provide informal mentoring to job seekers, and typically field questions about their job field, company, graduate degree institution, city of residence, and the like. To join the Rice Career Network as a volunteer contact, visit the <a href="https://online.alumni.rice.edu/Career/default.asp">online RCN</a> (registration required) and select &quot;Volunteer&quot; from the menu.</font></p>
+                        <p>&nbsp;</p>
                       </td>
                     </tr>
                   </table>
@@ -507,7 +498,89 @@ function checkKey(evt){
                   </td>
               </tr>
             </table>
-            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="mainCell" valign="top">&nbsp;</td>
+                <td width="100%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td class="mainCell" valign="top"><img src="images/clear.gif" width="20" height="20"></td>
+                <td width="100%"> 
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><b>Career Services Internships &amp; 
+                    Recruiting</b></font></p>
+                  <p><font class="mainSmall">How many Rice alumni and students 
+                    work at your organization? Could there be more? If you know 
+                    of employment opportunities or internships in your company 
+                    or career field, the Rice Career Services center wants to 
+                    hear from you! Perhaps you're in a position to hire, or can 
+                    help Rice set up a closer working relationship with your company. 
+                    Email the <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('9y4IHlagkhb8iaBnbJpKaE')">Rice Career Services Center</a>                    to help pave the way for the next generation of Rice alumni.</font></p>
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><a href="http://www.rice.edu/leadership" target="_blank"><img src="images/leadership_logo.gif" width="190" height="59" align="left" border="0"><b>Leadership 
+                    Rice</b></a></font></p>
+                  <p><font class="mainSmall">Be a mentor as part of Leadership 
+                    Rice's Summer Mentorship Experience or help <br>
+                    identify great mentorship opportunities. Leadership Rice serves 
+                    students from all years and all majors, and seeks a wide array 
+                    of placements both nationally and internationally. Each student 
+                    chosen to participate in Leadership Rice is placed in a full-time, 
+                    paying, eight-week mentorship. What distinguishes Leadership 
+                    Rice mentorships from other internships is the preparation 
+                    Leadership Rice provides, the ongoing contact Leadership Rice 
+                    maintains with its students during the summer, and the presence 
+                    of a mentor who commits to help the student stretch and grow 
+                    during the summer.</font></p>
+                  <p><font class="mainSmall">In addition, Leadership Rice students, 
+                    from time to time, need mentors in <br>
+                    specific content areas. Those working on <a href="http://www.ruf.rice.edu/%7Eleading/envision.htm" target="_blank">Envision 
+                    Grants</a> need community mentors to help them develop strategic 
+                    plans. Students in our <a href="http://www.ruf.rice.edu/%7Eleading/courses.htm" target="_blank">leadership 
+                    course</a> who write Strategic Vision Papers also need contact 
+                    with community resources.</font></p>
+                  <p><font class="mainSmall">Our <a href="http://www.rice.edu/leadership" target="_blank">Web 
+                    site</a> provides more detail, including <a href="http://www.ruf.rice.edu/%7Eleading/mentor.htm" target="_blank">specific 
+                    information about the mentorship experience</a>.</font></p>
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><a href="regional_groups.html"><b>Regional 
+                    Alumni Groups</b></a></font></p>
+                  <p><font class="mainSmall">Help alumni and friends outside of 
+                    Houston to stay connected to Rice through regional alumni 
+                    activities! The alumni office facilitates alumni gatherings 
+                    in major cities throughout the U.S. (and occasionally beyond), 
+                    and is always in need of regional volunteers and event ideas. 
+                    Events typically include student send-off parties, faculty 
+                    lectures, happy hours, networking mixers, gatherings related 
+                    to Rice athletics events, picnics, museum outings or other 
+                    cultural activities - anything that is likely to appeal to 
+                    and facilitate interaction among our far-flung alumni and 
+                    Rice parents. Volunteer opportunities include coordinating 
+                    a single event (with alumni staff assistance), hosting an 
+                    event in your home, offering access to a private club or corporate 
+                    venue, serving as a city contact for Rice alums who may be 
+                    new to your area, or (in cities with very large Rice populations) 
+                    heading up a special-interest group (for example, happy hour, 
+                    book club, or investment club). Visit the <a href="regional_groups.html">Regional 
+                    Alumni Groups Web site</a> for more information and a list 
+                    of contacts in various cities.</font></p>
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><a href="http://futureowls.rice.edu/futureowls/RAVA.asp" target="_blank"><b>RAVA 
+                    (Rice Alumni Volunteers for Admission)</b></a></font></p>
+                  <p><font class="mainSmall">Admission volunteers help spread 
+                    the word about Rice by talking to students across the U.S. 
+                    and around the world. These volunteers provide an invaluable 
+                    service, giving students an &quot;inside&quot; view of life 
+                    at Rice through their own experiences and ongoing knowledge 
+                    of Rice. RAVA members act as alumni interviewers, occasionally 
+                    represent Rice at college fairs, and generally help answer 
+                    questions from high school students in their communities. 
+                    For more information and to volunteer, please visit the <a href="http://futureowls.rice.edu/futureowls/RAVA.asp" target="_blank">RAVA 
+                    web page</a>.</font></p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                </td>
+              </tr>
+            </table>
           </td>
         </tr>
       </table>
@@ -548,5 +621,5 @@ document.write(cy)
 _uacct = "UA-831972-1";
 urchinTracker();
 </script>
-      <!-- ADDING RYAN'S STUFF --> <div id="section-subfooter"> <div class="container"> <div class="zone zone-sub-footer"> <article class="widget-sub-footer widget-menu-widget widget"> <nav> <ul class="menu menu-footer-menu"> <li class="dropdown first">			<div class="four columns"> <h4>Alumni Resources</h4> <ul> <li><a href="http://alumni.cgi.rice.edu/events/calendar.php">Events Calendar</a> </li> <li><a href="/alumni_groups.html">Alumni Groups</a> </li> <li><a href="/youngalum_stds.html">Young Alumni</a> </li> </ul> </div> </li> <li class="dropdown">			<div class="four columns"> <h4>Online Services</h4> <ul> <li><a href="https://online.alumni.rice.edu/directory/detailsearch.asp">Alumni Directory</a> </li> <li><a href="/career_connection.html">Career Network</a> </li> <li><a href="http://alumni.cgi.rice.edu/bizfinder/">Business Finder</a> </li> </ul> </div> </li> <li class="dropdown">			<div class="four columns"> <h4>Opportunities</h4> <ul> <li><a href="/career_connection.html">Career Connection</a> </li> <li><a href="/learning_trav.html">Learning &amp;amp; Travel</a> </li> <li><a href="/volunteer.html">Volunteer</a> </li> </ul> </div> </li> <li class="dropdown last">			<div class="four columns"> <h4>Alumni Association</h4> <ul> <li><a href="http://online.alumni.rice.edu">Login</a> </li> <li><a href="/about_alumassoc.html">About the ARA</a> </li> <li><a href="/#">Contact Us</a> </li> </ul> </div> </li> </ul> </nav> </article></div> <div class="clear"></div> </div> </div> <!-- // .container --> <!-- // #section-footer --> <div id="section-footer"> <div class="container"> <div class="eight columns"> <p id="copytext">Copyright &copy; <a href="http://alumni.rice.edu/" title="">Rice University Alumni</a> 2013</p> </div> <!-- // .eight --> <div class="clear"></div> </div> <!-- // .container --> </div> <!-- // #section-footer --> <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> <script src="js/selectnav.min.js"></script> <script src="js/bootstrap-scrollspy.js"></script> <script src="js/jquery.custom.js"></script> <script src="js/tabcontent.js" type="text/javascript"></script> <script src="js/rotate.js"></script> <script src="js/nav/tinynav.js" type="text/javascript"></script> <script src="js/nav/superfish.js" type="text/javascript"></script> <script src="ryanmagic.js"></script> <!-- /ADDING RYAN'S STUFF -->
+</body>
 </html>

@@ -37,10 +37,9 @@ function checkKey(evt){
 }
 
 </script>
-
 </head>
 
-<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"><!-- ADDING RYAN'S STUFF --> <div id="fb-root"></div> <script>(function (d, s, id) {var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=285205008268336"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); </script> <!-- Header  --> <header class="head"> <div class="row container"> <div class="five columns"> <a href="index.html"> <img src="images/rice_alumni_logo.png" alt="Logo" class="logo" /> </a> </div> <!--End Logo --> <!-- nav  --> <nav class="eleven columns last"> <ul id="menu" class="sf-menu"> <li> <a href="#">Alumni Resources <span class="carrot">&#728;</span></a> <ul> <li> <a href="events/calendar.php">Events Calendar</a> <ul> <li><a href="http://alumni.cgi.rice.edu/events/calendar.php#upmajevents">Upcoming Major Events</a></li> <li><a href="http://alumni.cgi.rice.edu/events/calendar.php#araevents">ARA Events and Activities</a></li> </ul> </li> <li> <a href="volunteer.html">Volunteer</a> <ul> <li><a href="alumni_groups.html#specialinterest">Alumni Special Interest Groups</a></li> <li><a href="futureowls/RAVA1.asp">Admission Office (RAVA)</a></li> <li><a href="vol_athsports.html">Athletics & Sports</a></li> <li><a href="Content.aspx?id=231">Philanthropy</a></li> <li><a href="vol_araboard.html">ARA Board & Committees</a></li> <li><a href="vol_businterests.html">Business Interests</a></li> <li><a href="vol_scienceeng.html">Science & Engineering</a></li> <li><a href="vol_artshum.html">Arts & Humanities</a></li> <li><a href="vol_homecoming.html">Homecoming & Reunion</a></li> <li><a href="vol_suppstud.html">Supporting Students</a></li> <li><a href="vol_othinterests.html">Other Interests</a></li> <li><a href="vol_noliveinhst.html">What if I don't live in Houston?</a></li> </ul> </li> <li> <a href="alumni_groups.html">Alumni Groups</a> <ul> <li><a href="alumni_groups.html#specialinterest">Special Interest Groups</a></li> <li><a href="regional_groups.html">Regional Groups</a></li> <li><a href="alumni_groups.html#schoolbased">School-Based Groups</a></li> <li><a href="grad_deg_alumni.html">Graduate-Degree Alumni</a></li> <li><a href="alumni_groups.html#friends">Friends Groups</a></li> </ul> </li> <li> <a href="youngalum_stds.html">Young Alumni</a> <ul> <li><a href="ban_info.html">Builder's Award</a></li> <li><a href="ya_houston.html">Houston Young Alumni</a></li> <li><a href="youngalum_stds.html#students">Students</a></li> </ul> </li> <li> <a href="career_connection.html">Career Connection</a> <ul> <li><a href="career_connection.html#netwkop">Networking Opportunities</a></li> <li><a href="career_connection.html#recruiting">Recruiting at Rice</a></li> </ul> </li> <li> <a href="learning_trav.html">Learning & Travel</a> <ul> <li><a href="http://alumni.rice.edu/alumnicollege/">Alumni College</a></li> <li><a href="http://online.alumni.rice.edu/directory/library.asp">Rice Alumni Digital Library</a></li> <li><a href="travel.html">Travel Program</a></li> <li><a href="learning_scholar.html">Scholarships & Fellowships</a></li> </ul> </li> </ul> </li> <li> <a href="learning_trav.html">Online Services</a> <ul> <li><a href="http://alumni.cgi.rice.edu/events/calendar.php">Find Events/RSVP</a></li> <li><a href="https://online.alumni.rice.edu/directory/detailsearch.asp">Alumni Directory</a></li> <li><a href="https://online.alumni.rice.edu/directory/profile.asp">Update Address</a></li> <li><a href="https://online.alumni.rice.edu/Online/emailforwarding/eforwarding.asp">Email Forwarding</a></li> <li><a href="https://online.alumni.rice.edu/Career/default.asp">Career Network</a></li> <li><a href="http://alumni.cgi.rice.edu/bizfinder/">Business Finder</a></li> <li><a href="https://online.alumni.rice.edu/directory/remotelibrary.asp?type=8">Online Classnotes</a></li> <li><a href="https://online.alumni.rice.edu/directory/library.asp">Digital Library</a></li> </ul> </li> <li> <a href="#">About the ARA</a></li> <li> <a href="#">Contact Us</a></li> <li> <a href="#">Log In</a></li> </ul> </nav> <!-- End Nav  --> </div> <div class="clearfix"></div> </header> <!-- End Header --> <!-- /ADDING RYAN'S STUFF -->
+<body onKeyPress="checkKey(event);" bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 <table width="760" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td>
@@ -192,20 +191,20 @@ function checkKey(evt){
                       </td>
                     </tr>
                     <tr> 
-                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
+                      <td width="49%" background="images/gray2_bg.gif"> 
                         <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
                           <tr> 
-                            <td><font class="mainSmalldark"><a href="vol_artshum.html">Arts 
-                              &amp; Humanities</a></font></td>
+                            <td><font class="mainSmalldark">Arts &amp; Humanities</font></td>
                           </tr>
                         </table>
                       </td>
                     </tr>
                     <tr> 
-                      <td width="49%" background="images/gray2_bg.gif"> 
+                      <td width="49%" background="images/gray1_bg.gif"  onMouseOver="this.background='images/gray2_bg.gif'" onMouseOut="this.background='images/gray1_bg.gif'"> 
                         <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
                           <tr> 
-                            <td><font class="mainSmalldark">Homecoming &amp; Reunion</font></td>
+                            <td><font class="mainSmalldark"><a href="vol_homecoming.html">Homecoming 
+                              &amp; Reunion</a></font></td>
                           </tr>
                         </table>
                       </td>
@@ -334,6 +333,7 @@ function checkKey(evt){
                 </td>
               </tr>
             </table>
+            
           </td>
           <td align="right"><img src="images/clear.gif" width="100" height="20"><br>
             <img src="images/subpic_about.jpg" width="526" height="56" ="Young people smiling"></td>
@@ -351,28 +351,39 @@ function checkKey(evt){
                     <tr valign="top"> 
                       <td> 
                         <p> <font class="mainSubtitle"><b>Volunteer Opportunities 
-                          with Homecoming and Reunions</b></font></p>
-                        <p><font class="mainSmall"><a href="http://www.rice.edu/homecoming" target="_blank"><b>Homecoming 
-                          &amp; Reunion</b></a></font></p>
-                        <p><font class="mainSmall">Be a Homecoming event or class 
-                          reunion chair. Each fall there are fifty opportunities 
-                          to be the point person for one of the many events and 
-                          parties at Homecoming. The focus for alumni volunteers 
-                          is public relations: your connections help get the word 
-                          to fellow alumni that Rice Homecoming &amp; Reunion 
-                          is the &quot;place to be.&quot; The logistics are handled 
-                          largely by alumni staff, which helps to keep your time 
-                          commitment manageable. For information contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('0aZI6z38zqV6jmTPhMoCct')">Jennifer 
-                          Harding</a>, 713-348-6094.</font></p>
-                        <p><img src="images/gray2_bg.gif" style="height: 1px" width="100%" height="1"></p>
-                        <p><font class="mainSmall"><b>Reunion Giving Program</b></font></p>
-                        <p><font class="mainSmall">Volunteers in this program 
-                          raise money for the Rice Annual Fund from their classmates 
-                          in honor of their 5th, 10th, 15th, 20th, 25th, 30th, 
-                          35th, or 40th reunions, in addition to the Golden Anniversary 
-                          (50th and beyond) scholarship. <a href="http://www.giving.rice.edu/giving/Volunteer_Opportunties.asp" target="_blank">Click 
-                          here</a> for more information.</font></p>
-                      </td>
+                          in the Arts &amp; Humanities</b></font></p>
+                        <p><font class="mainSmall"><a href="http://culture.rice.edu/" target="_blank"><img src="images/studies_culture.jpg" width="250" height="59" border="0"></a></font></p>
+                        <p><font class="mainSmall"><a href="http://culture.rice.edu/" target="_blank"><b>Humanities Research Center</b></a></font></p>
+                        <p><font class="mainSmall">Each year the Humanities Research Center, which studies cultures around the 
+                          world and across time, organizes about 50 meetings and 
+                          conferences and serves as &quot;home-base&quot; to a 
+                          number of postdoctoral fellows and visiting scholars. 
+                        </font></p>
+                        <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                        <p><font class="mainSmall"><a href="http://www.ruf.rice.edu/%7Earts" target="_blank"><b>Department 
+                          of Art and Art History</b></a></font></p>
+                        <p><font class="mainSmall">The art studio invites volunteer 
+                          assistance with several tasks, such as organizing the art 
+                          room, maintaining computerized records, and running errands 
+                          for artists. Contact: <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('1gFRT0w0qLpKSXNAsOY8Vz')">Suzanne 
+                        Vaughn</a>, 713-348-4815.</font></p>
+                        <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                        <p><font class="mainSmall"><a href="http://www.rice.edu/fondren/friends" target="_blank"><b>Friends 
+                          of Fondren Library</b></a></font></p>
+                        <p><font class="mainSmall">The Friends of Fondren Library is 
+                          an association of individuals, led by a board of directors, 
+                          interested in increasing and publicizing the resources of 
+                          the Fondren Library at Rice University. The organization secures 
+                          gifts and bequests and provides funds for the purchase of 
+                          books, manuscripts, and other materials, both rare and new, 
+                          which could not otherwise be acquired by the library. The 
+                          FOFL board sponsors a biennial book sale and a gala which 
+                          raise funds, as well as an annual lecture, Homecoming brunch, 
+                          and reception to honor Rice authors. Volunteers assist with 
+                          these events, particularly the book sale. Volunteer leadership 
+                          consists of 30 board members and officers ranging from president 
+                          to the chairmanship of an event. For more information contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('Wd3L6tnKH3mEjooN3Bm0Tx')">Mary 
+                          Bixby</a>, 713-348-5157 </font></p></td>
                     </tr>
                   </table>
                 </td>
@@ -507,7 +518,237 @@ function checkKey(evt){
                   </td>
               </tr>
             </table>
-            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="mainCell" valign="top">&nbsp;</td>
+                <td width="100%">&nbsp;</td>
+              </tr>
+              <tr> 
+                <td class="mainCell" valign="top"><img src="images/clear.gif" width="20" height="20"></td>
+                <td width="100%"><p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+<p><font class="mainSmall"><a href="http://medieval.rice.edu" target="_blank"><img src="images/med_studies.gif" width="116" height="116" align="left" border="0"><b>Medieval 
+                    Studies Program</b></a></font></p>
+                  <p><font class="mainSmall">Do castles, cathedrals, crusades, 
+                    and chant stir your imagination? Volunteer with people who 
+                    are passionate about them! The Medieval Studies Workshop operates 
+                    within Rice University's <a href="http://culture.rice.edu/" target="_blank">Humanities Research Center</a> and is responsible for organizing 
+                    and funding speakers, special events, and reading groups on 
+                    topics related to medieval studies. Every three years the 
+                    Workshop also hosts a thematic conference, the Neil J. O'Brien 
+                    Symposium on Medieval Studies. Contact: <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('gXwbagfdkcLt2izUFNHO6U')">Angela 
+                    Wall</a>, 713-348-5784.</font></p>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td colspan="2" valign="top"><font class="mainSmall">Volunteer 
+                        opportunities through the Medieval Studies Program include:</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="97%"><font class="mainSmall">host an off-campus 
+                        dinner the weekend of October 18-19 in honor of Icelandic 
+                        film director Hrafn Gunnlaugsson, who will visit Rice 
+                        to show one or more of his films, which readapt medieval 
+                        sagas;</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="97%"><font class="mainSmall">be a &quot;host 
+                        family&quot; for a visiting scholar;</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="97%"><font class="mainSmall">help with registration 
+                        at an international meeting or conference;</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="97%"><font class="mainSmall">assemble registration 
+                        packets to distribute to conference attendees;</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="97%"><font class="mainSmall">gather local information 
+                        to include in packets given to conference attendees;</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="97%"><font class="mainSmall">provide transportation 
+                        to Houston museums or restaurants during one or more conferences;</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="97%"><font class="mainSmall">if you are involved 
+                        in a local museum, serve as a liaison/docent for conference 
+                        attendees who tour that museum;</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="97%"><font class="mainSmall">provide pro bono 
+                        graphic design or printing of publicity posters and brochures 
+                        for one or more conferences.</font></td>
+                    </tr>
+                  </table>
+                  <p><font class="mainSmall"> </font><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><a href="http://rda.rice.edu" target="_blank"><b>Rice 
+                    Design Alliance</b></a></font></p>
+                  <p><font class="mainSmall">The RDA works to stimulate public 
+                    awareness and discussion of the urban environment through 
+                    seminars, a lecture series, design exhibitions, and an annual 
+                    architectural tour - none of which is possible without the 
+                    work of committed volunteers. &quot;Entry-level&quot; volunteer 
+                    opportunities include serving as a volunteer docent at the 
+                    RDA's annual house tour in the spring; serving on the RDA's 
+                    gala auction committee; and helping set up the day of the 
+                    auction. Active committees include the gala underwriting committee, 
+                    gala auction committee, tour committee, program committee, 
+                    membership committee and Cite editorial committee (professional 
+                    writing skills required for the latter). The RDA is governed 
+                    by a board of directors, also volunteers. Contact: <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('zX3cUwuU2DIa6NMx8WYmDr')">Linda 
+                    Sylvan</a>, 713-348-4876.</font></p>
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><a href="http://ricehistoricalsociety.org/" target="_blank"><img src="images/rice_hist.jpg" width="160" height="96" align="left" border="0"><b>Rice 
+                    Historical Society</b></a><b> (RHS)</b></font></p>
+                  <p><font class="mainSmall">The Rice Historical Society is a 
+                    volunteer organization dedicated to the preservation and promotion 
+                    of the history of Rice University, and draws on its membership 
+                    for various tasks. Standing committees are:</font></p>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td width="2%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="50%"><font class="mainSmall">Archives</font></td>
+                      <td width="1%" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="50%"><font class="mainSmall">Hospitality</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="2%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="50%"><font class="mainSmall">Membership</font></td>
+                      <td width="1%" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="50%"><font class="mainSmall">Newsletter</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="2%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="50%"><font class="mainSmall">Program</font></td>
+                      <td width="1%" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="50%"><font class="mainSmall">Publicity</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="2%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="50%"><font class="mainSmall">Student History</font></td>
+                      <td width="1%" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="50%"><font class="mainSmall">Video Oral History</font></td>
+                    </tr>
+                  </table>
+                  <p><font class="mainSmall">We welcome new memberships into the 
+                    RHS, where there is opportunity to serve on one or more of 
+                    the committees. To get involved write to the RHS <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('f1s0Cd8G2xHacgQY3fNBZM')">by email</a>.</font></p>
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><a href="http://www.ruf.rice.edu/%7Emedia" target="_blank"><b>Rice 
+                    Media Center</b></a></font></p>
+                  <p><font class="mainSmall">As the home of film and photography 
+                    at Rice University, the Rice Media Center seeks to provide 
+                    a channel through which different peoples of the world could 
+                    communicate. The Media Center could use assistance throughout 
+                    the academic year in distributing materials (movie flyers, 
+                    etc.) around town; contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('cqHjjvcrknB9mNl7135VZN')">Rachel 
+                    Boyle</a>, 713-348-4882, to help out. Volunteers are needed 
+                    in the spring semester to assist in set-up for the annual 
+                    student art show. Contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('Z9LNCPb1EcEvlOFndP2FvB')">Jeff 
+                    Fegley</a>, 713-348-3137, for more information.</font></p>
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><a href="http://www.rice.edu/players" target="_blank"><img src="images/rice_players.gif" width="60" height="89" align="left" border="0"><b>Rice 
+                    Players</b></a><b>, Friends of the Rice Players</b></font></p>
+                  <p><font class="mainSmall">The Rice Players welcomes anyone 
+                    with an interest in any aspect of theater - experience not 
+                    required! We need artists, designers, performers, writers, 
+                    people with muscles, and people with math skills. The time 
+                    commitment is flexible: you can devote your whole life . . 
+                    . or just an hour. Please visit our <a href="http://www.ruf.rice.edu/%7Eplayers/recruit_full.htm" target="_blank">Web 
+                    site</a> for specific individuals to contact for various volunteer 
+                    tasks.</font></p>
+                  <p><font class="mainSmall">The Friends of the Rice Players (FoRP) 
+                    is a support group consisting primarily, but not exclusively, 
+                    of former Rice Players interested in supporting the current 
+                    and future work of the Rice Players. Members are encouraged 
+                    to attend Rice Players productions and to contribute to the 
+                    FoRP endowment, which is used to support productions and educational 
+                    opportunities when regular income isn't enough. Volunteer 
+                    leadership is needed to help organize fundraising events, 
+                    allocate funding, organize gatherings of former Rice Players, 
+                    and to help build audiences for the Players. To get involved 
+                    in FoRP contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('7YqFxRYCgVEZancuy2BUBO')">Trish
+                    Rigdon</a>, director of theater for the Rice Players.</font></p>
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><a href="http://scs.rice.edu" target="_blank"><img src="images/scs_logo.gif" width="200" height="71" align="left" border="0"><b>School 
+                    of Continuing Studies</b></a></font></p>
+                  <p><font class="mainSmall">Join a Class Act! Each semester Rice's 
+                    School of Continuing Studies conducts nearly 100 courses, 
+                    most of them in the evening, for thousands of Houstonians 
+                    who come to hear the best of Rice faculty and expert community 
+                    instructors. The School of Continuing Studies needs volunteers 
+                    to welcome students to the Rice campus and help make their 
+                    experience an enjoyable one. You can help support lifelong 
+                    education at Rice and attend interesting classes at the same 
+                    time. Course fees are waived for Continuing Studies alumni 
+                    volunteers.</font></p>
+                  <p><font class="mainSmall">You can attend weekly classes in 
+                    the arts, history, philosophy, psychology, science, math, 
+                    and many other subjects and help assure that classes run smoothly. 
+                    Volunteers agree to attend every class session, typically 
+                    1-2 hours, in the evening or on Saturday for six to ten weeks. 
+                    Most fall classes are scheduled between mid-September and 
+                    mid-November; most spring classes are held between mid-February 
+                    and late April. Duties include:</font></p>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="97%"><font class="mainSmall">greeting students 
+                        at the door</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="97%"><font class="mainSmall">checking names on 
+                        the class roll</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="97%"><font class="mainSmall">distributing instructor 
+                        materials</font></td>
+                    </tr>
+                    <tr> 
+                      <td width="3%" valign="top" align="right"><img src="images/bullet2.gif" width="6" height="5" vspace="4" hspace="4"></td>
+                      <td width="97%"><font class="mainSmall">communicating student 
+                        and instructor feedback to Continuing Studies</font></td>
+                    </tr>
+                  </table>
+                  <p><font class="mainSmall">Plus, you'll enjoy intellectually 
+                    challenging classes you have always wanted to take from your 
+                    favorite professors! This is your opportunity to return to 
+                    the Rice classroom in a relaxed atmosphere and join other 
+                    adults interested in the latest research or issues of the 
+                    day. See the <a href="http://scs.rice.edu" target="_blank">Continuing 
+                    Studies Web site</a> for a listing of current courses. To 
+                    volunteer, email <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('pB4IsybINDZp0uSTAI53LP')">Czolgus 
+                    Evans</a> or call him at 713-348-6109.</font></p>
+                  <p><img src="images/gray2_bg.gif" width="100%" height="1"></p>
+                  <p><font class="mainSmall"><a href="http://www.ruf.rice.edu/%7Emusi/contact/shepherd_society.html" target="_blank"><b>Shepherd 
+                    Society</b></a></font></p>
+                  <p><font class="mainSmall">The Shepherd Society marks its 25th 
+                    anniversary this year, continuing its <br>
+                    vital mission to support the cause of music at Rice University 
+                    and in Houston. Each year the 1200+ members of the Shepherd 
+                    Society provide more than $200,000 in scholarship support 
+                    for the talented young musicians studying at the <a href="http://www.ruf.rice.edu/%7Emusi/index.html">Shepherd 
+                    School of Music</a>. The Shepherd Society is led by a group 
+                    of officers, a governing council, and advisory board - each 
+                    consisting of dedicated volunteers. To get involved in the 
+                    Shepherd Society, contact <a onMouseOver="window.status='Compose a message'; return true;" onMouseOut="window.status='';" href="javascript:_compose('8bwfcR0EuCDWdDfOLlwsZb')">Stephanie Jones</a> or submit questions via the Shepherd Society's 
+                    <a href="http://www.ruf.rice.edu/%7Emusi/contact/society.htm" target="_blank">online 
+                    form</a>.</font></p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                </td>
+              </tr>
+            </table>
           </td>
         </tr>
       </table>
@@ -548,5 +789,5 @@ document.write(cy)
 _uacct = "UA-831972-1";
 urchinTracker();
 </script>
-      <!-- ADDING RYAN'S STUFF --> <div id="section-subfooter"> <div class="container"> <div class="zone zone-sub-footer"> <article class="widget-sub-footer widget-menu-widget widget"> <nav> <ul class="menu menu-footer-menu"> <li class="dropdown first">			<div class="four columns"> <h4>Alumni Resources</h4> <ul> <li><a href="http://alumni.cgi.rice.edu/events/calendar.php">Events Calendar</a> </li> <li><a href="/alumni_groups.html">Alumni Groups</a> </li> <li><a href="/youngalum_stds.html">Young Alumni</a> </li> </ul> </div> </li> <li class="dropdown">			<div class="four columns"> <h4>Online Services</h4> <ul> <li><a href="https://online.alumni.rice.edu/directory/detailsearch.asp">Alumni Directory</a> </li> <li><a href="/career_connection.html">Career Network</a> </li> <li><a href="http://alumni.cgi.rice.edu/bizfinder/">Business Finder</a> </li> </ul> </div> </li> <li class="dropdown">			<div class="four columns"> <h4>Opportunities</h4> <ul> <li><a href="/career_connection.html">Career Connection</a> </li> <li><a href="/learning_trav.html">Learning &amp;amp; Travel</a> </li> <li><a href="/volunteer.html">Volunteer</a> </li> </ul> </div> </li> <li class="dropdown last">			<div class="four columns"> <h4>Alumni Association</h4> <ul> <li><a href="http://online.alumni.rice.edu">Login</a> </li> <li><a href="/about_alumassoc.html">About the ARA</a> </li> <li><a href="/#">Contact Us</a> </li> </ul> </div> </li> </ul> </nav> </article></div> <div class="clear"></div> </div> </div> <!-- // .container --> <!-- // #section-footer --> <div id="section-footer"> <div class="container"> <div class="eight columns"> <p id="copytext">Copyright &copy; <a href="http://alumni.rice.edu/" title="">Rice University Alumni</a> 2013</p> </div> <!-- // .eight --> <div class="clear"></div> </div> <!-- // .container --> </div> <!-- // #section-footer --> <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> <script src="js/selectnav.min.js"></script> <script src="js/bootstrap-scrollspy.js"></script> <script src="js/jquery.custom.js"></script> <script src="js/tabcontent.js" type="text/javascript"></script> <script src="js/rotate.js"></script> <script src="js/nav/tinynav.js" type="text/javascript"></script> <script src="js/nav/superfish.js" type="text/javascript"></script> <script src="ryanmagic.js"></script> <!-- /ADDING RYAN'S STUFF -->
+</body>
 </html>
