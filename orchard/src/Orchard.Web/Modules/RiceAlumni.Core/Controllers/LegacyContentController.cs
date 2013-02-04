@@ -10,7 +10,7 @@ namespace RiceAlumni.Core.Controllers
 			if (path == "index.html" || path == "legacycontent/index.html")
 				return Redirect("~/");
 
-			var splitPath = path.Split('/');
+			var splitPath = path.TrimEnd('/').Split('/');
 			var finalPath = path;
 
 			if(splitPath.Length > 0 && !splitPath[splitPath.Length-1].Contains("."))
