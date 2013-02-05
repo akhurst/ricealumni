@@ -1829,5 +1829,13 @@ h3.staff-profile-summary-name{
 .widget-EventsCalendar p {
 	text-align: left;
 }
-article.widget-slides{width:
- 100%;}
+
+article.widget-slides{
+	width: 100%;}
+
+#medrec li {
+width: 300px;
+}
+
+.facebook_wall.standard li .media .image{width: 100px}
+
