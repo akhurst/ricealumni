@@ -48,7 +48,7 @@
 		menuitem create /MenuPosition:"2.3" /MenuText:"Business Finder" /Url:"http://alumni.cgi.rice.edu/bizfinder/" /MenuName:"Footer Menu"
 		menuitem create /MenuPosition:"3" /MenuText:"Opportunities" /Url:"#" /MenuName:"Footer Menu"
 		menuitem create /MenuPosition:"3.1" /MenuText:"Career Connection" /Url:"~/career_connection.html" /MenuName:"Footer Menu"
-		menuitem create /MenuPosition:"3.2" /MenuText:"Learning & Travel" /Url:"~/learning_trav.html" /MenuName:"Footer Menu"
+		menuitem create /MenuPosition:"3.2" /MenuText:"Learning &amp; Travel" /Url:"~/learning_trav.html" /MenuName:"Footer Menu"
 		menuitem create /MenuPosition:"3.3" /MenuText:"Volunteer" /Url:"~/volunteer.html" /MenuName:"Footer Menu"
 		menuitem create /MenuPosition:"4" /MenuText:"Alumni Association" /Url:"~/about_alumassoc.html" /MenuName:"Footer Menu"
 		menuitem create /MenuPosition:"4.1" /MenuText:"Login" /Url:"http://online.alumni.rice.edu" /MenuName:"Footer Menu"
