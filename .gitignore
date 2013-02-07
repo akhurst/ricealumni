@@ -42,7 +42,7 @@ ipch/
 *.aps
 *.ncb
 *.opensdf
-#*.sdf
+*.sdf
 
 # Visual Studio profiler
 *.psess
@@ -111,3 +111,4 @@ Backup*/
 UpgradeLog*.XML
 
 !orchard/lib/Castle Windsor 2.0/bin/
+orchard/src/Orchard.Web/App_Data/*
