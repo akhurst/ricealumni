@@ -112,3 +112,4 @@ UpgradeLog*.XML
 
 !orchard/lib/Castle Windsor 2.0/bin/
 orchard/src/Orchard.Web/App_Data/*
+orchard/src/Orchard.Web/Media/Default/RecipeJournal/*
