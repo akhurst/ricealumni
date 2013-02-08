@@ -58,10 +58,14 @@ namespace RiceAlumni.Homepage
                 .WithSetting("Stereotype", "Widget")
             );
 
+            return 1;
+        }
+
+        public int UpdateFrom1()
+        {
             CreateLongPartnerBanner();
             CreateSquarePartnerBanner();
-
-            return 1;
+            return 2;
         }
 
         private void CreateLongPartnerBanner()
@@ -113,7 +117,7 @@ namespace RiceAlumni.Homepage
                 .WithPart("CommonPart")
                 .WithPart("AdminMenuPart")
                 .WithSetting("Stereotype", "Widget")
-            );          
+            );
         }
     }
 }
