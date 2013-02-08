@@ -1,0 +1,11 @@
+﻿<div class="sixteen columns headitadvert">
+    <ul id="sliderbottom">
+        @foreach (var item in Model.Items)
+        {
+            <li>
+                @Display(item)
+                <div class="clear"></div>
+            </li>
+        }
+    </ul>
+</div>

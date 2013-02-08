@@ -1,93 +1,88 @@
 ﻿@{
-	Script.Include("homepage-social.js").AtFoot();
-	Script.Include("twitter-feed.js").AtFoot();
-	Script.Include("facebook_wall.plugin.js").AtFoot();
-	Script.Include("http://api.twitter.com/1/statuses/user_timeline.json?screen_name=ricealumni&include_rts=true&count=4&callback=twitterCallback2").AtFoot();
+    Script.Include("homepage-social.js").AtFoot();
+    Script.Include("twitter-feed.js").AtFoot();
+    Script.Include("facebook_wall.plugin.js").AtFoot();
+    Script.Include("http://api.twitter.com/1/statuses/user_timeline.json?screen_name=ricealumni&include_rts=true&count=4&callback=twitterCallback2").AtFoot();
 }
 
-               <!-- // #section-invite -->
-               <div id="section-about">
-                  <div class="container">
-                     <div class="seven columns">
-                        <h2>Follow us on Facebook</h2>
-                        <br />
-                        <p>Like the official Facebook page of the Rice Alumni Community to keep up to date with the latest news and updates!</p>
-                        <div class="fb-like" data-href="https://www.facebook.com/ricealumni" data-send="true" data-layout="button_count" data-width="300" data-show-faces="false" data-action="like"></div>
-                     </div>
-                     <!-- // .eight -->
-                     <div class="eight offset-by-one columns">
-                        <div class="item">
-													<ul id="medrec">
-														<li>
-															<a href="~/legacycontent/alumnicollege/index.html">
-																<img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme,"/Content/Images/banner2_300x250.jpg"))" height="250" width="300" style="margin:0 auto;" />
-															</a>
+<!-- // #section-invite -->
+<div id="section-about">
+    <div class="container">
+        <div class="seven columns">
+            <h2>Follow us on Facebook</h2>
+            <br />
+            <p>Like the official Facebook page of the Rice Alumni Community to keep up to date with the latest news and updates!</p>
+            <div class="fb-like" data-href="https://www.facebook.com/ricealumni" data-send="true" data-layout="button_count" data-width="300" data-show-faces="false" data-action="like"></div>
+        </div>
+        <!-- // .eight -->
 
-														</li>
-													</ul>
-                        </div>
-                        <!-- // .item -->
-                     </div>
-                     <!-- // .eight -->
-                     <div class="clear"></div>
-                  </div>
-                  <!-- // .container -->
-               </div>
-               <!-- // #section-about -->
-               <div id="wrapper">
-                  <div class="container ">
-                     <div class="sixteen columns">
-                        <h1 class="titleofsec">From the blog...</h1>
-                        <div class="clear"></div>
-                        <ul id="facebook_wall" class="facebook_wall standard"></ul>
-                        <div class="clear"></div>
-                     </div>
-                     <div class="clear"></div>
-                  </div>
-               </div>
-               <div id="section-sponsors">
-                  <div class="container">
-                     <div class="sixteen columns headitadvert">
-                        <ul id="sliderbottom">
-													<li>
-														<a href="~/legacycontent/alumnicollege/index.html">
-														<img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme,"/Content/Images/banner3_728x90.jpg"))" height="90" width="728" style="margin:0 auto;" />
-                                                            </a>
-													</li>
-                        </ul>
-                     </div>
-                     <!-- // .sixteen -->
-                     <div class="clear"></div>
-                     <div class="sixteen columns centered">
-                        <img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Content/Images/twitter-bird-hover.png"))" />
-                        <div class="clear"></div>
-                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="ricealumni" data-related="ricealumni">Tweet</a>
-                        <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
-                        <div class="clear"></div>
-                        <div class="twitter-feed">
-                           <ul id="twitter_update_list" class="rotate"></ul>
-                        </div>
-                        <div style="height: 50px"></div>
-                     </div>
-                     <div class="clear"></div>
-                  </div>
-                  <!-- // .container -->
-               </div>
-               <!-- // #section-sponsors -->
-               <div id="section-invite">
-                  <div class="container">
-                     <div class="sixteen columns">
-                        <h2></h2>
-                     </div>
-                     <div class="clear"></div>
-                     <div class="eight columns">
-                        <p class="headline"> </p>
-                        <div class="spaceheight"></div>
-                     </div>
-                     <div class="clear"></div>
-                     <div class="sixteen columns">
-                        <p></p>
-                     </div>
-                     <div class="clear"></div>
-                  </div>
-               </div>
+        <div class="eight offset-by-one columns">
+            <div class="item">
+                <ul id="medrec">
+                    <li>
+                        <a href="~/legacycontent/alumnicollege/index.html">
+                            <img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Content/Images/banner2_300x250.jpg"))" height="250" width="300" style="margin:0 auto;" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- // .item -->
+        </div>
+
+        <!-- // .eight -->
+        <div class="clear"></div>
+    </div>
+    <!-- // .container -->
+</div>
+<!-- // #section-about -->
+<div id="wrapper">
+    <div class="container ">
+        <div class="sixteen columns">
+            <h1 class="titleofsec">From the blog...</h1>
+            <div class="clear"></div>
+            <ul id="facebook_wall" class="facebook_wall standard"></ul>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div id="section-sponsors">
+    <div class="container">
+
+        @Display(WorkContext.Layout.LongPartnerBanner2)
+
+        <!-- // .sixteen -->
+        <div class="clear"></div>
+        <div class="sixteen columns centered">
+            <img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Content/Images/twitter-bird-hover.png"))" />
+            <div class="clear"></div>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="ricealumni" data-related="ricealumni">Tweet</a>
+            <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+            <div class="clear"></div>
+            <div class="twitter-feed">
+                <ul id="twitter_update_list" class="rotate"></ul>
+            </div>
+            <div style="height: 50px"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- // .container -->
+</div>
+<!-- // #section-sponsors -->
+<div id="section-invite">
+    <div class="container">
+        <div class="sixteen columns">
+            <h2></h2>
+        </div>
+        <div class="clear"></div>
+        <div class="eight columns">
+            <p class="headline"></p>
+            <div class="spaceheight"></div>
+        </div>
+        <div class="clear"></div>
+        <div class="sixteen columns">
+            <p></p>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>

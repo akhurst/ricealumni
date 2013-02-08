@@ -1,0 +1,16 @@
+@if(WorkContext.Layout.IsHomepage)
+{
+	foreach (var item in Model.Items)
+	{
+		@Display(item)
+	}
+}
+else
+{
+	<div class="zone zone-content container" style="margin-top: 100px">
+		@foreach (var item in Model.Items)
+		{
+			@Display(item)
+		}
+	</div>
+}

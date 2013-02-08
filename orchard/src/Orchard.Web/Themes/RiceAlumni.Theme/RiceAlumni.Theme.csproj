@@ -274,6 +274,18 @@
   <ItemGroup>
     <Content Include="Views\Zone-Links.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Widget-LongPartnerBanner.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Zone-LongPartnerBanner1.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Zone-LongPartnerBanner2.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Widget-SquarePartnerBanner.cshtml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

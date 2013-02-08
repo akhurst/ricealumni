@@ -1,177 +1,164 @@
 ﻿@functions {
-	    // To support the layout classifaction below. Implementing as a razor function because we can, could otherwise be a Func<string[], string, string> in the code block following.
-	private string CalcuClassify(string[] zoneNames, string classNamePrefix)
-	{
-		int zoneCounter = 0;
-		string zoneNumsFilled = string.Join("", zoneNames.Select(zoneName =>
-																														 {
-																															 ++zoneCounter;
-																															 return Model[zoneName] != null ? zoneCounter.ToString() : "";
-																														 }).ToArray());
-		return HasText(zoneNumsFilled) ? classNamePrefix + zoneNumsFilled : "";
-	}
+    // To support the layout classifaction below. Implementing as a razor function because we can, could otherwise be a Func<string[], string, string> in the code block following.
+    private string CalcuClassify(string[] zoneNames, string classNamePrefix)
+    {
+        int zoneCounter = 0;
+        string zoneNumsFilled = string.Join("", zoneNames.Select(zoneName =>
+                                                                                                                         {
+                                                                                                                             ++zoneCounter;
+                                                                                                                             return Model[zoneName] != null ? zoneCounter.ToString() : "";
+                                                                                                                         }).ToArray());
+        return HasText(zoneNumsFilled) ? classNamePrefix + zoneNumsFilled : "";
+    }
 
 }
 @{
-	/* Global includes for the theme
+    /* Global includes for the theme
     ***************************************************************/
 
-	SetMeta("X-UA-Compatible", "IE=edge,chrome=1");
-	SetMeta("viewport", "width=device-width, initial-scale=1, maximum-scale=1");
-	SetMeta("width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no", "yes");
-    SetMeta("author","");
-    SetMeta("description","");
-	Style.Include("http://yui.yahooapis.com/3.8.0/build/cssreset/cssreset-min.css");
-	// Style.Include("site.css");
-	Style.Include("alpha_background.css");
-	Style.Include("grid.css");
-	Style.Include("style.css");
-	Style.Include("responsive_custom.css");
-	Style.Include("http://fonts.googleapis.com/css?family=Lato:300,400,700");
-	Script.Require("jQuery");
-	Script.Include("tinynav.js").AtFoot();
-	Script.Include("superfish.js").AtFoot();
-	Script.Include("tabcontent.js").AtFoot();
-	Script.Include("rotate.js").AtFoot();
-	Script.Include("script.js").AtFoot();
-	Script.Include("masonry.js").AtFoot();
-	Script.Include("responsiveslides.js").AtFoot();
-	Script.Include("homepage.js").AtFoot();
+    SetMeta("X-UA-Compatible", "IE=edge,chrome=1");
+    SetMeta("viewport", "width=device-width, initial-scale=1, maximum-scale=1");
+    SetMeta("width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no", "yes");
+    SetMeta("author", "");
+    SetMeta("description", "");
+    Style.Include("http://yui.yahooapis.com/3.8.0/build/cssreset/cssreset-min.css");
+    // Style.Include("site.css");
+    Style.Include("alpha_background.css");
+    Style.Include("grid.css");
+    Style.Include("style.css");
+    Style.Include("responsive_custom.css");
+    Style.Include("http://fonts.googleapis.com/css?family=Lato:300,400,700");
+    Script.Require("jQuery");
+    Script.Include("tinynav.js").AtFoot();
+    Script.Include("superfish.js").AtFoot();
+    Script.Include("tabcontent.js").AtFoot();
+    Script.Include("rotate.js").AtFoot();
+    Script.Include("script.js").AtFoot();
+    Script.Include("masonry.js").AtFoot();
+    Script.Include("responsiveslides.js").AtFoot();
+    Script.Include("homepage.js").AtFoot();
 
-	/* Some useful shortcuts or settings
+    /* Some useful shortcuts or settings
     ***************************************************************/
 
-	Func<dynamic, dynamic> Zone = x => Display(x); // Zone as an alias for Display to help make it obvious when we're displaying zones
+    Func<dynamic, dynamic> Zone = x => Display(x); // Zone as an alias for Display to help make it obvious when we're displaying zones
 
-	/* Inserting some ad hoc shapes
+    /* Inserting some ad hoc shapes
     ***************************************************************/
 
-	WorkContext.Layout.Footer.Add(New.BadgeOfHonor(), "5"); // Powered by Orchard
-	WorkContext.Layout.Footer.Add(New.User(), "10"); // Login and dashboard links
+    WorkContext.Layout.Footer.Add(New.BadgeOfHonor(), "5"); // Powered by Orchard
+    WorkContext.Layout.Footer.Add(New.User(), "10"); // Login and dashboard links
 
-	/* Last bit of code to prep the layout wrapper
+    /* Last bit of code to prep the layout wrapper
     ***************************************************************/
 
-	Model.Id = "layout-wrapper";
-	dynamic tag = Tag(Model, "div"); // using Tag so the layout div gets the classes, id and other attributes added to the Model
+    Model.Id = "layout-wrapper";
+    dynamic tag = Tag(Model, "div"); // using Tag so the layout div gets the classes, id and other attributes added to the Model
 }
 
 @tag.StartElement
 
 <div id="fb-root"></div>
-<script> (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=285205008268336";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk')); </script>
+<script> (function (d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s);
+     js.id = id;
+     js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=285205008268336";
+     fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk')); </script>
 
 
 
-               <!-- Header  -->
-               <header class="head">
-                  <div class="row container">
-										<div class="five columns">
-											<a href="~/">
-												<img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Content/Images/rice_alumni_logo.png"))" alt="Logo" class="logo" />
-											</a>
-										</div>
-                      					@if (Model.Navigation != null)
-					{
-						@Zone(Model.Navigation)
-					}
+<!-- Header  -->
+<header class="head">
+    <div class="row container">
+        <div class="five columns">
+            <a href="~/">
+                <img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Content/Images/rice_alumni_logo.png"))" alt="Logo" class="logo" />
+            </a>
+        </div>
+        @if (Model.Navigation != null)
+        {
+            @Zone(Model.Navigation)
+        }
 
-                  </div>
-                  <div class="clearfix"></div>
-               </header>
+    </div>
+    <div class="clearfix"></div>
+</header>
 
 
-@if(Model.Content!=null)
+@if (Model.Content != null)
 {
-		@Zone(Model.Content)
+    @Zone(Model.Content)
 }
 
 @if (Model.Slides != null)
 {
-	@Zone(Model.Slides)
+    @Zone(Model.Slides)
 }
 
 @if (Model.Links != null)
 {
-	<div id="section-anotherabout">
-		<div class="container">
-			<div class="sixteen columns headitadvert">
+    <div id="section-anotherabout">
+        <div class="container">
 
-				<ul id="slider1">
-					<li>
-						<a href="http://bakerinstitute.org/">
-							<img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme,"/Content/Images/banner1_728x90.jpg"))" height="90" width="728" style="margin: 0 auto;" />
-						</a>
-					</li>
-				</ul>
+            @Zone(Model.LongPartnerBanner1)
+            <div class="clear"></div>
 
-			</div>
-			<!-- // .sixteen -->
+            <div class="sixteen columns">
+                <h1 class="titleofsec">Alumni Resources</h1>
+            </div>
+            <div id="homepage-link-container">
+                @Zone(Model.Links)
+            </div>
 
-			<div class="clear"></div>
+            <div class="clear"></div>
 
-			<div class="sixteen columns">
-				<h1 class="titleofsec">Alumni Resources</h1>
-			</div>
-			<div id="homepage-link-container">
-
-				@Zone(Model.Links)
-
-			</div>
-
-			<div class="clear"></div>
-
-			<div class="clear"></div>
-		</div>
-		<!-- // .container -->
-	</div>
-	<!-- // #section-invite -->
+            <div class="clear"></div>
+        </div>
+        <!-- // .container -->
+    </div>
+    <!-- // #section-invite -->
 }
 
 @if (Model.Social != null)
 {
-	@Zone(Model.Social)
+    @Zone(Model.Social)
 }
 
-@if(Model.SubFooter!=null)
+@if (Model.SubFooter != null)
 {
     <div id="section-subfooter">
-               	<div class="container">
-                     @Zone(Model.SubFooter)
-                     <div class="clear"></div>
-                  </div>
-                  <!-- // .container -->
-
-
+        <div class="container">
+            @Zone(Model.SubFooter)
+            <div class="clear"></div>
         </div>
+        <!-- // .container -->
+
+
+    </div>
 }
 
 <div id="section-footer">
-	<div class="container">
-		<div class="eight columns">
-			@if (Model.Footer != null)
-			{
-				@Zone(Model.Footer)
-			}
-		</div>
-		<!-- // .eight -->
-		@if (Model.FooterRight != null)
-		{
-			<div class="eight columns">
-				@Zone(Model.FooterRight)
-			</div>
-		}
+    <div class="container">
+        <div class="eight columns">
+            @if (Model.Footer != null)
+            {
+                @Zone(Model.Footer)
+            }
+        </div>
+        <!-- // .eight -->
+        @if (Model.FooterRight != null)
+        {
+            <div class="eight columns">
+                @Zone(Model.FooterRight)
+            </div>
+        }
 
-		<div class="clear"></div>
-	</div>
-	<!-- // .container -->
+        <div class="clear"></div>
+    </div>
+    <!-- // .container -->
 </div>
 <!-- // #section-footer -->
 
