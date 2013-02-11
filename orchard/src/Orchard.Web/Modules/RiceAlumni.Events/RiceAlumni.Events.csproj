@@ -86,6 +86,8 @@
   <ItemGroup>
     <Compile Include="Controllers\CalendarController.cs" />
     <Compile Include="Migrations.cs" />
+    <Compile Include="Models\EventContactPart.cs" />
+    <Compile Include="Models\EventContactRecord.cs" />
     <Compile Include="Models\EventPart.cs" />
     <Compile Include="Models\EventPartRecord.cs" />
     <Compile Include="Models\LocationPart.cs" />
