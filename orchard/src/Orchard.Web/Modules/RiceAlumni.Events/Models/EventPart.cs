@@ -47,7 +47,7 @@ namespace RiceAlumni.Events.Models
             set { Record.Description = value; }
         }
 
-        public virtual LocationPart Location
+        public virtual LocationPartRecord Location
         {
             get { return Record.Location; }
             set { Record.Location = value; }

@@ -8,8 +8,8 @@ namespace RiceAlumni.Events.Models
 {
     public class EventContactRecord : ContentPartRecord
     {
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public long Phone { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string Email { get; set; }
+        public virtual long Phone { get; set; }
     }
 }

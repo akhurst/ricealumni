@@ -17,7 +17,7 @@ namespace RiceAlumni.Events.Models
         public virtual string Description { get; set; }
         public virtual bool RegistrationRequired { get; set; }
         //public virtual EventContactPart EventContactPart { get; set; }
-        public virtual LocationPart Location { get; set; }
+        public virtual LocationPartRecord Location { get; set; }
 
     }
 }

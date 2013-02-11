@@ -8,19 +8,19 @@ namespace RiceAlumni.Events.Models
 {
     public class EventContactPart : ContentPart<EventContactRecord>
     {
-        public string Name
+        public virtual string Name
         {
             get { return Record.Name; }
             set { Record.Name = value; }
         }
 
-        public long Phone
+        public virtual long Phone
         {
             get { return Record.Phone; }
             set { Record.Phone = value; }
         }
 
-        public string Email
+        public virtual string Email
         {
             get { return Record.Email; }
             set { Record.Email = value; }

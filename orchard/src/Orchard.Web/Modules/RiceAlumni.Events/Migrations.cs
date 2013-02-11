@@ -12,6 +12,21 @@ namespace RiceAlumni.Events
     {
         public int Create()
         {
+            SchemaBuilder.CreateTable("LocationPartRecord", table => table
+                .ContentPartRecord()
+                .Column<string>("Name")
+                .Column<string>("Building")
+                .Column<string>("Room")
+                .Column<string>("Address1")
+                .Column<string>("Address2")
+                .Column<string>("City")
+                .Column<string>("State")
+                .Column<string>("Zip")
+                .Column<string>("MapUrl")
+                .Column<double>("Latitude")
+                .Column<double>("Longitude")
+            );
+
             SchemaBuilder.CreateTable("EventContactRecord", tableBuilder =>
                 tableBuilder.ContentPartRecord()
                 .Column<string>("Name")
