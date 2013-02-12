@@ -53,10 +53,10 @@ namespace RiceAlumni.Events.Models
             set { Record.Location = value; }
         }
 
-        //public virtual EventContactPart Contact
-        //{
-        //    get { return Record.Contact; }
-        //    set { Record.Contact = value; }
-        //}         
+        public virtual EventContactRecord Contact
+        {
+            get { return Record.Contact; }
+            set { Record.Contact = value; }
+        }         
     }
 }

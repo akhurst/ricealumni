@@ -45,6 +45,7 @@ namespace RiceAlumni.Events
                 .Column<string>("Description")
                 .Column<bool>("RegistrationRequired")
                 .Column<int>("LocationPartRecord_Id")
+                .Column<int>("EventContactRecord_Id")
                 );
 
             return 1;
