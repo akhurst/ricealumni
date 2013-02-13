@@ -5,6 +5,7 @@ using System.Web;
 using Orchard.ContentManagement.MetaData;
 using Orchard.Core.Contents.Extensions;
 using Orchard.Data.Migration;
+using RiceAlumni.Events.Models;
 
 namespace RiceAlumni.Events
 {
@@ -46,6 +47,13 @@ namespace RiceAlumni.Events
                 .Column<bool>("RegistrationRequired")
                 .Column<int>("LocationPartRecord_Id")
                 .Column<int>("EventContactRecord_Id")
+                );
+
+            ContentDefinitionManager.AlterTypeDefinition("Event", type => type
+                .Creatable()
+                .WithPart("EventPart")
+                .WithPart("ContainablePart")
+                .WithPart("CommonPart")
                 );
 
             return 1;

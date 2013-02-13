@@ -90,7 +90,6 @@
   <ItemGroup>
     <Compile Include="AdminMenu.cs" />
     <Compile Include="Drivers\HomepagePartDriver.cs" />
-    <Compile Include="Drivers\LongPartnerBannerDriver.cs" />
     <Compile Include="Handlers\HomepageHandler.cs" />
     <Compile Include="Migrations.cs" />
     <Compile Include="Models\HomepagePart.cs" />
