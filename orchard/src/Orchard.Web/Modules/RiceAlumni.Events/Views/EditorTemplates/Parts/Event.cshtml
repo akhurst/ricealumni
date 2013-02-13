@@ -1,0 +1,11 @@
+﻿<h1>Event Editor BLA BLA BLA</h1>
+
+@model RiceAlumni.Events.Models.EventPart
+
+<fieldset>
+	<legend>@T("Details")</legend>
+    @Html.LabelFor(m=>m.Title)
+    @Html.TextBoxFor(m=>m.Title)
+    @Html.LabelFor(m=>m.Description)
+    @Html.TextAreaFor(m => m.Description)
+</fieldset>
