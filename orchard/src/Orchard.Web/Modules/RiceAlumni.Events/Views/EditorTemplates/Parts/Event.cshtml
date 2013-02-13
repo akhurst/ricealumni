@@ -1,11 +1,20 @@
 ﻿<h1>Event Editor BLA BLA BLA</h1>
 
 @model RiceAlumni.Events.Models.EventPart
-
 <fieldset>
-	<legend>@T("Details")</legend>
-    @Html.LabelFor(m=>m.Title)
-    @Html.TextBoxFor(m=>m.Title)
-    @Html.LabelFor(m=>m.Description)
+    <legend>@T("Details")</legend>
+    @Html.LabelFor(m => m.Title)
+    @Html.TextBoxFor(m => m.Title)
+    @Html.LabelFor(m => m.Description)
     @Html.TextAreaFor(m => m.Description)
+    @Html.LabelFor(m => m.LinkText)
+    @Html.TextBoxFor(m => m.LinkText)
+    @Html.LabelFor(m => m.LinkTarget)
+    @Html.TextBoxFor(m => m.LinkTarget)
+    @Html.LabelFor(m => m.StartDate)
+    @Html.TextBoxFor(m => m.StartDate)
+    @Html.LabelFor(m => m.ContactEmail)
+    @Html.TextBoxFor(m => m.ContactEmail)
+    @Html.LabelFor(m => m.RegistrationRequired)
+    @Html.CheckBoxFor(m => m.RegistrationRequired)
 </fieldset>

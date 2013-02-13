@@ -84,14 +84,15 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminMenu.cs" />
     <Compile Include="Controllers\CalendarController.cs" />
     <Compile Include="Drivers\EventPartDriver.cs" />
     <Compile Include="Handlers\EventHandler.cs" />
     <Compile Include="Migrations.cs" />
-    <Compile Include="Models\EventContactPart.cs" />
-    <Compile Include="Models\EventContactRecord.cs" />
+    <Compile Include="Models\EventDTO.cs" />
     <Compile Include="Models\EventPart.cs" />
     <Compile Include="Models\EventPartRecord.cs" />
+    <Compile Include="Models\LocationDTO.cs" />
     <Compile Include="Models\LocationPart.cs" />
     <Compile Include="Models\LocationPartRecord.cs" />
     <Compile Include="ResourceManifest.cs" />

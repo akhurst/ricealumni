@@ -28,16 +28,9 @@ namespace RiceAlumni.Events
                 .Column<double>("Longitude")
             );
 
-            SchemaBuilder.CreateTable("EventContactRecord", tableBuilder =>
-                tableBuilder.ContentPartRecord()
-                .Column<string>("Name")
-                .Column<string>("Email")
-                .Column<long>("Phone")
-                );
-
-            SchemaBuilder.CreateTable("EventPartRecord", tableBuilder =>
-                tableBuilder.Column<DateTime>("StartDate")
+            SchemaBuilder.CreateTable("EventPartRecord", tableBuilder => tableBuilder
                 .ContentPartRecord()
+                .Column<DateTime>("StartDate")
                 .Column<DateTime>("EndDate")
                 .Column<string>("LinkTarget")
                 .Column<string>("LinkText")
@@ -47,14 +40,15 @@ namespace RiceAlumni.Events
                 .Column<bool>("RegistrationRequired")
                 .Column<int>("Location_Id")
                 .Column<int>("Contact_Id")
-                );
+                .Column<string>("ContactEmail")
+            );
 
             ContentDefinitionManager.AlterTypeDefinition("Event", type => type
                 .Creatable()
                 .WithPart("EventPart")
                 .WithPart("ContainablePart")
                 .WithPart("CommonPart")
-                );
+            );
 
             return 1;
         }

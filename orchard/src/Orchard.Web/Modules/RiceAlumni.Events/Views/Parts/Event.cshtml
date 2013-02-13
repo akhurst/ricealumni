@@ -1,1 +1,29 @@
-﻿<h1>nothing here</h1>
+﻿<div>
+    <table>
+        <tbody>
+            <tr>
+                <td>Title: </td>
+                <td>@Model.EventPart.Title</td>
+                <td>Description: </td>
+                <td>@Model.EventPart.Description</td>
+            </tr>
+            <tr>
+                <td>Link Text:</td>
+                <td>@Model.EventPart.LinkText</td>
+                <td>Link Target:</td>
+                <td>@Model.EventPart.LinkTarget</td>
+            </tr>
+            <tr>
+                <td>Date:</td>
+                <td>@Model.EventPart.StartDate.ToString("MM/dd/yy")</td>
+                <td>Contact Email Address</td>
+                <td>@Model.EventPart.ContactEmail</td>
+            </tr>
+            <tr>
+                <td>Registration Required:</td>
+                <td>@(Model.EventPart.RegistrationRequired ? "Yes" : "No")
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
