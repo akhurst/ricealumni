@@ -5,13 +5,13 @@ namespace RiceAlumni.Events.Models
 {
     public class EventPart : ContentPart<EventPartRecord>
     {
-        public virtual DateTime StartDate
+        public virtual DateTime? StartDate
         {
             get { return Record.StartDate; }
             set { Record.StartDate = value; }
         }
 
-        public virtual DateTime EndDate
+        public virtual DateTime? EndDate
         {
             get { return Record.EndDate; }
             set { Record.EndDate = value; }

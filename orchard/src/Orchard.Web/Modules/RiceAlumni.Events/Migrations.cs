@@ -41,12 +41,12 @@ namespace RiceAlumni.Events
                 .Column<DateTime>("EndDate")
                 .Column<string>("LinkTarget")
                 .Column<string>("LinkText")
-                .Column<int>("PciEvent")
+                .Column<int>("PciEventId")
                 .Column<string>("Title")
                 .Column<string>("Description")
                 .Column<bool>("RegistrationRequired")
-                .Column<int>("LocationPartRecord_Id")
-                .Column<int>("EventContactRecord_Id")
+                .Column<int>("Location_Id")
+                .Column<int>("Contact_Id")
                 );
 
             ContentDefinitionManager.AlterTypeDefinition("Event", type => type
