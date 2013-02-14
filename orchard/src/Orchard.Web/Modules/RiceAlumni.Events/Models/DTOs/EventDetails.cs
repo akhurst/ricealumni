@@ -3,27 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace RiceAlumni.Events.Models
+namespace RiceAlumni.Events.Models.DTOs
 {
-    public class EventDTO
+    public class EventDetails
     {
-        public EventDTO() { }
-        public EventDTO(EventPart eventPart)
-            : this()
-        {
-            StartDate = eventPart.StartDate;
-            EndDate = eventPart.EndDate;
-            LinkTarget = eventPart.LinkTarget;
-            LinkText = eventPart.LinkText;
-            PciEventId = eventPart.PciEventId;
-            Title = eventPart.Title;
-            Description = eventPart.Description;
-            Location = new LocationDTO(eventPart.Location);
-            ContactEmail = eventPart.ContactEmail;
-            RegistrationRequired = eventPart.RegistrationRequired;
-        }
+        public EventDetails() { }
+        public EventDetails(EventPart eventPart)
+            : this(eventPart.Record) { }
 
-        public EventDTO(EventPartRecord eventPartRecord)
+        public EventDetails(EventPartRecord eventPartRecord)
             : this()
         {
             StartDate = eventPartRecord.StartDate;
@@ -33,11 +21,10 @@ namespace RiceAlumni.Events.Models
             PciEventId = eventPartRecord.PciEventId;
             Title = eventPartRecord.Title;
             Description = eventPartRecord.Description;
-            Location = new LocationDTO(eventPartRecord.Location);
             ContactEmail = eventPartRecord.ContactEmail;
             RegistrationRequired = eventPartRecord.RegistrationRequired;
+            
         }
-
 
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
@@ -46,9 +33,8 @@ namespace RiceAlumni.Events.Models
         public int PciEventId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public LocationDTO Location { get; set; }
         public string ContactEmail { get; set; }
         public bool RegistrationRequired { get; set; }
-
+        public Location Location { get; set; }
     }
 }

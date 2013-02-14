@@ -38,15 +38,13 @@ namespace RiceAlumni.Events
                 .Column<string>("Title")
                 .Column<string>("Description")
                 .Column<bool>("RegistrationRequired")
-                .Column<int>("Location_Id")
-                .Column<int>("Contact_Id")
                 .Column<string>("ContactEmail")
             );
 
             ContentDefinitionManager.AlterTypeDefinition("Event", type => type
                 .Creatable()
                 .WithPart("EventPart")
-                .WithPart("ContainablePart")
+                .WithPart("LocationPart")
                 .WithPart("CommonPart")
             );
 

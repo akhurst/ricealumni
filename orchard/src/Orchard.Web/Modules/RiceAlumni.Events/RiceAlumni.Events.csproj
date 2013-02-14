@@ -66,6 +66,7 @@
   <ItemGroup>
     <Content Include="Scripts\calendar.js" />
     <Content Include="Scripts\knockout-2.2.1.js" />
+    <Content Include="Styles\eventsAdmin.css" />
     <Content Include="Web.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Scripts\Web.config" />
@@ -87,16 +88,20 @@
     <Compile Include="AdminMenu.cs" />
     <Compile Include="Controllers\CalendarController.cs" />
     <Compile Include="Drivers\EventPartDriver.cs" />
+    <Compile Include="Drivers\LocationPartDriver.cs" />
     <Compile Include="Handlers\EventHandler.cs" />
+    <Compile Include="Handlers\LocationHandler.cs" />
     <Compile Include="Migrations.cs" />
-    <Compile Include="Models\EventDTO.cs" />
+    <Compile Include="Models\DTOs\Event.cs" />
+    <Compile Include="Models\DTOs\EventDetails.cs" />
     <Compile Include="Models\EventPart.cs" />
     <Compile Include="Models\EventPartRecord.cs" />
-    <Compile Include="Models\LocationDTO.cs" />
+    <Compile Include="Models\DTOs\Location.cs" />
     <Compile Include="Models\LocationPart.cs" />
     <Compile Include="Models\LocationPartRecord.cs" />
     <Compile Include="ResourceManifest.cs" />
     <Compile Include="Routes.cs" />
+    <Content Include="Scripts\Location.js" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Calendar\Index.cshtml" />
@@ -109,6 +114,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Placement.info" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Parts\Location.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts\Location.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

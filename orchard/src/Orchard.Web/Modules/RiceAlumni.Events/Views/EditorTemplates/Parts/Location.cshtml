@@ -1,0 +1,42 @@
+﻿@model RiceAlumni.Events.Models.LocationPart
+<fieldset>
+    <legend>@T("Location Details")</legend>
+    <table>
+        <tbody>
+            <tr>
+                <td>@Html.LabelFor(m => m.Name)</td>
+                <td>@Html.TextBoxFor(m => m.Name)</td>
+                <td>@Html.LabelFor(m => m.Room)</td>
+                <td>@Html.TextBoxFor(m => m.Room)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.Building)</td>
+                <td>@Html.TextBoxFor(m => m.Building)</td>
+                <td>@Html.LabelFor(m => m.Address1)</td>
+                <td>@Html.TextBoxFor(m => m.Address1)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.Address2)</td>
+                <td>@Html.TextBoxFor(m => m.Address2)</td>
+                <td>@Html.LabelFor(m => m.City)</td>
+                <td>@Html.TextBoxFor(m => m.City)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.State)</td>
+                <td>@Html.TextBoxFor(m => m.State)</td>
+                <td>@Html.LabelFor(m => m.Zip)</td>
+                <td>@Html.TextBoxFor(m => m.Zip)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.Latitude)</td>
+                <td>@Html.TextBoxFor(m => m.Latitude)</td>
+                <td>@Html.LabelFor(m => m.Longitude)</td>
+                <td>@Html.TextBoxFor(m => m.Longitude)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.MapUrl)</td>
+                <td>@Html.TextBoxFor(m => m.MapUrl)</td>
+            </tr>
+        </tbody>
+    </table>
+</fieldset>

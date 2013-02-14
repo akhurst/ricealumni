@@ -8,11 +8,11 @@ using RiceAlumni.Events.Models;
 
 namespace RiceAlumni.Events.Handlers
 {
-    public class EventHandler : ContentHandler
+    public class LocationHandler : ContentHandler
     {
-        public EventHandler(IRepository<EventPartRecord> eventPartRepository)
+        public LocationHandler(IRepository<LocationPartRecord> locationPartRepository)
         {
-            Filters.Add(StorageFilter.For(eventPartRepository));
+            Filters.Add(StorageFilter.For(locationPartRepository));
         }
     }
 }

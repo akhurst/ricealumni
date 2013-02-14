@@ -1,10 +1,12 @@
 ﻿using System;
 using Orchard.ContentManagement;
+using System.ComponentModel.DataAnnotations;
 
 namespace RiceAlumni.Events.Models
 {
     public class EventPart : ContentPart<EventPartRecord>
     {
+        [Required(ErrorMessage="We need a date for the event.")]
         public virtual DateTime? StartDate
         {
             get { return Record.StartDate; }
@@ -35,22 +37,18 @@ namespace RiceAlumni.Events.Models
             set { Record.PciEventId = value; }
         }
 
+        [Required(ErrorMessage = "We need a title for the event.")]
         public virtual string Title
         {
             get { return Record.Title; }
             set { Record.Title = value; }
         }
 
+        [Required(ErrorMessage = "Give us a few words to describe the event.")]
         public virtual string Description
         {
             get { return Record.Description; }
             set { Record.Description = value; }
-        }
-
-        public virtual LocationPartRecord Location
-        {
-            get { return Record.Location; }
-            set { Record.Location = value; }
         }
 
         public virtual string ContactEmail

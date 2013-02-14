@@ -3,30 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace RiceAlumni.Events.Models
+namespace RiceAlumni.Events.Models.DTOs
 {
-    public class LocationDTO
+    public class Location
     {
-        public LocationDTO() { }
-        public LocationDTO(LocationPart locationPart)
-            : this()
-        {
-            if (locationPart == null) return;
+        public Location() { }
+        public Location(LocationPart locationPart)
+            : this(locationPart.Record) { }
 
-            Name = locationPart.Name;
-            Building = locationPart.Building;
-            Room = locationPart.Room;
-            Address1 = locationPart.Address1;
-            Address2 = locationPart.Address2;
-            City = locationPart.City;
-            State = locationPart.State;
-            Zip = locationPart.Zip;
-            MapUrl = locationPart.MapUrl;
-            Latitude = locationPart.Latitude;
-            Longitude = locationPart.Longitude;
-        }
-
-        public LocationDTO(LocationPartRecord locationPartRecord)
+        public Location(LocationPartRecord locationPartRecord)
             : this()
         {
             if (locationPartRecord == null) return;
