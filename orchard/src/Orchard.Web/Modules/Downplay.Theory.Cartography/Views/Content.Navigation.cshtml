@@ -1,0 +1,12 @@
+﻿@using Orchard.Utility.Extensions;
+@{
+    var contentTypeClassName = ((string)Model.ContentItem.ContentType).HtmlClassify();
+}
+<li class="menu-item@{if(Model.IsCurrent){<text> current</text>}}">
+    <a href="@Model.Url">@if (Model.Header != null) {
+        @Display(Model.Header);
+    }</a>
+    @if (Model.Meta!=null) { @Display(Model.Meta); }
+    @if (Model.Content!=null) { @Display(Model.Content); }
+    @if (Model.Footer!=null) { @Display(Model.Footer); }
+</li>

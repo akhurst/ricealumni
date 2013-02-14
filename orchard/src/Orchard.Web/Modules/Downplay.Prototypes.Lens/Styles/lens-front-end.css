@@ -1,0 +1,22 @@
+﻿.lens-finder 
+{
+    position:relative;
+}
+.lens-finder .lens-finder-results 
+{
+    position:absolute;
+    width:auto;
+    height:620px;
+    overflow:auto;
+    display:none;
+    background-color:#fff;
+}
+.lens-finder .lens-finder-results .content-item
+{
+    /* float:left; */
+}
+/* Testing selection */
+.lens-finder .selected 
+{
+    background-color:#ccf;
+}

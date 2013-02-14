@@ -1,0 +1,10 @@
+@using Downplay.Mechanics
+@{
+    IEnumerable<String> roles = Model.Roles;
+}
+@if (Model.Roles != null)
+{
+<div class="effective-roles">
+    @roles.Loop(@<text>@item</text>, @<text>, </text>)
+</div>
+}

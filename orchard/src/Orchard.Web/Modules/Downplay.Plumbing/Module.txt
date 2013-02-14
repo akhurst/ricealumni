@@ -1,0 +1,18 @@
+Name: Plumbing
+AntiForgery: enabled
+Author: Pete Hurst, Downplay Design
+Website: http://scienceproject.codeplex.com
+Version: 0.5
+OrchardVersion: 1.4
+Description: 
+Features:
+	Downplay.Plumbing:
+		Name: Plumbing
+        Description: Interacts with Autoroute allowing relationship-to-url mapping
+		Category: Science
+		Dependencies: Downplay.Mechanics,Downplay.Alchemy.ContentDisplay
+	Downplay.Plumbing.UrlHierarchy:
+		Name: Plumbing: Url Hierarchy
+		Description: Allows a hierarchical set of Urls to be generated
+		Category: Science
+		Dependencies: Downplay.Plumbing,Orchard.Autoroute,Orchard.Tokens

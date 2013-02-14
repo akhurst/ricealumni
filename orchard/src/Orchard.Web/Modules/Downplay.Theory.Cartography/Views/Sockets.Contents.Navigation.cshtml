@@ -1,0 +1,11 @@
+﻿@{
+    var items = Enumerable.Empty<dynamic>();
+    if (Model.Contents!=null) {
+        items = Model.Contents;
+    }
+}
+<ul class="socket-contents">
+@foreach (var item in items) {
+    @Display(item)
+}
+</ul>

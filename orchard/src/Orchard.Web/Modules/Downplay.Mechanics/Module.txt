@@ -1,0 +1,25 @@
+Name: Mechanics
+AntiForgery: disabled
+Author: Pete Hurst, Downplay Design
+Website: http://scienceproject.codeplex.com/wikipage?title=Mechanics
+Version: 0.9.9998
+OrchardVersion: 1.5
+Description: A framework for creating many-to-many relationships (connectors) between content items, and other features
+Category: Science
+Dependencies: Downplay.Origami, Contents, Common, Orchard.ContentTypes, Orchard.Alias
+Features:
+	Downplay.Mechanics:
+		Name: Mechanics
+		Description: Provides the ConnectorPart and SocketsPart for defining many-to-many content relationships
+		Category: Science
+		Dependencies: Downplay.Origami, Contents, Common, Orchard.ContentTypes, Title
+	Downplay.Mechanics.Impulses:
+		Name: Mechanics: Impulses
+		Description: Javascript-driven system for adding extra link actions (and other UI) to content "manage actions" wrapper
+		Dependencies: Downplay.Mechanics, Contents, Orchard.Widgets, Downplay.Delta
+		Category: Science
+	Downplay.Mechanics.Paperclips:
+		Name: Mechanics: Paperclips
+		Description: Provides a PaperclipPart which you can add to your connectors, which will clip related content to zones.
+		Dependencies: Downplay.Mechanics
+		Category: Science

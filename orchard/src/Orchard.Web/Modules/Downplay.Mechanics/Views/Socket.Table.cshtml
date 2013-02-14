@@ -1,0 +1,22 @@
+﻿@using Orchard.Utility.Extensions;
+@{
+    
+    // TABLE LAYOUT
+    // Each socket is a table
+    // Each connector/content item is rendered on a row
+    // Each zone in the row is a <td/> ... so you can use placement to choose which columns things go in
+    
+    string connectorType = Model.ConnectorType;
+    var connectorTypeClass = connectorType.HtmlClassify();
+}
+    <table class="socket view-socket @connectorTypeClass socket-@connectorTypeClass">
+        @if (Model.Header != null) {
+            @Display(Model.Header)
+        }
+        @if (Model.Body != null) {
+            @Display(Model.Body)
+        }
+        @if (Model.Footer != null) {
+            @Display(Model.Footer)
+        }
+    </table>

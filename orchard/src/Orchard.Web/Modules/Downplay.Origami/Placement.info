@@ -1,0 +1,6 @@
+<Placement>
+    <Match DisplayType="Detail">
+        <!-- For an unknown reason the following (completely empty!) part is displayed by Core.Contents. This messed up the ability to hide an empty content zone! -->
+        <Place Parts_Contents_Publish="-"/>
+    </Match>
+</Placement>

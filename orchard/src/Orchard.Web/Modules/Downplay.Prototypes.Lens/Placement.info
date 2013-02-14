@@ -1,0 +1,30 @@
+<Placement>
+  <Match Mode="Editor">
+    <Match Paradigm="Lens">
+        <!-- 
+        <Place Socket_Finders_SingleChoiceList="-"></Place>
+        <Place Socket_Finders_MultipleChoiceList="-"></Place>
+        -->
+      <Place Socket_Finders_LensSearch="Finders:5"></Place>
+    </Match>
+    <Match Paradigm="Search">
+        <!-- 
+        <Place Socket_Finders_SingleChoiceList="-"></Place>
+        <Place Socket_Finders_MultipleChoiceList="-"></Place>
+        -->
+        <Place Socket_Finders_Search="-"></Place>
+      <Place Socket_Finders_LensSearch="Finders:5"></Place>
+    </Match>
+  </Match>
+
+  <!-- Display results from Lens -->
+  <Match Paradigm="LensResult">
+    <Place Socket="-"></Place>
+    <Place Parts_Stars="-"></Place>
+    <Place Parts_Title_Summary="Header:1"></Place>
+    <Match Paradigm="LensSocket">
+    </Match>
+    <Match Paradigm="LensSearch">
+    </Match>
+  </Match>
+</Placement>

@@ -1,0 +1,15 @@
+<Placement>
+  <Place Parts_EffectiveRoles="Content:10"/>
+  <Place Parts_EffectiveRoles_Edit="Content:10"/>
+  <Place Connector_Editors_EffectiveRoles="Editors:5"/>
+  <!-- Hide users with permissions for content -->
+  <Place Socket-ContentToEffectingUser="-"/>
+  <!-- Hide groups that content is a member of -->
+  <Place Socket-GroupContentToGroup="-"/>
+  <Match DisplayType="SummaryAdminConnector">
+    <Match ContentType="User">
+      <Place Parts_UserName="Content:1"></Place>
+    </Match>
+    <Place Parts_EffectiveRoles="-"></Place>
+  </Match>
+</Placement>

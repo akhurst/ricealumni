@@ -1,0 +1,13 @@
+﻿@using Downplay.Mechanics.Impulses
+@{
+    IImpulse impulse = Model.Impulse;
+
+    // TODO: Following attribute setup should be done from a shape table provider so it's easier to override the template
+    var tag = Tag(Model, "a");
+    tag.Attributes["href"] = Url.RouteUrl(impulse.HrefRoute);
+    tag.Attributes["data-impulse"] = "true";
+    tag.Attributes["data-impulse-name"] = impulse.Name;
+}
+@tag.StartElement
+    @impulse.Caption
+@tag.EndElement

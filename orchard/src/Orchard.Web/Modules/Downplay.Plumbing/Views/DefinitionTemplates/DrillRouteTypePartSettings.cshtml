@@ -1,0 +1,11 @@
+@model Downplay.Plumbing.Settings.DrillRouteTypePartSettings
+@using Orchard.ContentManagement;
+
+<fieldset>
+        <div>
+            @Html.LabelFor(m => m.DrilledDisplayType, @T("Display type when drilled"))
+            @Html.EditorFor(m => m.DrilledDisplayType)
+            <span class="hint">@T("When the right-hand content item is accessed through a drilled route, it will be elevated to this content type")</span>
+            @Html.ValidationMessageFor(m => m.DrilledDisplayType, "*")
+        </div>
+</fieldset>

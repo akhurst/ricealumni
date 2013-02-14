@@ -1,0 +1,14 @@
+﻿@{
+    var items = Enumerable.Empty<dynamic>();
+    if (Model.Contents!=null) {
+        items = Model.Contents;
+    }
+    var max = items.Count();
+    var cur = 0;
+}
+<p class="socket-content socket-content-links">
+@foreach (var item in items) {
+    cur++;
+    @Display(item)@((cur < max)?", ":"")@* Slightly fruity formatting to eliminate spaces from HTML *@
+}
+</p>

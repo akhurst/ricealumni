@@ -1,0 +1,8 @@
+@model Downplay.Mechanics.Models.SequencePart
+@using Orchard.ContentManagement;
+
+        <div class="sequence-edit">
+            @Html.LabelFor(m => m.Sequence, @T("Sequence"))
+            @Html.EditorFor(m => m.Sequence)
+            @Html.ValidationMessageFor(m => m.Sequence, "*")
+        </div>

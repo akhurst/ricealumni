@@ -1,0 +1,9 @@
+﻿@{
+    IEnumerable<dynamic> items = Model.ListItems;
+}
+@if (Model.Title != null) {
+<h1>@T(Model.Title)</h1>
+}
+@foreach (var item in items) {
+    @Display(item)
+}

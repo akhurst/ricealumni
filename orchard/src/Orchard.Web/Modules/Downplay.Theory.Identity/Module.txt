@@ -1,0 +1,13 @@
+Name: Theory: Identity
+AntiForgery: enabled
+Author: Pete Hurst, Downplay Design
+Website: http://scienceproject.codeplex.com/wikipage?title=Identity
+Version: 0.9.5
+OrchardVersion: 1.1.30
+Description: Provides a browsable directory by Country and Region and additionally a Postal Code search. By adding the "Address Directory" part to a content type, your content will be included on the appropriate page of the directory.
+Features:
+    Downplay.Theory.Identity:
+		Name: Theory: Identity
+        Description: Country, Region and Postal Code directory and search functions. 
+		Category: Science
+		Dependencies: Contents,Downplay.Mechanics

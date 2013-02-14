@@ -1,0 +1,19 @@
+Name: Origami
+AntiForgery: enabled
+Author: Pete Hurst, Downplay Design
+Website: http://scienceproject.codeplex.com/wikipage?title=Origami
+Version: 0.9.9
+OrchardVersion: 1.4
+Description: Shape folding API
+Category: Science
+Features:
+    Downplay.Origami:
+        Name: Origami
+        Description: Shape folding API. Note: requires Orchard.Roles due to Role matching in Placement. This may move.
+        Category: Science
+        Dependencies: Orchard.Roles,Shapes,Contents
+    Downplay.Origami.ZoneProxy:
+        Name: Origami: Zone Proxy
+        Decription: Allows you to push content parts into the Layout zones using placement: Parts_My_Part="Layout@Navigation:5"
+        Category: Science
+        Dependencies: Contents,Shapes

@@ -1,0 +1,8 @@
+﻿@model Downplay.Mechanics.ViewModels.ConnectorBatchOperationViewModel
+<div class="socket-creator batch-operations">
+    @Html.LabelFor(o => o.BatchCommand, T("With selected:"))
+    @Html.DropDownListFor(o=>o.BatchCommand, Model.BatchCommandList)
+    @Html.ValidationMessageFor(o => o.BatchCommand, "*")
+    @* TODO: Trigger AJAX operation and update
+    <input type="submit" name="@Html.FieldNameFor(o=>o.AddChoiceSubmit)" value="Add" /> *@
+</div>

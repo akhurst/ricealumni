@@ -1,0 +1,16 @@
+@model Downplay.Mechanics.Models.PaperclipPart
+@using Orchard.ContentManagement;
+
+<fieldset>
+    <legend>@T("Paperclip settings")</legend>
+        <div>
+            @Html.LabelFor(m => m.Placement, @T("Placement"))
+            @Html.EditorFor(m => m.Placement)
+            @Html.ValidationMessageFor(m => m.Placement, "*")
+        </div>
+        <div>
+            @Html.LabelFor(m => m.DisplayType, @T("DisplayType"))
+            @Html.EditorFor(m => m.DisplayType)
+            @Html.ValidationMessageFor(m => m.DisplayType, "*")
+        </div>
+</fieldset>

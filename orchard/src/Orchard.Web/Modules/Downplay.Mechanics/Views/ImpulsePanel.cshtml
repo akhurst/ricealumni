@@ -1,0 +1,18 @@
+﻿@using Orchard.ContentManagement;
+@using Orchard.Core.Contents;
+@using Downplay.Mechanics;
+@using Downplay.Mechanics.Impulses;
+@{
+    ContentItem content = Model.ContentItem;
+}
+@if (Model.Impulses != null)
+{
+    <div class="impulse-panel">
+        @{
+    IEnumerable<dynamic> actions = Model.Impulses;
+            <text>@actions.Loop(
+            @<text>@Display(item)</text>,
+            @<text> | </text>)</text>
+        }
+    </div>
+}

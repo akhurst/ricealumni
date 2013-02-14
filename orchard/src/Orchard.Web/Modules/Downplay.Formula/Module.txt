@@ -1,0 +1,16 @@
+Name: Formula
+AntiForgery: enabled
+Author: Pete Hurst, Downplay Design
+Website: http://scienceproject.codeplex.com
+Version: 0.1
+OrchardVersion: 1.3
+Description: Auto generate forms from models. TODO: Move to prototypes?
+Features:
+    Downplay.Formula:
+		Name: Formula
+        Description: Auto generate forms from models.
+		Category: Science
+	Downplay.Formula.UserInterface:
+		Name: Formula: UI
+		Description: Build forms in the Admin UI.
+		Category: Science

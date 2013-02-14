@@ -1,0 +1,9 @@
+﻿@model Downplay.Theory.Cartography.Aggregation.AggregationTypePartSettings
+<fieldset>
+    <div>
+        @Html.LabelFor(x=>x.ExposeFeed, T("Expose RSS Feed"))
+        @Html.CheckBoxFor(x=>x.ExposeFeed)
+        <span class="hint">@T("Exposes feeds from items if they support this connector type")</span>
+        @Html.ValidationMessageFor(m => m.ExposeFeed, "*")
+    </div>
+</fieldset>

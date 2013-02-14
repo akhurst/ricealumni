@@ -1,0 +1,33 @@
+﻿@model dynamic
+@using Orchard.Utility.Extensions;
+@{
+}
+    <div class="lens">
+        <header>
+            <h2>Search</h2>
+        </header>
+        @if (Model.Filters != null) {
+            <div class="lens-filters">
+                <h3>Filter</h3>
+                @Display(Model.Filters)
+            </div>
+        }
+        @if (Model.Sorters != null) {
+            <div class="lens-sorters">
+                <h3>Sort</h3>
+                @Display(Model.Sorters)
+            </div>
+        }
+        @if (Model.Results != null) {
+            <div class="lens-results">
+                <h3>Results</h3>
+                @Display(Model.Results)
+            </div>
+        }
+        @if (Model.Commands != null) {
+            <div class="lens-commands">
+                <h3>Commands</h3>
+                @Display(Model.Commands)
+            </div>
+        }
+    </div>

@@ -1,0 +1,43 @@
+Name: Alchemy
+AntiForgery: enabled
+Author: Pete Hurst, Downplay Design
+Website: http://scienceproject.codeplex.com
+Version: 0.6
+OrchardVersion: 1.4
+Description: High sorcery
+Features:
+    Downplay.Alchemy:
+        Name: Alchemy
+        Description: The base Alchemy library providing a flexibile system of piping data, context, and code through arbitrary processes
+        Category: Science: Alchemy
+        Dependencies: Downplay.Origami
+    Downplay.Alchemy.ContentLists:
+        Name: Alchemy: Content Lists
+        Description: Allows content lists to be generated and displayed through Alchemy routes
+        Dependencies: Contents,Downplay.Origami,Downplay.Alchemy
+        Category: Science: Alchemy
+    Downplay.Alchemy.ContentDisplay:
+        Name: Alchemy: Content Display
+        Description: Causes content to be displayed through the Alchemy controller. This should be identical to normal display, but some modules may depend on this to provide new behaviour.
+        Dependencies: Contents,Downplay.Origami,Downplay.Alchemy
+        Category: Science: Alchemy
+    Downplay.Alchemy.ContentEditor:
+        Name: Alchemy: Content Editing
+        Description: Content will now be edited with the Alchemy controller. This should be identical to normal editing, but some modules may depend on this to provide new behaviour.
+        Dependencies: Contents,Downplay.Origami,Downplay.Alchemy
+        Category: Science: Alchemy
+    Downplay.Alchemy.FrontEndEditor:
+        Name: Alchemy: Front End Editing
+        Description: Content will now be edited in the front end. Note - some parts may not support front end UI very well!
+        Dependencies: Downplay.Alchemy.ContentEditor
+        Category: Science: Alchemy
+    Downplay.Alchemy.LayoutDisplay:
+        Name: Alchemy: Layout Display
+        Description: Causes *all* content parts to be by default pushed directly to Layout, instead of generating the Content shape
+        Dependencies: Downplay.Alchemy.ContentDisplay,Contents,Shapes,Downplay.Origami,Downplay.Alchemy
+        Category: Science: Alchemy
+    Downplay.Alchemy.ContentTypeRoutes:
+        Name: Alchemy: Content Type Routes
+        Description: (Not working) Creates routes for "view all content of a type", every time you save a piece of content
+        Dependencies: Orchard.Autoroute, Downplay.Alchemy.ContentLists
+        Category: Science: Alchemy

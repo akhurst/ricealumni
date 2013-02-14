@@ -1,0 +1,34 @@
+﻿nav li
+{
+    position:relative;
+}
+nav li .impulse-panel
+{
+    position:absolute;
+    right:0;
+    bottom:100%;
+    font-size:8px;
+    background-color:#fff;
+    display:none;
+}
+nav li:hover .impulse-panel 
+{
+    display:block;
+}
+nav li:hover li .impulse-panel 
+{
+    display:none;
+}
+nav li:hover li:hover .impulse-panel 
+{
+    display:block;
+}
+nav li .impulse-panel a 
+{
+    display:inline;
+    float:none;
+    padding:0 3px;
+    line-height:normal;
+}
+
+

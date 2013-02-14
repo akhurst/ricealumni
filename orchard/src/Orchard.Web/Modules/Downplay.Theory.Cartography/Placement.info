@@ -1,0 +1,62 @@
+﻿<Placement>
+  <Match Mode="Display">
+    <!-- Hide Menu connectors under normal circumstances -->
+    <Place Socket-MenuParent="-"></Place>
+    <Place Socket-MenuRootToSite="-"></Place>
+    <Place Socket-MenuChild="-"></Place>
+    <Place Socket-TopicToSite="-"></Place>
+    <Place Socket-ContentToTopic="-"></Place>
+    <Match Paradigm="Navigation">
+      <!-- Show and hide various parts -->
+      <Place Parts_Title="-"></Place>
+      <Place Parts_Title_Summary="-"></Place>
+      <Place Parts_RoutableTitle="-"></Place>
+      <Place Parts_RoutableTitle_Summary="-"></Place>
+      <Place Parts_Common_Body="-"></Place>
+      <Place Parts_Common_Body_Summary="-"></Place>
+      <Place Parts_Common_Metadata_Summary="-"></Place>
+        <Place Parts_Stars="-"/>
+      <!-- Hide most sockets -->
+      <Place Socket="-"></Place>
+      <Place Sockets_SocketTitle="-"></Place>
+      <!-- Using Flat display, so must hide connector-->
+      <Place Parts_Connector="-"></Place>
+      <!-- Show menu socket -->
+      <Place Socket-SiteToMenuRoot="Content:2;cache=false"></Place>
+      <Place Socket-SiteToTopic="Content:2"></Place>
+      <Place Socket-MenuChild="Content:2"></Place>
+      <Place Sockets_Contents_Connectors="-"></Place>
+      <Place Sockets_Contents_Flat="Content:5;alternate=Sockets_Contents_Navigation"></Place>
+
+      <!-- Show connectors -->
+      <Match ContentType="SiteToMenuRoot">
+        <Place Parts_Title_Summary="Header:1;Alternate=Parts_Title_Navigation"></Place>
+        <Place Parts_RoutableTitle_Summary="Header:1;Alternate=Parts_RoutableTitle_Navigation"></Place>
+      </Match>
+      <Match ContentType="Topic">
+        <Place Parts_Title_Summary="Header:1;Alternate=Parts_Title_Navigation"></Place>
+        <Place Parts_RoutableTitle_Summary="Header:1;Alternate=Parts_RoutableTitle_Navigation"></Place>
+      </Match>
+      <Match ContentType="MenuChild">
+        <Place Parts_Title_Summary="Header:1;Alternate=Parts_Title_Navigation"></Place>
+        <Place Parts_RoutableTitle_Summary="Header:1;Alternate=Parts_RoutableTitle_Navigation"></Place>
+      </Match>
+      <!-- Hide edit options -->
+      <Place ImpulsePanel="-"></Place>
+    </Match>
+    <Match Paradigm="NavigationChild">
+      <Place Socket-MenuChild="Content:2;alternate=Socket_NavigationChild"></Place>
+        <Match Paradigm="Empty">
+            <Place Socket-MenuChild="-"/>
+        </Match>
+    </Match>
+
+    <!-- Handle topic links in Detail mode -->
+    <Match DisplayType="Detail">
+      <Match ConnectorContentType="ContentToTopic">
+        <Place Sockets_Contents_Connectors="-"/>
+        <Place Sockets_Contents_Links="Content:10"/>
+      </Match>
+    </Match>
+  </Match>
+</Placement>

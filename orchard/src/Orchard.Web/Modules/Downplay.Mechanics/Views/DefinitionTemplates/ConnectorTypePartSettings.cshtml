@@ -1,0 +1,75 @@
+﻿@model Downplay.Mechanics.Settings.ConnectorTypePartSettings
+<fieldset>
+    <div>
+        @Html.LabelFor(x=>x.AllowMany, T("Allow many"))
+        @Html.CheckBoxFor(x=>x.AllowMany)
+        <span class="hint">@T("Allows many of these connectors to exist for a single left-hand item. Setting this to false will create a one-to-one or one-to-many relationship (depending on the inverse connector).")</span>
+        @Html.ValidationMessageFor(m => m.AllowMany, "*")
+    </div>
+    <div>
+        @Html.LabelFor(x=>x.AllowNone, T("Allow none"))
+        @Html.CheckBoxFor(x => x.AllowNone)
+        <span class="hint">@T("Requires at least one of these connectors to exist for a single left-hand item")</span>
+        @Html.ValidationMessageFor(m => m.AllowNone, "*")
+    </div>
+    <div>
+        @Html.LabelFor(x=>x.AllowDuplicates, T("Allow duplicates"))
+        @Html.CheckBoxFor(x => x.AllowDuplicates)
+        <span class="hint">@T("Allow the same item to be connected many times")</span>
+        @Html.ValidationMessageFor(m => m.AllowDuplicates, "*")
+    </div>
+    <div>
+        @Html.LabelFor(x=>x.AllowedContentLeft, T("Allowed content (left)"))
+        @Html.TextBoxFor(x=>x.AllowedContentLeft)
+        <span class="hint">@T("Comma or space-separated list of content type Ids that will be allowed on the left-hand side of the connection")</span>
+        @Html.ValidationMessageFor(m => m.AllowedContentLeft, "*")
+    </div>
+    <div>
+        @Html.LabelFor(x => x.AllowedContentRight, T("Allowed content (right)"))
+        @Html.TextBoxFor(x=>x.AllowedContentRight)
+        <span class="hint">@T("Comma or space-separated list of content type Ids that will be allowed on the right-hand side of the connection")</span>
+        @Html.ValidationMessageFor(m => m.AllowedContentRight, "*")
+    </div>
+    <div>
+        @Html.LabelFor(x=>x.InverseConnectorType, T("Inverse connector type"))
+        @Html.TextBoxFor(x=>x.InverseConnectorType)
+        <span class="hint">@T("Name of the connector type that will act as the inverse of this one. An inverse connector will be automatically created for all connections. A connector can also be its own inverse.")</span>
+        @Html.ValidationMessageFor(m => m.InverseConnectorType, "*")
+    </div>
+    <div>
+        @Html.LabelFor(x => x.DefaultParadigms, T("Default paradigms"))
+        @Html.TextBoxFor(x => x.DefaultParadigms)
+        <span class="hint">@T("Comma-separated list of default paradigms. These are key words for behaviors that can be applied to connector types.")</span>
+        @Html.ValidationMessageFor(m => m.DefaultParadigms, "*")
+    </div>
+    <div>
+        @Html.LabelFor(x => x.SocketDisplayName, T("Socket display name"))
+        @Html.TextBoxFor(x => x.SocketDisplayName)
+        <span class="hint">@T("Heading text that will be displayed when connectors of this type are listed from a socket.")</span>
+        @Html.ValidationMessageFor(m => m.SocketDisplayName, "*")
+    </div>
+    <div>
+        @Html.LabelFor(x => x.SocketDisplayHint, T("Socket display hint"))
+        @Html.TextBoxFor(x => x.SocketDisplayHint)
+        <span class="hint">@T("Descriptive text to be displayed about the socket when displayed.")</span>
+        @Html.ValidationMessageFor(m => m.SocketDisplayHint, "*")
+    </div>
+    <div>
+        @Html.LabelFor(x => x.SocketEditorHint, T("Socket editor hint"))
+        @Html.TextBoxFor(x => x.SocketEditorHint)
+        <span class="hint">@T("Descriptive text to be displayed about the socket when editing.")</span>
+        @Html.ValidationMessageFor(m => m.SocketEditorHint, "*")
+    </div>
+    <div>
+        @Html.LabelFor(x => x.SocketDisplayType, T("Socket display type"))
+        @Html.TextBoxFor(x => x.SocketDisplayType)
+        <span class="hint">@T("The default Display Type used to render items when attached to this type of connector. You can use Placement.info to configure new display types. Examples: Summary, Brief, Headline")</span>
+        @Html.ValidationMessageFor(m => m.SocketDisplayType, "*")
+    </div>
+    <div>
+        @Html.LabelFor(x => x.SocketGroupName, T("Socket group name"))
+        @Html.TextBoxFor(x => x.SocketGroupName)
+        <span class="hint">@T("When the Site object is given sockets, you can edit its connections in the Settings pages. The Socket group name setting configures which Settings sub-page this connection type will appear on. This setting may be used for additional purposes in the future.")</span>
+        @Html.ValidationMessageFor(m => m.SocketGroupName, "*")
+    </div>
+</fieldset>

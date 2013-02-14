@@ -1,0 +1,21 @@
+﻿@using Orchard.ContentManagement;
+@using Orchard.Core.Contents;
+@using Downplay.Mechanics;
+@{
+    ContentItem content = Model.ContentItem;
+}
+@if (Model.ContentItem.Id > 0) {
+    @Display(Model.Child)
+        <span class="link-impulses">@if (Model.ManageActions != null)
+                                    {
+                                        IEnumerable<Downplay.Mechanics.Impulses.IImpulse> actions = Model.ManageActions;
+            <text>@actions.Loop(
+            @<text>@Display.Impulse(Impulse: item, ContentItem: content)</text>,
+            @<text> | </text>)</text>
+                                    }
+        </span>
+}
+else
+{
+    @Display(Model.Child)
+}

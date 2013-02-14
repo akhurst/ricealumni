@@ -1,0 +1,7 @@
+@model Orchard.Core.Title.Models.TitlePart
+
+    <div class="title-edit">
+        @Html.LabelFor(m => m.Title, @T("Connector Title"))
+        @Html.EditorFor(m => m.Title)
+        @Html.ValidationMessageFor(m => m.Title, "*")
+    </div>

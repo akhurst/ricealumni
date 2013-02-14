@@ -1,0 +1,9 @@
+﻿@using Orchard.Utility.Extensions;
+@{
+    // TODO: This was never implemented; need a proper Table shape and some driver / placement magic to get tablified sockets working ...
+    string connectorType = Model.ConnectorType;
+    var connectorTypeClass = connectorType.HtmlClassify();
+}
+<tr class="view-connector @connectorTypeClass connector-@connectorTypeClass">
+    @Display(Model.Cells)
+</tr>

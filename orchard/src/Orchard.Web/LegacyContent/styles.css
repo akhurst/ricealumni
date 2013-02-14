@@ -143,12 +143,12 @@ img {
 
 /* ie */
 .main {font-family:verdana,arial,helvetica,sans-serif; font-size:12px; color: #000000; line-height:1.45}
-.mainSmall {font-family:verdana,arial,helvetica,sans-serif; font-size:10px; color: #666666}
+.mainSmall {font-family:verdana,arial,helvetica,sans-serif; font-size:14px; color: #666666}
 .mainSmallred {font-family:verdana,arial,helvetica,sans-serif; font-size:10px; color: #990000}
 .nav {font-family:verdana,arial,helvetica,sans-serif; font-size:10px; color: #6699CC; letter-spacing:-1}
 .navOver {font-family:verdana,arial,helvetica,sans-serif; font-size:10px; color: #666666; letter-spacing:-1}
 .mainSmalldark {font-family:verdana,arial,helvetica,sans-serif; font-size:9px; color: #333333; letter-spacing:-1; line-height:-1}
-.mainSubtitle {font-family:verdana,arial,helvetica,sans-serif; font-size:12px; color: #666666}
+.mainSubtitle {font-family:verdana,arial,helvetica,sans-serif; font-size:16px; color: #666666}
 .formSmall {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; color:#666666}
 
 A:link {color: #0033CC; text-decoration:none}

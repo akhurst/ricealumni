@@ -1,0 +1,28 @@
+Name: Theory: Cartography
+AntiForgery: enabled
+Author: Pete Hurst, Downplay Design
+Website: http://scienceproject.codeplex.com/wikipage?title=Cartography
+Version: 0.9.9.5
+OrchardVersion: 1.4
+Description: Demonstrates how to use the Mechanics module to build a hierarchical menu system using content connectors
+Features:
+    Downplay.Theory.Cartography:
+        Name: Theory: Cartography
+        Category: Science
+        Dependencies: Downplay.Mechanics,Downplay.Mechanics.Paperclips,Downplay.Mechanics.Impulses,Contents,Common
+        Description: Demonstrates how to use the Mechanics module to build a hierarchical menu system using content connectors
+    Downplay.Theory.Cartography.Topology:
+        Name: Theory: Topology
+        Category: Science
+        Dependencies: Downplay.Mechanics,Downplay.Mechanics.Paperclips,Contents
+        Description: Part of Cartography; creates a simple topics menu
+    Downplay.Theory.Cartography.Aggregation:
+        Name: Theory: Aggregation
+        Category: Science
+        Dependencies: Downplay.Mechanics,Feeds
+        Description: Part of Cartography; creates RSS feeds from connectors
+    Downplay.Theory.Cartography.HideCoreMenu:
+        Name: Theory: Cartography: Hide Core Menu
+        Category: Science
+        Dependencies: Navigation
+        Description: Suppresses the core menu provider to remove the default nav shape

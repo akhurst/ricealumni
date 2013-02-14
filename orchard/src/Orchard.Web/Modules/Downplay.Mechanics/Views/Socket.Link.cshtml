@@ -1,0 +1,27 @@
+﻿@using Orchard.Utility.Extensions;
+@{
+    string connectorType = Model.ConnectorType;
+    var connectorTypeClass = connectorType.HtmlClassify();
+}
+    <p class="socket view-socket @connectorTypeClass socket-@connectorTypeClass">
+        @if (Model.Header != null) {
+            foreach(var item in Model.Header.Items) {
+                 @Display(item)
+            }
+        }
+        @if (Model.Finders != null) {
+            foreach (var item in Model.Finders.Items) {
+                 @Display(item)
+            }
+        }
+        @if (Model.Content != null) {
+            foreach(var item in Model.Content.Items) {
+                 @Display(item)
+            }
+        }
+        @if (Model.Creators != null) {
+            foreach (var item in Model.Creators.Items) {
+                 @Display(item)
+            }
+        }
+    </p>

@@ -1,0 +1,15 @@
+﻿@model Downplay.Quanta.Signalling.Settings.CreateNotificationTypePartSettings
+<fieldset>
+    <div>
+        @Html.LabelFor(x=>x.UsersToNotify, T("Users to notify"))
+        @Html.TextBoxFor(x=>x.UsersToNotify)
+    </div>
+    <div>
+        @Html.LabelFor(x=>x.NotifyOwner, T("Also notify owner?"))
+        @Html.CheckBoxFor(x=>x.NotifyOwner)
+    </div>
+    <div>
+        @Html.LabelFor(x=>x.NotifyContainerOwner, T("Also notify container owner?"))
+        @Html.CheckBoxFor(x=>x.NotifyContainerOwner)
+    </div>
+</fieldset>

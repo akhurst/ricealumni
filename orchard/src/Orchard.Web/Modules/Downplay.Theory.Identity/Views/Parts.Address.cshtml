@@ -1,0 +1,14 @@
+﻿@using Orchard.Environment.Extensions;
+@using Downplay.Mechanics.Services;
+@{
+    Orchard.ContentManagement.IContent country = Model.CountryItem;
+}
+<dl>
+    <dt>Address</dt>
+    <dd>@Model.FullAddress</dd>
+@*   @if (country != null)
+    {
+    <dt>Country</dt>
+    <dd>@Html.ItemDisplayLink(country.GetTitle(), Model.CountryItem)</dd>
+    }*@
+</dl>

@@ -1,0 +1,5 @@
+﻿@model Downplay.Mechanics.ViewModels.SingleChoiceListFinderModel
+<div class="socket-finder single-choice-finder">
+    @Html.DropDownListFor(o=>o.RightItemId, Model.AvailableRightItems)
+    @Html.ValidationMessageFor(o => o.RightItemId, "*")
+</div>

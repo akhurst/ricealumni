@@ -1,0 +1,165 @@
+<Placement>
+  <!-- Default position of sockets on normal content display -->
+  <Place Socket="Content:10"></Place>
+  <Place Socket_Edit="Content:10"></Place>
+  <Place Parts_Connector="-"/>
+  <Place Parts_Connector_Edit="Content:10"/>
+
+  <!-- Misc content parts -->
+  <Place Parts_Sequence="-"/>
+  <Place Parts_Paperclip="-"/>
+  <Place Parts_Sequence_Edit="Content:5"/>
+  <Place Parts_Paperclip_Edit="Content:3"/>
+
+  <!-- Position items in connectors -->
+  <Place Connectors_Connector="RightItem:1"></Place>
+  <Place Connectors_Right="RightItem:2"></Place>
+
+  <!-- This display type is used for child items in a summary, and the item preview when editing -->
+  <Match DisplayType="SummaryTiny">
+    <Place Parts_Title_Summary="Header:1;alternate=Parts_Title_SummaryTiny"></Place>
+    <Place Parts_Common_Body="-"/>
+    <Place Parts_Common_Body_Summary="-"/>
+    <Place Parts_Stars="-" />
+  </Match>
+
+  <!-- Standard paradigms for socket/connectors display -->
+  <Match Mode="Display">
+    <!-- Socket title -->
+    <Place Sockets_SocketTitle="Header:1"/>
+    <!-- Socket titles can be hidden with Untitled paradigm -->
+    <Match Paradigm="Untitled">
+      <Place Sockets_SocketTitle="-" />
+    </Match>
+
+    <!-- Hide sockets usually if empty -->
+    <Match Paradigm="Empty">
+      <Place Socket="-"/>
+    </Match>
+
+    <!-- ConnectorsFull by default -->
+    <Place Sockets_Contents_Connectors="Content:5"></Place>
+    <Match Paradigm="ConnectorsFull">
+    </Match>
+    <Match Paradigm="ConnectorsFlatten">
+      <Place Sockets_Contents_Connectors="-"></Place>
+      <Place Sockets_Contents_Flat="Content:5"></Place>
+    </Match>
+    <Match Paradigm="ConnectorsCollapse">
+      <Place Sockets_Contents_Connectors="-"></Place>
+      <Place Sockets_Contents_Right="Content:5"></Place>
+    </Match>
+
+    <Match DisplayType="SummaryAdmin">
+      <Place Sockets_SocketTitle="Header:1;alternate=Sockets_SocketTitle_SummaryAdmin"/>
+    </Match>
+    <Match DisplayType="Summary">
+      <Place Sockets_SocketTitle="Header:1;alternate=Sockets_SocketTitle_Summary"/>
+    </Match>
+    <Match DisplayType="Link">
+      <Place Sockets_SocketTitle="Header:1;alternate=Sockets_SocketTitle_Link"/>
+      <Place Sockets_Contents_Flat="Content:5;alternate=Sockets_Contents_Links"/>
+      <Place Parts_Stars="-" />
+    </Match>
+
+    <Match Paradigm="TitleOverride" Scope="RightContent">
+      <Place Parts_Title="-"/>
+      <Place Parts_Title_Summary="-"/>
+    </Match>
+    <Match Paradigm="BodyOverride" Scope="RightContent">
+      <Place Parts_Common_Body="-"/>
+      <Place Parts_Common_Body_Summary="-"/>
+    </Match>
+  </Match>
+  
+  <!-- Display/Editor socket shapes -->
+  <Match Mode="Editor">
+    <!-- Editor sub items -->
+    <Place Sockets_Contents_Edit="Content:5"></Place>
+    <!-- Title -->
+    <Place Sockets_SocketTitle_Edit="Header:1"></Place>
+    <!-- Connectors Editor UI -->
+    <Place Connector_Editors_Title="Editors:1"></Place>
+    <Place Connector_Editors_Sequence="Editors:1"></Place>
+    <!-- Paradigms for finder behaviours -->
+    <Place Connector_Options_BatchSelect="Options:1"></Place>
+    <Place Socket_Creators_BatchOperation="Creators:before"></Place>
+    <Match Paradigm="One">
+        <Place Socket_Finders_SingleChoiceList="Finders:1"></Place>
+    </Match>
+    <Match Paradigm="Many">
+        <Place Socket_Finders_MultipleChoiceList="Finders:1"></Place>
+    </Match>
+    <!-- Ultimately we (should) only need batch operations when duplicates are enabled -->
+    <!--
+    <Match Paradigm="One">
+        <Place Socket_Finders_SingleChoiceList="Finders:1"></Place>
+    </Match>
+    <Match Paradigm="Many">
+        <Place Socket_Finders_MultipleChoiceList="Finders:1"></Place>
+    </Match>
+    <Match Paradigm="DuplicatesPossible">
+      <Place Connector_Options_BatchSelect="Options:1"></Place>
+      <Place Socket_Creators_BatchOperation="Creators:before"></Place>
+    </Match>
+     -->
+    <!-- Hide certain UI bits when empty -->
+    <Match Paradigm="Empty">
+      <Place Socket_Creators_BatchOperation="-"/>
+    </Match>
+    <Match Paradigm="Search">
+      <Place Socket_Finders_Search="Finders:5"></Place>
+    </Match>
+  </Match>
+
+  <Match DisplayType="EditorConnector">
+    <Place Parts_Title_Summary="-"></Place>
+    <Place Parts_Common_Body="-"/>
+    <Place Parts_Common_Body_Summary="-"/>
+    <Place Connectors_Connector="-"></Place>
+    <Place Parts_Stars="-" />
+    <Place Socket="-" />
+  </Match>
+
+  <!-- Simpler paradigms -->
+  <Place Socket_Count=""></Place>
+  <Match Paradigm="Count">
+    <Place Socket="-"></Place>
+    <Place Socket_Count="Content:10"></Place>
+  </Match>
+
+  <!-- Impulses -->
+    <Match DisplayType="Detail">
+        <Place ImpulsePanel="Footer:after"></Place>
+    </Match>
+    <Match DisplayType="SummaryAdmin">
+        <Place ImpulsePanel="Footer:after"></Place>
+    </Match>
+    <Match DisplayType="Summary">
+        <Place ImpulsePanel_Contextual="Footer:after"></Place>
+    </Match>
+
+    <!-- Set up "Link" Display Type -->
+  <Match DisplayType="Link">
+    <Place Socket="-"></Place>
+    <Place Parts_RoutableTitle_Summary="Header:1;Alternate=Parts_RoutableTitle_Link"></Place>
+    <Place Parts_Title_Summary="Header:1;Alternate=Parts_Title_Link"></Place>
+    <Place Parts_Common_Body="-"></Place>
+    <Place Parts_Common_Body_Summary="-"></Place>
+    <Place ImpulsePanel="-"></Place>
+  </Match>
+
+  <!-- Admin list -->
+  <Match DisplayType="SummaryAdmin">
+    <Place Socket="Content:10;alternate=Socket_SummaryAdmin"/>
+    <Place Sockets_SocketTitle="Header:1;alternate=Sockets_SocketTitle_SummaryAdmin"/>
+    <Place Sockets_Contents_Connectors="-"></Place>
+    <Place Sockets_Contents_Links="Content:5"></Place>
+    <Place ImpulsePanel="-"></Place>
+    <Place Socket_Creators_AddNewLinks="Creators:10"></Place>
+  </Match>
+  
+  <!-- Misc -->
+  <Place RecursionPrevented="Content:1"></Place>
+
+</Placement>

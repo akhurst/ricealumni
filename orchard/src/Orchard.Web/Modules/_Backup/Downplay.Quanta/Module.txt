@@ -1,0 +1,23 @@
+Name: Quanta
+AntiForgery: enabled
+Author: Pete Hurst, Downplay Design
+Website: http://scienceproject.codeplex.com/wikipage?title=Quanta
+Version: 0.7.6
+OrchardVersion: 1.1.30
+Description: Numerous features to extend the permissions and security model and moderation options
+Features:
+    Downplay.Quanta:
+		Name: Quanta
+        Description: Currently this feature only adds the IDynamicPermissionProvider interface which allows you to create per-content-type permissions. See other Quanta features for more advanced permissions handling.
+		Category: Science
+		Dependencies: Orchard.Roles, Orchard.Widgets
+	Downplay.Quanta.Effectors:
+		Name: Quanta: Effectors
+		Category: Science
+		Description: Allows you to give users additional effective roles over individual items of content, i.e. per-item security; and defines a Group content type which users can be members of and manage grouped permissions over items.
+		Dependencies: Downplay.Mechanics, Orchard.Roles, Orchard.ContentTypes, Downplay.Origami
+	Downplay.Quanta.Signalling:
+		Name: Quanta: Signalling
+		Category: Science
+		Description: Enables sending mail notifications for a variety of situations; e.g.: on publish / on create, on comment, on registration, on flagged for moderation, and subscription support.
+		Dependencies: Orchard.Email

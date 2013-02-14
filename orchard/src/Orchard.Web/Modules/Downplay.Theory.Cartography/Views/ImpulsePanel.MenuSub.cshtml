@@ -1,0 +1,19 @@
+﻿@using Orchard.ContentManagement;
+@using Orchard.Core.Contents;
+@using Downplay.Mechanics;
+@using Downplay.Mechanics.Impulses;
+@{
+    // TODO: Would be nice to reinstate this for admin so we can edit connections directly in menu (perhaps just shouldn't
+    // even think about it tho)
+    ContentItem content = Model.ContentItem;
+}
+@if (Model.Impulses != null)
+{
+    <div class="impulse-panel">
+        @{
+    IEnumerable<dynamic> actions = Model.Impulses;
+            <text>@actions.Loop(
+            @<text>@Display(item)</text>)</text>
+        }
+    </div>
+}

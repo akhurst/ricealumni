@@ -1,0 +1,28 @@
+﻿@model Downplay.Mechanics.ViewModels.MultipleChoiceListFinderModel
+@using Orchard.Utility.Extensions;
+@{
+    var cssClass = Model.ConnectorName.HtmlClassify();
+}
+<div class="socket-finder multiple-choice-finder">
+    <div class="multiple-choice-finder-items multiple-choice-finder-items-@cssClass">
+    @foreach (var item in Model.AvailableRightItems)
+    {
+        <div class="multiple-choice-finder-item">
+            <input type="checkbox" id="@{
+                <text>@Html.FieldIdFor(o=>o.RightItemIds)</text>
+            }_@{
+                <text>@item.Value</text>
+            }" name="@Html.FieldNameFor(o=>o.RightItemIds)"  value="@item.Value"@if(item.Selected){<text> checked="checked"</text>} />
+            <label for="@{
+                <text>@Html.FieldIdFor(o=>o.RightItemIds)</text>
+            }_@{
+                <text>@item.Value</text>
+            }" class="forcheckbox">@item.Text</label>
+        </div>
+    }
+    </div>
+    @Html.ValidationMessageFor(o => o.RightItemIds, "*")
+@*
+    TODO: Reinstate button (with an ajax handler!)
+    <input type="submit" name="@Html.FieldNameFor(o=>o.AddChoiceSubmit)" value="Add" />*@
+</div>

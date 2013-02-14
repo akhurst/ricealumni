@@ -1,0 +1,20 @@
+﻿@using Orchard.ContentManagement;
+@using Orchard.Widgets;
+@if (AuthorizedFor(Permissions.ManageWidgets))
+{
+    <div class="widget-control">
+        <div class="manage-actions">@if (Model.ManageActions != null)
+                                    {
+                                        IEnumerable<dynamic> actions = Model.ManageActions;
+            <text>@actions.Loop(
+            @<text>@Display(item)</text>,
+            @<text> | </text>)</text>
+                                    }
+        </div>
+    @Display(Model.Child)
+    </div>
+}
+else
+{
+    @Display(Model.Child)
+}

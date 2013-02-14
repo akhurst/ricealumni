@@ -1,0 +1,40 @@
+﻿@model Downplay.Theory.Identity.ViewModels.AddressEditViewModel
+@using Downplay.Mechanics.Services;  
+<div class="address-create">
+    <div>
+        @Html.LabelFor(o => o.PostalCode, @T("Postal Code"))
+        @Html.TextBoxFor(o => o.PostalCode)
+        @Html.ValidationMessageFor(o => o.PostalCode, "*")
+    </div>
+
+    <div>
+        @Html.LabelFor(o => o.Address1, @T("Address Line 1"))
+        @Html.TextBoxFor(o => o.Address1)
+        @Html.ValidationMessageFor(o => o.Address1, "*")
+    </div>
+
+    <div>
+        @Html.LabelFor(o => o.Address2, @T("Address Line 2"))
+        @Html.TextBoxFor(o => o.Address2)
+    </div>
+
+    <div>
+        @Html.LabelFor(o => o.Address3, @T("Address Line 3"))
+        @Html.TextBoxFor(o => o.Address3)
+    </div>
+
+    <div>
+        @Html.LabelFor(o => o.TownName, @T("Town / City"))
+        @Html.TextBoxFor(o => o.TownName)
+        @Html.DropDownListFor(o=>o.TownId, Model.Towns)
+        @Html.ValidationMessageFor(o => o.TownName, "*")
+    </div>
+    
+    <div>
+        @Html.LabelFor(o => o.CountryName, @T("Country"))
+        @Html.TextBoxFor(o => o.CountryName)
+        @Html.DropDownListFor(o => o.CountryId, Model.Countries)
+        @Html.ValidationMessageFor(o => o.CountryName, "*")
+    </div>
+
+</div>

@@ -1,0 +1,8 @@
+﻿@using Downplay.Theory.Identity.ViewModels;
+
+@using(Html.BeginForm("PostalCodeSearch", "Directory", new { area = "Downplay.Theory.Identity" }, FormMethod.Get, new { @class = "search-form" })) { 
+    <fieldset>
+        @Html.TextBox("q", (PostalCodeSearchViewModel)Model.ViewModel.Query)
+        <button type="submit">@T("Go")</button>
+    </fieldset>
+}

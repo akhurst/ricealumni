@@ -1,0 +1,25 @@
+﻿@using Orchard.Utility.Extensions;
+@{
+    string connectorType = Model.ConnectorType;
+    var connectorTypeClass = connectorType.HtmlClassify();
+    // TODO: Add some of these classes from shape events?
+    Model.Classes.Add("socket");
+    Model.Classes.Add("view-socket");
+    Model.Classes.Add(connectorTypeClass);
+    Model.Classes.Add("socket-" + connectorTypeClass);
+    var tag = Tag(Model, "section");
+}
+    @tag.StartElement
+        @if (Model.Header != null) {
+            @Display(Model.Header)
+        }
+        @if (Model.Finders != null) {
+            @Display(Model.Finders)
+        }
+        @if (Model.Content != null) {
+            @Display(Model.Content)
+        }
+        @if (Model.Creators != null) {
+            @Display(Model.Creators)
+        }
+    @tag.EndElement

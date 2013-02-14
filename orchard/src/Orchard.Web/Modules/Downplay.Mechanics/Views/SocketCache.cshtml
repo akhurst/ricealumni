@@ -1,0 +1,12 @@
+﻿@{
+    // Capture or display cache   
+    Downplay.Mechanics.Drivers.SocketCacheResult cache = Model.Cache;
+    if (cache.Render==null) {
+        using(var capture = Capture((s)=>{
+            cache.Render = s;
+        })){
+            @Display(cache.Display)
+        }
+    }
+    @cache.Render
+}

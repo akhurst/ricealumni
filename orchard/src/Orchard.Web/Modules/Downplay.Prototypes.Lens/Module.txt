@@ -1,0 +1,33 @@
+Name: Science Project Prototypes: Lens
+AntiForgery: enabled
+Author: Pete Hurst, Downplay Design
+Website: http://scienceproject.codeplex.com
+Version: 0.5
+OrchardVersion: 1.4
+Description: A modular search system for Orchard content
+Features:
+    Downplay.Prototypes.Lens:
+        Name: Lens
+        Description: A modular search system for Orchard content
+        Dependencies: Downplay.Origami,Downplay.Alchemy,Downplay.Alchemy.ContentLists
+        Category: Search
+    Downplay.Prototypes.Lens.SocketSearch:
+        Name: Lens: Socket Search
+        Description: Adds a Lens search box to Sockets
+        Dependencies: Downplay.Alchemy, Downplay.Mechanics, Downplay.Prototypes.Lens
+        Category: Search
+    Downplay.Prototypes.Lens.FallbackSearch
+        Name: Lens: Fallback Search
+        Description: Displays a friendly page instead of 404's, with a content search based on the URL
+        Dependencies: Downplay.Alchemy, Downplay.Prototypes.Lens
+        Category: Search
+    Downplay.Prototypes.Lens.SiteSearch
+        Name: Lens: Site Search
+        Description: Replaces site search with Lens
+        Dependencies: Downplay.Prototypes.Lens, Orchard.Search
+        Category: Search
+    Downplay.Prototypes.Lens.AdminSearch
+        Name: Lens: Admin Search
+        Description: Enables Lens search for admin Content list, and adds an admin-wide quick AJAX search box
+        Dependencies: Downplay.Prototypes.Lens, Dashboard, Contents
+        Category: Search

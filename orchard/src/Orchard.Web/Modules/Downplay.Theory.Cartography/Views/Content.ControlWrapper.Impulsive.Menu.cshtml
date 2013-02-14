@@ -1,0 +1,25 @@
+﻿@using Orchard.ContentManagement;
+@using Orchard.Core.Contents;
+@using Downplay.Mechanics;
+@{
+    // TODO: Would be nice to reinstate this for admin so we can edit connections directly in menu (perhaps just shouldn't
+    // even think about it tho)
+    ContentItem content = Model.ContentItem;
+    Style.Require("ScienceMenuDisplay");
+}
+@if (Model.ContentItem.Id > 0) {
+    @Display(Model.Child)
+        if (Model.ManageActions != null)
+        {
+            IEnumerable<Downplay.Mechanics.Impulses.IImpulse> actions = Model.ManageActions;
+            <li class="menu-impulses">
+                @actions.Loop(
+                    @<text>@Display.Impulse(Impulse: item, ContentItem: content)</text>,
+                    @<text> | </text>)
+            </li>
+        }
+}
+else
+{
+    @Display(Model.Child)
+}

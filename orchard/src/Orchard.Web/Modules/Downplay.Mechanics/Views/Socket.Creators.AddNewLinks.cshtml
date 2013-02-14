@@ -1,0 +1,7 @@
+﻿<div class="socket-creator add-new">
+    <p>Add new: 
+    @foreach (var link in Model.Links) {
+        <a href="@Url.RouteUrl(link.RouteValues)">@link.Name</a>
+    }
+    </p>
+</div>

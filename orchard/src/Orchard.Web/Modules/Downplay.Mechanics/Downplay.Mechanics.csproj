@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{669892C5-A992-43CC-A2B5-608A3E50C4D9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Downplay.Mechanics</RootNamespace>
+    <AssemblyName>Downplay.Mechanics</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\claysharp\ClaySharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\aspnetmvc\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LICENSE.txt" />
+    <Content Include="Scripts\Science.Impulses.js">
+      <DependentUpon>Science.Impulses.coffee</DependentUpon>
+    </Content>
+    <Content Include="Scripts\Science.Impulses.min.js">
+      <DependentUpon>Science.Impulses.coffee</DependentUpon>
+    </Content>
+    <Content Include="Styles\mechanics-admin.css" />
+    <Content Include="Views\Connector.Edit.cshtml" />
+    <Content Include="Views\EditorTemplates\Parts.Sequence.Edit.cshtml" />
+    <Content Include="Views\EditorTemplates\Parts.Paperclip.Edit.cshtml" />
+    <Content Include="Views\EditorTemplates\Socket.Finders.ComboChoiceList.cshtml" />
+    <Content Include="Web.config" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Scripts\Web.config" />
+    <Content Include="Styles\Web.config" />
+    <Content Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Module.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">
+      <Project>{2D1D92BB-4555-4CBE-8D0E-63563D6CE4C6}</Project>
+      <Name>Orchard.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\Orchard.Core.csproj">
+      <Project>{9916839C-39FC-4CEB-A5AF-89CA7E87119F}</Project>
+      <Name>Orchard.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Downplay.Delta\Downplay.Delta.csproj">
+      <Project>{097C7BCE-8555-4809-A25C-3E85031BDCD8}</Project>
+      <Name>Downplay.Delta</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Downplay.Origami\Downplay.Origami.csproj">
+      <Project>{F844F861-0FF4-4CF6-A5E0-C9F6A0F26DBB}</Project>
+      <Name>Downplay.Origami</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Modules\Orchard.Tokens\Orchard.Tokens.csproj">
+      <Project>{6F759635-13D7-4E94-BCC9-80445D63F117}</Project>
+      <Name>Orchard.Tokens</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminMenu.cs" />
+    <Compile Include="Commands\MechanicsCommands.cs" />
+    <Compile Include="Drivers\Creators\SocketAddNewLinksDriver.cs" />
+    <Compile Include="Drivers\Editors\TitlePartConnectorDriver.cs" />
+    <Compile Include="Framework\ConnectorCollection.cs" />
+    <Compile Include="Framework\ConnectorDescriptor.cs" />
+    <Compile Include="Framework\ConnectorFactory.cs" />
+    <Compile Include="Framework\IConnector.cs" />
+    <Compile Include="Framework\SocketQueryFactory.cs" />
+    <Compile Include="ILazyFactory.cs" />
+    <Compile Include="Impulses\Handlers\ImpulsesContentHandler.cs" />
+    <Compile Include="Impulses\Providers\ImpulseDeltaProvider.cs" />
+    <Compile Include="Impulses\ResourceManifest.cs" />
+    <Compile Include="Impulses\Services\ImpulseDescribeContext.cs" />
+    <Compile Include="Impulses\Services\ImpulseDescriptor.cs" />
+    <Compile Include="LazyDictionary.cs" />
+    <Compile Include="Filters\DateTimeSortingFilter.cs" />
+    <Compile Include="Drivers\Finders\ChoiceListFinderDriver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Drivers\Editors\ConnectorBatchSelectionDriver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Drivers\Models\ConnectorModelItemDriver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Drivers\ConnectorPartDriver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Drivers\Models\ConnectorResult.cs" />
+    <Compile Include="Drivers\Models\ContentItemSignal.cs" />
+    <Compile Include="Framework\SocketEndpoint.cs" />
+    <Compile Include="Framework\SocketQuery.cs" />
+    <Compile Include="Handlers\DefaultConnectorHandler.cs" />
+    <Compile Include="Providers\SocketTokens.cs" />
+    <Compile Include="Services\ConnectorCriteria.cs" />
+    <Compile Include="ViewModels\SocketRightContentViewModel.cs" />
+    <Compile Include="Drivers\Models\SocketsRootDriver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Drivers\Models\SocketTitleDriver.cs" />
+    <Compile Include="Framework\SocketMetadata.cs" />
+    <Compile Include="Paperclips\PaperclipPartDriver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Drivers\Models\RecursionPreventedModelDriver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Drivers\Editors\SequenceConnectorDriver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Drivers\SequencePartDriver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Drivers\Models\SocketCacheKey.cs" />
+    <Compile Include="Drivers\Models\SocketCacheResult.cs" />
+    <Compile Include="Drivers\Models\SocketContentsDriver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Drivers\Models\SocketCountDriver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Drivers\SocketsContentPartDriver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Drivers\Models\SocketsDriverResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Framework\ConnectorDeleteContext.cs" />
+    <Compile Include="Framework\ConnectorHandler.cs" />
+    <Compile Include="Framework\SocketHandler.cs" />
+    <Compile Include="Handlers\DefaultSocketHandler.cs" />
+    <Compile Include="Handlers\SequenceConnectorHandler.cs" />
+    <Compile Include="Handlers\SequenceSocketHandler.cs" />
+    <Compile Include="Filters\SequenceSortingFilter.cs" />
+    <Compile Include="Impulses\Drivers\ImpulseCommonDriver.cs" />
+    <Compile Include="Impulses\Drivers\ImpulseConnectorDriver.cs" />
+    <Compile Include="Null.cs" />
+    <Compile Include="Providers\CachePlacementBuilder.cs" />
+    <Compile Include="Filters\TitleSortingFilter.cs" />
+    <Compile Include="Providers\MechanicsPlacementPredicateBuilder.cs" />
+    <Compile Include="ResourceManifest.cs" />
+    <Compile Include="Services\ConnectorCreator.cs" />
+    <Compile Include="Framework\ConnectorCreateContext.cs" />
+    <Compile Include="Framework\ConnectorDisplayContext.cs" />
+    <Compile Include="Framework\ConnectorEventContext.cs" />
+    <Compile Include="Framework\IConnectorHandler.cs" />
+    <Compile Include="Framework\ISocketFilter.cs" />
+    <Compile Include="Framework\SocketParentContext.cs" />
+    <Compile Include="Framework\SocketsModel.cs" />
+    <Compile Include="Controllers\ImpulseController.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Impulses\Defaults\ContentItemImpulseGenerator.cs" />
+    <Compile Include="Impulses\Defaults\IConnectorImpulseGenerator.cs" />
+    <Compile Include="Impulses\Services\IImpulseProvider.cs" />
+    <Compile Include="Impulses\IImpulse.cs" />
+    <Compile Include="Impulses\Services\ImpulseActuationResult.cs" />
+    <Compile Include="Impulses\Services\ImpulseContext.cs" />
+    <Compile Include="Impulses\Services\ImpulseDisplayContext.cs" />
+    <Compile Include="Impulses\Services\IImpulseService.cs" />
+    <Compile Include="Impulses\Services\ImpulseService.cs" />
+    <Compile Include="Impulses\Shapes\ImpulseShapes.cs" />
+    <Compile Include="RazorTemplates.cs" />
+    <Compile Include="Services\ConnectorRemover.cs" />
+    <Compile Include="Services\ConnectorSelector.cs" />
+    <Compile Include="Services\IConnectorBuilder.cs" />
+    <Compile Include="Services\IMechanicsDisplay.cs" />
+    <Compile Include="Services\MechanicsDisplay.cs" />
+    <Compile Include="ViewModels\ChoiceListFinderModel.cs" />
+    <Compile Include="ViewModels\ComboChoiceListFinderModel.cs" />
+    <Compile Include="ViewModels\ConnectorBatchSelectionViewModel.cs" />
+    <Compile Include="ViewModels\ConnectorBatchOperationViewModel.cs" />
+    <Compile Include="ViewModels\SocketConnectorsViewModel.cs" />
+    <Compile Include="ViewModels\RecursionPreventedModel.cs" />
+    <Compile Include="ViewModels\MultipleChoiceListFinderModel.cs" />
+    <Compile Include="Framework\SocketDisplayContext.cs" />
+    <Compile Include="Paperclips\Migrations.cs" />
+    <Compile Include="Paperclips\PaperclipSocketEvents.cs" />
+    <Compile Include="Paperclips\PaperclipFilter.cs" />
+    <Compile Include="Framework\ISocketHandler.cs" />
+    <Compile Include="Framework\SocketEventContext.cs" />
+    <Compile Include="Handlers\SequencePartHandler.cs" />
+    <Compile Include="Handlers\MechanicsContentHandler.cs" />
+    <Compile Include="Migrations.cs" />
+    <Compile Include="Models\ConnectorPart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\ConnectorPartRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Graph.cs" />
+    <Compile Include="Models\GraphNode.cs" />
+    <Compile Include="Models\SequencePart.cs" />
+    <Compile Include="Models\SequencePartRecord.cs" />
+    <Compile Include="Models\SocketsPart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\SocketsPartRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\IConnectorParadigm.cs" />
+    <Compile Include="Services\MechanicsExtensions.cs" />
+    <Compile Include="Services\MechanicsService.cs" />
+    <Compile Include="Services\IMechanicsService.cs" />
+    <Compile Include="Settings\ConnectorTypePartSettings.cs" />
+    <Compile Include="Settings\ConnectorTypePartSettingsHooks.cs" />
+    <Compile Include="Providers\MechanicsShapes.cs" />
+    <Compile Include="ViewModels\SingleChoiceListFinderModel.cs" />
+    <Compile Include="Handlers\PaperclipPartHandler.cs" />
+    <Compile Include="Models\PaperclipPart.cs" />
+    <Compile Include="Models\PaperclipPartRecord.cs" />
+    <Compile Include="Paperclips\PaperclipTypePartSettings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Placement.info">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\DefinitionTemplates\ConnectorTypePartSettings.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Graph.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Socket.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Connector.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Graph.SVG.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Connector.Graph.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Content.Graph.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts.Sequence.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Behaviors\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Content.Link.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts.RoutableTitle.Link.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\DefinitionTemplates\PaperclipTypePartSettings.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Content.ControlWrapper.Impulsive.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Impulse.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Widget.ControlWrapper.XImpulsive.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Content.ControlWrapper.Impulsive.Link.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Socket.Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Socket.Finders.SingleChoiceList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Socket.Finders.MultipleChoiceList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ImpulsePanel.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Parts.Connector.Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Connector.Editors.Title.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts.Title.SummaryTiny.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Connector.Options.BatchSelect.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Socket.Creators.BatchOperation.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\RecursionPrevented.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Connector.Editors.Sequence.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Socket.Count.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts.Title.Link.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SocketCache.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Sockets.SocketTitle.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Sockets.SocketTitle.Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Sockets.Contents.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Sockets.SocketTitle.Summary.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Sockets.SocketTitle.SummaryAdmin.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Socket.Table.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Connector.Table.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Socket.Creators.AddNewLinks.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Sockets.SocketTitle.Link.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Socket.Link.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Sockets.Contents.Links.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Content.EditorConnector.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Socket.SummaryAdmin.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\Science.Impulses.coffee" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" DependsOnTargets="AfterBuildCompiler">
+    <PropertyGroup>
+      <AreasManifestDir>$(ProjectDir)\..\Manifests</AreasManifestDir>
+    </PropertyGroup>
+    <!-- If this is an area child project, uncomment the following line:
+    <CreateAreaManifest AreaName="$(AssemblyName)" AreaType="Child" AreaPath="$(ProjectDir)" ManifestPath="$(AreasManifestDir)" ContentFiles="@(Content)" />
+    -->
+    <!-- If this is an area parent project, uncomment the following lines:
+    <CreateAreaManifest AreaName="$(AssemblyName)" AreaType="Parent" AreaPath="$(ProjectDir)" ManifestPath="$(AreasManifestDir)" ContentFiles="@(Content)" />
+    <CopyAreaManifests ManifestPath="$(AreasManifestDir)" CrossCopy="false" RenameViews="true" />
+    -->
+  </Target>
+  <Target Name="AfterBuildCompiler" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)\..\$(ProjectName)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>45979</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://orchard.codeplex.com</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

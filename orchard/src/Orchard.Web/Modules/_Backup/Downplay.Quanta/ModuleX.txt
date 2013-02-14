@@ -1,0 +1,5 @@
+﻿	Downplay.Quanta.Quotas:
+		Name: Quanta: Quotas
+		Category: Science
+		Description: Gives you a permission to create "only one of" content types. TODO: "Maximum (x) items" control, i.e. proper quotas (much harder).
+		Dependencies: Orchard.Roles, Contents

@@ -1,0 +1,12 @@
+﻿Name: Delta
+AntiForgery: enabled
+Author: Pete Hurst, Downplay Design
+Website: http://downplay.co.uk/delta
+Version: 0.1
+OrchardVersion: 1.5
+Description: An Orchard wrapper around the Delta javascript library. The Delta source also lives in this project.
+Features:
+    Downplay.Delta:
+        Name: Delta
+        Description: An Orchard wrapper around the Delta javascript library. The Delta source also lives in this project.
+        Dependencies: Downplay.Alchemy

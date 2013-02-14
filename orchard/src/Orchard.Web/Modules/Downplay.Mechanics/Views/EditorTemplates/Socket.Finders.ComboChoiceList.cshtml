@@ -1,0 +1,8 @@
+﻿@model Downplay.Mechanics.ViewModels.ComboChoiceListFinderModel
+           @* TODO: I believe this has never worked ... *@
+    <div class="socket-finder combo-choice-finder">
+        @Html.LabelFor(o=>o.ComboText, T("Add new"))
+        @Html.EditorFor(o=>o.ComboText)
+        <input type="submit" name="@Html.FieldNameFor(o=>o.ComboAddNew)" value="Add" />
+        @Html.ValidationMessageFor(o => o.ComboText, "*")
+    </div>

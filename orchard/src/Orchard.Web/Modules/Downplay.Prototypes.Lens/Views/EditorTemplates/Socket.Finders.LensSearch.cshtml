@@ -1,0 +1,23 @@
+﻿@model Downplay.Prototypes.Lens.ViewModels.LensFinderViewModel
+@using Downplay.Mechanics;
+@{
+    Script.Require("ScienceLensUI").AtFoot();
+    Style.Require("ScienceLensAdmin");
+    string contentTypes = Model.ContentTypes.Count() == 0 ? "*" : Model.ContentTypes.Glue(",");
+}
+<div class="socket-finder lens-finder" data-lens="true"
+    data-lens-url="@Url.Action("Index", "Display", new { area="Downplay.Alchemy", id="Search.Ajax"})?"
+    data-lens-socket-url="@Url.Action("Index", "Display", new { area = "Downplay.Alchemy", id = "Mechanics.Connector", socketName=Model.SocketName, contentId = Model.LeftId })"
+    data-lens-param-content-types="@contentTypes"
+    data-lens-param-context="Socket"
+    data-lens-text-id="@Html.FieldIdFor(o=>o.Query)"
+    data-lens-hidden-id="@Html.FieldIdFor(o=>o.SelectedItemIds)"
+    data-lens-results-id="@Html.FieldIdFor(o=>o.Results)"
+    >
+    @Html.TextBoxFor(o=>o.Query)
+    @Html.ValidationMessageFor(o => o.Query, "*")
+    @Html.HiddenFor(o=>o.SelectedItemIds)
+    <div id="@Html.FieldIdFor(o=>o.Results)" class="lens-finder-results">
+        @Display(Model.Results)
+    </div>
+</div>

@@ -1,0 +1,27 @@
+﻿@using Orchard.Utility.Extensions;
+@{
+    string connectorType = Model.ConnectorType;
+    var connectorTypeClass = connectorType.HtmlClassify();
+    Style.Require("ScienceMechanicsAdmin");
+    Model.Classes.Add("socket");
+    Model.Classes.Add("edit-socket");
+    Model.Classes.Add(connectorTypeClass);
+    
+    var tag = Tag(Model, "section");
+    Model.Content.Classes.Add("bulk-items");
+    Model.Content.Classes.Add("edit-socket-contents");
+}
+@tag.StartElement
+    @if (Model.Header != null) {
+        @Display(Model.Header)
+    }
+    @if (Model.Finders != null) {
+        @Display(Model.Finders)
+    }
+    @if (Model.Content != null) {
+        @Display(Model.Content)
+    }
+    @if (Model.Creators != null) {
+        @Display(Model.Creators)
+    }
+@tag.EndElement

@@ -1,0 +1,24 @@
+@model Downplay.Quanta.ViewModels.EffectiveRolesEditModel
+<fieldset>
+    <legend>@T("Effective Roles")</legend>
+        <div>
+            @{
+                var fieldName ="SelectRoles"; 
+                var fullFieldName = Html.ViewContext.ViewData.TemplateInfo.GetFullHtmlFieldName(fieldName);
+            }
+            @foreach (var r in Model.AllRoles) {
+                var id = TagBuilder.CreateSanitizedId(fullFieldName+"."+r.Value);
+//                var htmlFieldName ="SelectRoles["+r.Value+"]"; 
+  //              var id = TagBuilder.CreateSanitizedId(Html.ViewContext.ViewData.TemplateInfo.GetFullHtmlFieldName(htmlFieldName));
+                // @Html.CheckBox(htmlFieldName, r.Selected)
+                if(r.Selected) {
+                    <input id="@id" type="checkbox" name="@fullFieldName" value="@r.Value" checked="checked" />
+                }
+                else {
+                    <input id="@id" type="checkbox" name="@fullFieldName" value="@r.Value" />
+                }
+                <label class="forcheckbox" for="@id">@r.Text</label>
+            }
+            @Html.ValidationMessageFor(m => m.SelectRoles, "*")
+        </div>
+</fieldset>

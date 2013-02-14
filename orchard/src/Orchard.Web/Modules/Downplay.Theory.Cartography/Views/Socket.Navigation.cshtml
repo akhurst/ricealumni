@@ -1,0 +1,21 @@
+﻿@using Orchard.Utility.Extensions;
+@{
+    string connectorType = Model.ConnectorType;
+    var connectorTypeClass = connectorType.HtmlClassify();
+    Style.Require("ScienceMenuDisplay");
+}
+<nav class="menu">
+        @if (Model.Header != null) {
+            @Display(Model.Header)
+        }
+        @if (Model.Finders != null) {
+            @Display(Model.Finders)
+        }
+        @if (Model.Content != null)
+        {
+            @Display(Model.Content)
+        }
+        @if (Model.Creators != null) {
+            @Display(Model.Creators)
+        }
+</nav>

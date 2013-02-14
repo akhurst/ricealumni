@@ -1,0 +1,31 @@
+﻿section.edit-socket
+{
+    border:solid 1px #e4e5e6;
+    background-color:#f4f5ef;
+    margin:10px 0;
+}
+.edit-connector .zone
+{
+    float:left;
+    border:solid 1px #e4e5e6;
+}
+.edit-connector .clear 
+{
+    clear:both;
+}
+
+.multiple-choice-finder-items {
+    -moz-column-count: 4;
+    -moz-column-gap: 1.5em;
+    -moz-column-rule: 1px solid #c4c8cc;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 1.5em;
+    -webkit-column-rule: 1px solid #c4c8cc;
+    column-count:4;
+    column-gap: 1.5em;
+    column-rule: 1px solid #c4c8cc;
+}
+.multiple-choice-finder-items .multiple-choice-finder-item 
+{
+    display:block;
+}   

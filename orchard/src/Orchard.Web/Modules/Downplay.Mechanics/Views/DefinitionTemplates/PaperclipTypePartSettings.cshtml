@@ -1,0 +1,30 @@
+@model Downplay.Mechanics.Paperclips.PaperclipTypePartSettings
+@using Orchard.ContentManagement;
+
+<fieldset>
+        <div>
+            @Html.LabelFor(m => m.DefaultPlacement, @T("Default Placement"))
+            @Html.EditorFor(m => m.DefaultPlacement)
+            <span class="hint">@T("When added to a connector, this paperclip will normally push sockets to this zone and position (e.g. 'AsideSecond:20')")</span>
+            @Html.ValidationMessageFor(m => m.DefaultPlacement, "*")
+        </div>
+        <div>
+            @Html.LabelFor(m => m.AllowChangePlacement, @T("Allow Changing Placement"))
+            @Html.EditorFor(m => m.AllowChangePlacement)
+            <span class="hint">@T("Whether to allow changing the placement per instance of this content item")</span>
+            @Html.ValidationMessageFor(m => m.AllowChangePlacement, "*")
+        </div>
+        <div>
+            @Html.LabelFor(m => m.DefaultDisplayType, @T("Default DisplayType"))
+            @Html.EditorFor(m => m.DefaultDisplayType)
+            <span class="hint">@T("This DisplayType will be used for rendering the connectors and connected items")</span>
+            @Html.ValidationMessageFor(m => m.DefaultDisplayType, "*")
+        </div>
+        <div>
+            @Html.LabelFor(m => m.AllowChangeDisplayType, @T("Allow Changing DisplayType"))
+            @Html.EditorFor(m => m.AllowChangeDisplayType)
+            <span class="hint">@T("Whether to allow changing the display type per instance of this content item")</span>
+            @Html.ValidationMessageFor(m => m.AllowChangeDisplayType, "*")
+        </div>
+</fieldset>
+

@@ -1,0 +1,34 @@
+﻿<Placement>
+    <Place Parts_Address="Content:10"/>
+    <Place Parts_Address_Edit="Content:7.5"/>
+    <Place Parts_AddressDirectory_PostalCodeSearchForm="Content:1"/>
+    <Match ContentType="AddressParadigm">
+      <!-- Hide choice list so users can't see all other addresses -->
+      <Place Socket_Finders_MultipleChoiceList="-"></Place>
+      <Place Socket_Creators_Address="Creators:1"></Place>
+    </Match>
+    <Match DisplayType="Summary" ContentType="User">
+      <Place Parts_UserName="Header:1"></Place>
+    </Match>
+    <!-- Country listing; show title link and towns count -->
+    <Match DisplayType="Directory">
+      <!-- Show town titles -->
+      <Place Parts_Title_Summary="Header:1"></Place>
+      <!-- Show count -->
+      <Place Socket_Connectors_Count="Connectors:before"></Place>
+      <!-- Hide connectors-->
+      <Place Connector="-"></Place>
+      <!-- Hide inverse socket (TODO: this should automate most of the time -->
+      <Place Socket-TownToCountry="-"></Place>
+    </Match>
+    <Match DisplayType="Summary">
+        <Place Socket-AddressToTown="Content:5"></Place>
+        <Place Socket-AddressToUser="Header:1"></Place>
+    </Match>
+    <Match DisplayType="Listing">
+      <Place Parts_Title_Summary="Header:1"></Place>
+      <Place Parts_UserName="Header:1"></Place>
+      <Place Socket="-"></Place>
+      <Place Socket-UserToAddress="-"></Place>
+    </Match>
+</Placement>

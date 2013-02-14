@@ -1,0 +1,8 @@
+﻿@{
+    Model.ContentItems.Classes.Add("content-items");
+    Model.ContentItems.Classes.Add("addresses");
+}
+<h2>@T("People in {0}", Model.Region.Title)</h2>
+@*<h2>@Html.TitleForPage(T("People in {0}", Model.Region.Title).Text)</h2>*@
+
+@Display(Model.ContentItems)

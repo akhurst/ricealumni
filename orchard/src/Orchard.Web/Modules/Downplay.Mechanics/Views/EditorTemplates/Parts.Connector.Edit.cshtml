@@ -1,0 +1,9 @@
+﻿@model Downplay.Mechanics.Models.ConnectorPart
+           
+<fieldset>
+    <legend>@T("Connector")</legend>
+    <div>@Html.LabelFor(o => o.LeftContentItemId, @T("Left Content Item Id"))</div>
+    <div>@Html.TextBoxFor(o => o.LeftContentItemId)</div>
+    <div>@Html.LabelFor(o => o.RightContentItemId, @T("Right Content Item Id"))</div>
+    <div>@Html.TextBoxFor(o => o.RightContentItemId)</div>
+</fieldset>

@@ -1,0 +1,7 @@
+@model Downplay.Mechanics.ViewModels.ConnectorBatchSelectionViewModel
+@using Orchard.ContentManagement;
+    <div>
+        @Html.CheckBoxFor(m => m.Selected)
+        @Html.LabelFor(m=>m.Selected, T("Remove"))
+        @Html.ValidationMessageFor(m => m.Selected, "*")
+    </div>

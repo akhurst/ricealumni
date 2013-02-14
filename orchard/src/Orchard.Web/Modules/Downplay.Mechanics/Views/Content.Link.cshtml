@@ -1,0 +1,12 @@
+﻿@using Orchard.Utility.Extensions;
+@{
+    var contentTypeClassName = ((string)Model.ContentItem.ContentType).HtmlClassify();
+}
+<span class="link content-link @contentTypeClassName">
+    <a href="@Url.ItemDisplayUrl((Orchard.ContentManagement.IContent)Model.ContentItem)">
+        @if (Model.Icon != null) {
+            <span class="icon">@Display(Model.Icon)</span>
+        }
+        @if (Model.Meta != null) {
+            <span class="metadata">@Display(Model.Meta)</span>
+        }@Display(Model.Header)</a>@Display(Model.Content)@* Content can e.g. contain submenus *@</span>

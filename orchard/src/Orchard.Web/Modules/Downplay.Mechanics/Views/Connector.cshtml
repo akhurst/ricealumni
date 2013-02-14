@@ -1,0 +1,20 @@
+﻿@using Orchard.Utility.Extensions;
+@{
+    string connectorType = Model.ConnectorType;
+    var connectorTypeClass = connectorType.HtmlClassify();
+}
+<div class="view-connector @connectorTypeClass">
+    @if (Model.Options != null) {
+        @Display(Model.Options)
+    }
+    @if (Model.RightItem != null)
+    {
+        @Display(Model.RightItem)
+    }
+    @if (Model.Editors != null) {
+        @Display(Model.Editors)
+    }
+    @if (Model.Impulses != null) {
+        @Display(Model.Impulses)
+    }
+</div>
