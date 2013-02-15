@@ -9,7 +9,7 @@
     <Version>1.0</Version>
   </Recipe>
 
-  <Feature enable="Orchard.jQuery,Orchard.Alias,Orchard.Autoroute,RiceAlumni.Core,RiceAlumni.StaffDirectory,RiceAlumni.Homepage" />
+  <Feature enable="Orchard.jQuery,Orchard.Alias,Orchard.Autoroute,RiceAlumni.Core,RiceAlumni.StaffDirectory,RiceAlumni.Homepage,RiceAlumni.Events" />
   
   <Metadata>
     <Types>

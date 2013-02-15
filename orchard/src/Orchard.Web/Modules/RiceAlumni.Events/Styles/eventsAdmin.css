@@ -1,0 +1,12 @@
+﻿table.form tbody tr td {
+    width: 120px;
+    padding: 5px 8px 5px 8px;
+}
+
+table.form tbody tr td {
+    text-align:right;
+}
+
+table.form .long {
+    width:495px;
+}

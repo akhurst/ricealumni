@@ -1,0 +1,28 @@
+﻿@model RiceAlumni.Events.Models.EventPart
+@{
+    Style.Include("eventsAdmin.css");
+}
+<fieldset>
+    <legend>@T("Event Details")</legend>
+    <table class="form">
+        <tbody>
+            <tr>
+                <td>@Html.LabelFor(m => m.Title)</td>
+                <td>@Html.TextBoxFor(m => m.Title)</td>
+                <td>@Html.LabelFor(m => m.StartDate)</td>
+                <td>@Html.TextBoxFor(m => m.StartDate)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.LinkText)</td>
+                <td>@Html.TextBoxFor(m => m.LinkText)</td>
+                <td>@Html.LabelFor(m => m.LinkTarget)</td>
+                <td>@Html.TextBoxFor(m => m.LinkTarget)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.ContactEmail)</td>
+                <td>@Html.TextBoxFor(m => m.ContactEmail)</td>
+            </tr>
+
+        </tbody>
+    </table>
+</fieldset>
