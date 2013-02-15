@@ -36,7 +36,6 @@ namespace RiceAlumni.Events
                 .Column<string>("LinkText")
                 .Column<int>("PciEventId")
                 .Column<string>("Title")
-                .Column<string>("Description")
                 .Column<bool>("RegistrationRequired")
                 .Column<string>("ContactEmail")
             );
@@ -46,6 +45,8 @@ namespace RiceAlumni.Events
                 .WithPart("EventPart")
                 .WithPart("LocationPart")
                 .WithPart("CommonPart")
+                .WithPart("BodyPart")
+                .WithPart("IdentityPart")
             );
 
             return 1;

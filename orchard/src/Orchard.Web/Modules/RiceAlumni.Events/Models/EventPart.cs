@@ -44,13 +44,6 @@ namespace RiceAlumni.Events.Models
             set { Record.Title = value; }
         }
 
-        [Required(ErrorMessage = "Give us a few words to describe the event.")]
-        public virtual string Description
-        {
-            get { return Record.Description; }
-            set { Record.Description = value; }
-        }
-
         public virtual string ContactEmail
         {
             get { return Record.ContactEmail; }

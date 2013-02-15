@@ -20,7 +20,6 @@ namespace RiceAlumni.Events.Models.DTOs
             LinkText = eventPartRecord.LinkText;
             PciEventId = eventPartRecord.PciEventId;
             Title = eventPartRecord.Title;
-            Description = eventPartRecord.Description;
             ContactEmail = eventPartRecord.ContactEmail;
             RegistrationRequired = eventPartRecord.RegistrationRequired;
             

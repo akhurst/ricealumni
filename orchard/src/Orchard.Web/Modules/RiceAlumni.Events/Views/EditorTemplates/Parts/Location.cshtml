@@ -1,23 +1,21 @@
 ﻿@model RiceAlumni.Events.Models.LocationPart
 <fieldset>
     <legend>@T("Location Details")</legend>
-    <table>
+    <table class="form">
         <tbody>
             <tr>
-                <td>@Html.LabelFor(m => m.Name)</td>
-                <td>@Html.TextBoxFor(m => m.Name)</td>
                 <td>@Html.LabelFor(m => m.Room)</td>
                 <td>@Html.TextBoxFor(m => m.Room)</td>
-            </tr>
-            <tr>
                 <td>@Html.LabelFor(m => m.Building)</td>
                 <td>@Html.TextBoxFor(m => m.Building)</td>
-                <td>@Html.LabelFor(m => m.Address1)</td>
-                <td>@Html.TextBoxFor(m => m.Address1)</td>
             </tr>
             <tr>
+                <td>@Html.LabelFor(m => m.Address1)</td>
+                <td>@Html.TextBoxFor(m => m.Address1)</td>
                 <td>@Html.LabelFor(m => m.Address2)</td>
                 <td>@Html.TextBoxFor(m => m.Address2)</td>
+            </tr>
+            <tr>
                 <td>@Html.LabelFor(m => m.City)</td>
                 <td>@Html.TextBoxFor(m => m.City)</td>
             </tr>
@@ -29,13 +27,13 @@
             </tr>
             <tr>
                 <td>@Html.LabelFor(m => m.Latitude)</td>
-                <td>@Html.TextBoxFor(m => m.Latitude)</td>
+                <td>@Html.TextBoxFor(m => m.Latitude, new { @value = Model.Latitude > 0 ? Model.Latitude.ToString() : "" })</td>
                 <td>@Html.LabelFor(m => m.Longitude)</td>
                 <td>@Html.TextBoxFor(m => m.Longitude)</td>
             </tr>
             <tr>
                 <td>@Html.LabelFor(m => m.MapUrl)</td>
-                <td>@Html.TextBoxFor(m => m.MapUrl)</td>
+                <td colspan="3">@Html.TextBoxFor(m => m.MapUrl, new { @class = "long" })</td>
             </tr>
         </tbody>
     </table>

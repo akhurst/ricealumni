@@ -6,6 +6,7 @@ using RiceAlumni.Events.Models;
 using RiceAlumni.Events.Models.DTOs;
 using System.Linq;
 using System.Diagnostics;
+using Orchard.Core.Common.Models;
 
 namespace RiceAlumni.Events.Controllers
 {
@@ -30,14 +31,18 @@ namespace RiceAlumni.Events.Controllers
         public JsonResult GetEvents(DateTime from, DateTime to)
         {
 
-            var events = _contentManager.Query(VersionOptions.AllVersions, "Event")
+            var events = _contentManager.Query(VersionOptions.Published, "Event")
                 .Where<EventPartRecord>(eventRecord => eventRecord.StartDate >= from && eventRecord.StartDate <= to).List();
             var eventDtos = events.Select<ContentItem, Event>(x =>
             {
                 var eventPart = x.Parts.First(part => part is EventPart) as EventPart;
                 var locationPart = x.Parts.First(part => part is LocationPart) as LocationPart;
+                var bodyPart = x.Parts.First(part => part is BodyPart) as BodyPart;
 
-                return new Event(eventPart.Record, locationPart.Record);
+                var riceEvent = new Event(eventPart.Record, locationPart.Record);
+                riceEvent.Details.Description = bodyPart.Record.Text;
+
+                return riceEvent;
             });
 
             return Json(eventDtos, JsonRequestBehavior.AllowGet);

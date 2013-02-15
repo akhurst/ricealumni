@@ -4,7 +4,7 @@
 }
 <fieldset>
     <legend>@T("Event Details")</legend>
-    <table class="admin">
+    <table class="form">
         <tbody>
             <tr>
                 <td>@Html.LabelFor(m => m.Title)</td>
@@ -22,10 +22,7 @@
                 <td>@Html.LabelFor(m => m.ContactEmail)</td>
                 <td>@Html.TextBoxFor(m => m.ContactEmail)</td>
             </tr>
-            <tr>
-                <td>@Html.LabelFor(m => m.Description)</td>
-                <td colspan="3">@Html.TextAreaFor(m => m.Description)</td>
-            </tr>
+
         </tbody>
     </table>
 </fieldset>
