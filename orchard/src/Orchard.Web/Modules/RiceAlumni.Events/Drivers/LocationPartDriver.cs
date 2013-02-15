@@ -1,9 +1,11 @@
 ﻿using Orchard.ContentManagement.Drivers;
+using Orchard.ContentManagement.Handlers;
 using RiceAlumni.Events.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using RiceAlumni.Core.Drivers;
 
 namespace RiceAlumni.Events.Drivers
 {
@@ -28,6 +30,16 @@ namespace RiceAlumni.Events.Drivers
         {
             updater.TryUpdateModel(part, Prefix, null, null);
             return Editor(part, shapeHelper);
+        }
+
+        protected override void Importing(LocationPart part, ImportContentContext context)
+        {
+            this.DoImport(part, context);
+        }
+
+        protected override void Exporting(LocationPart part, ExportContentContext context)
+        {
+            this.DoExport(part, context);
         }
     }
 }
