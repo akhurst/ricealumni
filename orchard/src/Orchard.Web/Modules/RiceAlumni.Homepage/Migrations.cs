@@ -34,8 +34,8 @@ namespace RiceAlumni.Homepage
                 .WithPart("BodyPart", partBuilder => partBuilder.WithSetting("BodyTypePartSettings.Flavor", "text"))
                 .WithPart("HomepageSecondaryImage")
                 .WithPart("HomepagePart")
-                .WithPart("AdminMenuPart")
-                .WithSetting("Stereotype", "Widget")
+								.WithPart("IdentityPart")
+								.WithSetting("Stereotype", "Widget")
             );
 
             ContentDefinitionManager.AlterPartDefinition("HomepagePrimaryImage", part => part
@@ -51,21 +51,17 @@ namespace RiceAlumni.Homepage
                 .Draftable()
                 .WithPart("WidgetPart")
                 .WithPart("CommonPart")
-                .WithPart("BodyPart", partBuilder => partBuilder.WithSetting("BodyTypePartSettings.Flavor", "text"))
+								.WithPart("IdentityPart")
+								.WithPart("BodyPart", partBuilder => partBuilder.WithSetting("BodyTypePartSettings.Flavor", "text"))
                 .WithPart("HomepagePrimaryImage")
                 .WithPart("HomepagePart")
-                .WithPart("AdminMenuPart")
                 .WithSetting("Stereotype", "Widget")
             );
 
-            return 1;
-        }
+						CreateLongPartnerBanner();
+						CreateSquarePartnerBanner();
 
-        public int UpdateFrom1()
-        {
-            CreateLongPartnerBanner();
-            CreateSquarePartnerBanner();
-            return 2;
+            return 1;
         }
 
         private void CreateLongPartnerBanner()
@@ -90,6 +86,7 @@ namespace RiceAlumni.Homepage
                 .WithPart("HomepagePartnerBannerLong")
                 .WithPart("CommonPart")
                 .WithPart("AdminMenuPart")
+								.WithPart("IdentityPart")
                 .WithSetting("Stereotype", "Widget")
             );
         }
@@ -116,6 +113,7 @@ namespace RiceAlumni.Homepage
                 .WithPart("HomepagePartnerBannerSquare")
                 .WithPart("CommonPart")
                 .WithPart("AdminMenuPart")
+								.WithPart("IdentityPart")
                 .WithSetting("Stereotype", "Widget")
             );
         }

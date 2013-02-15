@@ -47,6 +47,7 @@ namespace RiceAlumni.StaffDirectory
 				.WithPart("BodyPart", partBuilder => partBuilder.WithSetting("BodyTypePartSettings.Flavor", "text"))
 				.WithPart("ContainablePart")
 				.WithPart("ContainerPart")
+				.WithPart("IdentityPart")
 				.WithPart("AutoroutePart", cfg => cfg
 						.WithSetting("AutorouteSettings.AllowCustomPattern", "false")
 						.WithSetting("AutorouteSettings.AutomaticAdjustmentOnEdit", "false")
@@ -72,6 +73,8 @@ namespace RiceAlumni.StaffDirectory
 				.WithPart("BodyPart", partBuilder => partBuilder.WithSetting("BodyTypePartSettings.Flavor", "text"))
 				.WithPart("ImageField")
 				.WithPart("ContainablePart")
+				.WithPart("ContentPermissionsPart")
+				.WithPart("IdentityPart")
 				.WithPart("AutoroutePart", cfg => cfg
 						.WithSetting("AutorouteSettings.AllowCustomPattern", "false")
 						.WithSetting("AutorouteSettings.AutomaticAdjustmentOnEdit", "false")
@@ -83,14 +86,6 @@ namespace RiceAlumni.StaffDirectory
 			CreateStaffProfileProjection(staffProfileQuery);
 
 			return 1;
-		}
-
-		public int UpdateFrom1()
-		{
-			ContentDefinitionManager.AlterTypeDefinition("StaffProfile",builder=>builder
-				.WithPart("ContentPermissionsPart")
-				);
-			return 2;
 		}
 
 		private void CreateStaffProfileProjection(QueryPart staffProfileQuery)

@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Web;
 using Orchard.ContentManagement.Drivers;
+using Orchard.ContentManagement.Handlers;
+using RiceAlumni.Core.Drivers;
 using RiceAlumni.StaffDirectory.Models;
 
 namespace RiceAlumni.StaffDirectory.Drivers
@@ -28,6 +31,16 @@ namespace RiceAlumni.StaffDirectory.Drivers
 		{
 			updater.TryUpdateModel(part, Prefix, null, null);
 			return Editor(part, shapeHelper);
+		}
+
+		protected override void Importing(StaffProfilePart part, ImportContentContext context)
+		{
+			this.DoImport(part, context);
+		}
+
+		protected override void Exporting(StaffProfilePart part, ExportContentContext context)
+		{
+			this.DoExport(part, context);
 		}
 	}
 }

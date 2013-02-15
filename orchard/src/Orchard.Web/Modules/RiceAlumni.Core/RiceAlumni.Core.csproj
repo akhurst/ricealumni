@@ -91,6 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\LegacyContentController.cs" />
+    <Compile Include="Drivers\RiceContentPartDriver.cs" />
     <Compile Include="Routes.cs" />
   </ItemGroup>
   <PropertyGroup>

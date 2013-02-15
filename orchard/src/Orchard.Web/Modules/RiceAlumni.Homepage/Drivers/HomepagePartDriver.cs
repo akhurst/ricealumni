@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Orchard.ContentManagement;
 using Orchard.ContentManagement.Drivers;
+using Orchard.ContentManagement.Handlers;
+using RiceAlumni.Core.Drivers;
 using RiceAlumni.Homepage.Models;
 
 namespace RiceAlumni.Homepage.Drivers
@@ -29,5 +32,16 @@ namespace RiceAlumni.Homepage.Drivers
 			updater.TryUpdateModel(part, Prefix, null, null);
 			return Editor(part, shapeHelper);
 		}
+
+		protected override void Importing(HomepagePart part, ImportContentContext context)
+		{
+			this.DoImport(part, context);
+		}
+
+		protected override void Exporting(HomepagePart part, ExportContentContext context)
+		{
+			this.DoExport(part, context);
+		}
+
 	}
 }
