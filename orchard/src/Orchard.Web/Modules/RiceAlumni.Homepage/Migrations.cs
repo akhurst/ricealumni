@@ -34,8 +34,8 @@ namespace RiceAlumni.Homepage
                 .WithPart("BodyPart", partBuilder => partBuilder.WithSetting("BodyTypePartSettings.Flavor", "text"))
                 .WithPart("HomepageSecondaryImage")
                 .WithPart("HomepagePart")
-								.WithPart("IdentityPart")
-								.WithSetting("Stereotype", "Widget")
+                .WithPart("IdentityPart")
+                .WithSetting("Stereotype", "Widget")
             );
 
             ContentDefinitionManager.AlterPartDefinition("HomepagePrimaryImage", part => part
@@ -51,15 +51,15 @@ namespace RiceAlumni.Homepage
                 .Draftable()
                 .WithPart("WidgetPart")
                 .WithPart("CommonPart")
-								.WithPart("IdentityPart")
-								.WithPart("BodyPart", partBuilder => partBuilder.WithSetting("BodyTypePartSettings.Flavor", "text"))
+                .WithPart("IdentityPart")
+                .WithPart("BodyPart", partBuilder => partBuilder.WithSetting("BodyTypePartSettings.Flavor", "text"))
                 .WithPart("HomepagePrimaryImage")
                 .WithPart("HomepagePart")
                 .WithSetting("Stereotype", "Widget")
             );
 
-						CreateLongPartnerBanner();
-						CreateSquarePartnerBanner();
+            CreateLongPartnerBanner();
+            CreateSquarePartnerBanner();
 
             return 1;
         }
@@ -93,7 +93,7 @@ namespace RiceAlumni.Homepage
                 .WithPart("HomepagePartnerBannerLong")
                 .WithPart("CommonPart")
                 .WithPart("AdminMenuPart")
-								.WithPart("IdentityPart")
+                .WithPart("IdentityPart")
                 .WithSetting("Stereotype", "Widget")
             );
         }
@@ -120,7 +120,7 @@ namespace RiceAlumni.Homepage
                 .WithPart("HomepagePartnerBannerSquare")
                 .WithPart("CommonPart")
                 .WithPart("AdminMenuPart")
-								.WithPart("IdentityPart")
+                .WithPart("IdentityPart")
                 .WithSetting("Stereotype", "Widget")
             );
         }
