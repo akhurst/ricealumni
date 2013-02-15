@@ -11,7 +11,9 @@ using Orchard.Core.Title.Models;
 using Orchard.Data.Migration;
 using Orchard.Projections.Models;
 using Orchard.Projections.Services;
+using Orchard.Roles.Services;
 using Orchard.Security;
+using RiceAlumni.Core.Extensions;
 
 namespace RiceAlumni.StaffDirectory 
 {
@@ -21,13 +23,15 @@ namespace RiceAlumni.StaffDirectory
 		private readonly IQueryService _queryService;
 		private readonly IMenuService _menuService;
 		private readonly IMembershipService _membershipService;
+	    private IRoleService _roleService;
 
-		public Migrations(IMenuService menuService, IContentManager contentManager, IQueryService queryService, IMembershipService membershipService)
+	    public Migrations(IMenuService menuService, IContentManager contentManager, IQueryService queryService, IMembershipService membershipService, IRoleService roleService)
 		{
 			_menuService = menuService;
 			_contentManager = contentManager;
 			_queryService = queryService;
 			_membershipService = membershipService;
+		    _roleService = roleService;
 		}
 
 		public int Create()
@@ -84,6 +88,8 @@ namespace RiceAlumni.StaffDirectory
 
 			var staffProfileQuery = CreateStaffProfileQuery();
 			CreateStaffProfileProjection(staffProfileQuery);
+
+		    _roleService.CreateStaffProfileRolesAndPermissions();
 
 			return 1;
 		}

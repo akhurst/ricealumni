@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Web;
 using Orchard.ContentManagement;
 using Orchard.ContentManagement.Drivers;
 using Orchard.ContentManagement.Handlers;
 
-namespace RiceAlumni.Core.Drivers
+namespace RiceAlumni.Core.Extensions
 {
     public static class RiceContentPartDriverExtensions
     {

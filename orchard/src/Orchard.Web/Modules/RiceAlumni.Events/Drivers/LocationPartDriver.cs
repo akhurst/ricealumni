@@ -1,11 +1,11 @@
 ﻿using Orchard.ContentManagement.Drivers;
 using Orchard.ContentManagement.Handlers;
+using RiceAlumni.Core.Extensions;
 using RiceAlumni.Events.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using RiceAlumni.Core.Drivers;
 
 namespace RiceAlumni.Events.Drivers
 {

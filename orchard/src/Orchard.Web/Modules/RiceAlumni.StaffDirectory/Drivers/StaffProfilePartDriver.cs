@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Web;
 using Orchard.ContentManagement.Drivers;
 using Orchard.ContentManagement.Handlers;
-using RiceAlumni.Core.Drivers;
+using RiceAlumni.Core.Extensions;
 using RiceAlumni.StaffDirectory.Models;
 
 namespace RiceAlumni.StaffDirectory.Drivers

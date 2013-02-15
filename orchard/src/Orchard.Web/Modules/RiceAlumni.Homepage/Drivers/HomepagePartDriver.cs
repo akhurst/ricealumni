@@ -5,7 +5,7 @@ using System.Web;
 using Orchard.ContentManagement;
 using Orchard.ContentManagement.Drivers;
 using Orchard.ContentManagement.Handlers;
-using RiceAlumni.Core.Drivers;
+using RiceAlumni.Core.Extensions;
 using RiceAlumni.Homepage.Models;
 
 namespace RiceAlumni.Homepage.Drivers

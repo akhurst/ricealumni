@@ -94,8 +94,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminMenu.cs" />
     <Compile Include="Controllers\LegacyContentController.cs" />
-    <Compile Include="Drivers\RiceContentPartDriver.cs" />
+    <Compile Include="Extensions\RiceContentPartDriverExtensions.cs" />
+    <Compile Include="Extensions\RiceRoleExtensions.cs" />
     <Compile Include="Migrations.cs" />
     <Compile Include="Routes.cs" />
   </ItemGroup>

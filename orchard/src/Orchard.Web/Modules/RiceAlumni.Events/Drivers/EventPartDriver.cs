@@ -1,7 +1,7 @@
 ﻿using Orchard.ContentManagement.Drivers;
 using Orchard.ContentManagement.Handlers;
+using RiceAlumni.Core.Extensions;
 using RiceAlumni.Events.Models;
-using RiceAlumni.Core.Drivers;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,13 +1,18 @@
 ﻿using Orchard.ContentManagement.MetaData;
 using Orchard.Core.Contents.Extensions;
 using Orchard.Data.Migration;
+using Orchard.Roles.Services;
+using RiceAlumni.Core.Extensions;
 
 namespace RiceAlumni.Homepage
 {
     public class Migrations : DataMigrationImpl
     {
-        public Migrations()
+        private IRoleService roleService;
+
+        public Migrations(IRoleService roleService)
         {
+            this.roleService = roleService;
         }
 
         public int Create()
@@ -60,6 +65,8 @@ namespace RiceAlumni.Homepage
 
             CreateLongPartnerBanner();
             CreateSquarePartnerBanner();
+
+            roleService.CreateHomepageRolesAndPermissions();
 
             return 1;
         }
