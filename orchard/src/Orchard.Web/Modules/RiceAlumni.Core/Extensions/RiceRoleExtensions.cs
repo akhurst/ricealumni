@@ -19,7 +19,6 @@ namespace RiceAlumni.Core.Extensions
             roleService.CreatePermissionForRole("Staff", "AccessAdminPanel");
             roleService.CreatePermissionForRole("Staff", "AccessFrontEnd");
             roleService.CreatePermissionForRole("Staff", "GrantOwnPermission");
-            roleService.CreatePermissionForRole("Staff", "ViewContent");
 
             roleService.CreatePermissionForRole("Contributor", "ManageMedia");
             roleService.CreatePermissionForRole("Contributor", "EditContent");
@@ -41,19 +40,7 @@ namespace RiceAlumni.Core.Extensions
 
         public static void CreateStaffProfileRolesAndPermissions(this IRoleService roleService)
         {
-            roleService.CreatePermissionForRole("Staff", "View_StaffGroup");
-            roleService.CreatePermissionForRole("Staff", "ViewOwn_StaffGroup");
             roleService.CreatePermissionForRole("Staff", "EditOwn_StaffProfile");
-            roleService.CreatePermissionForRole("Staff", "View_StaffProfile");
-            roleService.CreatePermissionForRole("Staff", "ViewOwn_StaffProfile");
-        }
-
-        public static void CreateHomepageRolesAndPermissions(this IRoleService roleService)
-        {
-            roleService.CreatePermissionForRole("Staff", "View_LongPartnerBanner");
-            roleService.CreatePermissionForRole("Staff", "ViewOwn_LongPartnerBanner");
-            roleService.CreatePermissionForRole("Staff", "View_SquarePartnerBanner");
-            roleService.CreatePermissionForRole("Staff", "ViewOwn_SquarePartnerBanner");
         }
     }
 }

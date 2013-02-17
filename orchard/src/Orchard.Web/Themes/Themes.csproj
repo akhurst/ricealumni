@@ -21,10 +21,6 @@
     </UpgradeBackupLocation>
     <TargetFrameworkProfile />
     <UseIISExpress>false</UseIISExpress>
-    <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
-    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -52,7 +48,6 @@
       <HintPath>..\..\..\lib\aspnetmvc\System.Web.Mvc.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -75,7 +70,6 @@
     <Content Include="TheAdmin\Styles\images\menuClosedHover.gif" />
     <Content Include="TheAdmin\Styles\images\menuOpen.gif" />
     <Content Include="TheAdmin\Styles\images\menuOpenHover.gif" />
-    <Content Include="TheAdmin\Styles\images\rice_alumni_logo.png" />
     <Content Include="TheAdmin\Styles\images\vinesBackgroundBottom.gif" />
     <Content Include="TheThemeMachine\Styles\Site.css" />
     <Content Include="TheThemeMachine\Theme.png" />

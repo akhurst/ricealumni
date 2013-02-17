@@ -66,8 +66,6 @@ namespace RiceAlumni.Homepage
             CreateLongPartnerBanner();
             CreateSquarePartnerBanner();
 
-            roleService.CreateHomepageRolesAndPermissions();
-
             return 1;
         }
 

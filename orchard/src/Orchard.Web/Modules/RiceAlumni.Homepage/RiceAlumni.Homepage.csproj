@@ -90,6 +90,10 @@
       <Project>{D10AD48F-407D-4DB5-A328-173EC7CB010F}</Project>
       <Name>Orchard.Roles</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Orchard.Widgets\Orchard.Widgets.csproj">
+      <Project>{194d3ccc-1153-474d-8176-fde8d7d0d0bd}</Project>
+      <Name>Orchard.Widgets</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RiceAlumni.Core\RiceAlumni.Core.csproj">
       <Project>{00a5675a-e4b8-47e3-92dd-9842e80ae2ab}</Project>
       <Name>RiceAlumni.Core</Name>

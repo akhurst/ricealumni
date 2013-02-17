@@ -1799,6 +1799,17 @@ color:#2e76ff;
 	padding: 15px;
 }
 
+#copytext{
+    float:left;
+}
+
+.user-login{
+    position: absolute;
+    right: 10px;
+    margin: 10px 0px;
+	background: white;
+}
+
 /* Staff Profile */
 
 .staff-profile-summary-image{

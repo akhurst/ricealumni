@@ -1,8 +1,7 @@
 Name: RiceAlumni.Admin
-Author: The Orchard Team
-Website: http://www.orchardproject.net
-Description: Description for the theme
 Version: 1.0
-BaseTheme: TheAdmin
-# todo: provide tags
-# Tags: Classic, Serif
+Author: Improving Enterprises
+Tags: hidden, admin
+Description: An admin theme for Rice Alumni dashboard, not to be used for the site.
+Website: http://www.orchardproject.net
+Zones: Header, Messages, BeforeContent, LocalNavigation, Content, AfterContent, Footer
