@@ -62,6 +62,8 @@ namespace Orchard.Core.Containers.Drivers {
                     model.AvailableContainers = new SelectList(listItems, "Value", "Text", model.ContainerId);
                     model.Weight = part.Weight;
 
+                    model.ContentType = part.ContentItem.ContentType;
+
                     return shapeHelper.EditorTemplate(TemplateName: "Containable", Model: model, Prefix: "Containable");
                 });
         }
