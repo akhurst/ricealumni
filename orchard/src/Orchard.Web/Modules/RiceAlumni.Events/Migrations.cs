@@ -51,5 +51,19 @@ namespace RiceAlumni.Events
 
             return 1;
         }
+
+        public int UpdateFrom1()
+        {
+            ContentDefinitionManager.AlterPartDefinition("EventPart", part => part
+                .WithField("Image", field => field
+                    .OfType("ImageField")
+                    .WithSetting("ImageFieldSettings.Width", "400")
+                    .WithSetting("ImageFieldSettings.Height", "300")
+                    .WithSetting("ImageFieldSettings.ResizeAction", "Validate")
+                )
+                );
+
+            return 2;
+        }
     }
 }
