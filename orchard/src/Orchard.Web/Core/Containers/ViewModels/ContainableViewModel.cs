@@ -5,5 +5,7 @@ namespace Orchard.Core.Containers.ViewModels {
         public int ContainerId { get; set; }
         public SelectList AvailableContainers { get; set; }
         public int Weight { get; set; }
+
+        public string ContentType { get; set; }
     }
 }

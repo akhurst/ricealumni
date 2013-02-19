@@ -1,0 +1,7 @@
+Name: Alumni Microsite
+Author: Improving Enterprises
+Website: http://alumni.rice.edu
+Description: A theme for alumni group microsites
+Dependencies: RiceAlumni.Microsites, UrlAlternates
+Version: 1.0
+Zones: Navigation, Content, Sidebar, SubFooter, FooterRight, Footer

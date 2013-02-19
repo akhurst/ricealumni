@@ -1,0 +1,37 @@
+﻿@model Orchard.Core.Containers.ViewModels.ContainableViewModel
+
+@if(Model.ContentType == "StaffGroup")
+{
+    <fieldset>
+        <span>
+            @Html.LabelFor(m => m.Weight, T("Display Priority - a larger number means it will be listed first"))
+            @Html.TextBoxFor(m => m.Weight, new {@class = "text text-small"})
+        </span>
+    </fieldset>
+}
+else if(Model.ContentType == "StaffProfile")
+{
+    <fieldset>
+        <span>
+            @Html.LabelFor(m => m.ContainerId, T("Division"))
+            @Html.DropDownListFor(m => m.ContainerId, Model.AvailableContainers)
+        </span>
+        <span>
+            @Html.LabelFor(m => m.Weight, T("Display Priority - a larger number means it will be listed first"))
+            @Html.TextBoxFor(m => m.Weight, new {@class = "text text-small"})
+        </span>
+    </fieldset>
+}
+else
+{
+    <fieldset>
+        <span>
+            @Html.LabelFor(m => m.ContainerId, T("Add to"))
+            @Html.DropDownListFor(m => m.ContainerId, Model.AvailableContainers)
+        </span>
+        <span>
+            @Html.LabelFor(m => m.Weight, T("Weight"))
+            @Html.TextBoxFor(m => m.Weight, new {@class = "text text-small"})
+        </span>
+    </fieldset>
+}

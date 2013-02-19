@@ -1,0 +1,121 @@
+﻿@{
+    /* Global includes for the theme
+    ***************************************************************/
+
+    SetMeta("viewport", "width=device-width, initial-scale=1, maximum-scale=1");
+    SetMeta("author", "");
+    SetMeta("description", "");
+    Style.Include("http://yui.yahooapis.com/3.8.0/build/cssreset/cssreset-min.css");
+    // Style.Include("site.css");
+    Style.Include("alpha_background.css");
+    Style.Include("grid.css");
+    Style.Include("style.css");
+    Style.Include("responsive_custom.css");
+    Style.Include("http://fonts.googleapis.com/css?family=Lato:300,400,700");
+    Script.Require("jQuery");
+    Script.Include("tinynav.js").AtFoot();
+    Script.Include("superfish.js").AtFoot();
+    Script.Include("tabcontent.js").AtFoot();
+
+    /* Some useful shortcuts or settings
+    ***************************************************************/
+
+    Func<dynamic, dynamic> Zone = x => Display(x); // Zone as an alias for Display to help make it obvious when we're displaying zones
+
+    /* Inserting some ad hoc shapes
+    ***************************************************************/
+
+    WorkContext.Layout.Footer.Add(New.BadgeOfHonor(), "5"); // Powered by Orchard
+    WorkContext.Layout.Footer.Add(New.User(), "10"); // Login and dashboard links
+
+    /* Last bit of code to prep the layout wrapper
+    ***************************************************************/
+
+    Model.Id = "layout-wrapper";
+    dynamic tag = Tag(Model, "div"); // using Tag so the layout div gets the classes, id and other attributes added to the Model
+}
+
+@tag.StartElement
+
+<div id="fb-root"></div>
+<script> (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=285205008268336";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk')); </script>
+
+
+
+<!-- Header  -->
+<header class="head">
+    <div class="row container">
+        <div class="five columns">
+            <a href="~/">
+                <img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Content/Images/rice_alumni_logo.png"))" alt="Logo" class="logo" />
+            </a>
+        </div>
+        @if (Model.Navigation != null)
+        {
+            @Zone(Model.Navigation)
+        }
+
+    </div>
+    <div class="clearfix"></div>
+</header>
+
+
+<div id="maincontent" class="newholder">
+    <div class="container">
+        @if (Model.Sidebar != null)
+        {
+            <div class="four columns">
+                @Zone(Model.Sidebar)
+            </div>
+        }
+        @if (Model.Content != null)
+        {
+            <div class="twelve columns">
+                @Zone(Model.Content)
+            </div>
+        }
+    </div>
+</div>
+
+
+@if (Model.SubFooter != null)
+{
+    <div id="section-subfooter">
+        <div class="container">
+            @Zone(Model.SubFooter)
+            <div class="clear"></div>
+        </div>
+        <!-- // .container -->
+    </div>
+}
+
+<div id="section-footer">
+    <div class="container">
+        <div class="eight columns">
+            @if (Model.Footer != null)
+            {
+                @Zone(Model.Footer)
+            }
+        </div>
+        <!-- // .eight -->
+        @if (Model.FooterRight != null)
+        {
+            <div class="eight columns">
+                @Zone(Model.FooterRight)
+            </div>
+        }
+
+        <div class="clear"></div>
+    </div>
+    <!-- // .container -->
+</div>
+<!-- // #section-footer -->
+
+@tag.EndElement

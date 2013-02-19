@@ -1,0 +1,15 @@
+﻿@{
+	string link = Model.Href;
+	if (link.StartsWith("/#"))
+	{
+		link = link.Remove(0, 1);
+	}
+}
+
+<a href="@link">
+	@Model.Text
+	@if(Model.Text.ToString() == "Alumni Resources")
+	{
+		<span class="carrot">˘</span>
+	}
+</a>

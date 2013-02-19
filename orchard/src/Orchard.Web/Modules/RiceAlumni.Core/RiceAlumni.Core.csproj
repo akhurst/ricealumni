@@ -69,6 +69,10 @@
       <Link>ricealumni.recipe.xml</Link>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="..\Orchard.Setup\Recipes\microsite.recipe.xml">
+      <Link>microsite.recipe.xml</Link>
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Scripts\Web.config" />
