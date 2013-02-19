@@ -1,0 +1,22 @@
+﻿@using Orchard.Security
+@if (WorkContext.CurrentUser != null)
+{
+    <div class="user-display">
+        <span class="user-actions welcome">
+            @T("<strong>{0}</strong>!", new HtmlString(Html.ActionLink(Convert.ToString(Html.ItemDisplayText(WorkContext.CurrentUser)), "ChangePassword", new {Controller = "Account", Area = "Orchard.Users"}).ToString()))
+        </span>
+        <span class="user-actions">
+            @Html.ActionLink(T("Sign Out").ToString(), "LogOff", new {Controller = "Account", Area = "Orchard.Users", ReturnUrl = Context.Request.RawUrl}, new {rel = "nofollow"})
+            @if (AuthorizedFor(StandardPermissions.AccessAdminPanel))
+            {
+                @Html.ActionLink(T("Dashboard").ToString(), "Index", new {Area = "Dashboard", Controller = "Admin"})
+            }
+        </span>
+    </div>
+}
+else
+{
+    <div class="user-login">
+        <span class="user-actions">@Html.ActionLink(T("Staff Login").ToString(), "LogOn", new {Controller = "Account", Area = "Orchard.Users", ReturnUrl = (Request.QueryString["ReturnUrl"] ?? Request.RawUrl)}, new {rel = "nofollow"})</span>
+    </div>
+}

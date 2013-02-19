@@ -127,6 +127,7 @@
     <Content Include="Content\Images\bhassin.jpg" />
     <Content Include="Content\Images\dhuston.jpg" />
     <Content Include="Content\Images\eventlogo.png" />
+    <Content Include="Content\Images\favicon.ico" />
     <Content Include="Content\Images\hallback.jpg" />
     <Content Include="Content\Images\hellip.png" />
     <Content Include="Content\Images\icons\icon_date.png" />
@@ -163,6 +164,7 @@
     <Content Include="Content\Images\slide_1.jpg" />
     <Content Include="Content\Images\tabbg.gif" />
     <Content Include="Content\Images\texback.png" />
+    <Content Include="Content\Images\ThemeZonePreview.png" />
     <Content Include="Content\Images\twitter-bird-hover.png" />
     <Content Include="Content\Images\vcolvin.jpg" />
     <Content Include="Scripts\facebook_wall.plugin.js" />
