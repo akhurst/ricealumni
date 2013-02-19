@@ -45,6 +45,9 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CsQuery">
+      <HintPath>..\..\..\packages\CsQuery.1.3.4\lib\net40\CsQuery.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -95,9 +98,11 @@
     <Compile Include="Drivers\LocationPartDriver.cs" />
     <Compile Include="Handlers\EventHandler.cs" />
     <Compile Include="Handlers\LocationHandler.cs" />
+    <Compile Include="Helpers\PciEventCalendarHelper.cs" />
     <Compile Include="Migrations.cs" />
     <Compile Include="Models\DTOs\Event.cs" />
     <Compile Include="Models\DTOs\EventDetails.cs" />
+    <Compile Include="Models\DTOs\PciEvent.cs" />
     <Compile Include="Models\EventPart.cs" />
     <Compile Include="Models\EventPartRecord.cs" />
     <Compile Include="Models\DTOs\Location.cs" />

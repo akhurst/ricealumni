@@ -7,6 +7,7 @@ using RiceAlumni.Events.Models.DTOs;
 using System.Linq;
 using System.Diagnostics;
 using Orchard.Core.Common.Models;
+using RiceAlumni.Events.Helpers;
 
 namespace RiceAlumni.Events.Controllers
 {
@@ -44,6 +45,8 @@ namespace RiceAlumni.Events.Controllers
 
                 return riceEvent;
             });
+
+            eventDtos.ToList().AddRange(PciEventCalendarHelper.GetEvents());
 
             return Json(eventDtos, JsonRequestBehavior.AllowGet);
         }

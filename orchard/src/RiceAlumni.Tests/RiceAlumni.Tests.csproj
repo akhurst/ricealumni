@@ -55,6 +55,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Orchard.Web\Modules\RiceAlumni.Events\RiceAlumni.Events.csproj">
+      <Project>{f31965b4-be34-42dc-b50e-0e2b57a4d3b5}</Project>
+      <Name>RiceAlumni.Events</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Orchard.Web\Themes\RiceAlumni.Theme\RiceAlumni.Theme.csproj">
       <Project>{fe63a44e-84d0-49c1-98cb-d4209d5fde52}</Project>
       <Name>RiceAlumni.Theme</Name>

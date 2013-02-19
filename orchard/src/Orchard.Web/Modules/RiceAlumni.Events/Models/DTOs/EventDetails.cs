@@ -22,7 +22,6 @@ namespace RiceAlumni.Events.Models.DTOs
             Title = eventPartRecord.Title;
             ContactEmail = eventPartRecord.ContactEmail;
             RegistrationRequired = eventPartRecord.RegistrationRequired;
-            
         }
 
         public DateTime? StartDate { get; set; }
