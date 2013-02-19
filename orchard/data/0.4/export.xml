@@ -168,5 +168,21 @@
       <ContainablePart Weight="0" />
       <StaffProfilePart Name="Jessica" />
     </StaffProfile>
+    <LongPartnerBanner Id="/Identifier=c1a0a340fd264eb0a101c0101d4e287c" Status="Published">
+      <ImageField.Image FileName="~/Media/Default/LongPartnerBanner/Image/banner1_728x90-2.jpg" Height="90" Width="728" />
+      <TextField.LinkTarget Text="http://bakerinstitute.org/" />
+      <IdentityPart Identifier="c1a0a340fd264eb0a101c0101d4e287c" />
+      <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=TheHomepage" CreatedUtc="2013-02-19T19:27:11Z" PublishedUtc="2013-02-19T19:27:11Z" ModifiedUtc="2013-02-19T19:28:43Z" />
+      <WidgetPart Title="Baker Banner" Position="1" Zone="LongPartnerBanner1" RenderTitle="false" />
+      <AdminMenuPart AdminMenuPosition="100" OnAdminMenu="false" />
+    </LongPartnerBanner>
+    <LongPartnerBanner Id="/Identifier=5da90d31c9b249be972bf0b77a4956a2" Status="Published">
+      <ImageField.Image FileName="~/Media/Default/LongPartnerBanner/Image/banner3_728x90-1.jpg" Height="90" Width="728" />
+      <TextField.LinkTarget Text="http://alumni.rice.edu/legacycontent/alumnicollege/index.html" />
+      <IdentityPart Identifier="5da90d31c9b249be972bf0b77a4956a2" />
+      <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=TheHomepage" CreatedUtc="2013-02-19T19:28:17Z" PublishedUtc="2013-02-19T19:28:17Z" ModifiedUtc="2013-02-19T19:28:49Z" />
+      <WidgetPart Title="Alumni College Weekend" Position="1" Zone="LongPartnerBanner2" RenderTitle="false" />
+      <AdminMenuPart AdminMenuPosition="100" OnAdminMenu="false" />
+    </LongPartnerBanner>
   </Data>
 </Orchard>
