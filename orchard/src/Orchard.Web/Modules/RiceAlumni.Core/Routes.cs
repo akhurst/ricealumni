@@ -45,7 +45,22 @@ namespace RiceAlumni.Core {
 									       {"area", "RiceAlumni.Core"}
 								       },
 								       new MvcRouteHandler())
-						       }
+						       },
+                                                 new RouteDescriptor
+                                                 {
+                                                     Route = new Route(
+                                                         "RiceAdmin/SiteAccessDenied",
+                                                         new RouteValueDictionary
+                                                         {
+                                                             {"area","RiceAlumni.Core"},
+                                                             {"controller","Account"},
+                                                             {"action","SiteAccessDenied"}
+                                                         },
+                                                         new RouteValueDictionary(),
+                                                         new RouteValueDictionary{{"area","RiceAlumni.Core"}},
+                                                         new MvcRouteHandler()
+                                                         )
+                                                 }
 					       };
 				}
     }
