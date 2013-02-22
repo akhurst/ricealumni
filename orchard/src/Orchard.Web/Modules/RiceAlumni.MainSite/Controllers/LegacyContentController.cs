@@ -1,7 +1,6 @@
-﻿using System.IO;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
-namespace RiceAlumni.Core.Controllers
+namespace RiceAlumni.MainSite.Controllers
 {
 	public class LegacyContentController : Controller
 	{

@@ -7,7 +7,7 @@ using System.Web.Routing;
 using Orchard;
 using Orchard.Mvc.Routes;
 
-namespace RiceAlumni.Core {
+namespace RiceAlumni.MainSite {
     public class Routes : IRouteProvider
     {
         private ILegacyContentConstraint legacyContentConstraint;
@@ -31,17 +31,22 @@ namespace RiceAlumni.Core {
                        new RouteDescriptor
                        {
                            Route = new Route(
-                               "RiceAdmin/SiteAccessDenied",
+                               "{*path}",
                                new RouteValueDictionary
                                {
-                                   {"area", "RiceAlumni.Core"},
-                                   {"controller", "Account"},
-                                   {"action", "SiteAccessDenied"}
+                                   {"area", "RiceAlumni.MainSite"},
+                                   {"controller", "LegacyContent"},
+                                   {"action", "RenderLegacyContent"}
                                },
-                               new RouteValueDictionary(),
-                               new RouteValueDictionary {{"area", "RiceAlumni.Core"}},
-                               new MvcRouteHandler()
-                               )
+                               new RouteValueDictionary
+                               {
+                                   {"path", legacyContentConstraint},
+                               },
+                               new RouteValueDictionary
+                               {
+                                   {"area", "RiceAlumni.MainSite"}
+                               },
+                               new MvcRouteHandler())
                        }
                    };
         }

@@ -1,8 +1,8 @@
 ﻿using Orchard.Data.Migration;
 using Orchard.Roles.Services;
-using RiceAlumni.Core.Extensions;
+using RiceAlumni.MainSite.Extensions;
 
-namespace RiceAlumni.Core
+namespace RiceAlumni.MainSite
 {
 	public class Migrations : DataMigrationImpl
 	{

@@ -104,11 +104,9 @@
   <ItemGroup>
     <Compile Include="AdminMenu.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\LegacyContentController.cs" />
     <Compile Include="Extensions\RiceContentPartDriverExtensions.cs" />
-    <Compile Include="Extensions\RiceRoleExtensions.cs" />
     <Compile Include="Helpers\RiceUrlHelperExtensions.cs" />
-    <Compile Include="Migrations.cs" />
+    <Compile Include="LayoutFilter.cs" />
     <Compile Include="Routes.cs" />
   </ItemGroup>
   <PropertyGroup>

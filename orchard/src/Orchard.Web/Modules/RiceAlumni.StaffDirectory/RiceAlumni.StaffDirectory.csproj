@@ -95,6 +95,10 @@
       <Project>{00a5675a-e4b8-47e3-92dd-9842e80ae2ab}</Project>
       <Name>RiceAlumni.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RiceAlumni.MainSite\RiceAlumni.MainSite.csproj">
+      <Project>{01e78b90-977e-4968-ab3f-ad29be376948}</Project>
+      <Name>RiceAlumni.MainSite</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminMenu.cs" />

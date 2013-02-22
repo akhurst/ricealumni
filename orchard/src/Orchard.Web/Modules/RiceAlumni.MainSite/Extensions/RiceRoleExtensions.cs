@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 using Orchard.Roles.Services;
 
-namespace RiceAlumni.Core.Extensions
+namespace RiceAlumni.MainSite.Extensions
 {
     public static class RiceRoleExtensions 
     {

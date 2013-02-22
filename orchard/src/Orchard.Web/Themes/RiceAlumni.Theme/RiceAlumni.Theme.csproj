@@ -235,7 +235,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helpers\PciEventCalendarHelper.cs" />
-    <Compile Include="LayoutFilter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

@@ -13,7 +13,7 @@ using Orchard.Projections.Models;
 using Orchard.Projections.Services;
 using Orchard.Roles.Services;
 using Orchard.Security;
-using RiceAlumni.Core.Extensions;
+using RiceAlumni.MainSite.Extensions;
 
 namespace RiceAlumni.StaffDirectory 
 {
