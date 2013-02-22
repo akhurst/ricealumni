@@ -23,9 +23,356 @@
     </Parts>
   </Metadata>
 
-  <Settings />
+    <Settings>
+        <RegistrationSettingsPart UsersCanRegister="false" UsersMustValidateEmail="false" UsersAreModerated="false" NotifyModeration="false" EnableLostPassword="true" />
+        <SmtpSettingsPart Address="admin@ricealumni.net" Host="smtp.gmail.com" Port="587" EnableSsl="true" RequireCredentials="true" UserName="admin@ricealumni.net" Password="R1ceAlumn1" />
+    </Settings>
+    <Data>
+        <HomepageLink Id="/Identifier=b611a7b6d37742948bafdc121f88bb4b" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/HomepageLink/Image/link_give-1.jpg" Height="95" Width="583" />
+            <IdentityPart Identifier="b611a7b6d37742948bafdc121f88bb4b" />
+            <BodyPart Text="Join us as we continue our journey toward a second century of original thought and tangible contributions to the world." />
+            <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=TheHomepage" CreatedUtc="2013-01-25T07:05:50Z" PublishedUtc="2013-01-25T07:05:50Z" ModifiedUtc="2013-01-25T07:05:50Z" />
+            <WidgetPart Title="Give to Rice" Position="6" Zone="Links" RenderTitle="false" Name="GiveToRice" />
+            <AdminMenuPart AdminMenuPosition="100" OnAdminMenu="false" />
+            <HomepagePart LinkText="Make a Gift Now" LinkTarget="http://giving.rice.edu/" />
+        </HomepageLink>
+        <HomepageLink Id="/Identifier=cb6edd87845842da94f5c09203f5bcfd" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/HomepageLink/Image/link_learn-1.jpg" Height="95" Width="583" />
+            <IdentityPart Identifier="cb6edd87845842da94f5c09203f5bcfd" />
+            <BodyPart Text="The mission of the Association of Rice Alumni includes a commitment to lifelong learning." />
+            <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=TheHomepage" CreatedUtc="2013-01-25T07:08:45Z" PublishedUtc="2013-01-25T07:08:45Z" ModifiedUtc="2013-02-06T22:23:06Z" />
+            <WidgetPart Title="Learning &amp; Travel" Position="5" Zone="Links" RenderTitle="false" Name="LearningTravel" />
+            <AdminMenuPart AdminMenuPosition="100" OnAdminMenu="false" />
+            <HomepagePart LinkText="View Services and Programs" LinkTarget="/learning_trav.html" />
+        </HomepageLink>
+        <HomepageLink Id="/Identifier=157d714df65d4eb383cebcc510716cef" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/HomepageLink/Image/link_career-1.jpg" Height="95" Width="583" />
+            <IdentityPart Identifier="157d714df65d4eb383cebcc510716cef" />
+            <BodyPart Text="A searchable database of alumni who have agreed to make themselves available to Rice students and to fellow alums for information about their job field." />
+            <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=TheHomepage" CreatedUtc="2013-01-25T07:09:41Z" PublishedUtc="2013-01-25T07:09:41Z" ModifiedUtc="2013-02-06T22:22:55Z" />
+            <WidgetPart Title="Career Connection" Position="4" Zone="Links" RenderTitle="false" Name="CareerConnectionLink" />
+            <AdminMenuPart AdminMenuPosition="100" OnAdminMenu="false" />
+            <HomepagePart LinkText="See Networking Opportunities" LinkTarget="/career_connection.html" />
+        </HomepageLink>
+        <HomepageLink Id="/Identifier=c5b273e8ff2e40da99bb613c8ed03cc3" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/HomepageLink/Image/link_young-1.jpg" Height="95" Width="583" />
+            <IdentityPart Identifier="c5b273e8ff2e40da99bb613c8ed03cc3" />
+            <BodyPart Text="As a Rice Young Alum, countless resources are made available to you on campus, in the Rice Community and around the globe." />
+            <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=TheHomepage" CreatedUtc="2013-01-25T07:10:35Z" PublishedUtc="2013-01-25T07:10:35Z" ModifiedUtc="2013-02-06T22:22:23Z" />
+            <WidgetPart Title="Rice Young Alumni" Position="3" Zone="Links" RenderTitle="false" Name="RiceYoungAlumniLink" />
+            <AdminMenuPart AdminMenuPosition="100" OnAdminMenu="false" />
+            <HomepagePart LinkText="Access Resources and Programs" LinkTarget="/youngalum_stds.html" />
+        </HomepageLink>
+        <HomepageLink Id="/Identifier=47c18c90e1a2451896b28117f1d33e51" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/HomepageLink/Image/link_groups-2.jpg" Height="95" Width="583" />
+            <IdentityPart Identifier="47c18c90e1a2451896b28117f1d33e51" />
+            <BodyPart Text="So you want to get together with fellow alumni and friends? A number of groups provide opportunities for members of the Rice community to unite around common interests." />
+            <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=TheHomepage" CreatedUtc="2013-01-25T07:11:18Z" PublishedUtc="2013-01-25T07:11:18Z" ModifiedUtc="2013-02-06T22:22:39Z" />
+            <WidgetPart Title="Alumni Groups" Position="2" Zone="Links" RenderTitle="false" Name="AlumniGroupsLink" />
+            <AdminMenuPart AdminMenuPosition="100" OnAdminMenu="false" />
+            <HomepagePart LinkText="Search our Groups" LinkTarget="/alumni_groups.html" />
+        </HomepageLink>
+        <HomepageLink Id="/Identifier=04f77a366862404396253a7fea2013df" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/HomepageLink/Image/link_event-2.jpg" Height="95" Width="583" />
+            <IdentityPart Identifier="04f77a366862404396253a7fea2013df" />
+            <BodyPart Text="The Association of Rice Alumni sponsors events throughout the year: on campus, in major cities throughout the United States, and beyond." />
+            <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=TheHomepage" CreatedUtc="2013-01-25T07:12:00Z" PublishedUtc="2013-01-25T07:12:00Z" ModifiedUtc="2013-01-25T07:12:00Z" />
+            <WidgetPart Title="Events Calendar" Position="1" Zone="Links" RenderTitle="false" Name="EventsCalendarLink" />
+            <AdminMenuPart AdminMenuPosition="100" OnAdminMenu="false" />
+            <HomepagePart LinkText="Find Upcoming Events" LinkTarget="http://alumni.cgi.rice.edu/events/calendar.php" />
+        </HomepageLink>
+        <HomepageSlide Id="/Identifier=4b76f5f5fe2b401b9acc9940888dda36" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/HomepageSlide/Image/bg_head2-3.jpg" Height="650" Width="1980" />
+            <IdentityPart Identifier="4b76f5f5fe2b401b9acc9940888dda36" />
+            <BodyPart Text="The Association of Rice Alumni sponsors events throughout the year: on campus, in major cities throughout the United States, and beyond." />
+            <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=TheHomepage" CreatedUtc="2013-01-25T06:56:45Z" PublishedUtc="2013-01-25T06:56:45Z" ModifiedUtc="2013-01-25T06:56:45Z" />
+            <WidgetPart Title="Events Calendar" Position="2" Zone="Slides" RenderTitle="false" Name="EventsCalendar" />
+            <AdminMenuPart AdminMenuPosition="100" OnAdminMenu="false" />
+            <HomepagePart LinkText="Find Upcoming Events" LinkTarget="http://alumni.cgi.rice.edu/events/calendar.php" />
+        </HomepageSlide>
+        <HomepageSlide Id="/Identifier=5a2bdc0346674adf95e59466bf74b977" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/HomepageSlide/Image/bg_head3-2.jpg" Height="650" Width="1980" />
+            <IdentityPart Identifier="5a2bdc0346674adf95e59466bf74b977" />
+            <BodyPart Text="So you want to get together with fellow alumni and friends? A number of groups provide opportunities for members of the Rice community to unite around common interests." />
+            <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=TheHomepage" CreatedUtc="2013-01-25T06:59:43Z" PublishedUtc="2013-01-25T06:59:43Z" ModifiedUtc="2013-01-25T06:59:59Z" />
+            <WidgetPart Title="Alumni Groups" Position="3" Zone="Slides" RenderTitle="false" Name="AlumniGroups" />
+            <AdminMenuPart AdminMenuPosition="100" OnAdminMenu="false" />
+            <HomepagePart LinkText="Search our Groups" LinkTarget="~/alumni_groups.html" />
+        </HomepageSlide>
+        <HomepageSlide Id="/Identifier=9557eb85cb0146918024ec2a20dd1677" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/HomepageSlide/Image/bg_head4-1.jpg" Height="650" Width="1980" />
+            <IdentityPart Identifier="9557eb85cb0146918024ec2a20dd1677" />
+            <BodyPart Text="As a Rice Young Alum, countless resources are made available to you on campus, in the Rice Community and around the globe." />
+            <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=TheHomepage" CreatedUtc="2013-01-25T07:01:37Z" PublishedUtc="2013-01-25T07:01:37Z" ModifiedUtc="2013-02-06T22:21:26Z" />
+            <WidgetPart Title="Rice Young Alumni" Position="4" Zone="Slides" RenderTitle="false" Name="RiceYoungAlumni" />
+            <AdminMenuPart AdminMenuPosition="100" OnAdminMenu="false" />
+            <HomepagePart LinkText="Access Resources and Programs" LinkTarget="/youngalum_stds.html" />
+        </HomepageSlide>
+        <HomepageSlide Id="/Identifier=1297c59eaffa44938c261bd4fc367f19" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/HomepageSlide/Image/bg_head5-1.jpg" Height="650" Width="1980" />
+            <IdentityPart Identifier="1297c59eaffa44938c261bd4fc367f19" />
+            <BodyPart Text="A searchable database of alumni who have agreed to make themselves available to Rice students and to fellow alums for information about their job field." />
+            <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=TheHomepage" CreatedUtc="2013-01-25T07:03:34Z" PublishedUtc="2013-01-25T07:03:34Z" ModifiedUtc="2013-02-06T22:21:47Z" />
+            <WidgetPart Title="Career Connection" Position="5" Zone="Slides" RenderTitle="false" Name="CareerConnection" />
+            <AdminMenuPart AdminMenuPosition="100" OnAdminMenu="false" />
+            <HomepagePart LinkText="See Networking Opportunities" LinkTarget="/career_connection.html" />
+        </HomepageSlide>
+        <LongPartnerBanner Id="/Identifier=c1a0a340fd264eb0a101c0101d4e287c" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/LongPartnerBanner/Image/banner1_728x90-2.jpg" Height="90" Width="728" />
+            <TextField.LinkTarget Text="http://bakerinstitute.org/" />
+            <IdentityPart Identifier="c1a0a340fd264eb0a101c0101d4e287c" />
+            <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=TheHomepage" CreatedUtc="2013-02-19T19:27:11Z" PublishedUtc="2013-02-19T19:27:11Z" ModifiedUtc="2013-02-19T19:28:43Z" />
+            <WidgetPart Title="Baker Banner" Position="1" Zone="LongPartnerBanner1" RenderTitle="false" />
+            <AdminMenuPart AdminMenuPosition="100" OnAdminMenu="false" />
+        </LongPartnerBanner>
+        <LongPartnerBanner Id="/Identifier=5da90d31c9b249be972bf0b77a4956a2" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/LongPartnerBanner/Image/banner3_728x90-1.jpg" Height="90" Width="728" />
+            <TextField.LinkTarget Text="http://alumni.rice.edu/legacycontent/alumnicollege/index.html" />
+            <IdentityPart Identifier="5da90d31c9b249be972bf0b77a4956a2" />
+            <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=TheHomepage" CreatedUtc="2013-02-19T19:28:17Z" PublishedUtc="2013-02-19T19:28:17Z" ModifiedUtc="2013-02-19T19:28:49Z" />
+            <WidgetPart Title="Alumni College Weekend" Position="1" Zone="LongPartnerBanner2" RenderTitle="false" />
+            <AdminMenuPart AdminMenuPosition="100" OnAdminMenu="false" />
+        </LongPartnerBanner>
+        <StaffGroup Id="/alias=staff\/communications/Identifier=5c3e1fa94feb42c085f9f577d897b233" Status="Published">
+            <AutoroutePart Alias="staff/communications" UseCustomPattern="false" />
+            <IdentityPart Identifier="5c3e1fa94feb42c085f9f577d897b233" />
+            <BodyPart />
+            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2013-01-25T18:43:30Z" PublishedUtc="2013-02-22T21:12:41Z" ModifiedUtc="2013-02-22T20:50:25Z" />
+            <TitlePart Title="Communications" />
+            <ContainablePart Weight="0" />
+            <ContainerPart ItemContentType="StaffProfile" ItemsShown="true" Paginated="true" PageSize="10" OrderByProperty="CommonPart.CreatedUtc" OrderByDirection="1" />
+        </StaffGroup>
+        <StaffGroup Id="/alias=staff\/executive/Identifier=8a75e59ccaba4150a867bfb47551444a" Status="Published">
+            <AutoroutePart Alias="staff/executive" UseCustomPattern="false" />
+            <IdentityPart Identifier="8a75e59ccaba4150a867bfb47551444a" />
+            <BodyPart />
+            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2013-01-25T18:43:12Z" PublishedUtc="2013-02-22T21:12:42Z" ModifiedUtc="2013-02-22T20:50:25Z" />
+            <TitlePart Title="Executive" />
+            <ContainablePart Weight="1" />
+            <ContainerPart ItemContentType="StaffProfile" ItemsShown="true" Paginated="true" PageSize="10" OrderByProperty="CommonPart.CreatedUtc" OrderByDirection="1" />
+        </StaffGroup>
+        <StaffGroup Id="/alias=staff\/regional-constituent-groups/Identifier=9e1406941ddf4ae1b539656b802fe138" Status="Published">
+            <AutoroutePart Alias="staff/regional-constituent-groups" UseCustomPattern="false" />
+            <IdentityPart Identifier="9e1406941ddf4ae1b539656b802fe138" />
+            <BodyPart />
+            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2013-02-22T21:13:12Z" PublishedUtc="2013-02-22T21:13:12Z" ModifiedUtc="2013-02-22T21:13:12Z" />
+            <TitlePart Title="Regional &amp; Constituent Groups" />
+            <ContainablePart Weight="0" />
+            <ContainerPart ItemContentType="StaffProfile" ItemsShown="true" Paginated="true" PageSize="10" OrderByProperty="CommonPart.CreatedUtc" OrderByDirection="1" />
+        </StaffGroup>
+        <StaffGroup Id="/alias=staff\/events-programs/Identifier=5c99564dc6a94fbbb484a7bf6b0529f6" Status="Published">
+            <AutoroutePart Alias="staff/events-programs" UseCustomPattern="false" />
+            <IdentityPart Identifier="5c99564dc6a94fbbb484a7bf6b0529f6" />
+            <BodyPart />
+            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2013-02-22T21:12:27Z" PublishedUtc="2013-02-22T21:18:04Z" ModifiedUtc="2013-02-22T21:18:04Z" />
+            <TitlePart Title="Events &amp; Programs" />
+            <ContainablePart Weight="0" />
+            <ContainerPart ItemContentType="StaffProfile" ItemsShown="true" Paginated="true" PageSize="10" OrderByProperty="CommonPart.CreatedUtc" OrderByDirection="1" />
+        </StaffGroup>
+        <StaffGroup Id="/alias=staff\/student-young-alumni-engagement/Identifier=52a7a24ff9c4418b9f8df1b92d3dd1bb" Status="Published">
+            <AutoroutePart Alias="staff/student-young-alumni-engagement" UseCustomPattern="false" />
+            <IdentityPart Identifier="52a7a24ff9c4418b9f8df1b92d3dd1bb" />
+            <BodyPart />
+            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2013-02-22T21:58:59Z" PublishedUtc="2013-02-22T21:58:59Z" ModifiedUtc="2013-02-22T21:58:59Z" />
+            <TitlePart Title="Student &amp; Young Alumni Engagement" />
+            <ContainablePart Weight="0" />
+            <ContainerPart ItemContentType="StaffProfile" ItemsShown="true" Paginated="true" PageSize="10" OrderByProperty="CommonPart.CreatedUtc" OrderByDirection="1" />
+        </StaffGroup>
+        <StaffGroup Id="/alias=staff\/travel-programs-alumni-education/Identifier=e88415ecac3642f2bdfa8efb582255db" Status="Published">
+            <AutoroutePart Alias="staff/travel-programs-alumni-education" UseCustomPattern="false" />
+            <IdentityPart Identifier="e88415ecac3642f2bdfa8efb582255db" />
+            <BodyPart />
+            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2013-02-22T21:59:22Z" PublishedUtc="2013-02-22T21:59:22Z" ModifiedUtc="2013-02-22T21:59:22Z" />
+            <TitlePart Title="Travel Programs &amp; Alumni Education" />
+            <ContainablePart Weight="0" />
+            <ContainerPart ItemContentType="StaffProfile" ItemsShown="true" Paginated="true" PageSize="10" OrderByProperty="CommonPart.CreatedUtc" OrderByDirection="1" />
+        </StaffGroup>
+        <StaffProfile Id="/alias=staff\/executive\/robyn-blackmon/Identifier=7810084b731d470f810c8fd1f42e8c39" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/StaffProfile/Image/robyn-2.jpg" Height="200" Width="200" />
+            <AutoroutePart Alias="staff/executive/robyn-blackmon" UseCustomPattern="false" />
+            <IdentityPart Identifier="7810084b731d470f810c8fd1f42e8c39" />
+            <BodyPart />
+            <CommonPart Owner="/User.UserName=robynblackmon" Container="/alias=staff\/communications/Identifier=5c3e1fa94feb42c085f9f577d897b233" CreatedUtc="2013-01-25T18:45:01Z" PublishedUtc="2013-02-22T21:08:34Z" ModifiedUtc="2013-02-22T21:08:34Z" />
+            <TitlePart Title="Robyn Blackmon" />
+            <ContainablePart Weight="1" />
+            <StaffProfilePart Name="Robyn Blackmon" Title="Director of Communications" Email="robynblackmon@rice.edu" Phone="713-348-4674" />
+        </StaffProfile>
+        <StaffProfile Id="/alias=staff\/executive\/carrie-brown/Identifier=aaab694c375146c480bea1f23f35f623" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/StaffProfile/Image/carrie-2.jpg" Height="150" Width="125" />
+            <AutoroutePart Alias="staff/executive/carrie-brown" UseCustomPattern="false" />
+            <IdentityPart Identifier="aaab694c375146c480bea1f23f35f623" />
+            <BodyPart />
+            <CommonPart Owner="/User.UserName=carriebrown" Container="/alias=staff\/executive/Identifier=8a75e59ccaba4150a867bfb47551444a" CreatedUtc="2013-01-25T18:46:17Z" PublishedUtc="2013-02-22T21:14:45Z" ModifiedUtc="2013-02-22T21:14:44Z" />
+            <TitlePart Title="Carrie Brown" />
+            <ContainablePart Weight="1" />
+            <StaffProfilePart Name="Carrie Brown" Title="Executive Director" Email="carriebrown@rice.edu" Phone="713-348-4694" />
+        </StaffProfile>
+        <StaffProfile Id="/alias=staff\/communications\/nikki-metzgar/Identifier=b76a644a73424f9684d4f4af5a644e1a" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/StaffProfile/Image/nikki-2.jpg" Height="200" Width="200" />
+            <AutoroutePart Alias="staff/communications/nikki-metzgar" UseCustomPattern="false" />
+            <IdentityPart Identifier="b76a644a73424f9684d4f4af5a644e1a" />
+            <BodyPart />
+            <CommonPart Owner="/User.UserName=nikkimetzgar" Container="/alias=staff\/communications/Identifier=5c3e1fa94feb42c085f9f577d897b233" CreatedUtc="2013-01-25T18:45:43Z" PublishedUtc="2013-02-22T21:16:42Z" ModifiedUtc="2013-02-22T21:16:42Z" />
+            <TitlePart Title="Nikki Metzgar" />
+            <ContainablePart Weight="0" />
+            <StaffProfilePart Name="Nikki Metzgar" Title="Web &amp; Social Media Specialist" Email="smetzgar@rice.edu" Phone="713-348-3944" />
+        </StaffProfile>
+        <StaffProfile Id="/alias=staff\/events-programs\/kate-almond/Identifier=a519311f595a4e6d8fd8fa6a5967b12a" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/StaffProfile/Image/katealmond-1.png" Height="138" Width="126" />
+            <AutoroutePart Alias="staff/events-programs/kate-almond" UseCustomPattern="false" />
+            <IdentityPart Identifier="a519311f595a4e6d8fd8fa6a5967b12a" />
+            <BodyPart />
+            <CommonPart Owner="/User.UserName=katealmond" Container="/alias=staff\/events-programs/Identifier=5c99564dc6a94fbbb484a7bf6b0529f6" CreatedUtc="2013-02-22T21:20:22Z" PublishedUtc="2013-02-22T21:20:22Z" ModifiedUtc="2013-02-22T21:20:22Z" />
+            <TitlePart Title="Kate Almond" />
+            <ContainablePart Weight="0" />
+            <StaffProfilePart Name="Kate Almond" Title="Assistant Director for Events &amp; Programs" Email="kalmond@rice.edu" Phone="713-348-6093" />
+        </StaffProfile>
+        <StaffProfile Id="/alias=staff\/executive\/veronica-bernal/Identifier=89eb79b3cb6c4472a815e5e56317f771" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/StaffProfile/Image/veronica-1.png" Height="167" Width="126" />
+            <AutoroutePart Alias="staff/executive/veronica-bernal" UseCustomPattern="false" />
+            <IdentityPart Identifier="89eb79b3cb6c4472a815e5e56317f771" />
+            <BodyPart />
+            <CommonPart Owner="/User.UserName=veronicabernal" Container="/alias=staff\/executive/Identifier=8a75e59ccaba4150a867bfb47551444a" CreatedUtc="2013-02-22T21:39:00Z" PublishedUtc="2013-02-22T21:39:00Z" ModifiedUtc="2013-02-22T21:39:00Z" />
+            <TitlePart Title="Veronica Bernal" />
+            <ContainablePart Weight="0" />
+            <StaffProfilePart Name="Veronica Bernal" Title="Staff Assistant" Email="vvb@rice.edu" Phone="713-348-4586" />
+        </StaffProfile>
+        <StaffProfile Id="/alias=staff\/executive\/sabra-helton/Identifier=ec0ea30b4fe54adab522bf68ddafb334" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/StaffProfile/Image/sabra-1.png" Height="178" Width="126" />
+            <AutoroutePart Alias="staff/executive/sabra-helton" UseCustomPattern="false" />
+            <IdentityPart Identifier="ec0ea30b4fe54adab522bf68ddafb334" />
+            <BodyPart />
+            <CommonPart Owner="/User.UserName=sabrahelton" Container="/alias=staff\/executive/Identifier=8a75e59ccaba4150a867bfb47551444a" CreatedUtc="2013-02-22T21:31:27Z" PublishedUtc="2013-02-22T21:39:15Z" ModifiedUtc="2013-02-22T21:39:15Z" />
+            <TitlePart Title="Sabra Helton" />
+            <ContainablePart Weight="0" />
+            <StaffProfilePart Name="Sabra Helton" Title="Alumni Affairs Specialist" Email="sabra@rice.edu" Phone="713-348-4694" />
+        </StaffProfile>
+        <StaffProfile Id="/alias=staff\/regional-constituent-groups\/lacresha-lamb/Identifier=ec79d38bce464c7ca189d071509d0001" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/StaffProfile/Image/lacresha-1.png" Height="156" Width="126" />
+            <AutoroutePart Alias="staff/regional-constituent-groups/lacresha-lamb" UseCustomPattern="false" />
+            <IdentityPart Identifier="ec79d38bce464c7ca189d071509d0001" />
+            <BodyPart />
+            <CommonPart Owner="/User.UserName=lacreshalamb" Container="/alias=staff\/regional-constituent-groups/Identifier=9e1406941ddf4ae1b539656b802fe138" CreatedUtc="2013-02-22T21:49:15Z" PublishedUtc="2013-02-22T21:49:15Z" ModifiedUtc="2013-02-22T21:49:15Z" />
+            <TitlePart Title="LaCresha Lamb" />
+            <ContainablePart Weight="0" />
+            <StaffProfilePart Name="LaCresha Lamb" Title="Assistant Director for Regional &amp; Constituent Groups" Email="llamb@rice.edu" Phone="713-348-4270" />
+        </StaffProfile>
+        <StaffProfile Id="/alias=staff\/events-programs\/katy-portell/Identifier=d8299da7804b4de7803056be57df4c00" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/StaffProfile/Image/katy-1.png" Height="170" Width="126" />
+            <AutoroutePart Alias="staff/events-programs/katy-portell" UseCustomPattern="false" />
+            <IdentityPart Identifier="d8299da7804b4de7803056be57df4c00" />
+            <BodyPart />
+            <CommonPart Owner="/User.UserName=katyportell" Container="/alias=staff\/events-programs/Identifier=5c99564dc6a94fbbb484a7bf6b0529f6" CreatedUtc="2013-02-22T21:54:45Z" PublishedUtc="2013-02-22T21:54:46Z" ModifiedUtc="2013-02-22T21:54:45Z" />
+            <TitlePart Title="Katy Portell" />
+            <ContainablePart Weight="0" />
+            <StaffProfilePart Name="Katy Portell" Title="Center for Career Development Recruiting Coordinator &amp; Alumni Liason" Email="kate.portell@rice.edu" Phone="713-348-3916" />
+        </StaffProfile>
+        <StaffProfile Id="/alias=staff\/events-programs\/jennifer-harding/Identifier=9f3d313e0121425a93b02a6a70c85cbb" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/StaffProfile/Image/jennifer-1.png" Height="167" Width="126" />
+            <AutoroutePart Alias="staff/events-programs/jennifer-harding" UseCustomPattern="false" />
+            <IdentityPart Identifier="9f3d313e0121425a93b02a6a70c85cbb" />
+            <BodyPart />
+            <CommonPart Owner="/User.UserName=jenniferharding" Container="/alias=staff\/events-programs/Identifier=5c99564dc6a94fbbb484a7bf6b0529f6" CreatedUtc="2013-02-22T21:56:04Z" PublishedUtc="2013-02-22T21:56:04Z" ModifiedUtc="2013-02-22T21:56:04Z" />
+            <TitlePart Title="Jennifer Harding" />
+            <ContainablePart Weight="1" />
+            <StaffProfilePart Name="Jennifer Harding" Title="Director of Events &amp; Programs" Email="harding@rice.edu" Phone="713-348-6094" />
+        </StaffProfile>
+        <StaffProfile Id="/alias=staff\/regional-constituent-groups\/suzanne-boue/Identifier=f739e609882d4bcebbc306a407378a7f" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/StaffProfile/Image/suzanne-1.png" Height="171" Width="126" />
+            <AutoroutePart Alias="staff/regional-constituent-groups/suzanne-boue" UseCustomPattern="false" />
+            <IdentityPart Identifier="f739e609882d4bcebbc306a407378a7f" />
+            <BodyPart />
+            <CommonPart Owner="/User.UserName=suzanneboue" Container="/alias=staff\/regional-constituent-groups/Identifier=9e1406941ddf4ae1b539656b802fe138" CreatedUtc="2013-02-22T21:52:31Z" PublishedUtc="2013-02-22T21:56:42Z" ModifiedUtc="2013-02-22T21:56:42Z" />
+            <TitlePart Title="Suzanne Boue" />
+            <ContainablePart Weight="1" />
+            <StaffProfilePart Name="Suzanne Boue" Title="Director of Regional &amp; Constituent Groups" Email="suzanneb@rice.edu" Phone="713-348-6954" />
+        </StaffProfile>
+        <StaffProfile Id="/alias=staff\/communications\/michael-powers/Identifier=ead7d5cbb0ad4f4aa88cbb18a97eb355" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/StaffProfile/Image/michael-1.png" Height="167" Width="126" />
+            <AutoroutePart Alias="staff/communications/michael-powers" UseCustomPattern="false" />
+            <IdentityPart Identifier="ead7d5cbb0ad4f4aa88cbb18a97eb355" />
+            <BodyPart />
+            <CommonPart Owner="/User.UserName=michaelpowers" Container="/alias=staff\/communications/Identifier=5c3e1fa94feb42c085f9f577d897b233" CreatedUtc="2013-02-22T21:57:52Z" PublishedUtc="2013-02-22T21:57:53Z" ModifiedUtc="2013-02-22T21:57:53Z" />
+            <TitlePart Title="Michael Powers" />
+            <ContainablePart Weight="0" />
+            <StaffProfilePart Name="Michael Powers" Title="Brand Manager" Email="powers@rice.edu" Phone="713-348-4057" />
+        </StaffProfile>
+        <StaffProfile Id="/alias=staff\/student-young-alumni-engagement\/christine-helmick/Identifier=7b10b4c753eb4029b42bd59929c4cd15" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/StaffProfile/Image/christine-1.png" Height="181" Width="126" />
+            <AutoroutePart Alias="staff/student-young-alumni-engagement/christine-helmick" UseCustomPattern="false" />
+            <IdentityPart Identifier="7b10b4c753eb4029b42bd59929c4cd15" />
+            <BodyPart />
+            <CommonPart Owner="/User.UserName=christinehelmick" Container="/alias=staff\/student-young-alumni-engagement/Identifier=52a7a24ff9c4418b9f8df1b92d3dd1bb" CreatedUtc="2013-02-22T22:00:43Z" PublishedUtc="2013-02-22T22:00:43Z" ModifiedUtc="2013-02-22T22:00:43Z" />
+            <TitlePart Title="Christine Helmick" />
+            <ContainablePart Weight="0" />
+            <StaffProfilePart Name="Christine Helmick" Title="Assistant Director for Student &amp; Young Alumni Engagement" Email="chelmick@rice.edu" Phone="713-348-5305" />
+        </StaffProfile>
+        <StaffProfile Id="/alias=staff\/travel-programs-alumni-education\/dan-stypa/Identifier=f8de0b036bfb46588245450ada6d86a1" Status="Published">
+            <ImageField.Image FileName="~/Media/Default/StaffProfile/Image/dan-1.png" Height="172" Width="126" />
+            <AutoroutePart Alias="staff/travel-programs-alumni-education/dan-stypa" UseCustomPattern="false" />
+            <IdentityPart Identifier="f8de0b036bfb46588245450ada6d86a1" />
+            <BodyPart />
+            <CommonPart Owner="/User.UserName=danstypa" Container="/alias=staff\/travel-programs-alumni-education/Identifier=e88415ecac3642f2bdfa8efb582255db" CreatedUtc="2013-02-22T22:01:41Z" PublishedUtc="2013-02-22T22:01:41Z" ModifiedUtc="2013-02-22T22:01:41Z" />
+            <TitlePart Title="Dan Stypa" />
+            <ContainablePart Weight="0" />
+            <StaffProfilePart Name="Dan Stypa" Title="Assistant Director for Travel Programs &amp; Alumni Education" Email="stypa@rice.edu" Phone="713-348-5094" />
+        </StaffProfile>
+        <User Id="/User.UserName=robynblackmon" Status="Published">
+            <UserPart Email="robynblackmon@rice.edu" EmailStatus="Approved" HashAlgorithm="SHA1" NormalizedUserName="robynblackmon" Password="zBAv9EOPFKCqdYFReN4cI5scrW4=" PasswordFormat="Hashed" PasswordSalt="NXHMO0KL2vfp3dYVbg6gJA==" RegistrationStatus="Approved" UserName="robynblackmon" />
+            <UserRolesPart Roles="Editor" />
+        </User>
+        <User Id="/User.UserName=michaelpowers" Status="Published">
+            <UserPart Email="powers@rice.edu" EmailStatus="Approved" HashAlgorithm="SHA1" NormalizedUserName="michaelpowers" Password="D4lbUDyBRctmmtkuzqoB28qqckk=" PasswordFormat="Hashed" PasswordSalt="iTJLYPi5RxFd+TWnDWWd4A==" RegistrationStatus="Approved" UserName="michaelpowers" />
+            <UserRolesPart Roles="Contributor" />
+        </User>
+        <User Id="/User.UserName=nikkimetzgar" Status="Published">
+            <UserPart Email="nikkimetzgar@rice.edu" EmailStatus="Approved" HashAlgorithm="SHA1" NormalizedUserName="nikkimetzgar" Password="Zrwj000OOYAyV8GD3kx1Hsw8s+E=" PasswordFormat="Hashed" PasswordSalt="H3Btakb4ycemE05e+ttNVw==" RegistrationStatus="Approved" UserName="nikkimetzgar" />
+            <UserRolesPart Roles="Contributor" />
+        </User>
+        <User Id="/User.UserName=carriebrown" Status="Published">
+            <UserPart Email="carriebrown@rice.edu" EmailStatus="Approved" HashAlgorithm="SHA1" NormalizedUserName="carriebrown" Password="VOlPsvtjIsHoLDlm1EO3LzKNXzc=" PasswordFormat="Hashed" PasswordSalt="4AX7sfagwlCzR5qpT82gqQ==" RegistrationStatus="Approved" UserName="carriebrown" />
+            <UserRolesPart Roles="Staff" />
+        </User>
+        <User Id="/User.UserName=katealmond" Status="Published">
+            <UserPart Email="kalmond@rice.edu" EmailStatus="Approved" HashAlgorithm="SHA1" NormalizedUserName="katealmond" Password="VOlPsvtjIsHoLDlm1EO3LzKNXzc=" PasswordFormat="Hashed" PasswordSalt="4AX7sfagwlCzR5qpT82gqQ==" RegistrationStatus="Approved" UserName="katealmond" />
+            <UserRolesPart Roles="Staff" />
+        </User>
+        <User Id="/User.UserName=sabrahelton" Status="Published">
+            <UserPart Email="sabra@rice.edu" EmailStatus="Approved" HashAlgorithm="SHA1" NormalizedUserName="sabrahelton" Password="VOlPsvtjIsHoLDlm1EO3LzKNXzc=" PasswordFormat="Hashed" PasswordSalt="4AX7sfagwlCzR5qpT82gqQ==" RegistrationStatus="Approved" UserName="sabrahelton" />
+            <UserRolesPart Roles="Staff" />
+        </User>
+        <User Id="/User.UserName=veronicabernal" Status="Published">
+            <UserPart Email="vvb@rice.edu" EmailStatus="Approved" HashAlgorithm="SHA1" NormalizedUserName="veronicabernal" Password="ph2yLoH+0f4inZE3YUkQWWifc/M=" PasswordFormat="Hashed" PasswordSalt="Tx+OzMQTRZytVCz3I9s92w==" RegistrationStatus="Approved" UserName="veronicabernal" />
+            <UserRolesPart Roles="Staff" />
+        </User>
+        <User Id="/User.UserName=lacreshalamb" Status="Published">
+            <UserPart Email="llamb@rice.edu" EmailStatus="Approved" HashAlgorithm="SHA1" NormalizedUserName="lacreshalamb" Password="KCi26mBEBHM6grWIAX7Zpx7pXwM=" PasswordFormat="Hashed" PasswordSalt="hYqk7EAXS2g3qwYmvX1cRw==" RegistrationStatus="Approved" UserName="lacreshalamb" />
+            <UserRolesPart Roles="Staff" />
+        </User>
+        <User Id="/User.UserName=suzanneboue" Status="Published">
+            <UserPart Email="suzanneb@rice.edu" EmailStatus="Approved" HashAlgorithm="SHA1" NormalizedUserName="suzanneboue" Password="11JasxpsC47vxSwsloLXpMAp0yU=" PasswordFormat="Hashed" PasswordSalt="qTOQZJXKtDtyX21TTVkkYw==" RegistrationStatus="Approved" UserName="suzanneboue" />
+            <UserRolesPart Roles="Staff" />
+        </User>
+        <User Id="/User.UserName=katyportell" Status="Published">
+            <UserPart Email="katy.portell@rice.edu" EmailStatus="Approved" HashAlgorithm="SHA1" NormalizedUserName="katyportell" Password="3u+EBb2oTY1DcrAXp3WEXgS+S/g=" PasswordFormat="Hashed" PasswordSalt="gUmPr/obxmzz15sUWU9dGA==" RegistrationStatus="Approved" UserName="katyportell" />
+            <UserRolesPart Roles="Staff" />
+        </User>
+        <User Id="/User.UserName=jenniferharding" Status="Published">
+            <UserPart Email="harding@rice.edu" EmailStatus="Approved" HashAlgorithm="SHA1" NormalizedUserName="jenniferharding" Password="06mzwExlUohGM5xmUfLu6kxoBC8=" PasswordFormat="Hashed" PasswordSalt="YbRpjd4bt+hw667uSZhnNA==" RegistrationStatus="Approved" UserName="jenniferharding" />
+            <UserRolesPart Roles="Staff" />
+        </User>
+        <User Id="/User.UserName=christinehelmick" Status="Published">
+            <UserPart Email="chelmick@rice.edu" EmailStatus="Approved" HashAlgorithm="SHA1" NormalizedUserName="christinehelmick" Password="p1zpws7IMOrdE1sFZQ71BT0ldGg=" PasswordFormat="Hashed" PasswordSalt="uhSveair7y2HOOjvIzGx6w==" RegistrationStatus="Approved" UserName="christinehelmick" />
+            <UserRolesPart Roles="Staff" />
+        </User>
+        <User Id="/User.UserName=danstypa" Status="Published">
+            <UserPart Email="stypa@rice.edu" EmailStatus="Approved" HashAlgorithm="SHA1" NormalizedUserName="danstypa" Password="48OdY1htlboF0t7d7YnI2j3Admk=" PasswordFormat="Hashed" PasswordSalt="USevI4eu3W+R7DchJ5M5xA==" RegistrationStatus="Approved" UserName="danstypa" />
+            <UserRolesPart Roles="Staff" />
+        </User>
+    </Data>
 
-  <Migration features="*" />
+    <Migration features="*" />
   
   <Command>
 		layer create Default /LayerRule:"true" /Description:"The widgets in this layer are displayed on all pages"
