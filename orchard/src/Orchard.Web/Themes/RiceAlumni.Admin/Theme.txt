@@ -1,7 +1,7 @@
 Name: RiceAlumni.Admin
 Version: 1.0
 Author: Improving Enterprises
-Tags: hidden, admin
+Tags: s admin
 Description: An admin theme for Rice Alumni dashboard, not to be used for the site.
 Website: http://www.orchardproject.net
 Zones: Header, Messages, BeforeContent, LocalNavigation, Content, AfterContent, Footer

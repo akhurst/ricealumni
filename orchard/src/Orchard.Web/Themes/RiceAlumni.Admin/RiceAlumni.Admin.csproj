@@ -103,6 +103,10 @@
       <Project>{9916839C-39FC-4CEB-A5AF-89CA7E87119F}</Project>
       <Name>Orchard.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Modules\RiceAlumni.Core\RiceAlumni.Core.csproj">
+      <Project>{00a5675a-e4b8-47e3-92dd-9842e80ae2ab}</Project>
+      <Name>RiceAlumni.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminShapeProvider.cs" />

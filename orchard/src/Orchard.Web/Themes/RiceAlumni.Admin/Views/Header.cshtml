@@ -1,5 +1,6 @@
-﻿@model dynamic
-<a href="~/">
+﻿@using RiceAlumni.Core.Helpers
+@model dynamic
+<a href="@Url.SiteRelativeUrl("~/",WorkContext)">
 <div id="branding">
 	@*<div id="app">@Html.Link(T("Project Orchard").ToString(), Url.Content("~/"))</div>*@
 	@*<div id="site">@Html.Link(T("Your Site").ToString(), Url.Content("~/"))</div>*@
