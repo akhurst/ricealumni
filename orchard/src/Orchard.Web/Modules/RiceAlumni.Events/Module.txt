@@ -1,5 +1,5 @@
 ﻿Name: Events
-AntiForgery: enabled
+AntiForgery: disabled
 Author: Improving Enterprises
 Website: http://alumni.rice.edu
 Version: 1.0

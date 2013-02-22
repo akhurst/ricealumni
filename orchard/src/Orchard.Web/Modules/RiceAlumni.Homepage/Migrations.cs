@@ -69,11 +69,11 @@ namespace RiceAlumni.Homepage
             return 1;
         }
 
-        public int UpdateFrom2()
+        public int UpdateFrom1()
         {
             ContentDefinitionManager.AlterTypeDefinition("LongPartnerBanner", builder => builder.Creatable(false));
             ContentDefinitionManager.AlterTypeDefinition("SquarePartnerBanner", builder => builder.Creatable(false));
-            return 3;
+            return 2;
         }
 
         private void CreateLongPartnerBanner()

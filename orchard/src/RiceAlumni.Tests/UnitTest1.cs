@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RiceAlumni.Theme.Helpers;
+using RiceAlumni.Events.Helpers;
 
 namespace RiceAlumni.Tests
 {

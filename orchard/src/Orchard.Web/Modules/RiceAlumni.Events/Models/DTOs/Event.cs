@@ -10,6 +10,8 @@ namespace RiceAlumni.Events.Models.DTOs
         public EventDetails Details { get; set; }
         public Location Location { get; set; }
 
+        public Event() { }
+
         public Event(EventPartRecord eventPart, LocationPartRecord locationPart)
         {
             Details = new EventDetails(eventPart);

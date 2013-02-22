@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Web.Mvc;
+using Orchard.Security;
 using Orchard.Themes;
 using Orchard.ContentManagement;
 using RiceAlumni.Events.Models;
@@ -7,10 +8,13 @@ using RiceAlumni.Events.Models.DTOs;
 using System.Linq;
 using System.Diagnostics;
 using Orchard.Core.Common.Models;
+using RiceAlumni.Events.Helpers;
+
 
 namespace RiceAlumni.Events.Controllers
 {
     [Themed]
+    [AlwaysAccessible]
     public class CalendarController : Controller
     {
         IContentManager _contentManager;
@@ -27,7 +31,8 @@ namespace RiceAlumni.Events.Controllers
             return View();
         }
 
-        [AcceptVerbs(HttpVerbs.Get)]
+        [AcceptVerbs(HttpVerbs.Get | HttpVerbs.Post)]
+        []
         public JsonResult GetEvents(DateTime from, DateTime to)
         {
 
@@ -44,6 +49,8 @@ namespace RiceAlumni.Events.Controllers
 
                 return riceEvent;
             });
+
+            eventDtos.ToList().AddRange(PciEventCalendarHelper.GetEvents());
 
             return Json(eventDtos, JsonRequestBehavior.AllowGet);
         }
