@@ -32,7 +32,6 @@ namespace RiceAlumni.Events.Controllers
         }
 
         [AcceptVerbs(HttpVerbs.Get | HttpVerbs.Post)]
-        []
         public JsonResult GetEvents(DateTime from, DateTime to)
         {
 
